@@ -1,0 +1,59 @@
+{
+  "indexVersion": 1,
+  "packs": [
+    {
+      "id": "cardio-heart-failure",
+      "title": "Heart failure: phenotype, GDMT และ acute HF",
+      "subject": "cardio",
+      "rotation": "med",
+      "tags": [
+        "heart-failure",
+        "hfref",
+        "hfpef",
+        "acute-heart-failure",
+        "gdmt",
+        "hemodynamics",
+        "classification",
+        "pharmacology",
+        "nle"
+      ],
+      "status": "draft",
+      "schemaVersion": 1,
+      "createdAt": "2026-10-12",
+      "verifiedAt": null,
+      "file": "cardio/cardio-heart-failure.json",
+      "itemCount": 81,
+      "countsByType": {
+        "counter": 6,
+        "danger": 6,
+        "distractor": 3,
+        "engine": 3,
+        "erratum": 5,
+        "exploit": 6,
+        "legality": 6,
+        "matchup": 4,
+        "mcq": 4,
+        "memorize": 11,
+        "rule": 6,
+        "signature": 6,
+        "tell": 12,
+        "trapPair": 3
+      },
+      "cardNames": [
+        "HFrEF (HF with reduced EF)",
+        "HFmrEF (HF with mildly reduced EF)",
+        "HFpEF (HF with preserved EF)",
+        "HFimpEF (HF with improved EF)",
+        "Acute decompensated HF: warm & wet",
+        "Acute HF: cold & wet (hypoperfusion ± cardiogenic shock)"
+      ],
+      "modes": [
+        "engine",
+        "legality",
+        "matchups",
+        "mcq"
+      ],
+      "searchText": "heart failure: phenotype, gdmt และ acute hf cardio-heart-failure heart-failure hfref hfpef acute-heart-failure gdmt hemodynamics classification pharmacology nle cardio หัวใจและหลอดเลือด cardiology med อายุรศาสตร์ internal medicine hfref (hf with reduced ef) มีอาการหรืออาการแสดงของ hf ร่วมกับ lvef ≤40% gdmt 4 เสา: arni (ถ้าใช้ไม่ได้ให้ acei และถ้าแพ้ acei ให้ arb) + evidence-based beta-blocker + mra + sglt2i และให้ loop diuretic เมื่อมี congestion hfref ใช้ lvef cutoff เท่าไร (universal definition 2021)? lvef ≤40% ใน hfref nyha ii–iv ต้องผ่านเงื่อนไขไตและ k อะไรก่อนเริ่ม mra (aha 2022)? egfr >30 ml/min/1.73 m² และ k <5.0 meq/l เปลี่ยนยาจาก acei เป็น sacubitril/valsartan ต้องเว้นช่วงกี่ชั่วโมง? 36 ชั่วโมง (ห้ามให้ arni ร่วมกับ acei หรือให้ภายใน 36 ชม. ทั้งตอนเปลี่ยนไปและเปลี่ยนกลับ เพราะเสี่ยง angioedema) arni (sacubitril/valsartan) มีข้อห้ามเรื่อง angioedema ว่าอย่างไร? ห้ามใช้ในผู้ที่มีประวัติ angioedema จากการใช้ acei หรือ arb มาก่อน ยากลุ่มไหนบ้างที่ aha 2022 จัดเป็น 3: harm ใน hfref (บอกให้ได้ 3 กลุ่ม)? non-dhp ccb (diltiazem, verapamil), thiazolidinedione และ class ic antiarrhythmic/dronedarone ส่วน nsaids ควรเลี่ยงหรือหยุดถ้าทำได้ ในบริบท non-acute ค่า natriuretic peptide ต่ำกว่าเท่าไรที่ทำให้ hf ไม่น่าเป็น (esc 2021)? bnp <35 pg/ml หรือ nt-probnp <125 pg/ml hfmref (hf with mildly reduced ef) มีอาการ hf ร่วมกับ lvef 41–49% และมีหลักฐานว่า filling pressure สูง ให้ diuretic เมื่อมี congestion + sglt2i ส่วนยาชุด hfref อื่น (arni/acei/arb, mra, beta-blocker) พิจารณาได้แต่หลักฐานอ่อนกว่า hfmref คือ lvef ช่วงไหน (universal definition 2021 / esc 2021)? lvef 41–49% sglt2i ใน hfmref/hfpef ได้ class of recommendation เท่าไร? aha 2022 ให้ 2a ส่วน esc 2023 focused update ให้ class i (dapagliflozin หรือ empagliflozin) hfpef (hf with preserved ef) มีอาการ hf ร่วมกับ lvef ≥50% และหลักฐานว่า filling pressure สูง (diastolic dysfunction จาก echo หรือ natriuretic peptide สูง) ให้ diuretic เมื่อมี congestion + sglt2i และคุม comorbidity (hypertension, af, obesity) hfpef ใช้ lvef cutoff เท่าไร? lvef ≥50% hfimpef (hf with improved ef) เคยมี lvef ≤40% และวัดซ้ำแล้วได้ >40% ให้ gdmt ต่อ แม้ไม่มีอาการ เพื่อกัน relapse เกณฑ์ของ hfimpef ตาม universal definition 2021 คืออะไร? baseline lvef ≤40% และ lvef เพิ่มขึ้น ≥10 จุดจาก baseline และวัดครั้งที่สองได้ >40% tred-hf: หยุด gdmt ใน dilated cardiomyopathy ที่ ef ฟื้นแล้ว relapse กี่ % ในกี่เดือน? 44% ภายใน 6 เดือน acute decompensated hf: warm & wet มี congestion (orthopnea, jvp สูง, crackles, edema) โดยที่ perfusion ยังดี ให้ iv loop diuretic ต่อจนหายบวมจริง (decongestion) แล้วเปลี่ยนเป็นยากิน ถ้า hemodynamics คงที่ให้คงหรือเริ่ม gdmt ระหว่างนอนโรงพยาบาลได้ (sglt2i และ mra เริ่มในโรงพยาบาลได้ถ้าไม่มีข้อห้าม) acute hf: cold & wet (hypoperfusion ± cardiogenic shock) มี congestion ร่วมกับ hypoperfusion: ปลายมือเย็น, pulse pressure แคบ, ซึมหรือสับสน, oliguria, lactate สูง แก้ perfusion ก่อน (inotrope/vasopressor ตามความดัน), หาสาเหตุที่แก้ได้ (เช่น acs) และปรึกษาทีม hf/shock เรื่อง mechanical circulatory support ห้ามเริ่มหรือเพิ่ม beta-blocker ระหว่างนี้ และให้ diuretic เมื่อ perfusion ดีขึ้น sacubitril/valsartan (arni) spironolactone (mra) dapagliflozin / empagliflozin (sglt2i) diltiazem (non-dhp ccb) left ventricle (lv) raas (renin-angiotensin-aldosterone system) sns (sympathetic nervous system) bnp / nt-probnp (natriuretic peptides) kidney ถ้า preload (end-diastolic volume) เพิ่ม → stroke volume (sv) เพิ่ม แต่หัวใจที่ล้มเหลวมี starling curve ที่แบน: preload ที่เพิ่มขึ้นกลายเป็นความดันย้อนกลับ (congestion) มากกว่าจะได้ sv เพิ่ม ถ้า lv บีบตัวอ่อน (hfref) → sv ไวต่อ afterload มาก: ลด afterload แล้ว sv เพิ่ม ส่วนเพิ่ม afterload (ความดันขึ้นฉับพลัน, vasoconstriction) แล้ว sv ลด ถ้า cardiac output/perfusion ลด → ร่างกายกระตุ้น raas + sns (และ adh) → เก็บ na/น้ำ และหดหลอดเลือด ระยะสั้นช่วยพยุง แต่ระยะยาวทำให้หัวใจ remodel และ hf แย่ลงเป็นวงจร ทุกอาการของ hf แยกได้เป็น 2 แกน: congestion (wet/dry) จาก filling pressure สูง และ perfusion (warm/cold) จาก cardiac output ต่ำ แล้วเลือกการรักษาตามแกนที่เสีย ถ้ารู้ lvef ปัจจุบันและประวัติ ef → รู้ phenotype และรู้ชุดยา: lvef ≤40% = hfref (gdmt 4 เสา), 41–49% = hfmref, ≥50% = hfpef, เคย ≤40% แล้ววัดซ้ำได้ >40% = hfimpef acc/aha stage (a–d) เดินหน้าทางเดียว ถอยกลับไม่ได้ ส่วน nyha class (i–iv) บอกอาการ ณ ตอนนี้ จึงขึ้นลงได้ non-dihydropyridine ccb (diltiazem, verapamil) ลด afterload ได้จริง แต่กด contractility (negative inotropy) จึงทำให้ hfref แย่ลง: aha 2022 ให้ระดับ 3: harm hfimpef แม้ ef จะขึ้นมา >40% แล้ว ก็ยังต้องให้ gdmt ต่อ แม้ไม่มีอาการ เพราะหยุดยาแล้ว relapse ได้บ่อย sglt2i ไม่ใช่ยาที่บล็อก raas/sns โดยตรง แต่ลด cv death/hf hospitalization ใน hfref และลด hf events ใน hfmref/hfpef ด้วย จึงเป็นเสาที่ 4 ทั้งที่ไม่ได้ตัดวงจร neurohormone ขณะ hypoperfusion/cardiogenic shock ระบบ sns กำลังพยุง cardiac output อยู่ จึงห้ามเริ่มหรือเพิ่ม beta-blocker ตอนนั้น ถึงจะเป็นยาที่ลดตายในระยะยาวก็ตาม hfpef มี ventricle แข็ง (edpvr ชัน) จึงพึ่ง preload: ถ้าขับน้ำมากเกินไป sv จะตกง่ายกว่าที่ starling curve แบน ๆ ทำนาย → hypotension/aki"
+    }
+  ]
+}
