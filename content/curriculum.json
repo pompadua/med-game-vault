@@ -1,0 +1,25 @@
+{
+  "currentRotation": "med",
+  "rotations": {
+    "med": [
+      { "topic": "Heart failure", "packId": "cardio-heart-failure" },
+      { "topic": "Acute coronary syndrome" },
+      { "topic": "Atrial fibrillation" },
+      { "topic": "Hypertension" },
+      { "topic": "Acid–base disorders" },
+      { "topic": "Hyponatremia / sodium disorders" },
+      { "topic": "Hyperkalemia / potassium disorders" },
+      { "topic": "Acute kidney injury" },
+      { "topic": "Chronic kidney disease" },
+      { "topic": "Diabetes mellitus and DKA/HHS" },
+      { "topic": "Thyroid disorders" },
+      { "topic": "Anemia" },
+      { "topic": "Pneumonia" },
+      { "topic": "Asthma / COPD" },
+      { "topic": "Sepsis" },
+      { "topic": "Cirrhosis and complications" },
+      { "topic": "Upper GI bleeding" },
+      { "topic": "Stroke" }
+    ]
+  }
+}

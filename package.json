@@ -16,7 +16,11 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "clean": "tsx scripts/clean.ts"
+    "clean": "tsx scripts/clean.ts",
+    "check": "npm run validate && npm test && npm run build",
+    "pack:new": "tsx scripts/new-pack.ts",
+    "vault:report": "tsx scripts/vault-report.ts",
+    "debrief:summary": "tsx scripts/debrief-summary.ts"
   },
   "dependencies": {
     "dexie": "^4.4.6",
