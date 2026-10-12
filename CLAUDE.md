@@ -74,4 +74,5 @@ tests/                     Vitest (+ fixtures/demo-all-modes.json = pack ทุ�
 ## สถานะ (2026-10-12)
 - Phase 1–5 เสร็จ (คลัง, ระบบทวน, เกม 8 โหมด, Claude Code commands, stats/PWA/deploy script)
 - pack: `cardio-heart-failure` (draft) — แนวทางไทย HFCT ยังเปิด full text ไม่ได้ (jmatonline ปฏิเสธการเชื่อมต่อ) จึงยังไม่มี variant TH → ควร `/audit-pack cardio-heart-failure`
-- ยังไม่มี git remote / ยังไม่ deploy (รอผู้ใช้สร้าง repo บน GitHub และอนุญาต)
+- remote: `origin` = https://github.com/pompadua/med-game-vault (public) · เว็บ: https://pompadua.github.io/med-game-vault/ (GitHub Pages จาก branch `gh-pages`)
+- deploy ใหม่หลังแก้: `npm run deploy -- --yes` (ถามผู้ใช้ก่อนทุกครั้ง) · push `main` ก็ต้องถามก่อนเช่นกัน
