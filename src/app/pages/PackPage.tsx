@@ -2,10 +2,11 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { extractItems } from '../../core/items/extract';
 import { ITEM_TYPE_LABEL, type ItemType } from '../../core/items/types';
 import { GAME_MODES, type GameMode, type Pack } from '../../core/schema/pack';
+import { computeProgress } from '../../core/srs/progress';
 import { Badge, formatDate, RuleOfThumb, StatusBadge, Toggle } from '../components/ui';
 import { findEntry, rotationLabel, subjectLabel } from '../data/vault';
 import { db, setPackEnabled } from '../db';
-import { usePack } from '../hooks';
+import { usePack, useReviewData } from '../hooks';
 import { href } from '../router';
 
 const TABS = [
@@ -404,31 +405,54 @@ function RefsTab({ pack }: { pack: Pack }) {
 }
 
 function ProgressTab({ pack }: { pack: Pack }) {
+  const data = useReviewData();
   const items = extractItems(pack).filter((i) => !i.retired);
-  const counts = new Map<ItemType, number>();
-  for (const it of items) counts.set(it.type, (counts.get(it.type) ?? 0) + 1);
+  if (!data) return <p className="muted">กำลังโหลด…</p>;
+  const now = new Date();
+  const logs = data.logs.filter((l) => l.packId === pack.meta.id);
+  const overall = computeProgress(items, data.states, logs, now);
+  const byType = new Map<ItemType, typeof items>();
+  for (const it of items) byType.set(it.type, [...(byType.get(it.type) ?? []), it]);
+  const pct = (v: number | undefined) => (v === undefined ? '—' : `${Math.round(v * 100)}%`);
   return (
     <section className="panel">
       <h2>Review items ({items.length})</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>ชนิด</th>
-            <th>จำนวน</th>
-            <th>ใหม่</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[...counts.entries()].map(([t, n]) => (
-            <tr key={t}>
-              <td>{ITEM_TYPE_LABEL[t]}</td>
-              <td>{n}</td>
-              <td>{n}</td>
+      <p className="small">
+        ใหม่ {overall.newCount} · กำลังเรียน {overall.learning} · ทวน {overall.review} · ครบกำหนด {overall.due} · พักไว้ {overall.suspended} · leech {overall.leeches}
+      </p>
+      <p className="small">
+        retention จริง {pct(overall.retention)} (n={overall.retentionN}) · ความแม่น {pct(overall.accuracy)} · ทวนล่าสุด {formatDate(overall.lastReviewedAt)}
+      </p>
+      <div className="table-wrap">
+        <table className="table">
+          <thead>
+            <tr>
+              <th>ชนิด</th>
+              <th>ทั้งหมด</th>
+              <th>ใหม่</th>
+              <th>เรียน</th>
+              <th>ทวน</th>
+              <th>แม่น</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className="hint">สถิติการทวน (กำลังเรียน / ทวน / retention / ทวนล่าสุด) จะมาพร้อมระบบทวนใน Phase 2</p>
+          </thead>
+          <tbody>
+            {[...byType.entries()].map(([t, list]) => {
+              const ids = new Set(list.map((i) => i.id));
+              const p = computeProgress(list, data.states, logs.filter((l) => ids.has(l.itemId)), now);
+              return (
+                <tr key={t}>
+                  <td>{ITEM_TYPE_LABEL[t]}</td>
+                  <td>{p.total}</td>
+                  <td>{p.newCount}</td>
+                  <td>{p.learning}</td>
+                  <td>{p.review}</td>
+                  <td>{pct(p.accuracy)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }

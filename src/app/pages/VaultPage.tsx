@@ -1,9 +1,11 @@
+import { useMemo } from 'react';
 import { ITEM_TYPE_LABEL, type ItemType } from '../../core/items/types';
-import { filterPacks, type VaultFilters } from '../../core/vaultFilter';
+import { computeProgress, type Progress } from '../../core/srs/progress';
+import { filterPacks, type PackRuntimeStats, type VaultFilters } from '../../core/vaultFilter';
 import type { PackIndexEntry } from '../../core/vaultIndex';
 import { Badge, formatDate, StatusBadge, STATUS_LABEL } from '../components/ui';
 import { rotationLabel, subjectLabel, taxonomy, vaultIndex } from '../data/vault';
-import { usePackPrefs } from '../hooks';
+import { useItems, usePackPrefs, useReviewData } from '../hooks';
 import { href, navigate } from '../router';
 
 function readFilters(q: URLSearchParams): VaultFilters {
@@ -15,15 +17,42 @@ function readFilters(q: URLSearchParams): VaultFilters {
     tag: q.get('tag') ?? undefined,
     status: q.get('status') ?? undefined,
     review: review === 'on' || review === 'off' ? review : undefined,
+    due: q.get('due') === '1' || undefined,
   };
+}
+
+/** ความคืบหน้าราย pack จาก IndexedDB */
+export function usePackProgress(): Map<string, Progress> | undefined {
+  const data = useReviewData();
+  const all = useItems();
+  return useMemo(() => {
+    if (!data || !all) return undefined;
+    const now = new Date();
+    const out = new Map<string, Progress>();
+    for (const entry of vaultIndex.packs) {
+      const items = all.items.filter((i) => i.packId === entry.id);
+      const logs = data.logs.filter((l) => l.packId === entry.id);
+      out.set(entry.id, computeProgress(items, data.states, logs, now));
+    }
+    return out;
+  }, [data, all]);
 }
 
 export function VaultPage({ query }: { query: URLSearchParams }) {
   const filters = readFilters(query);
+  const weak = query.get('weak') === '1';
   const prefs = usePackPrefs();
-  const packs = filterPacks(vaultIndex.packs, filters, prefs);
+  const data = useReviewData();
+  const progress = usePackProgress();
 
-  const update = (patch: Partial<Record<keyof VaultFilters, string | undefined>>) => {
+  const stats = useMemo(() => {
+    const m = new Map<string, PackRuntimeStats>();
+    for (const [id, p] of progress ?? []) m.set(id, { dueCount: p.due, accuracy: p.accuracy });
+    return m;
+  }, [progress]);
+  const packs = filterPacks(vaultIndex.packs, { ...filters, weakBelow: weak && data ? data.settings.weakThreshold : undefined }, prefs, stats);
+
+  const update = (patch: Record<string, string | undefined>) => {
     const next: Record<string, string | undefined> = {};
     for (const [k, v] of query.entries()) next[k] = v;
     Object.assign(next, patch);
@@ -33,7 +62,7 @@ export function VaultPage({ query }: { query: URLSearchParams }) {
   const usedSubjects = [...new Set(vaultIndex.packs.map((p) => p.subject))];
   const usedRotations = [...new Set(vaultIndex.packs.map((p) => p.rotation))];
   const usedTags = [...new Set(vaultIndex.packs.flatMap((p) => p.tags))].sort();
-  const anyFilter = Object.values(filters).some(Boolean);
+  const anyFilter = [...query.keys()].length > 0;
 
   return (
     <div className="page">
@@ -95,18 +124,24 @@ export function VaultPage({ query }: { query: URLSearchParams }) {
           <option value="off">พักไว้</option>
         </select>
       </div>
-      <p className="hint">ตัวกรอง “มี item ครบกำหนด” และ “จุดอ่อน” จะใช้ได้เมื่อระบบทวนพร้อม (Phase 2)</p>
-
-      {anyFilter && (
-        <button type="button" className="link-button" onClick={() => navigate('/vault', {}, true)}>
-          ล้างตัวกรอง
+      <div className="chips">
+        <button type="button" className={filters.due ? 'chip active' : 'chip'} aria-pressed={!!filters.due} onClick={() => update({ due: filters.due ? undefined : '1' })}>
+          มี item ครบกำหนด
         </button>
-      )}
+        <button type="button" className={weak ? 'chip active' : 'chip'} aria-pressed={weak} onClick={() => update({ weak: weak ? undefined : '1' })}>
+          จุดอ่อน (แม่น &lt; {Math.round((data?.settings.weakThreshold ?? 0.8) * 100)}%)
+        </button>
+        {anyFilter && (
+          <button type="button" className="link-button" onClick={() => navigate('/vault', {}, true)}>
+            ล้างตัวกรอง
+          </button>
+        )}
+      </div>
 
       <ul className="pack-list">
         {packs.map((p) => (
           <li key={p.id}>
-            <PackCard entry={p} enabled={prefs.get(p.id) ?? false} />
+            <PackCard entry={p} enabled={prefs.get(p.id) ?? false} progress={progress?.get(p.id)} />
           </li>
         ))}
       </ul>
@@ -115,12 +150,16 @@ export function VaultPage({ query }: { query: URLSearchParams }) {
   );
 }
 
-function PackCard({ entry, enabled }: { entry: PackIndexEntry; enabled: boolean }) {
+const pct = (v: number | undefined) => (v === undefined ? '—' : `${Math.round(v * 100)}%`);
+
+function PackCard({ entry, enabled, progress: p }: { entry: PackIndexEntry; enabled: boolean; progress: Progress | undefined }) {
   const top = (Object.entries(entry.countsByType) as [ItemType, number][])
     .sort((a, b) => b[1] - a[1])
     .slice(0, 4)
     .map(([t, n]) => `${ITEM_TYPE_LABEL[t]} ${n}`)
     .join(' · ');
+  const total = p?.total || entry.itemCount;
+  const seg = (n: number) => `${(100 * n) / Math.max(1, total)}%`;
   return (
     <a className="pack-card" href={href(`/pack/${entry.id}`)}>
       <div className="pack-card-head">
@@ -131,21 +170,27 @@ function PackCard({ entry, enabled }: { entry: PackIndexEntry; enabled: boolean 
         <Badge tone="accent">{subjectLabel(entry.subject)}</Badge>
         <Badge tone="muted">{rotationLabel(entry.rotation)}</Badge>
         <Badge tone={enabled ? 'accent' : 'muted'}>{enabled ? 'เปิดทวน' : 'พักไว้'}</Badge>
+        {p && p.due > 0 && <Badge tone="warn">ครบกำหนด {p.due}</Badge>}
+        {p && p.leeches > 0 && <Badge tone="warn">leech {p.leeches}</Badge>}
+      </div>
+      <div className="progress-bar" aria-hidden="true">
+        <span className="seg-review" style={{ width: seg(p?.review ?? 0) }} />
+        <span className="seg-learning" style={{ width: seg(p?.learning ?? 0) }} />
       </div>
       <div className="progress-row" aria-label="ความคืบหน้า">
         <span>
-          <strong>{entry.itemCount}</strong> ใหม่
+          <strong>{p?.newCount ?? entry.itemCount}</strong> ใหม่
         </span>
         <span>
-          <strong>0</strong> กำลังเรียน
+          <strong>{p?.learning ?? 0}</strong> กำลังเรียน
         </span>
         <span>
-          <strong>0</strong> ทวน
+          <strong>{p?.review ?? 0}</strong> ทวน
         </span>
       </div>
       <p className="muted small">{top}</p>
       <p className="muted small">
-        ทวนล่าสุด — · retention — · verified {formatDate(entry.verifiedAt)}
+        ทวนล่าสุด {formatDate(p?.lastReviewedAt)} · retention {pct(p?.retention)} · แม่น {pct(p?.accuracy)} · verified {formatDate(entry.verifiedAt)}
       </p>
     </a>
   );
