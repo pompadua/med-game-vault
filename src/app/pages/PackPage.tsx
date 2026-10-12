@@ -296,9 +296,15 @@ function gamePreview(mode: GameMode, g: Record<string, unknown>): string {
 
 function GamesTab({ pack }: { pack: Pack }) {
   const modes = GAME_MODES.filter((m) => (pack.games[m]?.length ?? 0) > 0);
+  const items = extractItems(pack);
+  const itemsFor = (m: GameMode, id: string) =>
+    items.filter((i) => !i.retired && (m === 'matchups' ? i.type === 'matchup' && i.elementId.startsWith(`${id}.`) : i.elementId === id && i.kind === 'puzzle'));
   return (
     <div className="stack">
-      <p className="hint">โหมดเล่นจริง (ตอบก่อนเห็นเฉลย + post-game analysis) จะเปิดใน Phase 3 — หน้านี้จึงแสดงแค่โจทย์ ไม่แสดงเฉลย</p>
+      <p className="hint">กด “เล่น” เพื่อฝึกข้อนั้นนอกตาราง (ไม่กระทบ FSRS) — ต้องตอบก่อนจึงเห็นเฉลยและ post-game analysis</p>
+      <a className="button-link" href={href('/play', { mode: 'practice', packs: pack.meta.id, types: 'puzzle', n: '50' })}>
+        เล่นทุกเกมของ pack นี้
+      </a>
       {modes.map((m) => (
         <section key={m} className="panel">
           <h2>{MODE_LABEL[m]}</h2>
@@ -313,6 +319,13 @@ function GamesTab({ pack }: { pack: Pack }) {
                   </span>{' '}
                   <span className="clamp">{gamePreview(m, g as unknown as Record<string, unknown>)}</span>
                   <span className="muted small"> · {g.targetSeconds} วิ</span>
+                  <div className="play-links">
+                    {itemsFor(m, g.id).map((it) => (
+                      <a key={it.id} className="chip" href={href('/play', { item: it.id })}>
+                        ▶ {m === 'matchups' ? (it.context?.split(' · ').pop() ?? 'เล่น') : 'เล่น'}
+                      </a>
+                    ))}
+                  </div>
                 </li>
               ))}
           </ol>

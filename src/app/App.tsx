@@ -1,5 +1,7 @@
 import { HomePage } from './pages/HomePage';
 import { PackPage } from './pages/PackPage';
+import { PlayPage } from './pages/PlayPage';
+import { PracticePage } from './pages/PracticePage';
 import { ReviewPage } from './pages/ReviewPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { StatsPage } from './pages/StatsPage';
@@ -21,6 +23,8 @@ export function App() {
   if (section === 'vault') page = <VaultPage query={route.query} />;
   else if (section === 'pack' && param) page = <PackPage packId={param} tab={route.query.get('tab') ?? undefined} />;
   else if (section === 'review') page = <ReviewPage query={route.query} />;
+  else if (section === 'play') page = <PlayPage key={route.query.toString()} query={route.query} />;
+  else if (section === 'practice') page = <PracticePage />;
   else if (section === 'stats') page = <StatsPage />;
   else if (section === 'settings') page = <SettingsPage />;
   else page = <HomePage />;

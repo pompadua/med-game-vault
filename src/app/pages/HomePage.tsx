@@ -111,6 +111,10 @@ export function HomePage() {
           <strong>คลัง</strong>
           <span className="muted small">{vaultIndex.packs.length} pack</span>
         </a>
+        <a className="shortcut" href={href('/practice')}>
+          <strong>ฝึก / Boss</strong>
+          <span className="muted small">นอกตาราง</span>
+        </a>
         <a className="shortcut" href={href('/stats')}>
           <strong>สถิติ</strong>
           <span className="muted small">retention, forecast</span>

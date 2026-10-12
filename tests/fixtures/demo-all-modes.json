@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "id": "demo-all-modes",
+    "title": "DEMO: ทุกโหมดเกม (HF) — fixture สำหรับ test และหน้าทดลองเล่น",
+    "subject": "cardio",
+    "rotation": "med",
+    "tags": ["heart-failure"],
+    "status": "draft",
+    "schemaVersion": 1,
+    "createdAt": "2026-10-12",
+    "verifiedAt": null,
+    "sources": [
+      {
+        "id": "universal-def-2021",
+        "title": "Bozkurt B, et al. Universal Definition and Classification of Heart Failure. J Card Fail 2021;27(4):387-413",
+        "url": "https://doi.org/10.1016/j.cardfail.2021.01.022",
+        "type": "guideline",
+        "accessedAt": "2026-10-12"
+      },
+      {
+        "id": "aha-2022",
+        "title": "Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145(18):e895-e1032",
+        "url": "https://doi.org/10.1161/CIR.0000000000001063",
+        "type": "guideline",
+        "accessedAt": "2026-10-12"
+      },
+      {
+        "id": "esc-2021",
+        "title": "McDonagh TA, et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J 2021;42(36):3599-3726",
+        "url": "https://doi.org/10.1093/eurheartj/ehab368",
+        "type": "guideline",
+        "accessedAt": "2026-10-12"
+      },
+      {
+        "id": "entresto-label",
+        "title": "ENTRESTO (sacubitril and valsartan) prescribing information — DailyMed",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+        "type": "other",
+        "accessedAt": "2026-10-12"
+      }
+    ]
+  },
+  "rulebook": {
+    "board": "LV ปั๊มเลือด ไตคุมปริมาตรผ่าน RAAS",
+    "pieces": [{ "id": "lv", "name": "Left ventricle", "role": "ปั๊มหลัก วัดด้วย LVEF" }],
+    "coreRules": [
+      {
+        "id": "ef-sorting",
+        "rule": "LVEF ปัจจุบันและประวัติ EF กำหนด phenotype: ≤40% HFrEF, 41–49% HFmrEF, ≥50% HFpEF, เคย ≤40% แล้ว >40% = HFimpEF",
+        "generates": ["phenotype กำหนดชุดยา"],
+        "sourceIds": ["universal-def-2021"]
+      },
+      {
+        "id": "neurohormonal-loop",
+        "rule": "CO ลด → RAAS + SNS ทำงาน → เก็บน้ำ/หดหลอดเลือด → remodeling วนลูป",
+        "generates": ["ยาที่ตัดลูปลดตายใน HFrEF"],
+        "sourceIds": ["aha-2022"]
+      }
+    ],
+    "winConditions": ["euvolemia + GDMT ครบ"],
+    "loseConditions": ["cardiogenic shock"],
+    "errata": [
+      {
+        "id": "non-dhp-ccb-harm",
+        "text": "Non-DHP CCB กด contractility จึงเป็นอันตรายใน HFrEF (3: Harm)",
+        "breaksRule": "neurohormonal-loop",
+        "sourceIds": ["aha-2022"]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "hfref",
+      "name": "HFrEF",
+      "who": "ischemic cardiomyopathy",
+      "trigger": { "ruleId": "neurohormonal-loop", "text": "LV บีบตัวลด" },
+      "signature": "อาการ HF + LVEF ≤40%",
+      "lookAlikes": ["hfimpef"],
+      "tells": [{ "vs": "hfimpef", "feature": "EF ตอนนี้ยัง ≤40%" }],
+      "counter": "GDMT 4 เสา",
+      "danger": "sudden cardiac death",
+      "memorize": [{ "id": "ef-hfref", "prompt": "HFrEF cutoff?", "fact": "LVEF ≤40%", "sourceId": "universal-def-2021" }],
+      "sourceIds": ["universal-def-2021"]
+    },
+    {
+      "id": "hfimpef",
+      "name": "HFimpEF",
+      "who": "HFrEF ที่ EF ดีขึ้นหลัง GDMT",
+      "trigger": { "ruleId": "ef-sorting", "text": "EF ดีขึ้นจากการรักษา" },
+      "signature": "เคย LVEF ≤40% แล้ววัดซ้ำได้ >40%",
+      "lookAlikes": ["hfref"],
+      "tells": [{ "vs": "hfref", "feature": "EF ตอนนี้ >40% แล้ว" }],
+      "counter": "ให้ GDMT ต่อ",
+      "danger": "relapse ถ้าหยุดยา",
+      "memorize": [],
+      "sourceIds": ["universal-def-2021"]
+    }
+  ],
+  "exploits": [],
+  "distractorPatterns": [],
+  "trapPairs": [{ "id": "ref-vs-impef", "a": "hfref", "b": "hfimpef", "decider": "EF ปัจจุบัน ≤40% หรือ >40%" }],
+  "games": {
+    "deduction": [
+      {
+        "id": "ded-new-dyspnea",
+        "targetSeconds": 300,
+        "difficulty": 1,
+        "basedOn": { "rules": ["ef-sorting"] },
+        "hint": "สุดท้ายต้องรู้ EF ถึงจะเลือกชุดยาได้",
+        "title": "เหนื่อยมากขึ้น 3 สัปดาห์",
+        "chiefComplaint": "ชาย 66 ปี เหนื่อยมากขึ้นเรื่อย ๆ 3 สัปดาห์ และขาบวม",
+        "vitals": "BP 132/80, HR 96, RR 22, SpO2 94% room air",
+        "budget": 12,
+        "clues": [
+          { "id": "orthopnea", "kind": "history", "cost": 1, "label": "ถามเรื่อง orthopnea / PND", "reveals": "นอนราบแล้วเหนื่อย ต้องหนุนหมอน 3 ใบ", "strength": "moderate", "why": "ชี้ไปทาง pulmonary congestion" },
+          { "id": "prior-mi", "kind": "history", "cost": 1, "label": "ประวัติโรคหัวใจเดิม", "reveals": "เคยเป็น MI เมื่อ 3 ปีก่อน", "strength": "moderate", "why": "ischemic cardiomyopathy เป็นสาเหตุของ HFrEF ที่พบบ่อย" },
+          { "id": "smoking", "kind": "history", "cost": 1, "label": "ประวัติสูบบุหรี่", "reveals": "เคยสูบ หยุดแล้ว 5 ปี", "strength": "weak", "why": "ทำให้นึกถึง COPD แต่ไม่ได้ช่วยตัด HF ออก" },
+          { "id": "jvp", "kind": "pe", "cost": 2, "label": "ดู JVP", "reveals": "JVP สูง, hepatojugular reflux บวก", "strength": "strong", "why": "บ่งว่า right-sided filling pressure สูง สนับสนุน congestion" },
+          { "id": "lung", "kind": "pe", "cost": 2, "label": "ฟังปอด", "reveals": "fine crackles ที่ฐานปอดสองข้าง ไม่มี wheeze", "strength": "moderate", "why": "สนับสนุน pulmonary congestion มากกว่า bronchospasm" },
+          { "id": "ntprobnp", "kind": "lab", "cost": 4, "label": "NT-proBNP", "reveals": "สูงกว่าเกณฑ์ชัดเจน", "strength": "strong", "why": "ค่าต่ำ (<125 pg/mL ในบริบท non-acute) ทำให้ HF ไม่น่าเป็น ส่วนค่าสูงต้องยืนยันด้วย echo" },
+          { "id": "echo", "kind": "imaging", "cost": 5, "label": "Echocardiogram", "reveals": "LVEF 30%, LV dilated, regional wall motion abnormality", "strength": "strong", "why": "ยืนยัน HFrEF (LVEF ≤40%) และบอกว่าน่าจะ ischemic — clue ที่เลือกชุดยาได้" },
+          { "id": "cxr", "kind": "imaging", "cost": 5, "label": "Chest X-ray", "reveals": "cardiomegaly + pulmonary vascular congestion", "strength": "moderate", "why": "สนับสนุน HF แต่ไม่บอก EF จึงเลือกชุดยาไม่ได้" }
+        ],
+        "diagnosisOptions": [
+          { "id": "hfref", "label": "HFrEF (ischemic cardiomyopathy)" },
+          { "id": "hfpef", "label": "HFpEF" },
+          { "id": "copd", "label": "COPD exacerbation" }
+        ],
+        "nextStepOptions": [
+          { "id": "gdmt", "label": "Loop diuretic สำหรับ congestion + เริ่ม GDMT ของ HFrEF" },
+          { "id": "diltiazem", "label": "เริ่ม diltiazem คุม heart rate" },
+          { "id": "abx-steroid", "label": "Antibiotic + systemic steroid แบบ COPD exacerbation" }
+        ],
+        "answer": { "diagnosis": "hfref", "nextStep": "gdmt" },
+        "optimalLine": ["orthopnea", "prior-mi", "jvp", "echo"],
+        "explanation": "อาการ congestion + JVP สูง บอกว่าเป็น HF แต่ต้องรู้ EF จาก echo จึงจะเลือกชุดยาได้ NT-proBNP กับ CXR ช่วยสนับสนุนแต่ไม่จำเป็นเมื่อจะทำ echo อยู่แล้ว"
+      }
+    ],
+    "guessWho": [
+      {
+        "id": "gw-phenotype",
+        "targetSeconds": 120,
+        "difficulty": 2,
+        "basedOn": { "rules": ["ef-sorting"], "trapPairs": ["ref-vs-impef"] },
+        "title": "แยก HF phenotype ด้วยคำถามให้น้อยที่สุด",
+        "candidates": [
+          { "id": "ref", "label": "HFrEF", "cardId": "hfref" },
+          { "id": "mref", "label": "HFmrEF" },
+          { "id": "pef", "label": "HFpEF" },
+          { "id": "impef", "label": "HFimpEF", "cardId": "hfimpef" }
+        ],
+        "questions": [
+          { "id": "now-le-40", "text": "EF ตอนนี้ ≤40%?", "yes": ["ref"] },
+          { "id": "ever-le-40", "text": "เคยมี EF ≤40% (รวมตอนนี้)?", "yes": ["ref", "impef"] },
+          { "id": "now-ge-50", "text": "EF ตอนนี้ ≥50%?", "yes": ["pef"] }
+        ],
+        "optimalTree": {
+          "question": "ever-le-40",
+          "yes": { "question": "now-le-40", "yes": { "leaf": "ref" }, "no": { "leaf": "impef" } },
+          "no": { "question": "now-ge-50", "yes": { "leaf": "pef" }, "no": { "leaf": "mref" } }
+        },
+        "explanation": "ถามประวัติ EF ≤40% ก่อน แยกเป็นกลุ่ม (HFrEF, HFimpEF) กับ (HFmrEF, HFpEF) แล้วแต่ละกลุ่มใช้ EF ปัจจุบันอีกคำถามเดียว = 2 ชั้น"
+      }
+    ],
+    "engine": [
+      {
+        "id": "eng-demo-afterload",
+        "targetSeconds": 120,
+        "difficulty": 1,
+        "basedOn": { "rules": ["neurohormonal-loop"] },
+        "perturbation": "HFrEF ได้ arterial vasodilator จน SVR ลดลง",
+        "equation": "MAP = CO × SVR",
+        "cells": [
+          { "id": "svr", "variable": "SVR", "answer": "down", "why": "ฤทธิ์ยาโดยตรง" },
+          { "id": "sv", "variable": "Stroke volume", "answer": "up", "why": "LV ที่อ่อนแรงไวต่อ afterload" },
+          { "id": "map", "variable": "MAP", "answer": "same", "why": "CO ขึ้นและ SVR ลง หักล้างกันบางส่วน (rule of thumb)", "counterIntuitive": true }
+        ]
+      }
+    ],
+    "legality": [
+      {
+        "id": "leg-demo",
+        "targetSeconds": 40,
+        "difficulty": 1,
+        "basedOn": { "rules": ["ef-sorting"] },
+        "case": "LVEF 45% ครั้งแรก ไม่เคยตรวจ echo มาก่อน มีอาการเหนื่อย",
+        "question": "phenotype?",
+        "options": [
+          { "id": "hfref", "label": "HFrEF" },
+          { "id": "hfmref", "label": "HFmrEF" },
+          { "id": "hfpef", "label": "HFpEF" }
+        ],
+        "answer": "hfmref",
+        "ruleIds": ["ef-sorting"],
+        "why": "41–49% และไม่มีประวัติ ≤40% = HFmrEF"
+      }
+    ],
+    "campaign": [
+      {
+        "id": "camp-new-hfref",
+        "targetSeconds": 240,
+        "difficulty": 2,
+        "basedOn": { "rules": ["neurohormonal-loop"], "errata": ["non-dhp-ccb-harm"] },
+        "title": "HFrEF รายใหม่: จากวินิจฉัยถึง ARNI",
+        "guidelineSourceId": "aha-2022",
+        "intro": "ชาย 60 ปี เพิ่งวินิจฉัย HFrEF (LVEF 30%) จาก ischemic cardiomyopathy",
+        "startTurn": "t-start",
+        "turns": [
+          {
+            "id": "t-start",
+            "state": "NYHA II, BP 128/76, HR 88 sinus, K 4.3, eGFR 65, ขาบวมเล็กน้อย",
+            "choices": [
+              { "id": "c-gdmt", "label": "Loop diuretic สำหรับ congestion + เริ่ม GDMT", "next": "t-switch", "quality": "best", "feedback": "diuretic แก้ congestion ส่วน GDMT ลดตายและลดการนอนโรงพยาบาล" },
+              { "id": "c-furo-only", "label": "ให้ furosemide อย่างเดียว แล้วนัดอีก 6 เดือน", "next": "t-switch", "quality": "ok", "feedback": "ลดอาการได้ แต่ไม่ได้ตัดวงจร neurohormone ควรเริ่ม GDMT ตั้งแต่ตอนนี้" },
+              { "id": "c-diltiazem", "label": "เริ่ม diltiazem เพื่อลด heart rate", "next": "t-worse", "quality": "harmful", "feedback": "Non-DHP CCB = 3: Harm ใน HFrEF เพราะกด contractility" }
+            ]
+          },
+          {
+            "id": "t-worse",
+            "state": "2 สัปดาห์ต่อมา เหนื่อยมากขึ้นและขาบวมมากขึ้น",
+            "choices": [
+              { "id": "c-stop-dilt", "label": "หยุด diltiazem แล้วเริ่ม diuretic + GDMT", "next": "t-switch", "quality": "best", "feedback": "แก้ไขถูกต้อง: เอายาที่เป็นอันตรายออกแล้วเริ่มยาที่ลดตาย" },
+              { "id": "c-more-dilt", "label": "เพิ่มขนาด diltiazem", "next": "t-worse", "quality": "harmful", "feedback": "ยิ่งกด contractility อาการจะแย่ลงอีก" }
+            ]
+          },
+          {
+            "id": "t-switch",
+            "state": "ได้ enalapril + beta-blocker + MRA + SGLT2i แล้ว ยัง NYHA II แพทย์อยากเปลี่ยน enalapril เป็น ARNI",
+            "choices": [
+              { "id": "c-washout", "label": "หยุด enalapril รอ 36 ชั่วโมง แล้วเริ่ม sacubitril/valsartan", "next": null, "quality": "best", "feedback": "ถูกต้องตามฉลากยา: ห้ามให้ ARNI ภายใน 36 ชม.หลัง ACEi" },
+              { "id": "c-overlap", "label": "เริ่ม sacubitril/valsartan วันเดียวกับ enalapril มื้อสุดท้าย", "next": "t-angio", "quality": "harmful", "feedback": "ACEi + neprilysin inhibitor ทับกัน เพิ่มความเสี่ยง angioedema" }
+            ]
+          },
+          {
+            "id": "t-angio",
+            "state": "วันถัดมา ผู้ป่วยมีริมฝีปากและลิ้นบวม",
+            "choices": [
+              { "id": "c-stop-all", "label": "หยุดยาที่เป็นสาเหตุทันที และประเมิน/ดูแลทางเดินหายใจ", "next": null, "quality": "best", "feedback": "angioedema ต้องหยุดยาและดูแล airway ก่อน และผู้ป่วยจะใช้ ARNI ไม่ได้อีก" },
+              { "id": "c-continue", "label": "ให้ยาต่อแล้วนัดดูอาการ", "next": "t-angio", "quality": "harmful", "feedback": "อันตรายต่อทางเดินหายใจ" }
+            ]
+          }
+        ],
+        "guidelineSequence": [
+          "ยืนยัน HFrEF ด้วย echo (LVEF ≤40%)",
+          "Loop diuretic เมื่อมี congestion",
+          "เริ่ม GDMT 4 เสา (RASi/ARNI, beta-blocker, MRA, SGLT2i)",
+          "เปลี่ยน ACEi เป็น ARNI โดยเว้น 36 ชั่วโมง",
+          "เลี่ยงยาที่ทำให้ HF แย่ลง เช่น non-DHP CCB"
+        ]
+      }
+    ],
+    "matchups": [
+      {
+        "id": "mu-demo",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["neurohormonal-loop"] },
+        "title": "ยา × สถานการณ์ (demo)",
+        "conditions": [
+          { "id": "stable", "label": "HFrEF NYHA II, K 4.5, eGFR 60" },
+          { "id": "angioedema-hx", "label": "เคย angioedema จาก ACEi" }
+        ],
+        "rows": [
+          {
+            "id": "arni",
+            "drug": "Sacubitril/valsartan",
+            "cells": [
+              { "condition": "stable", "verdict": "legal", "why": "RASi ตัวแรกที่แนะนำ", "sourceId": "aha-2022" },
+              { "condition": "angioedema-hx", "verdict": "illegal", "why": "ข้อห้ามตามฉลากยา", "sourceId": "entresto-label" }
+            ]
+          }
+        ]
+      }
+    ],
+    "speedrun": [
+      { "id": "sr-ef-hfref", "targetSeconds": 10, "difficulty": 1, "basedOn": {}, "prompt": "HFrEF: LVEF cutoff?", "answer": "≤40%", "sourceId": "universal-def-2021" },
+      { "id": "sr-arni-washout", "targetSeconds": 10, "difficulty": 1, "basedOn": {}, "prompt": "ACEi → ARNI เว้นกี่ชั่วโมง?", "answer": "36 ชั่วโมง", "sourceId": "entresto-label" }
+    ],
+    "mcq": [
+      {
+        "id": "mcq-demo",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["neurohormonal-loop"] },
+        "stem": "A 62-year-old man with HFrEF (LVEF 30%) takes sacubitril/valsartan, carvedilol, and spironolactone. Which addition most likely reduces cardiovascular death or HF hospitalization?",
+        "options": [
+          { "key": "A", "text": "Higher-dose furosemide", "why": "Relieves congestion; not a GDMT pillar." },
+          { "key": "B", "text": "Digoxin", "why": "No mortality benefit." },
+          { "key": "C", "text": "Dapagliflozin" },
+          { "key": "D", "text": "Amlodipine", "why": "Neutral in HFrEF." },
+          { "key": "E", "text": "Diltiazem", "why": "Harmful in HFrEF." }
+        ],
+        "answer": "C",
+        "tell": "Three of four pillars present — the missing one is the answer.",
+        "explanation": "SGLT2i คือเสาที่ 4 ที่ยังขาด"
+      }
+    ]
+  }
+}

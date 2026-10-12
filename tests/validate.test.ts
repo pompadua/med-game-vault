@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { validatePack } from '../src/core/validate';
-import { samplePack, taxonomy } from './helpers';
+import { readJsonFile, samplePack, taxonomy } from './helpers';
 
 const ctx = { taxonomy, expectedId: 'cardio-heart-failure', expectedSubject: 'cardio' };
 
@@ -120,6 +120,13 @@ describe('validatePack', () => {
     const p = samplePack();
     p.meta.schemaVersion = 99;
     expect(errorsOf(p)[0]).toContain('ใหม่กว่า');
+  });
+});
+
+describe('fixture ทุกโหมด', () => {
+  it('tests/fixtures/demo-all-modes.json ผ่าน validator (ไม่มี error)', () => {
+    const res = validatePack(readJsonFile('tests/fixtures/demo-all-modes.json'), { taxonomy });
+    expect(res.errors).toEqual([]);
   });
 });
 
