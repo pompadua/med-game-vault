@@ -20,7 +20,9 @@
     "check": "npm run validate && npm test && npm run build",
     "pack:new": "tsx scripts/new-pack.ts",
     "vault:report": "tsx scripts/vault-report.ts",
-    "debrief:summary": "tsx scripts/debrief-summary.ts"
+    "debrief:summary": "tsx scripts/debrief-summary.ts",
+    "icons": "tsx scripts/gen-icons.ts",
+    "deploy": "tsx scripts/deploy.ts"
   },
   "dependencies": {
     "dexie": "^4.4.6",
@@ -39,6 +41,7 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
     "vitest": "^5.0.3"
   }
 }
