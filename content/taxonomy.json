@@ -57,6 +57,10 @@
     { "id": "acid-base" },
     { "id": "electrolytes", "aliases": ["lytes"] },
     { "id": "emergency" },
-    { "id": "nle", "aliases": ["NL", "national license exam", "สอบใบประกอบ"] }
+    { "id": "nle", "aliases": ["NL", "national license exam", "สอบใบประกอบ"] },
+    { "id": "anatomy", "aliases": ["gross anatomy", "surface anatomy", "กายวิภาค"] },
+    { "id": "embryology", "aliases": ["embryo", "development", "คัพภวิทยา"] },
+    { "id": "valvular-heart-disease", "aliases": ["VHD", "valve disease", "murmur", "โรคลิ้นหัวใจ"] },
+    { "id": "congenital-heart-disease", "aliases": ["CHD", "congenital heart defect", "โรคหัวใจพิการแต่กำเนิด"] }
   ]
 }

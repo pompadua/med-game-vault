@@ -20,6 +20,9 @@
       { "topic": "Cirrhosis and complications" },
       { "topic": "Upper GI bleeding" },
       { "topic": "Stroke" }
+    ],
+    "preclinic": [
+      { "topic": "Cardiovascular system basic science (NLE step 1)", "packId": "cardio-cvs-basic-science" }
     ]
   }
 }

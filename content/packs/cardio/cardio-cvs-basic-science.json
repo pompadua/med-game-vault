@@ -1,0 +1,934 @@
+{
+  "meta": {
+    "id": "cardio-cvs-basic-science",
+    "title": "CVS basic science: murmur, shunt, hemodynamics และ ECG (NLE step 1)",
+    "subject": "cardio",
+    "rotation": "preclinic",
+    "tags": ["physiology", "hemodynamics", "ecg", "anatomy", "embryology", "valvular-heart-disease", "congenital-heart-disease", "nle"],
+    "status": "draft",
+    "schemaVersion": 1,
+    "createdAt": "2026-10-15",
+    "verifiedAt": null,
+    "sources": [
+      { "id": "sp-heart-sounds", "title": "Dornbush S, Turnquest AE. Physiology, Heart Sounds. StatPearls (updated 2023-07-17)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK541010/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-cardiac-cycle", "title": "Physiology, Cardiac Cycle. StatPearls (updated 2022-10-03)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK459327/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-fetal-circ", "title": "Physiology, Fetal Circulation. StatPearls (updated 2023-04-26)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK539710/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-coronary", "title": "Anatomy, Thorax, Heart Coronary Arteries (Archived). StatPearls (updated 2023-07-24)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK534790/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-ecg", "title": "Electrocardiogram. StatPearls (updated 2023-06-05)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK549803/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-wide-qrs", "title": "Wide QRS Complex Tachycardia. StatPearls (updated 2026-09-13)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK559054/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-baroreceptors", "title": "Physiology, Baroreceptors. StatPearls (updated 2026-08-07)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK538172/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-sinus-arrhythmia", "title": "Sinus Arrhythmia. StatPearls (updated 2022-11-25)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK537011/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-aortocaval", "title": "Aortocaval Compression Syndrome. StatPearls (updated 2023-08-07)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK430759/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-distributive-shock", "title": "Distributive Shock. StatPearls (updated 2023-07-24)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470316/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-cardiogenic-shock", "title": "Cardiogenic Shock. StatPearls (updated 2023-04-07)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK482255/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-tamponade", "title": "Cardiac Tamponade. StatPearls (updated 2026-04-11)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK431090/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-pericardiocentesis", "title": "Pericardiocentesis. StatPearls (updated 2025-01-19)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470347/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-mediastinum", "title": "Anatomy, Thorax, Mediastinum. StatPearls (updated 2023-07-24)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK539819/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-widened-mediastinum", "title": "Widened Mediastinum. StatPearls (updated 2023-07-24)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK539890/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-rln", "title": "Anatomy, Head and Neck, Larynx Recurrent Laryngeal Nerve. StatPearls (updated 2025-04-06)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470179/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-as", "title": "Pujari SH, Agasthi P. Aortic Stenosis. StatPearls (updated 2023-04-16)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK557628/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-ai", "title": "Aortic Insufficiency. StatPearls (updated 2023-07-04)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK557428/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-ms", "title": "Mitral Stenosis. StatPearls (updated 2026-04-26)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK430742/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-mr", "title": "Mitral Regurgitation. StatPearls (updated 2026-08-17)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK553135/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-mvp", "title": "Mitral Valve Prolapse. StatPearls (updated 2026-06-24)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470288/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-asd", "title": "Atrial Septal Defect. StatPearls (updated 2025-01-21)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK535440/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-vsd", "title": "Ventricular Septal Defect. StatPearls (updated 2024-10-16)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470330/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-pda", "title": "Patent Ductus Arteriosus. StatPearls (updated 2023-08-08)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK430758/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-tof", "title": "Tetralogy of Fallot. StatPearls (updated 2024-12-02)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK513288/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-tga", "title": "Transposition of the Great Arteries. StatPearls (updated 2025-03-16)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK538434/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-coarctation", "title": "Coarctation of the Aorta. StatPearls (updated 2024-12-11)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK430913/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-eisenmenger", "title": "Eisenmenger Syndrome. StatPearls (updated 2023-02-13)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK507800/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-cyanosis", "title": "Cyanosis. StatPearls (updated 2022-10-03)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK559167/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-aaa", "title": "Abdominal Aortic Aneurysm. StatPearls (updated 2025-01-19)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470237/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-dissection", "title": "Aortic Dissection. StatPearls (updated 2024-10-06)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK441963/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-marfan", "title": "Marfan Syndrome. StatPearls (updated 2023-01-23)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK537339/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-syphilis", "title": "Syphilis. StatPearls (updated 2024-08-17)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK534780/", "type": "statpearls", "accessedAt": "2026-10-15" },
+      { "id": "sp-arf", "title": "Chowdhury MDS, Koziatek CA, Rajnik M. Acute Rheumatic Fever. StatPearls (updated 2025-02-17)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK594238/", "type": "statpearls", "accessedAt": "2026-10-15" }
+    ]
+  },
+  "rulebook": {
+    "board": "ระบบไหลเวียนเป็นท่อ 2 วงจร (systemic และ pulmonary) ที่ต่อกันผ่านหัวใจ 4 ห้องและ valve 4 อัน เลือดไหลจากความดันสูงไปความดันต่ำเสมอ valve เปิดหรือปิดตาม gradient นั้น เราวัดหัวใจได้ 3 ทาง คือฟังเสียง (stethoscope), ดูไฟฟ้า (ECG) และวัดความดัน (catheter)",
+    "pieces": [
+      { "id": "valves", "name": "Valves: mitral, tricuspid (AV) และ aortic, pulmonic (semilunar)", "role": "เปิดหรือปิดตาม pressure gradient เสียงหัวใจเกิดตอน valve ปิด ส่วน murmur เกิดเมื่อเลือดไหลผ่าน valve ที่ผิดปกติแบบ turbulent" },
+      { "id": "chambers", "name": "LA, LV, RA, RV", "role": "ห้องที่อยู่ต้นน้ำของรอยโรคจะรับภาระ: pressure overload ทำให้หนา (hypertrophy) ส่วน volume overload ทำให้โต (dilation)" },
+      { "id": "shunts", "name": "Shunts: foramen ovale, ductus arteriosus, ASD, VSD", "role": "ทางลัดระหว่างวงจร ทิศของเลือดขึ้นกับว่าฝั่งไหนความดัน/ความต้านทานสูงกว่า" },
+      { "id": "coronaries", "name": "RCA, LAD, LCx", "role": "เลี้ยงผนังหัวใจและ conduction system แต่ละส่วน จึงเชื่อม ECG lead เข้ากับหลอดเลือดที่อุดตันได้" },
+      { "id": "baroreflex", "name": "Baroreceptor reflex (carotid sinus และ aortic arch)", "role": "ตัวควบคุม MAP ระยะสั้น ถ้าถูกยืดมากขึ้นจะเพิ่ม vagal tone และลด sympathetic tone" },
+      { "id": "ecg-grid", "name": "กระดาษ ECG", "role": "ไม้บรรทัดของเวลา (แกน x) และ voltage (แกน y) ใช้วัด rate, interval และ axis" }
+    ],
+    "coreRules": [
+      {
+        "id": "valve-events",
+        "rule": "เสียงหัวใจ = valve ปิด (S1 = mitral/tricuspid, S2 = aortic ปิดก่อน pulmonic) และ murmur = การไหลแบบ turbulent ผ่าน valve ที่ผิดปกติ ดังนั้นถ้ารู้ว่าตอนนั้น valve ไหนควรเปิด ก็จะรู้ timing ของ murmur: stenosis ดังตอนที่ valve นั้นเปิด ส่วน regurgitation ดังตอนที่ valve นั้นควรปิด",
+        "generates": [
+          "Systolic murmur: AS, PS (ejection, crescendo–decrescendo), MR, TR (holosystolic) และ VSD",
+          "Diastolic murmur: MS, TS (rumble) และ AR, PR (decrescendo)",
+          "Turbulence เพิ่มเมื่อ velocity สูงขึ้นหรือ viscosity ต่ำลง (Reynolds number) จึงเกิด flow murmur ในภาวะซีดได้",
+          "หายใจเข้า venous return เข้าฝั่งขวามากขึ้น RV บีบนานขึ้น P2 จึงช้า เกิด physiologic split S2",
+          "อะไรที่ทำให้ RV บีบเสร็จช้า (RBBB, PS) ทำให้ split กว้าง ส่วนอะไรที่ทำให้ LV บีบเสร็จช้า (LBBB, AS) ทำให้ A2 มาหลัง P2 (paradoxical split)"
+        ],
+        "sourceIds": ["sp-heart-sounds", "sp-cardiac-cycle", "sp-mr"]
+      },
+      {
+        "id": "chest-wall-map",
+        "rule": "ตำแหน่งบนผนังอกบอกโครงสร้างข้างใต้: เสียงของ valve ฟังได้ชัดตามทิศที่เลือดไหลออก (aortic = 2nd right ICS, pulmonic = 2nd left ICS, tricuspid = 4th left ICS, mitral = 5th left ICS midclavicular line หรือ apex) ส่วน sternal angle คือรอยต่อ rib คู่ที่ 2 และเป็นขอบล่างของ superior mediastinum ซึ่งมี aortic arch อยู่",
+        "generates": [
+          "murmur ที่ 2nd right ICS ร้าวไปคอ คิดถึงโรคที่ aortic valve",
+          "murmur ที่ apex คิดถึงโรคที่ mitral valve",
+          "แผลที่ระดับ sternal angle ทำให้เสียเลือดจาก aortic arch และแขนงใหญ่ได้",
+          "apex beat อยู่ที่ 5th ICS ด้านขวา คิดถึง dextrocardia"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-heart-sounds", "sp-mediastinum"]
+      },
+      {
+        "id": "upstream-overload",
+        "rule": "ห้องที่อยู่ต้นน้ำของรอยโรคจะรับภาระ: stenosis หรือ outflow obstruction เป็น pressure overload ทำให้ผนังหนา (concentric hypertrophy) ส่วน regurgitation เป็น volume overload ทำให้ห้องโต (dilation) และความดันจะย้อนถอยไปเป็นทอด ๆ",
+        "generates": [
+          "AS และ coarctation ทำให้ LV hypertrophy",
+          "MS ทำให้ LA pressure สูงและ LA โต ตามด้วย pulmonary venous congestion, pulmonary hypertension และ RV hypertrophy",
+          "TS ทำให้ RA hypertrophy",
+          "Chronic AR ทำให้ LV โต (eccentric) และ apex เลื่อนไปทางซ้ายและลง",
+          "Chronic MR ทำให้ทั้ง LA และ LV เป็น volume overload"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-ms", "sp-ai", "sp-coarctation", "sp-mr"]
+      },
+      {
+        "id": "shunt-follows-pressure",
+        "rule": "เลือดใน shunt ไหลจากฝั่งที่ความดันหรือความต้านทานสูงไปฝั่งที่ต่ำ: ในครรภ์ PVR สูงจึงไหลขวาไปซ้ายผ่าน foramen ovale และ ductus arteriosus หลังคลอด PVR ลด shunt จึงเป็นซ้ายไปขวา (acyanotic) ถ้าปล่อยไว้ เลือดที่ไปปอดมากเกินจะทำให้เกิด pulmonary hypertension จน PVR สูงกว่า SVR แล้ว shunt กลับทิศ (Eisenmenger) และเกิด cyanosis ตามมาทีหลัง",
+        "generates": [
+          "ทารกแรกเกิดที่เขียวชั่วคราวแล้วหายเอง: PVR ยังลดลงไม่เต็มที่ เมื่อ PVR ลดลงจึงหาย",
+          "ASD, VSD และ PDA เป็น L→R shunt ที่ไม่เขียวตั้งแต่แรก",
+          "ผู้ป่วย L→R shunt ที่ไม่ได้รักษา แล้วเพิ่งมีอาการเขียว คิดถึง Eisenmenger syndrome",
+          "Chronic hypoxemia กระตุ้น EPO ทำให้ hematocrit สูง (secondary erythrocytosis) และเกิด clubbing",
+          "รอยโรค R→L (5 Ts: truncus, TGA, tricuspid atresia, TOF, TAPVR) ทำให้เขียวเร็ว"
+        ],
+        "sourceIds": ["sp-fetal-circ", "sp-eisenmenger", "sp-vsd"]
+      },
+      {
+        "id": "conotruncal-septum",
+        "rule": "Conotruncal (aorticopulmonary) septum ที่มีเซลล์มาจาก neural crest แบ่ง outflow เป็น aorta กับ pulmonary trunk โดยบิดเป็นเกลียว: ถ้าไม่บิด = TGA, ถ้าเบี่ยงไปด้านหน้า (anterior malalignment) = TOF (และถ้าไม่เกิดเลย = persistent truncus arteriosus)",
+        "generates": [
+          "TGA: aorta ออกจาก RV และ pulmonary trunk ออกจาก LV ทำให้เกิด 2 วงจรขนานกัน",
+          "TOF: anteriorly malaligned VSD, overriding aorta, RVOT obstruction และ RVH",
+          "โรค conotruncal มักมาพร้อมความผิดปกติของ neural crest อื่น ๆ (เช่น 22q11.2)"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-tga", "sp-tof"]
+      },
+      {
+        "id": "map-co-tpr",
+        "rule": "MAP = CO × TPR และ CO = HR × SV (SV = EDV − ESV) ดังนั้นความดันตกต้องมาจาก CO (HR, contractility, venous return/preload) หรือ TPR อย่างใดอย่างหนึ่ง ส่วน baroreflex จะชดเชยไปทางตรงข้ามเสมอ: ความดันตก → sympathetic เพิ่ม, vagal ลด → HR และ TPR เพิ่ม",
+        "generates": [
+          "Anaphylaxis/sepsis: vasodilation ทำให้ TPR ลด",
+          "Acute MI หรือ cardiogenic shock: pump ล้มเหลวทำให้ CO ลด",
+          "หญิงตั้งครรภ์นอนหงาย: มดลูกกด IVC ทำให้ venous return ลด",
+          "กด carotid sinus: baroreceptor ถูกยืด vagal เพิ่ม sympathetic ลด จึงเกิด HR ลดและ vasodilation",
+          "หายใจเข้า vagal tone ลด HR จึงเพิ่ม (respiratory sinus arrhythmia) ซึ่งเป็นภาวะปกติ"
+        ],
+        "sourceIds": ["sp-baroreceptors", "sp-distributive-shock", "sp-cardiogenic-shock", "sp-aortocaval", "sp-sinus-arrhythmia"]
+      },
+      {
+        "id": "ecg-ruler-map",
+        "rule": "ECG เป็นทั้งไม้บรรทัดและแผนที่: ที่ 25 mm/s 1 ช่องเล็ก = 0.04 s และ HR = 300/จำนวนช่องใหญ่ = 1500/จำนวนช่องเล็กของ RR interval, PR ปกติ 0.12–0.20 s, QRS แคบ (<0.12 s) = กำเนิดเหนือ ventricle ส่วน lead บอกผนังและหลอดเลือด: II, III, aVF = inferior (RCA), anteroseptal = LAD, lateral = LCx",
+        "generates": [
+          "RR = 20 ช่องเล็ก จะได้ HR = 75/min",
+          "PR >0.20 s = first-degree AV block",
+          "Narrow QRS ที่มี inverted P ซ่อนอยู่ ชี้ว่า focus อยู่ที่ AV junction",
+          "Inferior STEMI + bradycardia/AV block ชี้ว่า RCA อุด (AV nodal artery มาจาก RCA ในคนส่วนใหญ่)",
+          "Right axis deviation พบใน RVH และ pulmonary hypertension"
+        ],
+        "sourceIds": ["sp-ecg", "sp-wide-qrs", "sp-coronary"]
+      }
+    ],
+    "winConditions": [
+      "บอกรอยโรคได้จาก timing + ตำแหน่ง + การร้าวของ murmur",
+      "บอกได้ว่า hypotension มาจาก CO, TPR หรือ venous return ตัวไหน",
+      "แปลง ECG lead → ผนังหัวใจ → หลอดเลือด → โครงสร้างที่ขาดเลือดได้",
+      "แยก shunt L→R กับ R→L และทำนาย Eisenmenger ได้"
+    ],
+    "loseConditions": [
+      "สลับ systolic กับ diastolic murmur",
+      "ตอบ isovolumic phase ทั้งที่ volume ของ ventricle กำลังเปลี่ยน",
+      "ตอบว่ากลไกของ rheumatic fever คือการติดเชื้อที่ valve หรือ immune complex",
+      "สลับยา PDA: indomethacin ปิด ductus ส่วน PGE ทำให้ ductus เปิดค้าง"
+    ],
+    "errata": [
+      {
+        "id": "asd-fixed-split",
+        "text": "ASD: split S2 กว้างและ fixed คือไม่เปลี่ยนตามการหายใจ ต่างจาก RBBB/PS ที่ split กว้างแต่ยังเปลี่ยนตามการหายใจ",
+        "breaksRule": "valve-events",
+        "sourceIds": ["sp-asd", "sp-mr"]
+      },
+      {
+        "id": "asd-murmur-flow",
+        "text": "Murmur ใน ASD ไม่ได้เกิดที่รูรั่ว เพราะ gradient ระหว่าง LA กับ RA ต่ำ แต่เกิดจากเลือดปริมาณมากไหลผ่าน pulmonic valve ที่ปกติ จึงได้ยิน systolic ejection murmur ที่ pulmonic area (2nd left ICS)",
+        "breaksRule": "valve-events",
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-asd"]
+      },
+      {
+        "id": "s3-physiologic",
+        "text": "เสียงใน diastole ถือว่าผิดปกติ ยกเว้น S3 ที่อาจเป็นเสียงปกติในเด็กและนักกีฬา (ตำรา review บางเล่มรวมหญิงตั้งครรภ์ด้วย) ส่วน S4 บ่งบอก ventricle ที่แข็ง (เช่น LVH) ถ้าได้ยิน S3 ชัดในผู้ใหญ่วัยกลางคนจึงถือว่าผิดปกติ",
+        "breaksRule": "valve-events",
+        "sourceIds": ["sp-heart-sounds"]
+      },
+      {
+        "id": "small-vsd-louder",
+        "text": "VSD รูเล็ก murmur ดังและ harsh ส่วนรูใหญ่ murmur เบากว่า เพราะ gradient ระหว่าง LV กับ RV ที่ผ่านรูใหญ่ต่ำกว่า และเมื่อเกิด Eisenmenger murmur ยิ่งเบาลงทั้งที่โรคแย่ลง",
+        "breaksRule": "valve-events",
+        "sourceIds": ["sp-vsd", "sp-mr"]
+      },
+      {
+        "id": "mvp-click-late",
+        "text": "MVP ไม่ได้มี holosystolic murmur แบบ MR ทั่วไป แต่มี mid-systolic click (ตอน leaflet บานเข้า LA) แล้วตามด้วย late systolic murmur",
+        "breaksRule": "valve-events",
+        "sourceIds": ["sp-mr", "sp-heart-sounds"]
+      },
+      {
+        "id": "tachycardia-diastole",
+        "text": "HR ที่เพิ่มขึ้นตัดเวลา diastole มากกว่า systole ดังนั้นเมื่อ HR สูงมาก filling time และ EDV ลด SV จึงลด CO จึงไม่เพิ่มตาม HR เป็นเส้นตรง และ coronary perfusion ของ LV ซึ่งเกิดใน diastole ก็ลดลงด้วย",
+        "breaksRule": "map-co-tpr",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "carotid-sinus-not-body",
+        "text": "โจทย์ที่ให้ 'กด carotid' แล้วถามผลต่อ HR/BP กำลังหมายถึง carotid sinus (baroreceptor ที่ส่งสัญญาณผ่าน CN IX) ไม่ใช่ carotid body ซึ่งเป็น chemoreceptor ที่ตอบสนองต่อ O2/CO2 ผลคือ vagal เพิ่ม sympathetic ลด และเกิด vasodilation",
+        "breaksRule": "map-co-tpr",
+        "sourceIds": ["sp-baroreceptors"]
+      },
+      {
+        "id": "pink-tet",
+        "text": "TOF เป็น R→L lesion ที่ไม่จำเป็นต้องเขียวตั้งแต่เกิด (pink tet) เพราะปริมาณ shunt ขึ้นกับความรุนแรงของ RVOT obstruction เทียบกับ SVR: RVOTO ที่แย่ลง, ร้องไห้ หรือ SVR ที่ลดลงทำให้เกิด tet spell ส่วนการนั่งยอง/knee-chest เพิ่ม SVR จึงลด shunt",
+        "breaksRule": "shunt-follows-pressure",
+        "sourceIds": ["sp-tof"]
+      },
+      {
+        "id": "pda-differential-cyanosis",
+        "text": "Eisenmenger ที่เกิดจาก PDA ทำให้เขียวและ clubbing เฉพาะขา (differential cyanosis) เพราะเลือดดำผ่าน ductus เข้า aorta หลังจุดแตกแขนงของ left subclavian ส่วนแขนและสมองยังได้เลือดแดง",
+        "breaksRule": "shunt-follows-pressure",
+        "sourceIds": ["sp-eisenmenger"]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "aortic-stenosis",
+      "name": "Aortic stenosis (AS)",
+      "who": "ผู้สูงอายุที่ valve calcify ตามอายุ หรือคนอายุน้อยกว่า 70 ปีที่มี bicuspid aortic valve",
+      "trigger": { "ruleId": "upstream-overload", "text": "LV บีบผ่าน valve ที่แคบ เป็น pressure overload จึงเกิด LVH (concentric)" },
+      "signature": "Systolic ejection murmur แบบ crescendo–decrescendo ที่ 2nd right ICS ร้าวไปคอ (carotid)",
+      "lookAlikes": ["mitral-regurgitation", "aortic-regurgitation"],
+      "tells": [
+        { "vs": "mitral-regurgitation", "feature": "AS เป็น crescendo–decrescendo ที่ 2nd right ICS ร้าวไปคอ ส่วน MR เป็น holosystolic ที่ apex ร้าวไปรักแร้" },
+        { "vs": "aortic-regurgitation", "feature": "AS ดังใน systole ส่วน AR ดังใน early diastole (decrescendo ที่ left sternal border)" }
+      ],
+      "counter": "เปลี่ยน aortic valve (ผ่าตัดหรือผ่านสายสวน) เมื่อมีอาการ",
+      "danger": "เมื่อมีอาการแล้ว (angina, syncope, HF) ถ้าไม่เปลี่ยน valve อัตราตายสูงมากภายในไม่กี่ปี",
+      "memorize": [
+        { "id": "as-symptom-triad", "prompt": "AS ที่มีอาการ: อาการหลัก 3 อย่างคืออะไร?", "fact": "Angina, syncope (ตอนออกแรง), heart failure/dyspnea", "sourceId": "sp-as" },
+        { "id": "as-cause-under-70", "prompt": "สาเหตุของ AS ที่พบบ่อยที่สุดในคนอายุ <70 ปีในประเทศพัฒนาแล้วคืออะไร?", "fact": "Bicuspid aortic valve", "sourceId": "sp-as" },
+        { "id": "as-cause-developing", "prompt": "สาเหตุของ AS ที่พบบ่อยที่สุดในประเทศกำลังพัฒนาคืออะไร?", "fact": "Rheumatic valve disease (commissure เชื่อมกัน)", "sourceId": "sp-as" }
+      ],
+      "sourceIds": ["sp-as", "sp-mr"]
+    },
+    {
+      "id": "aortic-regurgitation",
+      "name": "Aortic regurgitation (AR)",
+      "who": "คนที่ aortic root ขยาย (Marfan, syphilis), bicuspid valve หรือ rheumatic heart disease (ประเทศกำลังพัฒนา)",
+      "trigger": { "ruleId": "upstream-overload", "text": "เลือดไหลย้อนจาก aorta เข้า LV ใน diastole เป็น volume overload จึงเกิด LV dilation (eccentric hypertrophy)" },
+      "signature": "Early diastolic decrescendo murmur เสียงสูงแบบ blowing ที่ left sternal border (ICS 3–4) ร่วมกับ pulse pressure กว้าง (bounding pulse)",
+      "lookAlikes": ["aortic-stenosis", "mitral-stenosis"],
+      "tells": [
+        { "vs": "aortic-stenosis", "feature": "AR ดังใน diastole แบบ decrescendo ที่ left sternal border ส่วน AS ดังใน systole ที่ 2nd right ICS" },
+        { "vs": "mitral-stenosis", "feature": "AR เป็น early diastolic decrescendo ที่ left sternal border ส่วน MS เป็น mid-diastolic rumble ที่ apex ตามหลัง opening snap" }
+      ],
+      "counter": "เปลี่ยน aortic valve และรักษาสาเหตุที่ aortic root (เช่น syphilis หรือ Marfan)",
+      "danger": "Acute AR (จาก dissection หรือ endocarditis): LV ปรับตัวไม่ทัน จึงเกิด pulmonary edema และ shock",
+      "memorize": [
+        { "id": "ar-pulse-signs", "prompt": "Chronic AR: ลักษณะ pulse/ความดันที่เป็นเอกลักษณ์คืออะไร?", "fact": "Pulse pressure กว้าง, water-hammer (Corrigan) pulse ที่ขึ้นเร็วแล้วยุบเร็ว", "sourceId": "sp-ai" },
+        { "id": "ar-apex-shift", "prompt": "Chronic AR: apical impulse เปลี่ยนไปอย่างไร?", "fact": "เลื่อนไปทางซ้าย (lateral) และลงล่าง (inferior) เพราะ LV โต", "sourceId": "sp-ai" }
+      ],
+      "sourceIds": ["sp-ai"]
+    },
+    {
+      "id": "mitral-stenosis",
+      "name": "Mitral stenosis (MS)",
+      "who": "หญิงวัย 30–40 ปีที่เคยเป็น rheumatic fever (rheumatic MS พบในผู้หญิงประมาณ 80%)",
+      "trigger": { "ruleId": "upstream-overload", "text": "Mitral valve แคบ ทำให้ LA pressure สูงและ LA โต ตามด้วย pulmonary venous congestion, pulmonary HTN และ RV pressure overload" },
+      "signature": "Opening snap ตามด้วย mid-diastolic rumble ที่ apex (ฟังด้วย bell ท่า left lateral decubitus) และ LA pressure สูงในขณะที่ LV diastolic pressure ปกติ",
+      "lookAlikes": ["mitral-regurgitation", "aortic-regurgitation"],
+      "tells": [
+        { "vs": "mitral-regurgitation", "feature": "ที่ apex เหมือนกัน แต่ MS ดังใน diastole (rumble) ส่วน MR ดังใน systole (holosystolic ร้าวไปรักแร้)" },
+        { "vs": "aortic-regurgitation", "feature": "MS เป็น rumble ที่ apex หลัง opening snap ส่วน AR เป็น blowing decrescendo ที่ left sternal border ทันทีหลัง S2" }
+      ],
+      "counter": "Anticoagulation เมื่อมี AF, LA thrombus หรือเคยมี embolism และทำ percutaneous mitral balloon commissurotomy ในรายที่เหมาะสม",
+      "danger": "AF ร่วมกับ LA thrombus ทำให้เกิด systemic embolism (stroke) รวมถึง pulmonary edema และ pulmonary hypertension",
+      "memorize": [
+        { "id": "ms-cause", "prompt": "สาเหตุของ MS ที่พบบ่อยที่สุดในโลกคืออะไร?", "fact": "Chronic rheumatic heart disease (commissure เชื่อมกัน, leaflet หนา)", "sourceId": "sp-ms" },
+        { "id": "ms-first-chamber", "prompt": "MS: ห้องหัวใจไหนรับภาระและโตก่อน?", "fact": "Left atrium (LA pressure สูง แล้ว LA โต)", "sourceId": "sp-ms" },
+        { "id": "ms-os-interval", "prompt": "MS: ระยะ A2–opening snap เปลี่ยนอย่างไรเมื่อ stenosis รุนแรงขึ้น?", "fact": "สั้นลง (LA pressure ยิ่งสูง valve ยิ่งเปิดเร็ว)", "sourceId": "sp-ms" }
+      ],
+      "sourceIds": ["sp-ms"]
+    },
+    {
+      "id": "mitral-regurgitation",
+      "name": "Mitral regurgitation (MR)",
+      "who": "MVP/degenerative (ประเทศพัฒนาแล้ว), rheumatic carditis และหลัง MI (papillary muscle dysfunction หรือ rupture)",
+      "trigger": { "ruleId": "upstream-overload", "text": "LV บีบเลือดย้อนเข้า LA ใน systole ทำให้ LA และ LV เป็น volume overload" },
+      "signature": "Holosystolic murmur ที่ apex ร้าวไปรักแร้ซ้าย",
+      "lookAlikes": ["aortic-stenosis", "mitral-stenosis", "mitral-valve-prolapse", "vsd"],
+      "tells": [
+        { "vs": "aortic-stenosis", "feature": "MR เป็น holosystolic ที่ apex ร้าวไปรักแร้ ส่วน AS เป็น crescendo–decrescendo ที่ 2nd right ICS ร้าวไปคอ" },
+        { "vs": "mitral-stenosis", "feature": "MR ดังใน systole ส่วน MS ดังใน diastole ทั้งคู่อยู่ที่ apex" },
+        { "vs": "mitral-valve-prolapse", "feature": "MR เป็น holosystolic ตั้งแต่ S1 ส่วน MVP มี mid-systolic click แล้วตามด้วย late systolic murmur" },
+        { "vs": "vsd", "feature": "MR ดังที่ apex ร้าวไปรักแร้ ส่วน VSD ดังที่ lower left sternal border" }
+      ],
+      "counter": "รักษาตามสาเหตุ ส่วน acute MR จาก papillary muscle rupture ต้องผ่าตัดฉุกเฉิน",
+      "danger": "Acute severe MR (papillary muscle rupture หลัง MI) ทำให้เกิด pulmonary edema และ cardiogenic shock",
+      "memorize": [
+        { "id": "mr-papillary-rupture", "prompt": "Papillary muscle rupture หลัง MI เกิดได้ประมาณกี่เปอร์เซ็นต์?", "fact": "ประมาณ 1–2%", "sourceId": "sp-mr" },
+        { "id": "mr-primary-cause", "prompt": "สาเหตุที่พบบ่อยที่สุดของ primary MR (ประเทศพัฒนาแล้ว) คืออะไร?", "fact": "Mitral valve prolapse (myxomatous degeneration)", "sourceId": "sp-mr" }
+      ],
+      "sourceIds": ["sp-mr"]
+    },
+    {
+      "id": "mitral-valve-prolapse",
+      "name": "Mitral valve prolapse (MVP)",
+      "who": "ผู้ใหญ่อายุน้อยที่ไม่มีอาการและตรวจเจอโดยบังเอิญ หรือผู้มีโรค connective tissue (เช่น Marfan)",
+      "trigger": { "ruleId": "valve-events", "text": "Leaflet ที่ยืดหยุ่นเกินบานเข้า LA กลาง systole จึงเกิด click แล้วรั่วช่วงท้าย systole" },
+      "signature": "Mid-systolic click ตามด้วย late systolic murmur ที่ apex",
+      "lookAlikes": ["mitral-regurgitation"],
+      "tells": [
+        { "vs": "mitral-regurgitation", "feature": "MVP มี click กลาง systole ตามด้วย late systolic murmur ส่วน MR ทั่วไปเป็น holosystolic" }
+      ],
+      "counter": "ส่วนใหญ่ติดตามอาการโดยไม่ต้องรักษา และซ่อม valve เมื่อ MR รุนแรง",
+      "danger": "Severe MR, infective endocarditis และ ventricular arrhythmia/sudden cardiac death (พบได้น้อย)",
+      "memorize": [
+        { "id": "mvp-histology", "prompt": "MVP: พยาธิสภาพของ leaflet คืออะไร?", "fact": "Myxomatous degeneration (proteoglycan สะสมในชั้น spongiosa และ collagen เรียงตัวผิดปกติ)", "sourceId": "sp-mvp" },
+        { "id": "mvp-complications", "prompt": "MVP: ภาวะแทรกซ้อนสำคัญมีอะไรบ้าง?", "fact": "Severe MR, infective endocarditis, ventricular arrhythmia/sudden cardiac death", "sourceId": "sp-mvp" }
+      ],
+      "sourceIds": ["sp-mvp", "sp-mr"]
+    },
+    {
+      "id": "asd",
+      "name": "Atrial septal defect (ASD)",
+      "who": "ผู้ใหญ่ที่ตรวจเจอ murmur โดยบังเอิญ (หลายรายไม่ได้วินิจฉัยจนโต)",
+      "trigger": { "ruleId": "shunt-follows-pressure", "text": "LA ความดันสูงกว่า RA เล็กน้อย จึงเกิด L→R shunt ทำให้ RV เป็น volume overload และเลือดไปปอดมากขึ้น" },
+      "signature": "Split S2 แบบกว้างและ fixed ร่วมกับ soft systolic ejection murmur ที่ pulmonic area (2nd left ICS)",
+      "lookAlikes": ["vsd", "pda"],
+      "tells": [
+        { "vs": "vsd", "feature": "ASD มี fixed split S2 และ ejection murmur ที่ pulmonic area ส่วน VSD เป็น holosystolic ที่ lower left sternal border" },
+        { "vs": "pda", "feature": "ASD มี murmur เฉพาะ systole ส่วน PDA เป็น continuous machine-like murmur ใต้กระดูกไหปลาร้าซ้าย" }
+      ],
+      "counter": "ปิดรูผ่านสายสวน (เฉพาะ secundum) หรือผ่าตัด เมื่อ shunt มีนัยสำคัญ เคยเกิด stroke หรือมี desaturation",
+      "danger": "Paradoxical embolism (stroke/TIA), atrial arrhythmia, pulmonary hypertension และ Eisenmenger",
+      "memorize": [
+        { "id": "asd-common-type", "prompt": "ASD แบบไหนพบบ่อยที่สุด (ไม่นับ PFO)?", "fact": "Ostium secundum defect", "sourceId": "sp-asd" },
+        { "id": "asd-closure-shunt", "prompt": "ASD: shunt ขนาดเท่าไรถือว่ามีนัยสำคัญทาง hemodynamics และเป็นข้อบ่งชี้ปิดรู?", "fact": "Qp:Qs มากกว่า 1.5:1 (ข้อบ่งชี้อื่นคือ stroke และ systemic desaturation)", "sourceId": "sp-asd" }
+      ],
+      "sourceIds": ["sp-asd"]
+    },
+    {
+      "id": "vsd",
+      "name": "Ventricular septal defect (VSD)",
+      "who": "เด็ก (เป็น CHD ที่พบบ่อยที่สุดในเด็ก) ชนิด perimembranous พบมากที่สุด",
+      "trigger": { "ruleId": "shunt-follows-pressure", "text": "LV ความดันสูงกว่า RV มาก จึงเกิด L→R shunt ทำให้เลือดไปปอดมากขึ้น และถ้ารูใหญ่จะเกิด pulmonary hypertension" },
+      "signature": "Holosystolic murmur ที่ lower left sternal border (รูเล็กเสียงดังกว่ารูใหญ่)",
+      "lookAlikes": ["asd", "mitral-regurgitation", "tof"],
+      "tells": [
+        { "vs": "asd", "feature": "VSD เป็น holosystolic ที่ lower left sternal border ส่วน ASD เป็น ejection murmur ที่ pulmonic area ร่วมกับ fixed split S2" },
+        { "vs": "mitral-regurgitation", "feature": "VSD ดังที่ lower left sternal border ส่วน MR ดังที่ apex ร้าวไปรักแร้" },
+        { "vs": "tof", "feature": "VSD เดี่ยว ๆ เป็น L→R และไม่เขียว ส่วน TOF มี RVOT obstruction ทำให้ shunt เป็น R→L และเขียว" }
+      ],
+      "counter": "รูเล็กมักปิดเองในขวบปีแรก ส่วนรูใหญ่ต้องปิดก่อนเกิด pulmonary hypertension ที่ไม่ย้อนกลับ",
+      "danger": "Pulmonary arterial hypertension และ Eisenmenger syndrome",
+      "memorize": [
+        { "id": "vsd-perimembranous", "prompt": "VSD ชนิดไหนพบบ่อยที่สุด และคิดเป็นประมาณเท่าไร?", "fact": "Perimembranous ประมาณ 80% ของ VSD", "sourceId": "sp-vsd" },
+        { "id": "vsd-eisenmenger-rate", "prompt": "VSD กลายเป็น Eisenmenger syndrome ได้ประมาณกี่เปอร์เซ็นต์?", "fact": "ประมาณ 10–15%", "sourceId": "sp-vsd" }
+      ],
+      "sourceIds": ["sp-vsd"]
+    },
+    {
+      "id": "pda",
+      "name": "Patent ductus arteriosus (PDA)",
+      "who": "ทารกคลอดก่อนกำหนดหรือน้ำหนักน้อย และ congenital rubella",
+      "trigger": { "ruleId": "shunt-follows-pressure", "text": "หลังคลอดความดัน aorta สูงกว่า pulmonary artery ตลอดรอบ cardiac cycle จึงเกิด L→R shunt ต่อเนื่อง (continuous)" },
+      "signature": "Continuous machine-like murmur ใต้กระดูกไหปลาร้าซ้าย หรือที่ left upper sternal border",
+      "lookAlikes": ["asd", "vsd"],
+      "tells": [
+        { "vs": "asd", "feature": "PDA ได้ยินทั้ง systole และ diastole (continuous) ส่วน ASD มีแค่ systolic ejection murmur ร่วมกับ fixed split S2" },
+        { "vs": "vsd", "feature": "PDA เป็น continuous ที่ใต้ไหปลาร้าซ้าย ส่วน VSD เป็น holosystolic ที่ lower left sternal border" }
+      ],
+      "counter": "Indomethacin (NSAID ที่ยับยั้งการสร้าง prostaglandin) เพื่อปิด ductus หรือปิดด้วยสายสวน/ผ่าตัด และให้ PGE เมื่อต้องการเปิด ductus ค้างไว้ (ductal-dependent lesion)",
+      "danger": "LA/LV volume overload และ HF ถ้าไม่รักษาจะเกิด Eisenmenger ที่เขียวเฉพาะขา (differential cyanosis)",
+      "memorize": [
+        { "id": "pda-close-drug", "prompt": "ยาที่ใช้ปิด PDA ในทารกคลอดก่อนกำหนดคืออะไร และออกฤทธิ์อย่างไร?", "fact": "Indomethacin (NSAID) ยับยั้งการสร้าง prostaglandin", "sourceId": "sp-fetal-circ" },
+        { "id": "pda-open-drug", "prompt": "สารที่ทำให้ ductus arteriosus เปิดค้างคืออะไร?", "fact": "Prostaglandin E (PGE2) ร่วมกับ O2 tension ที่ต่ำในครรภ์", "sourceId": "sp-pda" },
+        { "id": "pda-ligation-nerve", "prompt": "ผ่าตัดผูก PDA: เส้นประสาทไหนเสี่ยงบาดเจ็บ?", "fact": "Left recurrent laryngeal nerve (วนใต้ aortic arch และผ่านหลัง ductus/ligamentum arteriosum)", "sourceId": "sp-pda" }
+      ],
+      "sourceIds": ["sp-pda", "sp-fetal-circ", "sp-rln"]
+    },
+    {
+      "id": "tof",
+      "name": "Tetralogy of Fallot (TOF)",
+      "who": "ทารกหรือเด็กเล็กที่มีอาการเขียว (cyanotic CHD ที่พบบ่อยที่สุด) โดยเฉพาะเวลาร้องไห้หรือดูดนม",
+      "trigger": { "ruleId": "conotruncal-septum", "text": "Outlet (infundibular) septum เบี่ยงไปด้านหน้า ทำให้เกิด malaligned VSD, aorta คร่อม septum และ RVOT ตีบ" },
+      "signature": "VSD + overriding aorta + RVOT obstruction (pulmonary stenosis) + RVH ใน CXR เห็นเป็น boot-shaped heart และมี tet spells",
+      "lookAlikes": ["tga", "vsd", "coarctation"],
+      "tells": [
+        { "vs": "tga", "feature": "TOF มี aorta คร่อม septum และ RVOT ตีบ ส่วน TGA มี aorta ออกจาก RV ทั้งหมด (2 วงจรขนานกัน)" },
+        { "vs": "vsd", "feature": "TOF มี RVOT obstruction ทำให้ shunt เป็น R→L และเขียว ส่วน VSD เดี่ยว ๆ เป็น L→R" },
+        { "vs": "coarctation", "feature": "TOF ความดันแขนกับขาเท่ากัน ส่วน coarctation ความดันแขนสูงกว่าขา" }
+      ],
+      "counter": "Tet spell: ท่า knee-chest (เพิ่ม SVR), ให้ O2 และ morphine และทำ surgical repair ในช่วงเดือนแรก ๆ ของชีวิต (ให้ PGE ถ้าเป็น ductal-dependent)",
+      "danger": "Hypercyanotic (tet) spells",
+      "memorize": [
+        { "id": "tof-four", "prompt": "TOF ประกอบด้วยความผิดปกติ 4 อย่างอะไรบ้าง?", "fact": "Malaligned VSD, overriding aorta, RVOT obstruction (pulmonary stenosis), RV hypertrophy", "sourceId": "sp-tof" },
+        { "id": "tof-knee-chest", "prompt": "ทำไมท่า knee-chest หรือนั่งยองช่วย tet spell?", "fact": "เพิ่ม SVR ทำให้ shunt R→L ลดลงและเลือดไปปอดมากขึ้น", "sourceId": "sp-tof" },
+        { "id": "tof-cxr", "prompt": "TOF: ลักษณะ CXR แบบคลาสสิกคืออะไร?", "fact": "Boot-shaped heart (apex ยกขึ้นและ main pulmonary artery segment เว้า)", "sourceId": "sp-tof" }
+      ],
+      "sourceIds": ["sp-tof"]
+    },
+    {
+      "id": "tga",
+      "name": "Transposition of the great arteries (d-TGA)",
+      "who": "ทารกแรกเกิดที่เขียวมากตั้งแต่ช่วงแรกหลังคลอด (มารดาเป็นเบาหวานระหว่างตั้งครรภ์เป็นปัจจัยเสี่ยง)",
+      "trigger": { "ruleId": "conotruncal-septum", "text": "Conotruncal septum ไม่บิดเป็นเกลียว aorta จึงออกจาก RV และ pulmonary trunk ออกจาก LV" },
+      "signature": "Aorta ออกจาก RV และ pulmonary trunk ออกจาก LV เกิด 2 วงจรขนานกัน จึงมีชีวิตอยู่ได้เฉพาะเมื่อมีจุดผสมเลือด (PDA, ASD, VSD)",
+      "lookAlikes": ["tof"],
+      "tells": [
+        { "vs": "tof", "feature": "TGA มี aorta ออกจาก RV ทั้งหมดและเขียวมากทันทีหลังคลอด ส่วน TOF มี aorta คร่อม septum และความเขียวขึ้นกับระดับ RVOT obstruction" }
+      ],
+      "counter": "ให้ PGE เพื่อเปิด ductus ค้าง ทำ balloon atrial septostomy เพื่อให้เลือดผสม แล้วผ่าตัด arterial switch",
+      "danger": "เสียชีวิตเมื่อ ductus ปิดและไม่มีจุดผสมเลือด",
+      "memorize": [
+        { "id": "tga-embryology", "prompt": "TGA เกิดจากความผิดปกติของการสร้างโครงสร้างใด?", "fact": "Aorticopulmonary (conotruncal) septum ไม่บิดเป็นเกลียว (neural crest)", "sourceId": "sp-tga" },
+        { "id": "tga-share", "prompt": "TGA คิดเป็นประมาณกี่เปอร์เซ็นต์ของ cyanotic heart disease?", "fact": "ประมาณ 20% (และประมาณ 3% ของ CHD ทั้งหมด)", "sourceId": "sp-tga" }
+      ],
+      "sourceIds": ["sp-tga"]
+    },
+    {
+      "id": "coarctation",
+      "name": "Coarctation of the aorta",
+      "who": "Turner syndrome, bicuspid aortic valve และเด็กหรือผู้ใหญ่อายุน้อยที่ความดันสูง",
+      "trigger": { "ruleId": "upstream-overload", "text": "Aorta ตีบ ทำให้ LV afterload สูง เกิดความดันสูงที่แขนและ LVH ในขณะที่ขาได้เลือดน้อย" },
+      "signature": "ความดันที่แขนสูงกว่าขา, femoral pulse เบาหรือมาช้ากว่า radial (brachiofemoral delay) และ rib notching จาก intercostal collateral",
+      "lookAlikes": ["tof", "aortic-dissection"],
+      "tells": [
+        { "vs": "tof", "feature": "Coarctation ความดันแขนสูงกว่าขาและไม่เขียว ส่วน TOF ความดันแขนกับขาเท่ากันและเขียว" },
+        { "vs": "aortic-dissection", "feature": "Coarctation เป็นความต่างของความดันระหว่างแขนกับขาแบบเรื้อรัง ส่วน dissection เป็นความต่างระหว่างแขนสองข้างร่วมกับเจ็บแบบฉีกฉับพลัน" }
+      ],
+      "counter": "ซ่อมด้วยการผ่าตัดหรือสายสวน และติดตามความดันและภาพ aorta ตลอดชีวิต",
+      "danger": "ความดันสูงเรื้อรัง, aortic dissection และ intracranial hemorrhage",
+      "memorize": [
+        { "id": "coarct-gradient", "prompt": "Coarctation: ความต่างของ systolic BP ระหว่างแขนกับขาเท่าไรที่ชี้ว่ามีนัยสำคัญ?", "fact": "มากกว่า 20 mmHg", "sourceId": "sp-coarctation" },
+        { "id": "coarct-turner", "prompt": "Coarctation สัมพันธ์กับกลุ่มอาการทางพันธุกรรมใดมากที่สุด?", "fact": "Turner syndrome (45,X) ควรตรวจ karyotype ในผู้หญิงที่เป็น coarctation", "sourceId": "sp-coarctation" },
+        { "id": "coarct-rib-notching", "prompt": "Coarctation: rib notching ใน CXR เกิดจากอะไร?", "fact": "Collateral circulation ผ่าน intercostal arteries ที่ขยายตัว", "sourceId": "sp-coarctation" }
+      ],
+      "sourceIds": ["sp-coarctation"]
+    },
+    {
+      "id": "cardiac-tamponade",
+      "name": "Cardiac tamponade",
+      "who": "ผู้ป่วยที่มี pericardial effusion (มะเร็ง, pericarditis), บาดเจ็บทรวงอก หรือหลังทำหัตถการหัวใจ",
+      "trigger": { "ruleId": "map-co-tpr", "text": "น้ำในถุงหุ้มหัวใจกดหัวใจ ทำให้ filling (preload) ลด SV ลด CO ลด และความดันตก" },
+      "signature": "Beck triad (hypotension, JVD, heart sounds เบา), pulsus paradoxus และ ECG มี electrical alternans/QRS voltage ต่ำ",
+      "lookAlikes": ["aortic-dissection"],
+      "tells": [
+        { "vs": "aortic-dissection", "feature": "Tamponade มี Beck triad และ pulsus paradoxus ส่วน dissection มีเจ็บแบบฉีกร้าวไปหลังและ BP แขนสองข้างต่างกัน (dissection ทำให้เกิด tamponade ได้)" }
+      ],
+      "counter": "Pericardiocentesis โดย subxiphoid approach พบบ่อยที่สุด",
+      "danger": "Obstructive shock และเสียชีวิต",
+      "memorize": [
+        { "id": "tamponade-pulsus", "prompt": "Pulsus paradoxus คืออะไร (เกณฑ์ตัวเลข)?", "fact": "Systolic BP ลดลงมากกว่า 10 mmHg ระหว่างหายใจเข้า", "sourceId": "sp-tamponade" },
+        { "id": "tamponade-beck", "prompt": "Beck triad ประกอบด้วยอะไร?", "fact": "Hypotension, jugular venous distension, muffled heart sounds", "sourceId": "sp-tamponade" },
+        { "id": "pericardiocentesis-site", "prompt": "Pericardiocentesis: approach ที่ใช้บ่อยที่สุด และตำแหน่งของ parasternal approach?", "fact": "Subxiphoid ใช้บ่อยที่สุด (แทงเข็มชี้ไปไหล่ซ้าย) ส่วน parasternal ใช้ ICS 4 หรือ 5 ข้างกระดูก sternum (ชีท B7 เฉลยว่า ICS 5)", "sourceId": "sp-pericardiocentesis" }
+      ],
+      "sourceIds": ["sp-tamponade", "sp-pericardiocentesis"]
+    },
+    {
+      "id": "aortic-dissection",
+      "name": "Aortic dissection",
+      "who": "ผู้สูงอายุที่ความดันสูง หรือคนอายุ <40 ปีที่เป็น connective tissue disease (Marfan)",
+      "trigger": { "ruleId": "map-co-tpr", "text": "ความดันสูงเพิ่มแรงที่กระทำต่อผนัง aorta ที่ media เสื่อมจน intima ฉีก แล้วเลือดเซาะเข้าไปเป็น false lumen" },
+      "signature": "เจ็บหน้าอกแบบฉีกฉับพลันร้าวไปหลัง, BP หรือ pulse ระหว่างแขนสองข้างต่างกัน และ CXR พบ mediastinum กว้าง",
+      "lookAlikes": ["cardiac-tamponade", "aaa", "coarctation"],
+      "tells": [
+        { "vs": "cardiac-tamponade", "feature": "Dissection เด่นที่เจ็บแบบฉีกและ BP แขนสองข้างต่างกัน ส่วน tamponade เด่นที่ Beck triad และ pulsus paradoxus" },
+        { "vs": "aaa", "feature": "Dissection เป็นการฉีกของผนังที่มีอาการเจ็บฉับพลัน ส่วน AAA เป็นการโป่งที่มักไม่มีอาการจนกว่าจะแตก (คลำได้ก้อนเต้นตามชีพจร)" },
+        { "vs": "coarctation", "feature": "Dissection: แขนสองข้างต่างกันแบบเฉียบพลัน ส่วน coarctation: แขนสูงกว่าขาแบบเรื้อรัง" }
+      ],
+      "counter": "ทำ CT angiography ด่วน คุม HR และ BP แล้วส่งผ่าตัดหรือทำ intervention ตามชนิดของ dissection",
+      "danger": "Aorta แตก, cardiac tamponade และอวัยวะขาดเลือด",
+      "memorize": [
+        { "id": "dissection-marfan-histo", "prompt": "Dissection ใน Marfan: พยาธิสภาพของ media คืออะไร และยีนไหนผิดปกติ?", "fact": "Cystic medial degeneration (necrosis) จากความผิดปกติของ fibrillin-1 (ยีน FBN1) ซึ่งเป็น connective tissue", "sourceId": "sp-marfan" },
+        { "id": "dissection-young-marfan", "prompt": "ใน registry IRAD ผู้ป่วย dissection อายุ <40 ปีเป็น Marfan ประมาณกี่เปอร์เซ็นต์?", "fact": "ประมาณ 50% (เทียบกับประมาณ 2% ในผู้ป่วยอายุมากกว่า)", "sourceId": "sp-dissection" },
+        { "id": "widened-mediastinum-cutoff", "prompt": "Mediastinum กว้างกว่าเท่าไรถือว่า widened ใน CXR?", "fact": "มากกว่า 6–8 cm (แล้วแต่แหล่ง)", "sourceId": "sp-widened-mediastinum" }
+      ],
+      "sourceIds": ["sp-dissection", "sp-marfan", "sp-widened-mediastinum"]
+    },
+    {
+      "id": "aaa",
+      "name": "Abdominal aortic aneurysm (AAA)",
+      "who": "ชายสูงอายุที่สูบบุหรี่และมี atherosclerosis",
+      "trigger": { "ruleId": "valve-events", "text": "ส่วนที่โป่งพองทำให้การไหลเป็น turbulent และ wall stress เพิ่มตามรัศมี (law of Laplace) จึงโป่งมากขึ้นเรื่อย ๆ" },
+      "signature": "ก้อนในท้องที่เต้นตามชีพจร ไม่เจ็บ และส่วนใหญ่อยู่ใต้ renal artery (infrarenal)",
+      "lookAlikes": ["aortic-dissection", "syphilitic-aortitis"],
+      "tells": [
+        { "vs": "aortic-dissection", "feature": "AAA เป็นการโป่งที่มักไม่มีอาการ ส่วน dissection เป็นการฉีกที่เจ็บฉับพลัน" },
+        { "vs": "syphilitic-aortitis", "feature": "AAA อยู่ที่ aorta ช่องท้อง (infrarenal) และเกิดจาก atherosclerosis ส่วน syphilis เกิดที่ ascending aorta" }
+      ],
+      "counter": "เลิกบุหรี่และคุมปัจจัยเสี่ยง ซ่อมเมื่อขนาดถึงเกณฑ์ โตเร็ว หรือมีอาการ",
+      "danger": "Aneurysm แตก (พยากรณ์โรคแย่มาก)",
+      "memorize": [
+        { "id": "aaa-repair-size", "prompt": "AAA ที่ไม่แตก: ขนาดเท่าไรจึงแนะนำให้ซ่อม?", "fact": "5.5 cm ในผู้ชาย และ 5.0 cm ในผู้หญิง (หรือโตเกิน 0.5 cm ใน 6 เดือน หรือมีอาการ)", "sourceId": "sp-aaa" },
+        { "id": "aaa-cause", "prompt": "ปัจจัยเสี่ยงหรือสาเหตุที่พบบ่อยที่สุดของ AAA คืออะไร?", "fact": "Atherosclerosis", "sourceId": "sp-aaa" },
+        { "id": "aaa-site", "prompt": "AAA พบบ่อยที่ตำแหน่งใด และทำไม?", "fact": "Infrarenal aorta เพราะมีจำนวน lamellar unit น้อยกว่า thoracic aorta", "sourceId": "sp-aaa" }
+      ],
+      "sourceIds": ["sp-aaa"]
+    },
+    {
+      "id": "syphilitic-aortitis",
+      "name": "Syphilitic (luetic) aortitis",
+      "who": "ผู้ป่วย tertiary syphilis หลายสิบปีหลังติดเชื้อที่ไม่ได้รักษา",
+      "trigger": { "ruleId": "upstream-overload", "text": "Aortic root ขยายจนเกิด AR ทำให้ LV เป็น volume overload และเกิด left HF" },
+      "signature": "Ascending aortic aneurysm ที่ intima ย่นเป็น tree-bark จากการอักเสบของ vasa vasorum (หลอดเลือดที่เลี้ยงผนัง aorta)",
+      "lookAlikes": ["aaa", "aortic-dissection"],
+      "tells": [
+        { "vs": "aaa", "feature": "Syphilis เกิดที่ ascending aorta และเห็น intima เป็น tree-bark ส่วน AAA เกิดที่ aorta ช่องท้องจาก atherosclerosis" },
+        { "vs": "aortic-dissection", "feature": "Syphilitic aneurysm ไม่ค่อยกลายเป็น dissection แต่ทำให้เกิด AR ส่วน dissection ในคนอายุน้อยมักเกิดจาก cystic medial degeneration (Marfan)" }
+      ],
+      "counter": "ให้ยาฆ่าเชื้อ syphilis (penicillin) และผ่าตัดแก้ aneurysm หรือเปลี่ยน aortic valve",
+      "danger": "Aortic regurgitation จน LV failure และ coronary ostium ตีบ",
+      "memorize": [
+        { "id": "syph-aortitis-mechanism", "prompt": "Syphilitic aortitis: กลไกที่ทำให้ผนัง aorta อ่อนแอคืออะไร?", "fact": "Vasculitis/endarteritis ของ vasa vasorum ทำให้ media ขาดเลือด เกิด fibrosis และ intima ย่นเป็น tree-bark", "sourceId": "sp-syphilis" },
+        { "id": "syph-aortitis-site", "prompt": "Syphilitic aneurysm เกิดที่ส่วนไหนของ aorta?", "fact": "Ascending aorta/aortic arch (CXR อาจพบ calcification ของ ascending aorta)", "sourceId": "sp-syphilis" }
+      ],
+      "sourceIds": ["sp-syphilis"]
+    },
+    {
+      "id": "acute-rheumatic-fever",
+      "name": "Acute rheumatic fever (ARF)",
+      "who": "เด็กอายุ 5–15 ปี 2–4 สัปดาห์หลัง GAS pharyngitis ที่ไม่ได้รักษา ในพื้นที่แออัดหรือฐานะยากจน",
+      "trigger": { "ruleId": "upstream-overload", "text": "Valvulitis ทำลาย mitral valve ระยะแรกเกิด MR ระยะยาว fibrosis ทำให้เกิด MS แล้วภาระย้อนไปที่ LA" },
+      "signature": "Jones major criteria (carditis, migratory polyarthritis, Sydenham chorea, subcutaneous nodules, erythema marginatum) หลัง GAS pharyngitis และ ASO titer สูง",
+      "lookAlikes": ["mitral-stenosis"],
+      "tells": [
+        { "vs": "mitral-stenosis", "feature": "ARF ระยะเฉียบพลันมักเป็น MR (holosystolic ที่ apex) ส่วน MS เป็นผลระยะยาวหลายปี (chronic RHD)" }
+      ],
+      "counter": "Penicillin เพื่อกำจัด GAS ร่วมกับรักษาอาการ และให้ secondary prophylaxis กันการกลับเป็นซ้ำ",
+      "danger": "Chronic rheumatic heart disease (MS, MR, AR) และ heart failure",
+      "memorize": [
+        { "id": "arf-mechanism", "prompt": "ARF: กลไกการเกิดโรคคืออะไร?", "fact": "Molecular mimicry: แอนติบอดีต่อ M protein ของ GAS ทำปฏิกิริยาข้ามกับ myosin และโปรตีนที่ valve (autoimmune, type II hypersensitivity) ไม่ใช่การติดเชื้อที่ valve", "sourceId": "sp-arf" },
+        { "id": "arf-jones-dx", "prompt": "Revised Jones criteria: วินิจฉัย ARF ครั้งแรกต้องมีอะไร?", "fact": "2 major หรือ 1 major + 2 minor ร่วมกับหลักฐานว่าติดเชื้อ GAS มาก่อน (ถ้าเป็นซ้ำใช้ 3 minor ได้ด้วย)", "sourceId": "sp-arf" },
+        { "id": "arf-valve", "prompt": "ARF: valve ไหนเป็นบ่อยที่สุด และรอยโรคแรกคืออะไร?", "fact": "Mitral valve ระยะแรกเป็น MR ต่อมาจึงกลายเป็น MS (aortic valve เป็นอันดับรอง)", "sourceId": "sp-arf" },
+        { "id": "arf-histology", "prompt": "ARF: histology ที่หัวใจมีลักษณะอย่างไร?", "fact": "Aschoff bodies (granuloma) และ Anitschkow cells (caterpillar cells)", "sourceId": "sp-arf" }
+      ],
+      "sourceIds": ["sp-arf"]
+    }
+  ],
+  "exploits": [
+    {
+      "id": "murmur-two-axes",
+      "ifSee": "โจทย์ให้ murmur มาแล้วถามว่าเป็นโรคอะไร",
+      "think": "แยกให้ได้ 2 แกนก่อน: systole หรือ diastole แล้วดูตำแหน่ง (2nd RICS / 2nd LICS / LLSB / apex) ก็จะเหลือคำตอบตัวเดียวเกือบทุกครั้ง",
+      "strength": "rule"
+    },
+    {
+      "id": "hypotension-which-term",
+      "ifSee": "ความดันตกแล้วถามว่า 'ตัวแปรใดลดลง'",
+      "think": "เข้าสูตร MAP = CO × TPR: vasodilation (anaphylaxis, sepsis) = TPR ลด, pump ล้มเหลว (MI) = CO ลด, preload ไม่พอ (ตั้งครรภ์นอนหงาย, เสียเลือด, tamponade) = venous return/filling ลด",
+      "strength": "rule"
+    },
+    {
+      "id": "inferior-st-bradycardia",
+      "ifSee": "ST elevation ใน II, III, aVF ร่วมกับ HR ช้าหรือ AV block",
+      "think": "RCA อุด ทำให้ AV node (และบ่อยครั้ง SA node) ขาดเลือด",
+      "strength": "heuristic",
+      "exception": "ใน left-dominant circulation inferior wall และ AV node อาจได้เลือดจาก LCx"
+    },
+    {
+      "id": "preterm-continuous-murmur",
+      "ifSee": "ทารกคลอดก่อนกำหนด + continuous murmur ใต้ไหปลาร้าซ้าย และมีการให้ indomethacin",
+      "think": "PDA: indomethacin ยับยั้ง prostaglandin เพื่อปิด ductus",
+      "strength": "rule"
+    },
+    {
+      "id": "late-cyanosis-known-shunt",
+      "ifSee": "ผู้ใหญ่ที่รู้ว่ามี ASD/VSD/PDA และไม่ได้รักษา แล้วเพิ่งเริ่มเหนื่อยและเขียว",
+      "think": "Pulmonary hypertension ทำให้ shunt กลับทิศ (Eisenmenger) และมักมี Hct สูงกับ clubbing",
+      "strength": "rule"
+    },
+    {
+      "id": "wide-split-cause",
+      "ifSee": "ถามสาเหตุหรือกลไกของ wide split S2",
+      "think": "P2 ช้า (pulmonic valve ปิดช้า) จาก RBBB, PS หรือ ASD ไม่ใช่ A2 มาเร็ว",
+      "strength": "rule"
+    },
+    {
+      "id": "anemia-murmur",
+      "ifSee": "Hct ต่ำมาก + systolic murmur ที่ base ของหัวใจ และ valve ปกติ",
+      "think": "Flow (hemic) murmur จาก velocity สูงและ viscosity ต่ำ",
+      "strength": "heuristic",
+      "exception": "ถ้าเป็น diastolic murmur หรือ murmur ดังมากจนคลำได้ thrill ให้หารอยโรคของ valve จริง"
+    },
+    {
+      "id": "tree-bark-aorta",
+      "ifSee": "Ascending aortic aneurysm + intima เป็น tree-bark",
+      "think": "Syphilitic aortitis ที่เกิดจาก endarteritis/vasculitis ของ vasa vasorum",
+      "strength": "heuristic",
+      "exception": "Tree-barking ไม่จำเพาะต่อ syphilis และพบใน aortitis จากสาเหตุอื่นได้ แต่ในข้อสอบ basic science ให้คิดถึง syphilis ก่อน"
+    },
+    {
+      "id": "young-dissection",
+      "ifSee": "ผู้ป่วยอายุน้อย ตัวสูงแขนยาว + aortic dissection แล้วถามว่าโครงสร้างใดผิดปกติ",
+      "think": "Connective tissue (fibrillin-1 ใน Marfan) ทำให้เกิด cystic medial degeneration",
+      "strength": "rule"
+    },
+    {
+      "id": "arf-pathogenesis-question",
+      "ifSee": "ไข้ + migratory arthritis + murmur หลังเจ็บคอ 2–4 สัปดาห์ แล้วถาม pathogenesis",
+      "think": "Autoimmune (molecular mimicry ต่อ GAS antigen) ไม่ใช่การติดเชื้อที่ valve และไม่ใช่ immune complex",
+      "strength": "rule"
+    }
+  ],
+  "distractorPatterns": [
+    {
+      "id": "arf-infection-or-complex",
+      "pattern": "ตัวเลือกบอกว่า ARF เกิดจากเชื้อติดที่ valve, vegetation ที่ติดเชื้อ หรือ immune complex deposition",
+      "kill": "ARF เป็น nonsuppurative sequela: แอนติบอดีที่สร้างต่อ GAS ทำปฏิกิริยาข้ามกับเนื้อเยื่อตัวเอง ส่วน vegetation ที่ติดเชื้อคือ infective endocarditis"
+    },
+    {
+      "id": "hemic-murmur-volume",
+      "pattern": "อธิบาย flow murmur ในคนซีดว่าเกิดจาก blood volume, BP หรือ resistance ที่เพิ่มขึ้น",
+      "kill": "Turbulence ขึ้นกับ velocity สูงและ viscosity ต่ำ (Reynolds number) คนซีด viscosity ลดและ flow เร็วขึ้น"
+    },
+    {
+      "id": "isovolumic-trap",
+      "pattern": "ตัวเลือก isovolumic contraction/relaxation ทั้งที่โจทย์บอกว่า ventricular volume กำลังเพิ่มหรือลด",
+      "kill": "Isovolumic = valve ปิดหมดและ volume คงที่ ถ้า volume กำลังลดคือ ejection ถ้ากำลังเพิ่มคือ filling"
+    },
+    {
+      "id": "lbbb-wide-split",
+      "pattern": "LBBB หรือ AS เป็นตัวเลือกของสาเหตุ wide split S2",
+      "kill": "LBBB/AS ทำให้ A2 ช้าจนเกิด paradoxical split ส่วน wide split ต้องเป็นอะไรที่ทำให้ P2 ช้า"
+    },
+    {
+      "id": "carotid-massage-sympathetic",
+      "pattern": "ตัวเลือกว่าการกด carotid เพิ่ม sympathetic, venous return หรือ EDV",
+      "kill": "Baroreceptor ถูกยืดจึงเพิ่ม vagal และลด sympathetic ผลที่เพิ่มขึ้นคือ peripheral vasodilation (TPR ลด) และ HR ลด"
+    }
+  ],
+  "trapPairs": [
+    { "id": "tp-ms-vs-ar", "a": "mitral-stenosis", "b": "aortic-regurgitation", "decider": "Diastolic murmur ทั้งคู่: rumble ที่ apex หลัง opening snap = MS ส่วน blowing decrescendo ที่ left sternal border ทันทีหลัง S2 = AR" },
+    { "id": "tp-mr-vs-vsd", "a": "mitral-regurgitation", "b": "vsd", "decider": "Holosystolic ทั้งคู่: ที่ apex ร้าวไปรักแร้ = MR ส่วนที่ lower left sternal border = VSD" },
+    { "id": "tp-mr-vs-mvp", "a": "mitral-regurgitation", "b": "mitral-valve-prolapse", "decider": "มี mid-systolic click แล้วตามด้วย late systolic murmur = MVP ส่วน holosystolic ตั้งแต่ S1 = MR" },
+    { "id": "tp-asd-vs-vsd", "a": "asd", "b": "vsd", "decider": "Fixed split S2 + ejection murmur ที่ pulmonic area = ASD ส่วน holosystolic ที่ lower left sternal border = VSD" },
+    { "id": "tp-tof-vs-tga", "a": "tof", "b": "tga", "decider": "Aorta คร่อม septum + RVOT ตีบ = TOF ส่วน aorta ออกจาก RV ทั้งหมด (2 วงจรขนาน ต้องมีจุดผสมเลือด) = TGA" },
+    { "id": "tp-coarct-vs-dissection", "a": "coarctation", "b": "aortic-dissection", "decider": "แขนสูงกว่าขาแบบเรื้อรัง = coarctation ส่วนแขนซ้ายกับขวาต่างกันพร้อมเจ็บฉีกฉับพลัน = dissection" },
+    { "id": "tp-aaa-vs-syphilis", "a": "aaa", "b": "syphilitic-aortitis", "decider": "ตำแหน่ง: infrarenal (atherosclerosis) = AAA ส่วน ascending aorta + tree-bark = syphilis" },
+    { "id": "tp-arf-vs-ms", "a": "acute-rheumatic-fever", "b": "mitral-stenosis", "decider": "ระยะเวลา: สัปดาห์หลังเจ็บคอ + MR = ARF ส่วนหลายปีต่อมา + diastolic rumble = chronic RHD (MS)" }
+  ],
+  "games": {
+    "engine": [
+      {
+        "id": "eng-carotid-massage",
+        "targetSeconds": 90,
+        "difficulty": 1,
+        "basedOn": { "rules": ["map-co-tpr"] },
+        "hint": "สมองตีความว่า baroreceptor ที่ถูกยืดคือความดันสูง",
+        "perturbation": "กด/นวด carotid sinus ข้างหนึ่งในคนปกติ (carotid sinus massage)",
+        "equation": "MAP = CO × TPR; CO = HR × SV",
+        "cells": [
+          { "id": "baro-firing", "variable": "การยิงสัญญาณของ carotid baroreceptor (CN IX)", "answer": "up", "why": "แรงกดทำให้ carotid sinus ถูกยืดเหมือนตอนความดันสูง", "ruleId": "map-co-tpr" },
+          { "id": "vagal", "variable": "Vagal (parasympathetic) outflow ไปหัวใจ", "answer": "up", "why": "NTS ได้ข้อมูลมากขึ้นจึงเพิ่ม parasympathetic outflow", "ruleId": "map-co-tpr" },
+          { "id": "cardiac-sympathetic", "variable": "Cardiac sympathetic activity", "answer": "down", "why": "Baroreflex ยับยั้ง sympathetic outflow" },
+          { "id": "hr", "variable": "Heart rate", "answer": "down", "why": "Vagal เพิ่มและ sympathetic ลดที่ SA node" },
+          { "id": "tpr", "variable": "Peripheral vascular resistance (TPR)", "answer": "down", "why": "Sympathetic ไปหลอดเลือดลดลงจึงเกิด peripheral vasodilation ทั้งที่การกระทำคือการกดหลอดเลือด", "counterIntuitive": true },
+          { "id": "map", "variable": "MAP", "answer": "down", "why": "ทั้ง CO (จาก HR) และ TPR ลดลง", "ruleId": "map-co-tpr" }
+        ]
+      },
+      {
+        "id": "eng-tachycardia-filling",
+        "targetSeconds": 120,
+        "difficulty": 2,
+        "basedOn": { "rules": ["map-co-tpr", "valve-events"], "errata": ["tachycardia-diastole"] },
+        "hint": "Systole หดได้ไม่มาก ส่วนที่ถูกตัดคือช่วงไหน?",
+        "perturbation": "นักวิ่งหัวใจปกติ HR เพิ่มจาก 60 เป็น 150/min ระหว่างวิ่งเร็ว",
+        "equation": "Cycle length = 60/HR; CO = HR × SV",
+        "cells": [
+          { "id": "cycle-length", "variable": "ความยาวของ cardiac cycle (RR interval)", "answer": "down", "why": "จาก 1.0 s เหลือ 0.4 s" },
+          { "id": "diastole-time", "variable": "ระยะเวลา diastole (ventricular filling)", "answer": "down", "why": "เวลาที่หายไปส่วนใหญ่ถูกตัดจาก diastole" },
+          { "id": "systole-fraction", "variable": "สัดส่วนของ systole ต่อทั้ง cycle", "answer": "up", "why": "Systole สั้นลงเพียงเล็กน้อยในขณะที่ cycle สั้นลงมาก systole จึงกินสัดส่วนมากขึ้น", "counterIntuitive": true },
+          { "id": "lv-coronary-time", "variable": "เวลาที่ LV myocardium ได้เลือดจาก coronary", "answer": "down", "why": "Coronary flow ของ LV เกิดใน diastole เป็นหลัก diastole ที่สั้นลงจึงลดเวลานี้" },
+          { "id": "co", "variable": "Cardiac output (คนปกติที่ sympathetic เพิ่ม contractility และ venous return)", "answer": "up", "why": "HR ที่เพิ่ม × SV ที่ยังพอ ทำให้ CO เพิ่ม แต่ถ้า HR สูงจน filling ไม่พอ SV จะเริ่มตก", "ruleId": "map-co-tpr" }
+        ]
+      },
+      {
+        "id": "eng-eisenmenger-vsd",
+        "targetSeconds": 150,
+        "difficulty": 3,
+        "basedOn": { "rules": ["shunt-follows-pressure"], "errata": ["small-vsd-louder"] },
+        "hint": "เมื่อความดันสองฝั่งเท่ากัน อะไรที่ทำให้เกิด turbulence จะหายไป",
+        "perturbation": "VSD ขนาดใหญ่ที่ไม่ได้ผ่าตัด ผ่านไปหลายปีจนหลอดเลือดปอด remodel (Eisenmenger)",
+        "cells": [
+          { "id": "pvr", "variable": "Pulmonary vascular resistance", "answer": "up", "why": "Vasoconstriction, smooth muscle proliferation และ thrombosis ในหลอดเลือดปอด", "ruleId": "shunt-follows-pressure" },
+          { "id": "lr-flow", "variable": "ปริมาณ L→R shunt", "answer": "down", "why": "RV pressure ขึ้นมาใกล้หรือเกิน LV จน shunt กลายเป็น bidirectional หรือ R→L", "ruleId": "shunt-follows-pressure" },
+          { "id": "sao2", "variable": "Systemic arterial O2 saturation", "answer": "down", "why": "เลือดดำผ่าน shunt เข้าสู่ systemic circulation" },
+          { "id": "hct", "variable": "Hematocrit", "answer": "up", "why": "Chronic hypoxemia กระตุ้น EPO (secondary erythrocytosis)" },
+          { "id": "murmur", "variable": "ความดังของ holosystolic murmur", "answer": "down", "why": "Gradient ระหว่าง LV กับ RV หายไป murmur จึงเบาลงทั้งที่โรคแย่ลง", "counterIntuitive": true }
+        ]
+      }
+    ],
+    "guessWho": [
+      {
+        "id": "gw-murmur-six",
+        "targetSeconds": 120,
+        "difficulty": 1,
+        "basedOn": { "rules": ["valve-events", "chest-wall-map"] },
+        "hint": "ถามเรื่อง timing ก่อนตำแหน่ง",
+        "title": "Murmur ปริศนา 6 ตัว",
+        "candidates": [
+          { "id": "as", "label": "Aortic stenosis", "cardId": "aortic-stenosis" },
+          { "id": "ar", "label": "Aortic regurgitation", "cardId": "aortic-regurgitation" },
+          { "id": "ms", "label": "Mitral stenosis", "cardId": "mitral-stenosis" },
+          { "id": "mr", "label": "Mitral regurgitation", "cardId": "mitral-regurgitation" },
+          { "id": "vsd", "label": "VSD", "cardId": "vsd" },
+          { "id": "asd", "label": "ASD", "cardId": "asd" }
+        ],
+        "questions": [
+          { "id": "q-diastolic", "text": "Murmur อยู่ใน diastole ใช่ไหม?", "yes": ["ar", "ms"] },
+          { "id": "q-holosystolic", "text": "เป็น holosystolic murmur ใช่ไหม?", "yes": ["mr", "vsd"] },
+          { "id": "q-apex", "text": "ได้ยินชัดที่สุดที่ apex ใช่ไหม?", "yes": ["ms", "mr"] },
+          { "id": "q-carotid", "text": "ร้าวไปที่คอ (carotid) ใช่ไหม?", "yes": ["as"] },
+          { "id": "q-fixed-split", "text": "มี fixed split S2 ใช่ไหม?", "yes": ["asd"] },
+          { "id": "q-second-ics", "text": "ได้ยินชัดที่ 2nd ICS (ขวาหรือซ้าย) ใช่ไหม?", "yes": ["as", "asd"] },
+          { "id": "q-lsb", "text": "ได้ยินชัดที่ left sternal border ICS 3–4 ลงไปใช่ไหม?", "yes": ["ar", "vsd"] }
+        ],
+        "optimalTree": {
+          "question": "q-diastolic",
+          "yes": { "question": "q-apex", "yes": { "leaf": "ms" }, "no": { "leaf": "ar" } },
+          "no": {
+            "question": "q-holosystolic",
+            "yes": { "question": "q-apex", "yes": { "leaf": "mr" }, "no": { "leaf": "vsd" } },
+            "no": { "question": "q-carotid", "yes": { "leaf": "as" }, "no": { "leaf": "asd" } }
+          }
+        },
+        "explanation": "มีผู้ต้องสงสัย 6 ตัว จึงต้องใช้อย่างน้อย 3 คำถาม (2² = 4 < 6) ถามว่าอยู่ใน diastole ก่อน (แบ่งเป็น 2/4) แล้วใช้ holosystolic แยกกลุ่ม systolic ส่วน apex แยก mitral ออกจากตัวอื่นได้ทั้งสองฝั่ง"
+      },
+      {
+        "id": "gw-chd-six",
+        "targetSeconds": 150,
+        "difficulty": 3,
+        "basedOn": { "rules": ["shunt-follows-pressure", "conotruncal-septum"], "trapPairs": ["tp-tof-vs-tga", "tp-asd-vs-vsd"] },
+        "hint": "แบ่งตามทิศของ shunt ก่อน",
+        "title": "Congenital heart disease 6 ตัว",
+        "candidates": [
+          { "id": "tof", "label": "Tetralogy of Fallot", "cardId": "tof" },
+          { "id": "tga", "label": "d-TGA", "cardId": "tga" },
+          { "id": "asd", "label": "ASD", "cardId": "asd" },
+          { "id": "vsd", "label": "VSD", "cardId": "vsd" },
+          { "id": "pda", "label": "PDA", "cardId": "pda" },
+          { "id": "coarct", "label": "Coarctation of the aorta", "cardId": "coarctation" }
+        ],
+        "questions": [
+          { "id": "q-left-to-right", "text": "เป็น L→R shunt ใช่ไหม?", "yes": ["asd", "vsd", "pda"] },
+          { "id": "q-cyanotic", "text": "เป็น cyanotic (R→L) lesion ใช่ไหม?", "yes": ["tof", "tga"] },
+          { "id": "q-fixed-split", "text": "มี fixed split S2 ใช่ไหม?", "yes": ["asd"] },
+          { "id": "q-continuous", "text": "มี continuous machine-like murmur ใช่ไหม?", "yes": ["pda"] },
+          { "id": "q-aorta-from-rv", "text": "Aorta ออกจาก RV ทั้งหมดใช่ไหม?", "yes": ["tga"] },
+          { "id": "q-arm-leg", "text": "ความดันที่แขนสูงกว่าขาใช่ไหม?", "yes": ["coarct"] },
+          { "id": "q-boot", "text": "CXR เป็น boot-shaped heart ใช่ไหม?", "yes": ["tof"] }
+        ],
+        "optimalTree": {
+          "question": "q-left-to-right",
+          "yes": {
+            "question": "q-fixed-split",
+            "yes": { "leaf": "asd" },
+            "no": { "question": "q-continuous", "yes": { "leaf": "pda" }, "no": { "leaf": "vsd" } }
+          },
+          "no": {
+            "question": "q-cyanotic",
+            "yes": { "question": "q-aorta-from-rv", "yes": { "leaf": "tga" }, "no": { "leaf": "tof" } },
+            "no": { "leaf": "coarct" }
+          }
+        },
+        "explanation": "แบ่งตาม shunt ก่อน (L→R 3 ตัว / อื่น ๆ 3 ตัว) ฝั่ง L→R ใช้ fixed split แล้วใช้ continuous murmur ส่วนอีกฝั่ง ถ้าเขียวต้องแยก TOF กับ TGA ด้วยตำแหน่งที่ aorta ออก (trap pair) ส่วนที่ไม่เขียวและไม่มี shunt คือ coarctation"
+      }
+    ],
+    "speedrun": [
+      { "id": "sr-small-square", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["ecg-ruler-map"] }, "prompt": "กระดาษ ECG ที่ 25 mm/s: 1 ช่องเล็กกี่วินาที และ 1 ช่องใหญ่กี่วินาที?", "answer": "0.04 s และ 0.2 s", "sourceId": "sp-ecg" },
+      { "id": "sr-rate-1500", "targetSeconds": 15, "difficulty": 1, "basedOn": { "rules": ["ecg-ruler-map"] }, "prompt": "RR interval = 20 ช่องเล็ก: HR เท่าไร?", "answer": "1500/20 = 75/min (หรือ 300/4 ช่องใหญ่)", "sourceId": "sp-ecg" },
+      { "id": "sr-pr-normal", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["ecg-ruler-map"] }, "prompt": "PR interval ปกติกี่วินาที และยาวเกินเท่าไรเป็น first-degree AV block?", "answer": "0.12–0.20 s (3–5 ช่องเล็ก) ถ้ามากกว่า 0.20 s เป็น first-degree AV block", "sourceId": "sp-ecg" },
+      { "id": "sr-qrs-narrow", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["ecg-ruler-map"] }, "prompt": "QRS แคบกว่าเท่าไรจึงเรียกว่า narrow และบอกอะไร?", "answer": "<0.12 s ชี้ว่ากำเนิดเหนือ ventricle (supraventricular) ส่วน >0.12 s คิดถึง ventricular origin หรือ aberrancy", "sourceId": "sp-wide-qrs" },
+      { "id": "sr-co-calc", "targetSeconds": 20, "difficulty": 1, "basedOn": { "rules": ["map-co-tpr"] }, "prompt": "HR 70/min, EDV 130 mL, ESV 60 mL: CO เท่าไร?", "answer": "SV = 130 − 60 = 70 mL ดังนั้น CO = 70 × 70 = 4.9 L/min" },
+      { "id": "sr-mitral-area", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["chest-wall-map"] }, "prompt": "ฟัง mitral valve ที่ตำแหน่งไหน?", "answer": "Left 5th ICS แนว midclavicular line (apex)", "sourceId": "sp-heart-sounds" },
+      { "id": "sr-tricuspid-area", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["chest-wall-map"] }, "prompt": "ฟัง tricuspid valve ที่ตำแหน่งไหน?", "answer": "Left 4th ICS ข้าง sternum (lower left sternal border)", "sourceId": "sp-heart-sounds" },
+      { "id": "sr-normal-axis", "targetSeconds": 15, "difficulty": 2, "basedOn": { "rules": ["ecg-ruler-map"] }, "prompt": "Normal QRS axis อยู่ช่วงไหน และดูเร็ว ๆ จาก lead อะไร?", "answer": "−30° ถึง +90° โดย lead I และ aVF เป็นบวกทั้งคู่", "sourceId": "sp-ecg" },
+      { "id": "sr-cyanosis", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["shunt-follows-pressure"] }, "prompt": "Cyanosis เห็นได้เมื่อ deoxygenated Hb สูงถึงเท่าไร?", "answer": "≥5 g/dL", "sourceId": "sp-cyanosis" },
+      { "id": "sr-av-node-rca", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["ecg-ruler-map"] }, "prompt": "AV nodal artery มาจาก RCA ในคนประมาณกี่เปอร์เซ็นต์?", "answer": "ประมาณ 90%", "sourceId": "sp-coronary" },
+      { "id": "sr-pulsus", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["map-co-tpr"] }, "prompt": "Pulsus paradoxus: systolic BP ลดลงเกินเท่าไรตอนหายใจเข้า?", "answer": ">10 mmHg", "sourceId": "sp-tamponade" },
+      { "id": "sr-coarct-gradient", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["upstream-overload"] }, "prompt": "Coarctation: ความต่างของ systolic BP ระหว่างแขนกับขาเกินเท่าไรจึงมีนัยสำคัญ?", "answer": ">20 mmHg", "sourceId": "sp-coarctation" },
+      { "id": "sr-aaa-repair", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["valve-events"] }, "prompt": "AAA: ขนาดที่แนะนำให้ซ่อมในชายและหญิงคือเท่าไร?", "answer": "ชาย 5.5 cm และหญิง 5.0 cm", "sourceId": "sp-aaa" },
+      { "id": "sr-jones", "targetSeconds": 15, "difficulty": 2, "basedOn": { "rules": ["upstream-overload"] }, "prompt": "Revised Jones: วินิจฉัย ARF ครั้งแรกต้องมีกี่ major/minor?", "answer": "2 major หรือ 1 major + 2 minor ร่วมกับหลักฐานว่าติดเชื้อ GAS มาก่อน", "sourceId": "sp-arf" },
+      { "id": "sr-asd-split", "targetSeconds": 10, "difficulty": 3, "basedOn": { "rules": ["valve-events"], "errata": ["asd-fixed-split"] }, "prompt": "ASD: S2 split แบบไหน?", "answer": "กว้างและ fixed (ไม่เปลี่ยนตามการหายใจ)", "sourceId": "sp-asd" }
+    ],
+    "mcq": [
+      {
+        "id": "mcq-cycle-ejection",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["valve-events"] },
+        "stem": "In a pressure–volume study of a healthy left ventricle, the investigator marks a moment just after the aortic valve opens. At this moment, left ventricular pressure is still rising while left ventricular volume has started to fall. Which phase of the cardiac cycle does this moment represent?",
+        "options": [
+          { "key": "A", "text": "Isovolumetric contraction", "why": "All four valves are closed during this phase, so ventricular volume does not change." },
+          { "key": "B", "text": "Rapid ventricular ejection" },
+          { "key": "C", "text": "Isovolumetric relaxation", "why": "Pressure is falling and volume is constant after S2." },
+          { "key": "D", "text": "Rapid ventricular filling", "why": "Volume rises while the mitral valve is open." },
+          { "key": "E", "text": "Atrial systole", "why": "This occurs at the end of diastole and adds volume to the ventricle." }
+        ],
+        "answer": "B",
+        "tell": "Falling volume means blood is leaving the ventricle, which means ejection.",
+        "explanation": "Isovolumic แปลว่า volume คงที่ ถ้า volume ลดลงแสดงว่า aortic valve เปิดและเลือดกำลังออก ซึ่งในช่วงต้นของ ejection ความดันยังขึ้นต่อจนถึงจุดสูงสุด"
+      },
+      {
+        "id": "mcq-flow-murmur",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["valve-events"] },
+        "stem": "A 28-year-old woman with heavy menstrual bleeding reports fatigue. Her hemoglobin is 6.5 g/dL. A soft grade 2/6 midsystolic murmur is heard at the left upper sternal border. Echocardiography shows structurally normal valves. Which of the following best explains the murmur?",
+        "options": [
+          { "key": "A", "text": "Increased blood viscosity", "why": "Anemia lowers viscosity; lower viscosity is what favors turbulence." },
+          { "key": "B", "text": "Increased blood flow velocity" },
+          { "key": "C", "text": "Increased total peripheral resistance", "why": "Anemia tends to lower systemic vascular resistance, and resistance does not create turbulence across a normal valve." },
+          { "key": "D", "text": "Pulmonary valve stenosis", "why": "Echocardiography shows normal valves." },
+          { "key": "E", "text": "Increased arterial blood pressure", "why": "Blood pressure is not the determinant of turbulence in this setting." }
+        ],
+        "answer": "B",
+        "tell": "Low hematocrit + normal valves → flow murmur from high velocity (Reynolds number).",
+        "explanation": "Reynolds number เพิ่มเมื่อ velocity สูงและ viscosity ต่ำ คนซีดมี high-output state และเลือดใส เลือดจึงไหลผ่าน valve ปกติแบบ turbulent"
+      },
+      {
+        "id": "mcq-anaphylaxis-tpr",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["map-co-tpr"] },
+        "stem": "A 19-year-old man develops generalized urticaria, wheezing, and lightheadedness minutes after eating peanuts. His blood pressure is 78/40 mm Hg, pulse is 128/min, and his skin is warm and flushed. The fall in blood pressure is primarily caused by a decrease in which of the following?",
+        "options": [
+          { "key": "A", "text": "Heart rate", "why": "Heart rate is increased by the baroreflex." },
+          { "key": "B", "text": "Myocardial contractility", "why": "Sympathetic activation increases contractility; it is not the primary defect." },
+          { "key": "C", "text": "Total peripheral resistance" },
+          { "key": "D", "text": "Blood viscosity", "why": "Viscosity changes do not explain acute hypotension here." },
+          { "key": "E", "text": "Pulmonary vascular resistance", "why": "PVR does not determine systemic arterial pressure in this way." }
+        ],
+        "answer": "C",
+        "tell": "Warm, flushed skin + hypotension = vasodilation = TPR ↓.",
+        "explanation": "MAP = CO × TPR ใน anaphylaxis ตัวกลางเช่น histamine ทำให้หลอดเลือดขยายทั่วร่างกาย TPR จึงลด ส่วน HR ที่เร็วคือ baroreflex ที่พยายามชดเชย"
+      },
+      {
+        "id": "mcq-supine-pregnancy",
+        "targetSeconds": 60,
+        "difficulty": 2,
+        "basedOn": { "rules": ["map-co-tpr"] },
+        "stem": "A 34-year-old woman at 36 weeks' gestation becomes pale, nauseated, and lightheaded 5 minutes after lying flat for an ultrasound. Her blood pressure is 82/50 mm Hg. The symptoms resolve within minutes after she turns onto her left side. Which of the following is the most likely mechanism of her hypotension?",
+        "options": [
+          { "key": "A", "text": "Decreased venous return" },
+          { "key": "B", "text": "Decreased total peripheral resistance from progesterone", "why": "Pregnancy-related vasodilation is present in every position; it does not explain hypotension that resolves on turning." },
+          { "key": "C", "text": "Decreased myocardial contractility", "why": "Contractility does not change with position over minutes." },
+          { "key": "D", "text": "Dilutional anemia", "why": "Anemia does not produce positional hypotension." },
+          { "key": "E", "text": "Decreased functional residual capacity", "why": "This is a respiratory change, not the cause of hypotension." }
+        ],
+        "answer": "A",
+        "tell": "Late pregnancy + supine + relief with left lateral position = IVC compression.",
+        "explanation": "Aortocaval compression (supine hypotensive syndrome): มดลูกกด IVC ขณะนอนหงาย ทำให้เลือดไหลกลับหัวใจ (preload) ลด CO และ BP จึงตก การนอนตะแคงซ้ายช่วยแก้ได้"
+      },
+      {
+        "id": "mcq-inferior-stemi-av",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["ecg-ruler-map"] },
+        "stem": "A 66-year-old man has 45 minutes of crushing substernal chest pain. ECG shows ST-segment elevation in leads II, III, and aVF, and complete heart block with a ventricular rate of 38/min. Occlusion of which of the following arteries best explains both findings?",
+        "options": [
+          { "key": "A", "text": "Left anterior descending artery", "why": "LAD occlusion causes anterior or anteroseptal ST elevation (V1–V4)." },
+          { "key": "B", "text": "Left circumflex artery", "why": "LCx usually produces lateral changes and supplies the AV node only in the minority with left dominance." },
+          { "key": "C", "text": "Right coronary artery" },
+          { "key": "D", "text": "Left main coronary artery", "why": "Left main occlusion causes extensive anterior and lateral ischemia, usually with shock." },
+          { "key": "E", "text": "Left marginal artery", "why": "It supplies the lateral wall of the left ventricle." }
+        ],
+        "answer": "C",
+        "tell": "Inferior leads + AV block → RCA (AV nodal artery is usually from the RCA).",
+        "explanation": "II, III, aVF = inferior wall ซึ่งส่วนใหญ่ได้เลือดจาก RCA และ AV nodal artery มาจาก RCA ในคนประมาณ 90% จึงเกิด heart block ร่วมด้วย"
+      },
+      {
+        "id": "mcq-ms-pressures",
+        "targetSeconds": 90,
+        "difficulty": 2,
+        "basedOn": { "rules": ["upstream-overload"], "trapPairs": ["tp-ms-vs-ar"] },
+        "stem": "A 41-year-old woman who had rheumatic fever as a child has progressive exertional dyspnea and palpitations. Cardiac catheterization shows: mean left atrial pressure 26 mm Hg (normal ≤12), left ventricular pressure 118/8 mm Hg, aortic pressure 116/76 mm Hg, and pulmonary artery systolic pressure 55 mm Hg. Which of the following is the most likely diagnosis?",
+        "options": [
+          { "key": "A", "text": "Mitral stenosis" },
+          { "key": "B", "text": "Aortic stenosis", "why": "There is no systolic gradient between the left ventricle and the aorta." },
+          { "key": "C", "text": "Aortic regurgitation", "why": "Chronic AR raises LV end-diastolic pressure and widens the pulse pressure." },
+          { "key": "D", "text": "Tricuspid stenosis", "why": "This would raise right atrial, not left atrial, pressure." },
+          { "key": "E", "text": "Constrictive pericarditis", "why": "Constriction raises and equalizes diastolic pressures in all chambers, including the LV." }
+        ],
+        "answer": "A",
+        "tell": "A diastolic pressure gradient between the LA (high) and the LV (normal) = mitral stenosis.",
+        "explanation": "LA pressure สูงมากในขณะที่ LV diastolic pressure ปกติ แสดงว่ามีสิ่งกีดขวางระหว่าง LA กับ LV ในช่วง diastole ซึ่งก็คือ MS และความดันย้อนไปทำให้เกิด pulmonary hypertension"
+      },
+      {
+        "id": "mcq-arf-mechanism",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["upstream-overload"], "trapPairs": ["tp-arf-vs-ms"] },
+        "stem": "A 9-year-old girl has fever and painful swelling that moved from her knees to her ankles over several days. Examination shows a new apical holosystolic murmur radiating to the axilla. Three weeks ago she had an untreated sore throat. Her antistreptolysin O titer is elevated. Which of the following best describes the pathogenesis of her cardiac disease?",
+        "options": [
+          { "key": "A", "text": "Bacterial invasion of the mitral leaflets", "why": "That is infective endocarditis; ARF is a nonsuppurative complication." },
+          { "key": "B", "text": "Deposition of circulating immune complexes in the valve", "why": "The cardiac lesion is caused by cross-reacting antibodies and T cells (type II), not immune-complex vasculitis." },
+          { "key": "C", "text": "Antibodies against streptococcal antigens that cross-react with cardiac proteins" },
+          { "key": "D", "text": "Superantigen-mediated polyclonal T-cell activation", "why": "That is the mechanism of streptococcal toxic shock syndrome." },
+          { "key": "E", "text": "Sterile thrombotic vegetations caused by hypercoagulability", "why": "That describes nonbacterial thrombotic endocarditis." }
+        ],
+        "answer": "C",
+        "tell": "Weeks after GAS pharyngitis + Jones criteria → molecular mimicry (M protein ↔ myosin).",
+        "explanation": "ARF เกิดจาก molecular mimicry ที่แอนติบอดีต่อ M protein ของ GAS ทำปฏิกิริยาข้ามกับ myosin และ valve ระยะเฉียบพลันจึงพบ MR ที่ apex"
+      },
+      {
+        "id": "mcq-eisenmenger",
+        "targetSeconds": 90,
+        "difficulty": 3,
+        "basedOn": { "rules": ["shunt-follows-pressure"], "errata": ["small-vsd-louder"] },
+        "stem": "A 34-year-old woman has known since childhood that she has an unrepaired ventricular septal defect. Over the past year she has developed exertional dyspnea and cyanosis of the lips. She has digital clubbing and a hematocrit of 62%. The loud holosystolic murmur documented in childhood is now barely audible. Which of the following best explains these changes?",
+        "options": [
+          { "key": "A", "text": "Spontaneous closure of the defect", "why": "Closure would not cause cyanosis, clubbing, or erythrocytosis." },
+          { "key": "B", "text": "Pulmonary vascular resistance has risen above systemic resistance, reversing the shunt" },
+          { "key": "C", "text": "Development of left ventricular hypertrophy", "why": "LVH does not reverse a shunt or cause central cyanosis." },
+          { "key": "D", "text": "Recurrent paradoxical emboli", "why": "Emboli cause discrete events such as stroke, not chronic cyanosis with erythrocytosis." },
+          { "key": "E", "text": "Infective endocarditis of the defect", "why": "Endocarditis presents with fever and embolic signs, and it does not reverse the shunt." }
+        ],
+        "answer": "B",
+        "tell": "Known L→R shunt + new cyanosis + a quieter murmur = Eisenmenger.",
+        "explanation": "เลือดไปปอดมากเกินเป็นเวลานานทำให้หลอดเลือดปอด remodel จน PVR สูงกว่า SVR shunt จึงกลับทิศเป็น R→L เกิดอาการเขียว, Hct สูง และ clubbing ส่วน murmur เบาลงเพราะ gradient หายไป"
+      },
+      {
+        "id": "mcq-asd-murmur-source",
+        "targetSeconds": 90,
+        "difficulty": 3,
+        "basedOn": { "rules": ["valve-events", "shunt-follows-pressure"], "errata": ["asd-fixed-split", "asd-murmur-flow"], "trapPairs": ["tp-asd-vs-vsd"] },
+        "stem": "A 26-year-old woman has a soft grade 2/6 midsystolic murmur at the left second intercostal space. S2 is widely split and the split does not change between inspiration and expiration. Echocardiography shows right ventricular dilation and a structurally normal pulmonic valve. Which of the following is the direct source of the murmur?",
+        "options": [
+          { "key": "A", "text": "Turbulent flow through the defect in the interatrial septum", "why": "The pressure gradient between the atria is small, so flow across the defect is low-velocity and usually silent." },
+          { "key": "B", "text": "Increased flow across the pulmonic valve" },
+          { "key": "C", "text": "Stenosis of the pulmonic valve", "why": "The pulmonic valve is structurally normal, and PS gives a split that still varies with respiration." },
+          { "key": "D", "text": "Flow through a membranous ventricular septal defect", "why": "That gives a holosystolic murmur at the lower left sternal border without a fixed split." },
+          { "key": "E", "text": "Regurgitation through the mitral valve", "why": "MR is holosystolic at the apex and radiates to the axilla." }
+        ],
+        "answer": "B",
+        "tell": "Fixed split S2 = ASD; its murmur comes from excess flow across the normal pulmonic valve, not from the hole itself.",
+        "explanation": "ASD ทำให้ RV และ pulmonic valve ต้องรับเลือดมากขึ้น จึงเกิด systolic ejection murmur ที่ pulmonic area ส่วนรูรั่วเองมี gradient ต่ำจึงไม่ค่อยมีเสียง และ split S2 แบบ fixed เพราะ shunt ทำให้ RV volume ไม่แกว่งตามการหายใจ"
+      }
+    ]
+  }
+}
