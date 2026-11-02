@@ -64,6 +64,9 @@
     { "id": "congenital-heart-disease", "aliases": ["CHD", "congenital heart defect", "โรคหัวใจพิการแต่กำเนิด"] },
     { "id": "respiratory-infection", "aliases": ["ARI", "URI", "URTI", "LRI", "LRTI", "acute respiratory infection", "โรคติดเชื้อทางเดินหายใจ"] },
     { "id": "upper-airway-obstruction", "aliases": ["stridor", "UAO", "ทางเดินหายใจส่วนบนอุดกั้น"] },
-    { "id": "pneumonia", "aliases": ["CAP", "community-acquired pneumonia", "ปอดอักเสบ"] }
+    { "id": "pneumonia", "aliases": ["CAP", "community-acquired pneumonia", "ปอดอักเสบ"] },
+    { "id": "thyroid", "aliases": ["thyroid disorders", "hypothyroidism", "hyperthyroidism", "thyrotoxicosis", "TFT", "ไทรอยด์"] },
+    { "id": "congenital-hypothyroidism", "aliases": ["CH", "congenital hypothyroid", "ภาวะพร่องไทรอยด์ฮอร์โมนแต่กำเนิด"] },
+    { "id": "newborn-screening", "aliases": ["neonatal screening", "NBS", "การตรวจคัดกรองทารกแรกเกิด"] }
   ]
 }
