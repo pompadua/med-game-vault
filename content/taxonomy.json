@@ -61,6 +61,9 @@
     { "id": "anatomy", "aliases": ["gross anatomy", "surface anatomy", "กายวิภาค"] },
     { "id": "embryology", "aliases": ["embryo", "development", "คัพภวิทยา"] },
     { "id": "valvular-heart-disease", "aliases": ["VHD", "valve disease", "murmur", "โรคลิ้นหัวใจ"] },
-    { "id": "congenital-heart-disease", "aliases": ["CHD", "congenital heart defect", "โรคหัวใจพิการแต่กำเนิด"] }
+    { "id": "congenital-heart-disease", "aliases": ["CHD", "congenital heart defect", "โรคหัวใจพิการแต่กำเนิด"] },
+    { "id": "respiratory-infection", "aliases": ["ARI", "URI", "URTI", "LRI", "LRTI", "acute respiratory infection", "โรคติดเชื้อทางเดินหายใจ"] },
+    { "id": "upper-airway-obstruction", "aliases": ["stridor", "UAO", "ทางเดินหายใจส่วนบนอุดกั้น"] },
+    { "id": "pneumonia", "aliases": ["CAP", "community-acquired pneumonia", "ปอดอักเสบ"] }
   ]
 }
