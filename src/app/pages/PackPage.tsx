@@ -1,7 +1,8 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { extractItems } from '../../core/items/extract';
 import { ITEM_TYPE_LABEL, type ItemType } from '../../core/items/types';
-import { GAME_MODES, type GameMode, type Pack } from '../../core/schema/pack';
+import { GAME_MODES, type Card, type GameMode, type Pack } from '../../core/schema/pack';
 import { computeProgress } from '../../core/srs/progress';
 import { Badge, formatDate, RuleOfThumb, StatusBadge, Toggle } from '../components/ui';
 import { findEntry, rotationLabel, subjectLabel } from '../data/vault';
@@ -135,59 +136,76 @@ function Variants({ pack, variants }: { pack: Pack; variants?: { region: string;
   );
 }
 
+/** สีประจำกฎแต่ละข้อ (วนใช้ 7 สี) — การ์ดที่เกิดจากกฎเดียวกันจะมีแถบสีเดียวกัน */
+function ruleHue(index: number): CSSProperties {
+  return { '--gc': `var(--h${(((index - 1) % 7) + 7) % 7 + 1})` } as CSSProperties;
+}
+
+function RuleId({ index }: { index: number }) {
+  return (
+    <span className="rule-id" style={ruleHue(index)}>
+      R{index}
+    </span>
+  );
+}
+
 function RulesTab({ pack }: { pack: Pack }) {
   const { rulebook } = pack;
-  const ruleName = (id: string) => rulebook.coreRules.findIndex((r) => r.id === id) + 1;
+  const ruleIndex = (id: string) => rulebook.coreRules.findIndex((r) => r.id === id) + 1;
   return (
     <div className="stack">
-      <section className="panel">
-        <h2>Board</h2>
-        <p>{rulebook.board}</p>
-      </section>
-      <section className="panel">
-        <h2>Pieces</h2>
-        <ul className="plain">
+      <section className="lede-block">
+        <p className="lede">{rulebook.board}</p>
+        <div className="chips">
           {rulebook.pieces.map((p) => (
-            <li key={p.id}>
-              <strong>{p.name}</strong> — {p.role}
-            </li>
+            <span key={p.id} className="piece" title={p.role}>
+              <strong>{p.name}</strong> <span className="muted">{p.role}</span>
+            </span>
           ))}
-        </ul>
+        </div>
       </section>
-      <section className="panel">
-        <h2>Core rules</h2>
-        <ol className="rules">
-          {rulebook.coreRules
-            .filter((r) => !r.retired)
-            .map((r) => (
-              <li key={r.id}>
-                <p>
+
+      <h2 className="h2">
+        Core rules <span className="tag">{rulebook.coreRules.filter((r) => !r.retired).length}</span>
+      </h2>
+      <div className="rules">
+        {rulebook.coreRules
+          .filter((r) => !r.retired)
+          .map((r) => (
+            <article key={r.id} className="rule" style={ruleHue(ruleIndex(r.id))}>
+              <div className="rule-head">
+                <RuleId index={ruleIndex(r.id)} />
+                <p className="rule-text">
                   {r.rule} {r.ruleOfThumb && <RuleOfThumb />} <SourceRefs pack={pack} ids={r.sourceIds} />
                 </p>
-                <p className="muted small">ให้กำเนิด:</p>
-                <ul className="generates">
-                  {r.generates.map((g, i) => (
-                    <li key={i}>{g}</li>
-                  ))}
-                </ul>
-                <Variants pack={pack} variants={r.variants} />
-              </li>
-            ))}
-        </ol>
-      </section>
-      <section className="panel">
-        <h2>Errata (ข้อยกเว้น)</h2>
-        <ul className="plain">
-          {rulebook.errata
-            .filter((e) => !e.retired)
-            .map((e) => (
-              <li key={e.id} className="erratum">
-                <Badge tone="warn">ฝ่าฝืนกฎข้อ {ruleName(e.breaksRule)}</Badge> {e.text} {e.ruleOfThumb && <RuleOfThumb />}{' '}
-                <SourceRefs pack={pack} ids={e.sourceIds} />
-              </li>
-            ))}
-        </ul>
-      </section>
+              </div>
+              <ul className="generates">
+                {r.generates.map((g, i) => (
+                  <li key={i}>{g}</li>
+                ))}
+              </ul>
+              <Variants pack={pack} variants={r.variants} />
+            </article>
+          ))}
+      </div>
+
+      <h2 className="h2">
+        Errata <span className="tag">ข้อยกเว้นที่ข้อสอบชอบออก</span>
+      </h2>
+      <div className="errata">
+        {rulebook.errata
+          .filter((e) => !e.retired)
+          .map((e) => (
+            <div key={e.id} className="err">
+              <b className="num">R{ruleIndex(e.breaksRule)}</b>
+              <div>
+                {e.text} {e.ruleOfThumb && <RuleOfThumb />} <SourceRefs pack={pack} ids={e.sourceIds} />
+                <Variants pack={pack} variants={e.variants} />
+              </div>
+            </div>
+          ))}
+      </div>
+
       <section className="panel two-col">
         <div>
           <h2>Win</h2>
@@ -211,26 +229,86 @@ function RulesTab({ pack }: { pack: Pack }) {
 }
 
 function CardsTab({ pack }: { pack: Pack }) {
-  const nameOf = (id: string) => pack.cards.find((c) => c.id === id)?.name ?? id;
+  const [query, setQuery] = useState('');
+  const [rule, setRule] = useState<string | null>(null);
+  const [openId, setOpenId] = useState<string | null>(null);
   const ruleIndex = (id: string) => pack.rulebook.coreRules.findIndex((r) => r.id === id) + 1;
+  const cards = pack.cards.filter((c) => !c.retired);
+  const q = query.trim().toLowerCase();
+  const shown = cards.filter(
+    (c) => (!rule || c.trigger.ruleId === rule) && (!q || [c.name, c.who, c.signature, c.trigger.text].join(' ').toLowerCase().includes(q)),
+  );
+  const usedRules = pack.rulebook.coreRules.filter((r) => !r.retired && cards.some((c) => c.trigger.ruleId === r.id));
+  const open = cards.find((c) => c.id === openId);
+
   return (
     <div className="stack">
-      {pack.cards
-        .filter((c) => !c.retired)
-        .map((c) => (
-          <article key={c.id} className="panel unit-card" id={`card-${c.id}`}>
-            <h2>
+      <div className="card-filters">
+        <input className="search pill-search" type="search" placeholder="ค้นหาการ์ด…" value={query} onChange={(e) => setQuery(e.target.value)} aria-label="ค้นหาการ์ด" />
+        <div className="chips" role="group" aria-label="กรองตามกฎ">
+          <button type="button" className="chip" aria-pressed={rule === null} onClick={() => setRule(null)}>
+            ทั้งหมด
+          </button>
+          {usedRules.map((r) => (
+            <button key={r.id} type="button" className="chip rule-chip" style={ruleHue(ruleIndex(r.id))} aria-pressed={rule === r.id} onClick={() => setRule(rule === r.id ? null : r.id)} title={r.rule}>
+              R{ruleIndex(r.id)}
+            </button>
+          ))}
+        </div>
+      </div>
+      {shown.length === 0 && <p className="empty">ไม่พบการ์ดที่ตรงกับตัวกรอง</p>}
+      <div className="ucards">
+        {shown.map((c) => (
+          <button key={c.id} type="button" className="ucard" style={ruleHue(ruleIndex(c.trigger.ruleId))} onClick={() => setOpenId(c.id)}>
+            <span className="ucard-rule num">R{ruleIndex(c.trigger.ruleId)}</span>
+            <h3>{c.name}</h3>
+            <span className="ucard-sig">{c.signature}</span>
+          </button>
+        ))}
+      </div>
+      {open && <CardSheet pack={pack} card={open} onClose={() => setOpenId(null)} onOpen={setOpenId} />}
+    </div>
+  );
+}
+
+function CardSheet({ pack, card: c, onClose, onOpen }: { pack: Pack; card: Card; onClose: () => void; onOpen: (id: string) => void }) {
+  const ruleIndex = (id: string) => pack.rulebook.coreRules.findIndex((r) => r.id === id) + 1;
+  const nameOf = (id: string) => pack.cards.find((x) => x.id === id)?.name ?? id;
+  const closeRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [c.id, onClose]);
+
+  return (
+    <div className="scrim" onClick={(e) => e.target === e.currentTarget && onClose()}>
+      <div className="cardsheet" role="dialog" aria-modal="true" aria-labelledby="cardsheet-title" style={ruleHue(ruleIndex(c.trigger.ruleId))}>
+        <div className="cardsheet-head">
+          <div>
+            <h3 id="cardsheet-title">
               {c.name} {c.ruleOfThumb && <RuleOfThumb />}
-            </h2>
-            <dl>
-              <dt>Who</dt>
-              <dd>{c.who}</dd>
-              <dt>Trigger</dt>
-              <dd>
-                <Badge tone="muted">กฎข้อ {ruleIndex(c.trigger.ruleId)}</Badge> {c.trigger.text}
-              </dd>
-              <dt>Signature</dt>
-              <dd>{c.signature}</dd>
+            </h3>
+            <p className="meta">
+              R{ruleIndex(c.trigger.ruleId)} · {c.trigger.text}
+            </p>
+          </div>
+          <button ref={closeRef} type="button" className="xbtn" onClick={onClose}>
+            ปิด
+          </button>
+        </div>
+        <dl className="rows">
+          <div className="row">
+            <dt>Who</dt>
+            <dd>{c.who}</dd>
+          </div>
+          <div className="row">
+            <dt>Signature</dt>
+            <dd>{c.signature}</dd>
+          </div>
+          {c.tells.some((t) => !t.retired) && (
+            <div className="row tell">
               <dt>Tells</dt>
               <dd>
                 <ul className="plain">
@@ -238,40 +316,52 @@ function CardsTab({ pack }: { pack: Pack }) {
                     .filter((t) => !t.retired)
                     .map((t) => (
                       <li key={t.vs}>
-                        <strong>vs {nameOf(t.vs)}:</strong> {t.feature}
+                        <button type="button" className="vs-link" onClick={() => onOpen(t.vs)}>
+                          vs {nameOf(t.vs)}
+                        </button>{' '}
+                        {t.feature}
                       </li>
                     ))}
                 </ul>
               </dd>
-              <dt>Counter</dt>
-              <dd>{c.counter}</dd>
-              <dt>Danger</dt>
-              <dd>{c.danger}</dd>
-              {c.memorize.length > 0 && (
-                <>
-                  <dt>ค่าจำ</dt>
-                  <dd>
-                    <ul className="plain">
-                      {c.memorize
-                        .filter((m) => !m.retired)
-                        .map((m) => (
-                          <li key={m.id} className="memo">
-                            <span className="muted">{m.prompt}</span>
-                            <br />
-                            <strong>{m.fact}</strong> <SourceRefs pack={pack} ids={[m.sourceId]} />
-                            <Variants pack={pack} variants={m.variants} />
-                          </li>
-                        ))}
-                    </ul>
-                  </dd>
-                </>
-              )}
-            </dl>
-            <p className="muted small">
-              อ้างอิง: <SourceRefs pack={pack} ids={c.sourceIds} />
-            </p>
-          </article>
-        ))}
+            </div>
+          )}
+          <div className="row">
+            <dt>Counter</dt>
+            <dd>{c.counter}</dd>
+          </div>
+          <div className="row danger">
+            <dt>Danger</dt>
+            <dd>{c.danger}</dd>
+          </div>
+          {c.memorize.some((m) => !m.retired) && (
+            <div className="row memo">
+              <dt>
+                ค่าจำ <span className="memo-tag">ท่อง</span>
+              </dt>
+              <dd>
+                <ul className="plain">
+                  {c.memorize
+                    .filter((m) => !m.retired)
+                    .map((m) => (
+                      <li key={m.id}>
+                        <span className="muted">{m.prompt}</span>
+                        <br />
+                        <strong>{m.fact}</strong> <SourceRefs pack={pack} ids={[m.sourceId]} />
+                        <Variants pack={pack} variants={m.variants} />
+                      </li>
+                    ))}
+                </ul>
+              </dd>
+            </div>
+          )}
+        </dl>
+        {c.sourceIds?.length ? (
+          <p className="muted small">
+            อ้างอิง: <SourceRefs pack={pack} ids={c.sourceIds} />
+          </p>
+        ) : null}
+      </div>
     </div>
   );
 }

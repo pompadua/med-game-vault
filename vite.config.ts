@@ -31,7 +31,9 @@ export default defineConfig({
       },
       workbox: {
         // precache ทุกอย่างรวมถึง chunk ของทุก pack → ใช้ offline ได้ทั้งคลัง
-        globPatterns: ['**/*.{js,css,html,svg,png,webmanifest}'],
+        // ฟอนต์ precache เฉพาะ subset ไทย/ละติน (latin-ext, vietnamese ไม่ได้ใช้)
+        globPatterns: ['**/*.{js,css,html,svg,png,webmanifest,woff2}'],
+        globIgnores: ['**/*-latin-ext-*', '**/*-vietnamese-*'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,

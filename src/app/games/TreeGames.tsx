@@ -158,11 +158,16 @@ export function DeductionGame({ game, ctx }: { game: Deduction; ctx: PlayContext
         <p>
           <strong>CC:</strong> {game.chiefComplaint}
         </p>
-        {game.vitals && <p className="muted">{game.vitals}</p>}
+        {game.vitals && <p className="vitals">{game.vitals}</p>}
       </div>
-      <p className={spent > game.budget ? 'budget-line over' : 'budget-line'}>
-        ใช้ไป <strong>{spent}</strong> / งบ {game.budget} แต้ม
-      </p>
+      <div className={spent > game.budget ? 'budget-line over' : 'budget-line'}>
+        <span>
+          ใช้ไป <strong className="num">{spent}</strong> / งบ <span className="num">{game.budget}</span> แต้ม
+        </span>
+        <span className="meter" aria-hidden="true">
+          <i style={{ width: `${Math.min(100, (spent / game.budget) * 100)}%` }} />
+        </span>
+      </div>
       {kinds.map((k) => (
         <section key={k} className="clue-group">
           <h4>{KIND_LABEL[k] ?? k}</h4>
@@ -178,7 +183,8 @@ export function DeductionGame({ game, ctx }: { game: Deduction; ctx: PlayContext
                     </p>
                   ) : (
                     <button type="button" className="secondary" disabled={submitted} onClick={() => setBought((b) => [...b, c.id])}>
-                      {c.label} · {c.cost} แต้ม
+                      <span>{c.label}</span>
+                      <span className="cost">{c.cost}</span>
                     </button>
                   )}
                   {submitted && (
