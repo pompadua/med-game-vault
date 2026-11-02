@@ -2,7 +2,7 @@
   "currentRotation": "med",
   "rotations": {
     "med": [
-      { "topic": "Heart failure", "packId": "cardio-heart-failure" },
+      { "topic": "Heart failure" },
       { "topic": "Acute coronary syndrome" },
       { "topic": "Atrial fibrillation" },
       { "topic": "Hypertension" },

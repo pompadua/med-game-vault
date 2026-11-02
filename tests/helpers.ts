@@ -10,7 +10,7 @@ export function readJsonFile<T = unknown>(rel: string): T {
 
 export const taxonomy = readJsonFile<Taxonomy>('content/taxonomy.json');
 
-/** sample pack จริงในคลัง — clone ใหม่ทุกครั้งเพื่อให้แก้ใน test ได้ */
+/** sample pack (เดิมอยู่ในคลัง ย้ายมาเป็น fixture) — clone ใหม่ทุกครั้งเพื่อให้แก้ใน test ได้ */
 export function samplePack(): any {
-  return structuredClone(readJsonFile('content/packs/cardio/cardio-heart-failure.json'));
+  return structuredClone(readJsonFile('tests/fixtures/cardio-heart-failure.json'));
 }
