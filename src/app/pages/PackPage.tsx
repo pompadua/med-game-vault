@@ -149,9 +149,52 @@ function RuleId({ index }: { index: number }) {
   );
 }
 
+/** แผนที่ชั้นของกระดาน: แกนแนวตั้ง 1 ชั้น = 1 ข้อ กดชื่อโรคเพื่อเปิดการ์ด */
+function Track({ pack, onOpen }: { pack: Pack; onOpen: (cardId: string) => void }) {
+  const track = pack.rulebook.track ?? [];
+  const ruleIndex = (id: string) => pack.rulebook.coreRules.findIndex((r) => r.id === id) + 1;
+  const ends = [track[0], track[track.length - 1]].map((l) => l?.name.split(' · ')[0]);
+  return (
+    <section className="track-block">
+      <h2 className="track-title">
+        {ends[0]}
+        <span className="arrow">→</span>
+        {ends[1]}
+      </h2>
+      <ol className="track">
+        {track.map((l, i) => (
+          <li key={l.id} className="rung">
+            <span className="spine" aria-hidden="true">
+              <span className="node num">{i + 1}</span>
+            </span>
+            <div className="rung-body">
+              <div className="lvname">{l.name}</div>
+              {l.hint && <div className="sound">{l.hint}</div>}
+              <div className="chips">
+                {l.cardIds.map((id) => {
+                  const c = pack.cards.find((x) => x.id === id);
+                  if (!c || c.retired) return null;
+                  return (
+                    <button key={id} type="button" className="chip card-chip" style={ruleHue(ruleIndex(c.trigger.ruleId))} onClick={() => onOpen(id)}>
+                      {c.name}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p className="muted small">สีของชื่อโรค = กฎที่ให้กำเนิดการ์ดนั้น (R1–R{pack.rulebook.coreRules.length}) · กดเพื่อเปิดการ์ด</p>
+    </section>
+  );
+}
+
 function RulesTab({ pack }: { pack: Pack }) {
   const { rulebook } = pack;
+  const [openId, setOpenId] = useState<string | null>(null);
   const ruleIndex = (id: string) => rulebook.coreRules.findIndex((r) => r.id === id) + 1;
+  const open = pack.cards.find((c) => c.id === openId && !c.retired);
   return (
     <div className="stack">
       <section className="lede-block">
@@ -164,6 +207,9 @@ function RulesTab({ pack }: { pack: Pack }) {
           ))}
         </div>
       </section>
+
+      {rulebook.track?.length ? <Track pack={pack} onOpen={setOpenId} /> : null}
+      {open && <CardSheet pack={pack} card={open} onClose={() => setOpenId(null)} onOpen={setOpenId} />}
 
       <h2 className="h2">
         Core rules <span className="tag">{rulebook.coreRules.filter((r) => !r.retired).length}</span>

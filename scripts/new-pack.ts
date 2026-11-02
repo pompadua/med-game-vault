@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { Slug } from '../src/core/schema/pack';
+import { CURRENT_PACK_SCHEMA_VERSION, Slug } from '../src/core/schema/pack';
 import { loadTaxonomy, PACKS_DIR } from './lib/content';
 
 /**
@@ -34,7 +34,7 @@ if (existsSync(file)) {
 mkdirSync(dir, { recursive: true });
 const today = new Date().toISOString().slice(0, 10);
 const skeleton = {
-  meta: { id: packId, title, subject, rotation, tags: [], status: 'draft', schemaVersion: 1, createdAt: today, verifiedAt: null, sources: [] },
+  meta: { id: packId, title, subject, rotation, tags: [], status: 'draft', schemaVersion: CURRENT_PACK_SCHEMA_VERSION, createdAt: today, verifiedAt: null, sources: [] },
   rulebook: { board: '', pieces: [], coreRules: [], winConditions: [], loseConditions: [], errata: [] },
   cards: [],
   exploits: [],

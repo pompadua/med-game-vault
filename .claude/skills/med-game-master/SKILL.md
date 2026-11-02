@@ -40,10 +40,11 @@ skill นี้รวมจุดดีของ skill `med-game-master` ส่�
 ไฟล์: `content/packs/<subject>/<packId>.json` · `packId` kebab-case ตั้งครั้งเดียว ห้ามเปลี่ยน · `meta.subject` = ชื่อโฟลเดอร์
 
 ```
-meta: { id, title, subject, rotation, tags[], status: draft|verified|needs-audit, schemaVersion: 1,
+meta: { id, title, subject, rotation, tags[], status: draft|verified|needs-audit, schemaVersion: 2,
         createdAt: YYYY-MM-DD, verifiedAt: YYYY-MM-DD|null, sources[{id, title, url, type, accessedAt}] }
 rulebook: { board, pieces[{id,name,role}], coreRules[{id, rule, generates[], ruleOfThumb?, sourceIds?, variants?}],
-            winConditions[], loseConditions[], errata[{id, text, breaksRule, sourceIds?, ruleOfThumb?}] }
+            winConditions[], loseConditions[], errata[{id, text, breaksRule, sourceIds?, ruleOfThumb?}],
+            track?[{id, name, hint?, cardIds[]}] }   ← แผนที่ชั้นของกระดาน (เช่น จมูก→ถุงลม) แสดงในหน้ากติกา ไม่เป็น review item
 cards[]: { id, name, who, trigger{ruleId, text}, signature, lookAlikes[cardId], tells[{vs: cardId, feature}],
            counter, danger, memorize[{id, prompt, fact, sourceId, variants?}], sourceIds?, ruleOfThumb? }
 exploits[]: { id, ifSee, think, strength: rule|heuristic, exception? }   ← heuristic ต้องมี exception

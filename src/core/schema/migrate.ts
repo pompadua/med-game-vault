@@ -7,8 +7,8 @@ import { CURRENT_PACK_SCHEMA_VERSION } from './pack';
  */
 type Raw = Record<string, unknown>;
 export const packMigrations: Record<number, (pack: Raw) => Raw> = {
-  // ตัวอย่างรูปแบบ (ยังไม่มี v2):
-  // 1: (p) => ({ ...p, meta: { ...(p.meta as Raw), schemaVersion: 2 } }),
+  // v2 เพิ่ม rulebook.track (optional) — ข้อมูล v1 ใช้ได้ทันที เปลี่ยนแค่เลข version
+  1: (p) => ({ ...p, meta: { ...(p.meta as Raw), schemaVersion: 2 } }),
 };
 
 export class MigrationError extends Error {}

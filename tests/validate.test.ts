@@ -48,6 +48,17 @@ describe('validatePack', () => {
     expect(errorsOf(p).some((e) => e.includes('made-up-source'))).toBe(true);
   });
 
+  it('rulebook.track อ้างการ์ดที่ไม่มี → error · การ์ดที่ไม่ได้วาง → warning', () => {
+    const p = samplePack();
+    const [first, ...rest] = p.cards.map((c: { id: string }) => c.id);
+    p.rulebook.track = [{ id: 'level-a', name: 'A', cardIds: ['ghost-card', ...rest] }];
+    expect(errorsOf(p).some((e) => e.includes('ghost-card'))).toBe(true);
+    p.rulebook.track = [{ id: 'level-a', name: 'A', cardIds: rest }];
+    const res = validatePack(p, ctx);
+    expect(res.errors).toEqual([]);
+    expect(res.warnings.some((w) => w.includes(first) && w.includes('track'))).toBe(true);
+  });
+
   it('trigger อ้าง rule ที่ไม่มี → error', () => {
     const p = samplePack();
     p.cards[0].trigger.ruleId = 'no-such-rule';

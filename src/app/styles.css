@@ -1409,6 +1409,94 @@ li.q-ok {
   border-radius: 6px;
   padding: 1px 6px;
 }
+/* แผนที่ชั้น: แกนแนวตั้งไล่สีจาก accent, node วงกลมมีเลขชั้น */
+.track-title {
+  font-size: clamp(1.6rem, 6vw, 2.4rem);
+  margin: 8px 0 4px;
+}
+.track-title .arrow {
+  color: var(--accent);
+  padding: 0 0.15em;
+}
+.track {
+  list-style: none;
+  margin: 10px 0 6px;
+  padding: 0;
+  display: grid;
+}
+.rung {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 10px;
+}
+.spine {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.spine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 3px;
+  background: linear-gradient(var(--accent), color-mix(in srgb, var(--accent) 55%, var(--h2)));
+  opacity: 0.28;
+}
+.rung:first-child .spine::before {
+  top: 18px;
+}
+.rung:last-child .spine::before {
+  bottom: calc(100% - 18px);
+}
+.node {
+  position: relative;
+  z-index: 1;
+  margin-top: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  color: var(--accent);
+}
+.rung-body {
+  padding: 6px 0 14px;
+  border-bottom: 1px dashed var(--border);
+  min-width: 0;
+}
+.rung:last-child .rung-body {
+  border-bottom: 0;
+}
+.lvname {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.sound {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.card-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 3px 10px 3px 8px;
+  line-height: 1.4;
+}
+.card-chip::before {
+  content: '';
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--gc, var(--muted));
+}
 .rules {
   display: grid;
   gap: 10px;

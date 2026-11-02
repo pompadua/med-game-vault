@@ -6,7 +6,7 @@
     "rotation": "med",
     "tags": ["heart-failure"],
     "status": "draft",
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "createdAt": "2026-10-12",
     "verifiedAt": null,
     "sources": [

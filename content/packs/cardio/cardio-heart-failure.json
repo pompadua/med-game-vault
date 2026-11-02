@@ -6,7 +6,7 @@
     "rotation": "med",
     "tags": ["heart-failure", "hfref", "hfpef", "acute-heart-failure", "gdmt", "hemodynamics", "classification", "pharmacology", "nle"],
     "status": "draft",
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "createdAt": "2026-10-12",
     "verifiedAt": null,
     "sources": [

@@ -6,7 +6,7 @@
     "rotation": "peds",
     "tags": ["respiratory-infection", "upper-airway-obstruction", "pneumonia", "pharmacology", "emergency", "nle"],
     "status": "draft",
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "createdAt": "2026-11-02",
     "verifiedAt": null,
     "sources": [
@@ -308,6 +308,17 @@
         "breaksRule": "radius-four",
         "sourceIds": ["poison-control-honey", "fda-otc-cough"]
       }
+    ],
+    "track": [
+      { "id": "nose", "name": "Nose · nasopharynx", "hint": "Stertor · น้ำมูก · หายใจทางปาก", "cardIds": ["common-cold", "allergic-rhinitis", "nasal-foreign-body", "adenoid-hypertrophy"] },
+      { "id": "ear-sinus", "name": "Middle ear · sinus", "hint": "ไม่มีเสียงเฉพาะ ตัดสินด้วย otoscopy และเวลา", "cardIds": ["aom", "ome", "abrs"] },
+      { "id": "oropharynx", "name": "Oropharynx · tonsil", "hint": "เจ็บคอ · hot potato voice ถ้าเป็นฝี", "cardIds": ["viral-pharyngitis", "gas-pharyngitis", "infectious-mono", "diphtheria", "peritonsillar-abscess", "leukemia-mimic"] },
+      { "id": "supraglottis", "name": "Supraglottis · retropharynx", "hint": "Muffled voice · drooling · stridor มาช้า", "cardIds": ["epiglottitis", "retropharyngeal-abscess"] },
+      { "id": "subglottis", "name": "Glottis · subglottis", "hint": "เสียงแหบ · barking cough · inspiratory stridor", "cardIds": ["croup", "spasmodic-croup", "anaphylaxis-airway"] },
+      { "id": "trachea", "name": "Trachea", "hint": "Biphasic stridor · ไอ · toxic", "cardIds": ["bacterial-tracheitis", "fb-aspiration"] },
+      { "id": "bronchi", "name": "Bronchi", "hint": "Rhonchi ที่เปลี่ยนหลังไอ", "cardIds": ["acute-bronchitis", "pertussis"] },
+      { "id": "bronchioles", "name": "Bronchioles", "hint": "Expiratory wheeze + fine crackles", "cardIds": ["bronchiolitis", "asthma-mimic"] },
+      { "id": "alveoli", "name": "Alveoli · pleura", "hint": "Fine crackles · bronchial breath sound · dullness", "cardIds": ["bacterial-pneumonia", "mycoplasma-pneumonia", "chlamydia-pneumonia", "influenza", "empyema"] }
     ]
   },
   "cards": [

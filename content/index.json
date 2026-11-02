@@ -17,7 +17,7 @@
         "nle"
       ],
       "status": "draft",
-      "schemaVersion": 1,
+      "schemaVersion": 2,
       "createdAt": "2026-10-15",
       "verifiedAt": null,
       "file": "cardio/cardio-cvs-basic-science.json",
@@ -81,7 +81,7 @@
         "nle"
       ],
       "status": "draft",
-      "schemaVersion": 1,
+      "schemaVersion": 2,
       "createdAt": "2026-10-12",
       "verifiedAt": null,
       "file": "cardio/cardio-heart-failure.json",
@@ -132,7 +132,7 @@
         "nle"
       ],
       "status": "draft",
-      "schemaVersion": 1,
+      "schemaVersion": 2,
       "createdAt": "2026-11-02",
       "verifiedAt": null,
       "file": "peds/peds-respiratory-infection.json",

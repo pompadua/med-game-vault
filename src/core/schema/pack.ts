@@ -6,7 +6,7 @@ import { z } from 'zod';
  * ถ้าความหมายเปลี่ยนจริง ให้ตั้ง id ใหม่ แล้วติด `retired: true` ที่ของเก่า (ห้ามลบ)
  */
 
-export const CURRENT_PACK_SCHEMA_VERSION = 1 as const;
+export const CURRENT_PACK_SCHEMA_VERSION = 2 as const;
 
 export const Slug = z
   .string()
@@ -92,6 +92,18 @@ export const Erratum = z.object({
   sourceIds: z.array(Slug).optional(),
 });
 
+/**
+ * ชั้นของกระดาน (v2): เรียงการ์ดตามตำแหน่ง/ระดับ เช่น ทางลมจากจมูกถึงถุงลม
+ * ใช้แสดงแผนที่ในหน้ากติกาเท่านั้น ไม่สร้าง review item
+ */
+export const TrackLevel = z.object({
+  id: Slug,
+  name: Text,
+  /** สิ่งที่สังเกตได้ที่ชั้นนี้ เช่น เสียงหายใจ */
+  hint: Text.optional(),
+  cardIds: z.array(Slug).min(1),
+});
+
 export const Rulebook = z.object({
   board: Text,
   pieces: z.array(Piece).min(1),
@@ -99,6 +111,7 @@ export const Rulebook = z.object({
   winConditions: z.array(Text).min(1),
   loseConditions: z.array(Text).min(1),
   errata: z.array(Erratum),
+  track: z.array(TrackLevel).optional(),
 });
 
 // ---------- cards ----------
@@ -366,6 +379,7 @@ export type Meta = z.infer<typeof Meta>;
 export type Source = z.infer<typeof Source>;
 export type CoreRule = z.infer<typeof CoreRule>;
 export type Erratum = z.infer<typeof Erratum>;
+export type TrackLevel = z.infer<typeof TrackLevel>;
 export type Card = z.infer<typeof Card>;
 export type Tell = z.infer<typeof Tell>;
 export type MemorizeFact = z.infer<typeof MemorizeFact>;
