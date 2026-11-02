@@ -4,11 +4,18 @@
     "title": "Thyroid Axis Board: CH, Hashimoto และ Graves ในเด็ก",
     "subject": "peds",
     "rotation": "peds",
-    "tags": ["thyroid", "congenital-hypothyroidism", "newborn-screening", "pharmacology", "physiology", "nle"],
-    "status": "draft",
+    "tags": [
+      "thyroid",
+      "congenital-hypothyroidism",
+      "newborn-screening",
+      "pharmacology",
+      "physiology",
+      "nle"
+    ],
+    "status": "verified",
     "schemaVersion": 2,
     "createdAt": "2026-11-02",
-    "verifiedAt": null,
+    "verifiedAt": "2026-11-02",
     "sources": [
       {
         "id": "th-ch-2564",
@@ -20,21 +27,21 @@
       {
         "id": "espe-ch-2021",
         "title": "van Trotsenburg P et al. Congenital hypothyroidism: a 2020–2021 consensus guidelines update (ENDO-ERN, ESPE, ESE). Thyroid 2021;31:387-419",
-        "url": "https://doi.org/10.1089/thy.2020.0333",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8001676/",
         "type": "guideline",
         "accessedAt": "2026-11-02"
       },
       {
         "id": "eta-graves-2022",
         "title": "Mooij CF et al. 2022 European Thyroid Association guideline for the management of pediatric Graves' disease. Eur Thyroid J 2022;11:e210073",
-        "url": "https://doi.org/10.1530/ETJ-21-0073",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9142815/",
         "type": "guideline",
         "accessedAt": "2026-11-02"
       },
       {
         "id": "vanderkaay-2016",
-        "title": "van der Kaay DC, Wasserman JD, Palmert MR. Management of neonates born to mothers with Graves' disease. Pediatrics 2016;137:e20151878",
-        "url": "https://doi.org/10.1542/peds.2015-1878",
+        "title": "van der Kaay DC, Wasserman JD, Palmert MR. Management of neonates born to mothers with Graves' disease. Pediatrics 2016;137:e20151878 (abstract)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26980880/",
         "type": "review",
         "accessedAt": "2026-11-02"
       },
@@ -51,17 +58,44 @@
         "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e11ad30-1041-4520-10b0-8f9d30d30fcc",
         "type": "other",
         "accessedAt": "2026-11-02"
+      },
+      {
+        "id": "mazza-ntis-2026",
+        "title": "Mazza AD. Non-thyroidal illness syndrome as an adaptive longevity program: reframing low T3 in acute and chronic disease. Cureus 2026;18:e110397",
+        "url": "https://doi.org/10.7759/cureus.110397",
+        "type": "review",
+        "accessedAt": "2026-11-02"
       }
     ]
   },
   "rulebook": {
     "board": "แกน hypothalamus → pituitary → TSH receptor → สายการผลิตในเซลล์ → ตัวต่อม → เนื้อต่อมที่ถูกทำลาย → นอกต่อม วางเป็นรางแนวตั้ง 6 ชั้น โรคแต่ละใบยืนอยู่บนชั้นที่พัง ผู้เล่นมีเครื่องมือ 3 ชิ้นหลัก: คู่ FT4 + TSH (บอกว่าพังเหนือหรือใต้ pituitary), goiter และ uptake (บอกว่าต่อม 'สร้าง' หรือ 'รั่ว'), และนาฬิกาอายุ (สมองต้องการฮอร์โมนช่วง 2–3 ปีแรก)",
     "pieces": [
-      { "id": "pair-ft4-tsh", "name": "คู่ FT4 + TSH", "role": "เข็มทิศ: FT4 บอกว่าฮอร์โมนพอไหม TSH บอกว่าพังชั้นไหน ส่งเป็นคู่เสมอ" },
-      { "id": "antibodies", "name": "Antibody (TRAb, anti-TPO, anti-Tg)", "role": "TRAb บอกว่ามีคนกด TSH receptor (Graves) · anti-TPO/Tg บอกแค่ว่ามี autoimmunity" },
-      { "id": "goiter-uptake", "name": "Goiter และ thyroid scan", "role": "ต่อมโตไหม · ต่อมอยู่ไหน · กิน tracer มากหรือน้อย = สร้างเองหรือรั่ว" },
-      { "id": "age-clock", "name": "นาฬิกาอายุ", "role": "ทารก 48 ชั่วโมงแรก · golden 2 สัปดาห์ · สมอง 2–3 ปี · อายุ 3 ปีลองหยุดยา" },
-      { "id": "drug-ladder", "name": "บันไดยา", "role": "LT4 · MMI + β-blocker · RAI / thyroidectomy · hydrocortisone มาก่อน LT4 ใน central" }
+      {
+        "id": "pair-ft4-tsh",
+        "name": "คู่ FT4 + TSH",
+        "role": "เข็มทิศ: FT4 บอกว่าฮอร์โมนพอไหม TSH บอกว่าพังชั้นไหน ส่งเป็นคู่เสมอ"
+      },
+      {
+        "id": "antibodies",
+        "name": "Antibody (TRAb, anti-TPO, anti-Tg)",
+        "role": "TRAb บอกว่ามีคนกด TSH receptor (Graves) · anti-TPO/Tg บอกแค่ว่ามี autoimmunity"
+      },
+      {
+        "id": "goiter-uptake",
+        "name": "Goiter และ thyroid scan",
+        "role": "ต่อมโตไหม · ต่อมอยู่ไหน · กิน tracer มากหรือน้อย = สร้างเองหรือรั่ว"
+      },
+      {
+        "id": "age-clock",
+        "name": "นาฬิกาอายุ",
+        "role": "ทารก 48 ชั่วโมงแรก · golden 2 สัปดาห์ · สมอง 2–3 ปี · อายุ 3 ปีลองหยุดยา"
+      },
+      {
+        "id": "drug-ladder",
+        "name": "บันไดยา",
+        "role": "LT4 · MMI + β-blocker · RAI / thyroidectomy · hydrocortisone มาก่อน LT4 ใน central"
+      }
     ],
     "coreRules": [
       {
@@ -75,7 +109,10 @@
           "FT4 ↑ + TSH ไม่ต่ำ = TSH-dependent (adenoma, hormone resistance)",
           "Central hypothyroidism ติดตามด้วย FT4 ไม่ใช่ TSH"
         ],
-        "sourceIds": ["espe-ch-2021", "salerno-acquired-2026"]
+        "sourceIds": [
+          "espe-ch-2021",
+          "salerno-acquired-2026"
+        ]
       },
       {
         "id": "brain-clock",
@@ -87,7 +124,10 @@
           "ขนาด LT4 ตั้งต้นของ CH สูงที่สุดในชีวิต (ต่อ kg)",
           "ลองหยุดยาเพื่อแยก transient CH หลังอายุ 3 ปี"
         ],
-        "sourceIds": ["th-ch-2564", "espe-ch-2021"]
+        "sourceIds": [
+          "th-ch-2564",
+          "espe-ch-2021"
+        ]
       },
       {
         "id": "goiter-drive",
@@ -100,7 +140,10 @@
           "ก้อนเดี่ยวที่คลำแยกได้ = thyroid nodule ต้องไป ultrasound"
         ],
         "ruleOfThumb": true,
-        "sourceIds": ["espe-ch-2021", "salerno-acquired-2026"]
+        "sourceIds": [
+          "espe-ch-2021",
+          "salerno-acquired-2026"
+        ]
       },
       {
         "id": "uptake-production",
@@ -113,7 +156,9 @@
           "ATD ไม่หยุดการหลั่งฮอร์โมนที่สร้างไว้แล้ว FT4 จึงลงช้า ต้องมี β-blocker คลุมช่วงแรก"
         ],
         "ruleOfThumb": true,
-        "sourceIds": ["eta-graves-2022"]
+        "sourceIds": [
+          "eta-graves-2022"
+        ]
       },
       {
         "id": "placenta-transfer",
@@ -125,7 +170,10 @@
           "Maternal stimulating TRAb → neonatal Graves",
           "ทารกของแม่ Graves ตรวจ TFT 2 รอบ: day 3–5 และ day 10–14"
         ],
-        "sourceIds": ["vanderkaay-2016", "espe-ch-2021"]
+        "sourceIds": [
+          "vanderkaay-2016",
+          "espe-ch-2021"
+        ]
       },
       {
         "id": "tsh-screen",
@@ -137,7 +185,9 @@
           "TSH < 6 + FT4 ปกติ → หยุดติดตาม",
           "ตรวจหา malformation โดยเฉพาะหัวใจและการได้ยินในทุกราย"
         ],
-        "sourceIds": ["th-ch-2564"]
+        "sourceIds": [
+          "th-ch-2564"
+        ]
       },
       {
         "id": "drug-ladder",
@@ -149,7 +199,10 @@
           "RAI เลี่ยงในเด็กเล็ก · goiter ใหญ่เลือกผ่าตัด",
           "Central hypothyroidism: ประเมิน cortisol และให้ hydrocortisone ก่อน LT4"
         ],
-        "sourceIds": ["eta-graves-2022", "espe-ch-2021"]
+        "sourceIds": [
+          "eta-graves-2022",
+          "espe-ch-2021"
+        ]
       }
     ],
     "winConditions": [
@@ -168,75 +221,102 @@
         "id": "e-central-normal-tsh",
         "text": "TSH ที่อยู่ในช่วงปกติขณะ FT4 ต่ำ คือ TSH ที่ 'ไม่เหมาะสม' = central hypothyroidism และใน central CH บางราย TSH ยังสูงเล็กน้อยได้ จึงต้องดู FT4 เป็นหลัก",
         "breaksRule": "axis-feedback",
-        "sourceIds": ["espe-ch-2021", "salerno-acquired-2026"]
+        "sourceIds": [
+          "espe-ch-2021",
+          "salerno-acquired-2026"
+        ]
       },
       {
         "id": "e-sick-euthyroid",
-        "text": "เด็กป่วยหนัก (nonthyroidal illness / sick euthyroid) TSH และ FT4 ลดลงชั่วคราวได้โดยไม่ใช่ central hypothyroidism ให้ตรวจซ้ำเมื่อหายป่วยก่อนตัดสิน",
+        "text": "เด็กป่วยหนัก (nonthyroidal illness / sick euthyroid) T3 ต่ำ FT4 ปกติหรือต่ำ และ TSH ปกติหรือต่ำได้โดยต่อมไม่ได้เป็นโรค อย่าเพิ่งวินิจฉัย central hypothyroidism ให้ตรวจซ้ำเมื่อหายป่วย",
         "breaksRule": "axis-feedback",
-        "ruleOfThumb": true
+        "ruleOfThumb": true,
+        "sourceIds": [
+          "mazza-ntis-2026"
+        ]
       },
       {
         "id": "e-tsh-lag",
-        "text": "หลังเริ่มรักษา Graves TSH ยังถูกกดค้างอีกหลายสัปดาห์แม้ FT4 กลับมาปกติแล้ว ช่วงแรกจึงปรับยาตาม FT4 ไม่ใช่ TSH",
+        "text": "หลังเริ่มรักษา Graves TSH อาจถูกกดค้างอยู่หลายเดือนแม้ FT4 กลับมาปกติแล้ว ช่วง 4–6 เดือนแรกจึงปรับยาตามระดับ thyroid hormone (FT4) ไม่ใช่ TSH",
         "breaksRule": "axis-feedback",
-        "ruleOfThumb": true
+        "sourceIds": [
+          "eta-graves-2022"
+        ]
       },
       {
         "id": "e-early-sample",
         "text": "หลังคลอดมี physiologic TSH surge (TSH แรกเกิดปกติสูงได้ถึง 24 mU/L แล้วลดลงในไม่กี่วัน) เจาะก่อน 48 ชั่วโมงจึงได้ false positive",
         "breaksRule": "tsh-screen",
-        "sourceIds": ["th-ch-2564"]
+        "sourceIds": [
+          "th-ch-2564"
+        ]
       },
       {
         "id": "e-central-missed",
         "text": "TSH-based screening พลาด central CH เสมอ เพราะ TSH ไม่ขึ้น ทารกที่มี micropenis, hypoglycemia, jaundice นาน หรือ midline defect ต้องส่ง FT4 แม้ screening ปกติ",
         "breaksRule": "tsh-screen",
-        "sourceIds": ["th-ch-2564", "espe-ch-2021"]
+        "sourceIds": [
+          "th-ch-2564",
+          "espe-ch-2021"
+        ]
       },
       {
         "id": "e-delayed-tsh-rise",
         "text": "Preterm (< 37 สัปดาห์), น้ำหนัก < 2,500 g, ทารกป่วย และครรภ์แฝด (โดยเฉพาะ monozygotic) TSH อาจขึ้นช้า screening ครั้งแรกปกติไม่พอ ต้องทำ second TSH screening ที่อายุราว 2 สัปดาห์ และถ้าเกิด < 32 สัปดาห์ ตรวจทุก 2 สัปดาห์จน corrected GA 37 สัปดาห์",
         "breaksRule": "tsh-screen",
-        "sourceIds": ["th-ch-2564"]
+        "sourceIds": [
+          "th-ch-2564"
+        ]
       },
       {
         "id": "e-pendred-duox2",
         "text": "Dyshormonogenesis ที่ยืนยันทางพันธุกรรมถือว่าถาวร ไม่ต้องลองหยุดยา ยกเว้น Pendred syndrome และ DUOX2 mutation ที่บางรายหยุดยาได้",
         "breaksRule": "brain-clock",
-        "sourceIds": ["th-ch-2564"]
+        "sourceIds": [
+          "th-ch-2564"
+        ]
       },
       {
         "id": "e-cardiac-half-dose",
         "text": "CH ที่มี cardiac insufficiency (เช่น heart failure) ไม่เริ่ม LT4 ขนาดเต็ม ให้เริ่มราว 50% แล้วค่อยเพิ่มหลัง 2 สัปดาห์ตาม FT4",
         "breaksRule": "brain-clock",
-        "sourceIds": ["th-ch-2564"]
+        "sourceIds": [
+          "th-ch-2564"
+        ]
       },
       {
         "id": "e-hashitoxicosis",
         "text": "Hashimoto ซึ่งเป็นโรคของ hypothyroidism อาจมาด้วย thyrotoxicosis ช่วงต้น (เซลล์ที่ถูกทำลายปล่อยฮอร์โมนที่เก็บไว้) uptake ต่ำ จึงไม่ให้ ATD และต่อมามักลงเป็น hypothyroid",
         "breaksRule": "uptake-production",
         "ruleOfThumb": true,
-        "sourceIds": ["salerno-acquired-2026"]
+        "sourceIds": [
+          "salerno-acquired-2026"
+        ]
       },
       {
         "id": "e-maternal-treated",
         "text": "แม่ที่เคยเป็น Graves แม้รักษาหายแล้วด้วย RAI หรือผ่าตัด ยังอาจมี TRAb ในเลือดและส่งผ่านรกได้ ทารกยังเสี่ยง neonatal Graves ใช้ตารางตรวจเดียวกับแม่ที่ยังรักษาอยู่",
         "breaksRule": "placenta-transfer",
-        "sourceIds": ["vanderkaay-2016"]
+        "sourceIds": [
+          "vanderkaay-2016"
+        ]
       },
       {
         "id": "e-minor-rash",
-        "text": "Rash/urticaria จาก MMI เป็น minor side effect ให้ antihistamine แล้วกินยาต่อได้ ไม่ใช่ข้อบ่งชี้ของ definitive treatment",
+        "text": "Rash/urticaria เป็น minor side effect ที่พบบ่อยที่สุดของ ATD (ราว 10%) จัดการตามอาการ (เช่น antihistamine) และมักหายเอง จึงไม่ใช่ข้อบ่งชี้ของ definitive treatment ทันที",
         "breaksRule": "drug-ladder",
-        "ruleOfThumb": true
+        "sourceIds": [
+          "eta-graves-2022"
+        ]
       },
       {
         "id": "e-ptu-exception",
-        "text": "ETA 2022 ระบุว่าไม่ควรใช้ PTU ในเด็ก แต่ใน lecture ยังเหลือข้อยกเว้นที่ PTU ถูกเลือก: หญิงตั้งครรภ์ไตรมาสแรก (เลี่ยง teratogenicity ของ MMI) และ thyroid storm (PTU ยับยั้ง T4 → T3 ที่เนื้อเยื่อด้วย)",
+        "text": "ETA 2022: ไม่ใช้ PTU ในเด็กเลย (เสี่ยง hepatic failure) · lecture ยังพูดถึงข้อยกเว้น 2 อย่างคือไตรมาสแรกของการตั้งครรภ์ และ thyroid storm (PTU ยับยั้ง T4 → T3 ที่เนื้อเยื่อด้วย) แต่ ETA ไม่ได้ครอบคลุมเรื่องตั้งครรภ์ และใน thyroid storm ระบุให้ใช้ iodine เพื่อให้ฮอร์โมนลงเร็ว",
         "breaksRule": "drug-ladder",
         "ruleOfThumb": true,
-        "sourceIds": ["eta-graves-2022"]
+        "sourceIds": [
+          "eta-graves-2022"
+        ]
       }
     ],
     "track": [
@@ -244,37 +324,63 @@
         "id": "hypothalamus-pituitary",
         "name": "Hypothalamus · pituitary",
         "hint": "FT4 ↓ แต่ TSH ไม่ขึ้น · หรือ FT4 ↑ แต่ TSH ไม่ต่ำ",
-        "cardIds": ["central-hypothyroidism", "tsh-dependent-thyrotoxicosis"]
+        "cardIds": [
+          "central-hypothyroidism",
+          "tsh-dependent-thyrotoxicosis"
+        ]
       },
       {
         "id": "tsh-receptor",
         "name": "TSH receptor",
         "hint": "IgG จับ receptor: กระตุ้น = hyper · บล็อก = hypo · ข้ามรกได้",
-        "cardIds": ["graves", "neonatal-graves", "transient-ch-blocking-ab"]
+        "cardIds": [
+          "graves",
+          "neonatal-graves",
+          "transient-ch-blocking-ab"
+        ]
       },
       {
         "id": "synthesis-line",
         "name": "สายการผลิต (NIS → TPO → coupling)",
         "hint": "ต่อมอยู่ที่เดิม · TSH สูงขับให้ goiter",
-        "cardIds": ["dyshormonogenesis", "transient-ch-iodine", "transient-ch-maternal-atd", "iodine-deficiency-goiter"]
+        "cardIds": [
+          "dyshormonogenesis",
+          "transient-ch-iodine",
+          "transient-ch-maternal-atd",
+          "iodine-deficiency-goiter"
+        ]
       },
       {
         "id": "gland-structure",
         "name": "ตัวต่อม: มี / ไม่มี / ผิดที่ / ก้อน",
         "hint": "Dysgenesis ไม่มี goiter · ก้อนเดี่ยว = nodule",
-        "cardIds": ["thyroid-dysgenesis", "toxic-nodule", "thyroid-nodule"]
+        "cardIds": [
+          "thyroid-dysgenesis",
+          "toxic-nodule",
+          "thyroid-nodule"
+        ]
       },
       {
         "id": "gland-destruction",
         "name": "เนื้อต่อมถูกทำลาย",
         "hint": "รั่ว (thyrotoxic, uptake ↓) แล้วค่อยลงเป็น hypo",
-        "cardIds": ["hashimoto", "hashitoxicosis", "subacute-thyroiditis"]
+        "cardIds": [
+          "hashimoto",
+          "hashitoxicosis",
+          "subacute-thyroiditis"
+        ]
       },
       {
         "id": "outside-gland",
         "name": "นอกต่อม · เวลา · ยา",
         "hint": "ต่อมปกติ แต่ตัวเลขหลอก หรือยาเป็นตัวปัญหา",
-        "cardIds": ["screen-false-positive", "subclinical-ch", "sick-euthyroid", "exogenous-thyrotoxicosis", "atd-agranulocytosis"]
+        "cardIds": [
+          "screen-false-positive",
+          "subclinical-ch",
+          "sick-euthyroid",
+          "exogenous-thyrotoxicosis",
+          "atd-agranulocytosis"
+        ]
       }
     ]
   },
@@ -283,12 +389,24 @@
       "id": "thyroid-dysgenesis",
       "name": "Thyroid dysgenesis (agenesis, hypoplasia, ectopic)",
       "who": "ทารกแรกเกิด · สาเหตุที่พบบ่อยที่สุดของ primary CH · ส่วนใหญ่ sporadic",
-      "trigger": { "ruleId": "goiter-drive", "text": "ต่อมพัฒนาหรือเคลื่อนลงจาก foramen cecum ตาม thyroglossal duct ไม่สำเร็จ จึงไม่มีเนื้อต่อมพอสร้างฮอร์โมน" },
+      "trigger": {
+        "ruleId": "goiter-drive",
+        "text": "ต่อมพัฒนาหรือเคลื่อนลงจาก foramen cecum ตาม thyroglossal duct ไม่สำเร็จ จึงไม่มีเนื้อต่อมพอสร้างฮอร์โมน"
+      },
       "signature": "Screening TSH สูง + FT4 ต่ำ ในทารกที่ดูปกติ ไม่มี goiter · scan เห็น no uptake (agenesis) หรือ uptake ที่โคนลิ้น (lingual thyroid)",
-      "lookAlikes": ["dyshormonogenesis", "transient-ch-blocking-ab"],
+      "lookAlikes": [
+        "dyshormonogenesis",
+        "transient-ch-blocking-ab"
+      ],
       "tells": [
-        { "vs": "dyshormonogenesis", "feature": "Dysgenesis ไม่มี goiter และ scan ไม่เห็นต่อมที่คอ ส่วน dyshormonogenesis ต่อมอยู่ที่เดิม ปกติหรือโต uptake เพิ่ม" },
-        { "vs": "transient-ch-blocking-ab", "feature": "No uptake ทั้งคู่ แต่ ultrasound ใน blocking Ab เห็นต่อมปกติที่คอ และแม่มีโรค autoimmune thyroid" }
+        {
+          "vs": "dyshormonogenesis",
+          "feature": "Dysgenesis ไม่มี goiter และ scan ไม่เห็นต่อมที่คอ ส่วน dyshormonogenesis ต่อมอยู่ที่เดิม ปกติหรือโต uptake เพิ่ม"
+        },
+        {
+          "vs": "transient-ch-blocking-ab",
+          "feature": "No uptake ทั้งคู่ แต่ ultrasound ใน blocking Ab เห็นต่อมปกติที่คอ และแม่มีโรค autoimmune thyroid"
+        }
       ],
       "counter": "LT4 ทันทีตามระดับ FT4 แรก (FT4 < 0.4 ng/dL → 10–15 mcg/kg/day) ภายใน 2 สัปดาห์แรก แล้วให้ตลอดชีวิต · ไม่ต้องลองหยุดยาที่อายุ 3 ปีถ้า imaging ยืนยัน dysgenesis",
       "danger": "Intellectual disability ถาวรถ้ารักษาช้า",
@@ -306,19 +424,38 @@
           "sourceId": "th-ch-2564"
         }
       ],
-      "sourceIds": ["th-ch-2564", "espe-ch-2021"]
+      "sourceIds": [
+        "th-ch-2564",
+        "espe-ch-2021"
+      ]
     },
     {
       "id": "dyshormonogenesis",
       "name": "Thyroid dyshormonogenesis (รวม Pendred syndrome)",
       "who": "ทารกแรกเกิด · autosomal recessive · มีประวัติพี่น้องเป็นได้",
-      "trigger": { "ruleId": "goiter-drive", "text": "Enzyme/channel ในสายการผลิต (NIS, pendrin, TPO, DUOX, Tg, IYD) พัง ต่อมอยู่ที่เดิมแต่สร้างฮอร์โมนไม่ได้ TSH สูงจึงขับต่อมให้โต" },
+      "trigger": {
+        "ruleId": "goiter-drive",
+        "text": "Enzyme/channel ในสายการผลิต (NIS, pendrin, TPO, DUOX, Tg, IYD) พัง ต่อมอยู่ที่เดิมแต่สร้างฮอร์โมนไม่ได้ TSH สูงจึงขับต่อมให้โต"
+      },
       "signature": "Primary CH ที่ต่อมอยู่ตำแหน่งปกติ ขนาดปกติหรือโต (goitrous hypothyroidism) และ scan uptake เพิ่ม · Pendred = goiter + sensorineural hearing loss",
-      "lookAlikes": ["thyroid-dysgenesis", "transient-ch-iodine", "iodine-deficiency-goiter"],
+      "lookAlikes": [
+        "thyroid-dysgenesis",
+        "transient-ch-iodine",
+        "iodine-deficiency-goiter"
+      ],
       "tells": [
-        { "vs": "thyroid-dysgenesis", "feature": "มี goiter ได้ และ scan เห็นต่อมที่คอ uptake เพิ่ม" },
-        { "vs": "transient-ch-iodine", "feature": "Iodine excess กด organification ชั่วคราวและมีประวัติ povidone-iodine ส่วน dyshormonogenesis เป็นถาวรและมักมีประวัติครอบครัว" },
-        { "vs": "iodine-deficiency-goiter", "feature": "Dyshormonogenesis เป็นตั้งแต่แรกเกิดในครอบครัว (AR) ส่วน iodine deficiency คนในพื้นที่เป็นหลายคนและ urine iodine ต่ำ" }
+        {
+          "vs": "thyroid-dysgenesis",
+          "feature": "มี goiter ได้ และ scan เห็นต่อมที่คอ uptake เพิ่ม"
+        },
+        {
+          "vs": "transient-ch-iodine",
+          "feature": "Iodine excess กด organification ชั่วคราวและมีประวัติ povidone-iodine ส่วน dyshormonogenesis เป็นถาวรและมักมีประวัติครอบครัว"
+        },
+        {
+          "vs": "iodine-deficiency-goiter",
+          "feature": "Dyshormonogenesis เป็นตั้งแต่แรกเกิดในครอบครัว (AR) ส่วน iodine deficiency คนในพื้นที่เป็นหลายคนและ urine iodine ต่ำ"
+        }
       ],
       "counter": "LT4 ตลอดชีวิตตามแนวทาง CH · ส่ง hearing test (Pendred) · ติดตาม goiter",
       "danger": "Sensorineural hearing loss ที่หลุดการตรวจ (Pendred) และพัฒนาการถ้ารักษาช้า",
@@ -336,18 +473,33 @@
           "sourceId": "espe-ch-2021"
         }
       ],
-      "sourceIds": ["th-ch-2564", "espe-ch-2021"]
+      "sourceIds": [
+        "th-ch-2564",
+        "espe-ch-2021"
+      ]
     },
     {
       "id": "central-hypothyroidism",
       "name": "Central hypothyroidism (isolated TSH deficiency / MPHD)",
       "who": "ทารกที่มี midline defect, septo-optic dysplasia · เด็กหลังผ่าตัด craniopharyngioma หรือ cranial irradiation",
-      "trigger": { "ruleId": "axis-feedback", "text": "Pituitary/hypothalamus ไม่ส่ง TSH ต่อมปกติแต่ไม่มีใครกระตุ้น FT4 จึงต่ำโดย TSH ไม่ขึ้นตาม" },
+      "trigger": {
+        "ruleId": "axis-feedback",
+        "text": "Pituitary/hypothalamus ไม่ส่ง TSH ต่อมปกติแต่ไม่มีใครกระตุ้น FT4 จึงต่ำโดย TSH ไม่ขึ้นตาม"
+      },
       "signature": "FT4 ต่ำ + TSH ต่ำหรือ 'ปกติ' · ทารกมี micropenis, hypoglycemia, prolonged jaundice ทั้งที่ newborn TSH screening ปกติ · อาการ hypothyroid มัก milder กว่า primary",
-      "lookAlikes": ["thyroid-dysgenesis", "sick-euthyroid"],
+      "lookAlikes": [
+        "thyroid-dysgenesis",
+        "sick-euthyroid"
+      ],
       "tells": [
-        { "vs": "thyroid-dysgenesis", "feature": "Central: TSH ไม่ขึ้น screening จึงไม่เจอ · dysgenesis: TSH สูงมาก screening จับได้" },
-        { "vs": "sick-euthyroid", "feature": "Central มีหลักฐานขาดฮอร์โมน pituitary ตัวอื่นหรือรอยโรคที่ MRI · sick euthyroid กลับปกติเองเมื่อหายป่วย" }
+        {
+          "vs": "thyroid-dysgenesis",
+          "feature": "Central: TSH ไม่ขึ้น screening จึงไม่เจอ · dysgenesis: TSH สูงมาก screening จับได้"
+        },
+        {
+          "vs": "sick-euthyroid",
+          "feature": "Central มีหลักฐานขาดฮอร์โมน pituitary ตัวอื่นหรือรอยโรคที่ MRI · sick euthyroid กลับปกติเองเมื่อหายป่วย"
+        }
       ],
       "counter": "ตรวจ cortisol/ACTH, GH, LH/FSH, PRL + pituitary MRI · ให้ hydrocortisone ก่อน LT4 ถ้าขาด ACTH หรือยังตัดไม่ได้ · ปรับ LT4 ตาม FT4 (ให้อยู่ครึ่งบนของช่วงปกติ) ไม่ใช้ TSH",
       "danger": "Adrenal crisis เมื่อเริ่ม LT4 ก่อนแก้ ACTH deficiency และ hypoglycemia ในทารก MPHD",
@@ -365,18 +517,33 @@
           "sourceId": "salerno-acquired-2026"
         }
       ],
-      "sourceIds": ["espe-ch-2021", "salerno-acquired-2026"]
+      "sourceIds": [
+        "espe-ch-2021",
+        "salerno-acquired-2026"
+      ]
     },
     {
       "id": "transient-ch-blocking-ab",
       "name": "Transient CH จาก maternal TSH receptor blocking antibody",
       "who": "ทารกของแม่ที่เป็น autoimmune thyroid disease (Hashimoto หรือ Graves ที่มี blocking TRAb)",
-      "trigger": { "ruleId": "placenta-transfer", "text": "IgG ที่บล็อก TSHR ผ่านรกไปกดต่อมทารก หายเมื่อ antibody ของแม่ถูกกำจัดหมด" },
+      "trigger": {
+        "ruleId": "placenta-transfer",
+        "text": "IgG ที่บล็อก TSHR ผ่านรกไปกดต่อมทารก หายเมื่อ antibody ของแม่ถูกกำจัดหมด"
+      },
       "signature": "Primary CH ที่ scan no uptake แต่ ultrasound เห็นต่อมปกติที่คอ และแม่มีโรคไทรอยด์ autoimmune",
-      "lookAlikes": ["thyroid-dysgenesis", "transient-ch-iodine"],
+      "lookAlikes": [
+        "thyroid-dysgenesis",
+        "transient-ch-iodine"
+      ],
       "tells": [
-        { "vs": "thyroid-dysgenesis", "feature": "Ultrasound เห็นต่อมที่คอ (no uptake เพราะ receptor ถูกบล็อก ไม่ใช่เพราะไม่มีต่อม)" },
-        { "vs": "transient-ch-iodine", "feature": "ประวัติแม่มี thyroid autoimmunity / ทารกมี thyroid antibody บวก แทนประวัติ povidone-iodine" }
+        {
+          "vs": "thyroid-dysgenesis",
+          "feature": "Ultrasound เห็นต่อมที่คอ (no uptake เพราะ receptor ถูกบล็อก ไม่ใช่เพราะไม่มีต่อม)"
+        },
+        {
+          "vs": "transient-ch-iodine",
+          "feature": "ประวัติแม่มี thyroid autoimmunity / ทารกมี thyroid antibody บวก แทนประวัติ povidone-iodine"
+        }
       ],
       "counter": "รักษาเหมือน CH ทุกอย่าง (LT4 ทันที) แล้วลองหยุดยาเมื่ออายุ > 3 ปี เพราะมี clue ของ transient",
       "danger": "เข้าใจผิดว่าเป็น agenesis แล้วให้ยาตลอดชีวิตโดยไม่จำเป็น",
@@ -388,18 +555,33 @@
           "sourceId": "th-ch-2564"
         }
       ],
-      "sourceIds": ["th-ch-2564", "espe-ch-2021"]
+      "sourceIds": [
+        "th-ch-2564",
+        "espe-ch-2021"
+      ]
     },
     {
       "id": "transient-ch-iodine",
       "name": "Transient CH จาก iodine excess (Wolff–Chaikoff)",
       "who": "ทารกที่ใช้ povidone-iodine ทำแผล/สายสะดือ หรือได้ iodine contrast · โดยเฉพาะ preterm",
-      "trigger": { "ruleId": "placenta-transfer", "text": "Iodine มากกด organification (Wolff–Chaikoff) ต่อมผู้ใหญ่ escape ได้ แต่ต่อมทารกยัง escape ไม่ได้" },
+      "trigger": {
+        "ruleId": "placenta-transfer",
+        "text": "Iodine มากกด organification (Wolff–Chaikoff) ต่อมผู้ใหญ่ escape ได้ แต่ต่อมทารกยัง escape ไม่ได้"
+      },
       "signature": "TSH สูง/FT4 ต่ำ ชั่วคราวในทารกที่สัมผัส iodine ปริมาณมาก ต่อมอยู่ตำแหน่งปกติ และ scan อาจ no uptake",
-      "lookAlikes": ["dyshormonogenesis", "transient-ch-blocking-ab"],
+      "lookAlikes": [
+        "dyshormonogenesis",
+        "transient-ch-blocking-ab"
+      ],
       "tells": [
-        { "vs": "dyshormonogenesis", "feature": "มีประวัติสัมผัส iodine และหายเองเมื่อหยุด ไม่มีประวัติครอบครัว" },
-        { "vs": "transient-ch-blocking-ab", "feature": "สาเหตุอยู่ที่ทารกได้ iodine ไม่ใช่ antibody จากแม่" }
+        {
+          "vs": "dyshormonogenesis",
+          "feature": "มีประวัติสัมผัส iodine และหายเองเมื่อหยุด ไม่มีประวัติครอบครัว"
+        },
+        {
+          "vs": "transient-ch-blocking-ab",
+          "feature": "สาเหตุอยู่ที่ทารกได้ iodine ไม่ใช่ antibody จากแม่"
+        }
       ],
       "counter": "หยุดแหล่ง iodine · ถ้าผลยืนยันเข้าเกณฑ์ (FT4 ต่ำ หรือ TSH > 20) ให้ LT4 ตามแนวทางก่อน แล้วค่อยลองหยุดภายหลัง",
       "danger": "ปล่อยไม่รักษาเพราะคิดว่า 'เดี๋ยวก็หาย' ในช่วงที่สมองต้องการฮอร์โมน",
@@ -411,18 +593,32 @@
           "sourceId": "espe-ch-2021"
         }
       ],
-      "sourceIds": ["espe-ch-2021"]
+      "sourceIds": [
+        "espe-ch-2021"
+      ]
     },
     {
       "id": "transient-ch-maternal-atd",
       "name": "Transient hypothyroidism จาก maternal antithyroid drug",
       "who": "ทารกของแม่ Graves ที่กิน MMI/PTU ช่วงตั้งครรภ์",
-      "trigger": { "ruleId": "placenta-transfer", "text": "ยา ATD ผ่านรกไปยับยั้ง TPO ของทารก หมดฤทธิ์ภายในไม่กี่วันหลังคลอด" },
+      "trigger": {
+        "ruleId": "placenta-transfer",
+        "text": "ยา ATD ผ่านรกไปยับยั้ง TPO ของทารก หมดฤทธิ์ภายในไม่กี่วันหลังคลอด"
+      },
       "signature": "ทารกแม่ Graves ที่ TFT ช่วงแรกปกติหรือ hypothyroid เล็กน้อย แล้วค่อยเปลี่ยนเมื่อยาหมด (อาจกลายเป็น neonatal Graves ถ้ามี TRAb)",
-      "lookAlikes": ["neonatal-graves", "dyshormonogenesis"],
+      "lookAlikes": [
+        "neonatal-graves",
+        "dyshormonogenesis"
+      ],
       "tells": [
-        { "vs": "neonatal-graves", "feature": "ช่วงที่ยาแม่ยังอยู่ TFT ปกติหรือต่ำ · neonatal Graves โผล่หลังยาหมด (สัปดาห์แรก–สัปดาห์ที่ 2) จึงต้องตรวจซ้ำ day 10–14" },
-        { "vs": "dyshormonogenesis", "feature": "หายเองภายในไม่กี่วันหลังยาถูกขับออก ไม่มีประวัติครอบครัว" }
+        {
+          "vs": "neonatal-graves",
+          "feature": "ช่วงที่ยาแม่ยังอยู่ TFT ปกติหรือต่ำ · neonatal Graves โผล่หลังยาหมด (สัปดาห์แรก–สัปดาห์ที่ 2) จึงต้องตรวจซ้ำ day 10–14"
+        },
+        {
+          "vs": "dyshormonogenesis",
+          "feature": "หายเองภายในไม่กี่วันหลังยาถูกขับออก ไม่มีประวัติครอบครัว"
+        }
       ],
       "counter": "ไม่ต้องรีบรักษาถ้าไม่เข้าเกณฑ์ ติดตาม TFT ตามตารางทารกแม่ Graves (day 3–5 และ 10–14)",
       "danger": "ผล TFT วันแรก ๆ ที่ปกติทำให้ discharge แล้วพลาด neonatal Graves ที่ตามมา",
@@ -434,18 +630,32 @@
           "sourceId": "vanderkaay-2016"
         }
       ],
-      "sourceIds": ["vanderkaay-2016"]
+      "sourceIds": [
+        "vanderkaay-2016"
+      ]
     },
     {
       "id": "subclinical-ch",
       "name": "Subclinical CH (hyperthyrotropinemia: TSH 6–20, FT4 ปกติ)",
       "who": "ทารกที่ screening positive แล้วผลยืนยัน TSH ก้ำกึ่ง",
-      "trigger": { "ruleId": "tsh-screen", "text": "ต่อมทำงานพอกด FT4 ให้ปกติแต่ต้องใช้ TSH สูงกว่าปกติ อาจเป็น CH ระยะต้นหรือ transient" },
+      "trigger": {
+        "ruleId": "tsh-screen",
+        "text": "ต่อมทำงานพอกด FT4 ให้ปกติแต่ต้องใช้ TSH สูงกว่าปกติ อาจเป็น CH ระยะต้นหรือ transient"
+      },
       "signature": "Confirmatory TSH 6–20 mU/L + FT4 ปกติตามอายุ ทารกไม่มีอาการ",
-      "lookAlikes": ["screen-false-positive", "thyroid-dysgenesis"],
+      "lookAlikes": [
+        "screen-false-positive",
+        "thyroid-dysgenesis"
+      ],
       "tells": [
-        { "vs": "screen-false-positive", "feature": "False positive: serum TSH < 6 และ FT4 ปกติ → หยุดติดตาม · subclinical: TSH 6–20 → ต้องตัดสินใจร่วมกับผู้ปกครอง" },
-        { "vs": "thyroid-dysgenesis", "feature": "Overt CH: FT4 ต่ำ หรือ TSH > 20 → เริ่ม LT4 ทันทีโดยไม่ต้องคุย" }
+        {
+          "vs": "screen-false-positive",
+          "feature": "False positive: serum TSH < 6 และ FT4 ปกติ → หยุดติดตาม · subclinical: TSH 6–20 → ต้องตัดสินใจร่วมกับผู้ปกครอง"
+        },
+        {
+          "vs": "thyroid-dysgenesis",
+          "feature": "Overt CH: FT4 ต่ำ หรือ TSH > 20 → เริ่ม LT4 ทันทีโดยไม่ต้องคุย"
+        }
       ],
       "counter": "Discuss กับผู้ปกครอง: เริ่ม LT4 ทันที หรือตรวจ TSH/FT4 ซ้ำใน 2 สัปดาห์ (พิจารณา imaging) · ถ้าซ้ำแล้ว TSH สูงขึ้นและ FT4 ลดลงหรือใกล้เดิม → เริ่ม LT4 · ถ้า TSH ลดลง → ตรวจทุก 2 สัปดาห์จน TSH < 6",
       "danger": "ติดตามหลุดในครอบครัวที่มาไม่สะดวก (กรณีนี้ให้ยาไปเลยปลอดภัยกว่า)",
@@ -457,17 +667,27 @@
           "sourceId": "th-ch-2564"
         }
       ],
-      "sourceIds": ["th-ch-2564"]
+      "sourceIds": [
+        "th-ch-2564"
+      ]
     },
     {
       "id": "screen-false-positive",
       "name": "False-positive screening (เจาะเร็ว / physiologic TSH surge)",
       "who": "ทารกที่เจาะ DBS ก่อน 48 ชั่วโมง หรือ TSH ลงเองแล้วตอนยืนยัน",
-      "trigger": { "ruleId": "tsh-screen", "text": "TSH พุ่งหลังคลอดจาก cold stress แล้วลดลงในไม่กี่วัน ตัวเลขช่วงนี้จึงสูงทั้งที่ต่อมปกติ" },
+      "trigger": {
+        "ruleId": "tsh-screen",
+        "text": "TSH พุ่งหลังคลอดจาก cold stress แล้วลดลงในไม่กี่วัน ตัวเลขช่วงนี้จึงสูงทั้งที่ต่อมปกติ"
+      },
       "signature": "Screening positive แต่ serum ยืนยัน TSH < 6 mU/L + FT4 ปกติ",
-      "lookAlikes": ["subclinical-ch"],
+      "lookAlikes": [
+        "subclinical-ch"
+      ],
       "tells": [
-        { "vs": "subclinical-ch", "feature": "TSH ยืนยัน < 6 (ไม่ใช่ 6–20)" }
+        {
+          "vs": "subclinical-ch",
+          "feature": "TSH ยืนยัน < 6 (ไม่ใช่ 6–20)"
+        }
       ],
       "counter": "หยุดติดตาม และหยุด LT4 ถ้าเริ่มไปแล้ว",
       "danger": "เจาะเร็วซ้ำ ๆ จนครอบครัวกังวลหรือได้ยาไม่จำเป็น",
@@ -485,35 +705,69 @@
           "sourceId": "th-ch-2564"
         }
       ],
-      "sourceIds": ["th-ch-2564"]
+      "sourceIds": [
+        "th-ch-2564"
+      ]
     },
     {
       "id": "sick-euthyroid",
       "name": "Nonthyroidal illness (sick euthyroid)",
       "who": "เด็ก/ทารกที่ป่วยหนักใน ICU",
-      "trigger": { "ruleId": "axis-feedback", "text": "ความเจ็บป่วยหนักกดแกน HPT และการแปลง T4 → T3 ชั่วคราว" },
-      "signature": "FT4 และ TSH ต่ำหรือต่ำปกติระหว่างป่วยหนัก กลับปกติเองเมื่อหาย",
-      "lookAlikes": ["central-hypothyroidism"],
+      "trigger": {
+        "ruleId": "axis-feedback",
+        "text": "ความเจ็บป่วยหนักกดแกน HPT และการแปลง T4 → T3 ชั่วคราว"
+      },
+      "signature": "ระหว่างป่วยหนัก T3 ต่ำ FT4 ปกติหรือต่ำ TSH ปกติหรือต่ำ โดยต่อมไม่ได้เป็นโรค และกลับปกติเองเมื่อหาย",
+      "lookAlikes": [
+        "central-hypothyroidism"
+      ],
       "tells": [
-        { "vs": "central-hypothyroidism", "feature": "ไม่มีหลักฐานขาดฮอร์โมน pituitary ตัวอื่นและกลับปกติเมื่อหายป่วย" }
+        {
+          "vs": "central-hypothyroidism",
+          "feature": "ไม่มีหลักฐานขาดฮอร์โมน pituitary ตัวอื่นและกลับปกติเมื่อหายป่วย"
+        }
       ],
       "counter": "ตรวจ TFT ซ้ำหลังหายป่วยก่อนวินิจฉัยโรค · ในทารกป่วยทำ second TSH screening ตามแนวทาง",
       "danger": "ทารกป่วยอาจซ่อน CH ไว้ (TSH ขึ้นช้า) จึงต้องตรวจซ้ำ ไม่ใช่สรุปว่าปกติ",
       "memorize": [],
-      "ruleOfThumb": true
+      "ruleOfThumb": true,
+      "sourceIds": [
+        "mazza-ntis-2026",
+        "th-ch-2564"
+      ]
     },
     {
       "id": "hashimoto",
       "name": "Hashimoto thyroiditis (chronic lymphocytic thyroiditis)",
       "who": "เด็กวัยเรียนถึงวัยรุ่น หญิงมากกว่าชาย · พบบ่อยใน Down, Turner, Klinefelter, T1DM, celiac",
-      "trigger": { "ruleId": "goiter-drive", "text": "T-cell และ antibody ต่อ TPO/Tg ทำลายเซลล์ต่อมช้า ๆ lymphocyte แทรกเต็มต่อมจึงโต" },
+      "trigger": {
+        "ruleId": "goiter-drive",
+        "text": "T-cell และ antibody ต่อ TPO/Tg ทำลายเซลล์ต่อมช้า ๆ lymphocyte แทรกเต็มต่อมจึงโต"
+      },
       "signature": "Diffuse goiter แน่น (firm) ไม่เจ็บ ± อาการ hypometabolic · anti-TPO/anti-Tg บวก · TFT เปลี่ยนตามระยะ: (hashitoxicosis) → euthyroid → subclinical → overt hypothyroid · เด็กน้ำหนักขึ้นแต่ height velocity ตก",
-      "lookAlikes": ["graves", "iodine-deficiency-goiter", "thyroid-nodule", "hashitoxicosis"],
+      "lookAlikes": [
+        "graves",
+        "iodine-deficiency-goiter",
+        "thyroid-nodule",
+        "hashitoxicosis"
+      ],
       "tells": [
-        { "vs": "graves", "feature": "Hashimoto goiter firm ไม่มี bruit · Graves soft smooth ± bruit และ TRAb บวก (anti-TPO บวกได้ทั้งคู่)" },
-        { "vs": "iodine-deficiency-goiter", "feature": "Hashimoto antibody บวก · iodine deficiency antibody ลบ คนในพื้นที่เป็นหลายคน urine iodine ต่ำ" },
-        { "vs": "thyroid-nodule", "feature": "Hashimoto โตทั่วต่อม (อาจขรุขระ) · nodule เป็นก้อนเดี่ยวที่คลำแยกได้ ต้อง ultrasound" },
-        { "vs": "hashitoxicosis", "feature": "Hashitoxicosis คือ Hashimoto ระยะ thyrotoxic ชั่วคราว ระยะอื่นเป็น eu/hypo" }
+        {
+          "vs": "graves",
+          "feature": "Hashimoto goiter firm ไม่มี bruit · Graves soft smooth ± bruit และ TRAb บวก (anti-TPO บวกได้ทั้งคู่)"
+        },
+        {
+          "vs": "iodine-deficiency-goiter",
+          "feature": "Hashimoto antibody บวก · iodine deficiency antibody ลบ คนในพื้นที่เป็นหลายคน urine iodine ต่ำ"
+        },
+        {
+          "vs": "thyroid-nodule",
+          "feature": "Hashimoto โตทั่วต่อม (อาจขรุขระ) · nodule เป็นก้อนเดี่ยวที่คลำแยกได้ ต้อง ultrasound"
+        },
+        {
+          "vs": "hashitoxicosis",
+          "feature": "Hashitoxicosis คือ Hashimoto ระยะ thyrotoxic ชั่วคราว ระยะอื่นเป็น eu/hypo"
+        }
       ],
       "counter": "Euthyroid → ติดตาม FT4/TSH และ growth · subclinical → ให้ LT4 เมื่อ TSH > 10 mU/L หรือมีอาการ · overt → LT4 ตามอายุ (3–10 ปี 3–5 mcg/kg/day) เริ่มต่ำในรายรุนแรง/เป็นนาน แล้วตรวจ 4–6 สัปดาห์หลังปรับยา",
       "danger": "Growth failure, pubertal delay และ goiter ใหญ่กดหลอดลม · ก้อนเดี่ยวใน Hashimoto ต้องตัด malignancy",
@@ -550,39 +804,85 @@
           "sourceId": "salerno-acquired-2026"
         }
       ],
-      "sourceIds": ["salerno-acquired-2026", "fda-synthroid-label"]
+      "sourceIds": [
+        "salerno-acquired-2026",
+        "fda-synthroid-label"
+      ]
     },
     {
       "id": "hashitoxicosis",
       "name": "Hashitoxicosis (ระยะ thyrotoxic ของ Hashimoto)",
       "who": "เด็ก/วัยรุ่นที่เป็น Hashimoto ระยะต้น (พบน้อย)",
-      "trigger": { "ruleId": "uptake-production", "text": "เซลล์ต่อมที่ถูกทำลายปล่อยฮอร์โมนที่เก็บไว้ออกมา (รั่ว ไม่ได้สร้างเพิ่ม)" },
-      "signature": "Thyrotoxic อาการน้อยและชั่วคราว goiter firm anti-TPO สูง TRAb ลบ uptake ต่ำ แล้วต่อมาลงเป็น hypothyroid",
-      "lookAlikes": ["graves", "subacute-thyroiditis", "hashimoto"],
+      "trigger": {
+        "ruleId": "uptake-production",
+        "text": "เซลล์ต่อมที่ถูกทำลายปล่อยฮอร์โมนที่เก็บไว้ออกมา (รั่ว ไม่ได้สร้างเพิ่ม)"
+      },
+      "signature": "Thyrotoxic อาการน้อยและหายเอง goiter แน่น heterogeneous · anti-TPO/anti-Tg สูง TRAb ลบ · uptake ต่ำ แล้วต่อมาลงเป็น hypothyroid",
+      "lookAlikes": [
+        "graves",
+        "subacute-thyroiditis",
+        "hashimoto"
+      ],
       "tells": [
-        { "vs": "graves", "feature": "TRAb ลบ และ uptake ต่ำ (Graves TRAb บวก uptake สูงทั่วต่อม)" },
-        { "vs": "subacute-thyroiditis", "feature": "ไม่มีไข้ ต่อมไม่เจ็บ anti-TPO สูง" },
-        { "vs": "hashimoto", "feature": "เป็นระยะหนึ่งของโรคเดียวกัน ระยะนี้ FT4 สูง TSH ต่ำ" }
+        {
+          "vs": "graves",
+          "feature": "TRAb ลบ และ uptake ต่ำ (Graves TRAb บวก uptake สูงทั่วต่อม)"
+        },
+        {
+          "vs": "subacute-thyroiditis",
+          "feature": "ไม่มีไข้ ต่อมไม่เจ็บ anti-TPO สูง"
+        },
+        {
+          "vs": "hashimoto",
+          "feature": "เป็นระยะหนึ่งของโรคเดียวกัน ระยะนี้ FT4 สูง TSH ต่ำ"
+        }
       ],
       "counter": "β-blocker คุมอาการแล้วติดตาม TFT เพราะจะลงเป็น hypothyroid · ไม่ให้ ATD",
       "danger": "ให้ MMI ทั้งที่ต่อมไม่ได้สร้างเพิ่ม → hypothyroid เร็วขึ้นและเสี่ยง side effect โดยไม่จำเป็น",
       "memorize": [],
       "ruleOfThumb": true,
-      "sourceIds": ["salerno-acquired-2026"]
+      "sourceIds": [
+        "eta-graves-2022",
+        "salerno-acquired-2026"
+      ]
     },
     {
       "id": "graves",
       "name": "Graves disease",
       "who": "วัยรุ่นตอนต้น หญิงมากกว่าชาย · สาเหตุหลักของ hyperthyroidism ในเด็ก · ร่วมกับ T1DM และ autoimmune อื่นได้",
-      "trigger": { "ruleId": "axis-feedback", "text": "TRAb ชนิดกระตุ้นจับ TSHR แทน TSH แต่ไม่ฟัง feedback ต่อมจึงโตและสร้างฮอร์โมนไม่หยุด ขณะที่ TSH ถูกกดจนเกือบศูนย์" },
+      "trigger": {
+        "ruleId": "axis-feedback",
+        "text": "TRAb ชนิดกระตุ้นจับ TSHR แทน TSH แต่ไม่ฟัง feedback ต่อมจึงโตและสร้างฮอร์โมนไม่หยุด ขณะที่ TSH ถูกกดจนเกือบศูนย์"
+      },
       "signature": "น้ำหนักลดทั้งที่กินจุ ใจสั่น ขี้ร้อน มือสั่น ผลการเรียนตก/สมาธิสั้น (ถูกคิดว่าเป็น ADHD) · height ตัดเส้นขึ้น · diffuse goiter soft smooth ± bruit · eye signs · FT4/FT3 สูง TSH ถูกกด TRAb บวก",
-      "lookAlikes": ["hashitoxicosis", "subacute-thyroiditis", "toxic-nodule", "hashimoto", "tsh-dependent-thyrotoxicosis"],
+      "lookAlikes": [
+        "hashitoxicosis",
+        "subacute-thyroiditis",
+        "toxic-nodule",
+        "hashimoto",
+        "tsh-dependent-thyrotoxicosis"
+      ],
       "tells": [
-        { "vs": "hashitoxicosis", "feature": "TRAb บวก uptake สูงทั่วต่อม และไม่หายเอง" },
-        { "vs": "subacute-thyroiditis", "feature": "ต่อมไม่เจ็บ ไม่มีไข้ uptake สูง" },
-        { "vs": "toxic-nodule", "feature": "Uptake เพิ่มทั่วต่อม (ไม่ใช่ hot nodule จุดเดียว) และ TRAb บวก" },
-        { "vs": "hashimoto", "feature": "Soft + bruit + thyrotoxic + TRAb (stimulating) บวก" },
-        { "vs": "tsh-dependent-thyrotoxicosis", "feature": "TSH ถูกกดต่ำ (TSH-dependent: TSH ปกติหรือสูงทั้งที่ FT4 สูง)" }
+        {
+          "vs": "hashitoxicosis",
+          "feature": "TRAb บวก uptake สูงทั่วต่อม และไม่หายเอง"
+        },
+        {
+          "vs": "subacute-thyroiditis",
+          "feature": "ต่อมไม่เจ็บ ไม่มีไข้ uptake สูง"
+        },
+        {
+          "vs": "toxic-nodule",
+          "feature": "Uptake เพิ่มทั่วต่อม (ไม่ใช่ hot nodule จุดเดียว) และ TRAb บวก"
+        },
+        {
+          "vs": "hashimoto",
+          "feature": "Soft + bruit + thyrotoxic + TRAb (stimulating) บวก"
+        },
+        {
+          "vs": "tsh-dependent-thyrotoxicosis",
+          "feature": "TSH ถูกกดต่ำ (TSH-dependent: TSH ปกติหรือสูงทั้งที่ FT4 สูง)"
+        }
       ],
       "counter": "MMI 0.15–0.5 mg/kg/day (dose titration) อย่างน้อย 3 ปี + propranolol/atenolol ช่วงแรกจน euthyroid (ถามประวัติ asthma ก่อน) · เจาะ WBC/neutrophil และ LFT baseline · สอนครอบครัว: ไข้/เจ็บคอ/ตัวเหลือง → หยุดยาแล้วมาตรวจ · definitive (total thyroidectomy หรือ RAI) เมื่อ relapse, ไม่ remission, major side effect, compliance แย่ หรือ goiter ใหญ่",
       "danger": "Agranulocytosis/hepatitis จากยา, thyroid storm, high-output heart failure",
@@ -624,18 +924,32 @@
           "sourceId": "eta-graves-2022"
         }
       ],
-      "sourceIds": ["eta-graves-2022"]
+      "sourceIds": [
+        "eta-graves-2022"
+      ]
     },
     {
       "id": "neonatal-graves",
       "name": "Neonatal Graves disease",
       "who": "ทารกของแม่ที่เป็นหรือเคยเป็น Graves (รวมแม่ที่ทำ RAI/ผ่าตัดไปแล้ว) ซึ่ง TRAb บวกหรือไม่ทราบ",
-      "trigger": { "ruleId": "placenta-transfer", "text": "Stimulating TRAb (IgG) ของแม่ผ่านรกไปกระตุ้นต่อมทารก เป็นชั่วคราวจนกว่า antibody จะหมด" },
+      "trigger": {
+        "ruleId": "placenta-transfer",
+        "text": "Stimulating TRAb (IgG) ของแม่ผ่านรกไปกระตุ้นต่อมทารก เป็นชั่วคราวจนกว่า antibody จะหมด"
+      },
       "signature": "Irritable, tachycardia, น้ำหนักไม่ขึ้น, goiter, ตาโปน, small fontanelle/craniosynostosis, hepatosplenomegaly, jaundice, thrombocytopenia · ในครรภ์มี fetal tachycardia/IUGR · FT4 สูง TSH ต่ำ",
-      "lookAlikes": ["transient-ch-maternal-atd", "graves"],
+      "lookAlikes": [
+        "transient-ch-maternal-atd",
+        "graves"
+      ],
       "tells": [
-        { "vs": "transient-ch-maternal-atd", "feature": "เมื่อยาแม่หมดฤทธิ์ (ราว day 10–14) ภาพเปลี่ยนเป็น FT4 สูง TSH ต่ำและมีอาการ" },
-        { "vs": "graves", "feature": "Antibody มาจากแม่ จึงหายเองภายในไม่กี่เดือน ไม่ใช่ต้องให้ยาหลายปี" }
+        {
+          "vs": "transient-ch-maternal-atd",
+          "feature": "เมื่อยาแม่หมดฤทธิ์ (ราว day 10–14) ภาพเปลี่ยนเป็น FT4 สูง TSH ต่ำและมีอาการ"
+        },
+        {
+          "vs": "graves",
+          "feature": "Antibody มาจากแม่ จึงหายเองภายในไม่กี่เดือน ไม่ใช่ต้องให้ยาหลายปี"
+        }
       ],
       "counter": "MMI (treatment of choice) + β-blocker เมื่อมี sympathetic overactivity · รายดื้อ/รุนแรงเพิ่ม potassium iodide (Lugol/SSKI) · ติดตามทุกสัปดาห์จนคงที่แล้วค่อย ๆ ลดยา (ส่วนใหญ่ใช้ MMI 1–2 เดือน) · admit เมื่อ hemodynamic unstable, arrhythmia/heart failure หรือ goiter กดหลอดลม",
       "danger": "Heart failure, arrhythmia, tracheal compression และ craniosynostosis",
@@ -653,68 +967,129 @@
           "sourceId": "vanderkaay-2016"
         }
       ],
-      "sourceIds": ["vanderkaay-2016"]
+      "sourceIds": [
+        "vanderkaay-2016"
+      ]
     },
     {
       "id": "subacute-thyroiditis",
       "name": "Subacute (painful) thyroiditis",
       "who": "เด็กโต/วัยรุ่นหลังติดเชื้อไวรัสทางเดินหายใจ (พบน้อยในเด็ก)",
-      "trigger": { "ruleId": "uptake-production", "text": "การอักเสบทำลาย follicle ฮอร์โมนที่เก็บไว้รั่วออกมา ต่อมไม่ได้สร้างเพิ่ม" },
-      "signature": "ไข้ + ต่อมโตกดเจ็บหลังเป็นหวัด + thyrotoxic ชั่วคราว · uptake ต่ำ · ESR/CRP สูง · แล้วอาจตามด้วย hypothyroid ชั่วคราว",
-      "lookAlikes": ["graves", "hashitoxicosis", "exogenous-thyrotoxicosis"],
+      "trigger": {
+        "ruleId": "uptake-production",
+        "text": "การอักเสบทำลาย follicle ฮอร์โมนที่เก็บไว้รั่วออกมา ต่อมไม่ได้สร้างเพิ่ม"
+      },
+      "signature": "ไข้ + ต่อมกดเจ็บหลังเป็นหวัด + thyrotoxic ชั่วคราว (ในเด็กส่วนใหญ่ไม่มีอาการหรืออาการน้อย) · uptake ต่ำ · ESR/CRP สูง · แล้วอาจตามด้วย hypothyroid ชั่วคราว",
+      "lookAlikes": [
+        "graves",
+        "hashitoxicosis",
+        "exogenous-thyrotoxicosis"
+      ],
       "tells": [
-        { "vs": "graves", "feature": "ต่อมเจ็บ มีไข้ uptake ต่ำ" },
-        { "vs": "hashitoxicosis", "feature": "มีไข้ ต่อมกดเจ็บ inflammatory marker สูง" },
-        { "vs": "exogenous-thyrotoxicosis", "feature": "Subacute: serum Tg สูง (ต่อมแตก) ต่อมเจ็บ · exogenous: Tg ต่ำ ไม่มี goiter" }
+        {
+          "vs": "graves",
+          "feature": "ต่อมเจ็บ มีไข้ uptake ต่ำ"
+        },
+        {
+          "vs": "hashitoxicosis",
+          "feature": "มีไข้ ต่อมกดเจ็บ inflammatory marker สูง"
+        },
+        {
+          "vs": "exogenous-thyrotoxicosis",
+          "feature": "Subacute: serum Tg สูง (ต่อมแตก) ต่อมเจ็บ · exogenous: Tg ต่ำ ไม่มี goiter"
+        }
       ],
       "counter": "NSAID (anti-inflammatory) + β-blocker · ไม่ให้ ATD",
       "danger": "ให้ ATD/RAI ผิดโรค",
       "memorize": [],
-      "ruleOfThumb": true
+      "ruleOfThumb": true,
+      "sourceIds": [
+        "eta-graves-2022"
+      ]
     },
     {
       "id": "toxic-nodule",
       "name": "Toxic adenoma / toxic multinodular goiter",
       "who": "เด็กโต/วัยรุ่น (พบน้อย)",
-      "trigger": { "ruleId": "uptake-production", "text": "ก้อนทำงานเองไม่ฟัง TSH (autonomous) สร้างฮอร์โมนเกิน ต่อมส่วนที่เหลือถูกกด" },
+      "trigger": {
+        "ruleId": "uptake-production",
+        "text": "ก้อนทำงานเองไม่ฟัง TSH (autonomous) สร้างฮอร์โมนเกิน ต่อมส่วนที่เหลือถูกกด"
+      },
       "signature": "Thyrotoxic + คลำได้ก้อน · TRAb ลบ · scan เห็น hot nodule (uptake เฉพาะจุด) ส่วนอื่นของต่อมจาง",
-      "lookAlikes": ["graves", "thyroid-nodule"],
+      "lookAlikes": [
+        "graves",
+        "thyroid-nodule"
+      ],
       "tells": [
-        { "vs": "graves", "feature": "Uptake เฉพาะจุดและ TRAb ลบ" },
-        { "vs": "thyroid-nodule", "feature": "Toxic nodule ทำให้ thyrotoxic + hot บน scan · nodule ทั่วไป TFT ปกติ" }
+        {
+          "vs": "graves",
+          "feature": "Uptake เฉพาะจุดและ TRAb ลบ"
+        },
+        {
+          "vs": "thyroid-nodule",
+          "feature": "Toxic nodule ทำให้ thyrotoxic + hot บน scan · nodule ทั่วไป TFT ปกติ"
+        }
       ],
       "counter": "Refer ผ่าตัด (คุมด้วย ATD ก่อนผ่าตัด)",
       "danger": "Thyrotoxicosis ที่ไม่หายด้วยยา",
       "memorize": [],
-      "ruleOfThumb": true
+      "sourceIds": [
+        "eta-graves-2022"
+      ]
     },
     {
       "id": "thyroid-nodule",
       "name": "Thyroid nodule (ก้อนเดี่ยว)",
       "who": "เด็ก/วัยรุ่นที่คลำพบก้อนที่คอ",
-      "trigger": { "ruleId": "goiter-drive", "text": "ก้อนที่โตเองแยกจากเนื้อต่อม ไม่ใช่ต่อมโตทั่วจาก TSH หรือ lymphocyte" },
+      "trigger": {
+        "ruleId": "goiter-drive",
+        "text": "ก้อนที่โตเองแยกจากเนื้อต่อม ไม่ใช่ต่อมโตทั่วจาก TSH หรือ lymphocyte"
+      },
       "signature": "ก้อนเดี่ยวคลำแยกได้ ส่วนใหญ่ TFT ปกติ",
-      "lookAlikes": ["hashimoto", "toxic-nodule"],
+      "lookAlikes": [
+        "hashimoto",
+        "toxic-nodule"
+      ],
       "tells": [
-        { "vs": "hashimoto", "feature": "ก้อนเดี่ยว ไม่ใช่ diffuse goiter" },
-        { "vs": "toxic-nodule", "feature": "TFT ปกติ ไม่ thyrotoxic" }
+        {
+          "vs": "hashimoto",
+          "feature": "ก้อนเดี่ยว ไม่ใช่ diffuse goiter"
+        },
+        {
+          "vs": "toxic-nodule",
+          "feature": "TFT ปกติ ไม่ thyrotoxic"
+        }
       ],
       "counter": "Ultrasound ± fine-needle aspiration แล้ว refer · ก้อนเดี่ยวในเด็กต้องตัด malignancy เสมอ",
       "danger": "Thyroid cancer — ก้อนเดี่ยวในเด็กต้องประเมินหา neoplasm เสมอ",
       "memorize": [],
       "ruleOfThumb": true,
-      "sourceIds": ["salerno-acquired-2026"]
+      "sourceIds": [
+        "salerno-acquired-2026"
+      ]
     },
     {
       "id": "iodine-deficiency-goiter",
       "name": "Endemic goiter (iodine deficiency)",
       "who": "เด็กในพื้นที่ขาด iodine คนในชุมชนเป็นหลายคน",
-      "trigger": { "ruleId": "goiter-drive", "text": "Iodine ไม่พอสร้างฮอร์โมน TSH จึงขับต่อมให้โตเพื่อดักจับ iodine" },
+      "trigger": {
+        "ruleId": "goiter-drive",
+        "text": "Iodine ไม่พอสร้างฮอร์โมน TSH จึงขับต่อมให้โตเพื่อดักจับ iodine"
+      },
       "signature": "Diffuse goiter · TFT ปกติหรือ hypothyroid · antibody ลบ · urine iodine ต่ำ",
-      "lookAlikes": ["hashimoto", "dyshormonogenesis"],
+      "lookAlikes": [
+        "hashimoto",
+        "dyshormonogenesis"
+      ],
       "tells": [
-        { "vs": "hashimoto", "feature": "Antibody ลบ และคนในพื้นที่เป็นหลายคน" },
-        { "vs": "dyshormonogenesis", "feature": "แก้ได้ด้วย iodine และไม่มีรูปแบบ AR ในครอบครัว" }
+        {
+          "vs": "hashimoto",
+          "feature": "Antibody ลบ และคนในพื้นที่เป็นหลายคน"
+        },
+        {
+          "vs": "dyshormonogenesis",
+          "feature": "แก้ได้ด้วย iodine และไม่มีรูปแบบ AR ในครอบครัว"
+        }
       ],
       "counter": "Iodine supplementation",
       "danger": "ในแม่ตั้งครรภ์ ทำให้ทารก hypothyroid และพัฒนาการเสีย",
@@ -725,41 +1100,69 @@
       "id": "tsh-dependent-thyrotoxicosis",
       "name": "TSH-dependent thyrotoxicosis (TSH-secreting adenoma / thyroid hormone resistance)",
       "who": "พบน้อยมาก",
-      "trigger": { "ruleId": "axis-feedback", "text": "TSH ไม่ถูกกดตาม FT4 ที่สูง เพราะต้นทางอยู่ที่ pituitary หรือ receptor ไม่ตอบสนองต่อ feedback" },
-      "signature": "FT4 สูง + TSH ปกติหรือสูง",
-      "lookAlikes": ["graves"],
+      "trigger": {
+        "ruleId": "axis-feedback",
+        "text": "TSH ไม่ถูกกดตาม FT4 ที่สูง เพราะต้นทางอยู่ที่ pituitary หรือ receptor ไม่ตอบสนองต่อ feedback"
+      },
+      "signature": "FT4 (± FT3) สูง + TSH ปกติหรือสูงเล็กน้อย · adenoma มี alpha subunit สูง · resistance (THRB mutation) พบได้ในครอบครัว",
+      "lookAlikes": [
+        "graves"
+      ],
       "tells": [
-        { "vs": "graves", "feature": "TSH ไม่ต่ำทั้งที่ FT4 สูง" }
+        {
+          "vs": "graves",
+          "feature": "TSH ไม่ต่ำทั้งที่ FT4 สูง"
+        }
       ],
       "counter": "ตรวจซ้ำตัด assay interference → pituitary MRI → refer pediatric endocrinologist",
       "danger": "ให้ ATD/RAI โดยไม่รู้ว่าต้นเหตุอยู่ที่ pituitary",
       "memorize": [],
-      "ruleOfThumb": true
+      "sourceIds": [
+        "eta-graves-2022"
+      ]
     },
     {
       "id": "exogenous-thyrotoxicosis",
       "name": "Exogenous / factitious thyrotoxicosis",
       "who": "เด็กที่กิน LT4 เกิน (กินผิด, overdose, ยาลดน้ำหนัก)",
-      "trigger": { "ruleId": "uptake-production", "text": "ฮอร์โมนมาจากนอกต่อม ต่อมเองถูกกดจนหยุดทำงาน" },
+      "trigger": {
+        "ruleId": "uptake-production",
+        "text": "ฮอร์โมนมาจากนอกต่อม ต่อมเองถูกกดจนหยุดทำงาน"
+      },
       "signature": "Thyrotoxic ไม่มี goiter · uptake ต่ำ · serum thyroglobulin ต่ำ",
-      "lookAlikes": ["subacute-thyroiditis"],
+      "lookAlikes": [
+        "subacute-thyroiditis"
+      ],
       "tells": [
-        { "vs": "subacute-thyroiditis", "feature": "Tg ต่ำ ไม่มี goiter และไม่มีไข้/ต่อมเจ็บ" }
+        {
+          "vs": "subacute-thyroiditis",
+          "feature": "Tg ต่ำ ไม่มี goiter และไม่มีไข้/ต่อมเจ็บ"
+        }
       ],
       "counter": "หยุดหรือลดยา thyroid hormone · β-blocker ถ้ามีอาการ",
       "danger": "ปรับยาตามตัวเลขโดยไม่ถามว่ากินอะไรมา",
       "memorize": [],
-      "ruleOfThumb": true
+      "sourceIds": [
+        "eta-graves-2022"
+      ]
     },
     {
       "id": "atd-agranulocytosis",
       "name": "ATD-induced agranulocytosis",
       "who": "เด็ก Graves ที่กิน MMI ช่วงเดือนแรก ๆ ของการรักษา (เกิดหลังหลายปีได้แต่พบน้อย)",
-      "trigger": { "ruleId": "drug-ladder", "text": "ยา antithyroid ทำ neutrophil ลดอย่างรุนแรงแบบ idiosyncratic" },
+      "trigger": {
+        "ruleId": "drug-ladder",
+        "text": "ยา antithyroid ทำ neutrophil ลดอย่างรุนแรงแบบ idiosyncratic"
+      },
       "signature": "ไข้ + เจ็บคอ / แผลในปาก ขณะกิน MMI · neutrophil < 0.5 × 10⁹/L",
-      "lookAlikes": ["graves"],
+      "lookAlikes": [
+        "graves"
+      ],
       "tells": [
-        { "vs": "graves", "feature": "ไข้และเจ็บคอไม่ใช่อาการของ Graves เอง ระหว่างกิน ATD ให้คิดถึงยาก่อน" }
+        {
+          "vs": "graves",
+          "feature": "ไข้และเจ็บคอไม่ใช่อาการของ Graves เอง ระหว่างกิน ATD ให้คิดถึงยาก่อน"
+        }
       ],
       "counter": "หยุด ATD ทันที + CBC · neutrophil < 0.5 × 10⁹/L → หยุดถาวรแล้วไป definitive (RAI หรือ thyroidectomy) ไม่สลับไป PTU · neutrophil 0.5–1.5 × 10⁹/L → ติดตาม 1–2 ครั้ง/สัปดาห์",
       "danger": "Sepsis",
@@ -777,44 +1180,195 @@
           "sourceId": "eta-graves-2022"
         }
       ],
-      "sourceIds": ["eta-graves-2022"]
+      "sourceIds": [
+        "eta-graves-2022"
+      ]
     }
   ],
   "exploits": [
-    { "id": "ft4-low-tsh-normal", "ifSee": "FT4 ต่ำ แต่ TSH ต่ำหรืออยู่ในช่วงปกติ", "think": "Central hypothyroidism → ประเมิน cortisol ก่อน LT4 + pituitary MRI", "strength": "heuristic", "exception": "เด็กป่วยหนัก (sick euthyroid) ให้ตรวจซ้ำเมื่อหายป่วย" },
-    { "id": "micropenis-hypoglycemia", "ifSee": "ทารก micropenis + hypoglycemia + jaundice นาน (screening ปกติ)", "think": "MPHD กับ central CH → FT4, cortisol, GH, MRI", "strength": "rule" },
-    { "id": "ch-no-goiter-no-uptake", "ifSee": "CH ไม่มี goiter + scan no uptake", "think": "Agenesis (dysgenesis)", "strength": "heuristic", "exception": "Ultrasound เห็นต่อมที่คอ → maternal blocking Ab, iodine excess หรือ NIS defect" },
-    { "id": "goiter-deaf", "ifSee": "CH + goiter + sensorineural hearing loss", "think": "Pendred syndrome (SLC26A4)", "strength": "rule" },
-    { "id": "heavy-but-short", "ifSee": "เด็กน้ำหนักขึ้นแต่เตี้ยลง (weight SDS > height SDS)", "think": "Endocrine cause → ส่ง FT4 + TSH ก่อน", "strength": "heuristic", "exception": "Exogenous obesity มักสูงกว่าเกณฑ์ ไม่ใช่เตี้ยลง" },
-    { "id": "adhd-weight-loss", "ifSee": "สมาธิสั้น ผลการเรียนตก + น้ำหนักลดทั้งที่กินจุ", "think": "Graves → FT4/FT3, TSH, TRAb", "strength": "heuristic", "exception": "ADHD จริงไม่มี tachycardia, goiter หรือน้ำหนักลด" },
-    { "id": "tender-fever-toxic", "ifSee": "Thyrotoxic + ต่อมกดเจ็บ + ไข้หลังหวัด", "think": "Subacute thyroiditis → NSAID + β-blocker ไม่ให้ ATD", "strength": "rule" },
-    { "id": "fever-on-mmi", "ifSee": "ไข้ เจ็บคอ หรือแผลในปากขณะกิน MMI", "think": "Agranulocytosis → หยุดยา + CBC ทันที", "strength": "rule" },
-    { "id": "mother-graves", "ifSee": "แม่เป็นหรือเคยเป็น Graves", "think": "Maternal TRAb → ถ้าบวก/ไม่ทราบ ตรวจ TRAb สายสะดือ + FT4/TSH day 3–5 และ 10–14", "strength": "rule" },
-    { "id": "povidone-baby", "ifSee": "ทารกใช้ povidone-iodine แล้ว TSH สูง", "think": "Transient CH จาก Wolff–Chaikoff", "strength": "heuristic", "exception": "ถ้าเข้าเกณฑ์รักษา (FT4 ต่ำหรือ TSH > 20) ให้ LT4 ก่อน แล้วแยก transient ทีหลัง" },
-    { "id": "low-tg-toxic", "ifSee": "Thyrotoxic + ไม่มี goiter + uptake ต่ำ + Tg ต่ำ", "think": "Exogenous thyroid hormone", "strength": "rule" },
-    { "id": "ft4-high-tsh-normal", "ifSee": "FT4 สูง แต่ TSH ไม่ต่ำ", "think": "TSH-dependent thyrotoxicosis → pituitary MRI", "strength": "heuristic", "exception": "ตรวจซ้ำตัด assay interference ก่อน" },
-    { "id": "age3-stable-dose", "ifSee": "CH อายุ 3 ปี ต่อมตำแหน่งปกติ ไม่เคยต้องเพิ่ม dose", "think": "ลองหยุด LT4 2–4 สัปดาห์ แล้วตรวจ FT4/TSH", "strength": "rule" },
-    { "id": "late-confirm", "ifSee": "Screening positive แต่ผล serum จะออกช้ากว่า 1 วัน", "think": "เริ่ม LT4 ทันทีหลังเจาะเลือด", "strength": "rule" }
+    {
+      "id": "ft4-low-tsh-normal",
+      "ifSee": "FT4 ต่ำ แต่ TSH ต่ำหรืออยู่ในช่วงปกติ",
+      "think": "Central hypothyroidism → ประเมิน cortisol ก่อน LT4 + pituitary MRI",
+      "strength": "heuristic",
+      "exception": "เด็กป่วยหนัก (sick euthyroid) ให้ตรวจซ้ำเมื่อหายป่วย"
+    },
+    {
+      "id": "micropenis-hypoglycemia",
+      "ifSee": "ทารก micropenis + hypoglycemia + jaundice นาน (screening ปกติ)",
+      "think": "MPHD กับ central CH → FT4, cortisol, GH, MRI",
+      "strength": "rule"
+    },
+    {
+      "id": "ch-no-goiter-no-uptake",
+      "ifSee": "CH ไม่มี goiter + scan no uptake",
+      "think": "Agenesis (dysgenesis)",
+      "strength": "heuristic",
+      "exception": "Ultrasound เห็นต่อมที่คอ → maternal blocking Ab, iodine excess หรือ NIS defect"
+    },
+    {
+      "id": "goiter-deaf",
+      "ifSee": "CH + goiter + sensorineural hearing loss",
+      "think": "Pendred syndrome (SLC26A4)",
+      "strength": "rule"
+    },
+    {
+      "id": "heavy-but-short",
+      "ifSee": "เด็กน้ำหนักขึ้นแต่เตี้ยลง (weight SDS > height SDS)",
+      "think": "Endocrine cause → ส่ง FT4 + TSH ก่อน",
+      "strength": "heuristic",
+      "exception": "Exogenous obesity มักสูงกว่าเกณฑ์ ไม่ใช่เตี้ยลง"
+    },
+    {
+      "id": "adhd-weight-loss",
+      "ifSee": "สมาธิสั้น ผลการเรียนตก + น้ำหนักลดทั้งที่กินจุ",
+      "think": "Graves → FT4/FT3, TSH, TRAb",
+      "strength": "heuristic",
+      "exception": "ADHD จริงไม่มี tachycardia, goiter หรือน้ำหนักลด"
+    },
+    {
+      "id": "tender-fever-toxic",
+      "ifSee": "Thyrotoxic + ต่อมกดเจ็บ + ไข้หลังหวัด",
+      "think": "Subacute thyroiditis → NSAID + β-blocker ไม่ให้ ATD",
+      "strength": "rule"
+    },
+    {
+      "id": "fever-on-mmi",
+      "ifSee": "ไข้ เจ็บคอ หรือแผลในปากขณะกิน MMI",
+      "think": "Agranulocytosis → หยุดยา + CBC ทันที",
+      "strength": "rule"
+    },
+    {
+      "id": "mother-graves",
+      "ifSee": "แม่เป็นหรือเคยเป็น Graves",
+      "think": "Maternal TRAb → ถ้าบวก/ไม่ทราบ ตรวจ TRAb สายสะดือ + FT4/TSH day 3–5 และ 10–14",
+      "strength": "rule"
+    },
+    {
+      "id": "povidone-baby",
+      "ifSee": "ทารกใช้ povidone-iodine แล้ว TSH สูง",
+      "think": "Transient CH จาก Wolff–Chaikoff",
+      "strength": "heuristic",
+      "exception": "ถ้าเข้าเกณฑ์รักษา (FT4 ต่ำหรือ TSH > 20) ให้ LT4 ก่อน แล้วแยก transient ทีหลัง"
+    },
+    {
+      "id": "low-tg-toxic",
+      "ifSee": "Thyrotoxic + ไม่มี goiter + uptake ต่ำ + Tg ต่ำ",
+      "think": "Exogenous thyroid hormone",
+      "strength": "rule"
+    },
+    {
+      "id": "ft4-high-tsh-normal",
+      "ifSee": "FT4 สูง แต่ TSH ไม่ต่ำ",
+      "think": "TSH-dependent thyrotoxicosis → pituitary MRI",
+      "strength": "heuristic",
+      "exception": "ตรวจซ้ำตัด assay interference ก่อน"
+    },
+    {
+      "id": "age3-stable-dose",
+      "ifSee": "CH อายุ 3 ปี ต่อมตำแหน่งปกติ ไม่เคยต้องเพิ่ม dose",
+      "think": "ลองหยุด LT4 2–4 สัปดาห์ แล้วตรวจ FT4/TSH",
+      "strength": "rule"
+    },
+    {
+      "id": "late-confirm",
+      "ifSee": "Screening positive แต่ผล serum จะออกช้ากว่า 1 วัน",
+      "think": "เริ่ม LT4 ทันทีหลังเจาะเลือด",
+      "strength": "rule"
+    }
   ],
   "distractorPatterns": [
-    { "id": "wait-before-lt4", "pattern": "รอผล confirmatory test หรือ thyroid scan ก่อนเริ่ม LT4", "kill": "นาฬิกาสมอง: ผลช้ากว่า 1 วันให้ยาเลย และ imaging ห้ามทำให้การรักษาช้า" },
-    { "id": "normal-screen-excludes", "pattern": "Newborn screening ปกติ จึงตัด CH ได้", "kill": "Screening วัด TSH: พลาด central CH และ TSH ที่ขึ้นช้า (preterm, ป่วย, แฝด) · มีอาการต้องตรวจ FT4/TSH ซ้ำเสมอ" },
-    { "id": "anti-tpo-separates", "pattern": "ใช้ anti-TPO/anti-Tg แยก Hashimoto จาก Graves", "kill": "บวกได้ทั้งคู่ ตัวที่แยกคือ TRAb (stimulating) ซึ่ง specific ต่อ Graves" },
-    { "id": "atd-for-all-toxic", "pattern": "ให้ MMI กับ thyrotoxicosis ทุกชนิด", "kill": "ถามก่อนว่าต่อมสร้างเพิ่มไหม: uptake ต่ำ (thyroiditis, exogenous) → β-blocker ไม่ใช่ ATD" },
-    { "id": "switch-atd", "pattern": "เกิด agranulocytosis จาก MMI แล้วเปลี่ยนเป็น PTU", "kill": "Major side effect → หยุด ATD และไป definitive treatment (PTU ยังเสี่ยง hepatotoxicity และ cross-reaction)" },
-    { "id": "ch-dose-older-child", "pattern": "ใช้ LT4 10–15 mcg/kg/day (dose ทารก CH) กับเด็กวัยเรียน", "kill": "Dose ต่อ kg ลดตามอายุ: 3–10 ปี 3–5 · 10–16 ปี 2–4 mcg/kg/day" },
-    { "id": "tsh-to-titrate-central", "pattern": "ปรับ LT4 ใน central hypothyroidism ตาม TSH", "kill": "TSH ต่ำอยู่แล้วจากตัวโรค ใช้ FT4 (ให้อยู่ครึ่งบนของช่วงปกติ)" }
+    {
+      "id": "wait-before-lt4",
+      "pattern": "รอผล confirmatory test หรือ thyroid scan ก่อนเริ่ม LT4",
+      "kill": "นาฬิกาสมอง: ผลช้ากว่า 1 วันให้ยาเลย และ imaging ห้ามทำให้การรักษาช้า"
+    },
+    {
+      "id": "normal-screen-excludes",
+      "pattern": "Newborn screening ปกติ จึงตัด CH ได้",
+      "kill": "Screening วัด TSH: พลาด central CH และ TSH ที่ขึ้นช้า (preterm, ป่วย, แฝด) · มีอาการต้องตรวจ FT4/TSH ซ้ำเสมอ"
+    },
+    {
+      "id": "anti-tpo-separates",
+      "pattern": "ใช้ anti-TPO/anti-Tg แยก Hashimoto จาก Graves",
+      "kill": "บวกได้ทั้งคู่ ตัวที่แยกคือ TRAb (stimulating) ซึ่ง specific ต่อ Graves"
+    },
+    {
+      "id": "atd-for-all-toxic",
+      "pattern": "ให้ MMI กับ thyrotoxicosis ทุกชนิด",
+      "kill": "ถามก่อนว่าต่อมสร้างเพิ่มไหม: uptake ต่ำ (thyroiditis, exogenous) → β-blocker ไม่ใช่ ATD"
+    },
+    {
+      "id": "switch-atd",
+      "pattern": "เกิด agranulocytosis จาก MMI แล้วเปลี่ยนเป็น PTU",
+      "kill": "Major side effect → หยุด ATD และไป definitive treatment (PTU ยังเสี่ยง hepatotoxicity และ cross-reaction)"
+    },
+    {
+      "id": "ch-dose-older-child",
+      "pattern": "ใช้ LT4 10–15 mcg/kg/day (dose ทารก CH) กับเด็กวัยเรียน",
+      "kill": "Dose ต่อ kg ลดตามอายุ: 3–10 ปี 3–5 · 10–16 ปี 2–4 mcg/kg/day"
+    },
+    {
+      "id": "tsh-to-titrate-central",
+      "pattern": "ปรับ LT4 ใน central hypothyroidism ตาม TSH",
+      "kill": "TSH ต่ำอยู่แล้วจากตัวโรค ใช้ FT4 (ให้อยู่ครึ่งบนของช่วงปกติ)"
+    }
   ],
   "trapPairs": [
-    { "id": "tp-dysgenesis-dyshormono", "a": "thyroid-dysgenesis", "b": "dyshormonogenesis", "decider": "มี goiter / ต่อมอยู่ที่เดิม uptake เพิ่ม = dyshormonogenesis" },
-    { "id": "tp-agenesis-blocking-ab", "a": "thyroid-dysgenesis", "b": "transient-ch-blocking-ab", "decider": "No uptake แต่ ultrasound เห็นต่อม = blocking Ab (หรือ iodine excess)" },
-    { "id": "tp-graves-hashitoxicosis", "a": "graves", "b": "hashitoxicosis", "decider": "TRAb บวก + uptake สูง = Graves · TRAb ลบ + uptake ต่ำ = Hashitoxicosis" },
-    { "id": "tp-graves-subacute", "a": "graves", "b": "subacute-thyroiditis", "decider": "ต่อมกดเจ็บ + ไข้ + uptake ต่ำ = subacute thyroiditis" },
-    { "id": "tp-hashimoto-graves-goiter", "a": "hashimoto", "b": "graves", "decider": "Firm ไม่มี bruit = Hashimoto · soft smooth + bruit + thyrotoxic = Graves" },
-    { "id": "tp-central-sick", "a": "central-hypothyroidism", "b": "sick-euthyroid", "decider": "ขาดฮอร์โมน pituitary ตัวอื่น / รอยโรคที่ MRI = central · กลับปกติหลังหายป่วย = sick euthyroid" },
-    { "id": "tp-falsepos-subclinical", "a": "screen-false-positive", "b": "subclinical-ch", "decider": "Serum TSH < 6 = false positive (หยุด) · 6–20 = subclinical (discuss)" },
-    { "id": "tp-neonatal-graves-maternal-atd", "a": "neonatal-graves", "b": "transient-ch-maternal-atd", "decider": "TFT day 3–5 ปกติไม่พอ ยาแม่หมดฤทธิ์แล้ว day 10–14 FT4 สูง = neonatal Graves" },
-    { "id": "tp-exogenous-subacute", "a": "exogenous-thyrotoxicosis", "b": "subacute-thyroiditis", "decider": "Serum Tg ต่ำ + ไม่มี goiter = exogenous" }
+    {
+      "id": "tp-dysgenesis-dyshormono",
+      "a": "thyroid-dysgenesis",
+      "b": "dyshormonogenesis",
+      "decider": "มี goiter / ต่อมอยู่ที่เดิม uptake เพิ่ม = dyshormonogenesis"
+    },
+    {
+      "id": "tp-agenesis-blocking-ab",
+      "a": "thyroid-dysgenesis",
+      "b": "transient-ch-blocking-ab",
+      "decider": "No uptake แต่ ultrasound เห็นต่อม = blocking Ab (หรือ iodine excess)"
+    },
+    {
+      "id": "tp-graves-hashitoxicosis",
+      "a": "graves",
+      "b": "hashitoxicosis",
+      "decider": "TRAb บวก + uptake สูง = Graves · TRAb ลบ + uptake ต่ำ = Hashitoxicosis"
+    },
+    {
+      "id": "tp-graves-subacute",
+      "a": "graves",
+      "b": "subacute-thyroiditis",
+      "decider": "ต่อมกดเจ็บ + ไข้ + uptake ต่ำ = subacute thyroiditis"
+    },
+    {
+      "id": "tp-hashimoto-graves-goiter",
+      "a": "hashimoto",
+      "b": "graves",
+      "decider": "Firm ไม่มี bruit = Hashimoto · soft smooth + bruit + thyrotoxic = Graves"
+    },
+    {
+      "id": "tp-central-sick",
+      "a": "central-hypothyroidism",
+      "b": "sick-euthyroid",
+      "decider": "ขาดฮอร์โมน pituitary ตัวอื่น / รอยโรคที่ MRI = central · กลับปกติหลังหายป่วย = sick euthyroid"
+    },
+    {
+      "id": "tp-falsepos-subclinical",
+      "a": "screen-false-positive",
+      "b": "subclinical-ch",
+      "decider": "Serum TSH < 6 = false positive (หยุด) · 6–20 = subclinical (discuss)"
+    },
+    {
+      "id": "tp-neonatal-graves-maternal-atd",
+      "a": "neonatal-graves",
+      "b": "transient-ch-maternal-atd",
+      "decider": "TFT day 3–5 ปกติไม่พอ ยาแม่หมดฤทธิ์แล้ว day 10–14 FT4 สูง = neonatal Graves"
+    },
+    {
+      "id": "tp-exogenous-subacute",
+      "a": "exogenous-thyrotoxicosis",
+      "b": "subacute-thyroiditis",
+      "decider": "Serum Tg ต่ำ + ไม่มี goiter = exogenous"
+    }
   ],
   "games": {
     "deduction": [
@@ -822,315 +1376,1065 @@
         "id": "dd-heel-tsh",
         "targetSeconds": 150,
         "difficulty": 1,
-        "basedOn": { "rules": ["tsh-screen", "brain-clock", "goiter-drive"] },
+        "basedOn": {
+          "rules": [
+            "tsh-screen",
+            "brain-clock",
+            "goiter-drive"
+          ]
+        },
         "hint": "ยืนยัน primary ก่อน แล้วค่อยถามว่าต่อมอยู่ไหน",
         "title": "ส้นเท้าบอกว่า TSH สูง",
         "chiefComplaint": "ทารกหญิงอายุ 10 วัน ครบกำหนด BW 3,300 g ดูดนมดี active ถูกตามกลับเพราะ newborn screening TSH > 100 mU/L",
         "vitals": "T 36.8 °C · HR 140 · RR 40",
         "budget": 10,
         "clues": [
-          { "id": "h-mother", "kind": "history", "cost": 1, "label": "ประวัติแม่และยา", "reveals": "แม่ไม่มีโรคไทรอยด์ ไม่ได้กินยา ATD ไม่ได้ใช้ povidone-iodine", "strength": "moderate", "why": "ตัดสาเหตุ transient จากแม่และ iodine ไปได้ส่วนหนึ่ง" },
-          { "id": "h-family", "kind": "history", "cost": 1, "label": "ประวัติครอบครัว", "reveals": "ไม่มีใครเป็นโรคไทรอยด์หรือหูหนวก", "strength": "weak", "why": "ไม่มีประวัติไม่ได้ตัด AR (พ่อแม่เป็นพาหะ)" },
-          { "id": "p-neck", "kind": "pe", "cost": 2, "label": "ตรวจคอและร่างกายทั่วไป", "reveals": "ไม่มี goiter คลำต่อมไม่ชัด ไม่มี jaundice ไม่มี dysmorphic feature หัวใจปกติ", "strength": "weak", "why": "ทารกส่วนใหญ่ไม่มีอาการ และ goiter เล็กในทารกคลำยาก" },
-          { "id": "l-confirm", "kind": "lab", "cost": 4, "label": "Serum FT4 + TSH", "reveals": "FT4 0.3 ng/dL · TSH > 100 mU/L", "strength": "strong", "why": "ยืนยัน overt primary CH รุนแรงมาก (FT4 < 0.4)" },
-          { "id": "i-scan", "kind": "imaging", "cost": 5, "label": "Thyroid scan (ภายในไม่กี่วันแรกของยา)", "reveals": "ต่อมขนาดและรูปร่างปกติ ตำแหน่งปกติ uptake เพิ่ม", "strength": "strong", "why": "ต่อมมีอยู่และถูก TSH กระตุ้นเต็มที่แต่สร้างฮอร์โมนไม่ได้ = dyshormonogenesis" },
-          { "id": "i-us", "kind": "imaging", "cost": 5, "label": "Thyroid ultrasound", "reveals": "ต่อมอยู่ตำแหน่งปกติ ขนาดค่อนข้างโต", "strength": "moderate", "why": "ตัด agenesis ได้ แต่ไม่บอก function และหา ectopic ได้แม่นน้อยกว่า scan" }
+          {
+            "id": "h-mother",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติแม่และยา",
+            "reveals": "แม่ไม่มีโรคไทรอยด์ ไม่ได้กินยา ATD ไม่ได้ใช้ povidone-iodine",
+            "strength": "moderate",
+            "why": "ตัดสาเหตุ transient จากแม่และ iodine ไปได้ส่วนหนึ่ง"
+          },
+          {
+            "id": "h-family",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติครอบครัว",
+            "reveals": "ไม่มีใครเป็นโรคไทรอยด์หรือหูหนวก",
+            "strength": "weak",
+            "why": "ไม่มีประวัติไม่ได้ตัด AR (พ่อแม่เป็นพาหะ)"
+          },
+          {
+            "id": "p-neck",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจคอและร่างกายทั่วไป",
+            "reveals": "ไม่มี goiter คลำต่อมไม่ชัด ไม่มี jaundice ไม่มี dysmorphic feature หัวใจปกติ",
+            "strength": "weak",
+            "why": "ทารกส่วนใหญ่ไม่มีอาการ และ goiter เล็กในทารกคลำยาก"
+          },
+          {
+            "id": "l-confirm",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Serum FT4 + TSH",
+            "reveals": "FT4 0.3 ng/dL · TSH > 100 mU/L",
+            "strength": "strong",
+            "why": "ยืนยัน overt primary CH รุนแรงมาก (FT4 < 0.4)"
+          },
+          {
+            "id": "i-scan",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid scan (ภายในไม่กี่วันแรกของยา)",
+            "reveals": "ต่อมขนาดและรูปร่างปกติ ตำแหน่งปกติ uptake เพิ่ม",
+            "strength": "strong",
+            "why": "ต่อมมีอยู่และถูก TSH กระตุ้นเต็มที่แต่สร้างฮอร์โมนไม่ได้ = dyshormonogenesis"
+          },
+          {
+            "id": "i-us",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid ultrasound",
+            "reveals": "ต่อมอยู่ตำแหน่งปกติ ขนาดค่อนข้างโต",
+            "strength": "moderate",
+            "why": "ตัด agenesis ได้ แต่ไม่บอก function และหา ectopic ได้แม่นน้อยกว่า scan"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "dysgenesis", "label": "Thyroid dysgenesis" },
-          { "id": "dyshormono", "label": "Thyroid dyshormonogenesis" },
-          { "id": "blocking", "label": "Transient CH จาก maternal blocking Ab" },
-          { "id": "central", "label": "Central hypothyroidism" },
-          { "id": "falsepos", "label": "False-positive screening" }
+          {
+            "id": "dysgenesis",
+            "label": "Thyroid dysgenesis"
+          },
+          {
+            "id": "dyshormono",
+            "label": "Thyroid dyshormonogenesis"
+          },
+          {
+            "id": "blocking",
+            "label": "Transient CH จาก maternal blocking Ab"
+          },
+          {
+            "id": "central",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "falsepos",
+            "label": "False-positive screening"
+          }
         ],
         "nextStepOptions": [
-          { "id": "lt4-high-hearing", "label": "LT4 10–15 mcg/kg/day ทันที + hearing test" },
-          { "id": "lt4-low", "label": "LT4 5–8 mcg/kg/day" },
-          { "id": "repeat-2wk", "label": "ตรวจ FT4/TSH ซ้ำใน 2 สัปดาห์" },
-          { "id": "hc-first", "label": "Hydrocortisone ก่อน แล้วค่อย LT4" },
-          { "id": "stop-fu", "label": "หยุดติดตาม" }
+          {
+            "id": "lt4-high-hearing",
+            "label": "LT4 10–15 mcg/kg/day ทันที + hearing test"
+          },
+          {
+            "id": "lt4-low",
+            "label": "LT4 5–8 mcg/kg/day"
+          },
+          {
+            "id": "repeat-2wk",
+            "label": "ตรวจ FT4/TSH ซ้ำใน 2 สัปดาห์"
+          },
+          {
+            "id": "hc-first",
+            "label": "Hydrocortisone ก่อน แล้วค่อย LT4"
+          },
+          {
+            "id": "stop-fu",
+            "label": "หยุดติดตาม"
+          }
         ],
-        "answer": { "diagnosis": "dyshormono", "nextStep": "lt4-high-hearing" },
-        "optimalLine": ["l-confirm", "i-scan"],
+        "answer": {
+          "diagnosis": "dyshormono",
+          "nextStep": "lt4-high-hearing"
+        },
+        "optimalLine": [
+          "l-confirm",
+          "i-scan"
+        ],
         "explanation": "FT4 ต่ำ + TSH สูงมาก = primary CH (FT4 < 0.4 → LT4 10–15 mcg/kg/day ภายใน 2 สัปดาห์) · scan เห็นต่อมตำแหน่งปกติ uptake เพิ่ม = dyshormonogenesis · ส่ง hearing test เพราะ Pendred syndrome มากับ sensorineural hearing loss และ CH ทุกรายต้องตรวจการได้ยินอยู่แล้ว"
       },
       {
         "id": "dd-heavy-short",
         "targetSeconds": 150,
         "difficulty": 1,
-        "basedOn": { "rules": ["axis-feedback", "goiter-drive"] },
+        "basedOn": {
+          "rules": [
+            "axis-feedback",
+            "goiter-drive"
+          ]
+        },
         "hint": "Weight SDS > height SDS แล้วคลำคอ",
         "title": "อ้วนขึ้นแต่ไม่สูง",
         "chiefComplaint": "เด็กหญิง 9 ปี คลำได้ก้อนที่คอไม่เจ็บมา 1 ปี ท้องผูก น้ำหนักขึ้น 10 kg ใน 1 ปี กราฟ height ตัดเส้นลงขณะ weight ตัดเส้นขึ้น",
         "vitals": "PR 65/min · BP 102/60 mmHg · BW 32 kg",
         "budget": 8,
         "clues": [
-          { "id": "p-goiter", "kind": "pe", "cost": 2, "label": "คลำต่อมไทรอยด์", "reveals": "Diffuse goiter 3.5 × 3.5 cm firm ผิวเรียบ ไม่เจ็บ ไม่มี bruit", "strength": "strong", "why": "Firm ไม่เจ็บ = Hashimoto (Graves จะ soft + bruit)" },
-          { "id": "p-eye-tremor", "kind": "pe", "cost": 2, "label": "ตา มือสั่น reflex", "reveals": "ไม่มี exophthalmos ไม่มี tremor delayed relaxation ของ ankle reflex", "strength": "moderate", "why": "ไปทาง hypothyroid ตัด Graves" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4 + TSH", "reveals": "FT4 0.7 ng/dL (ต่ำ) · TSH 72 mU/L", "strength": "strong", "why": "Overt primary hypothyroidism" },
-          { "id": "l-ab", "kind": "lab", "cost": 4, "label": "Anti-TPO / anti-Tg", "reveals": "Anti-TPO 25,600 · anti-Tg 160 (บวกทั้งคู่)", "strength": "strong", "why": "ยืนยัน autoimmune (Hashimoto)" },
-          { "id": "i-us", "kind": "imaging", "cost": 5, "label": "Thyroid ultrasound", "reveals": "Diffuse heterogeneous hypoechoic ไม่มีก้อน", "strength": "weak", "why": "เข้ากับ Hashimoto แต่ไม่จำเป็นต่อการวินิจฉัย" },
-          { "id": "i-boneage", "kind": "imaging", "cost": 5, "label": "Bone age", "reveals": "ช้ากว่าอายุจริง", "strength": "weak", "why": "เข้ากับ hypothyroid แต่ไม่เปลี่ยน management" }
+          {
+            "id": "p-goiter",
+            "kind": "pe",
+            "cost": 2,
+            "label": "คลำต่อมไทรอยด์",
+            "reveals": "Diffuse goiter 3.5 × 3.5 cm firm ผิวเรียบ ไม่เจ็บ ไม่มี bruit",
+            "strength": "strong",
+            "why": "Firm ไม่เจ็บ = Hashimoto (Graves จะ soft + bruit)"
+          },
+          {
+            "id": "p-eye-tremor",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตา มือสั่น reflex",
+            "reveals": "ไม่มี exophthalmos ไม่มี tremor delayed relaxation ของ ankle reflex",
+            "strength": "moderate",
+            "why": "ไปทาง hypothyroid ตัด Graves"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4 + TSH",
+            "reveals": "FT4 0.7 ng/dL (ต่ำ) · TSH 72 mU/L",
+            "strength": "strong",
+            "why": "Overt primary hypothyroidism"
+          },
+          {
+            "id": "l-ab",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Anti-TPO / anti-Tg",
+            "reveals": "Anti-TPO 25,600 · anti-Tg 160 (บวกทั้งคู่)",
+            "strength": "strong",
+            "why": "ยืนยัน autoimmune (Hashimoto)"
+          },
+          {
+            "id": "i-us",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid ultrasound",
+            "reveals": "Diffuse heterogeneous hypoechoic ไม่มีก้อน",
+            "strength": "weak",
+            "why": "เข้ากับ Hashimoto แต่ไม่จำเป็นต่อการวินิจฉัย"
+          },
+          {
+            "id": "i-boneage",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Bone age",
+            "reveals": "ช้ากว่าอายุจริง",
+            "strength": "weak",
+            "why": "เข้ากับ hypothyroid แต่ไม่เปลี่ยน management"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "hashimoto", "label": "Hashimoto thyroiditis with overt hypothyroidism" },
-          { "id": "graves", "label": "Graves disease" },
-          { "id": "iodine", "label": "Endemic goiter" },
-          { "id": "exo-obesity", "label": "Exogenous obesity" },
-          { "id": "central", "label": "Central hypothyroidism" }
+          {
+            "id": "hashimoto",
+            "label": "Hashimoto thyroiditis with overt hypothyroidism"
+          },
+          {
+            "id": "graves",
+            "label": "Graves disease"
+          },
+          {
+            "id": "iodine",
+            "label": "Endemic goiter"
+          },
+          {
+            "id": "exo-obesity",
+            "label": "Exogenous obesity"
+          },
+          {
+            "id": "central",
+            "label": "Central hypothyroidism"
+          }
         ],
         "nextStepOptions": [
-          { "id": "lt4-age", "label": "LT4 ราว 3–5 mcg/kg/day แล้วติดตาม FT4/TSH และ growth" },
-          { "id": "lt4-ch", "label": "LT4 10–15 mcg/kg/day" },
-          { "id": "observe", "label": "Reassure และนัด 6–12 เดือน" },
-          { "id": "mmi", "label": "MMI 0.2 mg/kg/day" },
-          { "id": "diet", "label": "คุมอาหารและออกกำลังกาย" }
+          {
+            "id": "lt4-age",
+            "label": "LT4 ราว 3–5 mcg/kg/day แล้วติดตาม FT4/TSH และ growth"
+          },
+          {
+            "id": "lt4-ch",
+            "label": "LT4 10–15 mcg/kg/day"
+          },
+          {
+            "id": "observe",
+            "label": "Reassure และนัด 6–12 เดือน"
+          },
+          {
+            "id": "mmi",
+            "label": "MMI 0.2 mg/kg/day"
+          },
+          {
+            "id": "diet",
+            "label": "คุมอาหารและออกกำลังกาย"
+          }
         ],
-        "answer": { "diagnosis": "hashimoto", "nextStep": "lt4-age" },
-        "optimalLine": ["p-goiter", "l-tft"],
+        "answer": {
+          "diagnosis": "hashimoto",
+          "nextStep": "lt4-age"
+        },
+        "optimalLine": [
+          "p-goiter",
+          "l-tft"
+        ],
         "explanation": "Weight ขึ้นแต่ height ตก = endocrine cause · goiter firm ไม่เจ็บ = Hashimoto · FT4 ต่ำ + TSH สูง = overt → LT4 ตามอายุ (3–10 ปี 3–5 mcg/kg/day; 100 mcg ในเด็ก 32 kg ≈ 3.1) · antibody ยืนยันได้แต่ไม่เปลี่ยนการรักษาเมื่อ TFT ชัดแล้ว · dose CH 10–15 คือ overdose ในเด็กวัยเรียน"
       },
       {
         "id": "dd-school-drop",
         "targetSeconds": 150,
         "difficulty": 1,
-        "basedOn": { "rules": ["axis-feedback", "uptake-production", "drug-ladder"] },
+        "basedOn": {
+          "rules": [
+            "axis-feedback",
+            "uptake-production",
+            "drug-ladder"
+          ]
+        },
         "hint": "ถามประวัติ asthma ก่อนสั่ง β-blocker",
         "title": "ผลการเรียนตก น้ำหนักลด",
         "chiefComplaint": "เด็กหญิง 12 ปี ครูบอกว่าอยู่ไม่นิ่ง สมาธิสั้น ผลการเรียนตก น้ำหนักลด 5 kg ใน 3 เดือนทั้งที่กินจุ ใจสั่น",
         "vitals": "BP 130/60 mmHg · PR 140/min · BW 40 kg",
         "budget": 9,
         "clues": [
-          { "id": "h-asthma", "kind": "history", "cost": 1, "label": "ประวัติ asthma และยาเดิม", "reveals": "ไม่มี asthma ไม่ได้กินยาใด", "strength": "moderate", "why": "ต้องรู้ก่อนให้ propranolol และตัด exogenous" },
-          { "id": "p-goiter-eye", "kind": "pe", "cost": 2, "label": "คอและตา", "reveals": "Diffuse goiter soft smooth มี bruit · lid retraction · exophthalmos", "strength": "strong", "why": "Soft + bruit + ตา = Graves" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4, FT3, TSH", "reveals": "FT4 4.7 ng/dL · FT3 สูง · TSH < 0.01 mU/L", "strength": "strong", "why": "Primary thyrotoxicosis (TSH ถูกกด)" },
-          { "id": "l-trab", "kind": "lab", "cost": 4, "label": "TRAb", "reveals": "บวก", "strength": "strong", "why": "Specific ต่อ Graves (ETA แนะนำส่งทุกราย)" },
-          { "id": "i-scan", "kind": "imaging", "cost": 5, "label": "Thyroid scan", "reveals": "Uptake เพิ่มทั่วต่อม", "strength": "weak", "why": "ไม่จำเป็นเมื่อคลินิก + TRAb ชัด" }
+          {
+            "id": "h-asthma",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติ asthma และยาเดิม",
+            "reveals": "ไม่มี asthma ไม่ได้กินยาใด",
+            "strength": "moderate",
+            "why": "ต้องรู้ก่อนให้ propranolol และตัด exogenous"
+          },
+          {
+            "id": "p-goiter-eye",
+            "kind": "pe",
+            "cost": 2,
+            "label": "คอและตา",
+            "reveals": "Diffuse goiter soft smooth มี bruit · lid retraction · exophthalmos",
+            "strength": "strong",
+            "why": "Soft + bruit + ตา = Graves"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4, FT3, TSH",
+            "reveals": "FT4 4.7 ng/dL · FT3 สูง · TSH < 0.01 mU/L",
+            "strength": "strong",
+            "why": "Primary thyrotoxicosis (TSH ถูกกด)"
+          },
+          {
+            "id": "l-trab",
+            "kind": "lab",
+            "cost": 4,
+            "label": "TRAb",
+            "reveals": "บวก",
+            "strength": "strong",
+            "why": "Specific ต่อ Graves (ETA แนะนำส่งทุกราย)"
+          },
+          {
+            "id": "i-scan",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid scan",
+            "reveals": "Uptake เพิ่มทั่วต่อม",
+            "strength": "weak",
+            "why": "ไม่จำเป็นเมื่อคลินิก + TRAb ชัด"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "graves", "label": "Graves disease" },
-          { "id": "adhd", "label": "ADHD" },
-          { "id": "subacute", "label": "Subacute thyroiditis" },
-          { "id": "hashitox", "label": "Hashitoxicosis" },
-          { "id": "exo", "label": "Exogenous thyroid hormone" }
+          {
+            "id": "graves",
+            "label": "Graves disease"
+          },
+          {
+            "id": "adhd",
+            "label": "ADHD"
+          },
+          {
+            "id": "subacute",
+            "label": "Subacute thyroiditis"
+          },
+          {
+            "id": "hashitox",
+            "label": "Hashitoxicosis"
+          },
+          {
+            "id": "exo",
+            "label": "Exogenous thyroid hormone"
+          }
         ],
         "nextStepOptions": [
-          { "id": "mmi-prop", "label": "MMI + propranolol + เจาะ CBC/LFT baseline และสอนอาการ side effect" },
-          { "id": "ptu-prop", "label": "PTU + propranolol" },
-          { "id": "rai", "label": "Radioactive iodine" },
-          { "id": "surgery", "label": "Total thyroidectomy" },
-          { "id": "methylphenidate", "label": "Methylphenidate" }
+          {
+            "id": "mmi-prop",
+            "label": "MMI + propranolol + เจาะ CBC/LFT baseline และสอนอาการ side effect"
+          },
+          {
+            "id": "ptu-prop",
+            "label": "PTU + propranolol"
+          },
+          {
+            "id": "rai",
+            "label": "Radioactive iodine"
+          },
+          {
+            "id": "surgery",
+            "label": "Total thyroidectomy"
+          },
+          {
+            "id": "methylphenidate",
+            "label": "Methylphenidate"
+          }
         ],
-        "answer": { "diagnosis": "graves", "nextStep": "mmi-prop" },
-        "optimalLine": ["h-asthma", "p-goiter-eye", "l-tft"],
+        "answer": {
+          "diagnosis": "graves",
+          "nextStep": "mmi-prop"
+        },
+        "optimalLine": [
+          "h-asthma",
+          "p-goiter-eye",
+          "l-tft"
+        ],
         "explanation": "อาการ 'ADHD' + น้ำหนักลด + tachycardia + systolic hypertension = thyrotoxic · goiter soft + bruit + ตา = Graves · TSH ถูกกดยืนยัน primary · first-line ในเด็กคือ MMI (ไม่ใช่ PTU) อย่างน้อย 3 ปี + β-blocker ช่วงแรก (ถามประวัติ asthma ก่อน) · baseline neutrophil + LFT · TRAb ควรส่งทุกรายแต่ไม่เปลี่ยน management วันนี้"
       },
       {
         "id": "dd-floppy-boy",
         "targetSeconds": 180,
         "difficulty": 2,
-        "basedOn": { "rules": ["axis-feedback", "drug-ladder"], "errata": ["e-central-missed"] },
+        "basedOn": {
+          "rules": [
+            "axis-feedback",
+            "drug-ladder"
+          ],
+          "errata": [
+            "e-central-missed"
+          ]
+        },
         "hint": "Screening ปกติไม่ได้แปลว่าไม่เป็น",
         "title": "ตัวเหลืองนาน + น้ำตาลต่ำ",
         "chiefComplaint": "ทารกชายอายุ 3 สัปดาห์ ตัวเหลืองไม่หาย ซึม ดูดนมน้อย เคยมี hypoglycemia ใน NICU · newborn TSH screening ปกติ",
         "vitals": "T 36.0 °C · HR 110 · DTX 42 mg/dL",
         "budget": 10,
         "clues": [
-          { "id": "p-genital", "kind": "pe", "cost": 2, "label": "ตรวจอวัยวะเพศและ midline", "reveals": "Micropenis + undescended testes · ไม่มี goiter", "strength": "strong", "why": "Micropenis + hypoglycemia + jaundice = MPHD" },
-          { "id": "p-eye", "kind": "pe", "cost": 2, "label": "ตรวจตา", "reveals": "Nystagmus ตามวัตถุไม่ได้", "strength": "moderate", "why": "นึกถึง septo-optic dysplasia" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4 + TSH", "reveals": "FT4 0.5 ng/dL (ต่ำ) · TSH 2.1 mU/L", "strength": "strong", "why": "TSH ปกติทั้งที่ FT4 ต่ำ = inappropriate → central" },
-          { "id": "l-cortisol", "kind": "lab", "cost": 4, "label": "Cortisol ตอนเช้า", "reveals": "ต่ำ", "strength": "strong", "why": "ACTH deficiency ต้องแก้ก่อน LT4" },
-          { "id": "i-mri", "kind": "imaging", "cost": 5, "label": "Pituitary MRI", "reveals": "Optic nerve hypoplasia + ectopic posterior pituitary", "strength": "moderate", "why": "ยืนยันโครงสร้าง แต่ไม่ต้องรอผลก่อนให้ hydrocortisone" }
+          {
+            "id": "p-genital",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจอวัยวะเพศและ midline",
+            "reveals": "Micropenis + undescended testes · ไม่มี goiter",
+            "strength": "strong",
+            "why": "Micropenis + hypoglycemia + jaundice = MPHD"
+          },
+          {
+            "id": "p-eye",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจตา",
+            "reveals": "Nystagmus ตามวัตถุไม่ได้",
+            "strength": "moderate",
+            "why": "นึกถึง septo-optic dysplasia"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4 + TSH",
+            "reveals": "FT4 0.5 ng/dL (ต่ำ) · TSH 2.1 mU/L",
+            "strength": "strong",
+            "why": "TSH ปกติทั้งที่ FT4 ต่ำ = inappropriate → central"
+          },
+          {
+            "id": "l-cortisol",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Cortisol ตอนเช้า",
+            "reveals": "ต่ำ",
+            "strength": "strong",
+            "why": "ACTH deficiency ต้องแก้ก่อน LT4"
+          },
+          {
+            "id": "i-mri",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Pituitary MRI",
+            "reveals": "Optic nerve hypoplasia + ectopic posterior pituitary",
+            "strength": "moderate",
+            "why": "ยืนยันโครงสร้าง แต่ไม่ต้องรอผลก่อนให้ hydrocortisone"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "central", "label": "Central hypothyroidism (MPHD)" },
-          { "id": "primary-ch", "label": "Primary CH ที่ screening พลาด" },
-          { "id": "breastmilk", "label": "Breast milk jaundice" },
-          { "id": "sick", "label": "Sick euthyroid" },
-          { "id": "biliary", "label": "Biliary atresia" }
+          {
+            "id": "central",
+            "label": "Central hypothyroidism (MPHD)"
+          },
+          {
+            "id": "primary-ch",
+            "label": "Primary CH ที่ screening พลาด"
+          },
+          {
+            "id": "breastmilk",
+            "label": "Breast milk jaundice"
+          },
+          {
+            "id": "sick",
+            "label": "Sick euthyroid"
+          },
+          {
+            "id": "biliary",
+            "label": "Biliary atresia"
+          }
         ],
         "nextStepOptions": [
-          { "id": "hc-then-lt4", "label": "Hydrocortisone ก่อน แล้วเริ่ม LT4 ติดตามด้วย FT4" },
-          { "id": "lt4-now", "label": "LT4 10–15 mcg/kg/day ทันที" },
-          { "id": "repeat-tsh", "label": "ตรวจ TSH ซ้ำ 2 สัปดาห์" },
-          { "id": "phototherapy", "label": "Phototherapy อย่างเดียว" },
-          { "id": "scan", "label": "Thyroid scan" }
+          {
+            "id": "hc-then-lt4",
+            "label": "Hydrocortisone ก่อน แล้วเริ่ม LT4 ติดตามด้วย FT4"
+          },
+          {
+            "id": "lt4-now",
+            "label": "LT4 10–15 mcg/kg/day ทันที"
+          },
+          {
+            "id": "repeat-tsh",
+            "label": "ตรวจ TSH ซ้ำ 2 สัปดาห์"
+          },
+          {
+            "id": "phototherapy",
+            "label": "Phototherapy อย่างเดียว"
+          },
+          {
+            "id": "scan",
+            "label": "Thyroid scan"
+          }
         ],
-        "answer": { "diagnosis": "central", "nextStep": "hc-then-lt4" },
-        "optimalLine": ["p-genital", "l-tft", "l-cortisol"],
+        "answer": {
+          "diagnosis": "central",
+          "nextStep": "hc-then-lt4"
+        },
+        "optimalLine": [
+          "p-genital",
+          "l-tft",
+          "l-cortisol"
+        ],
         "explanation": "TSH-based screening พลาด central CH เสมอ · micropenis + hypoglycemia + jaundice นาน = MPHD · FT4 ต่ำ + TSH 'ปกติ' = central · cortisol ต่ำ → hydrocortisone ก่อน LT4 (LT4 เร่ง cortisol clearance → adrenal crisis) · ติดตามด้วย FT4 ไม่ใช่ TSH"
       },
       {
         "id": "dd-sore-neck",
         "targetSeconds": 150,
         "difficulty": 2,
-        "basedOn": { "rules": ["uptake-production"], "trapPairs": ["tp-graves-subacute"] },
+        "basedOn": {
+          "rules": [
+            "uptake-production"
+          ],
+          "trapPairs": [
+            "tp-graves-subacute"
+          ]
+        },
         "hint": "ถามว่าต่อมสร้างเพิ่มหรือรั่ว",
         "title": "เจ็บคอหลังเป็นหวัด แล้วใจสั่น",
         "chiefComplaint": "เด็กชาย 13 ปี เป็นหวัดเมื่อ 2 สัปดาห์ก่อน ตอนนี้ปวดด้านหน้าคอร้าวไปหู มีไข้ ใจสั่น มือสั่น",
         "vitals": "T 38.2 °C · PR 118/min · BP 124/70 mmHg",
         "budget": 9,
         "clues": [
-          { "id": "p-tender", "kind": "pe", "cost": 2, "label": "คลำต่อม", "reveals": "ต่อมโตเล็กน้อย แข็ง กดเจ็บมาก", "strength": "strong", "why": "Tender thyroid + ไข้หลังหวัด = subacute thyroiditis" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4 + TSH", "reveals": "FT4 สูง · TSH < 0.01", "strength": "moderate", "why": "Thyrotoxicosis แต่ยังไม่บอกว่าสร้างหรือรั่ว" },
-          { "id": "l-esr", "kind": "lab", "cost": 4, "label": "ESR/CRP", "reveals": "ESR 80 mm/h", "strength": "moderate", "why": "Inflammation" },
-          { "id": "l-trab", "kind": "lab", "cost": 4, "label": "TRAb", "reveals": "ลบ", "strength": "moderate", "why": "ไม่ใช่ Graves" },
-          { "id": "i-scan", "kind": "imaging", "cost": 5, "label": "Thyroid uptake scan", "reveals": "Uptake ต่ำมาก", "strength": "strong", "why": "ต่อมไม่ได้สร้างเพิ่ม = destructive thyroiditis → ATD ไม่ช่วย" }
+          {
+            "id": "p-tender",
+            "kind": "pe",
+            "cost": 2,
+            "label": "คลำต่อม",
+            "reveals": "ต่อมโตเล็กน้อย แข็ง กดเจ็บมาก",
+            "strength": "strong",
+            "why": "Tender thyroid + ไข้หลังหวัด = subacute thyroiditis"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4 + TSH",
+            "reveals": "FT4 สูง · TSH < 0.01",
+            "strength": "moderate",
+            "why": "Thyrotoxicosis แต่ยังไม่บอกว่าสร้างหรือรั่ว"
+          },
+          {
+            "id": "l-esr",
+            "kind": "lab",
+            "cost": 4,
+            "label": "ESR/CRP",
+            "reveals": "ESR 80 mm/h",
+            "strength": "moderate",
+            "why": "Inflammation"
+          },
+          {
+            "id": "l-trab",
+            "kind": "lab",
+            "cost": 4,
+            "label": "TRAb",
+            "reveals": "ลบ",
+            "strength": "moderate",
+            "why": "ไม่ใช่ Graves"
+          },
+          {
+            "id": "i-scan",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid uptake scan",
+            "reveals": "Uptake ต่ำมาก",
+            "strength": "strong",
+            "why": "ต่อมไม่ได้สร้างเพิ่ม = destructive thyroiditis → ATD ไม่ช่วย"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "subacute", "label": "Subacute thyroiditis" },
-          { "id": "graves", "label": "Graves disease" },
-          { "id": "hashitox", "label": "Hashitoxicosis" },
-          { "id": "acute-supp", "label": "Acute suppurative thyroiditis" },
-          { "id": "exo", "label": "Exogenous thyroid hormone" }
+          {
+            "id": "subacute",
+            "label": "Subacute thyroiditis"
+          },
+          {
+            "id": "graves",
+            "label": "Graves disease"
+          },
+          {
+            "id": "hashitox",
+            "label": "Hashitoxicosis"
+          },
+          {
+            "id": "acute-supp",
+            "label": "Acute suppurative thyroiditis"
+          },
+          {
+            "id": "exo",
+            "label": "Exogenous thyroid hormone"
+          }
         ],
         "nextStepOptions": [
-          { "id": "nsaid-bb", "label": "NSAID + β-blocker" },
-          { "id": "mmi", "label": "MMI 0.5 mg/kg/day" },
-          { "id": "rai", "label": "Radioactive iodine" },
-          { "id": "lt4", "label": "LT4" },
-          { "id": "iv-atb", "label": "IV antibiotics + drainage" }
+          {
+            "id": "nsaid-bb",
+            "label": "NSAID + β-blocker"
+          },
+          {
+            "id": "mmi",
+            "label": "MMI 0.5 mg/kg/day"
+          },
+          {
+            "id": "rai",
+            "label": "Radioactive iodine"
+          },
+          {
+            "id": "lt4",
+            "label": "LT4"
+          },
+          {
+            "id": "iv-atb",
+            "label": "IV antibiotics + drainage"
+          }
         ],
-        "answer": { "diagnosis": "subacute", "nextStep": "nsaid-bb" },
-        "optimalLine": ["p-tender", "i-scan"],
+        "answer": {
+          "diagnosis": "subacute",
+          "nextStep": "nsaid-bb"
+        },
+        "optimalLine": [
+          "p-tender",
+          "i-scan"
+        ],
         "explanation": "ไข้ + ต่อมกดเจ็บหลังหวัด + thyrotoxic = subacute thyroiditis · uptake ต่ำ = ฮอร์โมนรั่ว ไม่ได้สร้างเพิ่ม → NSAID + β-blocker ไม่ให้ ATD · ต่างจาก Graves ที่ต่อมไม่เจ็บและ uptake สูง (ฝีหนองที่ต่อมมักมี TFT ปกติและก้อนข้างเดียว)"
       },
       {
         "id": "dd-fever-mmi",
         "targetSeconds": 120,
         "difficulty": 2,
-        "basedOn": { "rules": ["drug-ladder"] },
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
         "hint": "ไข้ระหว่างกิน ATD คิดถึงยาก่อน",
         "title": "ไข้สูงในสัปดาห์ที่ 6 ของ MMI",
         "chiefComplaint": "เด็กหญิง 14 ปี Graves กิน MMI มา 6 สัปดาห์ มีไข้สูงและเจ็บคอมา 1 วัน",
         "vitals": "T 39.4 °C · PR 120/min · BP 100/60 mmHg",
         "budget": 6,
         "clues": [
-          { "id": "p-mouth", "kind": "pe", "cost": 2, "label": "ตรวจช่องปากและคอ", "reveals": "แผลในปากหลายแผล คอแดง ไม่มีหนองบน tonsil", "strength": "moderate", "why": "Infection ที่ไม่มี neutrophil สู้" },
-          { "id": "l-cbc", "kind": "lab", "cost": 4, "label": "CBC with differential", "reveals": "WBC 1,200 · ANC 0.2 × 10⁹/L", "strength": "strong", "why": "Neutrophil < 0.5 × 10⁹/L = agranulocytosis" },
-          { "id": "l-lft", "kind": "lab", "cost": 4, "label": "LFT", "reveals": "ปกติ", "strength": "weak", "why": "ตัด hepatitis แต่ไม่ใช่ปัญหาหลัก" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4 + TSH", "reveals": "FT4 ใกล้ปกติ · TSH ยังต่ำ", "strength": "weak", "why": "TSH ค้างต่ำได้หลายสัปดาห์ ไม่ช่วยตัดสินตอนนี้" }
+          {
+            "id": "p-mouth",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจช่องปากและคอ",
+            "reveals": "แผลในปากหลายแผล คอแดง ไม่มีหนองบน tonsil",
+            "strength": "moderate",
+            "why": "Infection ที่ไม่มี neutrophil สู้"
+          },
+          {
+            "id": "l-cbc",
+            "kind": "lab",
+            "cost": 4,
+            "label": "CBC with differential",
+            "reveals": "WBC 1,200 · ANC 0.2 × 10⁹/L",
+            "strength": "strong",
+            "why": "Neutrophil < 0.5 × 10⁹/L = agranulocytosis"
+          },
+          {
+            "id": "l-lft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "LFT",
+            "reveals": "ปกติ",
+            "strength": "weak",
+            "why": "ตัด hepatitis แต่ไม่ใช่ปัญหาหลัก"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4 + TSH",
+            "reveals": "FT4 ใกล้ปกติ · TSH ยังต่ำ",
+            "strength": "weak",
+            "why": "TSH ค้างต่ำได้หลายสัปดาห์ ไม่ช่วยตัดสินตอนนี้"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "agranulo", "label": "MMI-induced agranulocytosis" },
-          { "id": "viral", "label": "Viral pharyngitis" },
-          { "id": "storm", "label": "Thyroid storm" },
-          { "id": "gas", "label": "GAS pharyngitis" },
-          { "id": "vasculitis", "label": "ANCA vasculitis" }
+          {
+            "id": "agranulo",
+            "label": "MMI-induced agranulocytosis"
+          },
+          {
+            "id": "viral",
+            "label": "Viral pharyngitis"
+          },
+          {
+            "id": "storm",
+            "label": "Thyroid storm"
+          },
+          {
+            "id": "gas",
+            "label": "GAS pharyngitis"
+          },
+          {
+            "id": "vasculitis",
+            "label": "ANCA vasculitis"
+          }
         ],
         "nextStepOptions": [
-          { "id": "stop-definitive", "label": "หยุด MMI ถาวร + รักษา febrile neutropenia แล้ววางแผน definitive treatment" },
-          { "id": "switch-ptu", "label": "เปลี่ยนเป็น PTU" },
-          { "id": "half-dose", "label": "ลด MMI ครึ่งหนึ่ง" },
-          { "id": "atb-continue", "label": "Antibiotic แล้วกิน MMI ต่อ" },
-          { "id": "steroid", "label": "Prednisolone" }
+          {
+            "id": "stop-definitive",
+            "label": "หยุด MMI ถาวร + รักษา febrile neutropenia แล้ววางแผน definitive treatment"
+          },
+          {
+            "id": "switch-ptu",
+            "label": "เปลี่ยนเป็น PTU"
+          },
+          {
+            "id": "half-dose",
+            "label": "ลด MMI ครึ่งหนึ่ง"
+          },
+          {
+            "id": "atb-continue",
+            "label": "Antibiotic แล้วกิน MMI ต่อ"
+          },
+          {
+            "id": "steroid",
+            "label": "Prednisolone"
+          }
         ],
-        "answer": { "diagnosis": "agranulo", "nextStep": "stop-definitive" },
-        "optimalLine": ["l-cbc"],
+        "answer": {
+          "diagnosis": "agranulo",
+          "nextStep": "stop-definitive"
+        },
+        "optimalLine": [
+          "l-cbc"
+        ],
         "explanation": "ไข้ + เจ็บคอ + แผลในปากระหว่างกิน ATD ช่วงเดือนแรก ๆ = agranulocytosis จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ · neutrophil < 0.5 × 10⁹/L → หยุด ATD ถาวร รักษาแบบ febrile neutropenia แล้วไป RAI หรือ thyroidectomy · ไม่สลับไป PTU"
       },
       {
         "id": "dd-preterm-second",
         "targetSeconds": 180,
         "difficulty": 3,
-        "basedOn": { "rules": ["tsh-screen", "brain-clock"], "errata": ["e-delayed-tsh-rise"] },
+        "basedOn": {
+          "rules": [
+            "tsh-screen",
+            "brain-clock"
+          ],
+          "errata": [
+            "e-delayed-tsh-rise"
+          ]
+        },
         "hint": "Screening ครั้งแรกปกติในกลุ่มนี้ยังไม่จบ",
         "title": "Preterm 30 สัปดาห์ ผลคัดกรองครั้งแรกปกติ",
         "chiefComplaint": "ทารก GA 30 สัปดาห์ BW 1,300 g อยู่ NICU อายุ 2 สัปดาห์ newborn screening ที่ 48–72 ชั่วโมงปกติ ทีมถามว่าต้องทำอะไรต่อ",
         "vitals": "on room air · feeding ทาง OG tube",
         "budget": 6,
         "clues": [
-          { "id": "h-risk", "kind": "history", "cost": 1, "label": "ทบทวนกลุ่มเสี่ยง", "reveals": "Preterm < 32 สัปดาห์ + LBW + เคยป่วยหนัก (sepsis)", "strength": "strong", "why": "กลุ่มที่ TSH ขึ้นช้า ต้องตรวจซ้ำทุก 2 สัปดาห์จน corrected GA 37 สัปดาห์" },
-          { "id": "l-second", "kind": "lab", "cost": 4, "label": "Second TSH screening (อายุ 2 สัปดาห์)", "reveals": "TSH 45 mU/L", "strength": "strong", "why": "Delayed TSH elevation" },
-          { "id": "l-confirm", "kind": "lab", "cost": 4, "label": "Serum FT4 + TSH", "reveals": "FT4 ต่ำ · TSH 52 mU/L", "strength": "strong", "why": "ยืนยัน CH" },
-          { "id": "i-us", "kind": "imaging", "cost": 5, "label": "Thyroid ultrasound", "reveals": "ต่อมอยู่ตำแหน่งปกติ", "strength": "weak", "why": "ช่วยวางแผนลองหยุดยาภายหลัง แต่ไม่เปลี่ยนการรักษาตอนนี้" }
+          {
+            "id": "h-risk",
+            "kind": "history",
+            "cost": 1,
+            "label": "ทบทวนกลุ่มเสี่ยง",
+            "reveals": "Preterm < 32 สัปดาห์ + LBW + เคยป่วยหนัก (sepsis)",
+            "strength": "strong",
+            "why": "กลุ่มที่ TSH ขึ้นช้า ต้องตรวจซ้ำทุก 2 สัปดาห์จน corrected GA 37 สัปดาห์"
+          },
+          {
+            "id": "l-second",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Second TSH screening (อายุ 2 สัปดาห์)",
+            "reveals": "TSH 45 mU/L",
+            "strength": "strong",
+            "why": "Delayed TSH elevation"
+          },
+          {
+            "id": "l-confirm",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Serum FT4 + TSH",
+            "reveals": "FT4 ต่ำ · TSH 52 mU/L",
+            "strength": "strong",
+            "why": "ยืนยัน CH"
+          },
+          {
+            "id": "i-us",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid ultrasound",
+            "reveals": "ต่อมอยู่ตำแหน่งปกติ",
+            "strength": "weak",
+            "why": "ช่วยวางแผนลองหยุดยาภายหลัง แต่ไม่เปลี่ยนการรักษาตอนนี้"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "delayed-ch", "label": "CH แบบ delayed TSH elevation" },
-          { "id": "normal", "label": "ปกติ (screening ครั้งแรกปกติแล้ว)" },
-          { "id": "sick", "label": "Sick euthyroid" },
-          { "id": "central", "label": "Central hypothyroidism" },
-          { "id": "falsepos", "label": "False positive" }
+          {
+            "id": "delayed-ch",
+            "label": "CH แบบ delayed TSH elevation"
+          },
+          {
+            "id": "normal",
+            "label": "ปกติ (screening ครั้งแรกปกติแล้ว)"
+          },
+          {
+            "id": "sick",
+            "label": "Sick euthyroid"
+          },
+          {
+            "id": "central",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "falsepos",
+            "label": "False positive"
+          }
         ],
         "nextStepOptions": [
-          { "id": "start-lt4", "label": "เริ่ม LT4 ทันที แล้วทบทวนการหยุดยาหลังอายุ 3 ปี" },
-          { "id": "repeat-6mo", "label": "ตรวจซ้ำเมื่ออายุ 6 เดือน" },
-          { "id": "no-fu", "label": "ไม่ต้องติดตาม" },
-          { "id": "hc", "label": "Hydrocortisone ก่อน LT4" },
-          { "id": "scan-first", "label": "รอ thyroid scan ก่อนเริ่มยา" }
+          {
+            "id": "start-lt4",
+            "label": "เริ่ม LT4 ทันที แล้วทบทวนการหยุดยาหลังอายุ 3 ปี"
+          },
+          {
+            "id": "repeat-6mo",
+            "label": "ตรวจซ้ำเมื่ออายุ 6 เดือน"
+          },
+          {
+            "id": "no-fu",
+            "label": "ไม่ต้องติดตาม"
+          },
+          {
+            "id": "hc",
+            "label": "Hydrocortisone ก่อน LT4"
+          },
+          {
+            "id": "scan-first",
+            "label": "รอ thyroid scan ก่อนเริ่มยา"
+          }
         ],
-        "answer": { "diagnosis": "delayed-ch", "nextStep": "start-lt4" },
-        "optimalLine": ["h-risk", "l-second"],
+        "answer": {
+          "diagnosis": "delayed-ch",
+          "nextStep": "start-lt4"
+        },
+        "optimalLine": [
+          "h-risk",
+          "l-second"
+        ],
         "explanation": "Preterm/LBW/ทารกป่วย/แฝด มี delayed TSH elevation · แนวทาง 2564: second TSH screening ที่ราว 2 สัปดาห์ และถ้าเกิด < 32 สัปดาห์ตรวจทุก 2 สัปดาห์จน corrected GA 37 · TSH > 20 → เริ่ม LT4 ทันที · เริ่มยาขณะ preterm/ป่วย เป็น clue ให้ลองหยุดยาหลังอายุ 3 ปี"
       },
       {
         "id": "dd-graves-baby",
         "targetSeconds": 180,
         "difficulty": 3,
-        "basedOn": { "rules": ["placenta-transfer"], "errata": ["e-maternal-treated"], "trapPairs": ["tp-neonatal-graves-maternal-atd"] },
+        "basedOn": {
+          "rules": [
+            "placenta-transfer"
+          ],
+          "errata": [
+            "e-maternal-treated"
+          ],
+          "trapPairs": [
+            "tp-neonatal-graves-maternal-atd"
+          ]
+        },
         "hint": "แม่หายแล้ว แต่ antibody ยังอยู่",
         "title": "ลูกของแม่ที่เคยทำ RAI",
         "chiefComplaint": "ทารกอายุ 12 วัน ร้องกวนตลอด ดูดนมแต่น้ำหนักไม่ขึ้น หายใจเร็ว แม่เคยเป็น Graves ทำ RAI ไปเมื่อ 3 ปีก่อน ตอนนี้กิน LT4 · TFT วันที่ 4 ปกติ",
         "vitals": "HR 210/min · RR 60/min · T 37.6 °C",
         "budget": 9,
         "clues": [
-          { "id": "h-trab", "kind": "history", "cost": 1, "label": "ผล TRAb ของแม่ช่วงตั้งครรภ์", "reveals": "ไม่ได้ตรวจ", "strength": "moderate", "why": "TRAb ไม่ทราบ = ทารก at risk แม้แม่รักษาหายแล้ว" },
-          { "id": "p-exam", "kind": "pe", "cost": 2, "label": "ตรวจร่างกาย", "reveals": "Goiter เล็ก ตาโปน ตับม้ามโต ตัวเหลือง", "strength": "strong", "why": "ภาพ neonatal thyrotoxicosis" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4 + TSH วันนี้", "reveals": "FT4 สูงมาก · TSH < 0.01", "strength": "strong", "why": "Neonatal Graves" },
-          { "id": "l-trab-baby", "kind": "lab", "cost": 4, "label": "TRAb ทารก", "reveals": "บวกสูง", "strength": "moderate", "why": "ยืนยันกลไก แต่ไม่ต้องรอก่อนรักษา" },
-          { "id": "i-echo", "kind": "imaging", "cost": 5, "label": "Echocardiogram", "reveals": "Hyperdynamic LV ไม่มี structural defect", "strength": "weak", "why": "ประเมินภาวะแทรกซ้อน ไม่ใช่การวินิจฉัย" }
+          {
+            "id": "h-trab",
+            "kind": "history",
+            "cost": 1,
+            "label": "ผล TRAb ของแม่ช่วงตั้งครรภ์",
+            "reveals": "ไม่ได้ตรวจ",
+            "strength": "moderate",
+            "why": "TRAb ไม่ทราบ = ทารก at risk แม้แม่รักษาหายแล้ว"
+          },
+          {
+            "id": "p-exam",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจร่างกาย",
+            "reveals": "Goiter เล็ก ตาโปน ตับม้ามโต ตัวเหลือง",
+            "strength": "strong",
+            "why": "ภาพ neonatal thyrotoxicosis"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4 + TSH วันนี้",
+            "reveals": "FT4 สูงมาก · TSH < 0.01",
+            "strength": "strong",
+            "why": "Neonatal Graves"
+          },
+          {
+            "id": "l-trab-baby",
+            "kind": "lab",
+            "cost": 4,
+            "label": "TRAb ทารก",
+            "reveals": "บวกสูง",
+            "strength": "moderate",
+            "why": "ยืนยันกลไก แต่ไม่ต้องรอก่อนรักษา"
+          },
+          {
+            "id": "i-echo",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Echocardiogram",
+            "reveals": "Hyperdynamic LV ไม่มี structural defect",
+            "strength": "weak",
+            "why": "ประเมินภาวะแทรกซ้อน ไม่ใช่การวินิจฉัย"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "neo-graves", "label": "Neonatal Graves disease" },
-          { "id": "sepsis", "label": "Neonatal sepsis" },
-          { "id": "svt", "label": "SVT" },
-          { "id": "transient-atd", "label": "Transient hypothyroidism จากยาแม่" },
-          { "id": "ch", "label": "Primary CH" }
+          {
+            "id": "neo-graves",
+            "label": "Neonatal Graves disease"
+          },
+          {
+            "id": "sepsis",
+            "label": "Neonatal sepsis"
+          },
+          {
+            "id": "svt",
+            "label": "SVT"
+          },
+          {
+            "id": "transient-atd",
+            "label": "Transient hypothyroidism จากยาแม่"
+          },
+          {
+            "id": "ch",
+            "label": "Primary CH"
+          }
         ],
         "nextStepOptions": [
-          { "id": "admit-mmi-bb", "label": "Admit + MMI + propranolol (เพิ่ม potassium iodide ถ้ารุนแรง)" },
-          { "id": "dc", "label": "Discharge เพราะ TFT วันที่ 4 ปกติ" },
-          { "id": "lt4", "label": "เริ่ม LT4" },
-          { "id": "adenosine", "label": "Adenosine IV" },
-          { "id": "ptu", "label": "PTU" }
+          {
+            "id": "admit-mmi-bb",
+            "label": "Admit + MMI + propranolol (เพิ่ม potassium iodide ถ้ารุนแรง)"
+          },
+          {
+            "id": "dc",
+            "label": "Discharge เพราะ TFT วันที่ 4 ปกติ"
+          },
+          {
+            "id": "lt4",
+            "label": "เริ่ม LT4"
+          },
+          {
+            "id": "adenosine",
+            "label": "Adenosine IV"
+          },
+          {
+            "id": "ptu",
+            "label": "PTU"
+          }
         ],
-        "answer": { "diagnosis": "neo-graves", "nextStep": "admit-mmi-bb" },
-        "optimalLine": ["h-trab", "p-exam", "l-tft"],
+        "answer": {
+          "diagnosis": "neo-graves",
+          "nextStep": "admit-mmi-bb"
+        },
+        "optimalLine": [
+          "h-trab",
+          "p-exam",
+          "l-tft"
+        ],
         "explanation": "แม่ที่ทำ RAI/ผ่าตัดแล้วยังมี TRAb ส่งผ่านรกได้ (TRAb ไม่ทราบ = at risk) · TFT วันที่ 3–5 ปกติไม่ตัดโรค ต้องตรวจซ้ำ day 10–14 · tachycardia + heart failure → admit · MMI เป็น treatment of choice + β-blocker และ potassium iodide ในรายรุนแรง · เป็นชั่วคราวจน TRAb ของแม่หมด"
       },
       {
         "id": "dd-not-graves",
         "targetSeconds": 180,
         "difficulty": 3,
-        "basedOn": { "rules": ["uptake-production"], "errata": ["e-hashitoxicosis"], "trapPairs": ["tp-graves-hashitoxicosis"] },
+        "basedOn": {
+          "rules": [
+            "uptake-production"
+          ],
+          "errata": [
+            "e-hashitoxicosis"
+          ],
+          "trapPairs": [
+            "tp-graves-hashitoxicosis"
+          ]
+        },
         "hint": "anti-TPO บวกไม่ได้แปลว่าไม่ใช่ Graves และไม่ได้แปลว่าใช่",
         "title": "Thyrotoxic แต่ต่อมแน่น",
         "chiefComplaint": "เด็กหญิง 12 ปี น้ำหนักลดเล็กน้อย นอนไม่หลับ 1 เดือน แม่เป็น Hashimoto คลำได้คอโต",
         "vitals": "PR 104/min · BP 118/64 mmHg",
         "budget": 9,
         "clues": [
-          { "id": "p-goiter", "kind": "pe", "cost": 2, "label": "คลำต่อมและตา", "reveals": "Diffuse goiter firm ไม่เจ็บ ไม่มี bruit ไม่มีตาโปน", "strength": "moderate", "why": "Firm ไปทาง Hashimoto" },
-          { "id": "l-tft", "kind": "lab", "cost": 4, "label": "FT4 + TSH", "reveals": "FT4 สูงเล็กน้อย · TSH 0.05", "strength": "moderate", "why": "Thyrotoxicosis เล็กน้อย" },
-          { "id": "l-tpo", "kind": "lab", "cost": 4, "label": "Anti-TPO", "reveals": "สูงมาก", "strength": "weak", "why": "บวกได้ทั้ง Hashimoto และ Graves แยกไม่ได้" },
-          { "id": "l-trab", "kind": "lab", "cost": 4, "label": "TRAb", "reveals": "ลบ", "strength": "strong", "why": "TRAb ลบทำให้ Graves ไม่น่าใช่" },
-          { "id": "i-scan", "kind": "imaging", "cost": 5, "label": "Thyroid uptake scan", "reveals": "Uptake ต่ำ", "strength": "strong", "why": "ฮอร์โมนรั่ว ไม่ได้สร้างเพิ่ม → ATD ไม่ช่วย" }
+          {
+            "id": "p-goiter",
+            "kind": "pe",
+            "cost": 2,
+            "label": "คลำต่อมและตา",
+            "reveals": "Diffuse goiter firm ไม่เจ็บ ไม่มี bruit ไม่มีตาโปน",
+            "strength": "moderate",
+            "why": "Firm ไปทาง Hashimoto"
+          },
+          {
+            "id": "l-tft",
+            "kind": "lab",
+            "cost": 4,
+            "label": "FT4 + TSH",
+            "reveals": "FT4 สูงเล็กน้อย · TSH 0.05",
+            "strength": "moderate",
+            "why": "Thyrotoxicosis เล็กน้อย"
+          },
+          {
+            "id": "l-tpo",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Anti-TPO",
+            "reveals": "สูงมาก",
+            "strength": "weak",
+            "why": "บวกได้ทั้ง Hashimoto และ Graves แยกไม่ได้"
+          },
+          {
+            "id": "l-trab",
+            "kind": "lab",
+            "cost": 4,
+            "label": "TRAb",
+            "reveals": "ลบ",
+            "strength": "strong",
+            "why": "TRAb ลบทำให้ Graves ไม่น่าใช่"
+          },
+          {
+            "id": "i-scan",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "Thyroid uptake scan",
+            "reveals": "Uptake ต่ำ",
+            "strength": "strong",
+            "why": "ฮอร์โมนรั่ว ไม่ได้สร้างเพิ่ม → ATD ไม่ช่วย"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "hashitox", "label": "Hashitoxicosis" },
-          { "id": "graves", "label": "Graves disease" },
-          { "id": "subacute", "label": "Subacute thyroiditis" },
-          { "id": "toxic-nodule", "label": "Toxic adenoma" },
-          { "id": "tsh-dep", "label": "TSH-secreting adenoma" }
+          {
+            "id": "hashitox",
+            "label": "Hashitoxicosis"
+          },
+          {
+            "id": "graves",
+            "label": "Graves disease"
+          },
+          {
+            "id": "subacute",
+            "label": "Subacute thyroiditis"
+          },
+          {
+            "id": "toxic-nodule",
+            "label": "Toxic adenoma"
+          },
+          {
+            "id": "tsh-dep",
+            "label": "TSH-secreting adenoma"
+          }
         ],
         "nextStepOptions": [
-          { "id": "bb-fu", "label": "β-blocker ถ้ามีอาการ แล้วติดตาม TFT (คาดว่าจะลงเป็น hypo)" },
-          { "id": "mmi", "label": "MMI 0.5 mg/kg/day" },
-          { "id": "rai", "label": "Radioactive iodine" },
-          { "id": "lt4", "label": "LT4" },
-          { "id": "surgery", "label": "Thyroidectomy" }
+          {
+            "id": "bb-fu",
+            "label": "β-blocker ถ้ามีอาการ แล้วติดตาม TFT (คาดว่าจะลงเป็น hypo)"
+          },
+          {
+            "id": "mmi",
+            "label": "MMI 0.5 mg/kg/day"
+          },
+          {
+            "id": "rai",
+            "label": "Radioactive iodine"
+          },
+          {
+            "id": "lt4",
+            "label": "LT4"
+          },
+          {
+            "id": "surgery",
+            "label": "Thyroidectomy"
+          }
         ],
-        "answer": { "diagnosis": "hashitox", "nextStep": "bb-fu" },
-        "optimalLine": ["l-trab", "i-scan"],
+        "answer": {
+          "diagnosis": "hashitox",
+          "nextStep": "bb-fu"
+        },
+        "optimalLine": [
+          "l-trab",
+          "i-scan"
+        ],
         "explanation": "Anti-TPO บวกได้ทั้งสองโรค ตัวที่แยกคือ TRAb และ uptake · TRAb ลบ + uptake ต่ำ + goiter firm + ประวัติครอบครัว = Hashitoxicosis · ต่อมไม่ได้สร้างเพิ่ม ATD จึงไม่ช่วย ให้ β-blocker ตามอาการแล้วติดตาม เพราะมักลงเป็น hypothyroid"
       }
     ],
@@ -1139,35 +2443,145 @@
         "id": "gw-ch-cause",
         "targetSeconds": 120,
         "difficulty": 1,
-        "basedOn": { "rules": ["goiter-drive", "placenta-transfer", "axis-feedback"] },
+        "basedOn": {
+          "rules": [
+            "goiter-drive",
+            "placenta-transfer",
+            "axis-feedback"
+          ]
+        },
         "hint": "Ultrasound เห็นต่อมที่คอไหม แบ่งได้เกือบครึ่ง",
         "title": "CH หาสาเหตุ 6 ตัว",
         "candidates": [
-          { "id": "agenesis", "label": "Agenesis", "cardId": "thyroid-dysgenesis" },
-          { "id": "ectopic", "label": "Ectopic (lingual) thyroid", "cardId": "thyroid-dysgenesis" },
-          { "id": "dyshormono", "label": "Dyshormonogenesis", "cardId": "dyshormonogenesis" },
-          { "id": "blocking", "label": "Maternal blocking Ab", "cardId": "transient-ch-blocking-ab" },
-          { "id": "iodine", "label": "Iodine excess", "cardId": "transient-ch-iodine" },
-          { "id": "central", "label": "Central CH", "cardId": "central-hypothyroidism" }
+          {
+            "id": "agenesis",
+            "label": "Agenesis",
+            "cardId": "thyroid-dysgenesis"
+          },
+          {
+            "id": "ectopic",
+            "label": "Ectopic (lingual) thyroid",
+            "cardId": "thyroid-dysgenesis"
+          },
+          {
+            "id": "dyshormono",
+            "label": "Dyshormonogenesis",
+            "cardId": "dyshormonogenesis"
+          },
+          {
+            "id": "blocking",
+            "label": "Maternal blocking Ab",
+            "cardId": "transient-ch-blocking-ab"
+          },
+          {
+            "id": "iodine",
+            "label": "Iodine excess",
+            "cardId": "transient-ch-iodine"
+          },
+          {
+            "id": "central",
+            "label": "Central CH",
+            "cardId": "central-hypothyroidism"
+          }
         ],
         "questions": [
-          { "id": "q-tsh-high", "text": "TSH สูงใช่ไหม?", "yes": ["agenesis", "ectopic", "dyshormono", "blocking", "iodine"] },
-          { "id": "q-us-neck", "text": "Ultrasound เห็นต่อมที่ตำแหน่งปกติบนคอใช่ไหม?", "yes": ["dyshormono", "blocking", "iodine", "central"] },
-          { "id": "q-lingual", "text": "Scan เห็น uptake ที่โคนลิ้นใช่ไหม?", "yes": ["ectopic"] },
-          { "id": "q-goiter", "text": "มี goiter ใช่ไหม?", "yes": ["dyshormono"] },
-          { "id": "q-transient", "text": "หายเองได้เมื่อสิ่งกระตุ้นหมดไปใช่ไหม?", "yes": ["blocking", "iodine"] },
-          { "id": "q-mother-ab", "text": "แม่มีโรคไทรอยด์ autoimmune ใช่ไหม?", "yes": ["blocking"] },
-          { "id": "q-iodine-hx", "text": "มีประวัติ povidone-iodine / iodine contrast ใช่ไหม?", "yes": ["iodine"] },
-          { "id": "q-micropenis", "text": "มี micropenis หรือ hypoglycemia ใช่ไหม?", "yes": ["central"] }
+          {
+            "id": "q-tsh-high",
+            "text": "TSH สูงใช่ไหม?",
+            "yes": [
+              "agenesis",
+              "ectopic",
+              "dyshormono",
+              "blocking",
+              "iodine"
+            ]
+          },
+          {
+            "id": "q-us-neck",
+            "text": "Ultrasound เห็นต่อมที่ตำแหน่งปกติบนคอใช่ไหม?",
+            "yes": [
+              "dyshormono",
+              "blocking",
+              "iodine",
+              "central"
+            ]
+          },
+          {
+            "id": "q-lingual",
+            "text": "Scan เห็น uptake ที่โคนลิ้นใช่ไหม?",
+            "yes": [
+              "ectopic"
+            ]
+          },
+          {
+            "id": "q-goiter",
+            "text": "มี goiter ใช่ไหม?",
+            "yes": [
+              "dyshormono"
+            ]
+          },
+          {
+            "id": "q-transient",
+            "text": "หายเองได้เมื่อสิ่งกระตุ้นหมดไปใช่ไหม?",
+            "yes": [
+              "blocking",
+              "iodine"
+            ]
+          },
+          {
+            "id": "q-mother-ab",
+            "text": "แม่มีโรคไทรอยด์ autoimmune ใช่ไหม?",
+            "yes": [
+              "blocking"
+            ]
+          },
+          {
+            "id": "q-iodine-hx",
+            "text": "มีประวัติ povidone-iodine / iodine contrast ใช่ไหม?",
+            "yes": [
+              "iodine"
+            ]
+          },
+          {
+            "id": "q-micropenis",
+            "text": "มี micropenis หรือ hypoglycemia ใช่ไหม?",
+            "yes": [
+              "central"
+            ]
+          }
         ],
         "optimalTree": {
           "question": "q-us-neck",
           "yes": {
             "question": "q-transient",
-            "yes": { "question": "q-mother-ab", "yes": { "leaf": "blocking" }, "no": { "leaf": "iodine" } },
-            "no": { "question": "q-tsh-high", "yes": { "leaf": "dyshormono" }, "no": { "leaf": "central" } }
+            "yes": {
+              "question": "q-mother-ab",
+              "yes": {
+                "leaf": "blocking"
+              },
+              "no": {
+                "leaf": "iodine"
+              }
+            },
+            "no": {
+              "question": "q-tsh-high",
+              "yes": {
+                "leaf": "dyshormono"
+              },
+              "no": {
+                "leaf": "central"
+              }
+            }
           },
-          "no": { "question": "q-lingual", "yes": { "leaf": "ectopic" }, "no": { "leaf": "agenesis" } }
+          "no": {
+            "question": "q-lingual",
+            "yes": {
+              "leaf": "ectopic"
+            },
+            "no": {
+              "leaf": "agenesis"
+            }
+          }
         },
         "explanation": "6 ตัวต้องใช้อย่างน้อย 3 คำถาม · เริ่มที่ 'ต่อมอยู่ที่คอไหม' แบ่ง 4/2: ฝั่งไม่มีต่อมใช้ uptake ที่โคนลิ้นแยก ectopic จาก agenesis · ฝั่งมีต่อม ใช้ 'หายเองได้ไหม' แยก transient (แล้วใช้ประวัติแม่) ออกจาก permanent (แล้วใช้ TSH แยก central ที่ TSH ไม่ขึ้น)"
       },
@@ -1175,37 +2589,135 @@
         "id": "gw-thyrotoxic-six",
         "targetSeconds": 120,
         "difficulty": 2,
-        "basedOn": { "rules": ["uptake-production", "axis-feedback"] },
+        "basedOn": {
+          "rules": [
+            "uptake-production",
+            "axis-feedback"
+          ]
+        },
         "hint": "Uptake สูงหรือต่ำแบ่ง 3/3 พอดี",
         "title": "Thyrotoxic 6 ตัว",
         "candidates": [
-          { "id": "graves", "label": "Graves", "cardId": "graves" },
-          { "id": "hashitox", "label": "Hashitoxicosis", "cardId": "hashitoxicosis" },
-          { "id": "subacute", "label": "Subacute thyroiditis", "cardId": "subacute-thyroiditis" },
-          { "id": "toxic", "label": "Toxic adenoma", "cardId": "toxic-nodule" },
-          { "id": "exo", "label": "Exogenous TH", "cardId": "exogenous-thyrotoxicosis" },
-          { "id": "tshdep", "label": "TSH-secreting adenoma", "cardId": "tsh-dependent-thyrotoxicosis" }
+          {
+            "id": "graves",
+            "label": "Graves",
+            "cardId": "graves"
+          },
+          {
+            "id": "hashitox",
+            "label": "Hashitoxicosis",
+            "cardId": "hashitoxicosis"
+          },
+          {
+            "id": "subacute",
+            "label": "Subacute thyroiditis",
+            "cardId": "subacute-thyroiditis"
+          },
+          {
+            "id": "toxic",
+            "label": "Toxic adenoma",
+            "cardId": "toxic-nodule"
+          },
+          {
+            "id": "exo",
+            "label": "Exogenous TH",
+            "cardId": "exogenous-thyrotoxicosis"
+          },
+          {
+            "id": "tshdep",
+            "label": "TSH-secreting adenoma",
+            "cardId": "tsh-dependent-thyrotoxicosis"
+          }
         ],
         "questions": [
-          { "id": "q-tsh-low", "text": "TSH ถูกกดต่ำใช่ไหม?", "yes": ["graves", "hashitox", "subacute", "toxic", "exo"] },
-          { "id": "q-uptake-high", "text": "Uptake สูง (ต่อมสร้างเพิ่ม) ใช่ไหม?", "yes": ["graves", "toxic", "tshdep"] },
-          { "id": "q-trab", "text": "TRAb บวกใช่ไหม?", "yes": ["graves"] },
-          { "id": "q-focal", "text": "Uptake เฉพาะจุด (hot nodule) ใช่ไหม?", "yes": ["toxic"] },
-          { "id": "q-tender", "text": "ต่อมกดเจ็บ + ไข้ใช่ไหม?", "yes": ["subacute"] },
-          { "id": "q-tg-low", "text": "Serum Tg ต่ำและไม่มี goiter ใช่ไหม?", "yes": ["exo"] },
-          { "id": "q-later-hypo", "text": "ต่อมามักลงเป็น hypothyroid ใช่ไหม?", "yes": ["hashitox", "subacute"] }
+          {
+            "id": "q-tsh-low",
+            "text": "TSH ถูกกดต่ำใช่ไหม?",
+            "yes": [
+              "graves",
+              "hashitox",
+              "subacute",
+              "toxic",
+              "exo"
+            ]
+          },
+          {
+            "id": "q-uptake-high",
+            "text": "Uptake สูง (ต่อมสร้างเพิ่ม) ใช่ไหม?",
+            "yes": [
+              "graves",
+              "toxic",
+              "tshdep"
+            ]
+          },
+          {
+            "id": "q-trab",
+            "text": "TRAb บวกใช่ไหม?",
+            "yes": [
+              "graves"
+            ]
+          },
+          {
+            "id": "q-focal",
+            "text": "Uptake เฉพาะจุด (hot nodule) ใช่ไหม?",
+            "yes": [
+              "toxic"
+            ]
+          },
+          {
+            "id": "q-tender",
+            "text": "ต่อมกดเจ็บ + ไข้ใช่ไหม?",
+            "yes": [
+              "subacute"
+            ]
+          },
+          {
+            "id": "q-tg-low",
+            "text": "Serum Tg ต่ำและไม่มี goiter ใช่ไหม?",
+            "yes": [
+              "exo"
+            ]
+          },
+          {
+            "id": "q-later-hypo",
+            "text": "ต่อมามักลงเป็น hypothyroid ใช่ไหม?",
+            "yes": [
+              "hashitox",
+              "subacute"
+            ]
+          }
         ],
         "optimalTree": {
           "question": "q-uptake-high",
           "yes": {
             "question": "q-trab",
-            "yes": { "leaf": "graves" },
-            "no": { "question": "q-focal", "yes": { "leaf": "toxic" }, "no": { "leaf": "tshdep" } }
+            "yes": {
+              "leaf": "graves"
+            },
+            "no": {
+              "question": "q-focal",
+              "yes": {
+                "leaf": "toxic"
+              },
+              "no": {
+                "leaf": "tshdep"
+              }
+            }
           },
           "no": {
             "question": "q-tender",
-            "yes": { "leaf": "subacute" },
-            "no": { "question": "q-tg-low", "yes": { "leaf": "exo" }, "no": { "leaf": "hashitox" } }
+            "yes": {
+              "leaf": "subacute"
+            },
+            "no": {
+              "question": "q-tg-low",
+              "yes": {
+                "leaf": "exo"
+              },
+              "no": {
+                "leaf": "hashitox"
+              }
+            }
           }
         },
         "explanation": "Uptake แบ่ง 'สร้าง' กับ 'รั่ว' 3/3 · ฝั่งสร้าง: TRAb แยก Graves แล้ว hot nodule แยก toxic adenoma จาก TSH-secreting adenoma · ฝั่งรั่ว: ต่อมเจ็บแยก subacute แล้ว Tg ต่ำแยก exogenous จาก Hashitoxicosis · ฝั่งรั่วทั้งหมดไม่ได้ ATD"
@@ -1214,87 +2726,575 @@
         "id": "gw-goiter-six",
         "targetSeconds": 120,
         "difficulty": 3,
-        "basedOn": { "rules": ["goiter-drive"], "trapPairs": ["tp-hashimoto-graves-goiter"] },
+        "basedOn": {
+          "rules": [
+            "goiter-drive"
+          ],
+          "trapPairs": [
+            "tp-hashimoto-graves-goiter"
+          ]
+        },
         "hint": "แยกกลุ่มที่มี inflammation/autoimmunity ออกก่อน",
         "title": "Goiter ในเด็ก 6 ตัว",
         "candidates": [
-          { "id": "hashimoto", "label": "Hashimoto", "cardId": "hashimoto" },
-          { "id": "graves", "label": "Graves", "cardId": "graves" },
-          { "id": "subacute", "label": "Subacute thyroiditis", "cardId": "subacute-thyroiditis" },
-          { "id": "dyshormono", "label": "Dyshormonogenesis", "cardId": "dyshormonogenesis" },
-          { "id": "iodine", "label": "Iodine deficiency", "cardId": "iodine-deficiency-goiter" },
-          { "id": "nodule", "label": "Thyroid nodule", "cardId": "thyroid-nodule" }
+          {
+            "id": "hashimoto",
+            "label": "Hashimoto",
+            "cardId": "hashimoto"
+          },
+          {
+            "id": "graves",
+            "label": "Graves",
+            "cardId": "graves"
+          },
+          {
+            "id": "subacute",
+            "label": "Subacute thyroiditis",
+            "cardId": "subacute-thyroiditis"
+          },
+          {
+            "id": "dyshormono",
+            "label": "Dyshormonogenesis",
+            "cardId": "dyshormonogenesis"
+          },
+          {
+            "id": "iodine",
+            "label": "Iodine deficiency",
+            "cardId": "iodine-deficiency-goiter"
+          },
+          {
+            "id": "nodule",
+            "label": "Thyroid nodule",
+            "cardId": "thyroid-nodule"
+          }
         ],
         "questions": [
-          { "id": "q-inflamed", "text": "เป็นโรคอักเสบหรือ autoimmune ของต่อม (thyroiditis/antibody) ใช่ไหม?", "yes": ["hashimoto", "graves", "subacute"] },
-          { "id": "q-tender", "text": "ต่อมกดเจ็บใช่ไหม?", "yes": ["subacute"] },
-          { "id": "q-soft-bruit", "text": "Soft smooth + bruit ใช่ไหม?", "yes": ["graves"] },
-          { "id": "q-thyrotoxic", "text": "Thyrotoxic ใช่ไหม?", "yes": ["graves", "subacute"] },
-          { "id": "q-solitary", "text": "ก้อนเดี่ยวคลำแยกได้ใช่ไหม?", "yes": ["nodule"] },
-          { "id": "q-community", "text": "คนในพื้นที่เป็นหลายคน + urine iodine ต่ำใช่ไหม?", "yes": ["iodine"] },
-          { "id": "q-infancy-deaf", "text": "Goiter ตั้งแต่ทารก ± hearing loss ใช่ไหม?", "yes": ["dyshormono"] }
+          {
+            "id": "q-inflamed",
+            "text": "เป็นโรคอักเสบหรือ autoimmune ของต่อม (thyroiditis/antibody) ใช่ไหม?",
+            "yes": [
+              "hashimoto",
+              "graves",
+              "subacute"
+            ]
+          },
+          {
+            "id": "q-tender",
+            "text": "ต่อมกดเจ็บใช่ไหม?",
+            "yes": [
+              "subacute"
+            ]
+          },
+          {
+            "id": "q-soft-bruit",
+            "text": "Soft smooth + bruit ใช่ไหม?",
+            "yes": [
+              "graves"
+            ]
+          },
+          {
+            "id": "q-thyrotoxic",
+            "text": "Thyrotoxic ใช่ไหม?",
+            "yes": [
+              "graves",
+              "subacute"
+            ]
+          },
+          {
+            "id": "q-solitary",
+            "text": "ก้อนเดี่ยวคลำแยกได้ใช่ไหม?",
+            "yes": [
+              "nodule"
+            ]
+          },
+          {
+            "id": "q-community",
+            "text": "คนในพื้นที่เป็นหลายคน + urine iodine ต่ำใช่ไหม?",
+            "yes": [
+              "iodine"
+            ]
+          },
+          {
+            "id": "q-infancy-deaf",
+            "text": "Goiter ตั้งแต่ทารก ± hearing loss ใช่ไหม?",
+            "yes": [
+              "dyshormono"
+            ]
+          }
         ],
         "optimalTree": {
           "question": "q-inflamed",
           "yes": {
             "question": "q-tender",
-            "yes": { "leaf": "subacute" },
-            "no": { "question": "q-soft-bruit", "yes": { "leaf": "graves" }, "no": { "leaf": "hashimoto" } }
+            "yes": {
+              "leaf": "subacute"
+            },
+            "no": {
+              "question": "q-soft-bruit",
+              "yes": {
+                "leaf": "graves"
+              },
+              "no": {
+                "leaf": "hashimoto"
+              }
+            }
           },
           "no": {
             "question": "q-solitary",
-            "yes": { "leaf": "nodule" },
-            "no": { "question": "q-community", "yes": { "leaf": "iodine" }, "no": { "leaf": "dyshormono" } }
+            "yes": {
+              "leaf": "nodule"
+            },
+            "no": {
+              "question": "q-community",
+              "yes": {
+                "leaf": "iodine"
+              },
+              "no": {
+                "leaf": "dyshormono"
+              }
+            }
           }
         },
         "explanation": "คำถาม 'thyrotoxic ไหม' แบ่งแค่ 2/4 ทำให้เสียชั้น · 'inflammation/autoimmune' แบ่ง 3/3 · ฝั่งอักเสบ: ต่อมเจ็บ = subacute, soft + bruit = Graves, ที่เหลือ firm = Hashimoto · ฝั่งไม่อักเสบ: ก้อนเดี่ยว = nodule, ชุมชน = iodine, ตั้งแต่ทารก = dyshormonogenesis"
       }
     ],
     "speedrun": [
-      { "id": "sr-dbs-timing", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["tsh-screen"] }, "prompt": "เจาะ dried blood spot คัดกรอง CH ที่อายุเท่าไร?", "answer": "48–72 ชั่วโมง", "sourceId": "th-ch-2564" },
-      { "id": "sr-dbs-cutoff", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["tsh-screen"] }, "prompt": "TSH cutoff positive screening ของกรมวิทยาศาสตร์การแพทย์?", "answer": "DBS TSH ≥ 25 mU/L", "sourceId": "th-ch-2564" },
-      { "id": "sr-confirm-lt4", "targetSeconds": 12, "difficulty": 1, "basedOn": { "rules": ["tsh-screen", "brain-clock"] }, "prompt": "ผลยืนยันแบบไหนเริ่ม LT4 ทันที?", "answer": "FT4 ต่ำ (TSH เท่าไรก็ได้) หรือ TSH > 20 mU/L (FT4 เท่าไรก็ได้)", "sourceId": "th-ch-2564" },
-      { "id": "sr-confirm-gray", "targetSeconds": 12, "difficulty": 1, "basedOn": { "rules": ["tsh-screen"] }, "prompt": "Serum TSH 6–20 + FT4 ปกติ ทำอย่างไร?", "answer": "คุยกับผู้ปกครอง: เริ่ม LT4 ทันที หรือตรวจซ้ำใน 2 สัปดาห์ (± thyroid imaging)", "sourceId": "th-ch-2564" },
-      { "id": "sr-confirm-normal", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["tsh-screen"] }, "prompt": "Serum TSH < 6 + FT4 ปกติ ทำอย่างไร?", "answer": "หยุดติดตาม (หยุด LT4 ถ้าเริ่มไปแล้ว)", "sourceId": "th-ch-2564" },
-      { "id": "sr-lt4-window", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["brain-clock"] }, "prompt": "CH: ควรเริ่ม LT4 ภายในอายุเท่าไร?", "answer": "ภายใน 2 สัปดาห์แรก (หรือทันทีที่ทราบผลยืนยัน)", "sourceId": "th-ch-2564" },
-      { "id": "sr-lt4-severe", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["brain-clock"] }, "prompt": "CH FT4 < 0.4 ng/dL: LT4 เริ่มต้นเท่าไร?", "answer": "10–15 mcg/kg/day วันละครั้ง", "sourceId": "th-ch-2564" },
-      { "id": "sr-lt4-moderate", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["brain-clock"] }, "prompt": "CH FT4 0.4–0.8 ng/dL: LT4 เริ่มต้นเท่าไร?", "answer": "8–10 mcg/kg/day", "sourceId": "th-ch-2564" },
-      { "id": "sr-lt4-mild", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["brain-clock"] }, "prompt": "CH FT4 > 0.8 ng/dL: LT4 เริ่มต้นเท่าไร?", "answer": "5–8 mcg/kg/day", "sourceId": "th-ch-2564" },
-      { "id": "sr-ch-target", "targetSeconds": 12, "difficulty": 1, "basedOn": { "rules": ["brain-clock"] }, "prompt": "เป้าหมาย TFT ระหว่างรักษา CH?", "answer": "TSH ปกติตามอายุ + FT4 ครึ่งบนของช่วงปกติตามอายุ (FT4 สูงกว่าเล็กน้อยแต่ TSH ปกติ ไม่ต้องลดยา)", "sourceId": "th-ch-2564" },
-      { "id": "sr-blood-timing", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["brain-clock"] }, "prompt": "เจาะ TFT ติดตาม CH เมื่อไรเทียบกับเวลากินยา?", "answer": "ก่อนกินยา หรือหลังกิน LT4 ครั้งสุดท้ายอย่างน้อย 4 ชั่วโมง", "sourceId": "th-ch-2564" },
-      { "id": "sr-ch-followup", "targetSeconds": 15, "difficulty": 2, "basedOn": { "rules": ["brain-clock"] }, "prompt": "ตารางติดตาม TFT ใน CH หลังเริ่มยา?", "answer": "ครั้งแรกใน 1–2 สัปดาห์ → ทุก 2 สัปดาห์จน TSH ปกติ → ทุก 1–3 เดือนในขวบปีแรก → ทุก 2–4 เดือนช่วง 1–3 ปี → ทุก 3–6 เดือนหลัง 3 ปี · 4–6 สัปดาห์หลังปรับขนาด/เปลี่ยนยี่ห้อ", "sourceId": "th-ch-2564" },
-      { "id": "sr-trial-off", "targetSeconds": 12, "difficulty": 2, "basedOn": { "rules": ["brain-clock"] }, "prompt": "วิธีลองหยุด LT4 ใน CH ที่สงสัย transient?", "answer": "หลังอายุ 3 ปี หยุดยา 2–4 สัปดาห์ แล้วตรวจ TSH/FT4 · TSH ≥ 5 mU/L = permanent → กลับไปกินตลอดชีวิต", "sourceId": "th-ch-2564" },
-      { "id": "sr-no-trial", "targetSeconds": 12, "difficulty": 2, "basedOn": { "rules": ["brain-clock"] }, "prompt": "CH แบบไหนไม่ต้องลองหยุดยา?", "answer": "Dysgenesis ยืนยันจาก imaging · dyshormonogenesis ยืนยันทางพันธุกรรม · TSH ≥ 6 mU/L ขณะรักษา", "sourceId": "th-ch-2564" },
-      { "id": "sr-ft4-older", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["axis-feedback"] }, "prompt": "ค่าปกติ FT4 อายุ 1–18 ปี (ตารางแนวทาง CH 2564)?", "answer": "0.9–1.4 ng/dL", "sourceId": "th-ch-2564" },
-      { "id": "sr-ft4-newborn", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["axis-feedback"] }, "prompt": "ค่าปกติ FT4 ทารกครบกำหนด–4 วัน?", "answer": "0.9–4.4 ng/dL (5–14 วัน 1.1–3.2 · 15–30 วัน 0.7–2.5 · 1–11 เดือน 0.9–1.7)", "sourceId": "th-ch-2564" },
-      { "id": "sr-mmi", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["drug-ladder"] }, "prompt": "MMI ขนาดเริ่มต้นใน pediatric Graves?", "answer": "0.15–0.5 mg/kg/day", "sourceId": "eta-graves-2022" },
-      { "id": "sr-atd-duration", "targetSeconds": 10, "difficulty": 1, "basedOn": { "rules": ["drug-ladder"] }, "prompt": "ATD ใน pediatric Graves ให้นานอย่างน้อยเท่าไร?", "answer": "3 ปี (5 ปีขึ้นไปถ้า remission ไม่น่าเกิด)", "sourceId": "eta-graves-2022" },
-      { "id": "sr-rai-age", "targetSeconds": 12, "difficulty": 2, "basedOn": { "rules": ["drug-ladder"] }, "prompt": "RAI ใน Graves เด็ก: อายุไหนห้าม อายุไหนใช้ได้?", "answer": "< 5 ปี ห้ามเด็ดขาด · 5–10 ปี relative (เมื่อผ่าตัดไม่ได้) · > 10 ปี ใช้ได้", "sourceId": "eta-graves-2022" },
-      { "id": "sr-agranulo-cut", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["drug-ladder"] }, "prompt": "Neutrophil เท่าไรต้องหยุด ATD?", "answer": "< 0.5 × 10⁹/L", "sourceId": "eta-graves-2022" },
-      { "id": "sr-post-atd", "targetSeconds": 12, "difficulty": 2, "basedOn": { "rules": ["drug-ladder"] }, "prompt": "หลังหยุด ATD ตรวจ TFT บ่อยแค่ไหน?", "answer": "ทุก 3–4 เดือนในปีแรก · ทุก 6 เดือนในปีที่ 2 · แล้วปีละครั้ง", "sourceId": "eta-graves-2022" },
-      { "id": "sr-neonate-schedule", "targetSeconds": 12, "difficulty": 2, "basedOn": { "rules": ["placenta-transfer"] }, "prompt": "ทารกของแม่ Graves (TRAb บวก/ไม่ทราบ) ตรวจ FT4/TSH วันไหน?", "answer": "Day 3–5 และ day 10–14 แล้วติดตามอาการถึง 2–3 เดือน", "sourceId": "vanderkaay-2016" },
-      { "id": "sr-lt4-3-10", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["axis-feedback"] }, "prompt": "LT4 ใน acquired hypothyroidism อายุ 3–10 ปี?", "answer": "3–5 mcg/kg/day", "sourceId": "salerno-acquired-2026" },
-      { "id": "sr-lt4-10-16", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["axis-feedback"] }, "prompt": "LT4 ใน acquired hypothyroidism อายุ 10–16 ปี?", "answer": "2–4 mcg/kg/day", "sourceId": "salerno-acquired-2026" },
-      { "id": "sr-subclinical-tx", "targetSeconds": 10, "difficulty": 2, "basedOn": { "rules": ["axis-feedback"] }, "prompt": "Subclinical hypothyroidism ในเด็กโต ให้ LT4 เมื่อ TSH เกินเท่าไร?", "answer": "TSH > 10 mU/L (หรือมีอาการ)", "sourceId": "salerno-acquired-2026" },
-      { "id": "sr-remission-2y", "targetSeconds": 10, "difficulty": 3, "basedOn": { "rules": ["drug-ladder"] }, "prompt": "Remission ของ pediatric Graves หลัง ATD 2 ปี ราวเท่าไร?", "answer": "20–30%", "sourceId": "eta-graves-2022" },
-      { "id": "sr-screen-40", "targetSeconds": 12, "difficulty": 3, "basedOn": { "rules": ["brain-clock", "tsh-screen"] }, "prompt": "แนวทาง 2564: screening TSH เท่าไรให้พิจารณาเริ่ม LT4 ก่อนได้ผลยืนยัน?", "answer": "≥ 40 mU/L (ถ้า < 40 และผลยืนยันได้ใน 1–2 วัน รอได้)", "sourceId": "th-ch-2564" },
-      { "id": "sr-scan-window", "targetSeconds": 10, "difficulty": 3, "basedOn": { "rules": ["brain-clock"] }, "prompt": "เริ่ม LT4 แล้ว ยังทำ thyroid scintigraphy ได้ภายในกี่วัน?", "answer": "7 วัน", "sourceId": "th-ch-2564" },
-      { "id": "sr-cardiac-dose", "targetSeconds": 12, "difficulty": 3, "basedOn": { "rules": ["brain-clock"], "errata": ["e-cardiac-half-dose"] }, "prompt": "CH ที่มี heart failure: เริ่ม LT4 อย่างไร?", "answer": "ราว 50% ของขนาดที่ตั้งใจ แล้วเพิ่มหลัง 2 สัปดาห์ตาม FT4", "sourceId": "th-ch-2564" },
-      { "id": "sr-second-screen", "targetSeconds": 15, "difficulty": 3, "basedOn": { "rules": ["tsh-screen"], "errata": ["e-delayed-tsh-rise"] }, "prompt": "ใครต้องทำ second TSH screening และทำเมื่อไร?", "answer": "Preterm < 37 สัปดาห์, BW < 2,500 g, ทารกป่วย, ครรภ์แฝด → ที่อายุราว 2 สัปดาห์ · ถ้า GA < 32 สัปดาห์ ตรวจทุก 2 สัปดาห์จน corrected GA 37", "sourceId": "th-ch-2564" }
+      {
+        "id": "sr-dbs-timing",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "tsh-screen"
+          ]
+        },
+        "prompt": "เจาะ dried blood spot คัดกรอง CH ที่อายุเท่าไร?",
+        "answer": "48–72 ชั่วโมง",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-dbs-cutoff",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "tsh-screen"
+          ]
+        },
+        "prompt": "TSH cutoff positive screening ของกรมวิทยาศาสตร์การแพทย์?",
+        "answer": "DBS TSH ≥ 25 mU/L",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-confirm-lt4",
+        "targetSeconds": 12,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "tsh-screen",
+            "brain-clock"
+          ]
+        },
+        "prompt": "ผลยืนยันแบบไหนเริ่ม LT4 ทันที?",
+        "answer": "FT4 ต่ำ (TSH เท่าไรก็ได้) หรือ TSH > 20 mU/L (FT4 เท่าไรก็ได้)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-confirm-gray",
+        "targetSeconds": 12,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "tsh-screen"
+          ]
+        },
+        "prompt": "Serum TSH 6–20 + FT4 ปกติ ทำอย่างไร?",
+        "answer": "คุยกับผู้ปกครอง: เริ่ม LT4 ทันที หรือตรวจซ้ำใน 2 สัปดาห์ (± thyroid imaging)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-confirm-normal",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "tsh-screen"
+          ]
+        },
+        "prompt": "Serum TSH < 6 + FT4 ปกติ ทำอย่างไร?",
+        "answer": "หยุดติดตาม (หยุด LT4 ถ้าเริ่มไปแล้ว)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-lt4-window",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "CH: ควรเริ่ม LT4 ภายในอายุเท่าไร?",
+        "answer": "ภายใน 2 สัปดาห์แรก (หรือทันทีที่ทราบผลยืนยัน)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-lt4-severe",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "CH FT4 < 0.4 ng/dL: LT4 เริ่มต้นเท่าไร?",
+        "answer": "10–15 mcg/kg/day วันละครั้ง",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-lt4-moderate",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "CH FT4 0.4–0.8 ng/dL: LT4 เริ่มต้นเท่าไร?",
+        "answer": "8–10 mcg/kg/day",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-lt4-mild",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "CH FT4 > 0.8 ng/dL: LT4 เริ่มต้นเท่าไร?",
+        "answer": "5–8 mcg/kg/day",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-ch-target",
+        "targetSeconds": 12,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "เป้าหมาย TFT ระหว่างรักษา CH?",
+        "answer": "TSH ปกติตามอายุ + FT4 ครึ่งบนของช่วงปกติตามอายุ (FT4 สูงกว่าเล็กน้อยแต่ TSH ปกติ ไม่ต้องลดยา)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-blood-timing",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "เจาะ TFT ติดตาม CH เมื่อไรเทียบกับเวลากินยา?",
+        "answer": "ก่อนกินยา หรือหลังกิน LT4 ครั้งสุดท้ายอย่างน้อย 4 ชั่วโมง",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-ch-followup",
+        "targetSeconds": 15,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "ตารางติดตาม TFT ใน CH หลังเริ่มยา?",
+        "answer": "ครั้งแรกใน 1–2 สัปดาห์ → ทุก 2 สัปดาห์จน TSH ปกติ → ทุก 1–3 เดือนในขวบปีแรก → ทุก 2–4 เดือนช่วง 1–3 ปี → ทุก 3–6 เดือนหลัง 3 ปี · 4–6 สัปดาห์หลังปรับขนาด/เปลี่ยนยี่ห้อ",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-trial-off",
+        "targetSeconds": 12,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "วิธีลองหยุด LT4 ใน CH ที่สงสัย transient?",
+        "answer": "หลังอายุ 3 ปี หยุดยา 2–4 สัปดาห์ แล้วตรวจ TSH/FT4 · TSH ≥ 5 mU/L = permanent → กลับไปกินตลอดชีวิต",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-no-trial",
+        "targetSeconds": 12,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "CH แบบไหนไม่ต้องลองหยุดยา?",
+        "answer": "Dysgenesis ยืนยันจาก imaging · dyshormonogenesis ยืนยันทางพันธุกรรม · TSH ≥ 6 mU/L ขณะรักษา",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-ft4-older",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "axis-feedback"
+          ]
+        },
+        "prompt": "ค่าปกติ FT4 อายุ 1–18 ปี (ตารางแนวทาง CH 2564)?",
+        "answer": "0.9–1.4 ng/dL",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-ft4-newborn",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "axis-feedback"
+          ]
+        },
+        "prompt": "ค่าปกติ FT4 ทารกครบกำหนด–4 วัน?",
+        "answer": "0.9–4.4 ng/dL (5–14 วัน 1.1–3.2 · 15–30 วัน 0.7–2.5 · 1–11 เดือน 0.9–1.7)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-mmi",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
+        "prompt": "MMI ขนาดเริ่มต้นใน pediatric Graves?",
+        "answer": "0.15–0.5 mg/kg/day",
+        "sourceId": "eta-graves-2022"
+      },
+      {
+        "id": "sr-atd-duration",
+        "targetSeconds": 10,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
+        "prompt": "ATD ใน pediatric Graves ให้นานอย่างน้อยเท่าไร?",
+        "answer": "3 ปี (5 ปีขึ้นไปถ้า remission ไม่น่าเกิด)",
+        "sourceId": "eta-graves-2022"
+      },
+      {
+        "id": "sr-rai-age",
+        "targetSeconds": 12,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
+        "prompt": "RAI ใน Graves เด็ก: อายุไหนห้าม อายุไหนใช้ได้?",
+        "answer": "< 5 ปี ห้ามเด็ดขาด · 5–10 ปี relative (เมื่อผ่าตัดไม่ได้) · > 10 ปี ใช้ได้",
+        "sourceId": "eta-graves-2022"
+      },
+      {
+        "id": "sr-agranulo-cut",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
+        "prompt": "Neutrophil เท่าไรต้องหยุด ATD?",
+        "answer": "< 0.5 × 10⁹/L",
+        "sourceId": "eta-graves-2022"
+      },
+      {
+        "id": "sr-post-atd",
+        "targetSeconds": 12,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
+        "prompt": "หลังหยุด ATD ตรวจ TFT บ่อยแค่ไหน?",
+        "answer": "ทุก 3–4 เดือนในปีแรก · ทุก 6 เดือนในปีที่ 2 · แล้วปีละครั้ง",
+        "sourceId": "eta-graves-2022"
+      },
+      {
+        "id": "sr-neonate-schedule",
+        "targetSeconds": 12,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "placenta-transfer"
+          ]
+        },
+        "prompt": "ทารกของแม่ Graves (TRAb บวก/ไม่ทราบ) ตรวจ FT4/TSH วันไหน?",
+        "answer": "Day 3–5 และ day 10–14 แล้วติดตามอาการถึง 2–3 เดือน",
+        "sourceId": "vanderkaay-2016"
+      },
+      {
+        "id": "sr-lt4-3-10",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "axis-feedback"
+          ]
+        },
+        "prompt": "LT4 ใน acquired hypothyroidism อายุ 3–10 ปี?",
+        "answer": "3–5 mcg/kg/day",
+        "sourceId": "salerno-acquired-2026"
+      },
+      {
+        "id": "sr-lt4-10-16",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "axis-feedback"
+          ]
+        },
+        "prompt": "LT4 ใน acquired hypothyroidism อายุ 10–16 ปี?",
+        "answer": "2–4 mcg/kg/day",
+        "sourceId": "salerno-acquired-2026"
+      },
+      {
+        "id": "sr-subclinical-tx",
+        "targetSeconds": 10,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "axis-feedback"
+          ]
+        },
+        "prompt": "Subclinical hypothyroidism ในเด็กโต ให้ LT4 เมื่อ TSH เกินเท่าไร?",
+        "answer": "TSH > 10 mU/L (หรือมีอาการ)",
+        "sourceId": "salerno-acquired-2026"
+      },
+      {
+        "id": "sr-remission-2y",
+        "targetSeconds": 10,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
+        "prompt": "Remission ของ pediatric Graves หลัง ATD 2 ปี ราวเท่าไร?",
+        "answer": "20–30%",
+        "sourceId": "eta-graves-2022"
+      },
+      {
+        "id": "sr-screen-40",
+        "targetSeconds": 12,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "brain-clock",
+            "tsh-screen"
+          ]
+        },
+        "prompt": "แนวทาง 2564: screening TSH เท่าไรให้พิจารณาเริ่ม LT4 ก่อนได้ผลยืนยัน?",
+        "answer": "≥ 40 mU/L (ถ้า < 40 และผลยืนยันได้ใน 1–2 วัน รอได้)",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-scan-window",
+        "targetSeconds": 10,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
+        "prompt": "เริ่ม LT4 แล้ว ยังทำ thyroid scintigraphy ได้ภายในกี่วัน?",
+        "answer": "7 วัน",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-cardiac-dose",
+        "targetSeconds": 12,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ],
+          "errata": [
+            "e-cardiac-half-dose"
+          ]
+        },
+        "prompt": "CH ที่มี heart failure: เริ่ม LT4 อย่างไร?",
+        "answer": "ราว 50% ของขนาดที่ตั้งใจ แล้วเพิ่มหลัง 2 สัปดาห์ตาม FT4",
+        "sourceId": "th-ch-2564"
+      },
+      {
+        "id": "sr-second-screen",
+        "targetSeconds": 15,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "tsh-screen"
+          ],
+          "errata": [
+            "e-delayed-tsh-rise"
+          ]
+        },
+        "prompt": "ใครต้องทำ second TSH screening และทำเมื่อไร?",
+        "answer": "Preterm < 37 สัปดาห์, BW < 2,500 g, ทารกป่วย, ครรภ์แฝด → ที่อายุราว 2 สัปดาห์ · ถ้า GA < 32 สัปดาห์ ตรวจทุก 2 สัปดาห์จน corrected GA 37",
+        "sourceId": "th-ch-2564"
+      }
     ],
     "mcq": [
       {
         "id": "mcq-late-confirm",
         "targetSeconds": 75,
         "difficulty": 1,
-        "basedOn": { "rules": ["brain-clock", "tsh-screen"] },
+        "basedOn": {
+          "rules": [
+            "brain-clock",
+            "tsh-screen"
+          ]
+        },
         "stem": "A 5-day-old term girl is called back because her dried blood spot TSH is 38 mU/L. She is feeding well and her examination is normal. Serum free T4 and TSH are drawn, but the results will not be available for 3 days. What is the most appropriate next step?",
         "options": [
-          { "key": "A", "text": "Wait for the confirmatory results before starting treatment", "why": "ผลช้ากว่า 1 วัน รอไม่ได้ (นาฬิกาสมอง)" },
-          { "key": "B", "text": "Start levothyroxine now, after the blood sample is drawn" },
-          { "key": "C", "text": "Obtain a thyroid scan before starting treatment", "why": "Imaging ห้ามทำให้การรักษาช้า" },
-          { "key": "D", "text": "Repeat the dried blood spot TSH in 2 weeks", "why": "Positive screening ต้องยืนยันด้วย serum และรักษาทันที ไม่ใช่ซ้ำ screening" },
-          { "key": "E", "text": "Start hydrocortisone, then levothyroxine", "why": "ไม่มีลักษณะ central/MPHD และ TSH สูงคือ primary" }
+          {
+            "key": "A",
+            "text": "Wait for the confirmatory results before starting treatment",
+            "why": "ผลช้ากว่า 1 วัน รอไม่ได้ (นาฬิกาสมอง)"
+          },
+          {
+            "key": "B",
+            "text": "Start levothyroxine now, after the blood sample is drawn"
+          },
+          {
+            "key": "C",
+            "text": "Obtain a thyroid scan before starting treatment",
+            "why": "Imaging ห้ามทำให้การรักษาช้า"
+          },
+          {
+            "key": "D",
+            "text": "Repeat the dried blood spot TSH in 2 weeks",
+            "why": "Positive screening ต้องยืนยันด้วย serum และรักษาทันที ไม่ใช่ซ้ำ screening"
+          },
+          {
+            "key": "E",
+            "text": "Start hydrocortisone, then levothyroxine",
+            "why": "ไม่มีลักษณะ central/MPHD และ TSH สูงคือ primary"
+          }
         ],
         "answer": "B",
         "tell": "Confirmatory result delayed more than 1 day → treat right after sampling.",
@@ -1304,14 +3304,38 @@
         "id": "mcq-euthyroid-hashimoto",
         "targetSeconds": 75,
         "difficulty": 1,
-        "basedOn": { "rules": ["goiter-drive", "axis-feedback"] },
+        "basedOn": {
+          "rules": [
+            "goiter-drive",
+            "axis-feedback"
+          ]
+        },
         "stem": "An 11-year-old girl has a diffusely enlarged, firm, non-tender thyroid noticed at a school check-up. She has no symptoms and her growth is normal. Free T4 and TSH are normal; anti-TPO antibody is positive. What is the most appropriate management?",
         "options": [
-          { "key": "A", "text": "Levothyroxine 2–4 mcg/kg/day", "why": "Euthyroid ไม่มีข้อบ่งชี้ให้ยา" },
-          { "key": "B", "text": "Methimazole 0.2 mg/kg/day", "why": "ไม่มี thyrotoxicosis" },
-          { "key": "C", "text": "Reassure and monitor thyroid function and growth periodically" },
-          { "key": "D", "text": "Total thyroidectomy", "why": "ไม่มีก้อน ไม่มีการกดเบียด" },
-          { "key": "E", "text": "Fine-needle aspiration of the gland", "why": "Diffuse goiter ไม่ใช่ nodule" }
+          {
+            "key": "A",
+            "text": "Levothyroxine 2–4 mcg/kg/day",
+            "why": "Euthyroid ไม่มีข้อบ่งชี้ให้ยา"
+          },
+          {
+            "key": "B",
+            "text": "Methimazole 0.2 mg/kg/day",
+            "why": "ไม่มี thyrotoxicosis"
+          },
+          {
+            "key": "C",
+            "text": "Reassure and monitor thyroid function and growth periodically"
+          },
+          {
+            "key": "D",
+            "text": "Total thyroidectomy",
+            "why": "ไม่มีก้อน ไม่มีการกดเบียด"
+          },
+          {
+            "key": "E",
+            "text": "Fine-needle aspiration of the gland",
+            "why": "Diffuse goiter ไม่ใช่ nodule"
+          }
         ],
         "answer": "C",
         "tell": "Euthyroid Hashimoto: no drug, just follow because it may progress to hypothyroidism.",
@@ -1321,14 +3345,38 @@
         "id": "mcq-graves-first",
         "targetSeconds": 75,
         "difficulty": 1,
-        "basedOn": { "rules": ["drug-ladder", "uptake-production"] },
+        "basedOn": {
+          "rules": [
+            "drug-ladder",
+            "uptake-production"
+          ]
+        },
         "stem": "A 12-year-old girl has declining school performance, restlessness, weight loss despite a good appetite, and palpitations. She has a soft diffuse goiter with a bruit. Free T4 is high and TSH is < 0.01 mU/L; TSH-receptor antibody is positive. She has no history of asthma. What is the most appropriate initial treatment?",
         "options": [
-          { "key": "A", "text": "Radioactive iodine ablation", "why": "Definitive เป็น second-line" },
-          { "key": "B", "text": "Total thyroidectomy", "why": "Second-line เมื่อยาล้มเหลว/goiter ใหญ่" },
-          { "key": "C", "text": "Methimazole plus propranolol" },
-          { "key": "D", "text": "Propylthiouracil plus propranolol", "why": "PTU ไม่ใช้ในเด็ก (hepatotoxicity)" },
-          { "key": "E", "text": "Propranolol alone and recheck in 3 months", "why": "ต่อมสร้างเพิ่ม ต้องได้ ATD" }
+          {
+            "key": "A",
+            "text": "Radioactive iodine ablation",
+            "why": "Definitive เป็น second-line"
+          },
+          {
+            "key": "B",
+            "text": "Total thyroidectomy",
+            "why": "Second-line เมื่อยาล้มเหลว/goiter ใหญ่"
+          },
+          {
+            "key": "C",
+            "text": "Methimazole plus propranolol"
+          },
+          {
+            "key": "D",
+            "text": "Propylthiouracil plus propranolol",
+            "why": "PTU ไม่ใช้ในเด็ก (hepatotoxicity)"
+          },
+          {
+            "key": "E",
+            "text": "Propranolol alone and recheck in 3 months",
+            "why": "ต่อมสร้างเพิ่ม ต้องได้ ATD"
+          }
         ],
         "answer": "C",
         "tell": "Pediatric Graves: MMI first-line, β-blocker as a bridge, PTU avoided.",
@@ -1338,14 +3386,41 @@
         "id": "mcq-central-cortisol",
         "targetSeconds": 90,
         "difficulty": 2,
-        "basedOn": { "rules": ["axis-feedback", "drug-ladder"], "errata": ["e-central-normal-tsh"] },
+        "basedOn": {
+          "rules": [
+            "axis-feedback",
+            "drug-ladder"
+          ],
+          "errata": [
+            "e-central-normal-tsh"
+          ]
+        },
         "stem": "A 10-year-old boy is seen 4 weeks after resection of a craniopharyngioma. He is tired and cold-intolerant. Free T4 is 0.5 ng/dL (low) and TSH is 1.2 mU/L. His cortisol has not yet been checked. What is the most appropriate next step?",
         "options": [
-          { "key": "A", "text": "Start full-dose levothyroxine immediately", "why": "เสี่ยง adrenal crisis ถ้าขาด ACTH" },
-          { "key": "B", "text": "Assess cortisol and give hydrocortisone before starting levothyroxine" },
-          { "key": "C", "text": "Repeat TSH in 2 weeks", "why": "TSH ปกติขณะ FT4 ต่ำคือ central อยู่แล้ว" },
-          { "key": "D", "text": "Thyroid scan", "why": "ต่อมปกติ ปัญหาอยู่ที่ pituitary" },
-          { "key": "E", "text": "Start levothyroxine and titrate to keep TSH normal", "why": "Central ติดตามด้วย FT4 ไม่ใช่ TSH" }
+          {
+            "key": "A",
+            "text": "Start full-dose levothyroxine immediately",
+            "why": "เสี่ยง adrenal crisis ถ้าขาด ACTH"
+          },
+          {
+            "key": "B",
+            "text": "Assess cortisol and give hydrocortisone before starting levothyroxine"
+          },
+          {
+            "key": "C",
+            "text": "Repeat TSH in 2 weeks",
+            "why": "TSH ปกติขณะ FT4 ต่ำคือ central อยู่แล้ว"
+          },
+          {
+            "key": "D",
+            "text": "Thyroid scan",
+            "why": "ต่อมปกติ ปัญหาอยู่ที่ pituitary"
+          },
+          {
+            "key": "E",
+            "text": "Start levothyroxine and titrate to keep TSH normal",
+            "why": "Central ติดตามด้วย FT4 ไม่ใช่ TSH"
+          }
         ],
         "answer": "B",
         "tell": "Low FT4 with 'normal' TSH after pituitary surgery = central; cortisol before LT4.",
@@ -1355,14 +3430,37 @@
         "id": "mcq-fever-mmi",
         "targetSeconds": 75,
         "difficulty": 2,
-        "basedOn": { "rules": ["drug-ladder"] },
+        "basedOn": {
+          "rules": [
+            "drug-ladder"
+          ]
+        },
         "stem": "A 14-year-old girl with Graves disease has taken methimazole for 6 weeks. She now has a temperature of 39.4 °C, sore throat, and oral ulcers. What is the most appropriate first step?",
         "options": [
-          { "key": "A", "text": "Start amoxicillin and continue methimazole", "why": "ต้องคิดถึง agranulocytosis ก่อน" },
-          { "key": "B", "text": "Stop methimazole and obtain a CBC with differential immediately" },
-          { "key": "C", "text": "Switch to propylthiouracil", "why": "Major S/E → definitive ไม่สลับยา" },
-          { "key": "D", "text": "Halve the methimazole dose", "why": "ไม่ปลอดภัยถ้าเป็น agranulocytosis" },
-          { "key": "E", "text": "Rapid streptococcal antigen test and continue methimazole", "why": "ยังต้องหยุดยาและดู neutrophil ก่อน" }
+          {
+            "key": "A",
+            "text": "Start amoxicillin and continue methimazole",
+            "why": "ต้องคิดถึง agranulocytosis ก่อน"
+          },
+          {
+            "key": "B",
+            "text": "Stop methimazole and obtain a CBC with differential immediately"
+          },
+          {
+            "key": "C",
+            "text": "Switch to propylthiouracil",
+            "why": "Major S/E → definitive ไม่สลับยา"
+          },
+          {
+            "key": "D",
+            "text": "Halve the methimazole dose",
+            "why": "ไม่ปลอดภัยถ้าเป็น agranulocytosis"
+          },
+          {
+            "key": "E",
+            "text": "Rapid streptococcal antigen test and continue methimazole",
+            "why": "ยังต้องหยุดยาและดู neutrophil ก่อน"
+          }
         ],
         "answer": "B",
         "tell": "Fever + sore throat on an antithyroid drug = stop drug, check neutrophils.",
@@ -1372,14 +3470,37 @@
         "id": "mcq-trial-off",
         "targetSeconds": 90,
         "difficulty": 2,
-        "basedOn": { "rules": ["brain-clock"] },
+        "basedOn": {
+          "rules": [
+            "brain-clock"
+          ]
+        },
         "stem": "A 3-year-old boy has taken levothyroxine since the neonatal period for congenital hypothyroidism. Ultrasound showed a normally located thyroid gland. His dose has never needed to be increased and his TSH and free T4 have always been normal. What is the most appropriate next step?",
         "options": [
-          { "key": "A", "text": "Continue levothyroxine for life", "why": "มี clue ของ transient ควรลองหยุด" },
-          { "key": "B", "text": "Stop levothyroxine for 2–4 weeks, then measure TSH and free T4" },
-          { "key": "C", "text": "Halve the dose and follow up", "why": "แนวทางให้หยุด 2–4 สัปดาห์แล้ววัด ไม่ใช่ลดครึ่ง" },
-          { "key": "D", "text": "Thyroid scan while still on levothyroxine", "why": "TSH ถูกกด scan จะลบปลอม" },
-          { "key": "E", "text": "Increase the dose to the upper end of the range", "why": "ไม่มีข้อบ่งชี้" }
+          {
+            "key": "A",
+            "text": "Continue levothyroxine for life",
+            "why": "มี clue ของ transient ควรลองหยุด"
+          },
+          {
+            "key": "B",
+            "text": "Stop levothyroxine for 2–4 weeks, then measure TSH and free T4"
+          },
+          {
+            "key": "C",
+            "text": "Halve the dose and follow up",
+            "why": "แนวทางให้หยุด 2–4 สัปดาห์แล้ววัด ไม่ใช่ลดครึ่ง"
+          },
+          {
+            "key": "D",
+            "text": "Thyroid scan while still on levothyroxine",
+            "why": "TSH ถูกกด scan จะลบปลอม"
+          },
+          {
+            "key": "E",
+            "text": "Increase the dose to the upper end of the range",
+            "why": "ไม่มีข้อบ่งชี้"
+          }
         ],
         "answer": "B",
         "tell": "Gland in situ + dose never increased at age 3 → trial off.",
@@ -1389,14 +3510,40 @@
         "id": "mcq-subacute",
         "targetSeconds": 90,
         "difficulty": 3,
-        "basedOn": { "rules": ["uptake-production"], "trapPairs": ["tp-graves-subacute"] },
+        "basedOn": {
+          "rules": [
+            "uptake-production"
+          ],
+          "trapPairs": [
+            "tp-graves-subacute"
+          ]
+        },
         "stem": "A 13-year-old boy develops fever, anterior neck pain radiating to the ear, palpitations and tremor two weeks after an upper respiratory infection. The thyroid is tender. Free T4 is high, TSH is suppressed, ESR is 80 mm/h, and radioactive iodine uptake is very low. What is the most appropriate management?",
         "options": [
-          { "key": "A", "text": "Methimazole 0.5 mg/kg/day", "why": "Uptake ต่ำ = ไม่ได้สร้างเพิ่ม ATD ไม่ช่วย" },
-          { "key": "B", "text": "NSAID plus a β-blocker" },
-          { "key": "C", "text": "Radioactive iodine ablation", "why": "ต่อมไม่กิน iodine และโรคหายเองได้" },
-          { "key": "D", "text": "Levothyroxine", "why": "ตอนนี้ thyrotoxic" },
-          { "key": "E", "text": "Total thyroidectomy", "why": "ไม่มีข้อบ่งชี้" }
+          {
+            "key": "A",
+            "text": "Methimazole 0.5 mg/kg/day",
+            "why": "Uptake ต่ำ = ไม่ได้สร้างเพิ่ม ATD ไม่ช่วย"
+          },
+          {
+            "key": "B",
+            "text": "NSAID plus a β-blocker"
+          },
+          {
+            "key": "C",
+            "text": "Radioactive iodine ablation",
+            "why": "ต่อมไม่กิน iodine และโรคหายเองได้"
+          },
+          {
+            "key": "D",
+            "text": "Levothyroxine",
+            "why": "ตอนนี้ thyrotoxic"
+          },
+          {
+            "key": "E",
+            "text": "Total thyroidectomy",
+            "why": "ไม่มีข้อบ่งชี้"
+          }
         ],
         "answer": "B",
         "tell": "Painful thyroid + low uptake = destructive thyroiditis: no antithyroid drug.",
@@ -1406,14 +3553,40 @@
         "id": "mcq-preterm",
         "targetSeconds": 90,
         "difficulty": 3,
-        "basedOn": { "rules": ["tsh-screen"], "errata": ["e-delayed-tsh-rise"] },
+        "basedOn": {
+          "rules": [
+            "tsh-screen"
+          ],
+          "errata": [
+            "e-delayed-tsh-rise"
+          ]
+        },
         "stem": "A neonate born at 30 weeks' gestation (birth weight 1,300 g) had a normal dried blood spot TSH at 60 hours of age. She remains in the NICU. According to the Thai 2021 congenital hypothyroidism guideline, what is the most appropriate thyroid follow-up?",
         "options": [
-          { "key": "A", "text": "No further testing because the initial screen was normal", "why": "Preterm/LBW มี delayed TSH rise" },
-          { "key": "B", "text": "Repeat TSH every 2 weeks until 37 weeks' corrected gestational age" },
-          { "key": "C", "text": "Start prophylactic levothyroxine", "why": "ไม่มีข้อบ่งชี้" },
-          { "key": "D", "text": "Repeat TSH once at 6 months of age", "why": "ช้าเกินนาฬิกาสมอง" },
-          { "key": "E", "text": "Measure TSH only if signs of hypothyroidism appear", "why": "ทารกส่วนใหญ่ไม่มีอาการ" }
+          {
+            "key": "A",
+            "text": "No further testing because the initial screen was normal",
+            "why": "Preterm/LBW มี delayed TSH rise"
+          },
+          {
+            "key": "B",
+            "text": "Repeat TSH every 2 weeks until 37 weeks' corrected gestational age"
+          },
+          {
+            "key": "C",
+            "text": "Start prophylactic levothyroxine",
+            "why": "ไม่มีข้อบ่งชี้"
+          },
+          {
+            "key": "D",
+            "text": "Repeat TSH once at 6 months of age",
+            "why": "ช้าเกินนาฬิกาสมอง"
+          },
+          {
+            "key": "E",
+            "text": "Measure TSH only if signs of hypothyroidism appear",
+            "why": "ทารกส่วนใหญ่ไม่มีอาการ"
+          }
         ],
         "answer": "B",
         "tell": "Born < 32 weeks → repeat TSH every 2 weeks to 37 weeks' corrected GA.",
