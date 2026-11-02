@@ -71,8 +71,8 @@ tests/                     Vitest (+ fixtures/demo-all-modes.json = pack ทุ�
 | dev server | `npm.cmd run dev` → http://localhost:5173 · DEV demo ทุกโหมด: `#/play?demo=1&types=puzzle` |
 | deploy | `npm run deploy` (build + push `dist` ไป branch `gh-pages`) — ต้องมี remote ก่อน และ**ถามผู้ใช้ก่อนทุกครั้ง** |
 
-## สถานะ (2026-10-12)
+## สถานะ (2026-11-02)
 - Phase 1–5 เสร็จ (คลัง, ระบบทวน, เกม 8 โหมด, Claude Code commands, stats/PWA/deploy script)
-- pack: `cardio-heart-failure` (draft) — แนวทางไทย HFCT ยังเปิด full text ไม่ได้ (jmatonline ปฏิเสธการเชื่อมต่อ) จึงยังไม่มี variant TH → ควร `/audit-pack cardio-heart-failure`
+- pack (verified ทั้งหมด): `cardio-cvs-basic-science`, `peds-respiratory-infection`, `peds-thyroid-disorders` — สอง pack แรกตั้ง verified ตามที่ผู้ใช้สั่งโดยยังไม่ได้ /audit-pack จริง · `cardio-heart-failure` ถูกถอดออกจากคลัง (ไฟล์อยู่ที่ `tests/fixtures/` ใช้เป็น sample pack ของ test)
 - remote: `origin` = https://github.com/pompadua/med-game-vault (public) · เว็บ: https://pompadua.github.io/med-game-vault/ (GitHub Pages จาก branch `gh-pages`)
 - deploy ใหม่หลังแก้: `npm run deploy -- --yes` (ถามผู้ใช้ก่อนทุกครั้ง) · push `main` ก็ต้องถามก่อนเช่นกัน

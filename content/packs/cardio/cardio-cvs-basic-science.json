@@ -5,10 +5,10 @@
     "subject": "cardio",
     "rotation": "preclinic",
     "tags": ["physiology", "hemodynamics", "ecg", "anatomy", "embryology", "valvular-heart-disease", "congenital-heart-disease", "nle"],
-    "status": "draft",
+    "status": "verified",
     "schemaVersion": 2,
     "createdAt": "2026-10-15",
-    "verifiedAt": null,
+    "verifiedAt": "2026-11-02",
     "sources": [
       { "id": "sp-heart-sounds", "title": "Dornbush S, Turnquest AE. Physiology, Heart Sounds. StatPearls (updated 2023-07-17)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK541010/", "type": "statpearls", "accessedAt": "2026-10-15" },
       { "id": "sp-cardiac-cycle", "title": "Physiology, Cardiac Cycle. StatPearls (updated 2022-10-03)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK459327/", "type": "statpearls", "accessedAt": "2026-10-15" },

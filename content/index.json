@@ -16,10 +16,10 @@
         "congenital-heart-disease",
         "nle"
       ],
-      "status": "draft",
+      "status": "verified",
       "schemaVersion": 2,
       "createdAt": "2026-10-15",
-      "verifiedAt": null,
+      "verifiedAt": "2026-11-02",
       "file": "cardio/cardio-cvs-basic-science.json",
       "itemCount": 191,
       "countsByType": {
@@ -77,10 +77,10 @@
         "emergency",
         "nle"
       ],
-      "status": "draft",
+      "status": "verified",
       "schemaVersion": 2,
       "createdAt": "2026-11-02",
-      "verifiedAt": null,
+      "verifiedAt": "2026-11-02",
       "file": "peds/peds-respiratory-infection.json",
       "itemCount": 301,
       "countsByType": {

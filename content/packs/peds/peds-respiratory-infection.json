@@ -5,10 +5,10 @@
     "subject": "peds",
     "rotation": "peds",
     "tags": ["respiratory-infection", "upper-airway-obstruction", "pneumonia", "pharmacology", "emergency", "nle"],
-    "status": "draft",
+    "status": "verified",
     "schemaVersion": 2,
     "createdAt": "2026-11-02",
-    "verifiedAt": null,
+    "verifiedAt": "2026-11-02",
     "sources": [
       {
         "id": "th-cpg-ari-2562",
