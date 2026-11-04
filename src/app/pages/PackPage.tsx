@@ -190,6 +190,49 @@ function Track({ pack, onOpen }: { pack: Pack; onOpen: (cardId: string) => void 
   );
 }
 
+/** แผนที่จัดกลุ่ม: ฝั่งละคอลัมน์ (เช่น hypo · hyper) แต่ละฝั่งแบ่งกลุ่มย่อย กดชื่อโรคเพื่อเปิดการ์ด */
+function Classification({ pack, onOpen }: { pack: Pack; onOpen: (cardId: string) => void }) {
+  const columns = pack.rulebook.classification ?? [];
+  const ruleIndex = (id: string) => pack.rulebook.coreRules.findIndex((r) => r.id === id) + 1;
+  return (
+    <section className="class-block">
+      <h2 className="track-title">
+        {columns.map((col, i) => (
+          <span key={col.id}>
+            {i > 0 && <span className="arrow"> vs </span>}
+            {col.name.split(' · ')[0]}
+          </span>
+        ))}
+      </h2>
+      <div className="class-cols">
+        {columns.map((col, i) => (
+          <section key={col.id} className="class-col" style={{ '--gc': `var(--h${(i % 7) + 1})` } as CSSProperties}>
+            <div className="lvname">{col.name}</div>
+            {col.hint && <div className="sound">{col.hint}</div>}
+            {col.groups.map((gr) => (
+              <div key={gr.id} className="class-group">
+                <div className="class-group-name">{gr.name}</div>
+                {gr.hint && <div className="sound">{gr.hint}</div>}
+                <div className="chips">
+                  {gr.cardIds.map((id) => {
+                    const c = pack.cards.find((x) => x.id === id);
+                    if (!c || c.retired) return null;
+                    return (
+                      <button key={id} type="button" className="chip card-chip" style={ruleHue(ruleIndex(c.trigger.ruleId))} onClick={() => onOpen(id)}>
+                        {c.name}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </section>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function RulesTab({ pack }: { pack: Pack }) {
   const { rulebook } = pack;
   const [openId, setOpenId] = useState<string | null>(null);
@@ -208,6 +251,7 @@ function RulesTab({ pack }: { pack: Pack }) {
         </div>
       </section>
 
+      {rulebook.classification?.length ? <Classification pack={pack} onOpen={setOpenId} /> : null}
       {rulebook.track?.length ? <Track pack={pack} onOpen={setOpenId} /> : null}
       {open && <CardSheet pack={pack} card={open} onClose={() => setOpenId(null)} onOpen={setOpenId} />}
 

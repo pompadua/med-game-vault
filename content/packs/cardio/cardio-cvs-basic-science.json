@@ -6,7 +6,7 @@
     "rotation": "preclinic",
     "tags": ["physiology", "hemodynamics", "ecg", "anatomy", "embryology", "valvular-heart-disease", "congenital-heart-disease", "nle"],
     "status": "verified",
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "createdAt": "2026-10-15",
     "verifiedAt": "2026-11-02",
     "sources": [

@@ -6,7 +6,7 @@
     "rotation": "peds",
     "tags": ["respiratory-infection", "upper-airway-obstruction", "pneumonia", "pharmacology", "emergency", "nle"],
     "status": "verified",
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "createdAt": "2026-11-02",
     "verifiedAt": "2026-11-02",
     "sources": [

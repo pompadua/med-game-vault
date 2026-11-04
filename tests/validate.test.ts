@@ -59,6 +59,21 @@ describe('validatePack', () => {
     expect(res.warnings.some((w) => w.includes(first) && w.includes('track'))).toBe(true);
   });
 
+  it('rulebook.classification อ้างการ์ดที่ไม่มี → error · การ์ดที่ไม่ได้จัดกลุ่ม → warning', () => {
+    const p = samplePack();
+    const [first, ...rest] = p.cards.map((c: { id: string }) => c.id);
+    const columns = (ids: string[]) => [
+      { id: 'side-a', name: 'A', groups: [{ id: 'group-a', name: 'A1', cardIds: ids }] },
+      { id: 'side-b', name: 'B', groups: [{ id: 'group-b', name: 'B1', cardIds: ids.slice(0, 1) }] },
+    ];
+    p.rulebook.classification = columns(['ghost-card', ...rest]);
+    expect(errorsOf(p).some((e) => e.includes('ghost-card'))).toBe(true);
+    p.rulebook.classification = columns(rest);
+    const res = validatePack(p, ctx);
+    expect(res.errors).toEqual([]);
+    expect(res.warnings.some((w) => w.includes(first) && w.includes('classification'))).toBe(true);
+  });
+
   it('trigger อ้าง rule ที่ไม่มี → error', () => {
     const p = samplePack();
     p.cards[0].trigger.ruleId = 'no-such-rule';

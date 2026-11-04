@@ -13,7 +13,7 @@
       "nle"
     ],
     "status": "verified",
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "createdAt": "2026-11-02",
     "verifiedAt": "2026-11-02",
     "sources": [
@@ -95,6 +95,11 @@
         "id": "drug-ladder",
         "name": "บันไดยา",
         "role": "LT4 · MMI + β-blocker · RAI / thyroidectomy · hydrocortisone มาก่อน LT4 ใน central"
+      },
+      {
+        "id": "side-map",
+        "name": "แผนที่ 2 ฝั่ง",
+        "role": "FT4 ต่ำ = ฝั่ง hypo (หา primary/central) · FT4 สูง = ฝั่ง thyrotoxicosis (หาสร้าง/รั่ว) · ตัวเลขหลอกอยู่นอกทั้งสองฝั่ง"
       }
     ],
     "coreRules": [
@@ -203,12 +208,29 @@
           "eta-graves-2022",
           "espe-ch-2021"
         ]
+      },
+      {
+        "id": "function-split",
+        "rule": "แยกฝั่งก่อนด้วย FT4 แล้วค่อยหาชั้น: FT4 ต่ำ = hypothyroidism, FT4 สูง = thyrotoxicosis, FT4 ปกติแต่ TSH สูง = subclinical hypothyroidism · ฝั่ง hypo แยกต่อด้วย TSH (primary vs central) และเวลา (congenital/acquired, transient/ถาวร) · ฝั่ง toxic แยกต่อด้วย uptake (สร้างเพิ่ม vs รั่ว) · โรคเดียวย้ายฝั่งได้ตามระยะโรคหรือการรักษา",
+        "generates": [
+          "FT4 ต่ำ + TSH สูง = primary hypothyroidism · FT4 ต่ำ + TSH ต่ำ/ปกติ = central",
+          "FT4 สูง + TSH ถูกกด = thyrotoxicosis จากต่อมหรือนอกต่อม · FT4 สูง + TSH ไม่ต่ำ = TSH-dependent",
+          "FT4 ปกติ + TSH สูงเล็กน้อย = subclinical hypothyroidism",
+          "Thyroiditis (Hashimoto, subacute) เริ่มฝั่ง toxic แล้วลงฝั่ง hypo",
+          "Graves หลัง RAI หรือ total thyroidectomy ย้ายไปฝั่ง hypo ถาวร ต้อง LT4 ตลอดชีวิต",
+          "Goiter ไม่ได้บอกฝั่ง: คอโตได้ทั้ง Hashimoto (hypo) และ Graves (hyper)"
+        ],
+        "sourceIds": [
+          "salerno-acquired-2026",
+          "eta-graves-2022"
+        ]
       }
     ],
     "winConditions": [
       "ระบุชั้นที่พังจาก FT4 + TSH ได้ก่อนเปิด imaging หรือแล็บราคาแพง",
       "เริ่ม LT4 ใน CH ให้ทันนาฬิกาสมองโดยไม่รอผลที่ไม่เปลี่ยน management",
-      "เลือกยาตามว่าต่อม 'สร้าง' หรือ 'รั่ว' และปลอดภัยตามบันไดยา"
+      "เลือกยาตามว่าต่อม 'สร้าง' หรือ 'รั่ว' และปลอดภัยตามบันไดยา",
+      "จัดโรคเข้าฝั่ง hypo หรือ thyrotoxicosis จาก FT4 ก่อน แล้วรู้ว่าโรคไหนย้ายฝั่งได้ (thyroiditis, หลัง RAI)"
     ],
     "loseConditions": [
       "รอผล confirm หรือ thyroid scan จน LT4 ช้าเกินอายุ 2 สัปดาห์",
@@ -317,6 +339,15 @@
         "sourceIds": [
           "eta-graves-2022"
         ]
+      },
+      {
+        "id": "e-iodine-both-ways",
+        "text": "Iodine (รวม radiocontrast และ amiodarone) ผลักได้ทั้งสองฝั่ง: กดการสร้างจน hypothyroid (Wolff–Chaikoff ในทารก, amiodarone ในเด็กโต) หรือกลับทำให้เกิด iodine-induced hyperthyroidism (urine iodine สูง) · ชื่อยาไม่ได้บอกฝั่ง ต้องดู FT4",
+        "breaksRule": "function-split",
+        "sourceIds": [
+          "eta-graves-2022",
+          "salerno-acquired-2026"
+        ]
       }
     ],
     "track": [
@@ -367,7 +398,8 @@
         "cardIds": [
           "hashimoto",
           "hashitoxicosis",
-          "subacute-thyroiditis"
+          "subacute-thyroiditis",
+          "post-ablative-hypothyroidism"
         ]
       },
       {
@@ -379,7 +411,116 @@
           "subclinical-ch",
           "sick-euthyroid",
           "exogenous-thyrotoxicosis",
-          "atd-agranulocytosis"
+          "atd-agranulocytosis",
+          "drug-induced-hypothyroidism"
+        ]
+      }
+    ],
+    "classification": [
+      {
+        "id": "side-hypo",
+        "name": "Hypothyroidism · FT4 ↓",
+        "hint": "FT4 ต่ำ (หรือปกติแต่ TSH สูง = subclinical) → แยกต่อด้วย TSH: สูง = primary · ไม่ขึ้น = central",
+        "groups": [
+          {
+            "id": "hypo-congenital",
+            "name": "Primary · congenital ถาวร",
+            "hint": "TSH สูง newborn screening จับได้ · LT4 ให้ทันนาฬิกาสมอง",
+            "cardIds": [
+              "thyroid-dysgenesis",
+              "dyshormonogenesis",
+              "subclinical-ch"
+            ]
+          },
+          {
+            "id": "hypo-transient",
+            "name": "Primary · transient ในทารก",
+            "hint": "สิ่งจากแม่หรือ iodine หมดไปแล้วหาย",
+            "cardIds": [
+              "transient-ch-blocking-ab",
+              "transient-ch-iodine",
+              "transient-ch-maternal-atd"
+            ]
+          },
+          {
+            "id": "hypo-acquired",
+            "name": "Primary · acquired (เด็กโต)",
+            "hint": "Autoimmune · ขาด iodine · หลังรักษา · ยา",
+            "cardIds": [
+              "hashimoto",
+              "iodine-deficiency-goiter",
+              "post-ablative-hypothyroidism",
+              "drug-induced-hypothyroidism"
+            ]
+          },
+          {
+            "id": "hypo-central",
+            "name": "Central (ทุกวัย)",
+            "hint": "TSH ไม่ขึ้น screening ไม่เจอ · cortisol ก่อน LT4",
+            "cardIds": [
+              "central-hypothyroidism"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "side-toxic",
+        "name": "Thyrotoxicosis · FT4 ↑",
+        "hint": "FT4 สูง → แยกต่อด้วย uptake: สร้างเพิ่ม = ATD ช่วย · รั่ว = β-blocker แล้วรอ",
+        "groups": [
+          {
+            "id": "toxic-production",
+            "name": "สร้างเพิ่ม (hyperthyroidism · uptake ↑)",
+            "hint": "TSH ถูกกด · ATD / RAI / ผ่าตัด",
+            "cardIds": [
+              "graves",
+              "neonatal-graves",
+              "toxic-nodule"
+            ]
+          },
+          {
+            "id": "toxic-tsh-driven",
+            "name": "TSH ไม่ถูกกด",
+            "hint": "ต้นเหตุที่ pituitary หรือ receptor",
+            "cardIds": [
+              "tsh-dependent-thyrotoxicosis"
+            ]
+          },
+          {
+            "id": "toxic-leak",
+            "name": "รั่ว / นอกต่อม (uptake ↓)",
+            "hint": "ไม่ให้ ATD · thyroiditis ลงเป็น hypo ต่อได้",
+            "cardIds": [
+              "hashitoxicosis",
+              "subacute-thyroiditis",
+              "exogenous-thyrotoxicosis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "side-other",
+        "name": "ตัวเลขหลอก · ไม่ใช่ทั้งสองฝั่ง",
+        "hint": "ต่อมไม่ได้ขาดหรือเกิน: ตรวจซ้ำ หรือปัญหาอยู่ที่ก้อน/ยา",
+        "groups": [
+          {
+            "id": "other-numbers",
+            "name": "ตัวเลขหลอก",
+            "hint": "เวลาเจาะ หรือป่วยหนัก",
+            "cardIds": [
+              "screen-false-positive",
+              "sick-euthyroid"
+            ]
+          },
+          {
+            "id": "other-structure",
+            "name": "ก้อน · ผลข้างเคียงยา",
+            "hint": "มักทำงานปกติ",
+            "cardIds": [
+              "thyroid-nodule",
+              "atd-agranulocytosis"
+            ]
+          }
         ]
       }
     ]
@@ -1183,6 +1324,94 @@
       "sourceIds": [
         "eta-graves-2022"
       ]
+    },
+    {
+      "id": "post-ablative-hypothyroidism",
+      "name": "Iatrogenic hypothyroidism (หลัง RAI / total thyroidectomy / ฉายแสงที่คอ)",
+      "who": "เด็ก Graves ที่ได้ definitive treatment · เด็กที่ฉายแสงบริเวณคอจากมะเร็ง",
+      "trigger": {
+        "ruleId": "drug-ladder",
+        "text": "ขั้นบนสุดของบันไดยาตั้งใจทำลายต่อม: RAI มุ่ง complete ablation และ total thyroidectomy เอาต่อมออกหมด ผลคือ primary hypothyroidism ถาวร"
+      },
+      "signature": "ประวัติ RAI/ผ่าตัด/ฉายแสงที่คอ + FT4 ต่ำ TSH สูง ไม่มี goiter · หลัง RAI ค่อย ๆ ลงเป็น hypo ในหลายสัปดาห์ถึงหลายเดือน และ TSH อาจต่ำค้างอยู่หลายเดือน",
+      "lookAlikes": [
+        "graves",
+        "hashimoto",
+        "central-hypothyroidism"
+      ],
+      "tells": [
+        {
+          "vs": "graves",
+          "feature": "หลัง RAI: FT4 ต่ำ = ablation สำเร็จ (ให้ LT4) · FT4 ยังสูงที่ 12 เดือน = Graves ยังอยู่ (พิจารณา RAI ครั้งที่ 2)"
+        },
+        {
+          "vs": "hashimoto",
+          "feature": "มีประวัติ RAI/ผ่าตัด/ฉายแสง และไม่มีเนื้อต่อมให้โต · Hashimoto มี goiter firm + anti-TPO/Tg บวก"
+        },
+        {
+          "vs": "central-hypothyroidism",
+          "feature": "หลัง RAI FT4 ต่ำ + TSH ยังต่ำค้าง = TSH lag ไม่ใช่ central · ดูประวัติ RAI และใช้ FT4 ตัดสิน"
+        }
+      ],
+      "counter": "LT4 ตลอดชีวิต · หลัง total thyroidectomy เริ่ม LT4 ตามน้ำหนักเร็วหลังผ่าตัด · หลัง RAI นัดตรวจครั้งแรก 4–6 สัปดาห์ และปรับยาตาม FT4 เพราะ TSH อาจยังถูกกด · หลังฉายแสงที่คอ subclinical ก็อาจพิจารณาให้ LT4",
+      "danger": "หลัง thyroidectomy: hypocalcemia จาก hypoparathyroidism และ recurrent laryngeal nerve injury · อ่าน FT4 ต่ำ + TSH ต่ำหลัง RAI เป็น central แล้วไม่ให้ LT4",
+      "memorize": [
+        {
+          "id": "rai-goal",
+          "prompt": "ETA 2022: เป้าหมายของ RAI ใน pediatric Graves และการติดตาม?",
+          "fact": "Complete thyroid ablation (ตั้งใจให้ hypothyroid → LT4 ตลอดชีวิต) · ~15 MBq ต่อกรัมเนื้อต่อม หรือ ≥ 300 Gy ถ้าทำ dosimetry · ตรวจครั้งแรก 4–6 สัปดาห์ · ยัง hyperthyroid ที่ 12 เดือน → พิจารณา RAI ครั้งที่ 2",
+          "sourceId": "eta-graves-2022"
+        },
+        {
+          "id": "thyroidectomy-complications",
+          "prompt": "Total thyroidectomy ใน pediatric Graves: อัตราภาวะแทรกซ้อนหลัก (ETA 2022)?",
+          "fact": "Transient hypocalcemia 22.2% · permanent hypoparathyroidism 2.5% · RLN injury 5.4% (permanent 0.4%) · mortality < 0.1% · เลือก total มากกว่า subtotal เพื่อลด recurrence",
+          "sourceId": "eta-graves-2022"
+        }
+      ],
+      "sourceIds": [
+        "eta-graves-2022",
+        "salerno-acquired-2026"
+      ]
+    },
+    {
+      "id": "drug-induced-hypothyroidism",
+      "name": "Drug-induced hypothyroidism (lithium, amiodarone, antiepileptics, immune checkpoint inhibitors)",
+      "who": "วัยรุ่นที่กิน lithium · เด็กโรคหัวใจที่ได้ amiodarone · เด็กลมชักที่กิน AED · ผู้ป่วยมะเร็งที่ได้ immune checkpoint inhibitor",
+      "trigger": {
+        "ruleId": "function-split",
+        "text": "ยากดการสร้าง/หลั่งฮอร์โมน (lithium, amiodarone) หรือทำลายต่อม ทำให้ FT4 ลงและ TSH ขึ้น · glucocorticoid กลับกด TSH จากด้านบน (ภาพคล้าย central)"
+      },
+      "signature": "TSH สูง ± FT4 ต่ำ ที่เริ่มหลังได้ยา · มักกลับคืนได้เมื่อหยุดยา",
+      "lookAlikes": [
+        "hashimoto",
+        "central-hypothyroidism"
+      ],
+      "tells": [
+        {
+          "vs": "hashimoto",
+          "feature": "เวลาสัมพันธ์กับการเริ่มยา และมักกลับคืนเมื่อหยุดยา · Hashimoto goiter firm + anti-TPO/Tg บวก"
+        },
+        {
+          "vs": "central-hypothyroidism",
+          "feature": "Glucocorticoid กด TSH ได้โดยไม่มีรอยโรค pituitary · central แท้มีฮอร์โมน pituitary ตัวอื่นขาดหรือรอยโรคที่ MRI"
+        }
+      ],
+      "counter": "ตรวจ TFT เมื่อใช้ยาเสี่ยง · หยุดยาได้ → หยุดแล้วตรวจซ้ำ · ต้องใช้ยาต่อและ hypothyroid ชัด → ให้ LT4 ระหว่างใช้ยา",
+      "danger": "Amiodarone และ iodine ทำได้ทั้ง hypo และ hyper — สรุปฝั่งจากชื่อยาแล้วรักษาผิดทาง",
+      "memorize": [
+        {
+          "id": "drug-hypo-list",
+          "prompt": "ยาที่ทำให้ thyroid dysfunction ในเด็ก (Salerno 2026) และกลไกหลัก?",
+          "fact": "Lithium กดการสร้าง/หลั่ง · amiodarone กดการสร้าง/เมแทบอลิซึม หรือ cytotoxic ต่อต่อม · antiepileptic drugs และ immune checkpoint inhibitors (ระดับต่าง ๆ กัน) · glucocorticoid กด TSH ผ่าน TRH · ส่วนใหญ่กลับคืนได้เมื่อหยุดยา",
+          "sourceId": "salerno-acquired-2026"
+        }
+      ],
+      "ruleOfThumb": true,
+      "sourceIds": [
+        "salerno-acquired-2026",
+        "eta-graves-2022"
+      ]
     }
   ],
   "exploits": [
@@ -1275,6 +1504,19 @@
       "ifSee": "Screening positive แต่ผล serum จะออกช้ากว่า 1 วัน",
       "think": "เริ่ม LT4 ทันทีหลังเจาะเลือด",
       "strength": "rule"
+    },
+    {
+      "id": "sort-by-ft4",
+      "ifSee": "โจทย์ thyroid ที่มีทั้ง TSH, FT4, antibody, uptake แล้วไม่รู้จะเริ่มตรงไหน",
+      "think": "ดู FT4 ก่อนเพื่อเลือกฝั่ง (ต่ำ = hypo, สูง = thyrotoxicosis, ปกติ = subclinical/euthyroid) → TSH บอกชั้น → uptake แยกสร้าง vs รั่ว",
+      "strength": "heuristic",
+      "exception": "TSH lag หลังรักษา Graves และ sick euthyroid ทำให้ตัวเลขหลอกได้ ดูประวัติประกอบ"
+    },
+    {
+      "id": "amiodarone-iodine",
+      "ifSee": "เด็กได้ amiodarone, iodine หรือ contrast แล้ว TFT ผิดปกติ",
+      "think": "ทำได้ทั้ง hypo และ hyper — ดู FT4 (± urine iodine) ก่อนตัดสินฝั่ง อย่าเดาจากชื่อยา",
+      "strength": "rule"
     }
   ],
   "distractorPatterns": [
@@ -1312,6 +1554,11 @@
       "id": "tsh-to-titrate-central",
       "pattern": "ปรับ LT4 ใน central hypothyroidism ตาม TSH",
       "kill": "TSH ต่ำอยู่แล้วจากตัวโรค ใช้ FT4 (ให้อยู่ครึ่งบนของช่วงปกติ)"
+    },
+    {
+      "id": "goiter-means-hyper",
+      "pattern": "ตัวเลือกที่สรุปว่าคอโต = hyperthyroid (หรือไม่มี goiter = ไม่ใช่โรคต่อม)",
+      "kill": "Goiter บอกแรงขับ ไม่ได้บอกฝั่ง: Hashimoto, dyshormonogenesis, ขาด iodine คอโตแต่ hypo · ดู FT4 เลือกฝั่ง"
     }
   ],
   "trapPairs": [
@@ -1368,6 +1615,30 @@
       "a": "exogenous-thyrotoxicosis",
       "b": "subacute-thyroiditis",
       "decider": "Serum Tg ต่ำ + ไม่มี goiter = exogenous"
+    },
+    {
+      "id": "tp-blocking-vs-neonatal-graves",
+      "a": "transient-ch-blocking-ab",
+      "b": "neonatal-graves",
+      "decider": "แม่มี TRAb เหมือนกัน แต่ FT4 ชี้ฝั่ง: blocking → FT4 ต่ำ TSH สูง (hypo) · stimulating → FT4 สูง TSH ถูกกด (hyper)"
+    },
+    {
+      "id": "tp-central-vs-tsh-dependent",
+      "a": "central-hypothyroidism",
+      "b": "tsh-dependent-thyrotoxicosis",
+      "decider": "ทั้งคู่ TSH ไม่สมกับ FT4 (ชั้น pituitary) — FT4 ต่ำ = central hypothyroidism · FT4 สูง = TSH-dependent thyrotoxicosis"
+    },
+    {
+      "id": "tp-hashimoto-hashitoxicosis",
+      "a": "hashimoto",
+      "b": "hashitoxicosis",
+      "decider": "โรคเดียวกันต่างระยะ: FT4 สูง + uptake ต่ำ = hashitoxicosis (β-blocker แล้วรอ) · FT4 ต่ำ + TSH สูง = Hashimoto ฝั่ง hypo (LT4)"
+    },
+    {
+      "id": "tp-post-rai-vs-graves",
+      "a": "post-ablative-hypothyroidism",
+      "b": "graves",
+      "decider": "หลัง RAI ใช้ FT4 ตัดสิน (TSH ยังกดค้างได้): FT4 ต่ำ = ablation สำเร็จ → LT4 · FT4 ยังสูง = Graves ยังอยู่"
     }
   ],
   "games": {
@@ -2723,6 +2994,137 @@
         "explanation": "Uptake แบ่ง 'สร้าง' กับ 'รั่ว' 3/3 · ฝั่งสร้าง: TRAb แยก Graves แล้ว hot nodule แยก toxic adenoma จาก TSH-secreting adenoma · ฝั่งรั่ว: ต่อมเจ็บแยก subacute แล้ว Tg ต่ำแยก exogenous จาก Hashitoxicosis · ฝั่งรั่วทั้งหมดไม่ได้ ATD"
       },
       {
+        "id": "gw-acquired-hypo",
+        "targetSeconds": 120,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "axis-feedback"
+          ],
+          "errata": [
+            "e-sick-euthyroid"
+          ]
+        },
+        "hint": "TSH สูงหรือไม่ แบ่งเป็น primary กับที่เหลือ",
+        "title": "FT4 ต่ำในเด็กโต: หาสาเหตุ 6 ตัว",
+        "candidates": [
+          {
+            "id": "hashimoto",
+            "label": "Hashimoto",
+            "cardId": "hashimoto"
+          },
+          {
+            "id": "iodine-def",
+            "label": "Iodine deficiency",
+            "cardId": "iodine-deficiency-goiter"
+          },
+          {
+            "id": "post-ablative",
+            "label": "หลัง RAI / thyroidectomy",
+            "cardId": "post-ablative-hypothyroidism"
+          },
+          {
+            "id": "drug",
+            "label": "Lithium / amiodarone",
+            "cardId": "drug-induced-hypothyroidism"
+          },
+          {
+            "id": "central",
+            "label": "Central (รอยโรค pituitary)",
+            "cardId": "central-hypothyroidism"
+          },
+          {
+            "id": "sick",
+            "label": "Nonthyroidal illness",
+            "cardId": "sick-euthyroid"
+          }
+        ],
+        "questions": [
+          {
+            "id": "q-tsh-high",
+            "text": "TSH สูงใช่ไหม?",
+            "yes": [
+              "hashimoto",
+              "iodine-def",
+              "post-ablative",
+              "drug"
+            ]
+          },
+          {
+            "id": "q-after-treatment",
+            "text": "เริ่มหลังได้ยาหรือหลังรักษาต่อม thyroid/คอใช่ไหม?",
+            "yes": [
+              "post-ablative",
+              "drug"
+            ]
+          },
+          {
+            "id": "q-antibody",
+            "text": "Anti-TPO/anti-Tg บวกใช่ไหม?",
+            "yes": [
+              "hashimoto"
+            ]
+          },
+          {
+            "id": "q-reversible",
+            "text": "กลับปกติเองเมื่อสิ่งกระตุ้นหมดไป (หยุดยา/หายป่วย) ใช่ไหม?",
+            "yes": [
+              "drug",
+              "sick"
+            ]
+          },
+          {
+            "id": "q-pituitary",
+            "text": "มีรอยโรค pituitary หรือฮอร์โมน pituitary ตัวอื่นขาดใช่ไหม?",
+            "yes": [
+              "central"
+            ]
+          },
+          {
+            "id": "q-urine-iodine",
+            "text": "Urine iodine ต่ำ / คนในพื้นที่เป็นหลายคนใช่ไหม?",
+            "yes": [
+              "iodine-def"
+            ]
+          }
+        ],
+        "optimalTree": {
+          "question": "q-tsh-high",
+          "yes": {
+            "question": "q-after-treatment",
+            "yes": {
+              "question": "q-reversible",
+              "yes": {
+                "leaf": "drug"
+              },
+              "no": {
+                "leaf": "post-ablative"
+              }
+            },
+            "no": {
+              "question": "q-antibody",
+              "yes": {
+                "leaf": "hashimoto"
+              },
+              "no": {
+                "leaf": "iodine-def"
+              }
+            }
+          },
+          "no": {
+            "question": "q-reversible",
+            "yes": {
+              "leaf": "sick"
+            },
+            "no": {
+              "leaf": "central"
+            }
+          }
+        },
+        "explanation": "TSH สูงแบ่ง primary 4 ตัวออกจาก central/sick · ใน primary ถามว่าเกิดหลังการรักษาไหม แล้วแยกยา (กลับคืนได้) กับ ablation (ถาวร) และ Hashimoto (antibody บวก) กับขาด iodine · ฝั่ง TSH ไม่สูง: sick euthyroid กลับปกติเมื่อหายป่วย central ไม่กลับ · 6 ตัวต้องใช้อย่างน้อย 3 คำถาม"
+      },
+      {
         "id": "gw-goiter-six",
         "targetSeconds": 120,
         "difficulty": 3,
@@ -3550,6 +3952,53 @@
         "explanation": "Subacute thyroiditis เป็น destructive thyroiditis ฮอร์โมนรั่วออกจากต่อมที่แตก uptake จึงต่ำ · ATD หยุดได้แค่การสร้าง จึงไม่ช่วย · ให้ NSAID + β-blocker"
       },
       {
+        "id": "mcq-post-rai",
+        "targetSeconds": 90,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "drug-ladder"
+          ],
+          "errata": [
+            "e-tsh-lag"
+          ],
+          "trapPairs": [
+            "tp-post-rai-vs-graves"
+          ]
+        },
+        "stem": "A 15-year-old girl with Graves disease received radioactive iodine 8 weeks ago. She now reports fatigue, cold intolerance and constipation. Free T4 is below the reference range and TSH remains suppressed. What is the most appropriate next step?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pituitary MRI and morning cortisol for central hypothyroidism",
+            "why": "TSH ต่ำค้างหลัง RAI เป็น TSH lag ไม่ใช่ central"
+          },
+          {
+            "key": "B",
+            "text": "Restart methimazole",
+            "why": "FT4 ต่ำแล้ว ATD จะยิ่งทำให้ hypo"
+          },
+          {
+            "key": "C",
+            "text": "Start levothyroxine and titrate to free T4"
+          },
+          {
+            "key": "D",
+            "text": "Repeat thyroid function tests in 6 months without treatment",
+            "why": "มีอาการ hypothyroid แล้ว และ RAI ตั้งใจให้เกิด hypo ถาวร"
+          },
+          {
+            "key": "E",
+            "text": "Give a second dose of radioactive iodine",
+            "why": "ใช้เมื่อยัง hyperthyroid ที่ 12 เดือน ไม่ใช่ตอน FT4 ต่ำ"
+          }
+        ],
+        "answer": "C",
+        "tell": "After RAI, low FT4 means the ablation worked; TSH may stay suppressed for months, so follow FT4.",
+        "explanation": "RAI มุ่ง complete ablation ผู้ป่วยจึงย้ายจากฝั่ง hyper มาฝั่ง hypo (primary) ต้อง LT4 ตลอดชีวิต · TSH อาจถูกกดค้างหลายเดือนหลังรักษา Graves จึงใช้ FT4 ตัดสินและปรับยา ไม่ใช่ตีความเป็น central"
+      },
+      {
         "id": "mcq-preterm",
         "targetSeconds": 90,
         "difficulty": 3,
@@ -3591,6 +4040,471 @@
         "answer": "B",
         "tell": "Born < 32 weeks → repeat TSH every 2 weeks to 37 weeks' corrected GA.",
         "explanation": "Preterm, LBW, ทารกป่วย และแฝดต้องทำ second TSH screening ที่ราว 2 สัปดาห์ · ถ้าเกิด < 32 สัปดาห์ แนวทาง 2564 ให้ตรวจทุก 2 สัปดาห์จน corrected GA 37 สัปดาห์"
+      }
+    ],
+    "legality": [
+      {
+        "id": "lg-low-high",
+        "targetSeconds": 30,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "axis-feedback"
+          ]
+        },
+        "case": "เด็กหญิง 12 ปี เตี้ยลงจากเส้นเดิม น้ำหนักขึ้น goiter firm · FT4 ต่ำ TSH สูงมาก",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "primary-hypo",
+        "ruleIds": [
+          "function-split",
+          "axis-feedback"
+        ],
+        "why": "FT4 ต่ำ = ฝั่ง hypo · TSH สูงตาม feedback = ต่อมพังเอง (primary) · goiter firm ในเด็กหญิงชวนคิด Hashimoto"
+      },
+      {
+        "id": "lg-high-suppressed",
+        "targetSeconds": 30,
+        "difficulty": 1,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "uptake-production"
+          ]
+        },
+        "case": "วัยรุ่นหญิง 14 ปี น้ำหนักลด ใจสั่น goiter soft มี bruit · FT4 สูง TSH ต่ำจนวัดไม่ได้ · uptake สูงทั่วต่อม",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "toxic-production",
+        "ruleIds": [
+          "function-split",
+          "uptake-production"
+        ],
+        "why": "FT4 สูง = ฝั่ง thyrotoxicosis · uptake สูง = ต่อมสร้างเพิ่ม (hyperthyroidism) · ภาพนี้คือ Graves → ATD ช่วยได้"
+      },
+      {
+        "id": "lg-normal-ft4",
+        "targetSeconds": 35,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "function-split"
+          ]
+        },
+        "case": "เด็กชาย 10 ปี ไม่มีอาการ ตรวจเพราะพี่สาวเป็น Hashimoto · FT4 ปกติ TSH สูงเล็กน้อย anti-TPO บวก",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "subclinical-hypo",
+        "ruleIds": [
+          "function-split"
+        ],
+        "why": "FT4 ยังปกติแต่ TSH สูง = subclinical hypothyroidism (ฝั่ง hypo ระยะต้น) · ให้ LT4 เมื่อ TSH > 10 หรือมีอาการ"
+      },
+      {
+        "id": "lg-low-normal-tsh",
+        "targetSeconds": 35,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "axis-feedback"
+          ],
+          "errata": [
+            "e-central-normal-tsh"
+          ]
+        },
+        "case": "เด็กชาย 9 ปี หลังผ่าตัด craniopharyngioma ง่วง ทนหนาวไม่ได้ · FT4 ต่ำ TSH อยู่ในช่วงปกติ",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "central-hypo",
+        "ruleIds": [
+          "function-split",
+          "axis-feedback"
+        ],
+        "why": "FT4 ต่ำ = ฝั่ง hypo · TSH ที่ \"ปกติ\" ขณะ FT4 ต่ำคือ TSH ที่ไม่เหมาะสม = central · ประเมิน cortisol ก่อนให้ LT4"
+      },
+      {
+        "id": "lg-tender-low-uptake",
+        "targetSeconds": 35,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "uptake-production"
+          ]
+        },
+        "case": "เด็ก 13 ปี ไข้ เจ็บคอด้านหน้าร้าวไปหู ต่อมกดเจ็บ หลังเป็นหวัด 2 สัปดาห์ · FT4 สูง TSH ต่ำ · uptake ต่ำมาก",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "toxic-leak",
+        "ruleIds": [
+          "function-split",
+          "uptake-production"
+        ],
+        "why": "FT4 สูง = ฝั่ง toxic · uptake ต่ำ = ฮอร์โมนรั่วจากต่อมที่อักเสบ (subacute thyroiditis) ไม่ได้สร้างเพิ่ม → ไม่ให้ ATD"
+      },
+      {
+        "id": "lg-high-tsh-normal",
+        "targetSeconds": 40,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "axis-feedback"
+          ],
+          "trapPairs": [
+            "tp-central-vs-tsh-dependent"
+          ]
+        },
+        "case": "เด็กชาย 11 ปี ใจสั่นเล็กน้อย พ่อมีผล TFT แบบเดียวกัน · FT4 สูง TSH อยู่ในช่วงปกติ (ตรวจซ้ำแล้วได้เหมือนเดิม)",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "tsh-dependent",
+        "ruleIds": [
+          "function-split",
+          "axis-feedback"
+        ],
+        "why": "FT4 สูง = ฝั่ง toxic แต่ TSH ไม่ถูกกด = ต้นเหตุไม่ฟัง feedback (TSH-dependent) · ประวัติครอบครัวชวนคิด thyroid hormone resistance · คู่กับ central ที่ TSH ไม่สมกับ FT4 เหมือนกันแต่ FT4 ต่ำ"
+      },
+      {
+        "id": "lg-hashitoxic",
+        "targetSeconds": 40,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "uptake-production"
+          ],
+          "errata": [
+            "e-hashitoxicosis"
+          ],
+          "trapPairs": [
+            "tp-hashimoto-hashitoxicosis"
+          ]
+        },
+        "case": "วัยรุ่นหญิง 13 ปี goiter firm anti-TPO บวก · FT4 สูง TSH ต่ำ · TRAb ลบ uptake ต่ำ",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "toxic-leak",
+        "ruleIds": [
+          "function-split",
+          "uptake-production"
+        ],
+        "why": "โรคเป็น Hashimoto แต่ \"ตอนนี้\" อยู่ฝั่ง toxic (hashitoxicosis): เซลล์ที่แตกปล่อยฮอร์โมน uptake จึงต่ำ → β-blocker แล้วรอ ต่อมามักลงเป็น hypo"
+      },
+      {
+        "id": "lg-sick",
+        "targetSeconds": 40,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "axis-feedback"
+          ],
+          "errata": [
+            "e-sick-euthyroid"
+          ],
+          "trapPairs": [
+            "tp-central-sick"
+          ]
+        },
+        "case": "เด็ก 6 ปี อยู่ PICU วันที่ 4 จาก septic shock ไม่มีประวัติโรคต่อม · T3 ต่ำ FT4 ต่ำเล็กน้อย TSH ปกติ",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "nonthyroidal",
+        "ruleIds": [
+          "function-split",
+          "axis-feedback"
+        ],
+        "why": "ภาพคล้าย central แต่เป็นการปรับตัวของร่างกายตอนป่วยหนัก (nonthyroidal illness) ต่อมไม่ได้เป็นโรค → ตรวจซ้ำเมื่อหายป่วย"
+      },
+      {
+        "id": "lg-post-rai",
+        "targetSeconds": 45,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "function-split",
+            "axis-feedback"
+          ],
+          "errata": [
+            "e-tsh-lag"
+          ],
+          "trapPairs": [
+            "tp-post-rai-vs-graves"
+          ]
+        },
+        "case": "วัยรุ่นหญิง 15 ปี เป็น Graves ได้ RAI ไป 8 สัปดาห์ ตอนนี้เพลีย ขี้หนาว · FT4 ต่ำ TSH ยังต่ำ",
+        "question": "อยู่ฝั่งไหน และกลุ่มไหน?",
+        "options": [
+          {
+            "id": "primary-hypo",
+            "label": "Primary hypothyroidism"
+          },
+          {
+            "id": "central-hypo",
+            "label": "Central hypothyroidism"
+          },
+          {
+            "id": "subclinical-hypo",
+            "label": "Subclinical hypothyroidism"
+          },
+          {
+            "id": "toxic-production",
+            "label": "Thyrotoxicosis แบบสร้างเพิ่ม (uptake ↑)"
+          },
+          {
+            "id": "toxic-leak",
+            "label": "Thyrotoxicosis แบบรั่ว/นอกต่อม (uptake ↓)"
+          },
+          {
+            "id": "tsh-dependent",
+            "label": "TSH-dependent thyrotoxicosis"
+          },
+          {
+            "id": "nonthyroidal",
+            "label": "ไม่ใช่โรคต่อม (ตัวเลขหลอก)"
+          }
+        ],
+        "answer": "primary-hypo",
+        "ruleIds": [
+          "function-split",
+          "axis-feedback"
+        ],
+        "why": "RAI ตั้งใจทำลายต่อม FT4 ต่ำ = ย้ายมาฝั่ง hypo แล้ว (primary · post-ablative) · TSH ยังต่ำเพราะถูกกดค้างหลายเดือน ไม่ใช่ central → เริ่ม LT4 และปรับตาม FT4"
       }
     ]
   }

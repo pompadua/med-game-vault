@@ -9,6 +9,8 @@ type Raw = Record<string, unknown>;
 export const packMigrations: Record<number, (pack: Raw) => Raw> = {
   // v2 เพิ่ม rulebook.track (optional) — ข้อมูล v1 ใช้ได้ทันที เปลี่ยนแค่เลข version
   1: (p) => ({ ...p, meta: { ...(p.meta as Raw), schemaVersion: 2 } }),
+  // v3 เพิ่ม rulebook.classification (optional) — เปลี่ยนแค่เลข version เช่นกัน
+  2: (p) => ({ ...p, meta: { ...(p.meta as Raw), schemaVersion: 3 } }),
 };
 
 export class MigrationError extends Error {}

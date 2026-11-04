@@ -119,6 +119,10 @@ export function validatePack(raw: unknown, ctx: ValidationContext): ValidationRe
   dupCheck('distractorPatterns', pack.distractorPatterns.map((x) => x.id));
   dupCheck('trapPairs', pack.trapPairs.map((x) => x.id));
   dupCheck('rulebook.track', (rulebook.track ?? []).map((l) => l.id));
+  dupCheck(
+    'rulebook.classification',
+    (rulebook.classification ?? []).flatMap((col) => [col.id, ...col.groups.map((gr) => gr.id)]),
+  );
   dupCheck('games (ทุกโหมดรวมกัน)', GAME_MODES.flatMap((m) => (pack.games[m] ?? []).map((g) => g.id)));
   for (const c of cards) dupCheck(`cards.${c.id}.tells (vs)`, c.tells.map((t) => t.vs));
   dupCheck('review item id', extractItems(pack).map((i) => i.id));
@@ -183,6 +187,16 @@ export function validatePack(raw: unknown, ctx: ValidationContext): ValidationRe
     const placed = new Set(rulebook.track.flatMap((l) => l.cardIds));
     for (const c of cards) {
       if (!c.retired && !placed.has(c.id)) warnings.push(`cards.${c.id}: ยังไม่ได้วางบน rulebook.track`);
+    }
+  }
+
+  if (rulebook.classification) {
+    for (const col of rulebook.classification) {
+      for (const gr of col.groups) for (const id of gr.cardIds) needCard(`rulebook.classification.${col.id}.${gr.id}.cardIds`, id);
+    }
+    const sorted = new Set(rulebook.classification.flatMap((col) => col.groups.flatMap((gr) => gr.cardIds)));
+    for (const c of cards) {
+      if (!c.retired && !sorted.has(c.id)) warnings.push(`cards.${c.id}: ยังไม่ได้จัดกลุ่มใน rulebook.classification`);
     }
   }
 

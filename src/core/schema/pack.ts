@@ -6,7 +6,7 @@ import { z } from 'zod';
  * ถ้าความหมายเปลี่ยนจริง ให้ตั้ง id ใหม่ แล้วติด `retired: true` ที่ของเก่า (ห้ามลบ)
  */
 
-export const CURRENT_PACK_SCHEMA_VERSION = 2 as const;
+export const CURRENT_PACK_SCHEMA_VERSION = 3 as const;
 
 export const Slug = z
   .string()
@@ -104,6 +104,25 @@ export const TrackLevel = z.object({
   cardIds: z.array(Slug).min(1),
 });
 
+/**
+ * แผนที่จัดกลุ่ม (v3): แบ่งการ์ดเป็นฝั่ง (column) แล้วแยกกลุ่มย่อยในแต่ละฝั่ง เช่น hypo vs hyper
+ * ใช้แสดงในหน้ากติกาเท่านั้น ไม่สร้าง review item
+ */
+export const ClassGroup = z.object({
+  id: Slug,
+  name: Text,
+  hint: Text.optional(),
+  cardIds: z.array(Slug).min(1),
+});
+
+export const ClassColumn = z.object({
+  id: Slug,
+  name: Text,
+  /** ลักษณะที่ใช้แยกฝั่งนี้ เช่น FT4 ต่ำ */
+  hint: Text.optional(),
+  groups: z.array(ClassGroup).min(1),
+});
+
 export const Rulebook = z.object({
   board: Text,
   pieces: z.array(Piece).min(1),
@@ -112,6 +131,7 @@ export const Rulebook = z.object({
   loseConditions: z.array(Text).min(1),
   errata: z.array(Erratum),
   track: z.array(TrackLevel).optional(),
+  classification: z.array(ClassColumn).min(2).optional(),
 });
 
 // ---------- cards ----------
@@ -380,6 +400,7 @@ export type Source = z.infer<typeof Source>;
 export type CoreRule = z.infer<typeof CoreRule>;
 export type Erratum = z.infer<typeof Erratum>;
 export type TrackLevel = z.infer<typeof TrackLevel>;
+export type ClassColumn = z.infer<typeof ClassColumn>;
 export type Card = z.infer<typeof Card>;
 export type Tell = z.infer<typeof Tell>;
 export type MemorizeFact = z.infer<typeof MemorizeFact>;
