@@ -1,0 +1,1993 @@
+{
+  "meta": {
+    "id": "peds-congenital-heart-disease",
+    "title": "Peds Heart Board: CHD, HF และ EKG ในเด็ก",
+    "subject": "peds",
+    "rotation": "peds",
+    "tags": ["congenital-heart-disease", "heart-failure", "ecg", "hemodynamics", "pharmacology", "emergency", "nle"],
+    "status": "draft",
+    "schemaVersion": 3,
+    "createdAt": "2026-11-09",
+    "verifiedAt": null,
+    "sources": [
+      {
+        "id": "sp-asd",
+        "title": "Menillo AM, Alahmadi MH, Pearson-Shaver AL. Atrial Septal Defect. StatPearls (last update 2025-01-21)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK535440/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-vsd",
+        "title": "Alahmadi MH, Oliver TI. Ventricular Septal Defect. StatPearls (last update 2024-10-16)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK470330/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-pda",
+        "title": "Gillam-Krakauer M, Mahajan K. Patent Ductus Arteriosus. StatPearls (last update 2023-08-08)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK430758/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-tof",
+        "title": "Horenstein MS, Diaz-Frias J, Guillaume M. Tetralogy of Fallot. StatPearls (last update 2024-12-02)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK513288/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-tga",
+        "title": "Szymanski MW et al. Transposition of the Great Arteries. StatPearls (last update 2025-03-16)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK538434/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-coa",
+        "title": "Law MA et al. Coarctation of the Aorta. StatPearls (last update 2024-12-11)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK430913/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-ta",
+        "title": "Minocha PK et al. Tricuspid Atresia. StatPearls (last update 2024-01-26)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK554495/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-ps",
+        "title": "Pulmonary Stenosis. StatPearls (last update 2024-10-06)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK560750/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-cyanosis",
+        "title": "Cyanosis. StatPearls (last update 2022-10-03)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK559167/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "sp-alcapa",
+        "title": "Carter YM et al. Anatomy, Thorax, Heart Anomalous Left Coronary Artery. StatPearls (last update 2023-08-08)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537186/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "aha-pals-2020",
+        "title": "Topjian AA et al. Part 4: Pediatric Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. Circulation 2020;142(16 suppl 2):S469–S523 (Fig. 7 cardiac arrest, Fig. 13 tachycardia with a pulse)",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000901",
+        "type": "guideline",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "das-phf-2018",
+        "title": "Das BB. Current State of Pediatric Heart Failure. Children (Basel) 2018;5(7):88",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6069285/",
+        "type": "review",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "msd-digoxin-peds",
+        "title": "MSD Manual Professional Version. Oral Digoxin Dosage in Children (table)",
+        "url": "https://www.msdmanuals.com/professional/multimedia/table/oral-digoxin-dosage-in-children",
+        "type": "textbook",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "jppt-pda-2023",
+        "title": "Jackson CD et al. Evaluation of the Closure of Patent Ductus Arteriosus With Ibuprofen Compared to Indomethacin. J Pediatr Pharmacol Ther 2023;28(7):618-627",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10681078/",
+        "type": "article",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "wikem-tof",
+        "title": "WikEM. Tetralogy of Fallot (Tet spell management, PGE1)",
+        "url": "https://wikem.org/wiki/Tetralogy_of_fallot",
+        "type": "other",
+        "accessedAt": "2026-11-09"
+      },
+      {
+        "id": "umem-hyperoxia",
+        "title": "UMEM Educational Pearls. The Hyperoxia Test for the Cyanotic Infant (2019)",
+        "url": "https://em.umaryland.edu/educational_pearls/3567/",
+        "type": "other",
+        "accessedAt": "2026-11-09"
+      }
+    ]
+  },
+  "rulebook": {
+    "board": "กระดานหัวใจเด็กมี 2 แกน: แกนนอนคือคำถาม 2 ข้อ 'เขียวไหม' × 'pulmonary blood flow (PBF) มาก ปกติ หรือน้อย' (ดูจาก CXR) ซึ่งแบ่งโรคเป็น 4 ช่อง และแกนตั้งคือนาฬิกาอายุหลังคลอด: PDA ปิดในวันแรก ๆ → PVR ค่อย ๆ ลดลงในหลายสัปดาห์แรก → RV นิ่มลงในวัยเด็กเล็ก โรคแต่ละใบ 'โผล่' ตอนที่ circulation เปลี่ยนใต้มัน ผู้เล่นมีเครื่องมือ: S2 + murmur, SpO2/BP 4 แขนขา, CXR, EKG (axis + hypertrophy) และ echo เป็น gold standard",
+    "pieces": [
+      { "id": "two-questions", "name": "คำถาม 2 ข้อ", "role": "เขียวไหม × PBF มาก/ปกติ/น้อย บน CXR → เหลือกลุ่มโรคไม่กี่ตัว" },
+      { "id": "age-clock", "name": "นาฬิกาอายุ", "role": "สัปดาห์แรก = PDA ปิด (ductal-dependent ทรุด) · หลายสัปดาห์ = PVR ต่ำ (L→R shunt → HF) · ~2 เดือน = ALCAPA · เด็กโต = murmur/HT ที่ตรวจเจอ" },
+      { "id": "s2-murmur", "name": "S2 + murmur", "role": "S2 บอกว่า great artery ครบไหมและ RV โหลดแบบไหน · murmur บอก gradient ไม่ใช่ขนาดรู" },
+      { "id": "four-limbs", "name": "SpO2 + BP 4 แขนขา", "role": "มือขวา = pre-ductal · เท้า = post-ductal · BP แขน > ขา = COA" },
+      { "id": "load-map", "name": "แผนที่ภาระ", "role": "volume load → ห้องโต (dilate) · pressure load → ผนังหนา (hypertrophy) → เดา CXR/EKG เองได้" },
+      { "id": "ekg-age", "name": "EKG ตามอายุ", "role": "ทารก RV dominant (RAD ปกติ) · อะไรที่ผิดจากนี้คือ clue: superior axis, T V1 หัวตั้ง" },
+      { "id": "hf-toolbox", "name": "กล่องยา HF", "role": "↓preload (diuretic) · ↓afterload (ACEI) · ↑contractility (digoxin/inotrope) · β-blocker เฉพาะ chronic" }
+    ],
+    "coreRules": [
+      {
+        "id": "pbf-map",
+        "rule": "ถามแค่ 2 ข้อ: เขียวไหม และ PBF มาก ปกติ หรือน้อย (CXR ปอดขาว vs ปอดดำ) แล้วกลุ่มโรคจะเหลือไม่กี่ตัว — ไม่เขียว + ↑PBF = L→R shunt · ไม่เขียว + PBF ปกติ = ทางออกตีบ · เขียว + ↓PBF = ทางไปปอดอุดฝั่งขวา เลือดดำลัดไปซ้าย · เขียว + ↑PBF = เลือดผสมหรือ circulation ขนาน",
+        "generates": [
+          "Acyanotic ↑PBF: ASD, VSD, PDA, AVSD",
+          "Acyanotic normal PBF: PS (ตีบขวา), COA/AS (ตีบซ้าย)",
+          "Cyanotic ↓PBF: TOF, tricuspid atresia, PA-IVS, critical PS",
+          "Cyanotic ↑PBF: TGA, TAPVR, truncus arteriosus, single ventricle (3T 2C)",
+          "เด็กเขียว + ปอดดำ คิด TOF ก่อน · เด็กเขียว + ปอดขาว + หัวใจรูปไข่ คิด TGA ก่อน"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-tof", "sp-tga", "sp-ta"]
+      },
+      {
+        "id": "pvr-clock",
+        "rule": "หลังคลอด PVR ยังสูงแล้วค่อย ๆ ลดลงในหลายสัปดาห์แรก shunt ระดับ ventricle/great artery (VSD, PDA, AVSD) จึงไหลน้อยตอนแรกเกิดแล้วค่อยมากขึ้นจนเกิด HF ทีหลัง ส่วน shunt ระดับ atrium (ASD) ขึ้นกับว่า RV ยืดรับเลือดได้ดีแค่ไหน จึงเงียบในวัยทารก",
+        "generates": [
+          "Large VSD/PDA: murmur และ HF โผล่หลังคลอดหลายสัปดาห์ (เลคเชอร์: 6–8 wk) ไม่ใช่วันแรก",
+          "ASD ส่วนใหญ่ไม่มีอาการ มาด้วย murmur ตอนตรวจสุขภาพ",
+          "ALCAPA เริ่มมีอาการราว 2 เดือนเมื่อ PA pressure ตกตาม PVR",
+          "Pink TOF / tricuspid atresia ที่ PBF ไม่ถูกจำกัด → HF เมื่อ PVR ลด",
+          "L→R shunt ใหญ่ที่ปล่อยไว้นาน → PVR สูงถาวร → Eisenmenger"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-tof", "sp-ta", "sp-alcapa", "sp-asd"]
+      },
+      {
+        "id": "ductal-dependence",
+        "rule": "โรคที่ systemic flow หรือ pulmonary flow ต้องพึ่ง PDA จะทรุดทันทีที่ PDA ปิดในวันแรก ๆ ถึง 1–2 สัปดาห์แรก — ฝั่งซ้ายตีบ = shock ฝั่งขวาตีบหรือ circulation ขนาน = เขียวจัด ยาแก้คือเปิด PDA ด้วย PGE1 ทันทีไม่ต้องรอ echo และห้ามให้ยาปิด PDA",
+        "generates": [
+          "Critical COA: shock + femoral pulse หายในสัปดาห์แรก → PGE1",
+          "PA-IVS / critical PS: เขียวจัดเมื่อ PDA ปิด → PGE1 แล้ว balloon/shunt",
+          "D-TGA: ต้อง mixing → PGE1 + balloon atrial septostomy",
+          "Ibuprofen/indomethacin ใน ductal-dependent lesion = ฆ่าคนไข้",
+          "SpO2 เท้าต่ำกว่ามือขวา = เลือดดำผ่าน PDA ลงท่อนล่าง (critical COA, PPHN)",
+          "PGE1 ทำให้ apnea ได้ → เตรียม airway"
+        ],
+        "sourceIds": ["sp-coa", "sp-ps", "sp-tga", "wikem-tof"]
+      },
+      {
+        "id": "load-chamber",
+        "rule": "หัวใจรับภาระได้ 2 แบบ: volume load (shunt/ลิ้นรั่ว) ทำให้ห้องที่รับเลือดเกินโต ส่วน pressure load (ทางออกตีบ) ทำให้ผนัง ventricle หนา ห้องไหนโตดูจากว่าเลือดเกินไหลผ่านห้องไหน แล้ว CXR/EKG ของแต่ละโรคเดาได้เองไม่ต้องท่อง",
+        "generates": [
+          "ASD shunt ระดับ atrium ช่วง diastole → RA + RV โต → RAD, incomplete RBBB (rSR' V1)",
+          "VSD/PDA เลือดเกินไปปอดแล้วกลับ LA → LV → LA + LV โต → LVH",
+          "PS → RVH + RAD · COA เด็กโต → LVH",
+          "TOF → RVH + RAD · tricuspid atresia RV เล็ก → left superior axis + LVH",
+          "Large VSD ที่เริ่มมี pulmonary hypertension → CVH (LVH + RVH)"
+        ],
+        "sourceIds": ["sp-asd", "sp-vsd", "sp-ps", "sp-tof", "sp-ta"]
+      },
+      {
+        "id": "murmur-gradient",
+        "rule": "Murmur คือเสียงของ turbulent flow ซึ่งต้องมีความต่างความดันข้ามรูหรือเลือดไหลผ่านลิ้นปกติมากเกิน (relative stenosis) ความดังจึงบอก gradient ไม่ใช่ขนาดรู",
+        "generates": [
+          "ASD: murmur ไม่ได้มาจากรู แต่เป็น SEM ของ relative PS ที่ pulmonic area ± diastolic rumble ของ relative TS",
+          "Small VSD ดังกว่า large VSD",
+          "Large VSD ที่ pressure เท่ากันสองข้าง murmur เบาลงหรือหาย",
+          "TOF: murmur เป็นของ RVOT obstruction ไม่ใช่ของ VSD",
+          "Continuous machinery murmur = gradient ตลอด cycle (PDA)",
+          "Large L→R shunt: mid-diastolic rumble จาก relative MS (VSD/PDA) หรือ relative TS (ASD)"
+        ],
+        "sourceIds": ["sp-asd", "sp-vsd", "sp-pda", "sp-tof"]
+      },
+      {
+        "id": "tof-balance",
+        "rule": "TOF มี VSD ใหญ่ที่ทำให้ความดัน RV = LV ทิศทาง shunt จึงขึ้นกับว่าทางออกไหนต้านน้อยกว่า: RVOT obstruction เทียบกับ SVR — อะไรที่เพิ่มแรงต้าน RVOT หรือลด SVR จะดันเลือดดำออก aorta มากขึ้น (spell) การรักษาจึงทำตรงข้าม: ↑SVR, คลาย infundibulum, เพิ่ม preload, ลด hyperpnea",
+        "generates": [
+          "RVOT ตีบน้อย = pink TOF · ตีบมาก = เขียว · ตีบสุด = TOF with pulmonary atresia",
+          "Spell trigger: ร้องไห้/ปวด/ไข้/ขาดน้ำ/vasodilation",
+          "Knee-chest/squatting เพิ่ม SVR",
+          "Fluid bolus, β-blocker (คลาย spasm, ช้าลงให้ RV เติมเลือด), phenylephrine (↑SVR), morphine (ลด hyperpnea)",
+          "ห้าม inotrope/β-agonist ใน spell",
+          "Spell คือ indication เร่ง repair"
+        ],
+        "sourceIds": ["sp-tof", "wikem-tof"]
+      },
+      {
+        "id": "hf-syndrome",
+        "rule": "HF ในเด็กเป็นกลุ่มอาการ ไม่ใช่การวินิจฉัยสุดท้าย ต้องหาสาเหตุเสมอและอายุที่เริ่มมีอาการคือ clue ที่ดีที่สุด ทารกแสดง HF ผ่านการดูดนม (คือการออกกำลังกายของทารก) และการโต ไม่ใช่ JVP/ขาบวม ยาแบ่งตามเป้า: ลด preload, ลด afterload, เพิ่ม contractility และ β-blocker ใช้เฉพาะ chronic",
+        "generates": [
+          "ทารก HF: ดูดนมเหนื่อย เหงื่อออก ดูดนาน growth failure หายใจเร็ว",
+          "Cardinal signs ทารก '2 เร็ว 2 โต': tachycardia, tachypnea, hepatomegaly, cardiomegaly",
+          "ทารกไม่มี distended neck vein และ ankle edema ให้เห็น",
+          "Modified Ross: growth failure แยก class III จาก II · อาการขณะพัก = IV",
+          "Furosemide ลด preload · ACEI ลด afterload (ดีใน L→R shunt, AR/MR) · digoxin เพิ่ม contractility",
+          "β-blocker ใช้ใน chronic HF (stage C/D) ห้ามเริ่มตอน acute decompensation",
+          "Echo โครงสร้างปกติ → ไล่ SVT, heart block, anemia, sepsis, thyroid ก่อนสรุป cardiomyopathy"
+        ],
+        "sourceIds": ["das-phf-2018"]
+      },
+      {
+        "id": "ekg-age",
+        "rule": "ในครรภ์ RV เป็นตัวสูบหลัก ทารกแรกเกิดจึงมี RV dominance (RAD และ R สูงใน V1 เป็นปกติ) แล้วค่อยหมุนเป็น LV dominance EKG เด็กต้องอ่านเทียบอายุเสมอ และสิ่งที่ 'ผิดจากที่ควรเห็นตามอายุ' คือ clue แรง",
+        "generates": [
+          "RAD ใน newborn ปกติ · RAD ในเด็กโตคิด RVH (ASD, TOF, PS)",
+          "Left superior axis ในทารกเขียว = tricuspid atresia · ใน Down syndrome = AVSD",
+          "T V1 หัวตั้งช่วงอายุ ~7 วัน – 7 ปี = RVH",
+          "Narrow QRS tachycardia ที่ rate คงที่ ไม่มี P (ทารกมัก ≥ 220) = SVT ไม่ใช่ sinus tachycardia",
+          "AV dissociation = complete heart block"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-ta", "sp-tof", "aha-pals-2020"]
+      }
+    ],
+    "winConditions": [
+      "จัดเด็กเข้าช่อง 'เขียว × PBF' ได้จากข้างเตียง + CXR ก่อนส่ง echo",
+      "จับ ductal-dependent lesion ได้แล้วให้ PGE1 ทันทีโดยไม่รอ echo",
+      "แปล S2 + murmur ถูกว่ามาจาก gradient อะไร (ASD relative PS, small VSD ดัง, spell murmur เบา)",
+      "เขียนวินิจฉัย HF พร้อมสาเหตุเสมอ โดยใช้อายุที่เริ่มอาการเป็นตัวชี้"
+    ],
+    "loseConditions": [
+      "ให้ ibuprofen/indomethacin หรือรอ echo ในทารก shock สัปดาห์แรก",
+      "ให้ inotrope/β-agonist ใน TOF spell",
+      "ตัด HF ในทารกเพราะไม่มี JVP หรือขาบวม",
+      "จำกัดน้ำในทารก HF หรือเริ่ม β-blocker ตอน acute decompensation",
+      "ให้ตัวเลข digoxin ในสไลด์ (TDD) เป็นขนาดต่อวัน"
+    ],
+    "errata": [
+      {
+        "id": "e-asd-murmur",
+        "text": "Murmur ของ ASD ไม่ได้เกิดจากเลือดไหลผ่านรู เพราะ LA กับ RA ความดันต่างกันน้อยมาก แต่เป็น SEM ที่ pulmonic area จากเลือดปริมาณมากผ่าน pulmonic valve ปกติ (relative PS) ร่วมกับ wide fixed split S2",
+        "breaksRule": "murmur-gradient",
+        "sourceIds": ["sp-asd"]
+      },
+      {
+        "id": "e-small-vsd-loud",
+        "text": "VSD รูเล็ก murmur ดังและหยาบกว่ารูใหญ่ (gradient สูง) ส่วนรูใหญ่ murmur เบาลง และถ้า PVR สูงจนเกิด Eisenmenger murmur อาจหายไปเหลือ P2 ดัง",
+        "breaksRule": "murmur-gradient",
+        "sourceIds": ["sp-vsd"]
+      },
+      {
+        "id": "e-spell-murmur-softer",
+        "text": "ระหว่าง TOF spell murmur เบาลง (ไม่ใช่ดังขึ้น) เพราะ RVOT บีบแคบจนเลือดผ่านน้อยลง",
+        "breaksRule": "tof-balance",
+        "sourceIds": ["sp-tof"]
+      },
+      {
+        "id": "e-asd-compliance",
+        "text": "ASD ไม่ได้โตตามนาฬิกา PVR แบบ VSD/PDA: shunt ระดับ atrium ขึ้นกับ RV compliance เด็กส่วนใหญ่จึงไม่มีอาการและมักตรวจเจอ murmur ตอนตรวจสุขภาพหรือจนโต",
+        "breaksRule": "pvr-clock",
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-asd"]
+      },
+      {
+        "id": "e-eisenmenger",
+        "text": "L→R shunt ใหญ่ที่ปล่อยไว้นานทำให้ pulmonary vasculature remodel จน PVR สูงเกิน SVR shunt กลับเป็น R→L เขียว (Eisenmenger) และ irreversible PAH เป็นข้อห้ามของการปิดรู",
+        "breaksRule": "pvr-clock",
+        "sourceIds": ["sp-vsd", "sp-asd"]
+      },
+      {
+        "id": "e-pink-tof",
+        "text": "TOF ไม่ได้เขียวทุกราย: RVOT ตีบน้อย (pink TOF) ไม่เขียวและอาจมี HF แบบ large VSD เมื่อ PVR ลด แล้วค่อยเขียวและมี spell เมื่อ RVOT หนาขึ้นตามเวลา",
+        "breaksRule": "pbf-map",
+        "sourceIds": ["sp-tof"]
+      },
+      {
+        "id": "e-anemia-cyanosis",
+        "text": "คำถาม 'เขียวไหม' อาจหลอก: cyanosis มองเห็นเมื่อ deoxyhemoglobin ถึงราว 5 g/dL ซึ่งเป็น 'ปริมาณ' ไม่ใช่ % เด็ก anemia จึงดูไม่เขียวทั้งที่ desaturate และเด็ก polycythemia เขียวให้เห็นเร็ว — ใช้ SpO2 ไม่ใช่ตา",
+        "breaksRule": "pbf-map",
+        "sourceIds": ["sp-cyanosis"]
+      },
+      {
+        "id": "e-reverse-differential",
+        "text": "SpO2 เท้าต่ำกว่ามือขวา = เลือดดำผ่าน PDA ลงท่อนล่าง (critical COA, PPHN) แต่ใน D-TGA ที่มี PDA และ PVR สูง จะกลับกัน (reverse differential cyanosis: เท้าแดงกว่ามือ) เพราะเลือดแดงจาก PA ไหลผ่าน PDA ลง descending aorta",
+        "breaksRule": "ductal-dependence",
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-tga"]
+      },
+      {
+        "id": "e-coa-infant-rvh",
+        "text": "COA ในเด็กโตเป็น LV pressure load (LVH) แต่ใน newborn/infant ที่มี HF EKG มักเป็น RVH เพราะช่วงนั้น RV สูบเลือดผ่าน PDA ไปเลี้ยง descending aorta",
+        "breaksRule": "load-chamber",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "e-o2-shunt",
+        "text": "O2 เป็น pulmonary vasodilator: ใน large L→R shunt การให้ O2 สูงแบบ routine จะลด PVR ให้ shunt ไหลไปปอดมากขึ้น ให้ O2 เมื่อมี hypoxemia เท่านั้น",
+        "breaksRule": "hf-syndrome",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "e-no-fluid-restrict-infant",
+        "text": "Salt/fluid restriction ใช้ในเด็กโตเท่านั้น ทารก HF ต้องการพลังงานสูงกว่าปกติ ห้ามจำกัดน้ำ ให้เพิ่ม caloric density / NG feeding แทน",
+        "breaksRule": "hf-syndrome",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "e-digoxin-tdd",
+        "text": "ตัวเลข digoxin 30–40 mcg/kg ในสไลด์คือ total digitalizing dose (ให้รวมใน 24 ชม. แบบ ½ → ¼ → ¼) ไม่ใช่ขนาดต่อวัน · maintenance เริ่มที่ 25% ของ TDD ต่อวัน แบ่ง BID และ hypokalemia เพิ่มพิษ",
+        "breaksRule": "hf-syndrome",
+        "sourceIds": ["msd-digoxin-peds"]
+      },
+      {
+        "id": "e-newborn-rad",
+        "text": "RAD และ R สูงใน V1 ในทารกแรกเกิดเป็นปกติ (RV dominance) ห้ามแปลว่า RVH จนกว่าจะเทียบเกณฑ์ตามอายุ ตรงข้ามกับ T V1 หัวตั้งช่วง 7 วัน – 7 ปี ซึ่งผิดปกติ",
+        "breaksRule": "ekg-age",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "e-adenosine-diagnostic",
+        "text": "Adenosine เป็นทั้งยาและเครื่องมือวินิจฉัย: re-entry ที่ใช้ AV node หยุดทันที แต่ atrial flutter/atrial tachycardia จะช้าลงชั่วครู่เผยให้เห็น flutter wave แล้วกลับมาเร็ว — ต้อง record rhythm strip ตอนฉีด",
+        "breaksRule": "ekg-age",
+        "ruleOfThumb": true
+      }
+    ],
+    "track": [
+      {
+        "id": "clock-birth",
+        "name": "แรกเกิด – ไม่กี่วัน: เขียวตั้งแต่เกิด",
+        "hint": "PDA ยังเปิด · แยกปอดกับหัวใจด้วย hyperoxia test/SpO2 pre-post",
+        "cardIds": ["d-tga", "pa-ivs-critical-ps", "tricuspid-atresia", "tapvr", "pphn"]
+      },
+      {
+        "id": "clock-week1",
+        "name": "สัปดาห์ 1–2: PDA ปิด → shock",
+        "hint": "Ductal-dependent systemic flow · PGE1 ทันที",
+        "cardIds": ["coa-critical-neonate"]
+      },
+      {
+        "id": "clock-pvr",
+        "name": "หลายสัปดาห์ (เลคเชอร์ 6–8 wk): PVR ต่ำ → HF",
+        "hint": "Large L→R shunt ไหลเต็มที่ · ดูดนมเหนื่อย โตช้า",
+        "cardIds": ["vsd-large", "pda", "avsd", "truncus"]
+      },
+      {
+        "id": "clock-2mo",
+        "name": "ราว 2 เดือน: PA pressure ตก → LV ischemia",
+        "hint": "HF ไม่มี murmur ชัด · infarct pattern ใน lateral leads",
+        "cardIds": ["alcapa"]
+      },
+      {
+        "id": "clock-infancy",
+        "name": "ขวบปีแรก: RVOT หนาขึ้น",
+        "hint": "เขียวมากขึ้นตามอายุ · spell มักเช้าหลังตื่น ร้อง ถ่าย ดูดนม",
+        "cardIds": ["tof", "hypercyanotic-spell"]
+      },
+      {
+        "id": "clock-any",
+        "name": "ทุกอายุ: ไม่ผูกกับ transition",
+        "hint": "Echo โครงสร้างปกติแต่ HF → rhythm, กล้ามเนื้อ, high output",
+        "cardIds": ["svt", "complete-heart-block", "myocarditis-dcm", "high-output-anemia"]
+      },
+      {
+        "id": "clock-checkup",
+        "name": "ตรวจสุขภาพ / เด็กโต: murmur หรือ HT ที่ตรวจเจอ",
+        "hint": "ไม่มีอาการ โตดี",
+        "cardIds": ["asd-secundum", "vsd-small", "pulmonary-stenosis", "coa-older-child", "innocent-murmur"]
+      },
+      {
+        "id": "clock-late",
+        "name": "วัยรุ่น – ผู้ใหญ่: shunt ที่ปล่อยไว้",
+        "hint": "PVR สูงถาวร shunt กลับทิศ",
+        "cardIds": ["eisenmenger"]
+      }
+    ],
+    "classification": [
+      {
+        "id": "side-acyanotic",
+        "name": "Acyanotic · SpO2 ปกติ",
+        "hint": "แยกต่อด้วย CXR: ปอดขาว = shunt · ปอดปกติ = ทางออกตีบ",
+        "groups": [
+          {
+            "id": "acy-shunt",
+            "name": "↑PBF · L→R shunt (volume load)",
+            "hint": "ห้องที่โตขึ้นกับ phase ของ shunt",
+            "cardIds": ["asd-secundum", "vsd-small", "vsd-large", "pda", "avsd"]
+          },
+          {
+            "id": "acy-obstruction",
+            "name": "PBF ปกติ · ทางออกตีบ (pressure load)",
+            "hint": "ตีบขวา = PS · ตีบซ้าย = COA",
+            "cardIds": ["pulmonary-stenosis", "coa-critical-neonate", "coa-older-child"]
+          }
+        ]
+      },
+      {
+        "id": "side-cyanotic",
+        "name": "Cyanotic · central cyanosis",
+        "hint": "แยกต่อด้วย CXR: ปอดดำ = อุดฝั่งขวา · ปอดขาว = mixing",
+        "groups": [
+          {
+            "id": "cy-low-pbf",
+            "name": "↓PBF · right-sided obstruction",
+            "hint": "Single S2, quiet precordium",
+            "cardIds": ["tof", "hypercyanotic-spell", "tricuspid-atresia", "pa-ivs-critical-ps"]
+          },
+          {
+            "id": "cy-mixing",
+            "name": "↑PBF · mixing / circulation ขนาน (3T 2C)",
+            "hint": "Active precordium, cardiomegaly",
+            "cardIds": ["d-tga", "tapvr", "truncus"]
+          },
+          {
+            "id": "cy-high-pvr",
+            "name": "R→L เพราะ PVR สูง",
+            "hint": "หัวใจอาจปกติ (PPHN) หรือ shunt เดิมกลับทิศ",
+            "cardIds": ["pphn", "eisenmenger"]
+          }
+        ]
+      },
+      {
+        "id": "side-other",
+        "name": "ไม่ใช่ shunt/ตีบ · หัวใจโครงสร้างปกติหรือ HF จากเหตุอื่น",
+        "hint": "Echo ไม่พบ shunt → ไล่ rhythm, coronary, กล้ามเนื้อ, demand",
+        "groups": [
+          {
+            "id": "other-innocent",
+            "name": "เสียงฟู่ปกติ",
+            "hint": "ไม่มีอาการ S2 ปกติ ไม่มี thrill",
+            "cardIds": ["innocent-murmur"]
+          },
+          {
+            "id": "other-pump",
+            "name": "HF จาก coronary · กล้ามเนื้อ · high output",
+            "hint": "หาด้วย EKG, troponin, CBC",
+            "cardIds": ["alcapa", "myocarditis-dcm", "high-output-anemia"]
+          },
+          {
+            "id": "other-rhythm",
+            "name": "Rhythm",
+            "hint": "HR เร็วคงที่หรือช้ามาก",
+            "cardIds": ["svt", "complete-heart-block"]
+          }
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "asd-secundum",
+      "name": "Atrial septal defect (secundum)",
+      "who": "เด็กไม่มีอาการ มาด้วย murmur ตอนตรวจสุขภาพ · ASD ชนิดพบบ่อยที่สุด",
+      "trigger": {
+        "ruleId": "load-chamber",
+        "text": "Shunt L→R ระดับ atrium ช่วง diastole แล้วไหลลง RV → RA + RV รับ volume load ส่วนฝั่งซ้ายไม่ได้รับภาระเพิ่ม"
+      },
+      "signature": "Wide fixed split S2 + soft SEM ที่ pulmonic area (relative PS) · EKG RAD + incomplete RBBB (rSR' V1)",
+      "lookAlikes": ["pulmonary-stenosis", "innocent-murmur", "vsd-small"],
+      "tells": [
+        { "vs": "pulmonary-stenosis", "feature": "ASD S2 แยกกว้างและนิ่ง (fixed) ส่วน PS แยกกว้างแต่ยังขยับตามการหายใจ และมี ejection click" },
+        { "vs": "innocent-murmur", "feature": "S2 ผิดปกติ (wide fixed split) = ไม่ใช่ innocent murmur ต้องส่ง echo" },
+        { "vs": "vsd-small", "feature": "ASD เป็น SEM เบาที่ pulmonic area ส่วน small VSD เป็น pansystolic murmur ดังที่ LLSB และ S2 ปกติ" }
+      ],
+      "counter": "รูเล็กไม่มีอาการ F/U echo · รูที่ไม่ปิดเองและ shunt สำคัญ (Qp/Qs > 1.5) → device closure (secundum เท่านั้น) หรือ surgical patch (primum, sinus venosus, coronary sinus)",
+      "danger": "ปล่อยรูใหญ่ไว้ → atrial arrhythmia, pulmonary hypertension, right HF, paradoxical embolism/stroke, Eisenmenger",
+      "memorize": [
+        {
+          "id": "asd-closure-size",
+          "prompt": "ASD ขนาดเท่าไรมักปิดเองในขวบปีแรก และขนาดเท่าไรมักต้องปิด?",
+          "fact": "< 5 mm มักปิดเองในขวบปีแรก · > 1 cm มักต้อง intervention",
+          "sourceId": "sp-asd"
+        },
+        {
+          "id": "asd-device-only-secundum",
+          "prompt": "ASD ชนิดไหนปิดด้วย percutaneous device ได้?",
+          "fact": "Ostium secundum เท่านั้น · primum, sinus venosus, coronary sinus ต้องผ่าตัด · ห้าม device เมื่อมี advanced pulmonary hypertension",
+          "sourceId": "sp-asd"
+        }
+      ],
+      "sourceIds": ["sp-asd"]
+    },
+    {
+      "id": "vsd-small",
+      "name": "Small (restrictive) VSD",
+      "who": "เด็กโตดี ไม่มีอาการ ตรวจพบ murmur ดัง",
+      "trigger": {
+        "ruleId": "murmur-gradient",
+        "text": "รูเล็กจำกัด flow ได้เอง แต่ความดัน LV กับ RV ต่างกันมาก เลือดพุ่งแรงผ่านรูแคบ → murmur ดัง"
+      },
+      "signature": "Pansystolic murmur หยาบดังที่ LLSB (อาจมี thrill) แต่ CXR และ EKG ปกติ เด็กไม่มีอาการ",
+      "lookAlikes": ["vsd-large", "asd-secundum", "innocent-murmur"],
+      "tells": [
+        { "vs": "vsd-large", "feature": "Small VSD ดังกว่าแต่ไม่มีอาการ CXR/EKG ปกติ · large VSD murmur เบากว่า มี HF, apical rumble, LA/LV โต" },
+        { "vs": "asd-secundum", "feature": "Small VSD เป็น pansystolic ที่ LLSB และ S2 ปกติ · ASD เป็น SEM ที่ pulmonic area กับ fixed split S2" },
+        { "vs": "innocent-murmur", "feature": "Pansystolic หยาบหรือมี thrill = pathologic ไม่ใช่ innocent (innocent เบา grade I–II, vibratory, ไม่มี thrill)" }
+      ],
+      "counter": "Reassure, ไม่จำกัดกิจกรรม, F/U เป็นระยะ · ส่วนใหญ่ปิดเอง · outlet/perimembranous ให้ F/U หา aortic regurgitation",
+      "danger": "Aortic valve prolapse/AR (outlet และ perimembranous) และ endocarditis",
+      "memorize": [
+        {
+          "id": "vsd-small-closure",
+          "prompt": "Small isolated VSD ปิดเองได้ราวกี่ % ภายในขวบปีแรก?",
+          "fact": "ประมาณ 85–90%",
+          "sourceId": "sp-vsd"
+        },
+        {
+          "id": "vsd-types",
+          "prompt": "VSD แต่ละชนิดพบราวกี่ % (perimembranous, muscular, outlet, inlet)?",
+          "fact": "Perimembranous ~80% (พบบ่อยสุด) · muscular ถึง 20% ในทารก (ปิดเองบ่อย) · outlet/supracristal ~6% แต่ ~30% ในคนเอเชีย (ปิดเองยาก, AR) · inlet ~8% สัมพันธ์กับ trisomy 21",
+          "sourceId": "sp-vsd"
+        }
+      ],
+      "sourceIds": ["sp-vsd"]
+    },
+    {
+      "id": "vsd-large",
+      "name": "Large VSD",
+      "who": "ทารกอายุหลายสัปดาห์ ดูดนมเหนื่อย เหงื่อออก น้ำหนักไม่ขึ้น",
+      "trigger": {
+        "ruleId": "pvr-clock",
+        "text": "Shunt L→R ช่วง systole ขึ้นกับ PVR/SVR พอ PVR ลดลงในหลายสัปดาห์แรก เลือดเกินไปปอดแล้วกลับ LA → LV → HF"
+      },
+      "signature": "PSM ที่ LLSB + apical mid-diastolic rumble (relative MS) + S3 · CXR cardiomegaly (LA + LV), ↑PBF · EKG LVH → CVH ถ้าเริ่มมี pulmonary hypertension",
+      "lookAlikes": ["vsd-small", "pda", "avsd", "eisenmenger"],
+      "tells": [
+        { "vs": "vsd-small", "feature": "Large VSD มี HF, apical rumble, หัวใจโต แม้ murmur จะเบากว่า" },
+        { "vs": "pda", "feature": "VSD เป็น PSM ที่ LLSB · PDA เป็น continuous machinery ใต้ไหปลาร้าซ้าย + bounding pulse" },
+        { "vs": "avsd", "feature": "AVSD มัก Down syndrome และ EKG superior axis · VSD ทั่วไป axis ปกติ" },
+        { "vs": "eisenmenger", "feature": "Eisenmenger เขียว murmur หาย P2 ดัง EKG pure RVH และหัวใจไม่โต" }
+      ],
+      "counter": "Diuretic + afterload reducer (ACEI) ± digoxin, high-calorie feeding · failed medical/FTT หรือ Qp/Qs > 1.5 → surgical closure ก่อนเกิด irreversible PAH (muscular อาจใช้ device)",
+      "danger": "Irreversible pulmonary vascular disease → Eisenmenger (ราว 10–15% ของ VSD) ซึ่งเป็นข้อห้ามปิดรู",
+      "memorize": [
+        {
+          "id": "vsd-eisenmenger-rate",
+          "prompt": "Eisenmenger เกิดในผู้ป่วย VSD ราวกี่ %?",
+          "fact": "ประมาณ 10–15%",
+          "sourceId": "sp-vsd"
+        }
+      ],
+      "sourceIds": ["sp-vsd"]
+    },
+    {
+      "id": "pda",
+      "name": "Patent ductus arteriosus (PDA)",
+      "who": "Preterm (ยิ่ง GA น้อยยิ่งพบ, < 1000 g เสี่ยงสุด) · congenital rubella",
+      "trigger": {
+        "ruleId": "load-chamber",
+        "text": "Aorta ความดันสูงกว่า PA ทั้ง systole และ diastole จึง shunt ตลอด cycle → เลือดเกินไปปอดกลับ LA → LV (left volume load) และเลือดหนีจาก aorta ช่วง diastole"
+      },
+      "signature": "Continuous machinery murmur ใต้ไหปลาร้าซ้าย + bounding pulse + wide pulse pressure · echo เห็น LA/LV โต",
+      "lookAlikes": ["vsd-large", "innocent-murmur", "coa-critical-neonate"],
+      "tells": [
+        { "vs": "vsd-large", "feature": "PDA เป็น continuous (ข้าม S2) และ pulse bounding · VSD เป็น pansystolic ที่ LLSB" },
+        { "vs": "innocent-murmur", "feature": "Venous hum ก็ continuous แต่หายเมื่อนอนราบหรือกดคอ และ pulse ไม่ bounding" },
+        { "vs": "coa-critical-neonate", "feature": "ใน critical COA PDA คือทางรอด ห้ามปิด — ต้องแยกก่อนให้ ibuprofen ด้วย BP/SpO2 4 แขนขาและ echo" }
+      ],
+      "counter": "Preterm ที่มีอาการ: COX inhibitor — ibuprofen IV 10 → 5 → 5 mg/kg ห่าง 24 ชม. หรือ indomethacin, หรือ acetaminophen · ไม่สำเร็จ/ห้ามยา → device หรือ ligation · term ที่ไม่ปิด → device/ligation",
+      "danger": "Pulmonary edema/hemorrhage, NEC, IVH, renal failure, BPD จาก diastolic steal · ยา COX inhibitor: AKI, GI bleeding/NEC, เลือดออก",
+      "memorize": [
+        {
+          "id": "pda-ibuprofen-dose",
+          "prompt": "Ibuprofen IV ปิด PDA ใน preterm ให้อย่างไร?",
+          "fact": "Loading 10 mg/kg แล้ว 5 mg/kg อีก 2 dose ห่างกัน 24 ชม.",
+          "sourceId": "jppt-pda-2023"
+        },
+        {
+          "id": "pda-indomethacin-dose",
+          "prompt": "Indomethacin IV ปิด PDA ให้อย่างไร?",
+          "fact": "0.2 mg/kg แล้วอีก 2 dose ห่าง 12–24 ชม. ตามอายุหลังเกิด: 0.1 (< 48 ชม.) / 0.2 (48 ชม.–7 วัน) / 0.25 mg/kg (> 7 วัน)",
+          "sourceId": "jppt-pda-2023"
+        },
+        {
+          "id": "pda-cox-efficacy",
+          "prompt": "Indomethacin กับ ibuprofen ปิด PDA ได้ราวกี่ %?",
+          "fact": "ใกล้เคียงกัน ประมาณ 66–70% · paracetamol IV 15 mg/kg q6h เป็นทางเลือก (ติดตาม LFT)",
+          "sourceId": "sp-pda"
+        }
+      ],
+      "sourceIds": ["sp-pda", "jppt-pda-2023"]
+    },
+    {
+      "id": "avsd",
+      "name": "Atrioventricular septal defect (AVSD, endocardial cushion defect)",
+      "who": "ทารก Down syndrome · มี HF เมื่อ PVR ลด",
+      "trigger": {
+        "ruleId": "ekg-age",
+        "text": "Endocardial cushion ไม่เชื่อม → primum ASD + inlet VSD + AV valve ร่วม · conduction system ถูกดันลง ทำให้ QRS axis ชี้ขึ้นบน"
+      },
+      "signature": "Down syndrome + HF + EKG superior (left) axis · ostium primum ASD เป็นส่วนหนึ่งของ spectrum นี้",
+      "lookAlikes": ["vsd-large", "tricuspid-atresia"],
+      "tells": [
+        { "vs": "vsd-large", "feature": "Superior axis ในทารกที่ควรเป็น RAD + Down syndrome = AVSD" },
+        { "vs": "tricuspid-atresia", "feature": "Superior axis ทั้งคู่ แต่ tricuspid atresia เขียวและปอดดำ ส่วน AVSD ไม่เขียวและปอดขาว" }
+      ],
+      "counter": "Anti-HF drugs ระหว่างรอ · surgical repair (patch + AV valve/mitral cleft repair) ช่วงทารก",
+      "danger": "Pulmonary vascular disease เร็ว (โดยเฉพาะ Down) และ AV valve regurgitation",
+      "memorize": [],
+      "sourceIds": ["sp-asd", "sp-vsd"]
+    },
+    {
+      "id": "pulmonary-stenosis",
+      "name": "Pulmonary (valve) stenosis",
+      "who": "ส่วนใหญ่ไม่มีอาการ มาด้วย murmur · ที่รุนแรงมี dyspnea on exertion · critical PS ในทารกเขียว",
+      "trigger": {
+        "ruleId": "load-chamber",
+        "text": "ลิ้น pulmonic เชื่อมติดเป็นโดม RV ต้องบีบแรง (pressure load) → RVH · ลิ้นที่สะบัดเปิดให้ ejection click"
+      },
+      "signature": "SEM ที่ LUSB + pulmonary ejection click (ยิ่งรุนแรงยิ่งชิด S1 จนหาย) + wide split S2 ที่ยังขยับตามการหายใจ · RV heave · EKG RAD/RVH · CXR post-stenotic dilatation ของ pulmonary trunk, PBF ปกติ",
+      "lookAlikes": ["asd-secundum", "tof", "pa-ivs-critical-ps"],
+      "tells": [
+        { "vs": "asd-secundum", "feature": "PS มี ejection click และ S2 ยังขยับตามการหายใจ · ASD fixed split ไม่มี click" },
+        { "vs": "tof", "feature": "PS ไม่มี VSD จึงไม่เขียว (ยกเว้น critical PS ในทารก) · TOF เขียว single S2 boot-shaped ปอดดำ" },
+        { "vs": "pa-ivs-critical-ps", "feature": "Isolated PS เด็กโตไม่เขียว PBF ปกติ · critical PS ทารกเขียวผ่าน PFO และต้องพึ่ง PDA" }
+      ],
+      "counter": "Mild F/U · moderate–severe → balloon valvuloplasty (treatment of choice สำหรับ valvar PS) · critical PS ทารก → PGE1 แล้ว balloon",
+      "danger": "RV failure, exertional syncope ใน severe PS",
+      "memorize": [
+        {
+          "id": "ps-severity",
+          "prompt": "แบ่งความรุนแรง PS ตาม peak gradient อย่างไร?",
+          "fact": "Mild < 36 mmHg · moderate 36–64 mmHg · severe > 64 mmHg · critical = ทารกที่ flow ผ่านลิ้นไม่พอ ต้องใช้ PGE1",
+          "sourceId": "sp-ps"
+        }
+      ],
+      "sourceIds": ["sp-ps"]
+    },
+    {
+      "id": "coa-critical-neonate",
+      "name": "Critical coarctation of the aorta (newborn)",
+      "who": "ทารกอายุ 1–2 สัปดาห์แรก ซึม ตัวเย็นลาย shock",
+      "trigger": {
+        "ruleId": "ductal-dependence",
+        "text": "ท่อนล่างของร่างกายรับเลือดจาก PA ผ่าน PDA ลง descending aorta พอ PDA ปิด afterload ของ LV พุ่งขึ้นทันที → LV dysfunction + shock"
+      },
+      "signature": "Shock ในสัปดาห์แรก + femoral pulse เบา/คลำไม่ได้ + BP แขนขวา > ขา + SpO2 เท้าต่ำกว่ามือขวา (differential cyanosis) ขณะ PDA ยังเปิด",
+      "lookAlikes": ["pphn", "myocarditis-dcm", "coa-older-child"],
+      "tells": [
+        { "vs": "pphn", "feature": "Differential cyanosis ทั้งคู่ แต่ COA มี femoral pulse หาย/BP ขาต่ำ และ shock ตอน PDA ปิด · PPHN เป็นตั้งแต่แรกเกิด pulse 4 แขนขาเท่ากัน" },
+        { "vs": "myocarditis-dcm", "feature": "Pulse และ BP ที่ขาต่ำกว่าแขน = ตีบที่ aorta ไม่ใช่กล้ามเนื้อบีบไม่ดี" },
+        { "vs": "coa-older-child", "feature": "Newborn มาด้วย shock เมื่อ PDA ปิด · เด็กโตมาด้วย HT ที่แขนหรือ murmur" }
+      ],
+      "counter": "PGE1 (alprostadil) IV drip ทันทีไม่ต้องรอ echo + เตรียม airway (apnea) + resuscitation → surgical repair",
+      "danger": "Cardiogenic shock และเสียชีวิตเมื่อ PDA ปิด · apnea จาก PGE1",
+      "memorize": [
+        {
+          "id": "pge1-dose",
+          "prompt": "PGE1 (alprostadil) เริ่มขนาดเท่าไร และผลข้างเคียงสำคัญ?",
+          "fact": "เริ่ม 0.05 mcg/kg/min IV แล้ว titrate ถึง 0.1 mcg/kg/min · apnea, hypotension, bradycardia, seizure — เตรียม airway",
+          "sourceId": "wikem-tof"
+        },
+        {
+          "id": "coa-shock-timing",
+          "prompt": "Critical COA ใน newborn มักมาด้วย shock ช่วงอายุเท่าไร?",
+          "fact": "ภายใน 1–2 สัปดาห์แรก (เมื่อ ductus ปิด) · pulse oximetry screening อาจไม่เจอ",
+          "sourceId": "sp-coa"
+        }
+      ],
+      "sourceIds": ["sp-coa", "wikem-tof"]
+    },
+    {
+      "id": "coa-older-child",
+      "name": "Coarctation of the aorta (เด็กโต)",
+      "who": "เด็กโต/วัยรุ่น hypertension ที่แขน หรือ murmur ที่ตรวจเจอ · Turner syndrome · bicuspid aortic valve",
+      "trigger": {
+        "ruleId": "load-chamber",
+        "text": "รอยคอดใกล้ ductus/ใต้ left subclavian → LV pressure load + HT ส่วนบน · collateral ผ่าน intercostal arteries"
+      },
+      "signature": "BP แขน > ขา (systolic ต่าง > 20 mmHg) + brachiofemoral delay + murmur ที่หลังระหว่าง scapula · CXR figure 3 sign + rib notching (ซี่ 3–8) · EKG LVH",
+      "lookAlikes": ["coa-critical-neonate", "pulmonary-stenosis"],
+      "tells": [
+        { "vs": "coa-critical-neonate", "feature": "เด็กโตมี collateral จึงไม่ shock มาด้วย HT/murmur และ rib notching" },
+        { "vs": "pulmonary-stenosis", "feature": "COA มี BP แขน > ขา, femoral pulse ช้า, EKG LVH · PS มี ejection click, RV heave, EKG RVH" }
+      ],
+      "counter": "Surgical repair (resection + end-to-end, subclavian flap, patch, interposition graft) หรือ balloon angioplasty/stent · recoarctation → balloon · ตรวจ karyotype ในเด็กหญิง",
+      "danger": "HT, LVH, aortic dissection, intracranial hemorrhage ในวัยผู้ใหญ่ถ้าไม่รักษา",
+      "memorize": [
+        {
+          "id": "coa-bp-gradient",
+          "prompt": "BP 4 แขนขา: systolic ต่างกันเท่าไรชวนคิด significant COA?",
+          "fact": "แขน > ขา มากกว่า 20 mmHg",
+          "sourceId": "sp-coa"
+        },
+        {
+          "id": "coa-bicuspid",
+          "prompt": "Bicuspid aortic valve พบร่วมกับ COA ราวกี่ %?",
+          "fact": "45–75% · Turner syndrome สัมพันธ์กับ COA (ตรวจ karyotype ในเด็กหญิงที่เป็น COA)",
+          "sourceId": "sp-coa"
+        }
+      ],
+      "sourceIds": ["sp-coa"]
+    },
+    {
+      "id": "tof",
+      "name": "Tetralogy of Fallot (TOF)",
+      "who": "Cyanotic CHD ที่พบบ่อยที่สุด · เขียวมากขึ้นตามอายุ · squatting ในเด็กที่เดินได้ · 22q11 deletion, trisomy 21",
+      "trigger": {
+        "ruleId": "tof-balance",
+        "text": "Infundibular (outlet) septum เบี้ยวไปข้างหน้าขึ้นบน → RVOT obstruction + large malaligned VSD + overriding aorta + RVH ตามมา"
+      },
+      "signature": "เขียว + quiet precordium + SEM ที่ LUSB (ของ RVOT) + single S2 · CXR หัวใจขนาดปกติ boot-shaped (apex เชิด + MPA segment เว้า) ปอดดำ · EKG RAD + RVH (T V1 หัวตั้ง)",
+      "lookAlikes": ["tricuspid-atresia", "d-tga", "pulmonary-stenosis", "pa-ivs-critical-ps"],
+      "tells": [
+        { "vs": "tricuspid-atresia", "feature": "TOF EKG RAD + RVH · tricuspid atresia left superior axis + LVH" },
+        { "vs": "d-tga", "feature": "TOF ปอดดำ หัวใจขนาดปกติ boot-shaped มี SEM · TGA ปอดขาว หัวใจโตรูปไข่ มักไม่มี murmur เขียวตั้งแต่วันแรก" },
+        { "vs": "pulmonary-stenosis", "feature": "TOF มี VSD ใหญ่จึงเขียวและ S2 single · isolated PS ไม่เขียว S2 split กว้าง" },
+        { "vs": "pa-ivs-critical-ps", "feature": "TOF ทั่วไปไม่ต้องพึ่ง PDA และเขียวค่อยเป็นค่อยไป · PA-IVS/critical PS เขียวจัดทันทีเมื่อ PDA ปิด" }
+      ],
+      "counter": "Total repair (VSD closure + ขยาย RVOT) ช่วงทารก · ยังซ่อมไม่ได้หรือเขียวจัด → modified Blalock-Taussig shunt (subclavian → PA) · neonate RVOTO รุนแรง → PGE1",
+      "danger": "Hypercyanotic spell, ชัก/เสียชีวิต · หลัง repair: pulmonary regurgitation → RV dilatation, ventricular arrhythmia (F/U ตลอดชีวิต)",
+      "memorize": [
+        {
+          "id": "tof-right-arch",
+          "prompt": "Right aortic arch พบใน TOF ราวกี่ %?",
+          "fact": "20–25%",
+          "sourceId": "sp-tof"
+        },
+        {
+          "id": "tof-share",
+          "prompt": "TOF คิดเป็นกี่ % ของ CHD ทั้งหมด?",
+          "fact": "5–7% (cyanotic CHD ที่พบบ่อยที่สุด)",
+          "sourceId": "sp-tof"
+        }
+      ],
+      "sourceIds": ["sp-tof"]
+    },
+    {
+      "id": "hypercyanotic-spell",
+      "name": "Hypercyanotic (tet / hypoxic) spell",
+      "who": "ทารก/เด็กเล็ก TOF ที่ยังไม่ผ่าตัด · มักเช้าหลังตื่น หลังร้องไห้ ถ่าย หรือดูดนม",
+      "trigger": {
+        "ruleId": "tof-balance",
+        "text": "Trigger เพิ่มแรงต้าน RVOT (infundibular spasm) หรือลด SVR → R→L ผ่าน VSD มากขึ้น → hypoxemia/acidosis → hyperpnea → venous return เพิ่ม → R→L ยิ่งมาก (vicious cycle)"
+      },
+      "signature": "Hyperpnea (หายใจเร็วลึก) + ร้องไม่หยุด + เขียวมากขึ้น + murmur เบาลง",
+      "lookAlikes": ["tof", "svt"],
+      "tells": [
+        { "vs": "tof", "feature": "TOF ปกติ murmur ยังดังคงที่ · ระหว่าง spell murmur เบาลงพร้อม hyperpnea และเขียวขึ้น" },
+        { "vs": "svt", "feature": "Spell เขียวขึ้นและหายใจลึก HR ไม่ได้คงที่ > 220 · SVT ไม่ได้ทำให้เขียวขึ้นแบบนี้และ EKG narrow QRS rate คงที่" }
+      ],
+      "counter": "ตามลำดับ: ปลอบ + knee-chest → O2 → morphine → IV fluid bolus → NaHCO3 ถ้า acidosis → β-blocker IV (propranolol/esmolol) → phenylephrine (↑SVR) → ketamine/GA + intubation → emergency shunt/repair · ห้าม inotrope",
+      "danger": "หมดสติ ชัก เสียชีวิต · inotrope/β-agonist ทำให้ infundibulum บีบแรงขึ้น",
+      "memorize": [
+        {
+          "id": "spell-morphine",
+          "prompt": "Tet spell: morphine ขนาดเท่าไร?",
+          "fact": "0.1–0.2 mg/kg IV หรือ IM (ลด hyperpnea, ระวัง respiratory depression)",
+          "sourceId": "wikem-tof"
+        },
+        {
+          "id": "spell-fluid-bicarb",
+          "prompt": "Tet spell: fluid bolus และ NaHCO3 ขนาดเท่าไร?",
+          "fact": "NS 10–20 mL/kg bolus · NaHCO3 1–2 mEq/kg IV ช้า ๆ",
+          "sourceId": "wikem-tof"
+        },
+        {
+          "id": "spell-beta-blocker",
+          "prompt": "Tet spell: propranolol และ esmolol IV ขนาดเท่าไร?",
+          "fact": "Propranolol 0.1–0.2 mg/kg IV ช้า ๆ ใน 5 นาที · esmolol 0.5 mg/kg ใน 1 นาที แล้ว 50 mcg/kg/min",
+          "sourceId": "wikem-tof"
+        },
+        {
+          "id": "spell-ketamine",
+          "prompt": "Tet spell: ทำไมเลือก ketamine และขนาด IV?",
+          "fact": "Sedate โดยไม่ลด SVR · 0.25–1 mg/kg IV (IM 3–5 mg/kg)",
+          "sourceId": "wikem-tof"
+        }
+      ],
+      "sourceIds": ["sp-tof", "wikem-tof"]
+    },
+    {
+      "id": "tricuspid-atresia",
+      "name": "Tricuspid atresia",
+      "who": "ทารกเขียว (ชนิดที่ PBF น้อย) · บางชนิดมี VSD ใหญ่ไม่มี PS จะไม่เขียวแต่ HF",
+      "trigger": {
+        "ruleId": "ekg-age",
+        "text": "ไม่มีลิ้น tricuspid เลือดจาก RA ต้องผ่าน ASD ไป LA → LV ทำงานแทน RV ที่เล็ก → EKG เป็น LV dominance ผิดอายุ"
+      },
+      "signature": "ทารกเขียว + ปอดดำ + EKG left superior axis (−30 ถึง −90) + LVH (RV forces ลดลง)",
+      "lookAlikes": ["tof", "pa-ivs-critical-ps", "avsd"],
+      "tells": [
+        { "vs": "tof", "feature": "Left superior axis + LVH = tricuspid atresia · TOF เป็น RAD + RVH" },
+        { "vs": "pa-ivs-critical-ps", "feature": "PA-IVS axis ปกติ + LVH (RV เล็ก) · tricuspid atresia เด่นที่ superior axis" },
+        { "vs": "avsd", "feature": "AVSD ไม่เขียว ปอดขาว มัก Down · tricuspid atresia เขียว ปอดดำ" }
+      ],
+      "counter": "PGE1 ถ้า PBF พึ่ง PDA → staged single-ventricle palliation (shunt → Glenn → Fontan)",
+      "danger": "เสียชีวิตสูงถ้าไม่ intervention ในขวบปีแรก",
+      "memorize": [
+        {
+          "id": "ta-axis",
+          "prompt": "Tricuspid atresia: QRS axis เท่าไร?",
+          "fact": "Left superior axis −30° ถึง −90° ร่วมกับ RV forces ลดลง ± LVH",
+          "sourceId": "sp-ta"
+        }
+      ],
+      "sourceIds": ["sp-ta"]
+    },
+    {
+      "id": "pa-ivs-critical-ps",
+      "name": "Ductal-dependent PBF: pulmonary atresia with intact septum / critical PS",
+      "who": "ทารกแรกเกิดเขียวจัดมากขึ้นเรื่อย ๆ เมื่อ PDA ปิดในวันแรก ๆ",
+      "trigger": {
+        "ruleId": "ductal-dependence",
+        "text": "ทางออก RV ตันหรือตีบมาก เลือดไปปอดได้ทาง PDA เท่านั้น เลือดดำจาก RA ลัดผ่าน PFO/ASD ไปซ้าย"
+      },
+      "signature": "เขียวจัดในวันแรก ๆ quiet precordium single S2 ไม่มี murmur หรือมีแค่ของ TR/PDA · ปอดดำ · EKG axis ปกติ + LVH (RV เล็ก)",
+      "lookAlikes": ["tof", "tricuspid-atresia", "d-tga", "pulmonary-stenosis"],
+      "tells": [
+        { "vs": "tof", "feature": "เขียวจัดทันทีเมื่อ PDA ปิดและ RV เล็ก (LVH) · TOF เขียวค่อยเป็นค่อยไป RVH" },
+        { "vs": "tricuspid-atresia", "feature": "PA-IVS axis ปกติ · tricuspid atresia left superior axis" },
+        { "vs": "d-tga", "feature": "ปอดดำ (↓PBF) · TGA ปอดขาว (↑PBF)" },
+        { "vs": "pulmonary-stenosis", "feature": "Critical = ทารกเขียวและต้องพึ่ง PDA · PS ทั่วไปไม่เขียว" }
+      ],
+      "counter": "PGE1 ทันที → balloon valvuloplasty (critical PS) หรือ shunt/single-ventricle pathway",
+      "danger": "Hypoxemia รุนแรงและเสียชีวิตเมื่อ PDA ปิด",
+      "memorize": [],
+      "sourceIds": ["sp-ps", "sp-tof"]
+    },
+    {
+      "id": "d-tga",
+      "name": "D-transposition of the great arteries (D-TGA)",
+      "who": "ทารกแรกเกิดเขียวตั้งแต่วันแรก (ภายใน 30 วันแรก) · cyanotic CHD ที่พบบ่อยในช่วงแรกเกิด",
+      "trigger": {
+        "ruleId": "pbf-map",
+        "text": "Aorta ออกจาก RV, PA ออกจาก LV → 2 วงจรขนาน รอดได้เมื่อมีทาง mixing (ASD/PFO, PDA, VSD)"
+      },
+      "signature": "เขียวจัดตั้งแต่เกิดที่ไม่ดีขึ้นด้วย O2 + single loud S2 (aorta อยู่หน้า) + ไม่มี murmur หรือ SEM เบา · CXR egg-on-a-string, cardiomegaly, ↑PBF",
+      "lookAlikes": ["tof", "pphn", "tapvr", "pa-ivs-critical-ps"],
+      "tells": [
+        { "vs": "tof", "feature": "TGA ปอดขาว หัวใจรูปไข่ เขียววันแรก · TOF ปอดดำ boot-shaped" },
+        { "vs": "pphn", "feature": "TGA PaO2 ไม่ขึ้นกับ O2 100% และอาจเป็น reverse differential cyanosis · PPHN มักมีโรคปอด/ปัจจัยเสี่ยงและ SpO2 มือขวาสูงกว่าเท้า" },
+        { "vs": "tapvr", "feature": "TAPVR S2 split กว้าง P2 ดัง (มักไม่ใช่ single S2) · TGA single S2" },
+        { "vs": "pa-ivs-critical-ps", "feature": "TGA ↑PBF · PA-IVS ↓PBF" }
+      ],
+      "counter": "PGE1 เพื่อ mixing ผ่าน PDA → balloon atrial septostomy (Rashkind) ถ้ายังเขียวมาก → arterial switch operation ในช่วงทารกแรกเกิด",
+      "danger": "Hypoxemia/acidosis และเสียชีวิตถ้า mixing ไม่พอ (intact ventricular septum)",
+      "memorize": [
+        {
+          "id": "tga-cxr",
+          "prompt": "D-TGA: CXR และ S2 เป็นอย่างไร?",
+          "fact": "Egg-on-a-string (mediastinum แคบ) · S2 single/ดัง จาก aorta อยู่ด้านหน้า",
+          "sourceId": "sp-tga"
+        }
+      ],
+      "sourceIds": ["sp-tga"]
+    },
+    {
+      "id": "tapvr",
+      "name": "Total anomalous pulmonary venous return (TAPVR)",
+      "who": "ทารกเขียว + หอบ ชนิด obstructed เป็น emergency",
+      "trigger": {
+        "ruleId": "pbf-map",
+        "text": "Pulmonary vein ทั้งหมดไปลงฝั่งขวา เลือดแดงผสมเลือดดำใน RA แล้วผ่าน ASD ไปซ้าย → เขียว + RV volume load + ↑PBF"
+      },
+      "signature": "เขียว + active precordium + S2 split กว้าง P2 ดัง · CXR ↑PBF (supracardiac: snowman sign) · EKG RAD + RVH (rSR')",
+      "lookAlikes": ["d-tga", "asd-secundum", "pphn"],
+      "tells": [
+        { "vs": "d-tga", "feature": "TAPVR S2 split กว้าง EKG RVH · TGA single S2 egg-on-a-string" },
+        { "vs": "asd-secundum", "feature": "EKG/S2 คล้าย ASD (RV volume load) แต่ TAPVR เขียวเพราะเลือดผสมทั้งหมดที่ RA" },
+        { "vs": "pphn", "feature": "Obstructed TAPVR ปอดดูเหมือน congestion และเขียวคล้าย PPHN — echo หา pulmonary vein ที่ไม่ลง LA" }
+      ],
+      "counter": "Surgical repair (เร่งด่วนในชนิด obstructed)",
+      "danger": "Obstructed TAPVR → pulmonary venous congestion รุนแรงและ hypoxemia",
+      "memorize": [],
+      "ruleOfThumb": true
+    },
+    {
+      "id": "truncus",
+      "name": "Truncus arteriosus",
+      "who": "ทารกเขียวเล็กน้อย + HF เมื่อ PVR ลด · 22q11 deletion",
+      "trigger": {
+        "ruleId": "pbf-map",
+        "text": "Great artery เส้นเดียวออกจากหัวใจคร่อม VSD จ่ายทั้ง systemic, coronary และ pulmonary → mixing + ↑PBF"
+      },
+      "signature": "Bounding pulse + active precordium + single loud S2 + to-and-fro murmur ถ้า truncal valve รั่ว · CXR cardiomegaly ↑PBF ± right aortic arch",
+      "lookAlikes": ["d-tga", "pda", "vsd-large"],
+      "tells": [
+        { "vs": "d-tga", "feature": "Truncus เขียวน้อยแต่ HF ชัด pulse bounding · TGA เขียวจัดตั้งแต่เกิด pulse ไม่ bounding" },
+        { "vs": "pda", "feature": "ทั้งคู่ bounding pulse แต่ truncus เขียวและ single S2" },
+        { "vs": "vsd-large", "feature": "Truncus เขียวและ S2 single · large VSD ไม่เขียว" }
+      ],
+      "counter": "Anti-HF drugs → surgical repair ช่วงทารก",
+      "danger": "HF และ pulmonary vascular disease เร็ว",
+      "memorize": [],
+      "ruleOfThumb": true
+    },
+    {
+      "id": "pphn",
+      "name": "Persistent pulmonary hypertension of the newborn (PPHN)",
+      "who": "ทารกแรกเกิด (มักมีโรคปอด เช่น MAS, asphyxia, sepsis)",
+      "trigger": {
+        "ruleId": "ductal-dependence",
+        "text": "PVR ไม่ตกหลังคลอด เลือดดำลัด R→L ผ่าน PDA/PFO แม้หัวใจโครงสร้างปกติ"
+      },
+      "signature": "เขียวในวันแรก + SpO2 มือขวาสูงกว่าเท้า (differential cyanosis) + หัวใจโครงสร้างปกติบน echo",
+      "lookAlikes": ["coa-critical-neonate", "d-tga", "tapvr"],
+      "tells": [
+        { "vs": "coa-critical-neonate", "feature": "PPHN pulse/BP 4 แขนขาเท่ากันและเขียวตั้งแต่แรก · critical COA femoral pulse หายและ shock เมื่อ PDA ปิด" },
+        { "vs": "d-tga", "feature": "Echo โครงสร้างปกติ (PPHN) vs great arteries สลับ (TGA)" },
+        { "vs": "tapvr", "feature": "Echo เห็น pulmonary vein ลง LA ปกติใน PPHN" }
+      ],
+      "counter": "O2/ventilation, รักษาโรคปอดและ sepsis, pulmonary vasodilator (เช่น inhaled NO) ในหน่วยทารกแรกเกิด",
+      "danger": "Hypoxemia รุนแรง",
+      "memorize": [],
+      "ruleOfThumb": true,
+      "sourceIds": ["sp-cyanosis"]
+    },
+    {
+      "id": "eisenmenger",
+      "name": "Eisenmenger syndrome",
+      "who": "วัยรุ่น/ผู้ใหญ่ที่ L→R shunt ใหญ่ (VSD, PDA, ASD) ไม่ได้ปิด",
+      "trigger": {
+        "ruleId": "pvr-clock",
+        "text": "Volume load ไปปอดเรื้อรัง → pulmonary vascular remodeling → PVR สูงเกิน SVR → shunt กลับเป็น R→L"
+      },
+      "signature": "เขียว + clubbing + secondary erythrocytosis + P2 ดัง + murmur เดิมหาย · EKG RVH",
+      "lookAlikes": ["vsd-large", "tof"],
+      "tells": [
+        { "vs": "vsd-large", "feature": "Eisenmenger เขียว murmur หาย หัวใจไม่โต · large VSD ไม่เขียว murmur + rumble HF" },
+        { "vs": "tof", "feature": "Eisenmenger เขียวช่วงหลังของชีวิตพร้อม P2 ดัง · TOF เขียวตั้งแต่ทารก P2 เบา (single S2)" }
+      ],
+      "counter": "ห้ามปิดรูเมื่อเป็น irreversible PAH · ดูแลในศูนย์เฉพาะ (pulmonary vasodilator, transplant) · หลีกเลี่ยงการตั้งครรภ์",
+      "danger": "เสียชีวิตก่อนวัย, ตั้งครรภ์เสี่ยงสูง",
+      "memorize": [],
+      "sourceIds": ["sp-vsd", "sp-asd"]
+    },
+    {
+      "id": "innocent-murmur",
+      "name": "Innocent murmur (เช่น Still's murmur, venous hum)",
+      "who": "เด็กไม่มีอาการ โตดี ตรวจสุขภาพแล้วได้ยินเสียงฟู่",
+      "trigger": {
+        "ruleId": "murmur-gradient",
+        "text": "Flow ปกติผ่านโครงสร้างปกติแต่เกิดเสียงได้ ไม่มี gradient ผิดปกติ"
+      },
+      "signature": "เบา grade I–II, systolic (ยกเว้น venous hum), vibratory (Still's ที่ LLSB), ไม่มี thrill, S2 ปกติ, เปลี่ยนตามท่า, เด็กไม่มีอาการ",
+      "lookAlikes": ["vsd-small", "asd-secundum", "pda"],
+      "tells": [
+        { "vs": "vsd-small", "feature": "Innocent เบา vibratory ไม่มี thrill · small VSD pansystolic หยาบดัง" },
+        { "vs": "asd-secundum", "feature": "Innocent S2 ปกติ · ASD fixed split S2" },
+        { "vs": "pda", "feature": "Venous hum หายเมื่อนอนราบหรือกดคอ · PDA continuous ไม่เปลี่ยนตามท่าและ pulse bounding" }
+      ],
+      "counter": "Reassure ไม่ต้อง echo ถ้าครบทุกลักษณะ · ขาดข้อใดข้อหนึ่ง (diastolic, thrill, S2 ผิดปกติ, มีอาการ) → echo",
+      "danger": "พลาด pathologic murmur ถ้าไม่เช็คครบทุกข้อ",
+      "memorize": [],
+      "ruleOfThumb": true
+    },
+    {
+      "id": "alcapa",
+      "name": "ALCAPA (anomalous left coronary artery from the pulmonary artery)",
+      "who": "ทารกราว 2 เดือน HF ร้องกวนขณะดูดนม (angina) ไม่มี murmur ชัด",
+      "trigger": {
+        "ruleId": "pvr-clock",
+        "text": "LCA ออกจาก PA: แรกเกิด PA pressure ยังสูงดันเลือดเข้า LCA ได้ พอ PVR/PA pressure ตก LV ขาดเลือด → infarction, LV dysfunction, MR"
+      },
+      "signature": "HF อายุ ~2 เดือน + EKG infarct pattern ใน lateral leads (Q ลึกใน I, aVL, V5–V6) + LV บีบไม่ดี ± MR บน echo",
+      "lookAlikes": ["myocarditis-dcm", "vsd-large"],
+      "tells": [
+        { "vs": "myocarditis-dcm", "feature": "EKG infarct pattern ใน lateral leads ในทารก 2 เดือน = ALCAPA ก่อนสรุปว่า DCM/myocarditis" },
+        { "vs": "vsd-large", "feature": "อายุเริ่ม HF ใกล้กัน แต่ ALCAPA ไม่มี shunt murmur และ CXR ไม่มี ↑PBF แบบ shunt" }
+      ],
+      "counter": "ส่งผ่าตัด: reimplantation ของ LCA เข้า aorta (dual coronary system) · ประคับประคอง HF ระหว่างรอ",
+      "danger": "สาเหตุที่พบบ่อยที่สุดของ MI ในเด็ก · เสียชีวิตในวัยทารกถ้าไม่ผ่าตัด",
+      "memorize": [
+        {
+          "id": "alcapa-onset",
+          "prompt": "ALCAPA มักเริ่มมีอาการช่วงอายุเท่าไร และทำไม?",
+          "fact": "ภายในราว 2 เดือนแรก เมื่อ PA pressure ตก (PVR ลด) เลือดเข้า LCA ไม่พอ · เป็นสาเหตุที่พบบ่อยที่สุดของ MI ในเด็ก",
+          "sourceId": "sp-alcapa"
+        }
+      ],
+      "sourceIds": ["sp-alcapa"]
+    },
+    {
+      "id": "myocarditis-dcm",
+      "name": "Myocarditis / dilated cardiomyopathy",
+      "who": "เด็กทุกอายุ มัก HF หลังไข้หวัด/ติดเชื้อไวรัส",
+      "trigger": {
+        "ruleId": "hf-syndrome",
+        "text": "กล้ามเนื้อหัวใจอักเสบหรือเสื่อม แรงบีบลด (ineffective contraction) ไม่ใช่ภาระงานเกิน"
+      },
+      "signature": "HF + tachycardia ไม่สมกับไข้ + gallop · troponin สูง · EKG low voltage/ST-T change ± heart block/arrhythmia · echo LV dilate บีบไม่ดี ไม่มี structural lesion",
+      "lookAlikes": ["alcapa", "svt", "high-output-anemia"],
+      "tells": [
+        { "vs": "alcapa", "feature": "ALCAPA ทารก ~2 เดือนกับ Q wave lateral และ coronary ออกจาก PA · myocarditis ทุกอายุหลังติดเชื้อ" },
+        { "vs": "svt", "feature": "SVT HR คงที่ไม่มี P และหายเมื่อหยุด arrhythmia (tachycardia-induced CM) · myocarditis HR แกว่งแบบ sinus" },
+        { "vs": "high-output-anemia", "feature": "Anemia Hb ต่ำมากและหัวใจบีบดี · myocarditis LV บีบไม่ดี" }
+      ],
+      "counter": "Admit PICU: diuretic + inotrope (milrinone/dobutamine) ตามความจำเป็น ระวัง arrhythmia · chronic DCM: ACEI + β-blocker เมื่อ stable",
+      "danger": "Cardiogenic shock, arrhythmia, heart block",
+      "memorize": [],
+      "ruleOfThumb": true,
+      "sourceIds": ["das-phf-2018"]
+    },
+    {
+      "id": "high-output-anemia",
+      "name": "High-output HF จาก severe anemia (เช่น thalassemia)",
+      "who": "เด็กซีดมาก Hb ต่ำเรื้อรัง หอบ ตับโต",
+      "trigger": {
+        "ruleId": "hf-syndrome",
+        "text": "Demand > supply: CO = SV × HR ต้องสูงขึ้นเพื่อส่ง O2 ให้พอ หัวใจปกติแต่ทำงานเกิน เลือดไหลผ่านลิ้นปกติมากจนเกิด hemic murmur"
+      },
+      "signature": "ซีดมาก + HF + SEM เบา (hemic murmur) + หัวใจโต · echo ไม่มี structural lesion",
+      "lookAlikes": ["myocarditis-dcm", "vsd-large"],
+      "tells": [
+        { "vs": "myocarditis-dcm", "feature": "Hb ต่ำมากและหัวใจบีบดี = high output · myocarditis บีบไม่ดี" },
+        { "vs": "vsd-large", "feature": "Hemic murmur เป็น SEM เบาที่หายเมื่อแก้ซีด · VSD pansystolic ที่ LLSB" }
+      ],
+      "counter": "ให้ PRC ช้า ๆ แบ่งเป็นส่วน (ประเมิน volume ระหว่างให้) ไม่ให้ก้อนใหญ่เร็ว · ± diuretic",
+      "danger": "ให้เลือดเร็ว/มากเกิน → volume overload และ HF ทรุด",
+      "memorize": [],
+      "ruleOfThumb": true
+    },
+    {
+      "id": "svt",
+      "name": "Supraventricular tachycardia (SVT)",
+      "who": "ทารก/เด็กทุกอายุ · ทารกมาด้วยหอบ ซึม ดูดนมไม่ได้ (tachycardia-induced HF) · arrhythmia ที่พบบ่อยในเด็ก",
+      "trigger": {
+        "ruleId": "ekg-age",
+        "text": "Re-entry ผ่าน accessory pathway หรือใน AV node → HR เร็วคงที่เกินเกณฑ์อายุ"
+      },
+      "signature": "Narrow QRS (≤ 0.09 s) regular tachycardia, P ไม่มีหรือผิดปกติ, RR ไม่แปรผัน, เปลี่ยนแบบฉับพลัน · ทารกมัก ≥ 220/min เด็ก ≥ 180/min",
+      "lookAlikes": ["myocarditis-dcm", "hypercyanotic-spell", "complete-heart-block"],
+      "tells": [
+        { "vs": "myocarditis-dcm", "feature": "Sinus tachycardia ใน myocarditis/ไข้ HR แกว่งและมี P ปกติ (ทารกมัก < 220) · SVT HR คงที่ไม่มี P" },
+        { "vs": "hypercyanotic-spell", "feature": "SVT เด่นที่ HR เร็วคงที่บน EKG · spell เด่นที่เขียวขึ้น + hyperpnea + murmur เบาลง" },
+        { "vs": "complete-heart-block", "feature": "SVT เร็ว · CHB ช้าและ P กับ QRS แยกกัน" }
+      ],
+      "counter": "Stable: vagal maneuver (ทารก: ice ที่หน้า) → adenosine rapid IV push + flush → dose 2 · unstable (shock, ซึม, hypotension): synchronized cardioversion หรือ adenosine ถ้ามี IV พร้อม · wide QRS ถือเป็น VT จนกว่าจะพิสูจน์ได้",
+      "danger": "HF/shock ในทารกถ้า SVT นาน · adenosine ทำให้ asystole/bronchospasm ชั่วคราว",
+      "memorize": [
+        {
+          "id": "adenosine-dose",
+          "prompt": "PALS: adenosine สำหรับ SVT ขนาดเท่าไร?",
+          "fact": "Dose 1: 0.1 mg/kg rapid IV/IO bolus (max 6 mg) · dose 2: 0.2 mg/kg (max 12 mg)",
+          "sourceId": "aha-pals-2020"
+        },
+        {
+          "id": "sync-cardioversion-dose",
+          "prompt": "PALS: synchronized cardioversion สำหรับ SVT/VT ที่มี pulse เริ่มกี่ J/kg?",
+          "fact": "เริ่ม 0.5–1 J/kg ไม่ได้ผลเพิ่มเป็น 2 J/kg (sedate ถ้าทำได้ แต่ห้ามช้า)",
+          "sourceId": "aha-pals-2020"
+        },
+        {
+          "id": "svt-rate",
+          "prompt": "PALS: HR ที่ชวนคิด SVT มากกว่า sinus tachycardia ในทารกและเด็ก?",
+          "fact": "ทารก ≥ 220/min · เด็ก ≥ 180/min (sinus tachycardia มัก < 220 และ < 180 ตามลำดับ) · narrow QRS = ≤ 0.09 s",
+          "sourceId": "aha-pals-2020"
+        },
+        {
+          "id": "defib-dose",
+          "prompt": "PALS: defibrillation สำหรับ VF/pulseless VT กี่ J/kg?",
+          "fact": "ครั้งแรก 2 J/kg · ครั้งที่สอง 4 J/kg · ต่อไป ≥ 4 J/kg (สูงสุด 10 J/kg หรือ adult dose)",
+          "sourceId": "aha-pals-2020"
+        }
+      ],
+      "sourceIds": ["aha-pals-2020"]
+    },
+    {
+      "id": "complete-heart-block",
+      "name": "Complete (3rd-degree) heart block",
+      "who": "Congenital (แม่เป็น SLE/anti-Ro) · หลังผ่าตัดหัวใจ · myocarditis · digoxin toxicity",
+      "trigger": {
+        "ruleId": "hf-syndrome",
+        "text": "Atrium กับ ventricle เต้นแยกกัน HR ช้าจน CO ไม่พอ (CO = HR × SV และทารกเพิ่ม SV ได้น้อย)"
+      },
+      "signature": "Bradycardia + AV dissociation: P กับ QRS มี rate ของตัวเอง (atrial rate > ventricular rate) QRS อาจกว้างถ้าเป็น ventricular escape",
+      "lookAlikes": ["svt", "myocarditis-dcm"],
+      "tells": [
+        { "vs": "svt", "feature": "CHB ช้าและ P เดินอิสระจาก QRS · SVT เร็วคงที่ไม่มี P" },
+        { "vs": "myocarditis-dcm", "feature": "Myocarditis เป็นสาเหตุของ CHB ได้ — ถ้า HR ช้าผิดอายุร่วม HF ให้ดู AV dissociation" }
+      ],
+      "counter": "แก้สาเหตุ (หยุดยา, รักษา myocarditis) · advanced block ที่มีอาการหรือ HF → pacemaker",
+      "danger": "Low CO, syncope, sudden death",
+      "memorize": [],
+      "ruleOfThumb": true
+    }
+  ],
+  "exploits": [
+    {
+      "id": "cyanotic-dark-lung",
+      "ifSee": "ทารกเขียว + CXR ปอดดำ + หัวใจไม่โต",
+      "think": "Right-sided obstruction → TOF ก่อน แล้วแยก TA/PA-IVS ด้วย EKG axis",
+      "strength": "heuristic",
+      "exception": "Pink TOF ไม่เขียว · critical PS/PA-IVS เขียวจัดตั้งแต่วันแรก"
+    },
+    {
+      "id": "cyanotic-white-lung-egg",
+      "ifSee": "เขียวตั้งแต่วันแรก + ปอดขาว + หัวใจรูปไข่ mediastinum แคบ + ไม่มี murmur",
+      "think": "D-TGA → PGE1 ± balloon atrial septostomy",
+      "strength": "rule"
+    },
+    {
+      "id": "week1-shock-femoral",
+      "ifSee": "ทารกสัปดาห์แรก shock + femoral pulse หาย/BP ขาต่ำ",
+      "think": "Critical COA (ductal-dependent systemic flow) → PGE1 ทันทีไม่รอ echo",
+      "strength": "rule"
+    },
+    {
+      "id": "fixed-split",
+      "ifSee": "S2 แยกกว้างทั้งหายใจเข้าและออก (fixed)",
+      "think": "ASD (RV volume load) · EKG rSR' V1 + RAD",
+      "strength": "rule"
+    },
+    {
+      "id": "single-s2-cyanosis",
+      "ifSee": "เด็กเขียว + ได้ยิน S2 ตัวเดียว",
+      "think": "Great artery ตัวหนึ่งหายหรือถูกบัง: TOF, atresia, truncus, TGA",
+      "strength": "heuristic",
+      "exception": "Pulmonary hypertension ทำให้ P2 มาเร็วรวมกับ A2 ได้ (P2 ดัง)"
+    },
+    {
+      "id": "loud-psm-well-child",
+      "ifSee": "PSM ดังมากที่ LLSB แต่เด็กโตดี CXR/EKG ปกติ",
+      "think": "Small VSD → reassure + F/U",
+      "strength": "heuristic",
+      "exception": "Outlet/perimembranous VSD ให้ F/U หา AR"
+    },
+    {
+      "id": "down-superior-axis",
+      "ifSee": "Down syndrome + EKG superior axis",
+      "think": "AVSD",
+      "strength": "rule"
+    },
+    {
+      "id": "cyanotic-superior-axis",
+      "ifSee": "ทารกเขียว + left superior axis + LVH",
+      "think": "Tricuspid atresia",
+      "strength": "rule"
+    },
+    {
+      "id": "hf-6-8wk-murmur",
+      "ifSee": "ทารกอายุหลายสัปดาห์ (6–8 wk) ดูดนมเหนื่อย + PSM + apical rumble",
+      "think": "Large VSD (PVR ลดจน shunt เต็มที่) → furosemide + ACEI → ปิดรูถ้า failed medical/FTT",
+      "strength": "heuristic",
+      "exception": "PDA/AVSD ก็มาช่วงเดียวกัน · ไม่มี murmur ให้คิด ALCAPA"
+    },
+    {
+      "id": "hf-2mo-no-murmur",
+      "ifSee": "HF อายุ ~2 เดือน ไม่มี murmur + Q ลึกใน I, aVL, V5–V6",
+      "think": "ALCAPA → ส่งผ่าตัด reimplantation",
+      "strength": "rule"
+    },
+    {
+      "id": "infant-no-jvp",
+      "ifSee": "โจทย์ทารกบอกว่า 'ไม่มี JVP engorgement ไม่มีขาบวม'",
+      "think": "ไม่ได้ตัด HF — ดู tachycardia, tachypnea, hepatomegaly, cardiomegaly, feeding, growth",
+      "strength": "rule"
+    },
+    {
+      "id": "tet-murmur-softer",
+      "ifSee": "TOF ร้องไม่หยุด หายใจเร็วลึก เขียวขึ้น murmur เบาลง",
+      "think": "Hypercyanotic spell → knee-chest + O2 ก่อน แล้ว morphine/fluid/β-blocker/phenylephrine",
+      "strength": "rule"
+    },
+    {
+      "id": "foot-lower-than-hand",
+      "ifSee": "SpO2 มือขวาสูงกว่าเท้าในทารก",
+      "think": "เลือดดำผ่าน PDA ลงท่อนล่าง: PPHN หรือ critical COA",
+      "strength": "heuristic",
+      "exception": "เท้าสูงกว่ามือ (reverse) = D-TGA ที่มี PDA + PVR สูง"
+    },
+    {
+      "id": "adenosine-sawtooth",
+      "ifSee": "ฉีด adenosine แล้ว HR ช้าลงชั่วครู่ เห็น sawtooth แล้วกลับมาเร็ว",
+      "think": "Atrial flutter (adenosine block AV node ชั่วคราว ไม่ตัดวงจรใน atrium)",
+      "strength": "rule"
+    },
+    {
+      "id": "digoxin-vomit-brady",
+      "ifSee": "เด็กกิน furosemide + digoxin แล้วอาเจียน HR ช้า K ต่ำ",
+      "think": "Digoxin toxicity ที่ถูกกระตุ้นด้วย hypokalemia",
+      "strength": "rule"
+    }
+  ],
+  "distractorPatterns": [
+    {
+      "id": "close-pda-in-shock",
+      "pattern": "ทารก shock สัปดาห์แรก → ตัวเลือก ibuprofen/indomethacin หรือ 'dopamine แล้วรอ echo'",
+      "kill": "Ductal-dependent: ต้องเปิด PDA ด้วย PGE1 ทันที การปิดหรือรอ = ทรุด"
+    },
+    {
+      "id": "inotrope-in-spell",
+      "pattern": "TOF spell → ตัวเลือก dobutamine/dopamine/digoxin",
+      "kill": "Inotrope ทำให้ infundibulum บีบแรงขึ้น RVOT ยิ่งตีบ — ต้อง ↑SVR, β-blocker, fluid"
+    },
+    {
+      "id": "loud-means-big",
+      "pattern": "Murmur ดังมาก จึงเป็นรูใหญ่/อาการหนัก",
+      "kill": "Murmur บอก gradient: small VSD ดังที่สุด large VSD เบากว่า"
+    },
+    {
+      "id": "fluid-restrict-infant",
+      "pattern": "ทารก HF → จำกัดน้ำและเกลือ",
+      "kill": "จำกัดน้ำเฉพาะเด็กโต · ทารกต้องการ calories สูง ให้เพิ่ม caloric density/NG feeding"
+    },
+    {
+      "id": "beta-blocker-acute",
+      "pattern": "HF ทรุดเฉียบพลัน → เริ่ม β-blocker",
+      "kill": "β-blocker ใช้ใน chronic HF ที่ stable · acute ใช้ diuretic ± inotrope"
+    },
+    {
+      "id": "slide-digoxin-daily",
+      "pattern": "ให้ digoxin 30–40 mcg/kg ต่อวัน ตามตัวเลขในตาราง",
+      "kill": "ตัวเลขนั้นคือ TDD ที่ให้รวมใน 24 ชม. · maintenance = 25% ของ TDD ต่อวันแบ่ง BID"
+    },
+    {
+      "id": "fast-transfusion",
+      "pattern": "เด็ก thalassemia Hb ต่ำมาก + HF → ให้ PRC 20 mL/kg ใน 1 ชม.",
+      "kill": "High-output state ให้เลือดเร็วจะ volume overload — แบ่งให้ช้า ๆ และประเมิน volume"
+    },
+    {
+      "id": "newborn-rad-rvh",
+      "pattern": "ทารก 2 วัน EKG RAD + R สูง V1 → RVH",
+      "kill": "RV dominance เป็นปกติของทารก ต้องเทียบตามอายุ"
+    }
+  ],
+  "trapPairs": [
+    {
+      "id": "tp-asd-ps",
+      "a": "asd-secundum",
+      "b": "pulmonary-stenosis",
+      "decider": "S2 fixed (ไม่ขยับตามการหายใจ) = ASD · ขยับได้ + ejection click = PS"
+    },
+    {
+      "id": "tp-small-large-vsd",
+      "a": "vsd-small",
+      "b": "vsd-large",
+      "decider": "อาการ HF + apical rumble + LA/LV โต = large (murmur อาจเบากว่า)"
+    },
+    {
+      "id": "tp-vsd-pda",
+      "a": "vsd-large",
+      "b": "pda",
+      "decider": "Continuous murmur ข้าม S2 + bounding pulse = PDA"
+    },
+    {
+      "id": "tp-tof-ta",
+      "a": "tof",
+      "b": "tricuspid-atresia",
+      "decider": "EKG: RAD + RVH = TOF · left superior axis + LVH = tricuspid atresia"
+    },
+    {
+      "id": "tp-tof-tga",
+      "a": "tof",
+      "b": "d-tga",
+      "decider": "ปอดดำ boot-shaped = TOF · ปอดขาว egg-on-a-string = TGA"
+    },
+    {
+      "id": "tp-coa-pphn",
+      "a": "coa-critical-neonate",
+      "b": "pphn",
+      "decider": "Femoral pulse หาย/BP ขาต่ำ + shock ตอน PDA ปิด = critical COA"
+    },
+    {
+      "id": "tp-tof-spell",
+      "a": "tof",
+      "b": "hypercyanotic-spell",
+      "decider": "Murmur เบาลง + hyperpnea + เขียวขึ้น = spell"
+    },
+    {
+      "id": "tp-alcapa-myocarditis",
+      "a": "alcapa",
+      "b": "myocarditis-dcm",
+      "decider": "ทารก ~2 เดือน + Q ลึก lateral leads = ALCAPA"
+    },
+    {
+      "id": "tp-svt-sinus",
+      "a": "svt",
+      "b": "myocarditis-dcm",
+      "decider": "HR คงที่ไม่แกว่ง + ไม่มี P (ทารก ≥ 220) = SVT · มี P + HR แกว่ง = sinus tachycardia"
+    },
+    {
+      "id": "tp-avsd-ta",
+      "a": "avsd",
+      "b": "tricuspid-atresia",
+      "decider": "Superior axis ทั้งคู่: ไม่เขียว + ปอดขาว + Down = AVSD · เขียว + ปอดดำ = TA"
+    },
+    {
+      "id": "tp-innocent-asd",
+      "a": "innocent-murmur",
+      "b": "asd-secundum",
+      "decider": "S2 ผิดปกติ (fixed split) = ไม่ใช่ innocent → echo"
+    },
+    {
+      "id": "tp-eisenmenger-large-vsd",
+      "a": "eisenmenger",
+      "b": "vsd-large",
+      "decider": "เขียว + murmur หาย + P2 ดัง + pure RVH = Eisenmenger (ห้ามปิดรู)"
+    }
+  ],
+  "games": {
+    "legality": [
+      {
+        "id": "lg-murmur-4yo",
+        "targetSeconds": 30,
+        "difficulty": 1,
+        "basedOn": { "rules": ["pbf-map", "load-chamber"] },
+        "case": "เด็กหญิง 4 ปี ไม่มีอาการ SpO2 98% · CXR หัวใจโตเล็กน้อย vascular marking เพิ่ม",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "acy-shunt",
+        "ruleIds": ["pbf-map"],
+        "why": "SpO2 ปกติ = acyanotic · ปอดขาว (↑PBF) = เลือดแดงรั่วกลับไปปอด (L→R shunt) เช่น ASD"
+      },
+      {
+        "id": "lg-ht-arm",
+        "targetSeconds": 30,
+        "difficulty": 1,
+        "basedOn": { "rules": ["pbf-map", "load-chamber"] },
+        "case": "เด็กชาย 9 ปี BP แขนขวา 140/85 ขา 105/70 mmHg femoral pulse ช้ากว่า radial · CXR vascular marking ปกติ",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "acy-obstruction",
+        "ruleIds": ["pbf-map", "load-chamber"],
+        "why": "ไม่เขียว PBF ปกติ + BP แขน > ขา (> 20 mmHg) และ brachiofemoral delay = COA (ตีบซ้าย, LV pressure load)"
+      },
+      {
+        "id": "lg-newborn-egg",
+        "targetSeconds": 35,
+        "difficulty": 2,
+        "basedOn": { "rules": ["pbf-map"] },
+        "case": "ทารก 1 วัน เขียวตั้งแต่คลอด SpO2 70% ไม่ดีขึ้นด้วย O2 ไม่มี murmur · CXR หัวใจรูปไข่ mediastinum แคบ ปอดขาว",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "cy-mixing",
+        "ruleIds": ["pbf-map"],
+        "why": "เขียว + ปอดขาว = cyanotic ↑PBF (3T 2C) · egg-on-a-string = D-TGA"
+      },
+      {
+        "id": "lg-squatting",
+        "targetSeconds": 35,
+        "difficulty": 2,
+        "basedOn": { "rules": ["pbf-map", "tof-balance"] },
+        "case": "เด็ก 2 ปี เขียวมากขึ้นตามอายุ ชอบนั่งยองเวลาเหนื่อย · CXR หัวใจขนาดปกติ apex เชิด ปอดดำ",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "cy-low-pbf",
+        "ruleIds": ["pbf-map", "tof-balance"],
+        "why": "เขียว + ปอดดำ + boot-shaped + squatting (↑SVR) = TOF กลุ่ม right-sided obstruction"
+      },
+      {
+        "id": "lg-hf-normal-echo",
+        "targetSeconds": 40,
+        "difficulty": 2,
+        "basedOn": { "rules": ["hf-syndrome", "ekg-age"] },
+        "case": "ทารก 3 เดือน หอบ ซึม ดูดนมไม่ได้ HR 270/min คงที่ ไม่เห็น P · echo โครงสร้างปกติ LV บีบลดเล็กน้อย",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "other",
+        "ruleIds": ["hf-syndrome", "ekg-age"],
+        "why": "HF ที่ echo โครงสร้างปกติ → ไล่ 'other' ก่อน: HR คงที่ > 220 ไม่มี P = SVT (tachycardia-induced HF) แก้ได้"
+      },
+      {
+        "id": "lg-pink-tof",
+        "targetSeconds": 45,
+        "difficulty": 3,
+        "basedOn": { "rules": ["tof-balance", "pbf-map"], "errata": ["e-pink-tof"] },
+        "case": "ทารก 6 สัปดาห์ SpO2 96% ดูดนมเหนื่อย · echo: large malaligned VSD, aorta overriding, infundibular stenosis เล็กน้อย",
+        "question": "ตอนนี้ทำตัวเหมือนช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "acy-shunt",
+        "ruleIds": ["tof-balance"],
+        "why": "Pink TOF: RVOT ตีบน้อยกว่า SVR เลือดจึงไหลไปปอด ทำตัวเหมือน large VSD (HF เมื่อ PVR ลด) และจะเขียวเมื่อ infundibulum หนาขึ้น"
+      },
+      {
+        "id": "lg-eisenmenger",
+        "targetSeconds": 45,
+        "difficulty": 3,
+        "basedOn": { "rules": ["pvr-clock"], "errata": ["e-eisenmenger", "e-small-vsd-loud"] },
+        "case": "หญิง 19 ปี เคยมี murmur ตอนเด็กแต่ไม่ได้ติดตาม ตอนนี้เขียว clubbing Hct สูง · murmur เดิมหายไป P2 ดังมาก",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "cy-high-pvr",
+        "ruleIds": ["pvr-clock"],
+        "why": "Shunt L→R ที่ปล่อยไว้ → PVR สูงถาวร shunt กลับทิศ = Eisenmenger · murmur หายเพราะ gradient หาย ไม่ใช่รูปิด และห้ามปิดรู"
+      },
+      {
+        "id": "lg-anemic-desat",
+        "targetSeconds": 50,
+        "difficulty": 3,
+        "basedOn": { "rules": ["pbf-map"], "errata": ["e-anemia-cyanosis"] },
+        "case": "ทารก 3 วัน Hb 8 g/dL ดูไม่เขียวชัด แต่ SpO2 78% ไม่ดีขึ้นด้วย O2 100% · ไม่มี murmur · CXR ปอดดำ หัวใจขนาดปกติ",
+        "question": "จัดอยู่ช่องไหน?",
+        "options": [
+          { "id": "acy-shunt", "label": "Acyanotic ↑PBF (L→R shunt)" },
+          { "id": "acy-obstruction", "label": "Acyanotic PBF ปกติ (ทางออกตีบ)" },
+          { "id": "cy-low-pbf", "label": "Cyanotic ↓PBF" },
+          { "id": "cy-mixing", "label": "Cyanotic ↑PBF (mixing)" },
+          { "id": "cy-high-pvr", "label": "R→L เพราะ PVR สูง" },
+          { "id": "other", "label": "ไม่ใช่ shunt/ตีบ (rhythm, กล้ามเนื้อ, innocent)" }
+        ],
+        "answer": "cy-low-pbf",
+        "ruleIds": ["pbf-map"],
+        "why": "Cyanosis มองเห็นเมื่อ deoxy-Hb ถึงราว 5 g/dL — ทารกซีดดูไม่เขียวแม้ desaturate · ใช้ SpO2: desaturate + ไม่ตอบ O2 + ปอดดำ = cyanotic ↓PBF (เช่น PA-IVS)"
+      }
+    ],
+    "guessWho": [
+      {
+        "id": "gw-acyanotic-murmur",
+        "targetSeconds": 120,
+        "difficulty": 1,
+        "basedOn": { "rules": ["load-chamber", "murmur-gradient"] },
+        "hint": "ถามเรื่อง murmur ระยะไหนก่อน (systolic ล้วนหรือข้าม S2)",
+        "title": "เด็กไม่เขียวมาด้วย murmur: 6 ตัว",
+        "candidates": [
+          { "id": "asd", "label": "ASD secundum", "cardId": "asd-secundum" },
+          { "id": "small-vsd", "label": "Small VSD", "cardId": "vsd-small" },
+          { "id": "large-vsd", "label": "Large VSD", "cardId": "vsd-large" },
+          { "id": "pda", "label": "PDA", "cardId": "pda" },
+          { "id": "ps", "label": "Pulmonary stenosis", "cardId": "pulmonary-stenosis" },
+          { "id": "coa", "label": "COA (เด็กโต)", "cardId": "coa-older-child" }
+        ],
+        "questions": [
+          { "id": "q-continuous", "text": "Murmur ข้าม S2 (continuous) ใช่ไหม?", "yes": ["pda"] },
+          { "id": "q-psm-llsb", "text": "เป็น pansystolic murmur ที่ LLSB ใช่ไหม?", "yes": ["small-vsd", "large-vsd"] },
+          { "id": "q-hf", "text": "มีอาการ HF/โตช้าใช่ไหม?", "yes": ["large-vsd", "pda"] },
+          { "id": "q-rv-ekg", "text": "EKG เป็น RAD/RVH หรือ rSR' (ฝั่งขวาโต) ใช่ไหม?", "yes": ["asd", "ps"] },
+          { "id": "q-fixed", "text": "S2 แยกแบบ fixed ใช่ไหม?", "yes": ["asd"] },
+          { "id": "q-bp-arm-leg", "text": "BP แขนสูงกว่าขา > 20 mmHg ใช่ไหม?", "yes": ["coa"] },
+          { "id": "q-click", "text": "มี ejection click ที่ LUSB ใช่ไหม?", "yes": ["ps"] }
+        ],
+        "optimalTree": {
+          "question": "q-rv-ekg",
+          "yes": {
+            "question": "q-fixed",
+            "yes": { "leaf": "asd" },
+            "no": { "leaf": "ps" }
+          },
+          "no": {
+            "question": "q-psm-llsb",
+            "yes": {
+              "question": "q-hf",
+              "yes": { "leaf": "large-vsd" },
+              "no": { "leaf": "small-vsd" }
+            },
+            "no": {
+              "question": "q-continuous",
+              "yes": { "leaf": "pda" },
+              "no": { "leaf": "coa" }
+            }
+          }
+        },
+        "explanation": "6 ตัวต้องใช้อย่างน้อย 3 คำถาม · เริ่มที่ 'ฝั่งขวาโตบน EKG ไหม' (load-chamber) แยก ASD/PS ออกจากกลุ่ม left-sided · ฝั่งขวาใช้ fixed split แยก ASD จาก PS · ฝั่งซ้ายใช้ PSM ที่ LLSB แยก VSD ออก แล้วใช้อาการ HF แยกรูเล็ก/ใหญ่ (murmur ดังไม่ได้บอกขนาด) และใช้ continuous murmur แยก PDA จาก COA"
+      },
+      {
+        "id": "gw-cyanotic-newborn",
+        "targetSeconds": 150,
+        "difficulty": 2,
+        "basedOn": { "rules": ["pbf-map", "ekg-age", "ductal-dependence"] },
+        "hint": "ปอดขาวหรือดำแบ่งครึ่งก่อน แล้วใช้ EKG axis",
+        "title": "ทารกเขียว: 6 ตัว",
+        "candidates": [
+          { "id": "tof", "label": "TOF", "cardId": "tof" },
+          { "id": "ta", "label": "Tricuspid atresia", "cardId": "tricuspid-atresia" },
+          { "id": "pa-ivs", "label": "PA-IVS / critical PS", "cardId": "pa-ivs-critical-ps" },
+          { "id": "tga", "label": "D-TGA", "cardId": "d-tga" },
+          { "id": "tapvr", "label": "TAPVR", "cardId": "tapvr" },
+          { "id": "pphn", "label": "PPHN", "cardId": "pphn" }
+        ],
+        "questions": [
+          { "id": "q-dark-lung", "text": "CXR ปอดดำ (↓PBF) ใช่ไหม?", "yes": ["tof", "ta", "pa-ivs"] },
+          { "id": "q-superior-axis", "text": "EKG left superior axis ใช่ไหม?", "yes": ["ta"] },
+          { "id": "q-rvh", "text": "EKG RVH เด่นใช่ไหม?", "yes": ["tof", "tapvr"] },
+          { "id": "q-structural-normal", "text": "Echo โครงสร้างหัวใจปกติใช่ไหม?", "yes": ["pphn"] },
+          { "id": "q-egg", "text": "CXR egg-on-a-string ใช่ไหม?", "yes": ["tga"] },
+          { "id": "q-duct-dependent-pbf", "text": "PBF ต้องพึ่ง PDA (เขียวจัดเมื่อ PDA ปิด) ใช่ไหม?", "yes": ["pa-ivs"] },
+          { "id": "q-wide-split", "text": "S2 split กว้าง P2 ดังใช่ไหม?", "yes": ["tapvr"] }
+        ],
+        "optimalTree": {
+          "question": "q-dark-lung",
+          "yes": {
+            "question": "q-superior-axis",
+            "yes": { "leaf": "ta" },
+            "no": {
+              "question": "q-rvh",
+              "yes": { "leaf": "tof" },
+              "no": { "leaf": "pa-ivs" }
+            }
+          },
+          "no": {
+            "question": "q-egg",
+            "yes": { "leaf": "tga" },
+            "no": {
+              "question": "q-structural-normal",
+              "yes": { "leaf": "pphn" },
+              "no": { "leaf": "tapvr" }
+            }
+          }
+        },
+        "explanation": "6 ตัวต้องใช้อย่างน้อย 3 คำถาม · ปอดดำ/ขาวแบ่ง 3/3 (pbf-map) · ฝั่งปอดดำใช้ EKG: superior axis = TA, RVH = TOF, ที่เหลือ (RV เล็ก LVH) = PA-IVS · ฝั่งปอดขาวใช้ egg-on-a-string หา TGA แล้ว echo โครงสร้างปกติแยก PPHN จาก TAPVR"
+      },
+      {
+        "id": "gw-infant-hf-cause",
+        "targetSeconds": 150,
+        "difficulty": 3,
+        "basedOn": { "rules": ["hf-syndrome", "pvr-clock", "ductal-dependence"], "errata": ["e-asd-compliance"] },
+        "hint": "อายุที่เริ่ม HF คือ clue ที่ดีที่สุด แต่ต้องมีคำถามที่แบ่งครึ่งได้",
+        "title": "ทารก/เด็กมี HF: หาสาเหตุ 6 ตัว",
+        "candidates": [
+          { "id": "coa", "label": "Critical COA", "cardId": "coa-critical-neonate" },
+          { "id": "vsd", "label": "Large VSD", "cardId": "vsd-large" },
+          { "id": "alcapa", "label": "ALCAPA", "cardId": "alcapa" },
+          { "id": "svt", "label": "SVT", "cardId": "svt" },
+          { "id": "anemia", "label": "Severe anemia (high output)", "cardId": "high-output-anemia" },
+          { "id": "myo", "label": "Myocarditis", "cardId": "myocarditis-dcm" }
+        ],
+        "questions": [
+          { "id": "q-structural", "text": "Echo มี structural/coronary lesion ใช่ไหม?", "yes": ["coa", "vsd", "alcapa"] },
+          { "id": "q-week1-shock", "text": "เริ่มสัปดาห์แรกด้วย shock + femoral pulse เบาใช่ไหม?", "yes": ["coa"] },
+          { "id": "q-murmur-psm", "text": "มี PSM + apical rumble ใช่ไหม?", "yes": ["vsd"] },
+          { "id": "q-hr-fixed", "text": "HR เร็วคงที่ไม่มี P บน EKG ใช่ไหม?", "yes": ["svt"] },
+          { "id": "q-low-hb", "text": "Hb ต่ำมากใช่ไหม?", "yes": ["anemia"] },
+          { "id": "q-troponin", "text": "Troponin สูง/LV บีบไม่ดีใช่ไหม?", "yes": ["alcapa", "myo"] },
+          { "id": "q-age-2mo", "text": "เริ่ม HF ราวอายุ 2 เดือนพร้อม Q ลึก lateral leads ใช่ไหม?", "yes": ["alcapa"] }
+        ],
+        "optimalTree": {
+          "question": "q-structural",
+          "yes": {
+            "question": "q-week1-shock",
+            "yes": { "leaf": "coa" },
+            "no": {
+              "question": "q-murmur-psm",
+              "yes": { "leaf": "vsd" },
+              "no": { "leaf": "alcapa" }
+            }
+          },
+          "no": {
+            "question": "q-hr-fixed",
+            "yes": { "leaf": "svt" },
+            "no": {
+              "question": "q-low-hb",
+              "yes": { "leaf": "anemia" },
+              "no": { "leaf": "myo" }
+            }
+          }
+        },
+        "explanation": "6 ตัวต้องใช้อย่างน้อย 3 คำถาม · 'echo มี structural/coronary lesion ไหม' แบ่ง 3/3 · ฝั่งมี lesion ใช้นาฬิกาอายุ: สัปดาห์แรก + shock = COA (ductal), PSM + rumble = large VSD (PVR ลด), ที่เหลือ = ALCAPA · ฝั่งโครงสร้างปกติไล่ 'other' ที่แก้ได้: SVT, anemia แล้วจึง myocarditis — สังเกตว่า ASD ไม่อยู่ในรายการเพราะไม่ค่อยทำให้ HF ในวัยทารก (RV compliance)"
+      }
+    ],
+    "deduction": [
+      {
+        "id": "dd-well-child-murmur",
+        "targetSeconds": 150,
+        "difficulty": 1,
+        "basedOn": { "rules": ["load-chamber", "murmur-gradient"] },
+        "hint": "ฟัง S2 ก่อนทุกครั้ง",
+        "title": "Murmur ตอนตรวจสุขภาพ",
+        "chiefComplaint": "เด็กหญิง 4 ปี มาฉีดวัคซีน ไม่มีอาการ เล่นได้เท่าเพื่อน แพทย์ได้ยินเสียงฟู่",
+        "vitals": "HR 100 · RR 22 · SpO2 98% · น้ำหนัก P50",
+        "budget": 10,
+        "clues": [
+          { "id": "h-symptom", "kind": "history", "cost": 1, "label": "ประวัติอาการ", "reveals": "ไม่เหนื่อยง่าย ไม่เคยเป็นปอดอักเสบ โตตามเกณฑ์", "strength": "weak", "why": "ASD ส่วนใหญ่ไม่มีอาการ ไม่ช่วยแยก ASD จาก innocent" },
+          { "id": "p-s2", "kind": "pe", "cost": 2, "label": "ฟัง S2 ที่ LUSB ขณะหายใจเข้า-ออก", "reveals": "S2 แยกกว้างทั้งหายใจเข้าและออก ไม่ขยับ", "strength": "strong", "why": "Wide fixed split = RV volume load แบบ ASD" },
+          { "id": "p-murmur", "kind": "pe", "cost": 2, "label": "ลักษณะ murmur", "reveals": "SEM grade II/VI ที่ LUSB ไม่มี thrill ไม่มี ejection click", "strength": "moderate", "why": "Relative PS · ไม่มี click ช่วยตัด valvular PS" },
+          { "id": "b-ekg", "kind": "bedside", "cost": 3, "label": "EKG", "reveals": "RAD + rSR' ใน V1 (QRS ไม่กว้าง)", "strength": "strong", "why": "Incomplete RBBB + RAD = RV volume overload" },
+          { "id": "i-cxr", "kind": "imaging", "cost": 5, "label": "CXR", "reveals": "หัวใจโตเล็กน้อย pulmonary trunk โต vascular marking เพิ่ม", "strength": "moderate", "why": "↑PBF + ฝั่งขวาโต" },
+          { "id": "i-echo", "kind": "imaging", "cost": 5, "label": "Echo", "reveals": "Secundum ASD 14 mm, L→R, RV dilate, rim พอ", "strength": "strong", "why": "Gold standard ยืนยันชนิดและขนาด" }
+        ],
+        "diagnosisOptions": [
+          { "id": "asd", "label": "ASD secundum" },
+          { "id": "ps", "label": "Valvular PS" },
+          { "id": "innocent", "label": "Innocent murmur" },
+          { "id": "small-vsd", "label": "Small VSD" },
+          { "id": "pda", "label": "PDA" }
+        ],
+        "nextStepOptions": [
+          { "id": "device", "label": "ส่ง pediatric cardiology พิจารณา ASD device closure" },
+          { "id": "reassure", "label": "Reassure ไม่ต้องติดตาม" },
+          { "id": "balloon", "label": "Balloon valvuloplasty" },
+          { "id": "ibuprofen", "label": "Ibuprofen IV" },
+          { "id": "furosemide", "label": "เริ่ม furosemide + จำกัดน้ำ" }
+        ],
+        "answer": { "diagnosis": "asd", "nextStep": "device" },
+        "optimalLine": ["p-s2", "b-ekg"],
+        "explanation": "Wide fixed split S2 + SEM ที่ LUSB (relative PS) + EKG RAD/rSR' = ASD · echo ยืนยัน (ในเกมนี้ราคาแพงเกินที่จำเป็นสำหรับการวินิจฉัย) · รูใหญ่ (> 1 cm) ไม่ปิดเองและ RV dilate → ปิดด้วย device ได้เพราะเป็น secundum ที่ rim พอ"
+      },
+      {
+        "id": "dd-week1-shock",
+        "targetSeconds": 120,
+        "difficulty": 1,
+        "basedOn": { "rules": ["ductal-dependence"] },
+        "hint": "คลำ pulse ทั้ง 4 แขนขา",
+        "title": "ทารก 6 วันตัวลาย",
+        "chiefComplaint": "ทารกชาย 6 วัน กลับบ้านได้วันที่ 2 วันนี้ซึม ดูดนมไม่ได้ ตัวเย็นลาย หายใจเร็ว",
+        "vitals": "HR 190 · RR 70 · BP แขนขวา 75/45 mmHg · CRT 4 วินาที",
+        "budget": 8,
+        "clues": [
+          { "id": "h-feeding", "kind": "history", "cost": 1, "label": "ประวัติ", "reveals": "สองวันแรกดูดนมดี ไม่มีไข้ แม่ไม่มี GBS", "strength": "moderate", "why": "ดีช่วงแรกแล้วทรุดตอนปลายสัปดาห์แรก = PDA ปิด (แต่ sepsis ยังต้องคิด)" },
+          { "id": "p-pulses", "kind": "pe", "cost": 2, "label": "คลำ pulse 4 แขนขา", "reveals": "Brachial ขวาคลำได้ femoral ทั้งสองข้างคลำไม่ได้", "strength": "strong", "why": "ท่อนล่างขาดเลือด = obstruction ที่ aorta หลัง PDA ปิด" },
+          { "id": "b-four-limb", "kind": "bedside", "cost": 3, "label": "BP + SpO2 4 แขนขา", "reveals": "BP ขา 45/25 mmHg · SpO2 มือขวา 95% เท้า 93%", "strength": "strong", "why": "BP แขน > ขามาก · PDA ปิดแล้ว differential cyanosis จึงไม่ชัด" },
+          { "id": "l-lactate", "kind": "lab", "cost": 4, "label": "Blood gas + lactate", "reveals": "pH 7.12, lactate 9 mmol/L", "strength": "weak", "why": "บอกความรุนแรงของ shock ไม่บอกสาเหตุ" },
+          { "id": "i-echo", "kind": "imaging", "cost": 5, "label": "Echo", "reveals": "Coarctation หลัง left subclavian, PDA ปิด, LV บีบลด", "strength": "strong", "why": "ยืนยัน แต่ห้ามรอ echo ก่อนเริ่ม PGE1" }
+        ],
+        "diagnosisOptions": [
+          { "id": "coa", "label": "Critical coarctation of the aorta" },
+          { "id": "sepsis", "label": "Neonatal sepsis" },
+          { "id": "myocarditis", "label": "Myocarditis" },
+          { "id": "pphn", "label": "PPHN" },
+          { "id": "svt", "label": "SVT" }
+        ],
+        "nextStepOptions": [
+          { "id": "pge1", "label": "PGE1 IV drip ทันที + เตรียม airway (apnea) แล้วค่อย echo" },
+          { "id": "ibuprofen", "label": "Ibuprofen IV" },
+          { "id": "dopamine-wait", "label": "Dopamine แล้วรอ echo" },
+          { "id": "adenosine", "label": "Adenosine IV" },
+          { "id": "antibiotic-only", "label": "Antibiotic อย่างเดียว" }
+        ],
+        "answer": { "diagnosis": "coa", "nextStep": "pge1" },
+        "optimalLine": ["p-pulses", "b-four-limb"],
+        "explanation": "Shock ปลายสัปดาห์แรก + femoral pulse หาย + BP แขน > ขา = ductal-dependent systemic flow (critical COA) · PGE1 ทันทีไม่รอ echo และเตรียม airway เพราะ apnea · antibiotic ให้ร่วมได้ถ้าคิดถึง sepsis แต่ไม่ใช่ทางเดียว · ibuprofen ปิด PDA = ฆ่าคนไข้"
+      },
+      {
+        "id": "dd-hf-7wk",
+        "targetSeconds": 150,
+        "difficulty": 2,
+        "basedOn": { "rules": ["pvr-clock", "hf-syndrome", "murmur-gradient"] },
+        "hint": "อายุบอกว่ารออะไรอยู่",
+        "title": "ดูดนมแล้วเหงื่อท่วมหัว",
+        "chiefComplaint": "ทารก 7 สัปดาห์ ดูดนมครั้งละ 40 นาทีต้องหยุดพัก เหงื่อออกท่วมหัว น้ำหนักตกจาก P50 เป็น P10",
+        "vitals": "HR 170 · RR 68 · SpO2 96% · ไม่มีไข้",
+        "budget": 10,
+        "clues": [
+          { "id": "h-onset", "kind": "history", "cost": 1, "label": "เริ่มเมื่อไร", "reveals": "แรกเกิดปกติ เริ่มเหนื่อยตอนดูดนมราวอายุ 4–5 สัปดาห์ ไม่มีไข้หวัด", "strength": "moderate", "why": "HF ที่โผล่หลายสัปดาห์หลังคลอด = shunt ที่โตตาม PVR ที่ลด" },
+          { "id": "p-liver", "kind": "pe", "cost": 2, "label": "คลำตับ + ดูหลอดเลือดคอ/ขา", "reveals": "ตับโต 3 cm ขอบมน ไม่มี neck vein โป่ง ไม่มีขาบวม", "strength": "moderate", "why": "Hepatomegaly คือ right-sided congestion ในทารก ไม่มี JVP/edema ไม่ได้ตัด HF" },
+          { "id": "p-auscult", "kind": "pe", "cost": 2, "label": "ฟังหัวใจ", "reveals": "PSM grade III/VI ที่ LLSB + apical mid-diastolic rumble + S3", "strength": "strong", "why": "PSM ที่ LLSB = VSD · apical rumble = relative MS จาก flow มาก = shunt ใหญ่" },
+          { "id": "i-cxr", "kind": "imaging", "cost": 5, "label": "CXR", "reveals": "Cardiomegaly (LA + LV โต), ↑pulmonary vascular marking", "strength": "moderate", "why": "Left volume load + ↑PBF" },
+          { "id": "b-ekg", "kind": "bedside", "cost": 3, "label": "EKG", "reveals": "LVH + LAE", "strength": "moderate", "why": "Left volume load ยังไม่มี PHT ชัด (ยังไม่เป็น CVH)" }
+        ],
+        "diagnosisOptions": [
+          { "id": "large-vsd", "label": "Large VSD with HF" },
+          { "id": "small-vsd", "label": "Small VSD" },
+          { "id": "asd", "label": "ASD" },
+          { "id": "alcapa", "label": "ALCAPA" },
+          { "id": "bronchiolitis", "label": "Bronchiolitis" }
+        ],
+        "nextStepOptions": [
+          { "id": "furo-acei-calorie", "label": "Furosemide + ACEI, เพิ่ม caloric density, ส่ง echo/cardio · ไม่ดีขึ้น → ปิดรู" },
+          { "id": "restrict", "label": "จำกัดน้ำ 2/3 maintenance" },
+          { "id": "bb", "label": "เริ่ม β-blocker" },
+          { "id": "o2-high", "label": "O2 high flow routine" },
+          { "id": "reassure", "label": "Reassure รอปิดเอง" }
+        ],
+        "answer": { "diagnosis": "large-vsd", "nextStep": "furo-acei-calorie" },
+        "optimalLine": ["h-onset", "p-auscult", "p-liver"],
+        "explanation": "อาการเริ่มหลายสัปดาห์หลังคลอด (PVR ลด) + PSM LLSB + apical rumble + ตับโต = large VSD with HF · รักษา: diuretic + afterload reducer + high-calorie feeding (ห้ามจำกัดน้ำในทารก, β-blocker ไม่ใช่ acute, O2 สูงลด PVR ทำให้ shunt มากขึ้น) แล้วปิดรูถ้า failed medical/FTT ก่อนเกิด pulmonary vascular disease"
+      },
+      {
+        "id": "dd-blue-day1",
+        "targetSeconds": 180,
+        "difficulty": 2,
+        "basedOn": { "rules": ["pbf-map", "ductal-dependence"] },
+        "hint": "ปอดหรือหัวใจ แล้ว PBF มากหรือน้อย",
+        "title": "เขียวตั้งแต่คลอด",
+        "chiefComplaint": "ทารกครบกำหนด BW 3,600 g อายุ 12 ชั่วโมง เขียวทั้งตัวรวมลิ้น ร้องดี หายใจเร็วแต่ไม่หอบ",
+        "vitals": "HR 150 · RR 64 ไม่มี retraction · SpO2 มือขวา 68%",
+        "budget": 12,
+        "clues": [
+          { "id": "h-perinatal", "kind": "history", "cost": 1, "label": "ประวัติคลอด", "reveals": "คลอดปกติ น้ำคร่ำใส ไม่มี meconium ไม่มีไข้ในแม่", "strength": "moderate", "why": "ไม่มีปัจจัยเสี่ยงของโรคปอด/PPHN" },
+          { "id": "p-auscult", "kind": "pe", "cost": 2, "label": "ฟังหัวใจ", "reveals": "S2 single ดัง ไม่มี murmur", "strength": "moderate", "why": "Single S2 = great artery ตัวหนึ่งถูกบังหรือหาย" },
+          { "id": "b-hyperoxia", "kind": "bedside", "cost": 3, "label": "O2 100% 10 นาที (hyperoxia test)", "reveals": "SpO2 70% ไม่ขึ้น · PaO2 35 mmHg", "strength": "strong", "why": "PaO2 แทบไม่ขึ้น = intracardiac R→L/mixing ไม่ใช่โรคปอด" },
+          { "id": "i-cxr", "kind": "imaging", "cost": 5, "label": "CXR", "reveals": "หัวใจรูปไข่ mediastinum แคบ ปอดขาว", "strength": "strong", "why": "Egg-on-a-string + ↑PBF = D-TGA" },
+          { "id": "i-echo", "kind": "imaging", "cost": 5, "label": "Echo", "reveals": "Aorta ออกจาก RV, PA ออกจาก LV, PFO เล็ก, PDA เล็ก, intact ventricular septum", "strength": "strong", "why": "Mixing น้อย เสี่ยงทรุดเร็ว" }
+        ],
+        "diagnosisOptions": [
+          { "id": "tga", "label": "D-TGA intact septum" },
+          { "id": "tof", "label": "TOF" },
+          { "id": "pphn", "label": "PPHN" },
+          { "id": "tapvr", "label": "TAPVR" },
+          { "id": "pa-ivs", "label": "PA-IVS" }
+        ],
+        "nextStepOptions": [
+          { "id": "pge1-bas", "label": "PGE1 + balloon atrial septostomy → arterial switch" },
+          { "id": "bt-shunt", "label": "Modified BT shunt" },
+          { "id": "ibuprofen", "label": "Ibuprofen IV" },
+          { "id": "ino", "label": "Inhaled NO อย่างเดียว" },
+          { "id": "propranolol", "label": "Propranolol IV" }
+        ],
+        "answer": { "diagnosis": "tga", "nextStep": "pge1-bas" },
+        "optimalLine": ["b-hyperoxia", "i-cxr"],
+        "explanation": "เขียวจัดเงียบ ๆ (quiet tachypnea) + PaO2 ไม่ขึ้นกับ O2 = cyanotic CHD · ปอดขาว + egg-on-a-string + single S2 = D-TGA · intact septum mixing น้อย → PGE1 แล้ว Rashkind BAS เพื่อเพิ่ม mixing แล้ว arterial switch"
+      },
+      {
+        "id": "dd-tet-spell",
+        "targetSeconds": 120,
+        "difficulty": 2,
+        "basedOn": { "rules": ["tof-balance"], "errata": ["e-spell-murmur-softer"] },
+        "hint": "Murmur ดังขึ้นหรือเบาลง?",
+        "title": "ร้องไม่หยุดหลังตื่นนอน",
+        "chiefComplaint": "ทารก 4 เดือน รู้ว่าเป็น TOF รอผ่าตัด เช้านี้หลังตื่นร้องไม่หยุด หายใจเร็วลึก เขียวมากขึ้น",
+        "vitals": "HR 180 · RR 72 หายใจลึก · SpO2 55% (ปกติ 80%)",
+        "budget": 6,
+        "clues": [
+          { "id": "h-trigger", "kind": "history", "cost": 1, "label": "เหตุนำ", "reveals": "เพิ่งตื่นและร้องหลังถ่าย ไม่มีไข้", "strength": "moderate", "why": "Trigger คลาสสิกของ spell ช่วงเช้า" },
+          { "id": "p-murmur", "kind": "pe", "cost": 2, "label": "ฟัง murmur เทียบกับครั้งก่อน", "reveals": "SEM ที่ LUSB เบาลงมากจากเดิม grade 4 เหลือ 1–2", "strength": "strong", "why": "RVOT บีบแคบจนเลือดผ่านน้อย = spell (ไม่ใช่ HF หรือ SVT)" },
+          { "id": "b-monitor", "kind": "bedside", "cost": 3, "label": "EKG monitor", "reveals": "Sinus tachycardia มี P ทุกตัว", "strength": "moderate", "why": "ตัด SVT" }
+        ],
+        "diagnosisOptions": [
+          { "id": "spell", "label": "Hypercyanotic spell" },
+          { "id": "svt", "label": "SVT" },
+          { "id": "hf", "label": "HF จาก large shunt" },
+          { "id": "seizure", "label": "Seizure" },
+          { "id": "pneumonia", "label": "Pneumonia" }
+        ],
+        "nextStepOptions": [
+          { "id": "knee-chest-o2", "label": "ปลอบ + knee-chest + O2 แล้ว morphine 0.1 mg/kg" },
+          { "id": "dobutamine", "label": "Dobutamine IV" },
+          { "id": "intubate-first", "label": "Intubate ทันที" },
+          { "id": "furosemide", "label": "Furosemide IV" },
+          { "id": "adenosine", "label": "Adenosine IV" }
+        ],
+        "answer": { "diagnosis": "spell", "nextStep": "knee-chest-o2" },
+        "optimalLine": ["p-murmur"],
+        "explanation": "TOF + hyperpnea + เขียวขึ้น + murmur เบาลง = hypercyanotic spell · ขั้นแรกคือปลอบ + knee-chest (↑SVR, ลด venous return) + O2 แล้วจึง morphine, fluid, β-blocker, phenylephrine · inotrope ห้าม และ spell คือ indication ให้เร่ง repair"
+      },
+      {
+        "id": "dd-hf-2mo-no-murmur",
+        "targetSeconds": 180,
+        "difficulty": 3,
+        "basedOn": { "rules": ["pvr-clock", "hf-syndrome"], "trapPairs": ["tp-alcapa-myocarditis"] },
+        "hint": "HF ที่ไม่มี murmur ในวัย 2 เดือน ต้องดู EKG",
+        "title": "ร้องกวนทุกครั้งที่ดูดนม",
+        "chiefComplaint": "ทารก 10 สัปดาห์ ร้องกวน เหงื่อออก ซีดทุกครั้งที่ดูดนม 2 สัปดาห์ หายใจเร็ว ไม่มีไข้ ไม่มีอาการหวัด",
+        "vitals": "HR 175 · RR 66 · SpO2 97% · BP แขน-ขาเท่ากัน",
+        "budget": 12,
+        "clues": [
+          { "id": "h-viral", "kind": "history", "cost": 1, "label": "ประวัติติดเชื้อก่อนหน้า", "reveals": "ไม่มีไข้ ไม่มีหวัด ไม่มีคนในบ้านป่วย", "strength": "weak", "why": "ลดน้ำหนัก myocarditis หลังไวรัส แต่ไม่ตัด" },
+          { "id": "p-auscult", "kind": "pe", "cost": 2, "label": "ฟังหัวใจ", "reveals": "Gallop ไม่มี shunt murmur มี soft apical PSM", "strength": "moderate", "why": "ไม่มี shunt murmur ตัด large VSD · soft apical PSM = MR จาก papillary muscle ischemia/LV dilate" },
+          { "id": "b-ekg", "kind": "bedside", "cost": 3, "label": "EKG", "reveals": "Sinus tachycardia · Q ลึกและกว้างใน I, aVL, V5–V6", "strength": "strong", "why": "Infarct pattern ใน lateral leads ในทารก = ALCAPA" },
+          { "id": "l-troponin", "kind": "lab", "cost": 4, "label": "Troponin", "reveals": "สูง", "strength": "weak", "why": "สูงทั้ง ALCAPA และ myocarditis แยกไม่ได้" },
+          { "id": "i-echo", "kind": "imaging", "cost": 5, "label": "Echo + coronary origin", "reveals": "LV dilate บีบไม่ดี MR ปานกลาง LCA ออกจาก main PA (retrograde flow)", "strength": "strong", "why": "ยืนยัน ALCAPA" }
+        ],
+        "diagnosisOptions": [
+          { "id": "alcapa", "label": "ALCAPA" },
+          { "id": "myocarditis", "label": "Viral myocarditis" },
+          { "id": "dcm", "label": "Idiopathic DCM" },
+          { "id": "large-vsd", "label": "Large VSD" },
+          { "id": "svt", "label": "Tachycardia-induced cardiomyopathy" }
+        ],
+        "nextStepOptions": [
+          { "id": "refer-reimplant", "label": "Admit, ประคับประคอง HF แล้วส่งผ่าตัด reimplant LCA" },
+          { "id": "ivig", "label": "IVIG แล้วรอดู" },
+          { "id": "bb-now", "label": "เริ่ม β-blocker ทันที" },
+          { "id": "adenosine", "label": "Adenosine" },
+          { "id": "opd", "label": "OPD furosemide นัด 1 เดือน" }
+        ],
+        "answer": { "diagnosis": "alcapa", "nextStep": "refer-reimplant" },
+        "optimalLine": ["p-auscult", "b-ekg", "i-echo"],
+        "explanation": "HF ราว 2 เดือนไม่มี shunt murmur + angina ขณะดูดนม + Q ลึก lateral leads = ALCAPA (PA pressure ตกตาม PVR → LV ischemia) ซึ่งเป็นสาเหตุที่พบบ่อยที่สุดของ MI ในเด็ก · troponin สูงไม่ช่วยแยกจาก myocarditis · รักษาด้วยการผ่าตัด reimplantation ไม่ใช่รอดู"
+      },
+      {
+        "id": "dd-reverse-cyanosis",
+        "targetSeconds": 180,
+        "difficulty": 3,
+        "basedOn": { "rules": ["ductal-dependence", "pbf-map"], "errata": ["e-reverse-differential"] },
+        "hint": "มือหรือเท้าแดงกว่า?",
+        "title": "เท้าแดงกว่ามือ",
+        "chiefComplaint": "ทารกครบกำหนด อายุ 18 ชั่วโมง เขียว ไม่มีโรคปอด ไม่มี meconium",
+        "vitals": "HR 160 · RR 60 · SpO2 มือขวา 72% เท้า 88%",
+        "budget": 10,
+        "clues": [
+          { "id": "h-risk", "kind": "history", "cost": 1, "label": "ปัจจัยเสี่ยงปอด/PPHN", "reveals": "ไม่มี asphyxia, MAS, sepsis", "strength": "moderate", "why": "PPHN มักมีโรคต้นเหตุ" },
+          { "id": "b-four-limb", "kind": "bedside", "cost": 3, "label": "เทียบ SpO2 pre/post-ductal ซ้ำ", "reveals": "เท้าสูงกว่ามือขวาชัดเจน (reverse differential)", "strength": "strong", "why": "เลือดแดงจาก PA ไหลผ่าน PDA ลงท่อนล่าง → great arteries สลับ" },
+          { "id": "p-pulses", "kind": "pe", "cost": 2, "label": "Pulse 4 แขนขา", "reveals": "เท่ากันทุกแขนขา", "strength": "weak", "why": "ไม่ได้ช่วยยืนยัน TGA แต่ไม่สนับสนุน COA แบบ shock" },
+          { "id": "i-cxr", "kind": "imaging", "cost": 5, "label": "CXR", "reveals": "Mediastinum แคบ หัวใจรูปไข่ ปอดขาว", "strength": "strong", "why": "Egg-on-a-string" },
+          { "id": "i-echo", "kind": "imaging", "cost": 5, "label": "Echo", "reveals": "D-TGA, PFO เล็ก, PDA ใหญ่ flow จาก PA ลง descending aorta, PVR สูง", "strength": "strong", "why": "ยืนยัน" }
+        ],
+        "diagnosisOptions": [
+          { "id": "tga", "label": "D-TGA ที่มี PDA + PVR สูง" },
+          { "id": "pphn", "label": "PPHN" },
+          { "id": "coa", "label": "Critical COA" },
+          { "id": "tof", "label": "TOF" },
+          { "id": "peripheral", "label": "Peripheral cyanosis จากอากาศเย็น" }
+        ],
+        "nextStepOptions": [
+          { "id": "pge1-bas", "label": "PGE1 + เตรียม balloon atrial septostomy · ส่งศูนย์ทำ arterial switch" },
+          { "id": "ino-only", "label": "Inhaled NO อย่างเดียว" },
+          { "id": "ibuprofen", "label": "Ibuprofen ปิด PDA" },
+          { "id": "warm", "label": "ห่มผ้าแล้ววัดซ้ำ" },
+          { "id": "propranolol", "label": "Propranolol IV" }
+        ],
+        "answer": { "diagnosis": "tga", "nextStep": "pge1-bas" },
+        "optimalLine": ["h-risk", "b-four-limb", "i-cxr"],
+        "explanation": "Differential cyanosis ปกติ (เท้าต่ำกว่ามือ) ชี้ PPHN/critical COA แต่แบบ reverse (เท้าแดงกว่ามือขวา) ชี้ D-TGA ที่มี PDA และ PVR สูง: aorta (จาก RV) ส่งเลือดดำไปมือขวา ส่วนเลือดแดงจาก PA ไหลผ่าน PDA ลงท่อนล่าง · รักษาเพิ่ม mixing ด้วย PGE1 + BAS แล้ว arterial switch"
+      }
+    ],
+    "mcq": [
+      {
+        "id": "mcq-asd-fixed",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["load-chamber", "murmur-gradient"] },
+        "stem": "A 4-year-old girl is seen for a well-child visit. She is asymptomatic and growing well. A grade II/VI systolic ejection murmur is heard at the left upper sternal border, and the second heart sound is widely split during both inspiration and expiration. The ECG shows right axis deviation and an rSR' pattern in V1. What is the most likely diagnosis?",
+        "options": [
+          { "key": "A", "text": "Small ventricular septal defect", "why": "Small VSD = PSM ดังที่ LLSB, S2 ปกติ, EKG ปกติ" },
+          { "key": "B", "text": "Secundum atrial septal defect" },
+          { "key": "C", "text": "Valvular pulmonary stenosis", "why": "PS split กว้างแต่ยังขยับตามการหายใจ มี ejection click และ EKG RVH" },
+          { "key": "D", "text": "Innocent (Still's) murmur", "why": "Innocent ต้อง S2 ปกติ" },
+          { "key": "E", "text": "Patent ductus arteriosus", "why": "PDA = continuous murmur + bounding pulse, LVH" }
+        ],
+        "answer": "B",
+        "tell": "Wide fixed split S2 + rSR' V1 = RV volume load = ASD.",
+        "explanation": "S2 ที่แยกกว้างและ fixed เป็นลักษณะเฉพาะของ ASD (RV volume load ตลอด cycle) · SEM เป็น relative PS ไม่ใช่เสียงผ่านรู · rSR' V1 + RAD = RV volume overload"
+      },
+      {
+        "id": "mcq-vsd-timing",
+        "targetSeconds": 75,
+        "difficulty": 1,
+        "basedOn": { "rules": ["pvr-clock"] },
+        "stem": "A 7-week-old infant has sweating and fatigue during feeds and poor weight gain. Examination reveals a grade III/VI holosystolic murmur at the left lower sternal border and an apical mid-diastolic rumble. Which physiologic change best explains why symptoms appeared now rather than at birth?",
+        "options": [
+          { "key": "A", "text": "Recent closure of the ductus arteriosus", "why": "PDA ปิดในวันแรก ๆ ไม่ใช่ 7 สัปดาห์ และไม่ใช่กลไกของ VSD" },
+          { "key": "B", "text": "Fall in pulmonary vascular resistance over the first weeks of life" },
+          { "key": "C", "text": "Improvement in right ventricular compliance", "why": "อธิบาย ASD ที่ shunt มากขึ้นในวัยเด็กเล็ก ไม่ใช่ VSD" },
+          { "key": "D", "text": "Physiologic hemoglobin nadir", "why": "ไม่ใช่ตัวกำหนด shunt" },
+          { "key": "E", "text": "Progressive infundibular hypertrophy", "why": "เป็นกลไกของ TOF ที่เขียวมากขึ้น" }
+        ],
+        "answer": "B",
+        "tell": "Ventricular-level shunt + symptoms at several weeks = falling PVR.",
+        "explanation": "Large VSD (PSM + apical rumble จาก relative MS) shunt ขึ้นกับ PVR/SVR · PVR ลดลงในหลายสัปดาห์หลังคลอด shunt จึงมากขึ้นจนเกิด HF ทีหลัง"
+      },
+      {
+        "id": "mcq-coa-pge1",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["ductal-dependence"] },
+        "stem": "A 5-day-old boy presents with lethargy, mottled cool skin, and absent femoral pulses. Right arm blood pressure is 80/50 mm Hg and leg blood pressure is 50/30 mm Hg. What is the most appropriate next step?",
+        "options": [
+          { "key": "A", "text": "Intravenous ibuprofen", "why": "ปิด PDA ซึ่งเป็นทางรอดของท่อนล่าง" },
+          { "key": "B", "text": "Intravenous furosemide", "why": "ไม่แก้ obstruction และ preload ลดยิ่งแย่ใน shock" },
+          { "key": "C", "text": "Prostaglandin E1 infusion" },
+          { "key": "D", "text": "Dopamine infusion and await echocardiography", "why": "ห้ามรอ echo ก่อน PGE1 ใน ductal-dependent lesion" },
+          { "key": "E", "text": "Balloon atrial septostomy", "why": "ใช้เพิ่ม mixing ใน TGA ไม่ใช่ COA" }
+        ],
+        "answer": "C",
+        "tell": "Week-1 shock + absent femoral pulses + arm > leg BP → open the duct.",
+        "explanation": "Critical COA ทำให้ systemic flow ท่อนล่างพึ่ง PDA เมื่อ PDA ปิดจึง shock · เปิด PDA ด้วย PGE1 ทันที (เตรียม airway เพราะ apnea) แล้วค่อย echo และผ่าตัด"
+      },
+      {
+        "id": "mcq-tet-spell",
+        "targetSeconds": 60,
+        "difficulty": 2,
+        "basedOn": { "rules": ["tof-balance"] },
+        "stem": "A 4-month-old with unrepaired tetralogy of Fallot becomes inconsolable after waking, with deep rapid breathing and worsening cyanosis. The previously loud murmur is now soft. What is the most appropriate initial step?",
+        "options": [
+          { "key": "A", "text": "Intravenous dobutamine", "why": "Inotrope ทำให้ infundibulum บีบแรงขึ้น RVOT ยิ่งตีบ" },
+          { "key": "B", "text": "Knee-chest positioning and supplemental oxygen" },
+          { "key": "C", "text": "Immediate endotracheal intubation", "why": "เป็นขั้นท้ายเมื่อขั้นแรก ๆ ไม่ได้ผล" },
+          { "key": "D", "text": "Intravenous furosemide", "why": "ลด preload ทำให้ RVOT collapse มากขึ้น" },
+          { "key": "E", "text": "Oral digoxin", "why": "ไม่ใช่ยาฉุกเฉินและเป็น inotrope" }
+        ],
+        "answer": "B",
+        "tell": "Tet spell: murmur softens; first step is knee-chest + O2.",
+        "explanation": "Spell เกิดจาก R→L ผ่าน VSD เพิ่ม (RVOT spasm/SVR ลด) · knee-chest เพิ่ม SVR และลด venous return + O2 ก่อน แล้ว morphine, fluid, β-blocker, phenylephrine ตามลำดับ"
+      },
+      {
+        "id": "mcq-tga-bas",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["pbf-map", "ductal-dependence"] },
+        "stem": "A term newborn is cyanotic from birth with no murmur and a single second heart sound. Chest radiography shows an egg-shaped cardiac silhouette with a narrow mediastinum and increased pulmonary vascular markings. Despite a prostaglandin E1 infusion, oxygen saturation remains 60%. What is the next best step?",
+        "options": [
+          { "key": "A", "text": "Modified Blalock-Taussig shunt", "why": "เพิ่ม PBF ใช้ใน ↓PBF lesion ส่วน TGA ปอดขาวอยู่แล้ว ปัญหาคือ mixing" },
+          { "key": "B", "text": "Balloon atrial septostomy" },
+          { "key": "C", "text": "Intravenous ibuprofen", "why": "ปิด PDA ลด mixing" },
+          { "key": "D", "text": "Intravenous propranolol", "why": "ใช้ใน TOF spell" },
+          { "key": "E", "text": "Pulmonary balloon valvuloplasty", "why": "ใช้ใน critical PS" }
+        ],
+        "answer": "B",
+        "tell": "TGA still cyanotic on PGE1 → enlarge atrial mixing (Rashkind).",
+        "explanation": "D-TGA เป็นวงจรขนาน รอดได้ด้วย mixing · PGE1 ไม่พอ → balloon atrial septostomy เพิ่ม mixing ระดับ atrium แล้วจึง arterial switch"
+      },
+      {
+        "id": "mcq-ross-class",
+        "targetSeconds": 60,
+        "difficulty": 2,
+        "basedOn": { "rules": ["hf-syndrome"] },
+        "stem": "A 2-month-old takes 40 minutes per feed with marked tachypnea and sweating during feeds. Weight has fallen below the 3rd percentile. She is comfortable at rest. According to the modified Ross classification, what is her heart failure class?",
+        "options": [
+          { "key": "A", "text": "Class I", "why": "Class I = ไม่มีอาการ" },
+          { "key": "B", "text": "Class II", "why": "Class II = mild tachypnea/diaphoresis ขณะดูดนม ยังไม่มี growth failure" },
+          { "key": "C", "text": "Class III" },
+          { "key": "D", "text": "Class IV", "why": "Class IV = อาการขณะพัก (tachypnea, retraction, grunting, diaphoresis)" },
+          { "key": "E", "text": "Use the NYHA classification instead", "why": "NYHA ใช้ในเด็กโต (> 6 ปี)" }
+        ],
+        "answer": "C",
+        "tell": "Feeding symptoms + prolonged feeds + growth failure = Ross III.",
+        "explanation": "Modified Ross: III = marked tachypnea/diaphoresis ขณะดูดนม ดูดนานขึ้น และ growth failure · ถ้ามีอาการขณะพักจึงเป็น IV"
+      },
+      {
+        "id": "mcq-svt-adenosine",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["ekg-age"] },
+        "stem": "A 3-week-old infant is irritable and feeding poorly. Heart rate is 280/min with a regular narrow QRS complex and no visible P waves. Blood pressure is normal and capillary refill is 2 seconds. Ice applied to the face does not convert the rhythm. Intravenous access is in place. What is the most appropriate next step?",
+        "options": [
+          { "key": "A", "text": "Synchronized cardioversion at 2 J/kg", "why": "เก็บไว้สำหรับ unstable และเริ่มที่ 0.5–1 J/kg" },
+          { "key": "B", "text": "Adenosine 0.1 mg/kg rapid IV push followed by a saline flush" },
+          { "key": "C", "text": "Intravenous digoxin", "why": "ไม่ใช่ยาเริ่มต้นของ SVT ใน PALS" },
+          { "key": "D", "text": "Oral amiodarone", "why": "ไม่ใช่การรักษาเฉียบพลันและควรใช้ภายใต้ expert consultation" },
+          { "key": "E", "text": "Intravenous verapamil", "why": "หลีกเลี่ยงในทารก (hypotension/asystole)" }
+        ],
+        "answer": "B",
+        "tell": "Stable infant SVT after vagal maneuver → adenosine 0.1 mg/kg (max 6 mg).",
+        "explanation": "PALS: SVT ที่ไม่มี cardiopulmonary compromise ให้ vagal maneuver แล้ว adenosine 0.1 mg/kg rapid bolus (max 6 mg) ตาม dose 2 0.2 mg/kg (max 12 mg) · unstable จึง synchronized cardioversion 0.5–1 J/kg"
+      },
+      {
+        "id": "mcq-digoxin-hypok",
+        "targetSeconds": 75,
+        "difficulty": 3,
+        "basedOn": { "rules": ["hf-syndrome"], "errata": ["e-digoxin-tdd"] },
+        "stem": "A 6-month-old with a large ventricular septal defect is treated with furosemide and digoxin. He develops vomiting, a heart rate of 70/min, and a serum potassium of 2.8 mEq/L. Which explanation is most likely?",
+        "options": [
+          { "key": "A", "text": "Furosemide ototoxicity", "why": "ไม่ทำให้ bradycardia/vomiting แบบนี้" },
+          { "key": "B", "text": "Digoxin toxicity potentiated by hypokalemia" },
+          { "key": "C", "text": "Spontaneous closure of the ventricular septal defect", "why": "ไม่ทำให้ HR ช้าหรือ K ต่ำ" },
+          { "key": "D", "text": "Hyperkalemia from an ACE inhibitor", "why": "K ต่ำ ไม่ใช่สูง" },
+          { "key": "E", "text": "Eisenmenger syndrome", "why": "ไม่เกิดใน 6 เดือนและไม่ทำให้ bradycardia" }
+        ],
+        "answer": "B",
+        "tell": "Loop diuretic + digoxin + low K + vomiting/bradycardia = digoxin toxicity.",
+        "explanation": "Hypokalemia จาก loop diuretic เพิ่มการจับของ digoxin ที่ Na-K ATPase → toxicity (vomiting, bradycardia, AV block) · ระวังเพิ่มเมื่อให้ตัวเลข TDD เป็นขนาดต่อวันโดยผิดพลาด (maintenance ≈ 25% ของ TDD ต่อวันแบ่ง BID)"
+      }
+    ]
+  }
+}
