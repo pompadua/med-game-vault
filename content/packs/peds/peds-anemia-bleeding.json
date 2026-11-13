@@ -4,7 +4,14 @@
     "title": "Peds Blood Board: ซีดและเลือดออกง่ายในเด็ก",
     "subject": "peds",
     "rotation": "peds",
-    "tags": ["anemia", "thalassemia", "bleeding-disorders", "classification", "emergency", "nle"],
+    "tags": [
+      "anemia",
+      "thalassemia",
+      "bleeding-disorders",
+      "classification",
+      "emergency",
+      "nle"
+    ],
     "status": "draft",
     "schemaVersion": 3,
     "createdAt": "2026-11-13",
@@ -156,19 +163,89 @@
         "url": "https://www.cdc.gov/vitamin-k-deficiency/hcp/fact-sheet/index.html",
         "type": "guideline",
         "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "seasia-hb-2011",
+        "title": "Fucharoen S, Winichagoon P. Haemoglobinopathies in southeast Asia. Indian J Med Res 2011;134(4):498-506",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3237250/",
+        "type": "review",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "hbe-thal-2012",
+        "title": "Fucharoen S, Weatherall DJ. The hemoglobin E thalassemias. Cold Spring Harb Perspect Med 2012;2(8):a011734",
+        "url": "https://doi.org/10.1101/cshperspect.a011734",
+        "type": "review",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "hbe-hplc-2012",
+        "title": "Moiz B et al. Hemoglobin E syndromes in Pakistani population (HPLC phenotypes). BMC Blood Disord 2012;12:3",
+        "url": "https://doi.org/10.1186/1471-2326-12-3",
+        "type": "article",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "of-dcip-2004",
+        "title": "Fucharoen G et al. A simplified screening strategy for thalassaemia and haemoglobin E in rural communities in south-east Asia (OF + DCIP). Bull World Health Organ 2004;82(5):364-72",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2622836/",
+        "type": "article",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "hba2-id-2024",
+        "title": "Değermenci Ş, Aslan D. HbA2 levels in children with β-thalassemia trait associated with iron deficiency. Am J Clin Pathol 2024;162(6):544-548",
+        "url": "https://doi.org/10.1093/ajcp/aqae085",
+        "type": "article",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "hcs-nejm-2011",
+        "title": "Lal A et al. Heterogeneity of hemoglobin H disease in childhood. N Engl J Med 2011;364(8):710-8",
+        "url": "https://doi.org/10.1056/NEJMoa1010174",
+        "type": "article",
+        "accessedAt": "2026-11-13"
       }
     ]
   },
   "rulebook": {
-    "board": "กระดานมี 2 ฝั่ง: ฝั่งซีด (RBC) กับฝั่งเลือดออก (platelet + coagulation factor) · ฝั่งซีดเปิดด้วย retic แล้ว MCV แล้ว DCT/smear · ฝั่งเลือดออกเปิดด้วย pattern การออก (primary vs secondary) แล้ว platelet count แล้ว APTT/PT/TT · ทุกเคสจบที่คำถามเดียว: ขาดอะไร → เติมสิ่งนั้น (หรือหยุดสิ่งที่ทำลาย)",
+    "board": "กระดานมี 2 ฝั่ง: ฝั่งซีด (RBC) กับฝั่งเลือดออก (platelet + coagulation factor) · ฝั่งซีดเปิดด้วย retic แล้ว MCV แล้ว DCT/smear · ฝั่งเลือดออกเปิดด้วย pattern การออก (primary vs secondary) แล้ว platelet count แล้ว APTT/PT/TT · ทุกเคสจบที่คำถามเดียว: ขาดอะไร → เติมสิ่งนั้น (หรือหยุดสิ่งที่ทำลาย) · ธาลัสฯ คิดจากหลักเดียว: Hb ปกติทุกตัว (A = α2β2, A2 = α2δ2, F = α2γ2) ต้องมี α สองสาย — ขาด α แล้ว chain ที่เหลือจับกันเองเป็น Hb แปลก (γ4 = Bart's, β4 = H) · ขาด β แล้ว α ที่เหลือจับกันเองไม่ได้ ตกตะกอนในไขกระดูก และร่างกายชดเชยด้วย γ/δ (HbF, HbA2 สูง)",
     "pieces": [
-      { "id": "retic", "name": "Reticulocyte count", "role": "ตัวแยกตัวแรกของซีด: สูง = ไขกระดูกทำงาน (ทำลาย/เสียเลือด) · ต่ำ = สร้างไม่ได้" },
-      { "id": "mcv-rdw", "name": "MCV + RDW + RBC count", "role": "แยก microcytic: IDA (RDW สูง) vs พาหะธาลัสฯ (RDW ปกติ RBC สูง)" },
-      { "id": "dct-smear", "name": "Direct Coombs test + blood smear", "role": "แยก hemolysis: DCT+ = AIHA · spherocyte = HS · bite cell = G6PD" },
-      { "id": "hb-typing", "name": "Hb typing / supravital stain", "role": "ยืนยันธาลัสฯ: HbA2, HbE, inclusion body ของ HbH" },
-      { "id": "bleed-pattern", "name": "Bleeding pattern", "role": "petechiae/mucosa = primary · hemarthrosis/deep hematoma = secondary" },
-      { "id": "coagulogram", "name": "APTT / PT / TT", "role": "ชี้ตำแหน่งใน cascade: intrinsic / extrinsic / common / fibrinogen" },
-      { "id": "replacement", "name": "Blood component / factor", "role": "เติมสิ่งที่ขาดให้ตรง: FVIII, FIX, cryo, FFP, vitamin K, platelet, PRC" }
+      {
+        "id": "retic",
+        "name": "Reticulocyte count",
+        "role": "ตัวแยกตัวแรกของซีด: สูง = ไขกระดูกทำงาน (ทำลาย/เสียเลือด) · ต่ำ = สร้างไม่ได้"
+      },
+      {
+        "id": "mcv-rdw",
+        "name": "MCV + RDW + RBC count",
+        "role": "แยก microcytic: IDA (RDW สูง) vs พาหะธาลัสฯ (RDW ปกติ RBC สูง)"
+      },
+      {
+        "id": "dct-smear",
+        "name": "Direct Coombs test + blood smear",
+        "role": "แยก hemolysis: DCT+ = AIHA · spherocyte = HS · bite cell = G6PD"
+      },
+      {
+        "id": "hb-typing",
+        "name": "Hb typing / supravital stain",
+        "role": "ยืนยันธาลัสฯ: HbA2, HbE, inclusion body ของ HbH"
+      },
+      {
+        "id": "bleed-pattern",
+        "name": "Bleeding pattern",
+        "role": "petechiae/mucosa = primary · hemarthrosis/deep hematoma = secondary"
+      },
+      {
+        "id": "coagulogram",
+        "name": "APTT / PT / TT",
+        "role": "ชี้ตำแหน่งใน cascade: intrinsic / extrinsic / common / fibrinogen"
+      },
+      {
+        "id": "replacement",
+        "name": "Blood component / factor",
+        "role": "เติมสิ่งที่ขาดให้ตรง: FVIII, FIX, cryo, FFP, vitamin K, platelet, PRC"
+      }
     ],
     "coreRules": [
       {
@@ -193,7 +270,10 @@
           "Therapeutic trial: ให้เหล็กแล้ว retic ขึ้นในราว 1 สัปดาห์ = ยืนยัน IDA",
           "พาหะธาลัสฯ ที่ ferritin ปกติ ไม่ต้องให้เหล็ก"
         ],
-        "sourceIds": ["sp-ida", "mentzer-2022"]
+        "sourceIds": [
+          "sp-ida",
+          "mentzer-2022"
+        ]
       },
       {
         "id": "globin-balance",
@@ -205,7 +285,10 @@
           "ให้เลือดเรื้อรัง + ดูดซึมเหล็กมาก → iron overload → ต้อง chelation",
           "AR: คู่พาหะชนิดเดียวกันมีโอกาสลูกเป็นโรค 25% ทุกครรภ์ → couple screening + prenatal diagnosis"
         ],
-        "sourceIds": ["merck-thalassemias", "tif-tdt-2021"]
+        "sourceIds": [
+          "merck-thalassemias",
+          "tif-tdt-2021"
+        ]
       },
       {
         "id": "hemolysis-triage",
@@ -217,7 +300,11 @@
           "AIHA: warm = IgG ตอบสนอง steroid · cold = IgM (Mycoplasma, EBV) steroid ได้ผลน้อย",
           "ม้ามคือที่ทำลาย spherocyte → splenectomy ช่วย HS แม้รูปร่างเซลล์ไม่เปลี่ยน"
         ],
-        "sourceIds": ["msd-hs", "merck-g6pd", "msd-aiha"]
+        "sourceIds": [
+          "msd-hs",
+          "merck-g6pd",
+          "msd-aiha"
+        ]
       },
       {
         "id": "bleed-pattern",
@@ -242,7 +329,10 @@
           "Platelet disorder → APTT/PT/TT ปกติหมด"
         ],
         "ruleOfThumb": true,
-        "sourceIds": ["msd-hemophilia", "cdc-vkdb"]
+        "sourceIds": [
+          "msd-hemophilia",
+          "cdc-vkdb"
+        ]
       },
       {
         "id": "replace-missing",
@@ -254,7 +344,29 @@
           "DDAVP: mild hemophilia A และ vWD type 1",
           "ITP: observe / steroid / IVIG · platelet เฉพาะเลือดออกคุกคามชีวิต"
         ],
-        "sourceIds": ["msd-hemophilia", "msd-vwd", "msd-itp"]
+        "sourceIds": [
+          "msd-hemophilia",
+          "msd-vwd",
+          "msd-itp"
+        ]
+      },
+      {
+        "id": "hb-typing-read",
+        "rule": "อ่าน Hb typing (ชื่อเรียงจากมากไปน้อย) ทีละคำถาม: (1) มี HbA ไหม — ไม่มีเลย = β ทั้งสองข้างสร้าง β ปกติไม่ได้ (β0/β0, β0/βE, βE/βE) · (2) มี E ไหม — มีอัลลีล βE (β-variant ที่สร้างได้น้อยลงเล็กน้อย = mild β+) · (3) F สูงชัดไหม — มี β-thal ร่วมอย่างน้อยหนึ่งข้าง · (4) ไม่มี E และ A2 > 3.5% — β-thal trait · (5) มี Bart's / H / CS ไหม — มี α ไม่พอ · ถ้าทุกข้อปกติแต่เซลล์เล็ก ferritin ปกติ OF บวก = α-thal trait ซึ่ง Hb typing มองไม่เห็น → PCR",
+        "generates": [
+          "A2A (A2 ปกติ) = ปกติ หรือ α-thal trait → ต้อง PCR ถ้า OF บวก",
+          "A2A (A2 > 3.5%) = β-thal trait",
+          "EA = HbE trait · EE = homozygous HbE (ไม่มี A, F ต่ำ)",
+          "EF = β0-thal/HbE (ไม่มี A, F สูง) · A2F = homozygous β0-thal",
+          "A2A + H (± Bart's) = HbH disease · มี CS ร่วม = HbH-CS",
+          "EA + Bart's = AE Bart's disease (HbH + HbE trait) · EF + Bart's = EF Bart's disease"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": [
+          "seasia-hb-2011",
+          "hbe-thal-2012",
+          "hbe-hplc-2012"
+        ]
       }
     ],
     "winConditions": [
@@ -275,31 +387,41 @@
         "id": "e-aplastic-crisis",
         "text": "เด็กที่ hemolysis เรื้อรัง (HS, ธาลัสฯ) ปกติ retic ต้องสูง — ถ้าซีดลงเร็วแต่ retic ต่ำมาก = aplastic crisis จาก parvovirus B19 กดการสร้าง RBC ชั่วคราว (ไม่ใช่ hemolytic crisis) → admit ให้ PRC",
         "breaksRule": "retic-sort",
-        "sourceIds": ["msd-hs"]
+        "sourceIds": [
+          "msd-hs"
+        ]
       },
       {
         "id": "e-ferritin-inflammation",
         "text": "Ferritin เป็น acute phase reactant — ตอนติดเชื้อ/อักเสบ ferritin ปกติหรือสูงได้แม้ขาดเหล็กจริง จึงตัด IDA ด้วย ferritin ปกติไม่ได้ ต้องดู CRP/clinical หรือดู transferrin saturation, therapeutic trial",
         "breaksRule": "iron-order",
-        "sourceIds": ["sp-ida"]
+        "sourceIds": [
+          "sp-ida"
+        ]
       },
       {
         "id": "e-alpha-trait-hba2",
         "text": "HbA2 สูง (> 3.5%) ใช้วินิจฉัยได้แค่ β-thal trait — α-thal trait มี HbA2 และ HbF ปกติ Hb typing จึงดูปกติ ต้องยืนยันด้วย DNA analysis (PCR) โดยเฉพาะ α-thal1 trait ในคู่ที่เสี่ยงลูกเป็น Hb Bart's",
         "breaksRule": "globin-balance",
-        "sourceIds": ["merck-thalassemias"]
+        "sourceIds": [
+          "merck-thalassemias"
+        ]
       },
       {
         "id": "e-g6pd-assay",
         "text": "ระหว่างหรือหลัง acute hemolysis ใหม่ ๆ G6PD level อาจปกติ (false negative) เพราะ RBC แก่ที่ขาด enzyme ถูกทำลายไปแล้ว เหลือแต่ reticulocyte ที่มี G6PD มาก → ต้องตรวจซ้ำหลังหายหลายสัปดาห์ (เลคเชอร์: 2–3 เดือน)",
         "breaksRule": "hemolysis-triage",
-        "sourceIds": ["merck-g6pd"]
+        "sourceIds": [
+          "merck-g6pd"
+        ]
       },
       {
         "id": "e-vwd-aptt",
         "text": "vWD เป็นโรค primary hemostasis (mucocutaneous) แต่ APTT ยาวได้ เพราะ vWF เป็นตัวพา FVIII · type 3 (ไม่มี vWF เลย) เลือดออกในข้อได้แบบ hemophilia — อย่าใช้ APTT หรือ hemarthrosis อย่างเดียวตัด vWD",
         "breaksRule": "bleed-pattern",
-        "sourceIds": ["msd-vwd"]
+        "sourceIds": [
+          "msd-vwd"
+        ]
       },
       {
         "id": "e-fxiii",
@@ -311,29 +433,97 @@
         "id": "e-ddavp-limits",
         "text": "DDAVP ไม่ได้เติม factor แต่ปล่อยของจากคลัง: ไม่ได้ผลใน hemophilia B (ไม่เพิ่ม FIX) และ severe hemophilia A (คลังว่าง), ไม่ได้ผลใน vWD type 3 และห้ามใน type 2B เพราะ platelet จะต่ำลงอีก",
         "breaksRule": "replace-missing",
-        "sourceIds": ["msd-vwd", "msd-hemophilia"]
+        "sourceIds": [
+          "msd-vwd",
+          "msd-hemophilia"
+        ]
       },
       {
         "id": "e-itp-platelet",
         "text": "ITP platelet ต่ำมากก็ไม่ให้ platelet transfusion — ยกเว้นเลือดออกคุกคามชีวิต (เช่น ICH) ให้ platelet ร่วมกับ IVIG + IV steroid",
         "breaksRule": "replace-missing",
-        "sourceIds": ["msd-itp", "cps-itp-2019"]
+        "sourceIds": [
+          "msd-itp",
+          "cps-itp-2019"
+        ]
       },
       {
         "id": "e-ida-no-transfusion",
         "text": "IDA ซีดช้า ร่างกายปรับตัวได้ แม้ Hb ต่ำมากก็ไม่ให้เลือดเป็น routine — ให้เฉพาะมี heart failure / hemodynamic instability และให้ช้า ๆ ระวัง volume overload",
         "breaksRule": "replace-missing",
-        "sourceIds": ["sp-ida"]
+        "sourceIds": [
+          "sp-ida"
+        ]
+      },
+      {
+        "id": "e-hbe-a2-coelute",
+        "text": "บน HPLC HbE ออกมาตำแหน่งเดียวกับ HbA2 (รายงานรวมเป็น \"E + A2\") — คนที่มี HbE จึงใช้ค่า A2 > 3.5% วินิจฉัย β-thal trait ไม่ได้ ตัวเลข 25% ในคน EA คือ HbE ไม่ใช่ A2 สูง",
+        "breaksRule": "hb-typing-read",
+        "sourceIds": [
+          "hbe-hplc-2012"
+        ]
+      },
+      {
+        "id": "e-hbe-low-alpha",
+        "text": "HbE trait ปกติมี HbE ราว 20–30% — ถ้า HbE ต่ำกว่าที่ควร ให้คิดถึง α-thal ร่วม (α ไม่พอ βE แย่งจับ α ได้แย่กว่า β ปกติ เช่น AE Bart's disease HbE เหลือ 13–15%) หรือขาดเหล็กร่วม",
+        "breaksRule": "hb-typing-read",
+        "sourceIds": [
+          "seasia-hb-2011",
+          "hbe-hplc-2012"
+        ]
+      },
+      {
+        "id": "e-id-hba2",
+        "text": "ขาดเหล็กทำให้ HbA2 ลดลงได้บ้าง แต่ในเด็ก β-thal trait ที่ขาดเหล็ก HbA2 ส่วนใหญ่ยัง ≥ 3.5% (median 4.1% vs 4.9%) — ไม่ต้องรอแก้เหล็กก่อนส่ง Hb typing และถ้าสงสัยให้ตรวจต่อไม่ว่าสถานะเหล็กเป็นอย่างไร",
+        "breaksRule": "hb-typing-read",
+        "sourceIds": [
+          "hba2-id-2024"
+        ]
+      },
+      {
+        "id": "e-hcs-severe",
+        "text": "นับยีน α อย่างเดียวไม่พอ: Hb Constant Spring เป็น mutation ที่ α2 (ยีนที่ทำงานมากกว่า α1) แบบไม่ใช่ deletion → HbH-CS (--/αCSα) ซีดมากกว่า HbH ธรรมดา (--/-α) แม้ \"จำนวนยีนที่เสีย\" เท่ากัน ซีดลงหนักเวลามีไข้และมักต้องให้เลือด",
+        "breaksRule": "globin-balance",
+        "sourceIds": [
+          "seasia-hb-2011",
+          "hcs-nejm-2011"
+        ]
       }
     ],
     "classification": [
       {
         "id": "side-microcytic",
         "name": "ซีด · Microcytic",
-        "hint": "แยกด้วย RDW + RBC count + ferritin แล้ว Hb typing",
+        "hint": "แยกด้วย RDW + RBC count + ferritin แล้ว OF/DCIP → Hb typing (มี A? มี E? F สูง? A2 > 3.5? มี Bart's/H?)",
         "groups": [
-          { "id": "micro-iron", "name": "ขาดเหล็ก (RDW สูง, ferritin ต่ำ)", "cardIds": ["ida"] },
-          { "id": "micro-globin", "name": "Globin ไม่สมดุล (ธาลัสฯ)", "hint": "พาหะ RDW ปกติ · โรค HSM + hemolysis", "cardIds": ["thal-trait", "beta-thal-major", "hbh-disease", "hb-bart-hydrops"] }
+          {
+            "id": "micro-iron",
+            "name": "ขาดเหล็ก (RDW สูง, ferritin ต่ำ)",
+            "cardIds": [
+              "ida"
+            ]
+          },
+          {
+            "id": "micro-globin",
+            "name": "Globin ไม่สมดุล (ธาลัสฯ)",
+            "hint": "พาหะ RDW ปกติ · โรค HSM + hemolysis",
+            "cardIds": [
+              "thal-trait",
+              "beta-thal-major",
+              "hbh-disease",
+              "hb-bart-hydrops"
+            ]
+          },
+          {
+            "id": "micro-hbe",
+            "name": "HbE (β-variant = mild β+)",
+            "hint": "DCIP บวก · มี A = EA · ไม่มี A = EE / EF",
+            "cardIds": [
+              "hbe-trait",
+              "hb-ee",
+              "ae-bart-disease"
+            ]
+          }
         ]
       },
       {
@@ -341,9 +531,31 @@
         "name": "ซีด · Normocytic (retic บอกทาง)",
         "hint": "retic สูง = hemolysis · retic ต่ำ = marrow",
         "groups": [
-          { "id": "hemo-dct-neg", "name": "Hemolysis DCT ลบ", "hint": "spherocyte = HS · bite cell = G6PD", "cardIds": ["hs", "g6pd"] },
-          { "id": "hemo-dct-pos", "name": "Hemolysis DCT บวก", "cardIds": ["aiha"] },
-          { "id": "marrow-low-retic", "name": "Retic ต่ำ / marrow", "hint": "ต่ำ series เดียวชั่วคราว vs หลาย series", "cardIds": ["aplastic-crisis", "marrow-failure"] }
+          {
+            "id": "hemo-dct-neg",
+            "name": "Hemolysis DCT ลบ",
+            "hint": "spherocyte = HS · bite cell = G6PD",
+            "cardIds": [
+              "hs",
+              "g6pd"
+            ]
+          },
+          {
+            "id": "hemo-dct-pos",
+            "name": "Hemolysis DCT บวก",
+            "cardIds": [
+              "aiha"
+            ]
+          },
+          {
+            "id": "marrow-low-retic",
+            "name": "Retic ต่ำ / marrow",
+            "hint": "ต่ำ series เดียวชั่วคราว vs หลาย series",
+            "cardIds": [
+              "aplastic-crisis",
+              "marrow-failure"
+            ]
+          }
         ]
       },
       {
@@ -351,9 +563,29 @@
         "name": "เลือดออก · Primary (petechiae/mucosa)",
         "hint": "platelet count แยกก่อน",
         "groups": [
-          { "id": "prim-plt-low", "name": "Platelet ต่ำอย่างเดียว", "cardIds": ["itp"] },
-          { "id": "prim-plt-normal", "name": "Platelet ปกติ: function / vWF", "hint": "eosinophil สูง = APDE · FH + menorrhagia = vWD", "cardIds": ["apde", "vwd"] },
-          { "id": "prim-vessel", "name": "Vascular", "cardIds": ["hsp"] }
+          {
+            "id": "prim-plt-low",
+            "name": "Platelet ต่ำอย่างเดียว",
+            "cardIds": [
+              "itp"
+            ]
+          },
+          {
+            "id": "prim-plt-normal",
+            "name": "Platelet ปกติ: function / vWF",
+            "hint": "eosinophil สูง = APDE · FH + menorrhagia = vWD",
+            "cardIds": [
+              "apde",
+              "vwd"
+            ]
+          },
+          {
+            "id": "prim-vessel",
+            "name": "Vascular",
+            "cardIds": [
+              "hsp"
+            ]
+          }
         ]
       },
       {
@@ -361,9 +593,30 @@
         "name": "เลือดออก · Secondary (hemarthrosis/deep)",
         "hint": "APTT / PT / TT ชี้ตำแหน่ง",
         "groups": [
-          { "id": "sec-aptt", "name": "APTT ยาวอย่างเดียว", "cardIds": ["hemophilia-a", "hemophilia-b"] },
-          { "id": "sec-pt-aptt", "name": "PT + APTT ยาว, TT ปกติ", "hint": "อายุบอกชนิด", "cardIds": ["vkdb-classic", "vkdb-late"] },
-          { "id": "sec-all", "name": "ทุกตัวยาว + platelet ต่ำ", "cardIds": ["dic"] }
+          {
+            "id": "sec-aptt",
+            "name": "APTT ยาวอย่างเดียว",
+            "cardIds": [
+              "hemophilia-a",
+              "hemophilia-b"
+            ]
+          },
+          {
+            "id": "sec-pt-aptt",
+            "name": "PT + APTT ยาว, TT ปกติ",
+            "hint": "อายุบอกชนิด",
+            "cardIds": [
+              "vkdb-classic",
+              "vkdb-late"
+            ]
+          },
+          {
+            "id": "sec-all",
+            "name": "ทุกตัวยาว + platelet ต่ำ",
+            "cardIds": [
+              "dic"
+            ]
+          }
         ]
       }
     ]
@@ -373,12 +626,24 @@
       "id": "ida",
       "name": "Iron deficiency anemia (IDA)",
       "who": "เด็ก 6 เดือน–2 ปี (peak 9–12 เดือน) ดื่มนมวัวมาก กินอาหารเสริมน้อย · วัยรุ่นหญิงประจำเดือนมาก · พยาธิปากขอ",
-      "trigger": { "ruleId": "iron-order", "text": "คลังเหล็กหมด → serum iron ต่ำ → สร้าง heme ไม่ทัน → เซลล์เล็ก ซีด" },
+      "trigger": {
+        "ruleId": "iron-order",
+        "text": "คลังเหล็กหมด → serum iron ต่ำ → สร้าง heme ไม่ทัน → เซลล์เล็ก ซีด"
+      },
       "signature": "Microcytic hypochromic + RDW สูง + ferritin ต่ำ + reactive thrombocytosis · retic ต่ำ · pica, koilonychia, angular stomatitis",
-      "lookAlikes": ["thal-trait", "beta-thal-major"],
+      "lookAlikes": [
+        "thal-trait",
+        "beta-thal-major"
+      ],
       "tells": [
-        { "vs": "thal-trait", "feature": "IDA RDW สูง RBC count ต่ำ (Mentzer > 13) ferritin ต่ำ · trait RDW ปกติ RBC count สูง (Mentzer < 13) ferritin ปกติ" },
-        { "vs": "beta-thal-major", "feature": "IDA ไม่มี HSM/jaundice/facies และ retic ต่ำ · thal disease มี HSM, target cell, nucleated RBC, hemolysis" }
+        {
+          "vs": "thal-trait",
+          "feature": "IDA RDW สูง RBC count ต่ำ (Mentzer > 13) ferritin ต่ำ · trait RDW ปกติ RBC count สูง (Mentzer < 13) ferritin ปกติ"
+        },
+        {
+          "vs": "beta-thal-major",
+          "feature": "IDA ไม่มี HSM/jaundice/facies และ retic ต่ำ · thal disease มี HSM, target cell, nucleated RBC, hemolysis"
+        }
       ],
       "counter": "Ferrous sulfate PO (elemental iron) วันละครั้ง ห่างนม > 2 ชม. จนซีดหาย แล้วให้ต่อเพื่อเติมคลัง · F/U retic ราว 1 สัปดาห์ · แก้ต้นเหตุ: ลดนมวัว เพิ่มอาหารเหล็ก ถ่ายพยาธิ · ไม่ให้เลือดถ้าไม่มี heart failure",
       "danger": "ขาดเหล็กในขวบปีแรกกระทบพัฒนาการสมองระยะยาว · ซีดมากจน high-output heart failure · ยาเหล็กเกินขนาดในเด็กเล็กอันตรายถึงชีวิต",
@@ -420,18 +685,39 @@
           "sourceId": "anamai-iron-weekly"
         }
       ],
-      "sourceIds": ["aafp-anemia-2024", "sp-ida", "aap-iron-2010"]
+      "sourceIds": [
+        "aafp-anemia-2024",
+        "sp-ida",
+        "aap-iron-2010"
+      ]
     },
     {
       "id": "thal-trait",
       "name": "Thalassemia / HbE trait (พาหะ)",
       "who": "เด็กแข็งแรง เจอ microcytosis โดยบังเอิญ ซีดน้อยหรือไม่ซีด · มักมี FH ธาลัสฯ",
-      "trigger": { "ruleId": "globin-balance", "text": "ยีนผิดปกติข้างเดียว chain ไม่สมดุลเล็กน้อย เซลล์เล็กเท่ากันทั้งหมดแต่สร้างจำนวนมากชดเชย" },
+      "trigger": {
+        "ruleId": "globin-balance",
+        "text": "ยีนผิดปกติข้างเดียว chain ไม่สมดุลเล็กน้อย เซลล์เล็กเท่ากันทั้งหมดแต่สร้างจำนวนมากชดเชย"
+      },
       "signature": "MCV ต่ำมากเทียบกับ Hb ที่แทบปกติ · RBC count สูง · RDW ปกติ · ferritin ปกติ · OF/DCIP screening บวก",
-      "lookAlikes": ["ida", "beta-thal-major"],
+      "lookAlikes": [
+        "ida",
+        "beta-thal-major",
+        "hbe-trait"
+      ],
       "tells": [
-        { "vs": "ida", "feature": "RDW ปกติ + RBC count สูง + ferritin ปกติ (IDA กลับกันทั้งหมด)" },
-        { "vs": "beta-thal-major", "feature": "พาหะไม่มี HSM ไม่มี hemolysis ไม่ต้องให้เลือด · โรคมี HSM, jaundice, facies" }
+        {
+          "vs": "ida",
+          "feature": "RDW ปกติ + RBC count สูง + ferritin ปกติ (IDA กลับกันทั้งหมด)"
+        },
+        {
+          "vs": "beta-thal-major",
+          "feature": "พาหะไม่มี HSM ไม่มี hemolysis ไม่ต้องให้เลือด · โรคมี HSM, jaundice, facies"
+        },
+        {
+          "vs": "hbe-trait",
+          "feature": "β/α-thal trait: OF บวก DCIP ลบ ไม่มี E · HbE trait: DCIP บวก Hb typing EA"
+        }
       ],
       "counter": "ไม่ต้องรักษา ห้ามให้เหล็กถ้า ferritin ปกติ · ยืนยันด้วย Hb typing (β trait: HbA2 สูง, HbE trait: เห็น HbE) หรือ DNA (α-thal1 trait) · genetic counseling ตรวจคู่สมรส",
       "danger": "คู่พาหะชนิดเดียวกันเสี่ยงลูกเป็นโรครุนแรง (Hb Bart's, β-thal major, β-thal/HbE) 25% ทุกครรภ์",
@@ -447,21 +733,59 @@
           "prompt": "พ่อแม่เป็น α-thal1 trait (--/αα) ทั้งคู่ ลูกเสี่ยง Hb Bart's hydrops fetalis เท่าไร?",
           "fact": "25% ทุกครรภ์ (--/αα × --/αα → --/--) → เสนอ prenatal diagnosis",
           "sourceId": "merck-thalassemias"
+        },
+        {
+          "id": "of-dcip-screen",
+          "prompt": "OF test กับ DCIP test คัดกรองอะไร และผลลบทั้งคู่แปลว่าอะไร?",
+          "fact": "OF (one-tube, 0.36% NaCl): เซลล์เล็กแตกยาก → บวกใน α-thal1 trait และ β-thal trait (IDA บวกได้) · DCIP: HbE ตกตะกอน → บวกใน HbE · ลบทั้งคู่ = ไม่พบพาหะ α0-thal, β-thal, HbE (NPV 100% ในการศึกษาชนบทไทย) แต่หลุด α+ / CS ได้",
+          "sourceId": "of-dcip-2004"
+        },
+        {
+          "id": "alpha-trait-needs-pcr",
+          "prompt": "ยืนยัน α-thal1 trait ด้วยวิธีไหน?",
+          "fact": "PCR/DNA analysis — Hb typing และ CBC ในผู้ใหญ่แยกจากปกติหรือ IDA ไม่ได้",
+          "sourceId": "seasia-hb-2011"
         }
       ],
-      "sourceIds": ["merck-thalassemias", "mentzer-2022"]
+      "sourceIds": [
+        "merck-thalassemias",
+        "mentzer-2022",
+        "of-dcip-2004",
+        "seasia-hb-2011"
+      ]
     },
     {
       "id": "beta-thal-major",
       "name": "β-thal major / β-thal/HbE disease (TDT)",
       "who": "เด็กซีดเริ่มหลัง 6 เดือน–2 ปี ตัวเหลือง ท้องโต (ตับม้ามโต) โตช้า · β-thal/HbE พบบ่อยในไทย",
-      "trigger": { "ruleId": "globin-balance", "text": "β-chain สร้างไม่ได้ α ส่วนเกินตกตะกอน → ineffective erythropoiesis + hemolysis + extramedullary hematopoiesis" },
+      "trigger": {
+        "ruleId": "globin-balance",
+        "text": "β-chain สร้างไม่ได้ α ส่วนเกินตกตะกอน → ineffective erythropoiesis + hemolysis + extramedullary hematopoiesis"
+      },
       "signature": "ซีด + jaundice + HSM + thalassemic facies · smear: target cell, aniso-poikilocytosis, nucleated RBC · Hb typing: HbF/HbE เด่น",
-      "lookAlikes": ["hbh-disease", "ida", "thal-trait"],
+      "lookAlikes": [
+        "hbh-disease",
+        "ida",
+        "thal-trait",
+        "hb-ee"
+      ],
       "tells": [
-        { "vs": "hbh-disease", "feature": "HbH มี inclusion body (β4) เด่นเมื่อย้อม supravital และมักไม่ต้องให้เลือดประจำ · TDT ต้องให้เลือดประจำ" },
-        { "vs": "ida", "feature": "TDT มี HSM + hemolysis (retic/bilirubin สูง) และ ferritin สูง · IDA ไม่มี HSM ferritin ต่ำ" },
-        { "vs": "thal-trait", "feature": "TDT ซีดมากมี HSM ต้องให้เลือด · trait ซีดน้อยหรือไม่ซีด ไม่มีอาการ" }
+        {
+          "vs": "hbh-disease",
+          "feature": "HbH มี inclusion body (β4) เด่นเมื่อย้อม supravital และมักไม่ต้องให้เลือดประจำ · TDT ต้องให้เลือดประจำ"
+        },
+        {
+          "vs": "ida",
+          "feature": "TDT มี HSM + hemolysis (retic/bilirubin สูง) และ ferritin สูง · IDA ไม่มี HSM ferritin ต่ำ"
+        },
+        {
+          "vs": "thal-trait",
+          "feature": "TDT ซีดมากมี HSM ต้องให้เลือด · trait ซีดน้อยหรือไม่ซีด ไม่มีอาการ"
+        },
+        {
+          "vs": "hb-ee",
+          "feature": "β0/E: HbF สูง ไม่มี A ซีดมาก HSM · EE: HbF < 3% ไม่ซีดมาก ไม่มี HSM"
+        }
       ],
       "counter": "ให้ leukocyte-poor PRC ประจำ keep pre-transfusion Hb 9–10.5 g/dL · folic acid · ห้ามให้ยาเหล็ก · iron chelation (deferoxamine, deferiprone, deferasirox) · splenectomy เมื่อมี indication และอายุ ≥ 5 ปี (vaccine ก่อน) · HSCT = curative",
       "danger": "Iron overload (หัวใจ ตับ ต่อมไร้ท่อ) · sepsis หลังตัดม้าม · aplastic crisis จาก parvovirus B19",
@@ -489,20 +813,47 @@
           "prompt": "การรักษาเดียวที่ curative ใน thalassemia major?",
           "fact": "Allogeneic HSCT (ผลดีที่สุดเมื่อทำตอนเด็กก่อน iron overload) · gene therapy อยู่ระหว่างพัฒนา",
           "sourceId": "tif-tdt-2021"
+        },
+        {
+          "id": "ebeta-severity-range",
+          "prompt": "β-thal/HbE disease รุนแรงแค่ไหน และอะไรทำให้อาการเบาลง?",
+          "fact": "กว้างมาก: Hb 3–13 g/dL ตั้งแต่เกือบไม่มีอาการถึงรุนแรงเท่า β-thal major · HbF สูง (ปัจจัยสำคัญสุด) และ α-thal ร่วม ทำให้เบาลง",
+          "sourceId": "seasia-hb-2011"
         }
       ],
-      "sourceIds": ["tif-tdt-2021", "merck-thalassemias"]
+      "sourceIds": [
+        "tif-tdt-2021",
+        "merck-thalassemias",
+        "seasia-hb-2011"
+      ]
     },
     {
       "id": "hbh-disease",
       "name": "Hb H disease (α-thal1/α-thal2, ± Hb Constant Spring)",
       "who": "เด็กซีดปานกลาง ตัวเหลือง ม้ามโต ซีดลงมากเป็นพัก ๆ เวลาไข้/ติดเชื้อ · ส่วนใหญ่ไม่ต้องให้เลือดประจำ (NTDT)",
-      "trigger": { "ruleId": "globin-balance", "text": "α-gene เหลือ 1 ใน 4 → β-chain เกินจับกันเป็น β4 (HbH) ตกตะกอนในเซลล์" },
+      "trigger": {
+        "ruleId": "globin-balance",
+        "text": "α-gene เหลือ 1 ใน 4 → β-chain เกินจับกันเป็น β4 (HbH) ตกตะกอนในเซลล์"
+      },
       "signature": "Inclusion body (HbH) จำนวนมากเมื่อย้อม supravital (brilliant cresyl blue) · microcytic + hemolysis + splenomegaly",
-      "lookAlikes": ["beta-thal-major", "hb-bart-hydrops"],
+      "lookAlikes": [
+        "beta-thal-major",
+        "hb-bart-hydrops",
+        "ae-bart-disease"
+      ],
       "tells": [
-        { "vs": "beta-thal-major", "feature": "HbH: inclusion body เด่น ไม่ต้องให้เลือดประจำ (keep Hb > 7 ตามเลคเชอร์) · β-thal major ต้องให้เลือดประจำ" },
-        { "vs": "hb-bart-hydrops", "feature": "HbH ขาด 3 ยีน มีชีวิตรอด · Bart's ขาด 4 ยีน hydrops ในครรภ์" }
+        {
+          "vs": "beta-thal-major",
+          "feature": "HbH: inclusion body เด่น ไม่ต้องให้เลือดประจำ (keep Hb > 7 ตามเลคเชอร์) · β-thal major ต้องให้เลือดประจำ"
+        },
+        {
+          "vs": "hb-bart-hydrops",
+          "feature": "HbH ขาด 3 ยีน มีชีวิตรอด · Bart's ขาด 4 ยีน hydrops ในครรภ์"
+        },
+        {
+          "vs": "ae-bart-disease",
+          "feature": "HbH: A + H ไม่มี E · AE Bart's: A + E + Bart's"
+        }
       ],
       "counter": "Folic acid · ให้เลือดเมื่อ hemolytic crisis (ไข้/ติดเชื้อ) · เลี่ยง oxidant · splenectomy ถ้าซีดมากหรือม้ามโตมาก · ติดตาม iron overload (ดูดซึมเหล็กมากแม้ไม่ให้เลือด)",
       "danger": "Hemolytic crisis เวลามีไข้ · HbH/Constant Spring รุนแรงกว่าและอาจต้องให้เลือดบ่อย",
@@ -512,36 +863,86 @@
           "prompt": "α-thal: ขาดกี่ยีนเป็น HbH disease และกี่ยีนเป็น hydrops fetalis?",
           "fact": "ขาด 3 ใน 4 ยีน (--/-α) = HbH disease · ขาดครบ 4 (--/--) = Hb Bart's hydrops fetalis · ขาด 2 = trait",
           "sourceId": "merck-thalassemias"
+        },
+        {
+          "id": "hbh-typing",
+          "prompt": "Hb typing ของ HbH disease เป็นอย่างไร และตรวจ inclusion body ยังไง?",
+          "fact": "ผู้ใหญ่/เด็กโต: A + H (HbH = β4) · แรกเกิด cord blood มี Bart's (γ4) ราว 25% · inclusion body เห็นเมื่อย้อม brilliant cresyl blue/methylene blue (เซลล์ส่วนใหญ่มี)",
+          "sourceId": "seasia-hb-2011"
+        },
+        {
+          "id": "hbh-cs-transfusion",
+          "prompt": "HbH-CS ต่างจาก deletional HbH แค่ไหน?",
+          "fact": "HbH-CS ซีดกว่าทุกช่วงอายุ ซีดหนักเวลาติดเชื้อ โอกาสได้เลือดภายในอายุ 20 ปี ~80% เทียบกับ ~3% ใน deletional HbH",
+          "sourceId": "hcs-nejm-2011"
         }
       ],
-      "sourceIds": ["merck-thalassemias"]
+      "sourceIds": [
+        "merck-thalassemias",
+        "seasia-hb-2011",
+        "hcs-nejm-2011"
+      ]
     },
     {
       "id": "hb-bart-hydrops",
       "name": "Hb Bart's hydrops fetalis (--/--)",
       "who": "ทารกในครรภ์ของคู่พาหะ α-thal1 ทั้งคู่ · บวมน้ำทั้งตัว รกใหญ่",
-      "trigger": { "ruleId": "globin-balance", "text": "ไม่มี α-chain เลย สร้าง HbF (α2γ2) ไม่ได้ตั้งแต่ในครรภ์ → γ4 (Hb Bart's) จับ O₂ แน่นไม่ปล่อย → hypoxia + heart failure ในครรภ์" },
+      "trigger": {
+        "ruleId": "globin-balance",
+        "text": "ไม่มี α-chain เลย สร้าง HbF (α2γ2) ไม่ได้ตั้งแต่ในครรภ์ → γ4 (Hb Bart's) จับ O₂ แน่นไม่ปล่อย → hypoxia + heart failure ในครรภ์"
+      },
       "signature": "Hydrops fetalis ในครรภ์ของคู่พาหะ α-thal1 · Hb Bart's (γ4) เด่น",
-      "lookAlikes": ["hbh-disease"],
+      "lookAlikes": [
+        "hbh-disease"
+      ],
       "tells": [
-        { "vs": "hbh-disease", "feature": "Bart's เป็นในครรภ์ (ไม่มี α เลย) · HbH มาตอนเด็กหลังคลอด (เหลือ α 1 ยีน)" }
+        {
+          "vs": "hbh-disease",
+          "feature": "Bart's เป็นในครรภ์ (ไม่มี α เลย) · HbH มาตอนเด็กหลังคลอด (เหลือ α 1 ยีน)"
+        }
       ],
       "counter": "ป้องกันด้วย couple screening (ต้องใช้ DNA หา α-thal1 trait เพราะ Hb typing ปกติ) + genetic counseling + prenatal diagnosis",
       "danger": "เสียชีวิตในครรภ์หรือหลังคลอดไม่นาน · มารดาเสี่ยง preeclampsia จากรกใหญ่",
-      "memorize": [],
-      "sourceIds": ["merck-thalassemias"]
+      "memorize": [
+        {
+          "id": "th-four-major-thal",
+          "prompt": "ธาลัสซีเมียชนิดรุนแรงหลัก 4 โรคในไทย?",
+          "fact": "Hb Bart's hydrops fetalis, homozygous β-thal, β-thal/HbE, HbH disease",
+          "sourceId": "seasia-hb-2011"
+        }
+      ],
+      "sourceIds": [
+        "merck-thalassemias",
+        "seasia-hb-2011"
+      ]
     },
     {
       "id": "hs",
       "name": "Hereditary spherocytosis (HS)",
       "who": "เด็กซีด เหลือง ม้ามโต มีประวัติตัวเหลืองแรกเกิด · พ่อหรือแม่เคยตัดม้าม/ผ่านิ่ว (AD)",
-      "trigger": { "ruleId": "hemolysis-triage", "text": "Membrane protein (spectrin, ankyrin) ผิด → เซลล์เสียผิวไปเรื่อย ๆ กลายเป็นทรงกลม → ติดค้างและถูกทำลายในม้าม (extravascular)" },
+      "trigger": {
+        "ruleId": "hemolysis-triage",
+        "text": "Membrane protein (spectrin, ankyrin) ผิด → เซลล์เสียผิวไปเรื่อย ๆ กลายเป็นทรงกลม → ติดค้างและถูกทำลายในม้าม (extravascular)"
+      },
       "signature": "Spherocyte + MCHC สูง + DCT ลบ + FH · osmotic fragility เพิ่ม, EMA binding ลด",
-      "lookAlikes": ["aiha", "g6pd", "aplastic-crisis"],
+      "lookAlikes": [
+        "aiha",
+        "g6pd",
+        "aplastic-crisis"
+      ],
       "tells": [
-        { "vs": "aiha", "feature": "DCT: HS ลบ · AIHA บวก (spherocyte เจอได้ทั้งคู่)" },
-        { "vs": "g6pd", "feature": "HS ซีดเรื้อรัง ม้ามโต spherocyte · G6PD ปกติดีแล้วซีดเฉียบพลันหลังตัวกระตุ้น bite cell" },
-        { "vs": "aplastic-crisis", "feature": "HS ปกติ retic สูง · aplastic crisis ซีดลงเร็ว retic ต่ำมาก" }
+        {
+          "vs": "aiha",
+          "feature": "DCT: HS ลบ · AIHA บวก (spherocyte เจอได้ทั้งคู่)"
+        },
+        {
+          "vs": "g6pd",
+          "feature": "HS ซีดเรื้อรัง ม้ามโต spherocyte · G6PD ปกติดีแล้วซีดเฉียบพลันหลังตัวกระตุ้น bite cell"
+        },
+        {
+          "vs": "aplastic-crisis",
+          "feature": "HS ปกติ retic สูง · aplastic crisis ซีดลงเร็ว retic ต่ำมาก"
+        }
       ],
       "counter": "Folic acid ระยะยาว · PRC เมื่อซีดมาก/aplastic crisis · splenectomy ในรายปานกลาง–รุนแรง หลังได้ vaccine (เลคเชอร์: หลังอายุ 4–6 ปี) · ตัดถุงน้ำดีถ้ามีนิ่ว",
       "danger": "Aplastic crisis (parvovirus B19) · นิ่วถุงน้ำดี (pigment stone) · sepsis หลังตัดม้าม",
@@ -559,18 +960,33 @@
           "sourceId": "bsh-hs-2011"
         }
       ],
-      "sourceIds": ["msd-hs", "bsh-hs-2011"]
+      "sourceIds": [
+        "msd-hs",
+        "bsh-hs-2011"
+      ]
     },
     {
       "id": "g6pd",
       "name": "G6PD deficiency",
       "who": "เด็กชายแข็งแรงดี ซีดเฉียบพลัน ตัวเหลือง ปัสสาวะสีเข้ม 1–3 วันหลังติดเชื้อ ยา (primaquine, sulfa) หรือถั่วปากอ้า/ลูกเหม็น",
-      "trigger": { "ruleId": "hemolysis-triage", "text": "ขาด G6PD → NADPH และ glutathione ไม่พอ → oxidant ทำให้ Hb เสียสภาพเป็น Heinz body → hemolysis" },
+      "trigger": {
+        "ruleId": "hemolysis-triage",
+        "text": "ขาด G6PD → NADPH และ glutathione ไม่พอ → oxidant ทำให้ Hb เสียสภาพเป็น Heinz body → hemolysis"
+      },
       "signature": "Bite cell + Heinz body (supravital) + DCT ลบ + hemoglobinuria (dipstick blood บวกแต่ไม่มี RBC) หลังตัวกระตุ้น",
-      "lookAlikes": ["aiha", "hs"],
+      "lookAlikes": [
+        "aiha",
+        "hs"
+      ],
       "tells": [
-        { "vs": "aiha", "feature": "DCT: G6PD ลบ · AIHA บวก" },
-        { "vs": "hs", "feature": "G6PD เป็นพักหลังตัวกระตุ้น bite cell · HS เรื้อรัง spherocyte MCHC สูง" }
+        {
+          "vs": "aiha",
+          "feature": "DCT: G6PD ลบ · AIHA บวก"
+        },
+        {
+          "vs": "hs",
+          "feature": "G6PD เป็นพักหลังตัวกระตุ้น bite cell · HS เรื้อรัง spherocyte MCHC สูง"
+        }
       ],
       "counter": "หยุดยา/สารกระตุ้น รักษาการติดเชื้อ · PRC ถ้าซีดมาก · hydration ป้องกันไตวายจาก hemoglobinuria · บัตรประจำตัว G6PD + รายการยาที่ต้องเลี่ยง · ตรวจ G6PD ซ้ำหลังหาย",
       "danger": "AKI จาก hemoglobinuria · ให้ methylene blue รักษา methemoglobinemia แล้ว hemolysis หนักขึ้น",
@@ -588,18 +1004,32 @@
           "sourceId": "merck-g6pd"
         }
       ],
-      "sourceIds": ["merck-g6pd"]
+      "sourceIds": [
+        "merck-g6pd"
+      ]
     },
     {
       "id": "aiha",
       "name": "Autoimmune hemolytic anemia (AIHA)",
       "who": "เด็กซีดเฉียบพลัน เหลือง ปัสสาวะสีเข้ม หลังติดเชื้อไวรัส · วัยรุ่นหญิงคิด SLE",
-      "trigger": { "ruleId": "hemolysis-triage", "text": "Autoantibody เคลือบ RBC → macrophage ในม้ามกัดผิวออกเป็น spherocyte หรือทำลายทั้งเซลล์" },
+      "trigger": {
+        "ruleId": "hemolysis-triage",
+        "text": "Autoantibody เคลือบ RBC → macrophage ในม้ามกัดผิวออกเป็น spherocyte หรือทำลายทั้งเซลล์"
+      },
       "signature": "DCT บวกชัด + spherocyte + polychromasia · warm = IgG",
-      "lookAlikes": ["hs", "g6pd"],
+      "lookAlikes": [
+        "hs",
+        "g6pd"
+      ],
       "tells": [
-        { "vs": "hs", "feature": "DCT บวก · ไม่มี FH · เกิดเฉียบพลัน" },
-        { "vs": "g6pd", "feature": "DCT บวก ไม่มี bite cell ไม่ต้องมียา/ถั่วกระตุ้น" }
+        {
+          "vs": "hs",
+          "feature": "DCT บวก · ไม่มี FH · เกิดเฉียบพลัน"
+        },
+        {
+          "vs": "g6pd",
+          "feature": "DCT บวก ไม่มี bite cell ไม่ต้องมียา/ถั่วกระตุ้น"
+        }
       ],
       "counter": "Warm: glucocorticoid first-line (เลคเชอร์: prednisolone 2 mg/kg/day 2–4 สัปดาห์แล้ว taper) · PRC เฉพาะซีดมาก ใช้ least incompatible blood · ดื้อ steroid: IVIG, immunosuppressant, splenectomy · หา secondary cause (ANA/SLE)",
       "danger": "ซีดลงเร็วจน heart failure · cross-match ยากเพราะ autoantibody จับทุก unit · พลาด SLE ในวัยรุ่น",
@@ -611,18 +1041,32 @@
           "sourceId": "msd-aiha"
         }
       ],
-      "sourceIds": ["msd-aiha"]
+      "sourceIds": [
+        "msd-aiha"
+      ]
     },
     {
       "id": "aplastic-crisis",
       "name": "Aplastic crisis (parvovirus B19 ใน chronic hemolysis)",
       "who": "เด็ก HS หรือธาลัสฯ ที่ Hb เคยคงที่ ซีดลงมากในไม่กี่วันหลังไข้",
-      "trigger": { "ruleId": "retic-sort", "text": "Parvovirus B19 ติดเชื้อ erythroid progenitor หยุดสร้าง RBC ชั่วคราว — คนปกติไม่รู้ตัว แต่คนที่ RBC อายุสั้นซีดทันที" },
+      "trigger": {
+        "ruleId": "retic-sort",
+        "text": "Parvovirus B19 ติดเชื้อ erythroid progenitor หยุดสร้าง RBC ชั่วคราว — คนปกติไม่รู้ตัว แต่คนที่ RBC อายุสั้นซีดทันที"
+      },
       "signature": "Chronic hemolysis + Hb ตกเร็ว + retic ต่ำมาก (ทั้งที่ควรสูง)",
-      "lookAlikes": ["hs", "marrow-failure"],
+      "lookAlikes": [
+        "hs",
+        "marrow-failure"
+      ],
       "tells": [
-        { "vs": "hs", "feature": "Hemolytic crisis retic สูงขึ้น · aplastic crisis retic ต่ำมาก" },
-        { "vs": "marrow-failure", "feature": "Aplastic crisis ต่ำแค่ RBC และหายเอง · marrow failure ต่ำหลาย series ไม่หายเอง" }
+        {
+          "vs": "hs",
+          "feature": "Hemolytic crisis retic สูงขึ้น · aplastic crisis retic ต่ำมาก"
+        },
+        {
+          "vs": "marrow-failure",
+          "feature": "Aplastic crisis ต่ำแค่ RBC และหายเอง · marrow failure ต่ำหลาย series ไม่หายเอง"
+        }
       ],
       "counter": "Admit ให้ PRC ประคองจนไขกระดูกฟื้น · แยกผู้ป่วยจากหญิงตั้งครรภ์/ผู้ป่วย hemolysis อื่น",
       "danger": "Hb ตกจน heart failure ในไม่กี่วัน",
@@ -634,35 +1078,67 @@
           "sourceId": "msd-hs"
         }
       ],
-      "sourceIds": ["msd-hs"]
+      "sourceIds": [
+        "msd-hs"
+      ]
     },
     {
       "id": "marrow-failure",
       "name": "Marrow failure / infiltration (acute leukemia, aplastic anemia)",
       "who": "เด็กซีด + เลือดออก + ไข้ หรือมีตับม้ามโต ต่อมน้ำเหลืองโต ปวดกระดูก",
-      "trigger": { "ruleId": "retic-sort", "text": "โรงงาน (ไขกระดูก) เสียหรือถูกแทนที่ → ทุก series ต่ำพร้อมกัน retic ต่ำ" },
+      "trigger": {
+        "ruleId": "retic-sort",
+        "text": "โรงงาน (ไขกระดูก) เสียหรือถูกแทนที่ → ทุก series ต่ำพร้อมกัน retic ต่ำ"
+      },
       "signature": "ต่ำ ≥ 2 series (pancytopenia) ± blast ใน smear · HSM, LN, bone pain",
-      "lookAlikes": ["itp", "aplastic-crisis"],
+      "lookAlikes": [
+        "itp",
+        "aplastic-crisis"
+      ],
       "tells": [
-        { "vs": "itp", "feature": "ITP ต่ำแค่ platelet และ PE ปกติ (ไม่ซีด ไม่มี HSM/LN) · leukemia ต่ำหลาย series มี HSM/LN/bone pain" },
-        { "vs": "aplastic-crisis", "feature": "ต่ำหลาย series ไม่หายเอง vs RBC อย่างเดียวชั่วคราวในคน hemolysis เรื้อรัง" }
+        {
+          "vs": "itp",
+          "feature": "ITP ต่ำแค่ platelet และ PE ปกติ (ไม่ซีด ไม่มี HSM/LN) · leukemia ต่ำหลาย series มี HSM/LN/bone pain"
+        },
+        {
+          "vs": "aplastic-crisis",
+          "feature": "ต่ำหลาย series ไม่หายเอง vs RBC อย่างเดียวชั่วคราวในคน hemolysis เรื้อรัง"
+        }
       ],
       "counter": "CBC + PBS แล้ว BMA · refer hemato-onco · ห้ามให้ steroid ก่อน BMA เพราะบดบังการวินิจฉัย leukemia",
       "danger": "ให้ steroid ไปก่อนแบบ ITP แล้ว partial treat leukemia",
       "memorize": [],
-      "sourceIds": ["cps-itp-2019"]
+      "sourceIds": [
+        "cps-itp-2019"
+      ]
     },
     {
       "id": "itp",
       "name": "Immune thrombocytopenia (ITP)",
       "who": "เด็กเล็กแข็งแรงดี จ้ำเลือดและจุดเลือดออกขึ้นทันที 1–4 สัปดาห์หลังติดเชื้อไวรัส",
-      "trigger": { "ruleId": "bleed-pattern", "text": "Antibody เคลือบ platelet → ถูก macrophage ในม้ามจับกิน (ไขกระดูกปกติ)" },
+      "trigger": {
+        "ruleId": "bleed-pattern",
+        "text": "Antibody เคลือบ platelet → ถูก macrophage ในม้ามจับกิน (ไขกระดูกปกติ)"
+      },
       "signature": "Isolated thrombocytopenia (Hb, WBC, smear ปกติ ไม่มี clumping) + petechiae/purpura/mucosal bleeding + PE ปกติทั้งหมด (ไม่ซีด ไม่มี HSM/LN)",
-      "lookAlikes": ["apde", "marrow-failure", "vwd"],
+      "lookAlikes": [
+        "apde",
+        "marrow-failure",
+        "vwd"
+      ],
       "tells": [
-        { "vs": "apde", "feature": "Platelet count: ITP ต่ำ · APDE ปกติแต่ eosinophil สูงและ platelet ผิดรูป" },
-        { "vs": "marrow-failure", "feature": "ITP ต่ำ series เดียว PE ปกติ · leukemia ต่ำหลาย series มี HSM/LN/bone pain" },
-        { "vs": "vwd", "feature": "ITP platelet ต่ำ หายเอง ไม่มี FH · vWD platelet ปกติ เรื้อรัง FH (AD)" }
+        {
+          "vs": "apde",
+          "feature": "Platelet count: ITP ต่ำ · APDE ปกติแต่ eosinophil สูงและ platelet ผิดรูป"
+        },
+        {
+          "vs": "marrow-failure",
+          "feature": "ITP ต่ำ series เดียว PE ปกติ · leukemia ต่ำหลาย series มี HSM/LN/bone pain"
+        },
+        {
+          "vs": "vwd",
+          "feature": "ITP platelet ต่ำ หายเอง ไม่มี FH · vWD platelet ปกติ เรื้อรัง FH (AD)"
+        }
       ],
       "counter": "ไม่มีเลือดออกหรือแค่ที่ผิวหนัง → observe (เป้าหมายคือ platelet ที่ปลอดภัย ไม่ใช่ปกติ) · mucosal bleeding → corticosteroid ระยะสั้น หรือ IVIG 0.8–1 g/kg ครั้งเดียว · ICH/เลือดออกคุกคามชีวิต → IVIG + IV methylprednisolone + platelet · typical ไม่ต้อง BMA",
       "danger": "Intracranial hemorrhage (พบน้อยแต่อันตรายสุด) · leukemia ที่มาเหมือน ITP แล้วได้ steroid",
@@ -679,8 +1155,16 @@
           "fact": "Observation (ผู้ป่วยนอกได้) แทน IVIG/anti-D/steroid · ถ้ามี mucosal bleeding ค่อยให้ steroid ระยะสั้นหรือ IVIG (เลคเชอร์ใช้ prednisolone 1–2 mg/kg/day 2–3 สัปดาห์)",
           "sourceId": "cps-itp-2019",
           "variants": [
-            { "region": "US", "text": "ASH 2019: no/minor bleeding → observation · non-life-threatening mucosal bleeding → corticosteroid ระยะสั้น (≤ 7 วัน) แทน IVIG/anti-D", "sourceId": "ash-itp-2019" },
-            { "region": "intl", "text": "CPS: prednisone 4 mg/kg/day × 4 วัน (max 150 mg/day ไม่ต้อง taper) หรือ 2 mg/kg/day 1–2 สัปดาห์แล้ว taper — ไม่มีหลักฐานว่า course ยาวดีกว่า", "sourceId": "cps-itp-2019" }
+            {
+              "region": "US",
+              "text": "ASH 2019: no/minor bleeding → observation · non-life-threatening mucosal bleeding → corticosteroid ระยะสั้น (≤ 7 วัน) แทน IVIG/anti-D",
+              "sourceId": "ash-itp-2019"
+            },
+            {
+              "region": "intl",
+              "text": "CPS: prednisone 4 mg/kg/day × 4 วัน (max 150 mg/day ไม่ต้อง taper) หรือ 2 mg/kg/day 1–2 สัปดาห์แล้ว taper — ไม่มีหลักฐานว่า course ยาวดีกว่า",
+              "sourceId": "cps-itp-2019"
+            }
           ]
         },
         {
@@ -696,18 +1180,34 @@
           "sourceId": "cps-itp-2019"
         }
       ],
-      "sourceIds": ["cps-itp-2019", "msd-itp", "ash-itp-2019"]
+      "sourceIds": [
+        "cps-itp-2019",
+        "msd-itp",
+        "ash-itp-2019"
+      ]
     },
     {
       "id": "apde",
       "name": "Acquired platelet dysfunction with eosinophilia (APDE)",
       "who": "เด็กวัยเรียนแข็งแรง จ้ำเลือดตามตัวขึ้นเองทันที ± เลือดกำเดา · พบในเด็กไทย/เอเชียตะวันออกเฉียงใต้",
-      "trigger": { "ruleId": "bleed-pattern", "text": "Platelet จำนวนปกติแต่ทำงานผิด (คล้าย storage pool defect, platelet ซีดเทา granule น้อย) สัมพันธ์กับ eosinophilia/พยาธิ" },
+      "trigger": {
+        "ruleId": "bleed-pattern",
+        "text": "Platelet จำนวนปกติแต่ทำงานผิด (คล้าย storage pool defect, platelet ซีดเทา granule น้อย) สัมพันธ์กับ eosinophilia/พยาธิ"
+      },
       "signature": "Ecchymosis + platelet count ปกติ + eosinophilia + bleeding time ยาว · coagulogram ปกติ",
-      "lookAlikes": ["itp", "vwd"],
+      "lookAlikes": [
+        "itp",
+        "vwd"
+      ],
       "tells": [
-        { "vs": "itp", "feature": "APDE platelet count ปกติ + eosinophil สูง · ITP platelet ต่ำ" },
-        { "vs": "vwd", "feature": "APDE acquired หายเอง eosinophil สูง ไม่มี FH · vWD เป็นแต่กำเนิด FH และ vWF ต่ำ" }
+        {
+          "vs": "itp",
+          "feature": "APDE platelet count ปกติ + eosinophil สูง · ITP platelet ต่ำ"
+        },
+        {
+          "vs": "vwd",
+          "feature": "APDE acquired หายเอง eosinophil สูง ไม่มี FH · vWD เป็นแต่กำเนิด FH และ vWF ต่ำ"
+        }
       ],
       "counter": "ไม่ต้องรักษาเฉพาะ อธิบายพ่อแม่ว่าหายเอง · ตรวจอุจจาระหาพยาธิและถ่ายพยาธิ · เลี่ยง aspirin/NSAID",
       "danger": "ถูกวินิจฉัยผิดเป็น child abuse หรือได้ platelet/steroid โดยไม่จำเป็น",
@@ -725,19 +1225,38 @@
           "sourceId": "apde-review-2026"
         }
       ],
-      "sourceIds": ["apde-psu-2018", "apde-review-2026"]
+      "sourceIds": [
+        "apde-psu-2018",
+        "apde-review-2026"
+      ]
     },
     {
       "id": "vwd",
       "name": "von Willebrand disease (type 1)",
       "who": "เด็ก/วัยรุ่นหญิง เลือดกำเดาบ่อย จ้ำง่าย ประจำเดือนมาก เลือดออกนานหลังถอนฟัน · FH ทั้งชายและหญิง (AD)",
-      "trigger": { "ruleId": "bleed-pattern", "text": "vWF ต่ำ → platelet เกาะผนังไม่ได้ (primary) และ FVIII ถูกทำลายเร็ว" },
+      "trigger": {
+        "ruleId": "bleed-pattern",
+        "text": "vWF ต่ำ → platelet เกาะผนังไม่ได้ (primary) และ FVIII ถูกทำลายเร็ว"
+      },
       "signature": "Mucocutaneous bleeding + platelet count ปกติ + APTT ปกติหรือยาวเล็กน้อย + vWF antigen/activity ต่ำ · FH แบบ AD",
-      "lookAlikes": ["hemophilia-a", "apde", "itp"],
+      "lookAlikes": [
+        "hemophilia-a",
+        "apde",
+        "itp"
+      ],
       "tells": [
-        { "vs": "hemophilia-a", "feature": "vWD: AD (หญิงเป็นได้) เลือดออก mucosa · hemophilia: X-linked เด็กชาย hemarthrosis" },
-        { "vs": "apde", "feature": "vWD เป็นแต่กำเนิด FH บวก vWF ต่ำ · APDE acquired eosinophil สูง หายเอง" },
-        { "vs": "itp", "feature": "vWD platelet ปกติ · ITP platelet ต่ำ" }
+        {
+          "vs": "hemophilia-a",
+          "feature": "vWD: AD (หญิงเป็นได้) เลือดออก mucosa · hemophilia: X-linked เด็กชาย hemarthrosis"
+        },
+        {
+          "vs": "apde",
+          "feature": "vWD เป็นแต่กำเนิด FH บวก vWF ต่ำ · APDE acquired eosinophil สูง หายเอง"
+        },
+        {
+          "vs": "itp",
+          "feature": "vWD platelet ปกติ · ITP platelet ต่ำ"
+        }
       ],
       "counter": "Type 1: DDAVP · tranexamic acid สำหรับ mucosal bleeding/ประจำเดือนมาก · เลือดออกมาก/ผ่าตัดใหญ่/type 2–3: VWF-containing concentrate (หรือ cryo) · เลี่ยง aspirin/NSAID",
       "danger": "Type 2B ได้ DDAVP แล้ว platelet ต่ำลง · type 3 เลือดออกรุนแรงแบบ hemophilia · ซีดจากประจำเดือนมากในวัยรุ่น",
@@ -755,18 +1274,32 @@
           "sourceId": "msd-vwd"
         }
       ],
-      "sourceIds": ["msd-vwd"]
+      "sourceIds": [
+        "msd-vwd"
+      ]
     },
     {
       "id": "hsp",
       "name": "Vascular purpura: IgA vasculitis (HSP), scurvy",
       "who": "เด็กวัยเรียนมีผื่นจ้ำเลือดนูนที่ขาและก้น ± ปวดข้อ ปวดท้อง",
-      "trigger": { "ruleId": "bleed-pattern", "text": "ผนังหลอดเลือดอักเสบ/อ่อนแอ (ไม่ใช่ platelet หรือ factor)" },
+      "trigger": {
+        "ruleId": "bleed-pattern",
+        "text": "ผนังหลอดเลือดอักเสบ/อ่อนแอ (ไม่ใช่ platelet หรือ factor)"
+      },
       "signature": "Palpable purpura ที่ขา/ก้น + platelet count ปกติ + coagulogram ปกติ",
-      "lookAlikes": ["itp", "apde"],
+      "lookAlikes": [
+        "itp",
+        "apde"
+      ],
       "tells": [
-        { "vs": "itp", "feature": "HSP จ้ำนูนคลำได้ platelet ปกติ · ITP จ้ำแบน platelet ต่ำ" },
-        { "vs": "apde", "feature": "HSP palpable purpura ที่ขา/ก้น + ข้อ/ท้อง · APDE ecchymosis แบนทั่วตัว eosinophil สูง" }
+        {
+          "vs": "itp",
+          "feature": "HSP จ้ำนูนคลำได้ platelet ปกติ · ITP จ้ำแบน platelet ต่ำ"
+        },
+        {
+          "vs": "apde",
+          "feature": "HSP palpable purpura ที่ขา/ก้น + ข้อ/ท้อง · APDE ecchymosis แบนทั่วตัว eosinophil สูง"
+        }
       ],
       "counter": "Supportive รักษาสาเหตุ · ติดตาม UA และ BP (ไตอักเสบ)",
       "danger": "Nephritis · intussusception",
@@ -776,12 +1309,24 @@
       "id": "hemophilia-a",
       "name": "Hemophilia A (FVIII deficiency)",
       "who": "เด็กชาย เลือดออกนานหลังขลิบ จ้ำลึกเมื่อเริ่มคลาน/เดิน ข้อเข่า/ข้อเท้า/ข้อศอกบวมหลังกระแทกเล็กน้อย · ญาติฝ่ายแม่เป็นผู้ชาย",
-      "trigger": { "ruleId": "bleed-pattern", "text": "X-linked recessive ขาด FVIII → intrinsic pathway สร้าง thrombin ไม่พอ → clot หลวม ออกช้าและลึก" },
+      "trigger": {
+        "ruleId": "bleed-pattern",
+        "text": "X-linked recessive ขาด FVIII → intrinsic pathway สร้าง thrombin ไม่พอ → clot หลวม ออกช้าและลึก"
+      },
       "signature": "Hemarthrosis/hematoma กล้ามเนื้อ + APTT ยาวอย่างเดียว (PT, TT, platelet ปกติ) + FVIII activity ต่ำ",
-      "lookAlikes": ["hemophilia-b", "vwd"],
+      "lookAlikes": [
+        "hemophilia-b",
+        "vwd"
+      ],
       "tells": [
-        { "vs": "hemophilia-b", "feature": "แยกได้ด้วย factor assay เท่านั้น (clinical เหมือนกัน) — สำคัญเพราะยาต่างกัน" },
-        { "vs": "vwd", "feature": "Hemophilia: เด็กชาย X-linked hemarthrosis vWF ปกติ · vWD: AD mucosal bleeding vWF ต่ำ" }
+        {
+          "vs": "hemophilia-b",
+          "feature": "แยกได้ด้วย factor assay เท่านั้น (clinical เหมือนกัน) — สำคัญเพราะยาต่างกัน"
+        },
+        {
+          "vs": "vwd",
+          "feature": "Hemophilia: เด็กชาย X-linked hemarthrosis vWF ปกติ · vWD: AD mucosal bleeding vWF ต่ำ"
+        }
       ],
       "counter": "FVIII concentrate: dose (IU) = (target% − baseline%) × 0.5 × BW ซ้ำทุก 8–12 ชม. · ไม่มี concentrate ใช้ cryo หรือ FFP · mild A ใช้ DDAVP ได้ · prophylaxis ใน severe · ห้าม IM, aspirin, NSAID (ใช้ paracetamol) · vaccine ฉีด SC · บัตรประจำตัว",
       "danger": "ICH, iliopsoas hemorrhage (กด femoral nerve, เสียเลือดมาก) · hemophilic arthropathy จาก hemarthrosis ซ้ำ · inhibitor ต่อ FVIII (ใช้ bypassing agent)",
@@ -811,17 +1356,27 @@
           "sourceId": "msd-hemophilia"
         }
       ],
-      "sourceIds": ["msd-hemophilia"]
+      "sourceIds": [
+        "msd-hemophilia"
+      ]
     },
     {
       "id": "hemophilia-b",
       "name": "Hemophilia B (FIX deficiency)",
       "who": "เหมือน hemophilia A ทุกอย่าง (เด็กชาย X-linked hemarthrosis) แต่พบน้อยกว่า",
-      "trigger": { "ruleId": "bleed-pattern", "text": "X-linked recessive ขาด FIX → intrinsic pathway บกพร่อง" },
+      "trigger": {
+        "ruleId": "bleed-pattern",
+        "text": "X-linked recessive ขาด FIX → intrinsic pathway บกพร่อง"
+      },
       "signature": "Hemarthrosis + APTT ยาวอย่างเดียว + FIX activity ต่ำ (FVIII ปกติ)",
-      "lookAlikes": ["hemophilia-a"],
+      "lookAlikes": [
+        "hemophilia-a"
+      ],
       "tells": [
-        { "vs": "hemophilia-a", "feature": "FIX assay ต่ำ · ใช้ FIX concentrate/PCC/cryo-removed plasma · DDAVP และ cryo ไม่ช่วย" }
+        {
+          "vs": "hemophilia-a",
+          "feature": "FIX assay ต่ำ · ใช้ FIX concentrate/PCC/cryo-removed plasma · DDAVP และ cryo ไม่ช่วย"
+        }
       ],
       "counter": "FIX concentrate หรือ PCC: dose (IU) = (target% − baseline%) × 1 × BW ซ้ำทุก 12–24 ชม. · ไม่มีใช้ FFP หรือ cryo-removed plasma · ห้าม DDAVP, ห้ามพึ่ง cryo",
       "danger": "เลือกยาผิดเพราะคิดว่าเป็น A (cryo, DDAVP ไม่มี FIX)",
@@ -833,18 +1388,32 @@
           "sourceId": "msd-hemophilia"
         }
       ],
-      "sourceIds": ["msd-hemophilia"]
+      "sourceIds": [
+        "msd-hemophilia"
+      ]
     },
     {
       "id": "vkdb-classic",
       "name": "Classic VKDB (hemorrhagic disease of the newborn, HDN)",
       "who": "ทารกอายุ 2–7 วัน ดูดี แล้วอาเจียนเป็นเลือด ถ่ายดำ เลือดออกจากสะดือ/รอยฉีด · ไม่ได้ vitamin K ตอนเกิด",
-      "trigger": { "ruleId": "coag-map", "text": "ทารกมี vitamin K น้อย (ผ่านรกน้อย ลำไส้ยังไม่มีแบคทีเรีย นมแม่มีน้อย) → II, VII, IX, X ต่ำ" },
+      "trigger": {
+        "ruleId": "coag-map",
+        "text": "ทารกมี vitamin K น้อย (ผ่านรกน้อย ลำไส้ยังไม่มีแบคทีเรีย นมแม่มีน้อย) → II, VII, IX, X ต่ำ"
+      },
       "signature": "GI/สะดือ bleeding ในสัปดาห์แรก + PT และ APTT ยาว + TT และ platelet ปกติ",
-      "lookAlikes": ["vkdb-late", "dic"],
+      "lookAlikes": [
+        "vkdb-late",
+        "dic"
+      ],
       "tells": [
-        { "vs": "vkdb-late", "feature": "อายุ: classic 2–7 วัน เลือดออก GI/สะดือ · late 2 สัปดาห์–6 เดือน (บ่อย 1–2 เดือน) ICH" },
-        { "vs": "dic", "feature": "VKDB TT และ platelet ปกติ เด็กดูดี · DIC TT ยาว platelet ต่ำ เด็กป่วยหนัก sepsis/shock" }
+        {
+          "vs": "vkdb-late",
+          "feature": "อายุ: classic 2–7 วัน เลือดออก GI/สะดือ · late 2 สัปดาห์–6 เดือน (บ่อย 1–2 เดือน) ICH"
+        },
+        {
+          "vs": "dic",
+          "feature": "VKDB TT และ platelet ปกติ เด็กดูดี · DIC TT ยาว platelet ต่ำ เด็กป่วยหนัก sepsis/shock"
+        }
       ],
       "counter": "Vitamin K1 IV (เลคเชอร์: 1 mg/day × 2–3 วัน) + FFP 10 mL/kg หรือ whole blood 20 mL/kg ถ้าเลือดออกมาก · ป้องกัน: vitamin K1 1 mg IM หลังคลอดทุกราย",
       "danger": "ซีด shock จาก GI bleeding",
@@ -862,18 +1431,33 @@
           "sourceId": "cdc-vkdb-hcp"
         }
       ],
-      "sourceIds": ["cdc-vkdb", "cdc-vkdb-hcp"]
+      "sourceIds": [
+        "cdc-vkdb",
+        "cdc-vkdb-hcp"
+      ]
     },
     {
       "id": "vkdb-late",
       "name": "Late VKDB (IVKDI / acquired prothrombin complex deficiency)",
       "who": "ทารกอายุ 1–2 เดือน กินนมแม่อย่างเดียว คลอดที่บ้าน/ไม่ได้ vitamin K แรกเกิด มาด้วยซึม ชัก ซีด กระหม่อมโป่ง",
-      "trigger": { "ruleId": "coag-map", "text": "นมแม่มี vitamin K น้อย + ไม่ได้ prophylaxis (± ดูดซึมไขมันไม่ดี) → II, VII, IX, X ต่ำ → เลือดออกในสมอง" },
+      "trigger": {
+        "ruleId": "coag-map",
+        "text": "นมแม่มี vitamin K น้อย + ไม่ได้ prophylaxis (± ดูดซึมไขมันไม่ดี) → II, VII, IX, X ต่ำ → เลือดออกในสมอง"
+      },
       "signature": "ทารก 1–2 เดือน + ICH (subdural > subarachnoid) + ซีด + PT และ APTT ยาว, TT ปกติ",
-      "lookAlikes": ["vkdb-classic", "hemophilia-a"],
+      "lookAlikes": [
+        "vkdb-classic",
+        "hemophilia-a"
+      ],
       "tells": [
-        { "vs": "vkdb-classic", "feature": "Late: อายุ 2 สัปดาห์–6 เดือน ICH · classic: 2–7 วัน GI bleed" },
-        { "vs": "hemophilia-a", "feature": "VKDB PT ยาวด้วย (VII) · hemophilia APTT ยาวอย่างเดียว" }
+        {
+          "vs": "vkdb-classic",
+          "feature": "Late: อายุ 2 สัปดาห์–6 เดือน ICH · classic: 2–7 วัน GI bleed"
+        },
+        {
+          "vs": "hemophilia-a",
+          "feature": "VKDB PT ยาวด้วย (VII) · hemophilia APTT ยาวอย่างเดียว"
+        }
       ],
       "counter": "ให้ vitamin K1 IV + FFP 10 mL/kg ทันทีไม่ต้องรอ coagulogram (± PRC 10 mL/kg) แล้วค่อย CT brain และ consult neurosurgery (subdural tapping) · supportive",
       "danger": "ICH เสียชีวิตหรือพิการทางสมอง · ไม่ได้ vitamin K แรกเกิดเสี่ยง late VKDB สูงกว่ามาก",
@@ -885,21 +1469,156 @@
           "sourceId": "cdc-vkdb"
         }
       ],
-      "sourceIds": ["cdc-vkdb", "cdc-vkdb-hcp"]
+      "sourceIds": [
+        "cdc-vkdb",
+        "cdc-vkdb-hcp"
+      ]
     },
     {
       "id": "dic",
       "name": "DIC / consumptive coagulopathy",
       "who": "เด็กป่วยหนัก sepsis, shock, hypoxia หรือ Kasabach-Merritt (hemangioma ใหญ่) แล้วเลือดซึมทุกที่",
-      "trigger": { "ruleId": "coag-map", "text": "กระตุ้น coagulation ทั่วร่างกาย → ใช้ factor, fibrinogen และ platelet จนหมด + fibrinolysis" },
+      "trigger": {
+        "ruleId": "coag-map",
+        "text": "กระตุ้น coagulation ทั่วร่างกาย → ใช้ factor, fibrinogen และ platelet จนหมด + fibrinolysis"
+      },
       "signature": "PT + APTT + TT ยาว + platelet ต่ำ + fibrinogen ต่ำ + D-dimer สูง ในเด็กป่วยหนัก",
-      "lookAlikes": ["vkdb-classic"],
+      "lookAlikes": [
+        "vkdb-classic"
+      ],
       "tells": [
-        { "vs": "vkdb-classic", "feature": "DIC: TT ยาว platelet ต่ำ fibrinogen ต่ำ เด็กป่วยหนัก · VKDB: TT/platelet ปกติ เด็กดูดี" }
+        {
+          "vs": "vkdb-classic",
+          "feature": "DIC: TT ยาว platelet ต่ำ fibrinogen ต่ำ เด็กป่วยหนัก · VKDB: TT/platelet ปกติ เด็กดูดี"
+        }
       ],
       "counter": "รักษาสาเหตุเป็นหลัก + replacement ตามที่ขาดเมื่อเลือดออก: FFP, cryoprecipitate (fibrinogen), platelet",
       "danger": "เลือดออกและ thrombosis พร้อมกัน · อัตราตายสูงตามโรคต้นเหตุ",
       "memorize": []
+    },
+    {
+      "id": "hbe-trait",
+      "name": "HbE trait (EA)",
+      "who": "คนไทยที่สุขภาพดี เจอ microcytosis เล็กน้อยหรือคัดกรองฝากครรภ์แล้ว DCIP บวก · ไม่ซีดหรือซีดน้อย",
+      "trigger": {
+        "ruleId": "hb-typing-read",
+        "text": "βE ข้างเดียว: HbE เป็น β-variant (codon 26) ที่ทำให้ splicing ผิดด้วย จึงสร้างได้น้อยลงเล็กน้อย = β+-thal อย่างอ่อน"
+      },
+      "signature": "Hb typing EA (HbE ราว 20–30% รายงานรวมกับ A2) · DCIP บวก · MCV ต่ำเล็กน้อย",
+      "lookAlikes": [
+        "thal-trait",
+        "hb-ee",
+        "ae-bart-disease"
+      ],
+      "tells": [
+        {
+          "vs": "thal-trait",
+          "feature": "HbE trait: DCIP บวก Hb typing เห็น E · β-thal trait: DCIP ลบ OF บวก HbA2 > 3.5% ไม่มี E"
+        },
+        {
+          "vs": "hb-ee",
+          "feature": "EA ยังมี HbA · EE ไม่มี HbA เลย (E + A2 > 75%)"
+        },
+        {
+          "vs": "ae-bart-disease",
+          "feature": "EA ไม่ซีด HbE ~25% · AE Bart's ซีดแบบ HbH HbE ต่ำ (13–15%) และมี Bart's/inclusion body"
+        }
+      ],
+      "counter": "ไม่ต้องรักษา · ตรวจคู่สมรส: ถ้าคู่เป็น β-thal trait ลูกเสี่ยง β-thal/HbE 25% → prenatal diagnosis",
+      "danger": "คู่ HbE trait × β-thal trait เสี่ยงลูกเป็น β-thal/HbE disease ซึ่งเป็นธาลัสฯ รุนแรงที่พบบ่อยที่สุดในเอเชีย",
+      "memorize": [
+        {
+          "id": "hbe-is-mild-beta-plus",
+          "prompt": "ทำไม HbE ถึงนับเป็น β-thalassemia ชนิดหนึ่ง?",
+          "fact": "HbE เป็น β-variant ที่สร้างได้ช้าลงเล็กน้อย จึงมี phenotype เป็น β-thal อย่างอ่อน · β-thal/HbE คิดเป็นราวครึ่งหนึ่งของ β-thal ชนิดรุนแรงทั่วโลก",
+          "sourceId": "hbe-thal-2012"
+        },
+        {
+          "id": "hbe-trait-level",
+          "prompt": "HbE trait มี HbE ประมาณกี่เปอร์เซ็นต์ และถ้าต่ำกว่านั้นคิดอะไร?",
+          "fact": "ราว 20–30% (ค่าบน HPLC = E + A2) · ต่ำกว่านั้นคิดถึง α-thal หรือขาดเหล็กร่วม",
+          "sourceId": "hbe-hplc-2012"
+        }
+      ],
+      "sourceIds": [
+        "hbe-hplc-2012",
+        "hbe-thal-2012"
+      ]
+    },
+    {
+      "id": "hb-ee",
+      "name": "Homozygous HbE (EE)",
+      "who": "คนที่สุขภาพดี ไม่มีอาการ เซลล์เล็กชัด ซีดน้อยหรือไม่ซีด ไม่มีตับม้ามโต",
+      "trigger": {
+        "ruleId": "hb-typing-read",
+        "text": "βE ทั้งสองข้าง: ไม่มี β ปกติจึงไม่มี HbA แต่ βE ยังสร้างได้เกือบปกติ chain จึงไม่เสียสมดุลมาก"
+      },
+      "signature": "Hb typing EE: ไม่มี HbA, E + A2 > 75%, HbF ต่ำ (< 3%) · microcytosis ชัดแต่ไม่มี HSM/hemolysis",
+      "lookAlikes": [
+        "beta-thal-major",
+        "hbe-trait"
+      ],
+      "tells": [
+        {
+          "vs": "beta-thal-major",
+          "feature": "EE: HbF ต่ำ (< 3%) ไม่ซีดมาก ไม่มี HSM · β0/E (EF): HbF สูง (16–65%) ซีดมาก HSM"
+        },
+        {
+          "vs": "hbe-trait",
+          "feature": "EE ไม่มี HbA · EA ยังมี HbA ราว 70%"
+        }
+      ],
+      "counter": "ไม่ต้องรักษา · genetic counseling (ส่ง βE ให้ลูกทุกคน: คู่ β-thal trait เสี่ยงลูก β-thal/HbE 50%)",
+      "danger": "อ่านผลผิดเป็น β-thal/HbE แล้วให้เลือดหรือยาขับเหล็กโดยไม่จำเป็น",
+      "memorize": [
+        {
+          "id": "ee-vs-ebeta-hplc",
+          "prompt": "แยก homozygous HbE (EE) จาก β-thal/HbE (EF) บน HPLC ยังไง?",
+          "fact": "EE: E + A2 > 75% และ HbF < 3% · β-thal/HbE: HbF สูง (ราว 16–65%) และซีดรุนแรงกว่ามาก",
+          "sourceId": "hbe-hplc-2012"
+        }
+      ],
+      "sourceIds": [
+        "hbe-hplc-2012",
+        "seasia-hb-2011"
+      ]
+    },
+    {
+      "id": "ae-bart-disease",
+      "name": "AE Bart's / EF Bart's disease (HbH + HbE)",
+      "who": "เด็กไทยซีดเหลืองปานกลางแบบ HbH (thalassemia intermedia) ที่ Hb typing เห็นทั้ง E และ Bart's",
+      "trigger": {
+        "ruleId": "hb-typing-read",
+        "text": "α ไม่พอแบบ HbH (α-thal1/α-thal2 หรือ α-thal1/CS) + มี βE: βE แย่งจับ α ได้แย่ HbE จึงต่ำ และ β/γ ที่เหลือเป็น Bart's/H"
+      },
+      "signature": "Hb typing A + E + Bart's (AE Bart's, HbE เพียง 13–15%) หรือ E + F + Bart's (EF Bart's, E ราว 85%) · inclusion body",
+      "lookAlikes": [
+        "hbh-disease",
+        "hbe-trait"
+      ],
+      "tells": [
+        {
+          "vs": "hbh-disease",
+          "feature": "AE Bart's เห็น HbE ร่วมด้วย · HbH ธรรมดาเป็น A + H ไม่มี E"
+        },
+        {
+          "vs": "hbe-trait",
+          "feature": "AE Bart's ซีดแบบ HbH HbE ต่ำ (13–15%) มี Bart's · HbE trait ไม่ซีด HbE ~25%"
+        }
+      ],
+      "counter": "ดูแลแบบ HbH: folic acid, ให้เลือดเมื่อ hemolytic crisis จากไข้ ติดตาม iron overload · genetic counseling ทั้ง α และ β",
+      "danger": "ซีดลงเร็วเวลามีไข้ (เหมือน HbH) · พลาดการวินิจฉัยเพราะคิดว่าเป็นแค่ HbE trait",
+      "memorize": [
+        {
+          "id": "ae-bart-genotype",
+          "prompt": "AE Bart's disease เกิดจาก genotype อะไร และ Hb typing เป็นอย่างไร?",
+          "fact": "HbH (α-thal1/α-thal2 หรือ α-thal1/HbCS) + HbE trait · Hb typing A + E + Bart's โดย HbE เพียง 13–15%",
+          "sourceId": "seasia-hb-2011"
+        }
+      ],
+      "sourceIds": [
+        "seasia-hb-2011"
+      ]
     }
   ],
   "exploits": [
@@ -981,6 +1700,32 @@
       "ifSee": "PT ยาวอย่างเดียว APTT ปกติ",
       "think": "FVII ตกก่อนเพราะ half-life สั้นสุด → vitamin K deficiency ระยะแรก / liver / FVII deficiency",
       "strength": "rule"
+    },
+    {
+      "id": "x-no-hba",
+      "ifSee": "Hb typing ไม่มี HbA เลย",
+      "think": "β ทั้งสองข้างสร้าง β ปกติไม่ได้: A2F = β0/β0 · EF = β0-thal/HbE · EE = homozygous HbE (F ต่ำ)",
+      "strength": "rule"
+    },
+    {
+      "id": "x-bart-h-band",
+      "ifSee": "Hb typing มี Bart's, H หรือ CS",
+      "think": "α ไม่พอ: A + H = HbH · มี CS = HbH-CS · มี E ร่วม = AE/EF Bart's disease",
+      "strength": "rule"
+    },
+    {
+      "id": "x-of-pos-typing-normal",
+      "ifSee": "Microcytic ferritin ปกติ OF บวก DCIP ลบ แต่ Hb typing A2A และ A2 ปกติ",
+      "think": "α-thal1 trait (Hb typing มองไม่เห็น) → ส่ง PCR โดยเฉพาะถ้าคู่สมรสเป็นพาหะ α",
+      "strength": "heuristic",
+      "exception": "IDA ทำให้ OF บวกได้ ต้องดู ferritin ก่อน"
+    },
+    {
+      "id": "x-low-hbe",
+      "ifSee": "HbE trait แต่ HbE ต่ำกว่า 20% (หรือมีซีด/inclusion body)",
+      "think": "มี α-thal ร่วม (AE Bart's ถ้ามี Bart's) หรือขาดเหล็กร่วม",
+      "strength": "heuristic",
+      "exception": "ค่า HbE ต่างกันตามวิธีตรวจ (HPLC vs capillary electrophoresis)"
     }
   ],
   "distractorPatterns": [
@@ -1028,20 +1773,108 @@
       "id": "d-nsaid-hemophilia",
       "pattern": "ตัวเลือก 'ibuprofen/aspirin แก้ปวดข้อ' หรือ 'ฉีดยา IM' ในเด็ก hemophilia",
       "kill": "NSAID/aspirin ยับยั้ง platelet และ IM ทำให้ hematoma → ใช้ paracetamol, ฉีด SC"
+    },
+    {
+      "id": "d-a2-in-hbe",
+      "pattern": "ตัวเลือกที่แปลผล \"A2 (หรือ E + A2) 25%\" ในคน EA ว่าเป็น β-thal trait",
+      "kill": "HbE ออกตำแหน่งเดียวกับ A2 บน HPLC — 25% คือ HbE ไม่ใช่ A2 สูง"
+    },
+    {
+      "id": "d-fix-iron-before-typing",
+      "pattern": "ตัวเลือก \"ให้เหล็กจนหายก่อนแล้วค่อยตรวจ HbA2\" ในเด็กที่สงสัย β-thal trait",
+      "kill": "ขาดเหล็กลด HbA2 ได้แค่เล็กน้อย ส่วนใหญ่ยัง ≥ 3.5% — ตรวจต่อได้ทันที"
+    },
+    {
+      "id": "d-typing-normal-no-alpha",
+      "pattern": "ตัวเลือก \"Hb typing ปกติ จึงไม่ใช่พาหะธาลัสฯ\" ในคนเซลล์เล็ก ferritin ปกติ",
+      "kill": "α-thal1 trait มี Hb typing ปกติ — ต้อง PCR"
     }
   ],
   "trapPairs": [
-    { "id": "tp-ida-trait", "a": "ida", "b": "thal-trait", "decider": "RDW + RBC count (+ ferritin): IDA RDW สูง RBC ต่ำ ferritin ต่ำ · trait RDW ปกติ RBC สูง ferritin ปกติ" },
-    { "id": "tp-hs-aiha", "a": "hs", "b": "aiha", "decider": "Direct Coombs test: HS ลบ · AIHA บวก" },
-    { "id": "tp-g6pd-aiha", "a": "g6pd", "b": "aiha", "decider": "DCT ลบ + bite cell/Heinz body + ตัวกระตุ้น = G6PD · DCT บวก = AIHA" },
-    { "id": "tp-hs-aplastic", "a": "hs", "b": "aplastic-crisis", "decider": "Retic: hemolytic crisis retic สูงขึ้น · aplastic crisis retic ต่ำมาก" },
-    { "id": "tp-tdt-hbh", "a": "beta-thal-major", "b": "hbh-disease", "decider": "Inclusion body (supravital) เด่น + ไม่ต้องให้เลือดประจำ = HbH · ต้องให้เลือดประจำ + HbF/HbE เด่น = β-thal major/β-thal/HbE" },
-    { "id": "tp-itp-apde", "a": "itp", "b": "apde", "decider": "Platelet count: ITP ต่ำ · APDE ปกติ + eosinophil สูง + BT ยาว" },
-    { "id": "tp-itp-leukemia", "a": "itp", "b": "marrow-failure", "decider": "ต่ำ series เดียว + PE ปกติ = ITP · ต่ำหลาย series หรือ HSM/LN/bone pain = leukemia/marrow → BMA" },
-    { "id": "tp-vwd-hema", "a": "vwd", "b": "hemophilia-a", "decider": "การถ่ายทอด + pattern: vWD AD mucocutaneous · hemophilia X-linked hemarthrosis" },
-    { "id": "tp-hema-hemb", "a": "hemophilia-a", "b": "hemophilia-b", "decider": "Factor assay (VIII vs IX) — clinical เหมือนกัน แต่ DDAVP/cryo ใช้ได้แค่ A" },
-    { "id": "tp-hdn-ivkdi", "a": "vkdb-classic", "b": "vkdb-late", "decider": "อายุและตำแหน่ง: 2–7 วัน GI/สะดือ = classic · 1–2 เดือนกินนมแม่ ICH = late" },
-    { "id": "tp-vkdb-dic", "a": "vkdb-classic", "b": "dic", "decider": "TT + platelet: VKDB ปกติ · DIC ยาว/ต่ำ" }
+    {
+      "id": "tp-ida-trait",
+      "a": "ida",
+      "b": "thal-trait",
+      "decider": "RDW + RBC count (+ ferritin): IDA RDW สูง RBC ต่ำ ferritin ต่ำ · trait RDW ปกติ RBC สูง ferritin ปกติ"
+    },
+    {
+      "id": "tp-hs-aiha",
+      "a": "hs",
+      "b": "aiha",
+      "decider": "Direct Coombs test: HS ลบ · AIHA บวก"
+    },
+    {
+      "id": "tp-g6pd-aiha",
+      "a": "g6pd",
+      "b": "aiha",
+      "decider": "DCT ลบ + bite cell/Heinz body + ตัวกระตุ้น = G6PD · DCT บวก = AIHA"
+    },
+    {
+      "id": "tp-hs-aplastic",
+      "a": "hs",
+      "b": "aplastic-crisis",
+      "decider": "Retic: hemolytic crisis retic สูงขึ้น · aplastic crisis retic ต่ำมาก"
+    },
+    {
+      "id": "tp-tdt-hbh",
+      "a": "beta-thal-major",
+      "b": "hbh-disease",
+      "decider": "Inclusion body (supravital) เด่น + ไม่ต้องให้เลือดประจำ = HbH · ต้องให้เลือดประจำ + HbF/HbE เด่น = β-thal major/β-thal/HbE"
+    },
+    {
+      "id": "tp-itp-apde",
+      "a": "itp",
+      "b": "apde",
+      "decider": "Platelet count: ITP ต่ำ · APDE ปกติ + eosinophil สูง + BT ยาว"
+    },
+    {
+      "id": "tp-itp-leukemia",
+      "a": "itp",
+      "b": "marrow-failure",
+      "decider": "ต่ำ series เดียว + PE ปกติ = ITP · ต่ำหลาย series หรือ HSM/LN/bone pain = leukemia/marrow → BMA"
+    },
+    {
+      "id": "tp-vwd-hema",
+      "a": "vwd",
+      "b": "hemophilia-a",
+      "decider": "การถ่ายทอด + pattern: vWD AD mucocutaneous · hemophilia X-linked hemarthrosis"
+    },
+    {
+      "id": "tp-hema-hemb",
+      "a": "hemophilia-a",
+      "b": "hemophilia-b",
+      "decider": "Factor assay (VIII vs IX) — clinical เหมือนกัน แต่ DDAVP/cryo ใช้ได้แค่ A"
+    },
+    {
+      "id": "tp-hdn-ivkdi",
+      "a": "vkdb-classic",
+      "b": "vkdb-late",
+      "decider": "อายุและตำแหน่ง: 2–7 วัน GI/สะดือ = classic · 1–2 เดือนกินนมแม่ ICH = late"
+    },
+    {
+      "id": "tp-vkdb-dic",
+      "a": "vkdb-classic",
+      "b": "dic",
+      "decider": "TT + platelet: VKDB ปกติ · DIC ยาว/ต่ำ"
+    },
+    {
+      "id": "tp-ee-ebeta",
+      "a": "hb-ee",
+      "b": "beta-thal-major",
+      "decider": "HbF: EE < 3% และไม่ซีดมาก · β0/E (EF) HbF สูงและซีดมาก HSM"
+    },
+    {
+      "id": "tp-hbe-trait-ee",
+      "a": "hbe-trait",
+      "b": "hb-ee",
+      "decider": "มี HbA ไหม: EA มี · EE ไม่มี"
+    },
+    {
+      "id": "tp-hbh-aebart",
+      "a": "hbh-disease",
+      "b": "ae-bart-disease",
+      "decider": "มี HbE ร่วมไหม: HbH = A + H · AE Bart's = A + E + Bart's"
+    }
   ],
   "games": {
     "guessWho": [
@@ -1049,31 +1882,112 @@
         "id": "gw-microcytic",
         "targetSeconds": 120,
         "difficulty": 1,
-        "basedOn": { "rules": ["iron-order", "globin-balance"] },
+        "basedOn": {
+          "rules": [
+            "iron-order",
+            "globin-balance"
+          ]
+        },
         "hint": "ถามเรื่องตับม้ามโตก่อน แยกโรคออกจากพาหะ/ขาดเหล็ก",
         "title": "Microcytic anemia 5 ตัว",
         "candidates": [
-          { "id": "ida", "label": "IDA", "cardId": "ida" },
-          { "id": "trait", "label": "Thal/HbE trait", "cardId": "thal-trait" },
-          { "id": "tdt", "label": "β-thal/HbE disease (TDT)", "cardId": "beta-thal-major" },
-          { "id": "hbh", "label": "HbH disease", "cardId": "hbh-disease" },
-          { "id": "aci", "label": "Anemia of chronic inflammation" }
+          {
+            "id": "ida",
+            "label": "IDA",
+            "cardId": "ida"
+          },
+          {
+            "id": "trait",
+            "label": "Thal/HbE trait",
+            "cardId": "thal-trait"
+          },
+          {
+            "id": "tdt",
+            "label": "β-thal/HbE disease (TDT)",
+            "cardId": "beta-thal-major"
+          },
+          {
+            "id": "hbh",
+            "label": "HbH disease",
+            "cardId": "hbh-disease"
+          },
+          {
+            "id": "aci",
+            "label": "Anemia of chronic inflammation"
+          }
         ],
         "questions": [
-          { "id": "q-hsm", "text": "มีตับม้ามโต + jaundice ใช่ไหม?", "yes": ["tdt", "hbh"] },
-          { "id": "q-ib", "text": "Inclusion body (supravital) จำนวนมากใช่ไหม?", "yes": ["hbh"] },
-          { "id": "q-ferritin-low", "text": "Ferritin ต่ำใช่ไหม?", "yes": ["ida"] },
-          { "id": "q-rdw-high", "text": "RDW สูงใช่ไหม?", "yes": ["ida", "tdt", "hbh"] },
-          { "id": "q-chronic", "text": "มีโรคอักเสบเรื้อรัง + TIBC ต่ำใช่ไหม?", "yes": ["aci"] },
-          { "id": "q-rbc-high", "text": "RBC count สูง (Mentzer < 13) ใช่ไหม?", "yes": ["trait"] }
+          {
+            "id": "q-hsm",
+            "text": "มีตับม้ามโต + jaundice ใช่ไหม?",
+            "yes": [
+              "tdt",
+              "hbh"
+            ]
+          },
+          {
+            "id": "q-ib",
+            "text": "Inclusion body (supravital) จำนวนมากใช่ไหม?",
+            "yes": [
+              "hbh"
+            ]
+          },
+          {
+            "id": "q-ferritin-low",
+            "text": "Ferritin ต่ำใช่ไหม?",
+            "yes": [
+              "ida"
+            ]
+          },
+          {
+            "id": "q-rdw-high",
+            "text": "RDW สูงใช่ไหม?",
+            "yes": [
+              "ida",
+              "tdt",
+              "hbh"
+            ]
+          },
+          {
+            "id": "q-chronic",
+            "text": "มีโรคอักเสบเรื้อรัง + TIBC ต่ำใช่ไหม?",
+            "yes": [
+              "aci"
+            ]
+          },
+          {
+            "id": "q-rbc-high",
+            "text": "RBC count สูง (Mentzer < 13) ใช่ไหม?",
+            "yes": [
+              "trait"
+            ]
+          }
         ],
         "optimalTree": {
           "question": "q-hsm",
-          "yes": { "question": "q-ib", "yes": { "leaf": "hbh" }, "no": { "leaf": "tdt" } },
+          "yes": {
+            "question": "q-ib",
+            "yes": {
+              "leaf": "hbh"
+            },
+            "no": {
+              "leaf": "tdt"
+            }
+          },
           "no": {
             "question": "q-ferritin-low",
-            "yes": { "leaf": "ida" },
-            "no": { "question": "q-rbc-high", "yes": { "leaf": "trait" }, "no": { "leaf": "aci" } }
+            "yes": {
+              "leaf": "ida"
+            },
+            "no": {
+              "question": "q-rbc-high",
+              "yes": {
+                "leaf": "trait"
+              },
+              "no": {
+                "leaf": "aci"
+              }
+            }
           }
         },
         "explanation": "5 ตัวต้องใช้อย่างน้อย 3 คำถาม · 'ตับม้ามโต + เหลือง' แยกกลุ่มที่มี hemolysis (โรคธาลัสฯ) ออกก่อน แล้วใช้ inclusion body แยก HbH จาก β-thal/HbE · ฝั่งไม่มี HSM ใช้ ferritin ต่ำจับ IDA แล้วใช้ RBC count สูง (Mentzer < 13) แยกพาหะจาก anemia of inflammation (ferritin ปกติ/สูงทั้งคู่)"
@@ -1082,77 +1996,455 @@
         "id": "gw-hemolysis",
         "targetSeconds": 120,
         "difficulty": 2,
-        "basedOn": { "rules": ["hemolysis-triage", "globin-balance"], "errata": ["e-aplastic-crisis"] },
+        "basedOn": {
+          "rules": [
+            "hemolysis-triage",
+            "globin-balance"
+          ],
+          "errata": [
+            "e-aplastic-crisis"
+          ]
+        },
         "hint": "Spherocyte แบ่งกระดานได้ครึ่งต่อครึ่ง",
         "title": "เด็กซีด + เหลือง 6 ตัว",
         "candidates": [
-          { "id": "hs", "label": "Hereditary spherocytosis", "cardId": "hs" },
-          { "id": "aiha", "label": "AIHA", "cardId": "aiha" },
-          { "id": "crisis", "label": "Aplastic crisis ใน HS", "cardId": "aplastic-crisis" },
-          { "id": "g6pd", "label": "G6PD deficiency", "cardId": "g6pd" },
-          { "id": "tdt", "label": "β-thal/HbE disease", "cardId": "beta-thal-major" },
-          { "id": "hbh", "label": "HbH disease", "cardId": "hbh-disease" }
+          {
+            "id": "hs",
+            "label": "Hereditary spherocytosis",
+            "cardId": "hs"
+          },
+          {
+            "id": "aiha",
+            "label": "AIHA",
+            "cardId": "aiha"
+          },
+          {
+            "id": "crisis",
+            "label": "Aplastic crisis ใน HS",
+            "cardId": "aplastic-crisis"
+          },
+          {
+            "id": "g6pd",
+            "label": "G6PD deficiency",
+            "cardId": "g6pd"
+          },
+          {
+            "id": "tdt",
+            "label": "β-thal/HbE disease",
+            "cardId": "beta-thal-major"
+          },
+          {
+            "id": "hbh",
+            "label": "HbH disease",
+            "cardId": "hbh-disease"
+          }
         ],
         "questions": [
-          { "id": "q-sphero", "text": "Smear มี spherocyte ใช่ไหม?", "yes": ["hs", "aiha", "crisis"] },
-          { "id": "q-dct", "text": "DCT บวกใช่ไหม?", "yes": ["aiha"] },
-          { "id": "q-retic-low", "text": "Retic ต่ำใช่ไหม?", "yes": ["crisis"] },
-          { "id": "q-bite", "text": "มี bite cell / Heinz body ใช่ไหม?", "yes": ["g6pd"] },
-          { "id": "q-micro", "text": "MCV < 80 ใช่ไหม?", "yes": ["tdt", "hbh"] },
-          { "id": "q-ib", "text": "Inclusion body จำนวนมากใช่ไหม?", "yes": ["hbh"] }
+          {
+            "id": "q-sphero",
+            "text": "Smear มี spherocyte ใช่ไหม?",
+            "yes": [
+              "hs",
+              "aiha",
+              "crisis"
+            ]
+          },
+          {
+            "id": "q-dct",
+            "text": "DCT บวกใช่ไหม?",
+            "yes": [
+              "aiha"
+            ]
+          },
+          {
+            "id": "q-retic-low",
+            "text": "Retic ต่ำใช่ไหม?",
+            "yes": [
+              "crisis"
+            ]
+          },
+          {
+            "id": "q-bite",
+            "text": "มี bite cell / Heinz body ใช่ไหม?",
+            "yes": [
+              "g6pd"
+            ]
+          },
+          {
+            "id": "q-micro",
+            "text": "MCV < 80 ใช่ไหม?",
+            "yes": [
+              "tdt",
+              "hbh"
+            ]
+          },
+          {
+            "id": "q-ib",
+            "text": "Inclusion body จำนวนมากใช่ไหม?",
+            "yes": [
+              "hbh"
+            ]
+          }
         ],
         "optimalTree": {
           "question": "q-sphero",
           "yes": {
             "question": "q-dct",
-            "yes": { "leaf": "aiha" },
-            "no": { "question": "q-retic-low", "yes": { "leaf": "crisis" }, "no": { "leaf": "hs" } }
+            "yes": {
+              "leaf": "aiha"
+            },
+            "no": {
+              "question": "q-retic-low",
+              "yes": {
+                "leaf": "crisis"
+              },
+              "no": {
+                "leaf": "hs"
+              }
+            }
           },
           "no": {
             "question": "q-ib",
-            "yes": { "leaf": "hbh" },
-            "no": { "question": "q-bite", "yes": { "leaf": "g6pd" }, "no": { "leaf": "tdt" } }
+            "yes": {
+              "leaf": "hbh"
+            },
+            "no": {
+              "question": "q-bite",
+              "yes": {
+                "leaf": "g6pd"
+              },
+              "no": {
+                "leaf": "tdt"
+              }
+            }
           }
         },
         "explanation": "6 ตัวต้องใช้อย่างน้อย 3 คำถาม · spherocyte แบ่ง 3/3 พอดี · ฝั่ง spherocyte ใช้ DCT แยก AIHA แล้วใช้ retic ต่ำจับ aplastic crisis (erratum: hemolysis ที่ retic ต่ำ) · ฝั่งไม่มี spherocyte ใช้ inclusion body จับ HbH แล้ว bite cell แยก G6PD จาก β-thal/HbE"
       },
       {
+        "id": "gw-hb-typing",
+        "targetSeconds": 150,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "hb-typing-read",
+            "globin-balance"
+          ],
+          "errata": [
+            "e-hbe-a2-coelute",
+            "e-alpha-trait-hba2"
+          ],
+          "trapPairs": [
+            "tp-ee-ebeta",
+            "tp-hbh-aebart"
+          ]
+        },
+        "hint": "มี E ไหม แบ่งกระดานพอดี 4/4 แล้วถามว่าเป็น \"โรค\" หรือ \"พาหะ\"",
+        "title": "อ่านผล Hb typing 8 แบบ",
+        "candidates": [
+          {
+            "id": "atrait",
+            "label": "α-thal1 trait (A2A, A2 ปกติ, OF บวก)",
+            "cardId": "thal-trait"
+          },
+          {
+            "id": "btrait",
+            "label": "β-thal trait (A2A, A2 > 3.5%)",
+            "cardId": "thal-trait"
+          },
+          {
+            "id": "bmaj",
+            "label": "Homozygous β0-thal (A2F)",
+            "cardId": "beta-thal-major"
+          },
+          {
+            "id": "hbh",
+            "label": "HbH disease (A2A + H)",
+            "cardId": "hbh-disease"
+          },
+          {
+            "id": "etrait",
+            "label": "HbE trait (EA)",
+            "cardId": "hbe-trait"
+          },
+          {
+            "id": "ee",
+            "label": "Homozygous HbE (EE)",
+            "cardId": "hb-ee"
+          },
+          {
+            "id": "be",
+            "label": "β0-thal/HbE (EF)",
+            "cardId": "beta-thal-major"
+          },
+          {
+            "id": "aebart",
+            "label": "AE Bart's disease (EA Bart's)",
+            "cardId": "ae-bart-disease"
+          }
+        ],
+        "questions": [
+          {
+            "id": "q-hbe",
+            "text": "Hb typing มี HbE ใช่ไหม?",
+            "yes": [
+              "etrait",
+              "ee",
+              "be",
+              "aebart"
+            ]
+          },
+          {
+            "id": "q-disease",
+            "text": "เป็นโรค (ซีดชัด/ตับม้ามโต/hemolysis) ไม่ใช่พาหะ ใช่ไหม?",
+            "yes": [
+              "bmaj",
+              "hbh",
+              "be",
+              "aebart"
+            ]
+          },
+          {
+            "id": "q-hba",
+            "text": "มี HbA ใช่ไหม?",
+            "yes": [
+              "atrait",
+              "btrait",
+              "hbh",
+              "etrait",
+              "aebart"
+            ]
+          },
+          {
+            "id": "q-bart",
+            "text": "มี Hb Bart's / HbH หรือ inclusion body ใช่ไหม?",
+            "yes": [
+              "hbh",
+              "aebart"
+            ]
+          },
+          {
+            "id": "q-a2-high",
+            "text": "ผลเป็น A2A แต่ HbA2 > 3.5% ใช่ไหม?",
+            "yes": [
+              "btrait"
+            ]
+          },
+          {
+            "id": "q-hbf-high",
+            "text": "HbF สูงชัด (> 10%) ใช่ไหม?",
+            "yes": [
+              "bmaj",
+              "be"
+            ]
+          }
+        ],
+        "optimalTree": {
+          "question": "q-hbe",
+          "yes": {
+            "question": "q-disease",
+            "yes": {
+              "question": "q-bart",
+              "yes": {
+                "leaf": "aebart"
+              },
+              "no": {
+                "leaf": "be"
+              }
+            },
+            "no": {
+              "question": "q-hba",
+              "yes": {
+                "leaf": "etrait"
+              },
+              "no": {
+                "leaf": "ee"
+              }
+            }
+          },
+          "no": {
+            "question": "q-disease",
+            "yes": {
+              "question": "q-bart",
+              "yes": {
+                "leaf": "hbh"
+              },
+              "no": {
+                "leaf": "bmaj"
+              }
+            },
+            "no": {
+              "question": "q-a2-high",
+              "yes": {
+                "leaf": "btrait"
+              },
+              "no": {
+                "leaf": "atrait"
+              }
+            }
+          }
+        },
+        "explanation": "8 แบบต้องใช้ 3 คำถามพอดี · \"มี E ไหม\" แบ่ง 4/4 · แต่ละฝั่งถาม \"โรคหรือพาหะ\" · ฝั่งโรค: มี Bart's/H = ขาด α (HbH, AE Bart's) ไม่มี = ขาด β (β0/β0, β0/E — ทั้งคู่ไม่มี HbA และ F สูง) · ฝั่งพาหะมี E: มี A = EA, ไม่มี A = EE (trap กับ EF: EE F ต่ำ ไม่ซีด) · ฝั่งพาหะไม่มี E: A2 > 3.5% = β-trait, A2 ปกติแต่ OF บวก = α-thal1 trait (Hb typing มองไม่เห็น → PCR) · อย่าใช้ A2 ในคนที่มี E (co-elute)"
+      },
+      {
         "id": "gw-bleeding",
         "targetSeconds": 150,
         "difficulty": 3,
-        "basedOn": { "rules": ["bleed-pattern", "coag-map"], "trapPairs": ["tp-itp-apde", "tp-vkdb-dic", "tp-hema-hemb"] },
+        "basedOn": {
+          "rules": [
+            "bleed-pattern",
+            "coag-map"
+          ],
+          "trapPairs": [
+            "tp-itp-apde",
+            "tp-vkdb-dic",
+            "tp-hema-hemb"
+          ]
+        },
         "hint": "8 ตัว = ต้องผ่าครึ่งทุกครั้ง เริ่มจาก pattern การออก",
         "title": "เด็กเลือดออกง่าย 8 ตัว",
         "candidates": [
-          { "id": "itp", "label": "ITP", "cardId": "itp" },
-          { "id": "apde", "label": "APDE", "cardId": "apde" },
-          { "id": "vwd", "label": "vWD type 1", "cardId": "vwd" },
-          { "id": "hsp", "label": "IgA vasculitis (HSP)", "cardId": "hsp" },
-          { "id": "hema", "label": "Hemophilia A", "cardId": "hemophilia-a" },
-          { "id": "hemb", "label": "Hemophilia B", "cardId": "hemophilia-b" },
-          { "id": "vkdb", "label": "Late VKDB", "cardId": "vkdb-late" },
-          { "id": "dic", "label": "DIC", "cardId": "dic" }
+          {
+            "id": "itp",
+            "label": "ITP",
+            "cardId": "itp"
+          },
+          {
+            "id": "apde",
+            "label": "APDE",
+            "cardId": "apde"
+          },
+          {
+            "id": "vwd",
+            "label": "vWD type 1",
+            "cardId": "vwd"
+          },
+          {
+            "id": "hsp",
+            "label": "IgA vasculitis (HSP)",
+            "cardId": "hsp"
+          },
+          {
+            "id": "hema",
+            "label": "Hemophilia A",
+            "cardId": "hemophilia-a"
+          },
+          {
+            "id": "hemb",
+            "label": "Hemophilia B",
+            "cardId": "hemophilia-b"
+          },
+          {
+            "id": "vkdb",
+            "label": "Late VKDB",
+            "cardId": "vkdb-late"
+          },
+          {
+            "id": "dic",
+            "label": "DIC",
+            "cardId": "dic"
+          }
         ],
         "questions": [
-          { "id": "q-primary", "text": "เลือดออกแบบ primary (petechiae/mucosa/ผิวหนัง) เด่นใช่ไหม?", "yes": ["itp", "apde", "vwd", "hsp"] },
-          { "id": "q-platelet-problem", "text": "ปัญหาอยู่ที่ตัว platelet เอง (จำนวนหรือหน้าที่) ใช่ไหม?", "yes": ["itp", "apde"] },
-          { "id": "q-plt-low", "text": "Platelet count ต่ำใช่ไหม?", "yes": ["itp", "dic"] },
-          { "id": "q-palpable", "text": "Palpable purpura ที่ขา/ก้นใช่ไหม?", "yes": ["hsp"] },
-          { "id": "q-pt", "text": "PT ยาวใช่ไหม?", "yes": ["vkdb", "dic"] },
-          { "id": "q-fix-low", "text": "FIX activity ต่ำใช่ไหม?", "yes": ["hemb"] },
-          { "id": "q-eos", "text": "Eosinophil > 500 ใช่ไหม?", "yes": ["apde"] }
+          {
+            "id": "q-primary",
+            "text": "เลือดออกแบบ primary (petechiae/mucosa/ผิวหนัง) เด่นใช่ไหม?",
+            "yes": [
+              "itp",
+              "apde",
+              "vwd",
+              "hsp"
+            ]
+          },
+          {
+            "id": "q-platelet-problem",
+            "text": "ปัญหาอยู่ที่ตัว platelet เอง (จำนวนหรือหน้าที่) ใช่ไหม?",
+            "yes": [
+              "itp",
+              "apde"
+            ]
+          },
+          {
+            "id": "q-plt-low",
+            "text": "Platelet count ต่ำใช่ไหม?",
+            "yes": [
+              "itp",
+              "dic"
+            ]
+          },
+          {
+            "id": "q-palpable",
+            "text": "Palpable purpura ที่ขา/ก้นใช่ไหม?",
+            "yes": [
+              "hsp"
+            ]
+          },
+          {
+            "id": "q-pt",
+            "text": "PT ยาวใช่ไหม?",
+            "yes": [
+              "vkdb",
+              "dic"
+            ]
+          },
+          {
+            "id": "q-fix-low",
+            "text": "FIX activity ต่ำใช่ไหม?",
+            "yes": [
+              "hemb"
+            ]
+          },
+          {
+            "id": "q-eos",
+            "text": "Eosinophil > 500 ใช่ไหม?",
+            "yes": [
+              "apde"
+            ]
+          }
         ],
         "optimalTree": {
           "question": "q-primary",
           "yes": {
             "question": "q-platelet-problem",
-            "yes": { "question": "q-plt-low", "yes": { "leaf": "itp" }, "no": { "leaf": "apde" } },
-            "no": { "question": "q-palpable", "yes": { "leaf": "hsp" }, "no": { "leaf": "vwd" } }
+            "yes": {
+              "question": "q-plt-low",
+              "yes": {
+                "leaf": "itp"
+              },
+              "no": {
+                "leaf": "apde"
+              }
+            },
+            "no": {
+              "question": "q-palpable",
+              "yes": {
+                "leaf": "hsp"
+              },
+              "no": {
+                "leaf": "vwd"
+              }
+            }
           },
           "no": {
             "question": "q-pt",
-            "yes": { "question": "q-plt-low", "yes": { "leaf": "dic" }, "no": { "leaf": "vkdb" } },
-            "no": { "question": "q-fix-low", "yes": { "leaf": "hemb" }, "no": { "leaf": "hema" } }
+            "yes": {
+              "question": "q-plt-low",
+              "yes": {
+                "leaf": "dic"
+              },
+              "no": {
+                "leaf": "vkdb"
+              }
+            },
+            "no": {
+              "question": "q-fix-low",
+              "yes": {
+                "leaf": "hemb"
+              },
+              "no": {
+                "leaf": "hema"
+              }
+            }
           }
         },
         "explanation": "8 ตัวต้อง 3 คำถามพอดี (2³) จึงต้องผ่าครึ่งทุกชั้น · ชั้นแรก primary vs secondary · ฝั่ง primary แยก 'ตัว platelet' (ITP, APDE) ออกจาก plasma/vessel (vWD, HSP) แล้วใช้ platelet count (trap ITP vs APDE) และ palpable purpura · ฝั่ง secondary ใช้ PT แยก VKDB/DIC ออกจาก hemophilia แล้ว platelet count (trap VKDB vs DIC) และ FIX assay (trap A vs B)"
@@ -1163,199 +2455,676 @@
         "id": "dd-toddler-pale",
         "targetSeconds": 150,
         "difficulty": 1,
-        "basedOn": { "rules": ["retic-sort", "iron-order"] },
+        "basedOn": {
+          "rules": [
+            "retic-sort",
+            "iron-order"
+          ]
+        },
         "hint": "ถามเรื่องอาหารก่อนสั่ง lab แพง",
         "title": "เด็ก 15 เดือนซีด",
         "chiefComplaint": "เด็กหญิง 15 เดือน แม่สังเกตว่าซีดลงเรื่อย ๆ 2 เดือน งอแง กินข้าวน้อย",
         "vitals": "HR 130 · RR 28 · น้ำหนัก P10",
         "budget": 10,
         "clues": [
-          { "id": "h-diet", "kind": "history", "cost": 1, "label": "ประวัติอาหาร", "reveals": "ดื่มนมวัวจากขวดวันละประมาณ 1,200 mL กินข้าวไม่กี่คำ", "strength": "strong", "why": "นมวัวมากเกิน = เหล็กน้อย + รบกวนการดูดซึม + อิ่มจนไม่กินอาหารอื่น" },
-          { "id": "h-fh", "kind": "history", "cost": 1, "label": "ประวัติครอบครัว", "reveals": "ไม่มีใครเป็นธาลัสซีเมียหรือต้องให้เลือดประจำ", "strength": "weak", "why": "ช่วยลดน้ำหนักธาลัสฯ แต่ไม่ยืนยัน IDA" },
-          { "id": "p-abd", "kind": "pe", "cost": 2, "label": "ตรวจท้อง/ตัวเหลือง", "reveals": "ไม่เหลือง ตับม้ามไม่โต มี flow murmur เบา ๆ", "strength": "moderate", "why": "ไม่มี HSM/jaundice ตัด thal disease และ hemolysis" },
-          { "id": "l-cbc", "kind": "lab", "cost": 4, "label": "CBC + indices", "reveals": "Hb 7.8 g/dL, MCV 60 fL, RDW 19%, platelet 520,000/µL, WBC ปกติ", "strength": "strong", "why": "Microcytic + RDW สูง + reactive thrombocytosis = pattern IDA" },
-          { "id": "l-ferritin", "kind": "lab", "cost": 4, "label": "Iron study", "reveals": "Ferritin 5 ng/mL, TIBC สูง, transferrin saturation ต่ำ", "strength": "strong", "why": "ยืนยัน IDA แต่ไม่จำเป็นถ้า pattern ชัดและใช้ therapeutic trial" },
-          { "id": "l-hbtyping", "kind": "lab", "cost": 5, "label": "Hb typing", "reveals": "HbA2 2.2% ไม่มี HbE", "strength": "weak", "why": "ไม่ใช่ขั้นแรก และ IDA ทำให้แปลผล HbA2 ยาก" }
+          {
+            "id": "h-diet",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติอาหาร",
+            "reveals": "ดื่มนมวัวจากขวดวันละประมาณ 1,200 mL กินข้าวไม่กี่คำ",
+            "strength": "strong",
+            "why": "นมวัวมากเกิน = เหล็กน้อย + รบกวนการดูดซึม + อิ่มจนไม่กินอาหารอื่น"
+          },
+          {
+            "id": "h-fh",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติครอบครัว",
+            "reveals": "ไม่มีใครเป็นธาลัสซีเมียหรือต้องให้เลือดประจำ",
+            "strength": "weak",
+            "why": "ช่วยลดน้ำหนักธาลัสฯ แต่ไม่ยืนยัน IDA"
+          },
+          {
+            "id": "p-abd",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจท้อง/ตัวเหลือง",
+            "reveals": "ไม่เหลือง ตับม้ามไม่โต มี flow murmur เบา ๆ",
+            "strength": "moderate",
+            "why": "ไม่มี HSM/jaundice ตัด thal disease และ hemolysis"
+          },
+          {
+            "id": "l-cbc",
+            "kind": "lab",
+            "cost": 4,
+            "label": "CBC + indices",
+            "reveals": "Hb 7.8 g/dL, MCV 60 fL, RDW 19%, platelet 520,000/µL, WBC ปกติ",
+            "strength": "strong",
+            "why": "Microcytic + RDW สูง + reactive thrombocytosis = pattern IDA"
+          },
+          {
+            "id": "l-ferritin",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Iron study",
+            "reveals": "Ferritin 5 ng/mL, TIBC สูง, transferrin saturation ต่ำ",
+            "strength": "strong",
+            "why": "ยืนยัน IDA แต่ไม่จำเป็นถ้า pattern ชัดและใช้ therapeutic trial"
+          },
+          {
+            "id": "l-hbtyping",
+            "kind": "lab",
+            "cost": 5,
+            "label": "Hb typing",
+            "reveals": "HbA2 2.2% ไม่มี HbE",
+            "strength": "weak",
+            "why": "ไม่ใช่ขั้นแรก และ IDA ทำให้แปลผล HbA2 ยาก"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "ida", "label": "Iron deficiency anemia" },
-          { "id": "trait", "label": "Thalassemia trait" },
-          { "id": "tdt", "label": "β-thal/HbE disease" },
-          { "id": "leukemia", "label": "Acute leukemia" }
+          {
+            "id": "ida",
+            "label": "Iron deficiency anemia"
+          },
+          {
+            "id": "trait",
+            "label": "Thalassemia trait"
+          },
+          {
+            "id": "tdt",
+            "label": "β-thal/HbE disease"
+          },
+          {
+            "id": "leukemia",
+            "label": "Acute leukemia"
+          }
         ],
         "nextStepOptions": [
-          { "id": "iron", "label": "Ferrous sulfate PO + ลดนมวัว แล้ว F/U retic ~1 สัปดาห์" },
-          { "id": "prc", "label": "PRC 10 mL/kg" },
-          { "id": "hbtype", "label": "ส่ง Hb typing ก่อนรักษา" },
-          { "id": "bma", "label": "Bone marrow aspiration" }
+          {
+            "id": "iron",
+            "label": "Ferrous sulfate PO + ลดนมวัว แล้ว F/U retic ~1 สัปดาห์"
+          },
+          {
+            "id": "prc",
+            "label": "PRC 10 mL/kg"
+          },
+          {
+            "id": "hbtype",
+            "label": "ส่ง Hb typing ก่อนรักษา"
+          },
+          {
+            "id": "bma",
+            "label": "Bone marrow aspiration"
+          }
         ],
-        "answer": { "diagnosis": "ida", "nextStep": "iron" },
-        "optimalLine": ["h-diet", "l-cbc"],
+        "answer": {
+          "diagnosis": "ida",
+          "nextStep": "iron"
+        },
+        "optimalLine": [
+          "h-diet",
+          "l-cbc"
+        ],
         "explanation": "นมวัวมาก + microcytic + RDW สูง + platelet สูง = IDA ได้จาก 2 clue · therapeutic trial ด้วยยาเหล็กแล้ว retic ขึ้นใน ~1 สัปดาห์ยืนยันการวินิจฉัย · ไม่ให้เลือดเพราะไม่มี heart failure (erratum IDA no transfusion) · platelet สูงคือ reactive ไม่ใช่ leukemia"
       },
       {
         "id": "dd-petechiae",
         "targetSeconds": 150,
         "difficulty": 2,
-        "basedOn": { "rules": ["bleed-pattern", "replace-missing"], "trapPairs": ["tp-itp-leukemia"] },
+        "basedOn": {
+          "rules": [
+            "bleed-pattern",
+            "replace-missing"
+          ],
+          "trapPairs": [
+            "tp-itp-leukemia"
+          ]
+        },
         "hint": "PE ที่ 'ปกติทุกอย่าง' คือ clue",
         "title": "จุดเลือดออกหลังเป็นหวัด",
         "chiefComplaint": "เด็กชาย 3 ปี มีจุดแดงจ้ำเขียวขึ้นตามแขนขา 2 วัน สองสัปดาห์ก่อนเป็นหวัด ยังเล่นได้ตามปกติ",
         "vitals": "T 37.0 · HR 110 · BP ปกติ",
         "budget": 10,
         "clues": [
-          { "id": "h-mucosa", "kind": "history", "cost": 1, "label": "เลือดออกที่อื่น", "reveals": "ไม่มีเลือดกำเดา เหงือก ปัสสาวะ อุจจาระปกติ ไม่ปวดหัว", "strength": "strong", "why": "ไม่มี mucosal bleeding = bleeding เล็กน้อย → observe ได้" },
-          { "id": "p-full", "kind": "pe", "cost": 2, "label": "ตรวจร่างกายทั้งตัว", "reveals": "Petechiae + ecchymosis ที่ผิวหนัง ไม่ซีด ไม่มีต่อมน้ำเหลือง ตับม้ามโต หรือกดเจ็บกระดูก", "strength": "strong", "why": "PE ปกติยกเว้นจุดเลือดออก = typical ITP ไม่มี red flag ของ leukemia" },
-          { "id": "l-cbc", "kind": "lab", "cost": 4, "label": "CBC + smear", "reveals": "Hb 12.1, WBC 8,000 (diff ปกติ), platelet 12,000/µL ไม่มี clumping platelet ใหญ่บางตัว ไม่มี blast", "strength": "strong", "why": "Isolated thrombocytopenia ไม่มี pseudothrombocytopenia" },
-          { "id": "l-coag", "kind": "lab", "cost": 4, "label": "APTT/PT", "reveals": "ปกติ", "strength": "weak", "why": "Platelet problem coagulogram ปกติอยู่แล้ว" },
-          { "id": "l-bma", "kind": "lab", "cost": 5, "label": "BMA", "reveals": "Megakaryocyte เพิ่ม ไม่มี blast", "strength": "weak", "why": "ไม่จำเป็นใน typical ITP" }
+          {
+            "id": "h-mucosa",
+            "kind": "history",
+            "cost": 1,
+            "label": "เลือดออกที่อื่น",
+            "reveals": "ไม่มีเลือดกำเดา เหงือก ปัสสาวะ อุจจาระปกติ ไม่ปวดหัว",
+            "strength": "strong",
+            "why": "ไม่มี mucosal bleeding = bleeding เล็กน้อย → observe ได้"
+          },
+          {
+            "id": "p-full",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจร่างกายทั้งตัว",
+            "reveals": "Petechiae + ecchymosis ที่ผิวหนัง ไม่ซีด ไม่มีต่อมน้ำเหลือง ตับม้ามโต หรือกดเจ็บกระดูก",
+            "strength": "strong",
+            "why": "PE ปกติยกเว้นจุดเลือดออก = typical ITP ไม่มี red flag ของ leukemia"
+          },
+          {
+            "id": "l-cbc",
+            "kind": "lab",
+            "cost": 4,
+            "label": "CBC + smear",
+            "reveals": "Hb 12.1, WBC 8,000 (diff ปกติ), platelet 12,000/µL ไม่มี clumping platelet ใหญ่บางตัว ไม่มี blast",
+            "strength": "strong",
+            "why": "Isolated thrombocytopenia ไม่มี pseudothrombocytopenia"
+          },
+          {
+            "id": "l-coag",
+            "kind": "lab",
+            "cost": 4,
+            "label": "APTT/PT",
+            "reveals": "ปกติ",
+            "strength": "weak",
+            "why": "Platelet problem coagulogram ปกติอยู่แล้ว"
+          },
+          {
+            "id": "l-bma",
+            "kind": "lab",
+            "cost": 5,
+            "label": "BMA",
+            "reveals": "Megakaryocyte เพิ่ม ไม่มี blast",
+            "strength": "weak",
+            "why": "ไม่จำเป็นใน typical ITP"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "itp", "label": "ITP" },
-          { "id": "leukemia", "label": "Acute leukemia" },
-          { "id": "apde", "label": "APDE" },
-          { "id": "vwd", "label": "vWD" }
+          {
+            "id": "itp",
+            "label": "ITP"
+          },
+          {
+            "id": "leukemia",
+            "label": "Acute leukemia"
+          },
+          {
+            "id": "apde",
+            "label": "APDE"
+          },
+          {
+            "id": "vwd",
+            "label": "vWD"
+          }
         ],
         "nextStepOptions": [
-          { "id": "observe", "label": "Observe แบบผู้ป่วยนอก + สอนอาการเตือน เลี่ยง NSAID/กีฬาปะทะ นัด F/U" },
-          { "id": "platelet", "label": "Platelet transfusion" },
-          { "id": "bma", "label": "BMA ก่อนรักษา" },
-          { "id": "mp", "label": "Methylprednisolone pulse + IVIG" }
+          {
+            "id": "observe",
+            "label": "Observe แบบผู้ป่วยนอก + สอนอาการเตือน เลี่ยง NSAID/กีฬาปะทะ นัด F/U"
+          },
+          {
+            "id": "platelet",
+            "label": "Platelet transfusion"
+          },
+          {
+            "id": "bma",
+            "label": "BMA ก่อนรักษา"
+          },
+          {
+            "id": "mp",
+            "label": "Methylprednisolone pulse + IVIG"
+          }
         ],
-        "answer": { "diagnosis": "itp", "nextStep": "observe" },
-        "optimalLine": ["h-mucosa", "p-full", "l-cbc"],
+        "answer": {
+          "diagnosis": "itp",
+          "nextStep": "observe"
+        },
+        "optimalLine": [
+          "h-mucosa",
+          "p-full",
+          "l-cbc"
+        ],
         "explanation": "หลังไวรัส + isolated thrombocytopenia + PE ปกติ = typical ITP ไม่ต้อง BMA · ไม่มี mucosal bleeding → observe (ASH 2019/CPS) เป้าหมายคือ platelet ที่ปลอดภัยไม่ใช่ปกติ · platelet transfusion ไม่ช่วยเพราะถูกทำลาย (erratum ITP platelet)"
       },
       {
         "id": "dd-dark-urine",
         "targetSeconds": 180,
         "difficulty": 2,
-        "basedOn": { "rules": ["hemolysis-triage"], "errata": ["e-g6pd-assay"] },
+        "basedOn": {
+          "rules": [
+            "hemolysis-triage"
+          ],
+          "errata": [
+            "e-g6pd-assay"
+          ]
+        },
         "hint": "Dipstick blood บวกแต่ไม่มี RBC แปลว่าอะไร",
         "title": "ปัสสาวะสีโค้ก",
         "chiefComplaint": "เด็กชาย 5 ปี ซีดเหลืองและปัสสาวะสีน้ำปลา 1 วัน หลังเป็นไข้หวัด 2 วัน",
         "vitals": "T 37.8 · HR 140 · BP 95/60",
         "budget": 12,
         "clues": [
-          { "id": "h-trigger", "kind": "history", "cost": 1, "label": "ยา/อาหาร/สารที่สัมผัส", "reveals": "ได้ยาลดไข้และยาที่ร้านขายยาให้ (มี co-trimoxazole) แม่เอาลูกเหม็นใส่ตู้เสื้อผ้า", "strength": "strong", "why": "Oxidant trigger (sulfonamide, naphthalene)" },
-          { "id": "h-fh", "kind": "history", "cost": 1, "label": "ประวัติครอบครัว", "reveals": "ลุง (พี่ชายแม่) เคยปัสสาวะสีเข้มหลังกินยา", "strength": "moderate", "why": "ญาติชายฝั่งแม่ = X-linked" },
-          { "id": "b-ua", "kind": "bedside", "cost": 3, "label": "Urine dipstick + microscopy", "reveals": "Blood 3+ แต่ RBC 0–1/HPF", "strength": "strong", "why": "Hemoglobinuria = intravascular hemolysis" },
-          { "id": "l-smear-dct", "kind": "lab", "cost": 4, "label": "CBC + smear + DCT", "reveals": "Hb 6.5, retic 6%, bite cell และ blister cell, DCT ลบ", "strength": "strong", "why": "DCT ลบ + bite cell = G6PD pattern" },
-          { "id": "l-g6pd", "kind": "lab", "cost": 4, "label": "G6PD level ตอนนี้", "reveals": "อยู่ในเกณฑ์ปกติต่ำ", "strength": "weak", "why": "False negative ช่วง acute hemolysis เพราะ reticulocyte มี G6PD สูง" }
+          {
+            "id": "h-trigger",
+            "kind": "history",
+            "cost": 1,
+            "label": "ยา/อาหาร/สารที่สัมผัส",
+            "reveals": "ได้ยาลดไข้และยาที่ร้านขายยาให้ (มี co-trimoxazole) แม่เอาลูกเหม็นใส่ตู้เสื้อผ้า",
+            "strength": "strong",
+            "why": "Oxidant trigger (sulfonamide, naphthalene)"
+          },
+          {
+            "id": "h-fh",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติครอบครัว",
+            "reveals": "ลุง (พี่ชายแม่) เคยปัสสาวะสีเข้มหลังกินยา",
+            "strength": "moderate",
+            "why": "ญาติชายฝั่งแม่ = X-linked"
+          },
+          {
+            "id": "b-ua",
+            "kind": "bedside",
+            "cost": 3,
+            "label": "Urine dipstick + microscopy",
+            "reveals": "Blood 3+ แต่ RBC 0–1/HPF",
+            "strength": "strong",
+            "why": "Hemoglobinuria = intravascular hemolysis"
+          },
+          {
+            "id": "l-smear-dct",
+            "kind": "lab",
+            "cost": 4,
+            "label": "CBC + smear + DCT",
+            "reveals": "Hb 6.5, retic 6%, bite cell และ blister cell, DCT ลบ",
+            "strength": "strong",
+            "why": "DCT ลบ + bite cell = G6PD pattern"
+          },
+          {
+            "id": "l-g6pd",
+            "kind": "lab",
+            "cost": 4,
+            "label": "G6PD level ตอนนี้",
+            "reveals": "อยู่ในเกณฑ์ปกติต่ำ",
+            "strength": "weak",
+            "why": "False negative ช่วง acute hemolysis เพราะ reticulocyte มี G6PD สูง"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "g6pd", "label": "G6PD deficiency with acute hemolysis" },
-          { "id": "aiha", "label": "AIHA" },
-          { "id": "hs", "label": "Hereditary spherocytosis" },
-          { "id": "agn", "label": "Post-infectious glomerulonephritis" }
+          {
+            "id": "g6pd",
+            "label": "G6PD deficiency with acute hemolysis"
+          },
+          {
+            "id": "aiha",
+            "label": "AIHA"
+          },
+          {
+            "id": "hs",
+            "label": "Hereditary spherocytosis"
+          },
+          {
+            "id": "agn",
+            "label": "Post-infectious glomerulonephritis"
+          }
         ],
         "nextStepOptions": [
-          { "id": "stop-hydrate", "label": "หยุดยา/สารกระตุ้น + IV hydration + PRC ถ้าซีดมาก + นัดตรวจ G6PD ซ้ำหลังหาย" },
-          { "id": "pred", "label": "Prednisolone 2 mg/kg/day" },
-          { "id": "methylene", "label": "Methylene blue" },
-          { "id": "splenectomy", "label": "นัด splenectomy" }
+          {
+            "id": "stop-hydrate",
+            "label": "หยุดยา/สารกระตุ้น + IV hydration + PRC ถ้าซีดมาก + นัดตรวจ G6PD ซ้ำหลังหาย"
+          },
+          {
+            "id": "pred",
+            "label": "Prednisolone 2 mg/kg/day"
+          },
+          {
+            "id": "methylene",
+            "label": "Methylene blue"
+          },
+          {
+            "id": "splenectomy",
+            "label": "นัด splenectomy"
+          }
         ],
-        "answer": { "diagnosis": "g6pd", "nextStep": "stop-hydrate" },
-        "optimalLine": ["h-trigger", "b-ua", "l-smear-dct"],
+        "answer": {
+          "diagnosis": "g6pd",
+          "nextStep": "stop-hydrate"
+        },
+        "optimalLine": [
+          "h-trigger",
+          "b-ua",
+          "l-smear-dct"
+        ],
         "explanation": "ตัวกระตุ้น oxidant + hemoglobinuria + DCT ลบ + bite cell = G6PD deficiency · G6PD level ช่วงนี้ปกติได้ (erratum) อย่าใช้ตัด · รักษาด้วยหยุดตัวกระตุ้น hydration ป้องกัน AKI ให้ PRC ถ้าซีดมาก · steroid ไม่ช่วย (DCT ลบ) · methylene blue ห้าม"
       },
       {
         "id": "dd-boy-knee",
         "targetSeconds": 180,
         "difficulty": 2,
-        "basedOn": { "rules": ["bleed-pattern", "coag-map", "replace-missing"], "trapPairs": ["tp-hema-hemb"] },
+        "basedOn": {
+          "rules": [
+            "bleed-pattern",
+            "coag-map",
+            "replace-missing"
+          ],
+          "trapPairs": [
+            "tp-hema-hemb"
+          ]
+        },
         "hint": "APTT ยาวอย่างเดียวยังบอกไม่ได้ว่า A หรือ B",
         "title": "เข่าบวมหลังล้มเบา ๆ",
         "chiefComplaint": "เด็กชาย 18 เดือน เข่าขวาบวมร้อน ไม่ยอมลงน้ำหนัก หลังล้มขณะหัดเดิน",
         "vitals": "T 37.2 · HR 120",
         "budget": 12,
         "clues": [
-          { "id": "h-fh", "kind": "history", "cost": 1, "label": "ประวัติครอบครัว + ขลิบ", "reveals": "น้าชาย (น้องชายแม่) มีข้อพิการ เคยต้องให้ 'น้ำเหลือง' บ่อย · ตอนแรกเกิดเลือดออกนานหลังเจาะส้นเท้า", "strength": "strong", "why": "X-linked pattern ฝั่งแม่" },
-          { "id": "p-skin", "kind": "pe", "cost": 2, "label": "ตรวจผิวหนัง/mucosa", "reveals": "ไม่มี petechiae มีจ้ำลึกคลำได้ที่ต้นขา", "strength": "moderate", "why": "Pattern secondary hemostasis" },
-          { "id": "l-coag", "kind": "lab", "cost": 4, "label": "Platelet + APTT/PT/TT", "reveals": "Platelet 310,000 · APTT 78 วินาที · PT, TT ปกติ", "strength": "strong", "why": "Intrinsic pathway (VIII, IX, XI, XII)" },
-          { "id": "l-factor", "kind": "lab", "cost": 4, "label": "Factor VIII + IX assay", "reveals": "FVIII < 1% · FIX ปกติ", "strength": "strong", "why": "แยก A จาก B และบอก severity (severe)" },
-          { "id": "i-xray", "kind": "imaging", "cost": 5, "label": "X-ray เข่า", "reveals": "Soft tissue swelling ไม่มีกระดูกหัก", "strength": "weak", "why": "ไม่ช่วยวินิจฉัยโรคเลือด" }
+          {
+            "id": "h-fh",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติครอบครัว + ขลิบ",
+            "reveals": "น้าชาย (น้องชายแม่) มีข้อพิการ เคยต้องให้ 'น้ำเหลือง' บ่อย · ตอนแรกเกิดเลือดออกนานหลังเจาะส้นเท้า",
+            "strength": "strong",
+            "why": "X-linked pattern ฝั่งแม่"
+          },
+          {
+            "id": "p-skin",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจผิวหนัง/mucosa",
+            "reveals": "ไม่มี petechiae มีจ้ำลึกคลำได้ที่ต้นขา",
+            "strength": "moderate",
+            "why": "Pattern secondary hemostasis"
+          },
+          {
+            "id": "l-coag",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Platelet + APTT/PT/TT",
+            "reveals": "Platelet 310,000 · APTT 78 วินาที · PT, TT ปกติ",
+            "strength": "strong",
+            "why": "Intrinsic pathway (VIII, IX, XI, XII)"
+          },
+          {
+            "id": "l-factor",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Factor VIII + IX assay",
+            "reveals": "FVIII < 1% · FIX ปกติ",
+            "strength": "strong",
+            "why": "แยก A จาก B และบอก severity (severe)"
+          },
+          {
+            "id": "i-xray",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "X-ray เข่า",
+            "reveals": "Soft tissue swelling ไม่มีกระดูกหัก",
+            "strength": "weak",
+            "why": "ไม่ช่วยวินิจฉัยโรคเลือด"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "hema", "label": "Severe hemophilia A" },
-          { "id": "hemb", "label": "Hemophilia B" },
-          { "id": "vwd", "label": "vWD type 1" },
-          { "id": "septic", "label": "Septic arthritis" }
+          {
+            "id": "hema",
+            "label": "Severe hemophilia A"
+          },
+          {
+            "id": "hemb",
+            "label": "Hemophilia B"
+          },
+          {
+            "id": "vwd",
+            "label": "vWD type 1"
+          },
+          {
+            "id": "septic",
+            "label": "Septic arthritis"
+          }
         ],
         "nextStepOptions": [
-          { "id": "fviii", "label": "FVIII concentrate (target ~40–60% สำหรับ hemarthrosis) + พัก ประคบเย็น + paracetamol" },
-          { "id": "fix", "label": "FIX concentrate" },
-          { "id": "ddavp", "label": "DDAVP" },
-          { "id": "tap", "label": "เจาะข้อส่งเพาะเชื้อก่อน" }
+          {
+            "id": "fviii",
+            "label": "FVIII concentrate (target ~40–60% สำหรับ hemarthrosis) + พัก ประคบเย็น + paracetamol"
+          },
+          {
+            "id": "fix",
+            "label": "FIX concentrate"
+          },
+          {
+            "id": "ddavp",
+            "label": "DDAVP"
+          },
+          {
+            "id": "tap",
+            "label": "เจาะข้อส่งเพาะเชื้อก่อน"
+          }
         ],
-        "answer": { "diagnosis": "hema", "nextStep": "fviii" },
-        "optimalLine": ["h-fh", "l-coag", "l-factor"],
+        "answer": {
+          "diagnosis": "hema",
+          "nextStep": "fviii"
+        },
+        "optimalLine": [
+          "h-fh",
+          "l-coag",
+          "l-factor"
+        ],
         "explanation": "เด็กชาย + ญาติชายฝั่งแม่ + hemarthrosis + APTT ยาวอย่างเดียว = hemophilia แต่ต้อง factor assay แยก A/B ก่อนเลือกยา (trap) · severe A (< 1%) → FVIII concentrate (dose = target × 0.5 × BW) · DDAVP ใช้ไม่ได้ใน severe (คลังว่าง) · เจาะข้อเสี่ยงเลือดออกเพิ่มถ้ายังไม่ได้ factor"
       },
       {
         "id": "dd-hs-crisis",
         "targetSeconds": 180,
         "difficulty": 3,
-        "basedOn": { "rules": ["retic-sort", "hemolysis-triage"], "errata": ["e-aplastic-crisis"] },
+        "basedOn": {
+          "rules": [
+            "retic-sort",
+            "hemolysis-triage"
+          ],
+          "errata": [
+            "e-aplastic-crisis"
+          ]
+        },
         "hint": "Retic ที่ควรสูงแต่ต่ำ",
         "title": "เด็ก HS ซีดลงเร็ว",
         "chiefComplaint": "เด็กหญิง 7 ปี เป็น HS ติดตามที่คลินิก Hb ปกติ 9 g/dL มาด้วยอ่อนเพลียมาก ซีดลงชัด 3 วัน หลังไข้และมีผื่นแดงที่แก้มสัปดาห์ก่อน",
         "vitals": "HR 150 · RR 30 · BP 90/55",
         "budget": 10,
         "clues": [
-          { "id": "h-jaundice", "kind": "history", "cost": 1, "label": "ตัวเหลือง/ปัสสาวะ", "reveals": "เหลืองไม่มากกว่าปกติ ปัสสาวะสีปกติ", "strength": "moderate", "why": "Hemolysis ไม่ได้เพิ่ม → การสร้างหยุด" },
-          { "id": "p-spleen", "kind": "pe", "cost": 2, "label": "คลำม้าม", "reveals": "ม้ามโต 2 cm เท่าเดิม", "strength": "moderate", "why": "ไม่ใช่ splenic sequestration" },
-          { "id": "l-cbc-retic", "kind": "lab", "cost": 4, "label": "CBC + retic", "reveals": "Hb 4.5 g/dL, retic 0.2%, WBC และ platelet ปกติ, spherocyte เดิม", "strength": "strong", "why": "Retic ต่ำมากใน chronic hemolysis = การสร้างหยุด" },
-          { "id": "l-parvo", "kind": "lab", "cost": 4, "label": "Parvovirus B19 IgM/PCR", "reveals": "บวก", "strength": "strong", "why": "ยืนยันสาเหตุ แต่ไม่ต้องรอก่อนรักษา" },
-          { "id": "l-bma", "kind": "lab", "cost": 5, "label": "BMA", "reveals": "Erythroid precursor หายไป มี giant pronormoblast", "strength": "weak", "why": "ไม่จำเป็น — ต่ำ series เดียวและอธิบายได้" }
+          {
+            "id": "h-jaundice",
+            "kind": "history",
+            "cost": 1,
+            "label": "ตัวเหลือง/ปัสสาวะ",
+            "reveals": "เหลืองไม่มากกว่าปกติ ปัสสาวะสีปกติ",
+            "strength": "moderate",
+            "why": "Hemolysis ไม่ได้เพิ่ม → การสร้างหยุด"
+          },
+          {
+            "id": "p-spleen",
+            "kind": "pe",
+            "cost": 2,
+            "label": "คลำม้าม",
+            "reveals": "ม้ามโต 2 cm เท่าเดิม",
+            "strength": "moderate",
+            "why": "ไม่ใช่ splenic sequestration"
+          },
+          {
+            "id": "l-cbc-retic",
+            "kind": "lab",
+            "cost": 4,
+            "label": "CBC + retic",
+            "reveals": "Hb 4.5 g/dL, retic 0.2%, WBC และ platelet ปกติ, spherocyte เดิม",
+            "strength": "strong",
+            "why": "Retic ต่ำมากใน chronic hemolysis = การสร้างหยุด"
+          },
+          {
+            "id": "l-parvo",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Parvovirus B19 IgM/PCR",
+            "reveals": "บวก",
+            "strength": "strong",
+            "why": "ยืนยันสาเหตุ แต่ไม่ต้องรอก่อนรักษา"
+          },
+          {
+            "id": "l-bma",
+            "kind": "lab",
+            "cost": 5,
+            "label": "BMA",
+            "reveals": "Erythroid precursor หายไป มี giant pronormoblast",
+            "strength": "weak",
+            "why": "ไม่จำเป็น — ต่ำ series เดียวและอธิบายได้"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "aplastic", "label": "Aplastic crisis (parvovirus B19)" },
-          { "id": "hemolytic", "label": "Hemolytic crisis" },
-          { "id": "sequestration", "label": "Splenic sequestration" },
-          { "id": "leukemia", "label": "Acute leukemia" }
+          {
+            "id": "aplastic",
+            "label": "Aplastic crisis (parvovirus B19)"
+          },
+          {
+            "id": "hemolytic",
+            "label": "Hemolytic crisis"
+          },
+          {
+            "id": "sequestration",
+            "label": "Splenic sequestration"
+          },
+          {
+            "id": "leukemia",
+            "label": "Acute leukemia"
+          }
         ],
         "nextStepOptions": [
-          { "id": "admit-prc", "label": "Admit + PRC ช้า ๆ ประคองจนไขกระดูกฟื้น" },
-          { "id": "splenectomy", "label": "Splenectomy ด่วน" },
-          { "id": "pred", "label": "Prednisolone" },
-          { "id": "folate", "label": "เพิ่ม folic acid แล้วนัด 1 สัปดาห์" }
+          {
+            "id": "admit-prc",
+            "label": "Admit + PRC ช้า ๆ ประคองจนไขกระดูกฟื้น"
+          },
+          {
+            "id": "splenectomy",
+            "label": "Splenectomy ด่วน"
+          },
+          {
+            "id": "pred",
+            "label": "Prednisolone"
+          },
+          {
+            "id": "folate",
+            "label": "เพิ่ม folic acid แล้วนัด 1 สัปดาห์"
+          }
         ],
-        "answer": { "diagnosis": "aplastic", "nextStep": "admit-prc" },
-        "optimalLine": ["h-jaundice", "l-cbc-retic"],
+        "answer": {
+          "diagnosis": "aplastic",
+          "nextStep": "admit-prc"
+        },
+        "optimalLine": [
+          "h-jaundice",
+          "l-cbc-retic"
+        ],
         "explanation": "คน HS ปกติ retic สูง — Hb ตกเร็วแต่ retic 0.2% และเหลืองไม่มากขึ้น = การสร้างหยุด (aplastic crisis จาก parvovirus B19; ผื่นแก้ม = fifth disease) ไม่ใช่ hemolytic crisis (retic จะสูง) · Hb 4.5 + HR 150 → admit ให้ PRC · ผลไวรัสไม่ต้องรอ"
       },
       {
         "id": "dd-infant-seizure",
         "targetSeconds": 180,
         "difficulty": 3,
-        "basedOn": { "rules": ["coag-map", "replace-missing"], "trapPairs": ["tp-hdn-ivkdi"] },
+        "basedOn": {
+          "rules": [
+            "coag-map",
+            "replace-missing"
+          ],
+          "trapPairs": [
+            "tp-hdn-ivkdi"
+          ]
+        },
         "hint": "อายุ + การให้นม + สถานที่คลอด",
         "title": "ทารก 6 สัปดาห์ชัก",
         "chiefComplaint": "ทารกชาย 6 สัปดาห์ ซึมลง อาเจียน ชักเกร็ง 1 ครั้ง",
         "vitals": "HR 170 · BP 70/40 · ซีด",
         "budget": 10,
         "clues": [
-          { "id": "h-birth", "kind": "history", "cost": 1, "label": "ประวัติคลอด/การให้นม", "reveals": "คลอดที่บ้านกับหมอตำแย ไม่ได้ฉีดยาใด ๆ หลังคลอด กินนมแม่อย่างเดียว", "strength": "strong", "why": "ไม่ได้ vitamin K prophylaxis + นมแม่ = เสี่ยง late VKDB" },
-          { "id": "p-af", "kind": "pe", "cost": 2, "label": "ตรวจกระหม่อม/ระบบประสาท", "reveals": "กระหม่อมหน้าโป่งตึง ซีดมาก ไม่มีบาดแผลภายนอก", "strength": "strong", "why": "ICP สูง = ICH" },
-          { "id": "l-coag", "kind": "lab", "cost": 4, "label": "Platelet + APTT/PT/TT", "reveals": "Platelet 350,000 · PT และ APTT ยาวมาก · TT ปกติ", "strength": "strong", "why": "II, VII, IX, X ต่ำ fibrinogen ปกติ = vitamin K deficiency" },
-          { "id": "i-ct", "kind": "imaging", "cost": 5, "label": "CT brain", "reveals": "Subdural hemorrhage", "strength": "moderate", "why": "ยืนยัน ICH แต่ต้องทำหลังให้ vitamin K + FFP" },
-          { "id": "h-trauma", "kind": "history", "cost": 1, "label": "ประวัติอุบัติเหตุ", "reveals": "ไม่มีตก ไม่มีใครเขย่า", "strength": "weak", "why": "Coagulopathy อธิบายได้แล้ว แต่ยังต้องคิด abuse ถ้า lab ปกติ" }
+          {
+            "id": "h-birth",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติคลอด/การให้นม",
+            "reveals": "คลอดที่บ้านกับหมอตำแย ไม่ได้ฉีดยาใด ๆ หลังคลอด กินนมแม่อย่างเดียว",
+            "strength": "strong",
+            "why": "ไม่ได้ vitamin K prophylaxis + นมแม่ = เสี่ยง late VKDB"
+          },
+          {
+            "id": "p-af",
+            "kind": "pe",
+            "cost": 2,
+            "label": "ตรวจกระหม่อม/ระบบประสาท",
+            "reveals": "กระหม่อมหน้าโป่งตึง ซีดมาก ไม่มีบาดแผลภายนอก",
+            "strength": "strong",
+            "why": "ICP สูง = ICH"
+          },
+          {
+            "id": "l-coag",
+            "kind": "lab",
+            "cost": 4,
+            "label": "Platelet + APTT/PT/TT",
+            "reveals": "Platelet 350,000 · PT และ APTT ยาวมาก · TT ปกติ",
+            "strength": "strong",
+            "why": "II, VII, IX, X ต่ำ fibrinogen ปกติ = vitamin K deficiency"
+          },
+          {
+            "id": "i-ct",
+            "kind": "imaging",
+            "cost": 5,
+            "label": "CT brain",
+            "reveals": "Subdural hemorrhage",
+            "strength": "moderate",
+            "why": "ยืนยัน ICH แต่ต้องทำหลังให้ vitamin K + FFP"
+          },
+          {
+            "id": "h-trauma",
+            "kind": "history",
+            "cost": 1,
+            "label": "ประวัติอุบัติเหตุ",
+            "reveals": "ไม่มีตก ไม่มีใครเขย่า",
+            "strength": "weak",
+            "why": "Coagulopathy อธิบายได้แล้ว แต่ยังต้องคิด abuse ถ้า lab ปกติ"
+          }
         ],
         "diagnosisOptions": [
-          { "id": "late-vkdb", "label": "Late VKDB (IVKDI) with ICH" },
-          { "id": "hdn", "label": "Classic HDN" },
-          { "id": "hemophilia", "label": "Hemophilia A with ICH" },
-          { "id": "abuse", "label": "Abusive head trauma" }
+          {
+            "id": "late-vkdb",
+            "label": "Late VKDB (IVKDI) with ICH"
+          },
+          {
+            "id": "hdn",
+            "label": "Classic HDN"
+          },
+          {
+            "id": "hemophilia",
+            "label": "Hemophilia A with ICH"
+          },
+          {
+            "id": "abuse",
+            "label": "Abusive head trauma"
+          }
         ],
         "nextStepOptions": [
-          { "id": "vitk-ffp", "label": "Vitamin K1 IV + FFP 10 mL/kg ทันที (± PRC) แล้ว CT brain + consult neurosurgery" },
-          { "id": "ct-first", "label": "CT brain ก่อนแล้วค่อยตัดสินใจ" },
-          { "id": "fviii", "label": "FVIII concentrate" },
-          { "id": "platelet", "label": "Platelet transfusion" }
+          {
+            "id": "vitk-ffp",
+            "label": "Vitamin K1 IV + FFP 10 mL/kg ทันที (± PRC) แล้ว CT brain + consult neurosurgery"
+          },
+          {
+            "id": "ct-first",
+            "label": "CT brain ก่อนแล้วค่อยตัดสินใจ"
+          },
+          {
+            "id": "fviii",
+            "label": "FVIII concentrate"
+          },
+          {
+            "id": "platelet",
+            "label": "Platelet transfusion"
+          }
         ],
-        "answer": { "diagnosis": "late-vkdb", "nextStep": "vitk-ffp" },
-        "optimalLine": ["h-birth", "p-af", "l-coag"],
+        "answer": {
+          "diagnosis": "late-vkdb",
+          "nextStep": "vitk-ffp"
+        },
+        "optimalLine": [
+          "h-birth",
+          "p-af",
+          "l-coag"
+        ],
         "explanation": "อายุ 6 สัปดาห์ + นมแม่ + คลอดที่บ้านไม่ได้ vitamin K + ICH = late VKDB (ไม่ใช่ classic HDN ที่อายุ 2–7 วัน GI bleed — trap) · PT + APTT ยาวแต่ TT/platelet ปกติ ตัด DIC/platelet · ให้ vitamin K1 IV + FFP ทันที (vitamin K ต้องรอตับสร้าง factor หลายชั่วโมง) แล้วค่อย CT/neurosurgery · hemophilia จะมี PT ปกติ"
       }
     ],
@@ -1364,100 +3133,305 @@
         "id": "mx-bleeding-rx",
         "targetSeconds": 180,
         "difficulty": 1,
-        "basedOn": { "rules": ["replace-missing"], "errata": ["e-ddavp-limits", "e-itp-platelet"] },
+        "basedOn": {
+          "rules": [
+            "replace-missing"
+          ],
+          "errata": [
+            "e-ddavp-limits",
+            "e-itp-platelet"
+          ]
+        },
         "hint": "ถามตัวเองว่าผลิตภัณฑ์นี้มี factor ที่ขาดไหม",
         "title": "ยา/blood component × โรคเลือดออก",
         "conditions": [
-          { "id": "hema-severe", "label": "Severe hemophilia A" },
-          { "id": "hemb", "label": "Hemophilia B" },
-          { "id": "vwd1", "label": "vWD type 1" },
-          { "id": "vwd2b", "label": "vWD type 2B" },
-          { "id": "vkdb", "label": "VKDB with bleeding" },
-          { "id": "itp", "label": "ITP (ไม่มีเลือดออกคุกคามชีวิต)" }
+          {
+            "id": "hema-severe",
+            "label": "Severe hemophilia A"
+          },
+          {
+            "id": "hemb",
+            "label": "Hemophilia B"
+          },
+          {
+            "id": "vwd1",
+            "label": "vWD type 1"
+          },
+          {
+            "id": "vwd2b",
+            "label": "vWD type 2B"
+          },
+          {
+            "id": "vkdb",
+            "label": "VKDB with bleeding"
+          },
+          {
+            "id": "itp",
+            "label": "ITP (ไม่มีเลือดออกคุกคามชีวิต)"
+          }
         ],
         "rows": [
           {
             "id": "ddavp",
             "drug": "DDAVP (desmopressin)",
             "cells": [
-              { "condition": "hema-severe", "verdict": "illegal", "why": "ใช้ได้เฉพาะ mild A (FVIII ≥ 5%) ที่ตอบสนอง — severe ไม่มีของในคลัง", "sourceId": "msd-hemophilia" },
-              { "condition": "hemb", "verdict": "illegal", "why": "ไม่เพิ่ม FIX", "sourceId": "msd-hemophilia" },
-              { "condition": "vwd1", "verdict": "legal", "why": "ปล่อย vWF + FVIII จาก endothelium — ยาหลักของ type 1", "sourceId": "msd-vwd" },
-              { "condition": "vwd2b", "verdict": "illegal", "why": "vWF ผิดปกติจับ platelet → thrombocytopenia แย่ลง", "sourceId": "msd-vwd" },
-              { "condition": "vkdb", "verdict": "illegal", "why": "ไม่เพิ่ม II, VII, IX, X" },
-              { "condition": "itp", "verdict": "illegal", "why": "ปัญหาคือ platelet ถูกทำลาย ไม่ใช่ vWF" }
+              {
+                "condition": "hema-severe",
+                "verdict": "illegal",
+                "why": "ใช้ได้เฉพาะ mild A (FVIII ≥ 5%) ที่ตอบสนอง — severe ไม่มีของในคลัง",
+                "sourceId": "msd-hemophilia"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "illegal",
+                "why": "ไม่เพิ่ม FIX",
+                "sourceId": "msd-hemophilia"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "legal",
+                "why": "ปล่อย vWF + FVIII จาก endothelium — ยาหลักของ type 1",
+                "sourceId": "msd-vwd"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "illegal",
+                "why": "vWF ผิดปกติจับ platelet → thrombocytopenia แย่ลง",
+                "sourceId": "msd-vwd"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "illegal",
+                "why": "ไม่เพิ่ม II, VII, IX, X"
+              },
+              {
+                "condition": "itp",
+                "verdict": "illegal",
+                "why": "ปัญหาคือ platelet ถูกทำลาย ไม่ใช่ vWF"
+              }
             ]
           },
           {
             "id": "cryo",
             "drug": "Cryoprecipitate",
             "cells": [
-              { "condition": "hema-severe", "verdict": "legal", "why": "มี FVIII — ใช้ได้เมื่อไม่มี FVIII concentrate" },
-              { "condition": "hemb", "verdict": "illegal", "why": "ไม่มี FIX (FIX อยู่ใน cryo-removed plasma)" },
-              { "condition": "vwd1", "verdict": "legal", "why": "มี vWF — ทางเลือกเมื่อไม่มี VWF concentrate" },
-              { "condition": "vwd2b", "verdict": "legal", "why": "เติม vWF ปกติจากภายนอก (ใช้แทน DDAVP)" },
-              { "condition": "vkdb", "verdict": "illegal", "why": "ไม่มี II, VII, IX, X ที่ขาด" },
-              { "condition": "itp", "verdict": "illegal", "why": "ไม่เกี่ยวกับ platelet ที่ถูกทำลาย" }
+              {
+                "condition": "hema-severe",
+                "verdict": "legal",
+                "why": "มี FVIII — ใช้ได้เมื่อไม่มี FVIII concentrate"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "illegal",
+                "why": "ไม่มี FIX (FIX อยู่ใน cryo-removed plasma)"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "legal",
+                "why": "มี vWF — ทางเลือกเมื่อไม่มี VWF concentrate"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "legal",
+                "why": "เติม vWF ปกติจากภายนอก (ใช้แทน DDAVP)"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "illegal",
+                "why": "ไม่มี II, VII, IX, X ที่ขาด"
+              },
+              {
+                "condition": "itp",
+                "verdict": "illegal",
+                "why": "ไม่เกี่ยวกับ platelet ที่ถูกทำลาย"
+              }
             ]
           },
           {
             "id": "fviii-conc",
             "drug": "FVIII concentrate (high-purity/recombinant)",
             "cells": [
-              { "condition": "hema-severe", "verdict": "legal", "why": "เติมตรงตัว: dose = (target − baseline) × 0.5 × BW", "sourceId": "msd-hemophilia" },
-              { "condition": "hemb", "verdict": "illegal", "why": "ขาด IX ไม่ใช่ VIII" },
-              { "condition": "vwd1", "verdict": "illegal", "why": "High-purity FVIII ไม่มี vWF — ต้องใช้ VWF-containing (intermediate-purity) concentrate", "sourceId": "msd-vwd" },
-              { "condition": "vwd2b", "verdict": "illegal", "why": "ไม่มี vWF", "sourceId": "msd-vwd" },
-              { "condition": "vkdb", "verdict": "illegal", "why": "ไม่ได้ขาด VIII" },
-              { "condition": "itp", "verdict": "illegal", "why": "ไม่เกี่ยว" }
+              {
+                "condition": "hema-severe",
+                "verdict": "legal",
+                "why": "เติมตรงตัว: dose = (target − baseline) × 0.5 × BW",
+                "sourceId": "msd-hemophilia"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "illegal",
+                "why": "ขาด IX ไม่ใช่ VIII"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "illegal",
+                "why": "High-purity FVIII ไม่มี vWF — ต้องใช้ VWF-containing (intermediate-purity) concentrate",
+                "sourceId": "msd-vwd"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "illegal",
+                "why": "ไม่มี vWF",
+                "sourceId": "msd-vwd"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "illegal",
+                "why": "ไม่ได้ขาด VIII"
+              },
+              {
+                "condition": "itp",
+                "verdict": "illegal",
+                "why": "ไม่เกี่ยว"
+              }
             ]
           },
           {
             "id": "fix-conc",
             "drug": "FIX concentrate",
             "cells": [
-              { "condition": "hema-severe", "verdict": "illegal", "why": "ขาด VIII ไม่ใช่ IX" },
-              { "condition": "hemb", "verdict": "legal", "why": "เติมตรงตัว: dose = (target − baseline) × 1 × BW", "sourceId": "msd-hemophilia" },
-              { "condition": "vwd1", "verdict": "illegal", "why": "ไม่มี vWF" },
-              { "condition": "vwd2b", "verdict": "illegal", "why": "ไม่มี vWF" },
-              { "condition": "vkdb", "verdict": "illegal", "why": "เติมแค่ IX ตัวเดียว ขาดอีก II, VII, X — ใช้ vitamin K + FFP" },
-              { "condition": "itp", "verdict": "illegal", "why": "ไม่เกี่ยว" }
+              {
+                "condition": "hema-severe",
+                "verdict": "illegal",
+                "why": "ขาด VIII ไม่ใช่ IX"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "legal",
+                "why": "เติมตรงตัว: dose = (target − baseline) × 1 × BW",
+                "sourceId": "msd-hemophilia"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "illegal",
+                "why": "ไม่มี vWF"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "illegal",
+                "why": "ไม่มี vWF"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "illegal",
+                "why": "เติมแค่ IX ตัวเดียว ขาดอีก II, VII, X — ใช้ vitamin K + FFP"
+              },
+              {
+                "condition": "itp",
+                "verdict": "illegal",
+                "why": "ไม่เกี่ยว"
+              }
             ]
           },
           {
             "id": "vitk-ffp",
             "drug": "Vitamin K1 IV + FFP",
             "cells": [
-              { "condition": "hema-severe", "verdict": "illegal", "why": "Vitamin K ไม่เพิ่ม VIII (FFP อย่างเดียวเป็นทางสำรองเมื่อไม่มี concentrate)" },
-              { "condition": "hemb", "verdict": "illegal", "why": "ขาด IX จากยีน vitamin K ไม่ช่วย (FFP อย่างเดียวเป็นทางสำรอง)" },
-              { "condition": "vwd1", "verdict": "illegal", "why": "ไม่ได้ขาด vitamin K" },
-              { "condition": "vwd2b", "verdict": "illegal", "why": "ไม่ได้ขาด vitamin K" },
-              { "condition": "vkdb", "verdict": "combo", "why": "Vitamin K แก้ต้นเหตุ + FFP เติม factor ทันทีระหว่างรอตับสร้าง", "sourceId": "cdc-vkdb" },
-              { "condition": "itp", "verdict": "illegal", "why": "Coagulation ปกติ" }
+              {
+                "condition": "hema-severe",
+                "verdict": "illegal",
+                "why": "Vitamin K ไม่เพิ่ม VIII (FFP อย่างเดียวเป็นทางสำรองเมื่อไม่มี concentrate)"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "illegal",
+                "why": "ขาด IX จากยีน vitamin K ไม่ช่วย (FFP อย่างเดียวเป็นทางสำรอง)"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "illegal",
+                "why": "ไม่ได้ขาด vitamin K"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "illegal",
+                "why": "ไม่ได้ขาด vitamin K"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "combo",
+                "why": "Vitamin K แก้ต้นเหตุ + FFP เติม factor ทันทีระหว่างรอตับสร้าง",
+                "sourceId": "cdc-vkdb"
+              },
+              {
+                "condition": "itp",
+                "verdict": "illegal",
+                "why": "Coagulation ปกติ"
+              }
             ]
           },
           {
             "id": "platelet-conc",
             "drug": "Platelet concentrate",
             "cells": [
-              { "condition": "hema-severe", "verdict": "illegal", "why": "Platelet ปกติ ปัญหาคือ factor" },
-              { "condition": "hemb", "verdict": "illegal", "why": "Platelet ปกติ" },
-              { "condition": "vwd1", "verdict": "illegal", "why": "Platelet ปกติ ขาด vWF" },
-              { "condition": "vwd2b", "verdict": "illegal", "why": "Platelet ใหม่ก็ถูก vWF ผิดปกติจับเหมือนเดิม — แก้ที่ vWF" },
-              { "condition": "vkdb", "verdict": "illegal", "why": "Platelet ปกติ" },
-              { "condition": "itp", "verdict": "illegal", "why": "ถูกทำลายทันที — ให้เฉพาะเลือดออกคุกคามชีวิตร่วมกับ IVIG + IV steroid", "sourceId": "msd-itp" }
+              {
+                "condition": "hema-severe",
+                "verdict": "illegal",
+                "why": "Platelet ปกติ ปัญหาคือ factor"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "illegal",
+                "why": "Platelet ปกติ"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "illegal",
+                "why": "Platelet ปกติ ขาด vWF"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "illegal",
+                "why": "Platelet ใหม่ก็ถูก vWF ผิดปกติจับเหมือนเดิม — แก้ที่ vWF"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "illegal",
+                "why": "Platelet ปกติ"
+              },
+              {
+                "condition": "itp",
+                "verdict": "illegal",
+                "why": "ถูกทำลายทันที — ให้เฉพาะเลือดออกคุกคามชีวิตร่วมกับ IVIG + IV steroid",
+                "sourceId": "msd-itp"
+              }
             ]
           },
           {
             "id": "ivig",
             "drug": "IVIG",
             "cells": [
-              { "condition": "hema-severe", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "hemb", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "vwd1", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "vwd2b", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "vkdb", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "itp", "verdict": "legal", "why": "Block Fc receptor ของ macrophage — platelet ขึ้นเร็วที่สุด ใช้เมื่อมี mucosal bleeding หรือต้องการเพิ่มเร็ว (0.8–1 g/kg)", "sourceId": "cps-itp-2019" }
+              {
+                "condition": "hema-severe",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "hemb",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "vwd1",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "vwd2b",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "vkdb",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "itp",
+                "verdict": "legal",
+                "why": "Block Fc receptor ของ macrophage — platelet ขึ้นเร็วที่สุด ใช้เมื่อมี mucosal bleeding หรือต้องการเพิ่มเร็ว (0.8–1 g/kg)",
+                "sourceId": "cps-itp-2019"
+              }
             ]
           }
         ]
@@ -1466,76 +3440,233 @@
         "id": "mx-anemia-rx",
         "targetSeconds": 180,
         "difficulty": 3,
-        "basedOn": { "rules": ["iron-order", "globin-balance", "hemolysis-triage"], "errata": ["e-ida-no-transfusion"], "trapPairs": ["tp-ida-trait"] },
+        "basedOn": {
+          "rules": [
+            "iron-order",
+            "globin-balance",
+            "hemolysis-triage"
+          ],
+          "errata": [
+            "e-ida-no-transfusion"
+          ],
+          "trapPairs": [
+            "tp-ida-trait"
+          ]
+        },
         "hint": "ยาเหล็กใช้ได้แค่โรคเดียวในตาราง",
         "title": "การรักษา × โรคซีด",
         "conditions": [
-          { "id": "ida", "label": "IDA (ไม่มี HF)" },
-          { "id": "trait", "label": "Thal trait" },
-          { "id": "tdt", "label": "β-thal/HbE disease (TDT)" },
-          { "id": "hs", "label": "HS ปานกลาง–รุนแรง" },
-          { "id": "aiha", "label": "Warm AIHA" },
-          { "id": "g6pd", "label": "G6PD acute hemolysis" }
+          {
+            "id": "ida",
+            "label": "IDA (ไม่มี HF)"
+          },
+          {
+            "id": "trait",
+            "label": "Thal trait"
+          },
+          {
+            "id": "tdt",
+            "label": "β-thal/HbE disease (TDT)"
+          },
+          {
+            "id": "hs",
+            "label": "HS ปานกลาง–รุนแรง"
+          },
+          {
+            "id": "aiha",
+            "label": "Warm AIHA"
+          },
+          {
+            "id": "g6pd",
+            "label": "G6PD acute hemolysis"
+          }
         ],
         "rows": [
           {
             "id": "oral-iron",
             "drug": "Ferrous sulfate PO",
             "cells": [
-              { "condition": "ida", "verdict": "legal", "why": "เติมสิ่งที่ขาดตรงตัว", "sourceId": "aafp-anemia-2024" },
-              { "condition": "trait", "verdict": "illegal", "why": "Ferritin ปกติ ไม่ได้ขาดเหล็ก" },
-              { "condition": "tdt", "verdict": "illegal", "why": "Iron overload อยู่แล้ว" },
-              { "condition": "hs", "verdict": "illegal", "why": "Hemolysis ไม่ได้ทำให้เสียเหล็กออกนอกร่างกาย" },
-              { "condition": "aiha", "verdict": "illegal", "why": "ไม่ได้ขาดเหล็ก" },
-              { "condition": "g6pd", "verdict": "illegal", "why": "ไม่ได้ขาดเหล็ก" }
+              {
+                "condition": "ida",
+                "verdict": "legal",
+                "why": "เติมสิ่งที่ขาดตรงตัว",
+                "sourceId": "aafp-anemia-2024"
+              },
+              {
+                "condition": "trait",
+                "verdict": "illegal",
+                "why": "Ferritin ปกติ ไม่ได้ขาดเหล็ก"
+              },
+              {
+                "condition": "tdt",
+                "verdict": "illegal",
+                "why": "Iron overload อยู่แล้ว"
+              },
+              {
+                "condition": "hs",
+                "verdict": "illegal",
+                "why": "Hemolysis ไม่ได้ทำให้เสียเหล็กออกนอกร่างกาย"
+              },
+              {
+                "condition": "aiha",
+                "verdict": "illegal",
+                "why": "ไม่ได้ขาดเหล็ก"
+              },
+              {
+                "condition": "g6pd",
+                "verdict": "illegal",
+                "why": "ไม่ได้ขาดเหล็ก"
+              }
             ]
           },
           {
             "id": "regular-prc",
             "drug": "PRC ประจำ keep pre-transfusion Hb 9–10.5",
             "cells": [
-              { "condition": "ida", "verdict": "illegal", "why": "ซีดช้าร่างกายปรับตัวได้ ให้เฉพาะ HF", "sourceId": "sp-ida" },
-              { "condition": "trait", "verdict": "illegal", "why": "ไม่ซีดหรือซีดน้อย" },
-              { "condition": "tdt", "verdict": "legal", "why": "กด ineffective erythropoiesis ลดม้ามโตและ facies", "sourceId": "tif-tdt-2021" },
-              { "condition": "hs", "verdict": "illegal", "why": "ให้เป็นครั้งคราวเมื่อซีดมาก/aplastic crisis ไม่ใช่ประจำ" },
-              { "condition": "aiha", "verdict": "illegal", "why": "ให้เฉพาะซีดมาก (least incompatible) ไม่ใช่ประจำ" },
-              { "condition": "g6pd", "verdict": "illegal", "why": "Hemolysis self-limited ให้เป็นครั้งเมื่อซีดมาก" }
+              {
+                "condition": "ida",
+                "verdict": "illegal",
+                "why": "ซีดช้าร่างกายปรับตัวได้ ให้เฉพาะ HF",
+                "sourceId": "sp-ida"
+              },
+              {
+                "condition": "trait",
+                "verdict": "illegal",
+                "why": "ไม่ซีดหรือซีดน้อย"
+              },
+              {
+                "condition": "tdt",
+                "verdict": "legal",
+                "why": "กด ineffective erythropoiesis ลดม้ามโตและ facies",
+                "sourceId": "tif-tdt-2021"
+              },
+              {
+                "condition": "hs",
+                "verdict": "illegal",
+                "why": "ให้เป็นครั้งคราวเมื่อซีดมาก/aplastic crisis ไม่ใช่ประจำ"
+              },
+              {
+                "condition": "aiha",
+                "verdict": "illegal",
+                "why": "ให้เฉพาะซีดมาก (least incompatible) ไม่ใช่ประจำ"
+              },
+              {
+                "condition": "g6pd",
+                "verdict": "illegal",
+                "why": "Hemolysis self-limited ให้เป็นครั้งเมื่อซีดมาก"
+              }
             ]
           },
           {
             "id": "chelation",
             "drug": "Iron chelation (deferoxamine/deferiprone/deferasirox)",
             "cells": [
-              { "condition": "ida", "verdict": "illegal", "why": "ขาดเหล็กอยู่แล้ว" },
-              { "condition": "trait", "verdict": "illegal", "why": "ไม่มี iron overload" },
-              { "condition": "tdt", "verdict": "combo", "why": "คู่กับการให้เลือดประจำเมื่อ ferritin > 1,000 ng/mL", "sourceId": "merck-thalassemias" },
-              { "condition": "hs", "verdict": "illegal", "why": "ไม่ได้ให้เลือดประจำ" },
-              { "condition": "aiha", "verdict": "illegal", "why": "ไม่มี iron overload" },
-              { "condition": "g6pd", "verdict": "illegal", "why": "ไม่มี iron overload" }
+              {
+                "condition": "ida",
+                "verdict": "illegal",
+                "why": "ขาดเหล็กอยู่แล้ว"
+              },
+              {
+                "condition": "trait",
+                "verdict": "illegal",
+                "why": "ไม่มี iron overload"
+              },
+              {
+                "condition": "tdt",
+                "verdict": "combo",
+                "why": "คู่กับการให้เลือดประจำเมื่อ ferritin > 1,000 ng/mL",
+                "sourceId": "merck-thalassemias"
+              },
+              {
+                "condition": "hs",
+                "verdict": "illegal",
+                "why": "ไม่ได้ให้เลือดประจำ"
+              },
+              {
+                "condition": "aiha",
+                "verdict": "illegal",
+                "why": "ไม่มี iron overload"
+              },
+              {
+                "condition": "g6pd",
+                "verdict": "illegal",
+                "why": "ไม่มี iron overload"
+              }
             ]
           },
           {
             "id": "splenectomy",
             "drug": "Splenectomy (หลัง vaccine)",
             "cells": [
-              { "condition": "ida", "verdict": "illegal", "why": "ม้ามไม่เกี่ยว" },
-              { "condition": "trait", "verdict": "illegal", "why": "ไม่มีโรค" },
-              { "condition": "tdt", "verdict": "legal", "why": "เมื่อมี indication (ใช้เลือดมาก/hypersplenism) และอายุ ≥ 5 ปี", "sourceId": "tif-tdt-2021" },
-              { "condition": "hs", "verdict": "legal", "why": "การรักษาเฉพาะเดียวของ HS — ม้ามคือที่ทำลาย spherocyte", "sourceId": "msd-hs" },
-              { "condition": "aiha", "verdict": "illegal", "why": "ไม่ใช่ first-line (ใช้เมื่อดื้อ steroid)" },
-              { "condition": "g6pd", "verdict": "illegal", "why": "Hemolysis เป็นพักตามตัวกระตุ้น ม้ามไม่ใช่ปัญหาหลัก" }
+              {
+                "condition": "ida",
+                "verdict": "illegal",
+                "why": "ม้ามไม่เกี่ยว"
+              },
+              {
+                "condition": "trait",
+                "verdict": "illegal",
+                "why": "ไม่มีโรค"
+              },
+              {
+                "condition": "tdt",
+                "verdict": "legal",
+                "why": "เมื่อมี indication (ใช้เลือดมาก/hypersplenism) และอายุ ≥ 5 ปี",
+                "sourceId": "tif-tdt-2021"
+              },
+              {
+                "condition": "hs",
+                "verdict": "legal",
+                "why": "การรักษาเฉพาะเดียวของ HS — ม้ามคือที่ทำลาย spherocyte",
+                "sourceId": "msd-hs"
+              },
+              {
+                "condition": "aiha",
+                "verdict": "illegal",
+                "why": "ไม่ใช่ first-line (ใช้เมื่อดื้อ steroid)"
+              },
+              {
+                "condition": "g6pd",
+                "verdict": "illegal",
+                "why": "Hemolysis เป็นพักตามตัวกระตุ้น ม้ามไม่ใช่ปัญหาหลัก"
+              }
             ]
           },
           {
             "id": "steroid",
             "drug": "Prednisolone",
             "cells": [
-              { "condition": "ida", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "trait", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "tdt", "verdict": "illegal", "why": "ไม่ใช่โรคภูมิคุ้มกัน" },
-              { "condition": "hs", "verdict": "illegal", "why": "DCT ลบ ไม่มี antibody" },
-              { "condition": "aiha", "verdict": "legal", "why": "First-line ของ warm AIHA", "sourceId": "msd-aiha" },
-              { "condition": "g6pd", "verdict": "illegal", "why": "DCT ลบ — แก้ด้วยหยุดตัวกระตุ้น" }
+              {
+                "condition": "ida",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "trait",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "tdt",
+                "verdict": "illegal",
+                "why": "ไม่ใช่โรคภูมิคุ้มกัน"
+              },
+              {
+                "condition": "hs",
+                "verdict": "illegal",
+                "why": "DCT ลบ ไม่มี antibody"
+              },
+              {
+                "condition": "aiha",
+                "verdict": "legal",
+                "why": "First-line ของ warm AIHA",
+                "sourceId": "msd-aiha"
+              },
+              {
+                "condition": "g6pd",
+                "verdict": "illegal",
+                "why": "DCT ลบ — แก้ด้วยหยุดตัวกระตุ้น"
+              }
             ]
           }
         ]
@@ -1546,14 +3677,37 @@
         "id": "mcq-ida-next-step",
         "targetSeconds": 90,
         "difficulty": 1,
-        "basedOn": { "rules": ["iron-order"] },
+        "basedOn": {
+          "rules": [
+            "iron-order"
+          ]
+        },
         "stem": "A 15-month-old girl is brought in for pallor. She drinks about 1,200 mL of cow's milk daily and eats little solid food. She is alert, with no jaundice or hepatosplenomegaly. CBC: Hb 7.8 g/dL, MCV 60 fL, RDW 19%, platelets 520,000/µL, normal WBC. What is the most appropriate next step?",
         "options": [
-          { "key": "A", "text": "Hemoglobin typing", "why": "Not first-line; the pattern already points to IDA, and iron deficiency makes HbA2 hard to interpret" },
-          { "key": "B", "text": "Oral ferrous sulfate, reduce cow's milk, and recheck reticulocytes in about 1 week" },
-          { "key": "C", "text": "Packed red cells 10 mL/kg", "why": "No heart failure or instability — IDA is compensated" },
-          { "key": "D", "text": "Bone marrow aspiration", "why": "Thrombocytosis here is reactive; only one cell line is low" },
-          { "key": "E", "text": "Folic acid supplementation", "why": "Folate deficiency causes macrocytosis, not microcytosis" }
+          {
+            "key": "A",
+            "text": "Hemoglobin typing",
+            "why": "Not first-line; the pattern already points to IDA, and iron deficiency makes HbA2 hard to interpret"
+          },
+          {
+            "key": "B",
+            "text": "Oral ferrous sulfate, reduce cow's milk, and recheck reticulocytes in about 1 week"
+          },
+          {
+            "key": "C",
+            "text": "Packed red cells 10 mL/kg",
+            "why": "No heart failure or instability — IDA is compensated"
+          },
+          {
+            "key": "D",
+            "text": "Bone marrow aspiration",
+            "why": "Thrombocytosis here is reactive; only one cell line is low"
+          },
+          {
+            "key": "E",
+            "text": "Folic acid supplementation",
+            "why": "Folate deficiency causes macrocytosis, not microcytosis"
+          }
         ],
         "answer": "B",
         "tell": "Excess cow's milk + microcytosis + high RDW + reactive thrombocytosis",
@@ -1563,14 +3717,40 @@
         "id": "mcq-thal-trait",
         "targetSeconds": 90,
         "difficulty": 1,
-        "basedOn": { "rules": ["iron-order"], "trapPairs": ["tp-ida-trait"] },
+        "basedOn": {
+          "rules": [
+            "iron-order"
+          ],
+          "trapPairs": [
+            "tp-ida-trait"
+          ]
+        },
         "stem": "An asymptomatic 8-year-old boy has a routine CBC: Hb 11.2 g/dL, MCV 64 fL, RDW 13%, RBC count 6.1 × 10⁶/µL. Serum ferritin is normal. Which is the most likely diagnosis?",
         "options": [
-          { "key": "A", "text": "Iron deficiency anemia", "why": "IDA has high RDW, low RBC count, and low ferritin" },
-          { "key": "B", "text": "Thalassemia trait" },
-          { "key": "C", "text": "Anemia of chronic disease", "why": "Usually normocytic or mildly microcytic with an underlying illness and low RBC count" },
-          { "key": "D", "text": "β-thalassemia/HbE disease", "why": "Would have hepatosplenomegaly, hemolysis, and much lower Hb" },
-          { "key": "E", "text": "Lead poisoning", "why": "No exposure history; RBC count would not be elevated" }
+          {
+            "key": "A",
+            "text": "Iron deficiency anemia",
+            "why": "IDA has high RDW, low RBC count, and low ferritin"
+          },
+          {
+            "key": "B",
+            "text": "Thalassemia trait"
+          },
+          {
+            "key": "C",
+            "text": "Anemia of chronic disease",
+            "why": "Usually normocytic or mildly microcytic with an underlying illness and low RBC count"
+          },
+          {
+            "key": "D",
+            "text": "β-thalassemia/HbE disease",
+            "why": "Would have hepatosplenomegaly, hemolysis, and much lower Hb"
+          },
+          {
+            "key": "E",
+            "text": "Lead poisoning",
+            "why": "No exposure history; RBC count would not be elevated"
+          }
         ],
         "answer": "B",
         "tell": "Very low MCV with near-normal Hb, high RBC count, normal RDW (Mentzer ≈ 10.5)",
@@ -1580,14 +3760,40 @@
         "id": "mcq-hs-test",
         "targetSeconds": 90,
         "difficulty": 2,
-        "basedOn": { "rules": ["hemolysis-triage"], "trapPairs": ["tp-hs-aiha"] },
+        "basedOn": {
+          "rules": [
+            "hemolysis-triage"
+          ],
+          "trapPairs": [
+            "tp-hs-aiha"
+          ]
+        },
         "stem": "A 6-year-old girl has chronic mild jaundice and splenomegaly. Her father had a splenectomy as a teenager. Smear shows spherocytes and polychromasia; MCHC is 37 g/dL; direct antiglobulin test is negative. Which test best confirms the diagnosis?",
         "options": [
-          { "key": "A", "text": "Hemoglobin typing", "why": "For thalassemia/hemoglobinopathy, not membrane defects" },
-          { "key": "B", "text": "G6PD enzyme assay", "why": "G6PD shows bite cells and episodic hemolysis, not spherocytes with autosomal dominant history" },
-          { "key": "C", "text": "Eosin-5'-maleimide (EMA) binding test" },
-          { "key": "D", "text": "Iron studies", "why": "Iron deficiency causes microcytosis with low MCHC" },
-          { "key": "E", "text": "Bone marrow aspiration", "why": "Not needed — marrow is responding (polychromasia)" }
+          {
+            "key": "A",
+            "text": "Hemoglobin typing",
+            "why": "For thalassemia/hemoglobinopathy, not membrane defects"
+          },
+          {
+            "key": "B",
+            "text": "G6PD enzyme assay",
+            "why": "G6PD shows bite cells and episodic hemolysis, not spherocytes with autosomal dominant history"
+          },
+          {
+            "key": "C",
+            "text": "Eosin-5'-maleimide (EMA) binding test"
+          },
+          {
+            "key": "D",
+            "text": "Iron studies",
+            "why": "Iron deficiency causes microcytosis with low MCHC"
+          },
+          {
+            "key": "E",
+            "text": "Bone marrow aspiration",
+            "why": "Not needed — marrow is responding (polychromasia)"
+          }
         ],
         "answer": "C",
         "tell": "Spherocytes + high MCHC + negative DAT + affected parent (autosomal dominant)",
@@ -1597,14 +3803,40 @@
         "id": "mcq-g6pd-avoid",
         "targetSeconds": 90,
         "difficulty": 2,
-        "basedOn": { "rules": ["hemolysis-triage"], "errata": ["e-g6pd-assay"] },
+        "basedOn": {
+          "rules": [
+            "hemolysis-triage"
+          ],
+          "errata": [
+            "e-g6pd-assay"
+          ]
+        },
         "stem": "A 4-year-old boy develops pallor and cola-colored urine 2 days after taking co-trimoxazole. Urine dipstick shows 3+ blood with 0–1 RBC/HPF. Smear shows bite cells; direct antiglobulin test is negative. Which statement is INCORRECT?",
         "options": [
-          { "key": "A", "text": "The disorder is X-linked", "why": "Correct — G6PD gene is on the X chromosome" },
-          { "key": "B", "text": "A normal G6PD level during this episode does not exclude the diagnosis", "why": "Correct — reticulocytes are G6PD-rich; repeat after recovery" },
-          { "key": "C", "text": "IV hydration helps prevent acute kidney injury", "why": "Correct — hemoglobinuria can injure the kidney" },
-          { "key": "D", "text": "Methylene blue is the treatment of choice if he develops methemoglobinemia" },
-          { "key": "E", "text": "He should carry a card listing drugs to avoid", "why": "Correct — prevention is the main long-term management" }
+          {
+            "key": "A",
+            "text": "The disorder is X-linked",
+            "why": "Correct — G6PD gene is on the X chromosome"
+          },
+          {
+            "key": "B",
+            "text": "A normal G6PD level during this episode does not exclude the diagnosis",
+            "why": "Correct — reticulocytes are G6PD-rich; repeat after recovery"
+          },
+          {
+            "key": "C",
+            "text": "IV hydration helps prevent acute kidney injury",
+            "why": "Correct — hemoglobinuria can injure the kidney"
+          },
+          {
+            "key": "D",
+            "text": "Methylene blue is the treatment of choice if he develops methemoglobinemia"
+          },
+          {
+            "key": "E",
+            "text": "He should carry a card listing drugs to avoid",
+            "why": "Correct — prevention is the main long-term management"
+          }
         ],
         "answer": "D",
         "tell": "Bite cells + DAT negative + oxidant drug = G6PD deficiency",
@@ -1614,14 +3846,41 @@
         "id": "mcq-itp-observe",
         "targetSeconds": 90,
         "difficulty": 2,
-        "basedOn": { "rules": ["bleed-pattern", "replace-missing"], "errata": ["e-itp-platelet"] },
+        "basedOn": {
+          "rules": [
+            "bleed-pattern",
+            "replace-missing"
+          ],
+          "errata": [
+            "e-itp-platelet"
+          ]
+        },
         "stem": "A previously well 3-year-old boy develops petechiae on his legs 2 weeks after a cold. He has no mucosal bleeding. Examination is otherwise normal with no lymphadenopathy or hepatosplenomegaly. CBC: Hb 12 g/dL, WBC 8,000/µL with normal differential, platelets 12,000/µL without clumping. What is the most appropriate management?",
         "options": [
-          { "key": "A", "text": "Platelet transfusion", "why": "Platelets are destroyed rapidly; reserve for life-threatening bleeding" },
-          { "key": "B", "text": "Observation with outpatient follow-up and bleeding precautions" },
-          { "key": "C", "text": "Splenectomy", "why": "Rarely done in children; most remit spontaneously" },
-          { "key": "D", "text": "Bone marrow aspiration before any decision", "why": "Not required for typical ITP without red flags" },
-          { "key": "E", "text": "IV methylprednisolone pulse", "why": "Reserved for severe or life-threatening bleeding" }
+          {
+            "key": "A",
+            "text": "Platelet transfusion",
+            "why": "Platelets are destroyed rapidly; reserve for life-threatening bleeding"
+          },
+          {
+            "key": "B",
+            "text": "Observation with outpatient follow-up and bleeding precautions"
+          },
+          {
+            "key": "C",
+            "text": "Splenectomy",
+            "why": "Rarely done in children; most remit spontaneously"
+          },
+          {
+            "key": "D",
+            "text": "Bone marrow aspiration before any decision",
+            "why": "Not required for typical ITP without red flags"
+          },
+          {
+            "key": "E",
+            "text": "IV methylprednisolone pulse",
+            "why": "Reserved for severe or life-threatening bleeding"
+          }
         ],
         "answer": "B",
         "tell": "Isolated thrombocytopenia after a viral illness, normal exam, skin-only bleeding",
@@ -1631,14 +3890,40 @@
         "id": "mcq-fviii-dose",
         "targetSeconds": 120,
         "difficulty": 2,
-        "basedOn": { "rules": ["replace-missing"], "trapPairs": ["tp-hema-hemb"] },
+        "basedOn": {
+          "rules": [
+            "replace-missing"
+          ],
+          "trapPairs": [
+            "tp-hema-hemb"
+          ]
+        },
         "stem": "A 20-kg boy with severe hemophilia A (baseline FVIII 0%) presents with an iliopsoas hemorrhage. The target FVIII level is 80%. What is the loading dose of FVIII concentrate?",
         "options": [
-          { "key": "A", "text": "400 IU", "why": "Uses ×0.25 — under-dosed by half" },
-          { "key": "B", "text": "800 IU" },
-          { "key": "C", "text": "1,600 IU", "why": "This is the FIX formula (×1), not FVIII" },
-          { "key": "D", "text": "3,200 IU", "why": "Doubles the FIX formula" },
-          { "key": "E", "text": "80 IU", "why": "Ignores body weight" }
+          {
+            "key": "A",
+            "text": "400 IU",
+            "why": "Uses ×0.25 — under-dosed by half"
+          },
+          {
+            "key": "B",
+            "text": "800 IU"
+          },
+          {
+            "key": "C",
+            "text": "1,600 IU",
+            "why": "This is the FIX formula (×1), not FVIII"
+          },
+          {
+            "key": "D",
+            "text": "3,200 IU",
+            "why": "Doubles the FIX formula"
+          },
+          {
+            "key": "E",
+            "text": "80 IU",
+            "why": "Ignores body weight"
+          }
         ],
         "answer": "B",
         "tell": "FVIII: each IU/kg raises the level ~2% → dose = Δ% × 0.5 × BW",
@@ -1648,14 +3933,40 @@
         "id": "mcq-apde",
         "targetSeconds": 90,
         "difficulty": 3,
-        "basedOn": { "rules": ["bleed-pattern"], "trapPairs": ["tp-itp-apde"] },
+        "basedOn": {
+          "rules": [
+            "bleed-pattern"
+          ],
+          "trapPairs": [
+            "tp-itp-apde"
+          ]
+        },
         "stem": "A 7-year-old Thai boy has had spontaneous bruises on his trunk and limbs for 1 week. Platelet count is 280,000/µL, eosinophils 1,200/µL, bleeding time prolonged; APTT and PT are normal. There is no family history of bleeding. What is the most appropriate management?",
         "options": [
-          { "key": "A", "text": "Prednisolone 2 mg/kg/day", "why": "This is not ITP — the platelet count is normal" },
-          { "key": "B", "text": "Desmopressin", "why": "No evidence of vWD (acquired, no family history)" },
-          { "key": "C", "text": "Reassurance, stool examination for parasites, and follow-up; expect spontaneous remission" },
-          { "key": "D", "text": "Platelet transfusion", "why": "No life-threatening bleeding; transfusion is unnecessary" },
-          { "key": "E", "text": "Splenectomy", "why": "Not indicated for a transient platelet function disorder" }
+          {
+            "key": "A",
+            "text": "Prednisolone 2 mg/kg/day",
+            "why": "This is not ITP — the platelet count is normal"
+          },
+          {
+            "key": "B",
+            "text": "Desmopressin",
+            "why": "No evidence of vWD (acquired, no family history)"
+          },
+          {
+            "key": "C",
+            "text": "Reassurance, stool examination for parasites, and follow-up; expect spontaneous remission"
+          },
+          {
+            "key": "D",
+            "text": "Platelet transfusion",
+            "why": "No life-threatening bleeding; transfusion is unnecessary"
+          },
+          {
+            "key": "E",
+            "text": "Splenectomy",
+            "why": "Not indicated for a transient platelet function disorder"
+          }
         ],
         "answer": "C",
         "tell": "Normal platelet count + eosinophilia + prolonged bleeding time in a school-age Thai child",
@@ -1665,14 +3976,41 @@
         "id": "mcq-vwd-2b",
         "targetSeconds": 90,
         "difficulty": 3,
-        "basedOn": { "rules": ["replace-missing"], "errata": ["e-ddavp-limits", "e-vwd-aptt"] },
+        "basedOn": {
+          "rules": [
+            "replace-missing"
+          ],
+          "errata": [
+            "e-ddavp-limits",
+            "e-vwd-aptt"
+          ]
+        },
         "stem": "A 14-year-old girl has heavy menstrual bleeding and recurrent epistaxis. Her father bleeds easily after dental extraction. Platelet count is 95,000/µL; APTT is mildly prolonged. Testing shows type 2B von Willebrand disease. Which agent should be AVOIDED?",
         "options": [
-          { "key": "A", "text": "Tranexamic acid", "why": "Useful for mucosal and menstrual bleeding" },
-          { "key": "B", "text": "VWF-containing factor VIII concentrate", "why": "Replaces functional VWF — appropriate for type 2 disease" },
-          { "key": "C", "text": "Desmopressin" },
-          { "key": "D", "text": "Combined oral contraceptive pills", "why": "Commonly used to control heavy menstrual bleeding" },
-          { "key": "E", "text": "Oral iron if iron-deficient", "why": "Treats coexisting iron deficiency from menorrhagia" }
+          {
+            "key": "A",
+            "text": "Tranexamic acid",
+            "why": "Useful for mucosal and menstrual bleeding"
+          },
+          {
+            "key": "B",
+            "text": "VWF-containing factor VIII concentrate",
+            "why": "Replaces functional VWF — appropriate for type 2 disease"
+          },
+          {
+            "key": "C",
+            "text": "Desmopressin"
+          },
+          {
+            "key": "D",
+            "text": "Combined oral contraceptive pills",
+            "why": "Commonly used to control heavy menstrual bleeding"
+          },
+          {
+            "key": "E",
+            "text": "Oral iron if iron-deficient",
+            "why": "Treats coexisting iron deficiency from menorrhagia"
+          }
         ],
         "answer": "C",
         "tell": "Type 2B = abnormal VWF that binds platelets → thrombocytopenia",
@@ -1682,31 +4020,176 @@
         "id": "mcq-aplastic-crisis",
         "targetSeconds": 90,
         "difficulty": 3,
-        "basedOn": { "rules": ["retic-sort"], "errata": ["e-aplastic-crisis"], "trapPairs": ["tp-hs-aplastic"] },
+        "basedOn": {
+          "rules": [
+            "retic-sort"
+          ],
+          "errata": [
+            "e-aplastic-crisis"
+          ],
+          "trapPairs": [
+            "tp-hs-aplastic"
+          ]
+        },
         "stem": "A 5-year-old with hereditary spherocytosis (baseline Hb 9 g/dL) presents with fatigue 1 week after a febrile illness with a 'slapped cheek' rash. Hb is 4.5 g/dL and reticulocyte count is 0.2%. Jaundice is not increased and spleen size is unchanged. What is the most likely cause?",
         "options": [
-          { "key": "A", "text": "Hemolytic crisis", "why": "Reticulocytes and jaundice would rise" },
-          { "key": "B", "text": "Splenic sequestration", "why": "The spleen would enlarge acutely" },
-          { "key": "C", "text": "Aplastic crisis due to parvovirus B19" },
-          { "key": "D", "text": "Folate deficiency", "why": "Develops slowly; would be macrocytic" },
-          { "key": "E", "text": "Iron deficiency anemia", "why": "Does not cause an abrupt fall with reticulocytopenia" }
+          {
+            "key": "A",
+            "text": "Hemolytic crisis",
+            "why": "Reticulocytes and jaundice would rise"
+          },
+          {
+            "key": "B",
+            "text": "Splenic sequestration",
+            "why": "The spleen would enlarge acutely"
+          },
+          {
+            "key": "C",
+            "text": "Aplastic crisis due to parvovirus B19"
+          },
+          {
+            "key": "D",
+            "text": "Folate deficiency",
+            "why": "Develops slowly; would be macrocytic"
+          },
+          {
+            "key": "E",
+            "text": "Iron deficiency anemia",
+            "why": "Does not cause an abrupt fall with reticulocytopenia"
+          }
         ],
         "answer": "C",
         "tell": "Chronic hemolysis + sudden Hb drop + reticulocytopenia",
         "explanation": "คน HS ปกติ retic สูง ถ้า retic ต่ำมาก = การสร้างหยุดจาก parvovirus B19 (ผื่นแก้ม = erythema infectiosum) → admit ให้ PRC"
       },
       {
+        "id": "mcq-hb-typing-ef",
+        "targetSeconds": 90,
+        "difficulty": 2,
+        "basedOn": {
+          "rules": [
+            "hb-typing-read",
+            "globin-balance"
+          ],
+          "trapPairs": [
+            "tp-ee-ebeta"
+          ]
+        },
+        "stem": "A 3-year-old Thai boy has had progressive pallor since age 1 with hepatosplenomegaly and a Hb of 6.2 g/dL. Hemoglobin typing shows HbE 55%, HbF 45%, and no HbA. What is the most likely genotype?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Homozygous HbE (EE)",
+            "why": "EE has HbF below about 3% and only mild anemia without hepatosplenomegaly"
+          },
+          {
+            "key": "B",
+            "text": "β0-thalassemia/HbE"
+          },
+          {
+            "key": "C",
+            "text": "HbE trait",
+            "why": "HbE trait still has HbA (about 70%) and no anemia"
+          },
+          {
+            "key": "D",
+            "text": "Homozygous β0-thalassemia",
+            "why": "Would show no HbE (pattern A2F)"
+          },
+          {
+            "key": "E",
+            "text": "AE Bart's disease",
+            "why": "Would still have HbA and show Hb Bart's, with low HbE"
+          }
+        ],
+        "answer": "B",
+        "tell": "No HbA + HbE + high HbF (pattern EF) + severe anemia with HSM",
+        "explanation": "ไม่มี HbA = β ทั้งสองข้างสร้าง β ปกติไม่ได้ · มี E = มีอัลลีล βE · HbF สูงชัด = อีกข้างเป็น β0 → β0-thal/HbE (EF) · ต่างจาก EE ที่ F ต่ำและไม่ซีดมาก"
+      },
+      {
+        "id": "mcq-hbe-a2-trap",
+        "targetSeconds": 90,
+        "difficulty": 3,
+        "basedOn": {
+          "rules": [
+            "hb-typing-read"
+          ],
+          "errata": [
+            "e-hbe-a2-coelute",
+            "e-alpha-trait-hba2"
+          ]
+        },
+        "stem": "A pregnant Thai woman has a positive DCIP test. HPLC shows HbA 72% and a peak in the A2 window reported as \"E + A2\" 26%; her husband has a positive OF test, negative DCIP, and HbA2 2.4%. Which is the most appropriate interpretation and next step?",
+        "options": [
+          {
+            "key": "A",
+            "text": "She has β-thalassemia trait because the A2 window is over 3.5%; no further testing is needed",
+            "why": "HbE co-elutes with HbA2 on HPLC, so 26% is HbE, not a raised HbA2"
+          },
+          {
+            "key": "B",
+            "text": "She has HbE trait; test the husband for α-thalassemia 1 trait by PCR"
+          },
+          {
+            "key": "C",
+            "text": "Both are normal; reassure",
+            "why": "She clearly carries HbE, and his positive OF with normal HbA2 needs α-thal testing"
+          },
+          {
+            "key": "D",
+            "text": "She has homozygous HbE",
+            "why": "EE has no HbA; she has 72% HbA"
+          },
+          {
+            "key": "E",
+            "text": "Give iron for 3 months, then repeat Hb typing before any counseling",
+            "why": "Iron deficiency lowers HbA2 only slightly; it does not change HbE trait and should not delay counseling"
+          }
+        ],
+        "answer": "B",
+        "tell": "DCIP positive + \"E + A2\" ~25% with HbA present = HbE trait; OF positive + normal A2 = possible α-thal 1 trait",
+        "explanation": "HbE ออกช่องเดียวกับ A2 บน HPLC (erratum) → เธอเป็น HbE trait · สามี OF บวกแต่ A2 ปกติ ไม่มี E = ไม่ใช่ β-trait แต่อาจเป็น α-thal1 trait ซึ่ง Hb typing มองไม่เห็น (erratum) → PCR · คู่นี้ไม่เสี่ยง β-thal/HbE แต่ถ้าเธอมี α-thal1 ร่วมด้วยก็ต้องประเมินความเสี่ยง Bart's"
+      },
+      {
         "id": "mcq-late-vkdb",
         "targetSeconds": 90,
         "difficulty": 3,
-        "basedOn": { "rules": ["coag-map", "replace-missing"], "trapPairs": ["tp-hdn-ivkdi", "tp-vkdb-dic"] },
+        "basedOn": {
+          "rules": [
+            "coag-map",
+            "replace-missing"
+          ],
+          "trapPairs": [
+            "tp-hdn-ivkdi",
+            "tp-vkdb-dic"
+          ]
+        },
         "stem": "A 6-week-old exclusively breastfed infant born at home presents with lethargy, a seizure, and a bulging anterior fontanelle. PT and APTT are markedly prolonged; TT and platelet count are normal. What is the most appropriate immediate management?",
         "options": [
-          { "key": "A", "text": "Platelet transfusion", "why": "Platelet count is normal" },
-          { "key": "B", "text": "Intravenous vitamin K1 plus fresh frozen plasma" },
-          { "key": "C", "text": "Cryoprecipitate", "why": "Fibrinogen (TT) is normal; cryo lacks factors II, VII, IX, X" },
-          { "key": "D", "text": "IVIG", "why": "Not an immune process" },
-          { "key": "E", "text": "Factor VIII concentrate", "why": "PT is also prolonged — this is not isolated FVIII deficiency" }
+          {
+            "key": "A",
+            "text": "Platelet transfusion",
+            "why": "Platelet count is normal"
+          },
+          {
+            "key": "B",
+            "text": "Intravenous vitamin K1 plus fresh frozen plasma"
+          },
+          {
+            "key": "C",
+            "text": "Cryoprecipitate",
+            "why": "Fibrinogen (TT) is normal; cryo lacks factors II, VII, IX, X"
+          },
+          {
+            "key": "D",
+            "text": "IVIG",
+            "why": "Not an immune process"
+          },
+          {
+            "key": "E",
+            "text": "Factor VIII concentrate",
+            "why": "PT is also prolonged — this is not isolated FVIII deficiency"
+          }
         ],
         "answer": "B",
         "tell": "Breastfed + home birth (no vitamin K at birth) + age 2 weeks–6 months + ICH + PT/APTT prolonged with normal TT",
