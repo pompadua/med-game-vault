@@ -24,7 +24,8 @@
     "peds": [
       { "topic": "Respiratory infection: URTI, stridor, LRTI", "packId": "peds-respiratory-infection" },
       { "topic": "Thyroid disorders: CH, Hashimoto, Graves", "packId": "peds-thyroid-disorders" },
-      { "topic": "Congenital heart disease, heart failure และ EKG ในเด็ก", "packId": "peds-congenital-heart-disease" }
+      { "topic": "Congenital heart disease, heart failure และ EKG ในเด็ก", "packId": "peds-congenital-heart-disease" },
+      { "topic": "Seizure, epilepsy, status epilepticus และ febrile seizure", "packId": "peds-seizure-epilepsy" }
     ],
     "preclinic": [
       { "topic": "Cardiovascular system basic science (NLE step 1)", "packId": "cardio-cvs-basic-science" }

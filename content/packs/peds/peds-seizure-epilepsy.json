@@ -1,0 +1,1766 @@
+{
+  "meta": {
+    "id": "peds-seizure-epilepsy",
+    "title": "Peds Seizure Board: Seizure, Epilepsy, SE และ Febrile seizure",
+    "subject": "peds",
+    "rotation": "peds",
+    "tags": ["epilepsy", "febrile-seizure", "status-epilepticus", "classification", "pharmacology", "emergency", "nle"],
+    "status": "draft",
+    "schemaVersion": 3,
+    "createdAt": "2026-11-13",
+    "verifiedAt": null,
+    "sources": [
+      {
+        "id": "ilae-def-2014",
+        "title": "Fisher RS et al. ILAE official report: a practical clinical definition of epilepsy. Epilepsia 2014;55(4):475-82",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24730690/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "ilae-types-2017",
+        "title": "Fisher RS et al. Operational classification of seizure types by the ILAE. Epilepsia 2017;58(4):522-530",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "ilae-types-2025",
+        "title": "Beniczky S et al. Updated classification of epileptic seizures: Position paper of the ILAE. Epilepsia 2025;66(6):1804-1823",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40264351/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "ilae-se-2015",
+        "title": "Trinka E et al. A definition and classification of status epilepticus — Report of the ILAE Task Force. Epilepsia 2015;56(10):1515-23",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26336950/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "ilae-dre-2010",
+        "title": "Kwan P et al. Definition of drug resistant epilepsy: consensus proposal by the ILAE Task Force. Epilepsia 2010;51(6):1069-77",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19889013/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "aes-cse-2016",
+        "title": "Glauser T et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (American Epilepsy Society). Epilepsy Curr 2016;16(1):48-61",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4749120/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "beghi-ass-2010",
+        "title": "Beghi E et al. Recommendation for a definition of acute symptomatic seizure. Epilepsia 2010;51(4):671-5",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19732133/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "aan-first-seizure-2000",
+        "title": "Hirtz D et al. Practice parameter: evaluating a first nonfebrile seizure in children (AAN/CNS/AES). Neurology 2000;55(5):616-23",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10980722/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "aap-fs-eval-2011",
+        "title": "AAP Subcommittee on Febrile Seizures. Neurodiagnostic evaluation of the child with a simple febrile seizure. Pediatrics 2011;127(2):389-94",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21285335/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "aap-fs-ltm-2008",
+        "title": "AAP. Febrile seizures: clinical practice guideline for the long-term management of the child with simple febrile seizures. Pediatrics 2008;121(6):1281-6",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18519501/",
+        "type": "guideline",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "aafp-fs-2019",
+        "title": "Smith DK, Sadler KP, Benedum M. Febrile Seizures: Risks, Evaluation, and Prognosis. Am Fam Physician 2019;99(7):445-450",
+        "url": "https://www.aafp.org/pubs/afp/issues/2019/0401/p445.html",
+        "type": "review",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "cae-trial-2010",
+        "title": "Glauser TA et al. Ethosuximide, valproic acid, and lamotrigine in childhood absence epilepsy. N Engl J Med 2010;362(9):790-9",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20200383/",
+        "type": "article",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-febrile",
+        "title": "Febrile Seizure. StatPearls (NCBI Bookshelf NBK448123)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK448123/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-absence",
+        "title": "Absence Seizure. StatPearls (NCBI Bookshelf NBK499867)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK499867/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-jme",
+        "title": "Juvenile Myoclonic Epilepsy. StatPearls (NCBI Bookshelf NBK537109)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537109/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-rolandic",
+        "title": "Rolandic Epilepsy Seizure. StatPearls (point-of-care 18213)",
+        "url": "https://www.statpearls.com/point-of-care/18213",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-lgs",
+        "title": "Lennox-Gastaut Syndrome. StatPearls (point-of-care 24184)",
+        "url": "https://www.statpearls.com/point-of-care/24184",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-infantile-spasms",
+        "title": "Infantile Spasms (West Syndrome). StatPearls (NCBI Bookshelf NBK537251)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537251/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "sp-breath-holding",
+        "title": "Breath-Holding Spells. StatPearls (NCBI Bookshelf NBK539782)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK539782/",
+        "type": "statpearls",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "label-vigabatrin",
+        "title": "Vigabatrin prescribing information — Boxed warning: permanent vision loss (Drugs.com professional monograph)",
+        "url": "https://www.drugs.com/pro/vigabatrin.html",
+        "type": "other",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "label-valproate",
+        "title": "Valproate sodium prescribing information — Boxed warning: hepatotoxicity (children < 2 yr), mitochondrial disease (POLG), fetal risk",
+        "url": "https://prescriberpoint.com/therapies/valproate-sodium-856ecda",
+        "type": "other",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "hitap-hla-2013",
+        "title": "Rattanavipapong W et al. Economic evaluation of HLA-B*15:02 screening for carbamazepine-induced severe adverse drug reactions in Thailand. Epilepsia 2013 (HITAP)",
+        "url": "https://db.hitap.net/articles/2548",
+        "type": "article",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "thai-hla-policy-2022",
+        "title": "Frontiers in Pharmacology 2022 — HLA-B*15:02 screening policy before carbamazepine in Thailand (NHSO, 2018)",
+        "url": "https://www.frontiersin.org/articles/10.3389/fphar.2022.867490",
+        "type": "article",
+        "accessedAt": "2026-11-13"
+      },
+      {
+        "id": "norton-neonatal",
+        "title": "Norton Children's. Neonatal seizure: distinguishing true seizures from nonepileptic movements (jitteriness)",
+        "url": "https://nortonhealthcareprovider.com/news/neonatal-seizure",
+        "type": "other",
+        "accessedAt": "2026-11-13"
+      }
+    ]
+  },
+  "rulebook": {
+    "board": "เด็กมาด้วย \"ชัก\" — ถามตามลำดับ: ใช่ชักไหม → ยังชักอยู่ไหม (นาฬิกา SE) → มีไข้ไหม → มีตัวกระตุ้นไหม → ถ้าไม่มีเลยค่อย classify (onset → awareness → อาการแรก) → epilepsy/syndrome → เลือก ASM แล้วตัดตัวที่ห้ามในเด็กคนนั้นออก",
+    "pieces": [
+      { "id": "seizure", "name": "Seizure", "role": "เหตุการณ์ (event) จาก neuron ปล่อยไฟฟ้า excessive + hypersynchronous ชั่วคราว" },
+      { "id": "epilepsy", "name": "Epilepsy", "role": "โรค (disease) ที่สมองมีแนวโน้มชักซ้ำ — เป็นตัวตัดสินว่าจะเริ่ม ASM ระยะยาวหรือไม่" },
+      { "id": "asm", "name": "ASM (antiseizure medication)", "role": "ดันคันโยก excitation–inhibition กลับ: Na⁺ channel, GABA-A, T-type Ca²⁺, SV2A, multiple targets" },
+      { "id": "eeg", "name": "EEG", "role": "บอก focal vs generalized และ syndrome — ปกติก็ไม่ rule out epilepsy" },
+      { "id": "bzd", "name": "Benzodiazepine", "role": "ยาหยุดชักขั้นแรกของ SE — ได้ผลน้อยลงทุกนาทีที่รอ" },
+      { "id": "clock", "name": "นาฬิกา t1 / t2", "role": "t1 = เวลาที่ต้องเริ่มยา · t2 = เวลาที่สมองเริ่มเสียหายถาวร" }
+    ],
+    "coreRules": [
+      {
+        "id": "provoked-gate",
+        "rule": "ประตูแรก: ชักที่มีตัวกระตุ้นเฉียบพลันอยู่ ณ ขณะนั้น (provoked / acute symptomatic: ไข้, metabolic, trauma, CNS infection, ยา) → แก้สาเหตุ ไม่ใช่ epilepsy ไม่ต้อง ASM ระยะยาว · ชักที่ไม่มีตัวกระตุ้น (unprovoked) จะเป็น epilepsy เมื่อ ≥ 2 ครั้งห่าง > 24 hr หรือ 1 ครั้ง + โอกาสซ้ำสูง (≥ 60%/10 ปี) หรือเป็น syndrome",
+        "generates": [
+          "Na < 115 mEq/L แล้วชัก = acute symptomatic → แก้ Na ไม่ใช่เริ่ม ASM ระยะยาว",
+          "Febrile seizure ไม่นับเป็น epilepsy",
+          "ชัก unprovoked ครั้งแรก + exam/dev/EEG ปกติ → observe เพราะครึ่งหนึ่งไม่ชักซ้ำ",
+          "ชักเป็นชุดภายใน 24 hr นับเป็น episode เดียว",
+          "Epilepsy resolved: พ้นอายุของ syndrome หรือ seizure-free 10 ปี โดยหยุดยา ≥ 5 ปีหลังสุด"
+        ],
+        "sourceIds": ["ilae-def-2014", "beghi-ass-2010"]
+      },
+      {
+        "id": "mimic-test",
+        "rule": "ก่อนจะเรียกว่าชัก ต้องผ่านด่าน mimic: ชักจริงเป็น stereotyped (เหมือนเดิมทุกครั้ง) ไม่ถูกหยุดด้วยการจับ/ปลุก และไม่ได้เกิดจาก trigger ภายนอกชัด ๆ · mimic มักมี trigger ชัด (ร้องไห้, ยืนนาน, ถูกกระตุ้น) รู้ตัว หรือหยุดเมื่อจับ/เบี่ยงความสนใจ — video จากญาติคือ investigation ที่ดีที่สุด",
+        "generates": [
+          "ทารกสั่นเมื่อถูกกระตุ้นและหยุดเมื่องอแขนไว้ = jitteriness",
+          "ร้องไห้/โกรธ → เขียว → หมดสติ = cyanotic breath-holding spell",
+          "หน้ามืด เหงื่อออก หมดสติสั้น ฟื้นเร็วไม่ confused = syncope",
+          "หลับตาแน่น ส่ายหัวไปมา ขึ้น ๆ ลง ๆ ไม่มี postictal = PNES",
+          "วินิจฉัย epilepsy ผิด = เด็กได้ ASM หลายปีโดยไม่จำเป็น"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["norton-neonatal", "sp-breath-holding"]
+      },
+      {
+        "id": "onset-first",
+        "rule": "ILAE 2017 จำแนก seizure type ด้วย 3 คำถาม: (1) onset — focal / generalized / unknown (2) awareness — ถามเฉพาะ focal: aware vs impaired (ไม่รู้ตัวช่วงไหนก็ตาม = impaired) (3) ตั้งชื่อตามอาการแรกสุด motor vs non-motor เพราะอาการแรก = ictal onset ที่ชี้ตำแหน่ง · focal → หา structural lesion",
+        "generates": [
+          "Simple partial = focal aware · complex partial = focal impaired awareness",
+          "Secondarily generalized = focal to bilateral tonic-clonic",
+          "ไม่มีใครเห็นตอนเริ่ม = unknown onset (reclassify ได้เมื่อได้ EEG/MRI)",
+          "Generalized ไม่ต้องระบุ awareness",
+          "Aura = ictal onset ของ focal aware seizure จึงบอกตำแหน่ง focus",
+          "Todd's paralysis = focus อยู่สมองซีกตรงข้าม"
+        ],
+        "sourceIds": ["ilae-types-2017"],
+        "variants": [
+          {
+            "region": "intl",
+            "text": "ILAE 2025: ใช้ consciousness (preserved/impaired) แทน awareness, เลิกแบ่ง motor/non-motor, 4 classes 21 types — 'focal preserved consciousness' = focal aware เดิม",
+            "sourceId": "ilae-types-2025"
+          },
+          {
+            "region": "TH",
+            "text": "ข้อสอบปิดบล็อค/lecture ยังใช้ ILAE 2017 (focal aware / impaired awareness, motor / non-motor)",
+            "sourceId": "ilae-types-2017",
+            "examLikely": true
+          }
+        ]
+      },
+      {
+        "id": "na-paradox",
+        "rule": "Na⁺-channel blocker (carbamazepine, phenytoin, oxcarbazepine) รักษา focal ± bilateral TC ได้ดี แต่ทำให้ absence และ myoclonic แย่ลง → ต้อง classify ให้ถูกก่อนเลือกยา · generalized/ยังไม่แน่ใจ type → ใช้ broad-spectrum (valproate, levetiracetam)",
+        "generates": [
+          "CAE / JME → ห้าม carbamazepine, phenytoin",
+          "Absence: ethosuximide (T-type Ca²⁺) หรือ valproate",
+          "Focal: carbamazepine / phenytoin / phenobarbital / valproate / levetiracetam ตาม AE",
+          "เด็ก \"เหม่อ\" ที่แยกผิดเป็น focal แล้วได้ CBZ → absence แย่ลง",
+          "Infantile spasms → vigabatrin หรือ ACTH (ไม่ใช่ Na⁺-channel blocker)"
+        ],
+        "sourceIds": ["sp-jme", "sp-absence", "cae-trial-2010"]
+      },
+      {
+        "id": "avoid-filter",
+        "rule": "เลือกยาสองชั้น: ชั้นแรกได้ list จาก seizure type → ชั้นสองตัดตัวที่ห้ามในเด็กคนนั้นออก: VPA (< 2 ปี, โรคตับ/mitochondrial, bleeding, อ้วน, หญิงวัยเจริญพันธุ์) · PB (วัยเรียน, hyperactive) · PHT (เด็กหญิง, ทารก) · CBZ (HLA-B*15:02+, absence/myoclonic) · ยา aromatic (PB, PHT, CBZ, LTG) เสี่ยง SJS ในช่วงแรกหลังเริ่ม",
+        "generates": [
+          "ทารก 10 เดือน focal → ตัด VPA (< 2 ปี) และ PHT (ทารก) → PB หรือ LEV",
+          "เด็ก 7 ปี focal + ADHD → ตัด PB → CBZ (หลังตรวจ HLA-B*15:02) หรือ LEV",
+          "วัยรุ่นหญิง JME → ตัด CBZ/PHT และเลี่ยง VPA → LEV",
+          "คนไทยต้องตรวจ HLA-B*15:02 ก่อนเริ่ม carbamazepine",
+          "เริ่มยา aromatic → นัด F/U เร็ว และสอนหยุดยาทันทีถ้าผื่น + ไข้ + แผลในปาก"
+        ],
+        "ruleOfThumb": true,
+        "sourceIds": ["label-valproate", "hitap-hla-2013", "thai-hla-policy-2022", "sp-jme"]
+      },
+      {
+        "id": "se-clock",
+        "rule": "นาฬิกา SE: tonic-clonic ชักต่อเนื่อง ≥ 5 min (t1) หรือชักซ้ำโดยไม่ฟื้นระหว่างครั้ง = SE ต้องให้ยาทันที ไม่รอให้หยุดเอง (t2 = 30 min เริ่มเสียหายถาวร) · 0–5 min stabilize + DTX → 5–20 min BZD (ซ้ำได้ 1 ครั้ง) → 20–40 min second-line ตัวเดียว single dose (fosphenytoin / valproate / levetiracetam; ไม่มีจึงใช้ phenobarbital) → 40–60 min refractory: anesthetic infusion + cEEG + ICU",
+        "generates": [
+          "ชักเกิน 5 นาทีก่อนมาถึง รพ. = SE แล้ว ให้ BZD ทันที",
+          "ยังไม่ได้เปิดเส้น → midazolam IM / IN / buccal หรือ diazepam PR",
+          "ครบ 2 dose BZD แล้วยังชัก → second-line ทันที",
+          "ระหว่างชักยืดเยื้อ GABA-A receptor ถูกดึงเข้าเซลล์ → BZD ได้ผลน้อยลงทุกนาที",
+          "Glucose < 60 mg/dL → ให้ dextrose ตามอายุ"
+        ],
+        "sourceIds": ["ilae-se-2015", "aes-cse-2016"]
+      },
+      {
+        "id": "fs-exclusion",
+        "rule": "Febrile seizure คือ diagnosis of exclusion ในเด็ก 6–60 เดือน: ไข้ + ชัก โดยไม่มี CNS infection, metabolic cause หรือประวัติ afebrile seizure — ถามตัวเองเสมอว่า \"ใช่ meningitis/encephalitis ไหม\" · Simple = generalized + < 15 min + ไม่ซ้ำใน 24 hr → หา source ไข้ + counsel ไม่ต้อง EEG/lab/imaging/ASM",
+        "generates": [
+          "Simple FS ที่ฟื้นดี ไม่มี meningeal sign → หา source ของไข้ แล้ว D/C",
+          "Focal หรือ > 15 min หรือซ้ำใน 24 hr = complex FS",
+          "Meningeal sign / ซึมไม่ฟื้น / fontanel โป่ง → LP",
+          "Antipyretic ไม่ป้องกันการชักซ้ำ · ไม่ให้ ASM ระยะยาวใน simple FS",
+          "Simple FS แทบไม่เพิ่ม risk epilepsy และไม่ทำให้สมองเสีย"
+        ],
+        "sourceIds": ["aap-fs-eval-2011", "aap-fs-ltm-2008"]
+      }
+    ],
+    "winConditions": [
+      "แยก mimic ออกก่อน แล้วแยก provoked vs unprovoked ได้ทุกเคส",
+      "ตั้งชื่อ seizure type ตาม ILAE 2017 และรู้ว่า EEG/MRI เปลี่ยน unknown เป็น focal ได้",
+      "SE: ให้ BZD ภายในนาทีที่ 5 ไม่เกิน 2 dose แล้วไป second-line",
+      "เลือก ASM ตาม type แล้วตัดตัวที่ห้ามในเด็กคนนั้นออก"
+    ],
+    "loseConditions": [
+      "รอ 30 นาทีตามนิยามเก่าก่อนให้ยาหยุดชัก",
+      "ให้ carbamazepine/phenytoin กับ absence หรือ JME",
+      "ปล่อย meningitis กลับบ้านเพราะคิดว่าเป็น simple FS",
+      "เริ่ม ASM ระยะยาวให้ acute symptomatic seizure หรือ simple FS"
+    ],
+    "errata": [
+      {
+        "id": "e-remote-symptomatic",
+        "text": "Remote symptomatic (มี brain lesion เก่าที่หายแล้ว เช่น เคยเป็น meningitis, old stroke, HIE) นับเป็น unprovoked ไม่ใช่ provoked — lesion เป็นแผลเป็นถาวร ไม่ใช่ตัวกระตุ้นชั่วคราว จึงเข้าเกณฑ์ epilepsy ได้ตั้งแต่ครั้งแรก",
+        "breaksRule": "provoked-gate",
+        "sourceIds": ["ilae-def-2014"]
+      },
+      {
+        "id": "e-single-high-risk",
+        "text": "ชัก unprovoked ครั้งเดียวก็เป็น epilepsy ได้ ถ้าโอกาสชักซ้ำใน 10 ปี ≥ 60% (ทางปฏิบัติ: structural/remote symptomatic lesion, epileptiform discharge ใน EEG, neurodevelopmental abnormality) หรือวินิจฉัย epilepsy syndrome ได้ (เช่น CAE, BECTS) — ไม่ต้องรอครั้งที่สอง",
+        "breaksRule": "provoked-gate",
+        "sourceIds": ["ilae-def-2014"]
+      },
+      {
+        "id": "e-reflex",
+        "text": "Reflex seizure (ชักทุกครั้งที่เจอ stimulus เฉพาะ เช่น แสงกระพริบ) ดูเหมือนมีตัวกระตุ้น แต่ ILAE นับเทียบเท่า unprovoked — นับเข้าเกณฑ์ epilepsy ได้",
+        "breaksRule": "provoked-gate",
+        "sourceIds": ["ilae-def-2014"]
+      },
+      {
+        "id": "e-myoclonic-aware",
+        "text": "Myoclonic seizure เด็กรู้ตัวและไม่มี postictal แต่ก็เป็นชักจริง — การรู้ตัวอย่างเดียวไม่ได้แปลว่าเป็น mimic (focal aware seizure ก็รู้ตัว)",
+        "breaksRule": "mimic-test",
+        "sourceIds": ["ilae-types-2017"]
+      },
+      {
+        "id": "e-frontal-hyperkinetic",
+        "text": "Frontal lobe hyperkinetic seizure (ดิ้น ถีบขาเหมือนปั่นจักรยาน มักตอนหลับ สั้น stereotyped) ดูแปลกจนถูกเหมาว่าเป็น PNES — ตอนหลับ + stereotyped ทุกครั้งชี้ว่าเป็นชักจริง ต้อง video-EEG",
+        "breaksRule": "mimic-test",
+        "ruleOfThumb": true,
+        "sourceIds": ["ilae-types-2017"]
+      },
+      {
+        "id": "e-convulsive-syncope",
+        "text": "Syncope กระตุกได้ไม่กี่ครั้ง (convulsive syncope) — การกระตุกไม่ได้พิสูจน์ว่าชัก ตัวชี้ขาดคือ prodrome (หน้ามืด เหงื่อออก) และฟื้นเร็วไม่ confused",
+        "breaksRule": "mimic-test",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "e-focal-spasms",
+        "text": "Epileptic spasms, atonic, clonic, myoclonic, tonic และ tonic-clonic เป็นได้ทั้ง focal และ generalized — ถ้า EEG/MRI ชี้ focus (เช่น MRI พบ cortical dysplasia ข้างเดียว) ให้เรียก focal แม้ไม่มีใครเห็นตอนเริ่ม",
+        "breaksRule": "onset-first",
+        "sourceIds": ["ilae-types-2017"]
+      },
+      {
+        "id": "e-jme-mtc",
+        "text": "JME: กระตุกสองข้างไม่กี่ครั้งแล้วเกร็ง–กระตุกทั้งตัว = generalized myoclonic-tonic-clonic (type ใหม่ใน 2017) ไม่ใช่ focal to bilateral tonic-clonic เพราะ JME เป็น generalized genetic epilepsy",
+        "breaksRule": "onset-first",
+        "sourceIds": ["ilae-types-2017", "sp-jme"]
+      },
+      {
+        "id": "e-newborn-subtle",
+        "text": "Newborn ไม่ค่อยชักแบบ GTC เพราะ myelination ยังไม่สมบูรณ์ ไฟฟ้ากระจายสองซีกพร้อมกันไม่ได้ดี → ชักเป็น subtle (ตาเบน, ดูดปาก, ปั่นจักรยาน, apnea) หรือ focal clonic ที่พลาดง่าย ต้องยืนยันด้วย EEG",
+        "breaksRule": "onset-first",
+        "ruleOfThumb": true,
+        "sourceIds": ["norton-neonatal"]
+      },
+      {
+        "id": "e-bects-no-imaging",
+        "text": "Focal onset ปกติต้องหา structural lesion แต่ BECTS (self-limited epilepsy with centrotemporal spikes) ที่ semiology + EEG typical และ dev ปกติ ไม่ต้อง imaging และส่วนใหญ่ไม่ต้องกินยา — หายเองเมื่อเข้าวัยรุ่น",
+        "breaksRule": "onset-first",
+        "sourceIds": ["sp-rolandic"]
+      },
+      {
+        "id": "e-vgb-worsens-absence",
+        "text": "ไม่ใช่แค่ Na⁺-channel blocker ที่ทำ absence แย่ลง — ยาที่เพิ่ม GABA แบบ vigabatrin ก็ทำให้ absence ถี่ขึ้นได้ แม้จะเป็นยา first-line ของ infantile spasms",
+        "breaksRule": "na-paradox",
+        "sourceIds": ["sp-absence"]
+      },
+      {
+        "id": "e-esm-narrow",
+        "text": "Ethosuximide คุมได้เฉพาะ absence — ไม่ครอบคลุม GTC และ myoclonic จึงไม่ใช่ยาเดี่ยวสำหรับ JME หรือเด็ก absence ที่มี GTC ร่วม (ต้อง broad-spectrum เช่น valproate/levetiracetam)",
+        "breaksRule": "na-paradox",
+        "ruleOfThumb": true,
+        "sourceIds": ["sp-absence"]
+      },
+      {
+        "id": "e-sjs-cross",
+        "text": "SJS จาก carbamazepine: ห้ามเปลี่ยนเป็น phenytoin หรือ phenobarbital ตาม list ถัดไป เพราะเป็นยา aromatic เหมือนกัน (cross-reactivity) → เปลี่ยนเป็นยาที่ไม่มี aromatic ring เช่น valproate หรือ levetiracetam",
+        "breaksRule": "avoid-filter",
+        "ruleOfThumb": true
+      },
+      {
+        "id": "e-max-two-bzd",
+        "text": "BZD เกิน 2 dose ไม่ช่วยหยุดชักเพิ่ม แต่เพิ่ม respiratory depression — ครบ 2 dose แล้วไป second-line ทันที อย่าให้ dose ที่ 3",
+        "breaksRule": "se-clock",
+        "sourceIds": ["aes-cse-2016"]
+      },
+      {
+        "id": "e-vpa-se-under2",
+        "text": "Second-line ของ SE เลือกได้ 3 ตัวเท่ากัน แต่ valproate IV ต้องเลี่ยงในเด็ก < 2 ปี และผู้ที่สงสัย mitochondrial disease (POLG) หรือโรคตับ เพราะ fatal hepatotoxicity → ใช้ levetiracetam หรือ fosphenytoin แทน",
+        "breaksRule": "se-clock",
+        "sourceIds": ["label-valproate"]
+      },
+      {
+        "id": "e-phenytoin-nss",
+        "text": "Phenytoin IV ต้องผสม NSS เท่านั้น (ตกตะกอนใน dextrose) และให้ช้า ๆ พร้อม monitor BP + EKG — ให้เร็วเกินทำ hypotension, bradyarrhythmia; รั่วออกนอกเส้นทำ purple glove · ถ้ามี fosphenytoin ให้เลือก fosphenytoin",
+        "breaksRule": "se-clock",
+        "sourceIds": ["aes-cse-2016"]
+      },
+      {
+        "id": "e-ncse",
+        "text": "หยุดกระตุกแล้วแต่ไม่ตื่นนาน = อาจยังชักอยู่แบบ nonconvulsive SE → ส่ง EEG อย่าสรุปว่าเป็น postictal หรือฤทธิ์ยาจนกว่าจะดู EEG",
+        "breaksRule": "se-clock",
+        "ruleOfThumb": true,
+        "sourceIds": ["ilae-se-2015"]
+      },
+      {
+        "id": "e-febrile-se",
+        "text": "เกณฑ์ < 15 min ของ simple FS ใช้แยกชนิดย้อนหลัง ไม่ใช่เวลารอ — เด็กไข้ชักที่ยังชักอยู่ครบ 5 min ต้องให้ BZD ตาม SE protocol ทันที (febrile SE = ชักร่วมไข้ > 30 min)",
+        "breaksRule": "fs-exclusion",
+        "sourceIds": ["aes-cse-2016", "ilae-se-2015"]
+      },
+      {
+        "id": "e-fs-age-window",
+        "text": "ไข้ + ชักในเด็ก < 6 เดือน หรือ > 5 ปี ไม่ใช่ febrile seizure ตามนิยาม — ต้องหา CNS infection, metabolic cause หรือ epilepsy ที่ไข้มากระตุ้นอย่างจริงจัง",
+        "breaksRule": "fs-exclusion",
+        "sourceIds": ["aap-fs-ltm-2008"]
+      },
+      {
+        "id": "e-fs-lp-option",
+        "text": "Simple FS ปกติไม่ต้อง LP — แต่ AAP 2011 ให้ LP เป็น option ในเด็ก 6–12 เดือนที่วัคซีน Hib/pneumococcus ไม่ครบหรือไม่ทราบ และในเด็กที่ได้ antibiotic มาก่อน (อาการ meningitis ถูกบัง) · lecture ไทยหลายที่สอนเข้มกว่า: LP ทุกรายที่อายุ < 12 เดือน",
+        "breaksRule": "fs-exclusion",
+        "sourceIds": ["aap-fs-eval-2011"],
+        "variants": [
+          {
+            "region": "US",
+            "text": "AAP 2011: LP เมื่อมีอาการ/อาการแสดงของ meningitis · option ใน 6–12 mo ที่ Hib/PCV ไม่ครบหรือไม่ทราบ · option ในเด็กที่ได้ antibiotic มาก่อน",
+            "sourceId": "aap-fs-eval-2011"
+          }
+        ]
+      }
+    ],
+    "classification": [
+      {
+        "id": "col-mimic",
+        "name": "ไม่ใช่ชัก (mimic)",
+        "hint": "trigger ชัด · รู้ตัว · หยุดเมื่อจับ/ปลุก/เบี่ยงความสนใจ",
+        "groups": [
+          { "id": "g-mimic-young", "name": "Newborn – toddler", "hint": "ถูกกระตุ้นแล้วสั่น / ร้องไห้แล้วเขียว", "cardIds": ["jitteriness", "breath-holding"] },
+          { "id": "g-mimic-older", "name": "วัยเรียน – วัยรุ่น", "hint": "มี prodrome / หลับตาแน่น ไม่มี postictal", "cardIds": ["syncope", "pnes"] }
+        ]
+      },
+      {
+        "id": "col-provoked",
+        "name": "Provoked · มีตัวกระตุ้น ณ ขณะนั้น",
+        "hint": "แก้สาเหตุ ไม่ใช่ epilepsy ไม่ต้อง ASM ระยะยาว",
+        "groups": [
+          { "id": "g-fever", "name": "มีไข้", "hint": "ตัด CNS infection ก่อนเสมอ", "cardIds": ["simple-fs", "complex-fs", "cns-infection"] },
+          { "id": "g-afebrile", "name": "ไม่มีไข้", "hint": "glucose, electrolyte, trauma, ยา · newborn ส่วนใหญ่ acute symptomatic", "cardIds": ["acute-symptomatic", "neonatal-subtle"] }
+        ]
+      },
+      {
+        "id": "col-unprovoked",
+        "name": "Unprovoked · epilepsy / syndrome",
+        "hint": "classify onset → awareness → อาการแรก แล้วหา syndrome + etiology",
+        "groups": [
+          { "id": "g-first", "name": "ครั้งแรก — ยังไม่ใช่ epilepsy ถ้า low risk", "cardIds": ["first-unprovoked"] },
+          { "id": "g-generalized", "name": "Generalized genetic", "hint": "ห้าม Na⁺-channel blocker", "cardIds": ["cae", "jme"] },
+          { "id": "g-focal", "name": "Focal", "hint": "หา lesion ยกเว้น BECTS ที่ typical", "cardIds": ["focal-aware-motor", "fias-temporal", "bects"] },
+          { "id": "g-dee", "name": "Epileptic encephalopathy", "hint": "dev ถดถอย · ดื้อยา · refer", "cardIds": ["infantile-spasms", "lgs"] }
+        ]
+      },
+      {
+        "id": "col-emergency",
+        "name": "ชักไม่หยุด (ทุกฝั่งมาจบที่นี่ได้)",
+        "hint": "≥ 5 min = SE · นับนาที",
+        "groups": [
+          { "id": "g-se", "name": "Status epilepticus", "cardIds": ["convulsive-se"] }
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "simple-fs",
+      "name": "Simple febrile seizure",
+      "who": "เด็ก 6–60 เดือน ไข้ + ชักครั้งแรก dev ปกติ · พบ 2–5% ของเด็ก",
+      "trigger": { "ruleId": "fs-exclusion", "text": "สมองปกติแต่ seizure threshold ในเด็กเล็กต่ำ เมื่อไข้ขึ้นจึงชัก — provoked ไม่ใช่ epilepsy" },
+      "signature": "ไข้ + ชัก generalized ครั้งเดียวใน 24 hr นาน < 15 min แล้วฟื้นกลับ baseline · ไม่มี meningeal sign",
+      "lookAlikes": ["complex-fs", "cns-infection", "breath-holding"],
+      "tells": [
+        { "vs": "complex-fs", "feature": "Simple ต้องครบ 3 ข้อ: generalized + < 15 min + ไม่ซ้ำใน 24 hr — ผิดข้อเดียวเป็น complex" },
+        { "vs": "cns-infection", "feature": "Simple FS ฟื้นกลับ baseline เร็วและไม่มี meningeal sign / fontanel โป่ง / ซึมนาน" },
+        { "vs": "breath-holding", "feature": "Breath-holding มี trigger (ร้องไห้/โกรธ) และเขียวก่อนหมดสติ ไม่ต้องมีไข้" }
+      ],
+      "counter": "หา source ของไข้ (ไม่มี focus → UA หา UTI) · counsel การดูแลที่บ้าน → D/C · ไม่ต้อง EEG, lab routine, imaging หรือ ASM ระยะยาว",
+      "danger": "พลาด meningitis ที่อาการแฝง (ทารก, ได้ antibiotic มาก่อน) · พ่อแม่เอาช้อน/นิ้วงัดปาก หรือป้อนยาระหว่างชัก (aspiration)",
+      "memorize": [
+        {
+          "id": "fs-def-simple",
+          "prompt": "Simple febrile seizure: อายุช่วงไหน และนิยาม simple ต้องครบอะไร?",
+          "fact": "6–60 เดือน · generalized · < 15 min · เกิดครั้งเดียวใน 24 hr · ไม่มี intracranial infection, metabolic disturbance หรือประวัติ afebrile seizure",
+          "sourceId": "aap-fs-ltm-2008"
+        },
+        {
+          "id": "fs-recurrence",
+          "prompt": "โอกาสชักซ้ำหลัง simple febrile seizure ครั้งแรก?",
+          "fact": "ครั้งแรกเมื่ออายุ < 12 เดือน ราว 50% · ครั้งแรกเมื่ออายุ > 12 เดือน ราว 30%",
+          "sourceId": "aap-fs-ltm-2008"
+        },
+        {
+          "id": "fs-epilepsy-risk",
+          "prompt": "Simple febrile seizure เพิ่ม risk epilepsy แค่ไหน?",
+          "fact": "ราว 1% — ใกล้เคียงเด็กทั่วไป (complex FS, dev ผิดปกติ, family history of epilepsy เพิ่ม risk มากกว่า)",
+          "sourceId": "aap-fs-ltm-2008"
+        },
+        {
+          "id": "fs-recurrence-predictors",
+          "prompt": "ปัจจัยที่ทำนายการชักซ้ำของ febrile seizure (AAFP 2019)?",
+          "fact": "อายุ < 18 เดือน · มีไข้ < 1 hr ก่อนชัก · first-degree relative เคยเป็น FS · ไข้ < 40 °C (ไข้ไม่สูงก็ชัก = threshold ต่ำ)",
+          "sourceId": "aafp-fs-2019"
+        },
+        {
+          "id": "fs-no-prophylaxis",
+          "prompt": "Simple FS: ควรให้ ASM ต่อเนื่อง/intermittent หรือ antipyretic เพื่อกันชักซ้ำไหม?",
+          "fact": "ไม่แนะนำทั้ง continuous และ intermittent ASM (AE มากกว่าประโยชน์) · antipyretic ช่วยให้สบายตัวแต่ไม่ป้องกันการชักซ้ำ",
+          "sourceId": "aap-fs-ltm-2008"
+        }
+      ],
+      "sourceIds": ["aap-fs-ltm-2008", "aap-fs-eval-2011"]
+    },
+    {
+      "id": "complex-fs",
+      "name": "Complex febrile seizure",
+      "who": "เด็กไข้ชักที่ไม่ครบเกณฑ์ simple",
+      "trigger": { "ruleId": "fs-exclusion", "text": "Focal, นาน หรือซ้ำ บอกว่าอาจมี focus หรือ substrate ในสมอง — ต้องประเมินละเอียดกว่า" },
+      "signature": "ไข้ + ชักที่มีข้อใดข้อหนึ่ง: focal · > 15 min · ซ้ำ > 1 ครั้งใน 24 hr",
+      "lookAlikes": ["simple-fs", "cns-infection", "convulsive-se"],
+      "tells": [
+        { "vs": "simple-fs", "feature": "มี focal feature หรือนาน > 15 min หรือซ้ำใน 24 hr แม้แค่ข้อเดียว" },
+        { "vs": "cns-infection", "feature": "Complex FS ฟื้นกลับ baseline ได้และไม่มี meningeal sign — ถ้าซึมไม่ฟื้นให้คิด encephalitis/meningitis" },
+        { "vs": "convulsive-se", "feature": "ยังชักอยู่ครบ 5 min = จัดการแบบ SE ทันที ไม่รอดูว่าจะเกิน 15 min" }
+      ],
+      "counter": "Admit observe · EEG (lecture) ± LP ถ้าสงสัย infection · imaging เมื่อมี focal deficit, ICP สูง หรือ trauma",
+      "danger": "Focal FS + focal deficit ค้าง อาจเป็น encephalitis หรือ structural lesion · prolonged FS → febrile SE",
+      "memorize": [
+        {
+          "id": "fs-complex-def",
+          "prompt": "Complex febrile seizure คืออะไร?",
+          "fact": "ไข้ชักที่มีอย่างน้อย 1 ข้อ: focal, นาน ≥ 15 min หรือชักซ้ำภายใน 24 hr",
+          "sourceId": "sp-febrile"
+        }
+      ],
+      "sourceIds": ["sp-febrile", "aap-fs-ltm-2008"]
+    },
+    {
+      "id": "cns-infection",
+      "name": "Meningitis / encephalitis (ไข้ + ชัก)",
+      "who": "เด็กไข้ + ชัก โดยเฉพาะทารก ได้ antibiotic มาก่อน หรือวัคซีนไม่ครบ",
+      "trigger": { "ruleId": "fs-exclusion", "text": "CNS infection ก็ทำให้ \"ไข้ + ชัก\" ได้ แต่ป้องกันความตายได้ด้วย early diagnosis — febrile seizure จึงต้องตัดตัวนี้ก่อน" },
+      "signature": "ไข้ + ชัก + ซึมนาน/ไม่ฟื้น baseline, meningeal sign (stiff neck, Kernig, Brudzinski), bulging fontanel, petechiae หรือ focal deficit",
+      "lookAlikes": ["simple-fs", "complex-fs"],
+      "tells": [
+        { "vs": "simple-fs", "feature": "ไม่ฟื้นกลับ baseline หรือมี meningeal sign = ไม่ใช่ simple FS" },
+        { "vs": "complex-fs", "feature": "Encephalitis มีซึม/พฤติกรรมเปลี่ยนต่อเนื่องหลังชัก ไม่ใช่แค่ชักนานแล้วฟื้น" }
+      ],
+      "counter": "Admit · LP เมื่อ stable (มี ICP sign หรือ focal deficit → CT ก่อน) · ระหว่างรอให้ empirical antibiotic ± acyclovir ได้เลย",
+      "danger": "อาการ meningitis ในทารกแฝงได้ และถูกบังถ้าได้ antibiotic มาก่อน — ปล่อยกลับบ้านพลาดโรคถึงตาย",
+      "memorize": [
+        {
+          "id": "fs-lp-aap",
+          "prompt": "AAP 2011: เด็กไข้ชัก (simple) ต้อง LP เมื่อไร?",
+          "fact": "เมื่อมีอาการ/อาการแสดงของ meningitis · เป็น option ในอายุ 6–12 เดือนที่วัคซีน Hib/pneumococcus ไม่ครบหรือไม่ทราบ และในเด็กที่ได้ antibiotic มาก่อน",
+          "sourceId": "aap-fs-eval-2011"
+        }
+      ],
+      "sourceIds": ["aap-fs-eval-2011"]
+    },
+    {
+      "id": "acute-symptomatic",
+      "name": "Acute symptomatic seizure (metabolic / trauma / toxic)",
+      "who": "เด็กชักขณะมี insult เฉียบพลัน: hypoglycemia, hyponatremia (นมผงผสมน้ำเกิน), hypocalcemia, head trauma, สารพิษ",
+      "trigger": { "ruleId": "provoked-gate", "text": "สาเหตุเฉียบพลันลด seizure threshold ชั่วคราว เมื่อแก้สาเหตุ สมองกลับไปมี threshold ปกติ" },
+      "signature": "ชักร่วมกับ lab ผิดปกติรุนแรง (วัดภายใน 24 hr) หรือ brain insult ภายใน 1 สัปดาห์ (TBI, stroke, anoxia, หลังผ่าตัดสมอง) หรือ intoxication/withdrawal",
+      "lookAlikes": ["first-unprovoked", "neonatal-subtle"],
+      "tells": [
+        { "vs": "first-unprovoked", "feature": "เจอตัวกระตุ้นเฉียบพลัน ณ ขณะนั้น (DTX, Na, Ca, trauma) = provoked · ไม่เจอเลยจึงเป็น unprovoked" },
+        { "vs": "neonatal-subtle", "feature": "Neonatal seizure ส่วนใหญ่ก็เป็น acute symptomatic (HIE, hypoglycemia, hypoCa) — เช็ค DTX/Ca/Mg ก่อนคิด epilepsy" }
+      ],
+      "counter": "DTX ทันทีทุกราย · แก้สาเหตุ (dextrose, แก้ Na/Ca/Mg, รักษา infection) · ASM ใช้หยุดชักระยะสั้นเท่านั้น ไม่ต้องกินยาระยะยาว",
+      "danger": "Hypoglycemia ที่ปล่อยไว้ทำ brain injury · ทารกชัก + SDH/retinal hemorrhage = abusive head trauma",
+      "memorize": [
+        {
+          "id": "ass-metabolic-cutoffs",
+          "prompt": "ค่า lab ที่นับว่าชักเป็น acute symptomatic (Beghi/ILAE): glucose, Na, Ca, Mg, BUN, Cr?",
+          "fact": "Glucose < 36 หรือ > 450 mg/dL · Na < 115 mEq/L · Ca < 5 mg/dL · Mg < 0.8 mg/dL · BUN > 100 mg/dL · Cr > 10 mg/dL (วัดภายใน 24 hr)",
+          "sourceId": "beghi-ass-2010"
+        },
+        {
+          "id": "ass-time-window",
+          "prompt": "ชักหลัง brain insult (TBI, stroke, anoxia, intracranial surgery) ภายในเวลาเท่าไรจึงนับเป็น acute symptomatic?",
+          "fact": "ภายใน 1 สัปดาห์ · subdural hematoma นับเมื่อพบครั้งแรก · CNS infection/autoimmune นับขณะ active",
+          "sourceId": "beghi-ass-2010"
+        }
+      ],
+      "sourceIds": ["beghi-ass-2010"]
+    },
+    {
+      "id": "first-unprovoked",
+      "name": "First unprovoked seizure",
+      "who": "เด็กชักครั้งแรก ไม่มีไข้ ไม่มีตัวกระตุ้นเฉียบพลัน",
+      "trigger": { "ruleId": "provoked-gate", "text": "ครั้งเดียวยังไม่เท่ากับ epilepsy เว้นแต่ risk ซ้ำสูงหรือเป็น syndrome" },
+      "signature": "ชัก afebrile ครั้งแรก หลัง DTX/electrolyte ปกติและไม่มี trauma · มี postictal confusion",
+      "lookAlikes": ["acute-symptomatic", "syncope"],
+      "tells": [
+        { "vs": "acute-symptomatic", "feature": "Lab/trauma/ยาปกติทั้งหมด = unprovoked" },
+        { "vs": "syncope", "feature": "ชักจริงมี postictal confusion, กัดลิ้นด้านข้าง · syncope มี prodrome และฟื้นเร็วไม่สับสน" }
+      ],
+      "counter": "EEG ทุกราย (ประเมิน risk + classify) · imaging ถ้า focal onset/focal deficit · low risk → observe + F/U · high risk หรือ syndrome = epilepsy → เริ่ม ASM",
+      "danger": "เริ่ม ASM เร็วไม่เปลี่ยน long-term prognosis แต่ได้ AE · ปล่อยเด็ก high risk (dev ช้า + focal deficit + EEG ผิดปกติ) โดยไม่ประเมิน",
+      "memorize": [
+        {
+          "id": "epilepsy-def-ilae",
+          "prompt": "ILAE 2014: epilepsy วินิจฉัยเมื่อไร (3 ข้อ)?",
+          "fact": "(1) unprovoked/reflex ≥ 2 ครั้งห่างกัน > 24 hr (2) unprovoked 1 ครั้ง + โอกาสชักซ้ำใน 10 ปี ≥ 60% (3) วินิจฉัย epilepsy syndrome ได้",
+          "sourceId": "ilae-def-2014"
+        },
+        {
+          "id": "epilepsy-resolved",
+          "prompt": "Epilepsy \"resolved\" ตาม ILAE 2014?",
+          "fact": "พ้นช่วงอายุของ age-dependent syndrome หรือ seizure-free 10 ปีล่าสุด โดยหยุด ASM มาแล้ว ≥ 5 ปีหลังสุด",
+          "sourceId": "ilae-def-2014"
+        },
+        {
+          "id": "first-seizure-eeg",
+          "prompt": "เด็กชัก afebrile ครั้งแรก investigation ใดแนะนำเป็น routine (AAN 2000)?",
+          "fact": "EEG เป็น routine · lab และ neuroimaging ทำตามสถานการณ์ทางคลินิก",
+          "sourceId": "aan-first-seizure-2000"
+        }
+      ],
+      "sourceIds": ["ilae-def-2014", "aan-first-seizure-2000"]
+    },
+    {
+      "id": "convulsive-se",
+      "name": "Convulsive status epilepticus",
+      "who": "เด็กชักเกร็งกระตุกต่อเนื่อง ≥ 5 min หรือชักซ้ำโดยไม่ฟื้นระหว่างครั้ง · known epilepsy ที่ขาดยา",
+      "trigger": { "ruleId": "se-clock", "text": "กลไกหยุดชักล้มเหลว: GABA-A receptor ถูกดึงเข้าเซลล์ NMDA/AMPA ขึ้นผิวเซลล์ → เบรกหาย คันเร่งเพิ่ม" },
+      "signature": "ชักต่อเนื่องถึง t1 (5 min สำหรับ tonic-clonic) — เกิน t2 (30 min) เริ่ม neuronal injury",
+      "lookAlikes": ["complex-fs", "pnes"],
+      "tells": [
+        { "vs": "complex-fs", "feature": "นับนาทีขณะยังชักอยู่: ครบ 5 min = SE ต้องให้ยา ไม่ว่ามีไข้หรือไม่" },
+        { "vs": "pnes", "feature": "Pseudo-status: หลับตาแน่น ขัดขืนตอนเปิดตา ขึ้น ๆ ลง ๆ SpO2 ปกติ · SE จริงตาเปิด/เบน มี hypoxia" }
+      ],
+      "counter": "ABC + O₂ + ตะแคง + จับเวลา + DTX + IV/IO → BZD (ซ้ำได้ 1) → levetiracetam / fosphenytoin / valproate IV ตัวเดียว → refractory: anesthetic infusion + cEEG + ICU · load แล้วต่อ maintenance",
+      "danger": "รอให้หยุดเอง, BZD dose ที่ 3 (หยุดหายใจ), ส่ง CT ก่อนหยุดชัก, เอาอะไรใส่ปาก, หยุดกระตุกแต่ไม่ตื่น = NCSE",
+      "memorize": [
+        {
+          "id": "se-t1-t2",
+          "prompt": "ILAE 2015: t1 / t2 ของ tonic-clonic SE?",
+          "fact": "t1 = 5 min (ต้องเริ่มยา) · t2 = 30 min (เริ่มเสี่ยงผลระยะยาว)",
+          "sourceId": "ilae-se-2015"
+        },
+        {
+          "id": "se-t1-other",
+          "prompt": "ILAE 2015: t1 / t2 ของ focal SE with impaired consciousness และ absence SE?",
+          "fact": "Focal SE with impaired consciousness: t1 10 min / t2 > 60 min · Absence SE: t1 10–15 min / t2 ยังไม่ทราบ",
+          "sourceId": "ilae-se-2015"
+        },
+        {
+          "id": "se-midazolam-im",
+          "prompt": "AES 2016: midazolam IM สำหรับ SE ขนาดเท่าไร?",
+          "fact": "13–40 kg: 5 mg · > 40 kg: 10 mg · IM single dose (ไม่ต้องเปิดเส้น)",
+          "sourceId": "aes-cse-2016"
+        },
+        {
+          "id": "se-lorazepam-diazepam",
+          "prompt": "AES 2016: lorazepam IV และ diazepam IV ขนาดเท่าไร?",
+          "fact": "Lorazepam 0.1 mg/kg IV (max 4 mg/dose) · diazepam 0.15–0.2 mg/kg IV (max 10 mg/dose) · ซ้ำได้ 1 ครั้ง",
+          "sourceId": "aes-cse-2016"
+        },
+        {
+          "id": "se-second-line",
+          "prompt": "AES 2016: second therapy ของ SE (เลือก 1 ตัว single dose)?",
+          "fact": "Fosphenytoin 20 mg PE/kg (max 1500 mg PE) · valproate 40 mg/kg (max 3000 mg) · levetiracetam 60 mg/kg (max 4500 mg) · ไม่มีทั้งสามตัว: phenobarbital 15 mg/kg",
+          "sourceId": "aes-cse-2016"
+        },
+        {
+          "id": "se-glucose",
+          "prompt": "AES 2016: glucose < 60 mg/dL ระหว่างชัก ให้ dextrose อย่างไร?",
+          "fact": "อายุ ≥ 2 ปี: D25W 2 mL/kg IV · < 2 ปี: D12.5W 4 mL/kg IV · ผู้ใหญ่: thiamine 100 mg IV แล้ว D50W 50 mL IV",
+          "sourceId": "aes-cse-2016"
+        },
+        {
+          "id": "se-phases",
+          "prompt": "AES 2016: ช่วงเวลาของแต่ละ phase ใน SE algorithm?",
+          "fact": "0–5 min stabilization · 5–20 min initial therapy (BZD) · 20–40 min second therapy · 40–60 min third therapy",
+          "sourceId": "aes-cse-2016"
+        }
+      ],
+      "sourceIds": ["ilae-se-2015", "aes-cse-2016"]
+    },
+    {
+      "id": "cae",
+      "name": "Childhood absence epilepsy (CAE)",
+      "who": "เด็กวัยเรียน dev ปกติ ครูบอกว่า \"เหม่อ ไม่ตั้งใจเรียน\"",
+      "trigger": { "ruleId": "na-paradox", "text": "T-type Ca²⁺ channel ใน thalamus สร้างจังหวะ thalamocortical → generalized 3-Hz spike-and-wave" },
+      "signature": "จ้องเหม่อ หยุดกิจกรรมทันที ไม่กี่วินาที หลายสิบครั้ง/วัน · ไม่มี aura ไม่มี postictal ทำกิจกรรมต่อได้ทันที · hyperventilation กระตุ้นได้ · EEG generalized 3-Hz spike-and-wave",
+      "lookAlikes": ["fias-temporal", "jme", "lgs"],
+      "tells": [
+        { "vs": "fias-temporal", "feature": "Absence ไม่มี aura และไม่มี postictal confusion · FIAS มี aura นำ + automatisms + สับสนหลังชัก" },
+        { "vs": "jme", "feature": "CAE = เหม่อในเด็กวัยเรียน · JME = กระตุกแขนตอนเช้าหลังตื่นในวัยรุ่น" },
+        { "vs": "lgs", "feature": "CAE dev ปกติ EEG 3-Hz · LGS มี ID + หลาย seizure type + slow spike-wave (ช้ากว่า 3 Hz)" }
+      ],
+      "counter": "Ethosuximide หรือ valproate (ไทย/lecture ตอบ VPA) · ห้าม carbamazepine, phenytoin · ทดสอบ HV ราว 3 min ที่ OPD (เลี่ยงในเด็กเสี่ยง stroke เช่น moyamoya, sickle cell)",
+      "danger": "แยกผิดเป็น focal → ได้ CBZ → absence แย่ลง · มองเป็นสมาธิสั้นแล้วไม่ส่ง EEG",
+      "memorize": [
+        {
+          "id": "cae-eeg",
+          "prompt": "EEG ของ childhood absence epilepsy?",
+          "fact": "Generalized 3-Hz spike-and-wave เริ่มและหยุดทันที · hyperventilation กระตุ้นได้",
+          "sourceId": "sp-absence"
+        },
+        {
+          "id": "cae-first-line",
+          "prompt": "RCT (NEJM 2010) ยาไหนดีที่สุดสำหรับ CAE?",
+          "fact": "Ethosuximide ≈ valproate > lamotrigine ด้าน efficacy · ethosuximide มี attentional dysfunction น้อยกว่า valproate → USMLE ตอบ ESM · ในไทย ESM หายาก lecture ตอบ VPA",
+          "sourceId": "cae-trial-2010"
+        }
+      ],
+      "variants": [
+        { "region": "US", "text": "First-line CAE = ethosuximide (efficacy เท่า VPA, AE ด้าน attention น้อยกว่า)", "sourceId": "cae-trial-2010" },
+        { "region": "TH", "text": "Lecture/ข้อสอบปิดบล็อค: myoclonic/absence → valproate (ESM หาได้ยาก)", "sourceId": "cae-trial-2010", "examLikely": true }
+      ],
+      "sourceIds": ["sp-absence", "cae-trial-2010"]
+    },
+    {
+      "id": "fias-temporal",
+      "name": "Focal impaired awareness seizure (temporal lobe)",
+      "who": "ทุกวัย · อาจมี mesial temporal sclerosis หรือ lesion",
+      "trigger": { "ruleId": "onset-first", "text": "เริ่มที่ network ใน temporal lobe ข้างเดียว → aura (ictal onset ที่รู้สึกได้) แล้วลามจนเสีย awareness" },
+      "signature": "Aura นำ (epigastric rising, déjà vu, กลิ่นแปลก) → ตาค้าง ไม่ตอบสนอง + automatisms (เคี้ยวปาก มือคลำเสื้อ) → postictal confusion จำเหตุการณ์ไม่ได้ · เกิดไม่บ่อย นานกว่า absence",
+      "lookAlikes": ["cae", "pnes", "focal-aware-motor"],
+      "tells": [
+        { "vs": "cae", "feature": "มี aura + postictal confusion · EEG focal (มัก temporal) ไม่ใช่ 3-Hz generalized" },
+        { "vs": "pnes", "feature": "FIAS stereotyped เหมือนเดิมทุกครั้ง ตาเปิด · PNES หลับตาแน่น ขึ้น ๆ ลง ๆ ไม่มี postictal" },
+        { "vs": "focal-aware-motor", "feature": "ช่วงไหนก็ตามที่ไม่รู้ตัว/จำไม่ได้ = impaired awareness ทั้ง episode" }
+      ],
+      "counter": "EEG + MRI หา lesion (MTS, FCD) · ยา focal: carbamazepine / phenytoin / valproate / levetiracetam ตาม AE · drug-resistant → พิจารณา epilepsy surgery",
+      "danger": "ลามเป็น focal to bilateral tonic-clonic · ถูกเรียกว่า absence แล้วได้ยาไม่ครอบคลุม lesion",
+      "memorize": [
+        {
+          "id": "fias-1981-name",
+          "prompt": "Complex partial seizure (1981) ใน ILAE 2017 เรียกว่าอะไร? simple partial และ secondarily generalized ล่ะ?",
+          "fact": "Complex partial = focal impaired awareness · simple partial = focal aware · secondarily generalized = focal to bilateral tonic-clonic",
+          "sourceId": "ilae-types-2017"
+        }
+      ],
+      "sourceIds": ["ilae-types-2017"]
+    },
+    {
+      "id": "focal-aware-motor",
+      "name": "Focal aware motor seizure (clonic)",
+      "who": "เด็กกระตุกเฉพาะส่วน รู้ตัวตลอด",
+      "trigger": { "ruleId": "onset-first", "text": "เริ่มที่ motor cortex ซีกตรงข้าม แล้วไล่ไปตาม homunculus" },
+      "signature": "กระตุกเป็นจังหวะเฉพาะส่วน (มุมปาก มือ แขนขาซีกเดียว) อาจไล่มือ→แขน→หน้า (Jacksonian march) · รู้ตัว ตอบได้ · หลังชักอาจมี Todd's paralysis",
+      "lookAlikes": ["bects", "fias-temporal"],
+      "tells": [
+        { "vs": "bects", "feature": "BECTS เกิดตอนหลับ เด่นที่หน้า/มุมปาก + น้ำลายไหล พูดไม่ได้ dev ปกติ EEG centrotemporal spikes" },
+        { "vs": "fias-temporal", "feature": "รู้ตัวตลอดและจำได้ = aware · ไม่ใช่ impaired" }
+      ],
+      "counter": "EEG + หา structural lesion (CT/MRI) ยกเว้น BECTS ที่ typical · ยา focal ตาม AE",
+      "danger": "ลามเป็น focal to bilateral TC · Todd's paralysis ชี้ focus ซีกตรงข้าม ต้อง imaging",
+      "memorize": [],
+      "sourceIds": ["ilae-types-2017"]
+    },
+    {
+      "id": "bects",
+      "name": "Self-limited epilepsy with centrotemporal spikes (BECTS / rolandic)",
+      "who": "เด็กวัยเรียน dev ปกติ ชักตอนนอนหลับ",
+      "trigger": { "ruleId": "onset-first", "text": "Focal จาก rolandic (centrotemporal) area ที่คุมหน้าและคอหอย — age-dependent syndrome" },
+      "signature": "ชักตอนหลับ/ใกล้ตื่น กระตุกมุมปาก/หน้าซีกเดียว น้ำลายไหล พูดไม่ได้แต่รู้ตัว ± ลามเป็น GTC · EEG centrotemporal spikes เด่นตอนหลับ",
+      "lookAlikes": ["focal-aware-motor", "fias-temporal"],
+      "tells": [
+        { "vs": "focal-aware-motor", "feature": "Typical BECTS: ตอนหลับ + หน้า/คอหอย + dev ปกติ + centrotemporal spikes → ไม่ต้อง imaging" },
+        { "vs": "fias-temporal", "feature": "BECTS รู้ตัวแม้พูดไม่ได้ ไม่มี automatisms/aura แบบ temporal" }
+      ],
+      "counter": "EEG ที่มีช่วงหลับ · typical → ไม่ต้อง CT/MRI · ส่วนใหญ่ไม่ต้องกินยา reassure (หายเมื่อเข้าวัยรุ่น)",
+      "danger": "Atypical (focal deficit, dev ถดถอย, ชักกลางวันบ่อย) ไม่ใช่ BECTS ธรรมดา → imaging",
+      "memorize": [
+        {
+          "id": "bects-prognosis",
+          "prompt": "BECTS (benign rolandic epilepsy) prognosis และต้องรักษาไหม?",
+          "fact": "Prognosis ดีมาก ไม่ว่าจะรักษาหรือไม่ · ชักมักหายเมื่อถึงวัยรุ่น · ส่วนใหญ่ไม่ต้องให้ยา · spikes อาจเห็นเฉพาะตอนหลับ",
+          "sourceId": "sp-rolandic"
+        }
+      ],
+      "sourceIds": ["sp-rolandic"]
+    },
+    {
+      "id": "jme",
+      "name": "Juvenile myoclonic epilepsy (JME)",
+      "who": "วัยรุ่น ทำของหลุดมือตอนเช้า ชักหลังอดนอน",
+      "trigger": { "ruleId": "na-paradox", "text": "Generalized genetic epilepsy — Na⁺-channel blocker ทำ myoclonic แย่ลง" },
+      "signature": "Myoclonic jerk แขนสองข้างตอนเช้าหลังตื่น (รู้ตัว) + GTC กระตุ้นด้วยอดนอน/alcohol · EEG generalized polyspike-and-wave",
+      "lookAlikes": ["cae", "focal-aware-motor"],
+      "tells": [
+        { "vs": "cae", "feature": "JME = วัยรุ่น + กระตุกตอนเช้า + GTC · CAE = เหม่อหลายสิบครั้ง/วันในเด็กวัยเรียน" },
+        { "vs": "focal-aware-motor", "feature": "JME กระตุกสองข้าง สั้นแบบช็อตไฟฟ้า ไม่เป็นจังหวะ ไม่ไล่ homunculus" }
+      ],
+      "counter": "Valproate (ชาย) · หญิงวัยเจริญพันธุ์ → levetiracetam · กินยายาว · สอนเลี่ยงอดนอน/alcohol · ห้าม carbamazepine, oxcarbazepine, phenytoin",
+      "danger": "เรียกเป็น focal to bilateral TC แล้วให้ CBZ → myoclonic แย่ลง · VPA ในหญิงวัยเจริญพันธุ์ (teratogen)",
+      "memorize": [
+        {
+          "id": "jme-avoid",
+          "prompt": "JME: ยาใดห้าม และทำไม?",
+          "fact": "Carbamazepine, oxcarbazepine, phenytoin (Na⁺-channel blocker) — ทำให้ myoclonic และ absence แย่ลง",
+          "sourceId": "sp-jme"
+        }
+      ],
+      "sourceIds": ["sp-jme"]
+    },
+    {
+      "id": "infantile-spasms",
+      "name": "Infantile spasms (West syndrome / IESS)",
+      "who": "ทารกขวบปีแรก เริ่มยิ้มน้อยลง เล่นน้อยลง",
+      "trigger": { "ruleId": "na-paradox", "text": "Epileptic encephalopathy — ยิ่งชักและ hypsarrhythmia นาน dev ยิ่งเสีย · ยาคนละกลุ่มกับ focal/absence" },
+      "signature": "ผวา งอ/เหยียดลำตัวและแขนขาทันที 1–2 s เป็นชุด (cluster) มักตอนเพิ่งตื่น + developmental regression · EEG hypsarrhythmia (triad = West syndrome)",
+      "lookAlikes": ["lgs", "jitteriness"],
+      "tells": [
+        { "vs": "lgs", "feature": "Infantile spasms = ขวบปีแรก + hypsarrhythmia · LGS = อายุมากกว่า + slow spike-wave + tonic ตอนหลับ/atonic drop (IS วิวัฒน์เป็น LGS ได้)" },
+        { "vs": "jitteriness", "feature": "Spasms เป็นชุดตอนตื่นนอน ไม่หยุดเมื่อจับ + dev ถดถอย · jitteriness ถูกกระตุ้นแล้วสั่นและหยุดเมื่อจับ" }
+      ],
+      "counter": "EEG + MRI ทุกราย (หา TSC, FCD, HIE) · refer neurologist ภายในไม่กี่วัน · vigabatrin (โดยเฉพาะ TSC) หรือ ACTH/steroid · ตรวจลานสายตาเมื่อได้ VGB",
+      "danger": "มองเป็น colic หรือ Moro reflex → เริ่มยาช้า dev outcome แย่ · VGB → visual field defect ถาวร",
+      "memorize": [
+        {
+          "id": "is-triad",
+          "prompt": "West syndrome ประกอบด้วยอะไร (triad)?",
+          "fact": "Infantile (epileptic) spasms + hypsarrhythmia ใน EEG + developmental regression",
+          "sourceId": "sp-infantile-spasms"
+        },
+        {
+          "id": "vgb-vision",
+          "prompt": "Vigabatrin: AE สำคัญที่ต้อง monitor?",
+          "fact": "Permanent bilateral concentric visual field constriction (tunnel vision) — ไม่กลับคืน เสี่ยงเพิ่มตาม dose/ระยะเวลา ต้องตรวจลานสายตาเป็นระยะ",
+          "sourceId": "label-vigabatrin"
+        }
+      ],
+      "sourceIds": ["sp-infantile-spasms", "label-vigabatrin"]
+    },
+    {
+      "id": "lgs",
+      "name": "Lennox-Gastaut syndrome (LGS)",
+      "who": "เด็กเล็กที่มี intellectual disability ล้มบ่อยจน \"ใส่หมวกกันน็อก\"",
+      "trigger": { "ruleId": "na-paradox", "text": "Developmental and epileptic encephalopathy — หลาย seizure type ดื้อยา" },
+      "signature": "หลาย seizure types: tonic ตอนหลับ, atonic (drop attack), atypical absence + ID · EEG interictal slow spike-wave (ช้ากว่า 3 Hz) + generalized paroxysmal fast activity ตอนหลับ",
+      "lookAlikes": ["cae", "infantile-spasms"],
+      "tells": [
+        { "vs": "cae", "feature": "Atypical absence ใน LGS + ID + slow spike-wave · CAE dev ปกติ 3-Hz" },
+        { "vs": "infantile-spasms", "feature": "LGS อายุมากกว่า มี tonic/atonic หลายแบบ · IS = spasms เป็นชุด + hypsarrhythmia ในขวบปีแรก" }
+      ],
+      "counter": "Refer neurologist · broad-spectrum ASM · drop attack → corpus callosotomy (palliative) · พิจารณา ketogenic diet / VNS",
+      "danger": "บาดเจ็บศีรษะจาก drop attack · drug-resistant",
+      "memorize": [
+        {
+          "id": "lgs-eeg",
+          "prompt": "EEG ที่เป็น hallmark ของ Lennox-Gastaut syndrome?",
+          "fact": "Interictal slow spike-wave + generalized paroxysmal fast activity ตอนหลับ (sleep EEG ช่วยมาก)",
+          "sourceId": "sp-lgs"
+        },
+        {
+          "id": "dre-def",
+          "prompt": "Drug-resistant epilepsy (ILAE) นิยามว่าอะไร?",
+          "fact": "ล้มเหลวจากการใช้ ASM ที่เหมาะสมและทนได้ 2 แบบ (เดี่ยวหรือร่วมกัน) ในขนาดเพียงพอ แล้วยังไม่ seizure-free อย่างต่อเนื่อง → refer พิจารณา non-pharmacological treatment",
+          "sourceId": "ilae-dre-2010"
+        }
+      ],
+      "sourceIds": ["sp-lgs", "ilae-dre-2010"]
+    },
+    {
+      "id": "neonatal-subtle",
+      "name": "Neonatal (subtle) seizure",
+      "who": "ทารกแรกเกิด — มักเป็น acute symptomatic (HIE, hypoglycemia, hypocalcemia, sepsis)",
+      "trigger": { "ruleId": "onset-first", "text": "Myelination ยังไม่สมบูรณ์ ไฟฟ้ากระจายเป็น GTC ไม่ได้ → อาการเป็นการเคลื่อนไหวเล็ก ๆ ซ้ำ ๆ" },
+      "signature": "Tonic horizontal eye deviation, ลืมตาค้างจ้อง, ดูดปาก/แลบลิ้นซ้ำ ๆ, ปั่นจักรยาน/พายเรือ, apnea · stereotyped ไม่ถูกกระตุ้นจากภายนอกและไม่หยุดเมื่อจับ",
+      "lookAlikes": ["jitteriness", "acute-symptomatic"],
+      "tells": [
+        { "vs": "jitteriness", "feature": "ชักจริงไม่หยุดเมื่อจับแขนขา ไม่ได้เกิดจากการกระตุ้น มี eye deviation / autonomic change" },
+        { "vs": "acute-symptomatic", "feature": "Neonatal seizure คือการเห็นอาการ ส่วน acute symptomatic คือสาเหตุ — ต้องหาสาเหตุทุกราย (DTX, Ca, Mg, sepsis)" }
+      ],
+      "counter": "Admit newborn unit · DTX, Ca, Mg, sepsis workup · ยืนยันด้วย EEG · phenobarbital first-line",
+      "danger": "พลาดเพราะอาการเล็กน้อย · apnea จากชัก (มัก HR เร็วขึ้น) ถูกมองเป็น apnea of prematurity (มัก bradycardia) — lecture pearl ต้องยืนยันด้วย EEG",
+      "memorize": [
+        {
+          "id": "neonate-pb",
+          "prompt": "Neonatal seizure: ASM first-line?",
+          "fact": "Phenobarbital",
+          "sourceId": "norton-neonatal"
+        }
+      ],
+      "sourceIds": ["norton-neonatal"]
+    },
+    {
+      "id": "jitteriness",
+      "name": "Jitteriness (newborn)",
+      "who": "ทารกแรกเกิดที่สั่นถี่ ๆ เมื่อถูกจับหรือได้ยินเสียงดัง",
+      "trigger": { "ruleId": "mimic-test", "text": "Stimulus-sensitive tremor — ไม่ใช่ไฟฟ้าผิดปกติจากสมอง" },
+      "signature": "สั่นถี่ ๆ สม่ำเสมอเมื่อถูกกระตุ้น หยุดเมื่อจับ/งอแขนขา · ไม่มี eye deviation หรือ autonomic change",
+      "lookAlikes": ["neonatal-subtle", "infantile-spasms"],
+      "tells": [
+        { "vs": "neonatal-subtle", "feature": "หยุดเมื่อจับ + กระตุ้นได้ + ไม่มี eye deviation = jitteriness" },
+        { "vs": "infantile-spasms", "feature": "Jitteriness ไม่เป็นชุดตอนตื่นนอน และไม่มี dev ถดถอย" }
+      ],
+      "counter": "เช็ค glucose, Ca (hypoglycemia/hypocalcemia/withdrawal ทำให้สั่นได้) → ปกติ reassure",
+      "danger": "ให้ phenobarbital โดยไม่จำเป็น · มองข้าม hypoglycemia ที่ทำให้สั่น",
+      "memorize": [],
+      "sourceIds": ["norton-neonatal"]
+    },
+    {
+      "id": "breath-holding",
+      "name": "Breath-holding spell (cyanotic / pallid)",
+      "who": "ทารก–เด็กก่อนวัยเรียน",
+      "trigger": { "ruleId": "mimic-test", "text": "Reflex: ร้องไห้จนกลั้นหายใจ (cyanotic) หรือ vagal response ต่อความเจ็บ/ตกใจ (pallid) → สมองขาดเลือดชั่วคราว" },
+      "signature": "Trigger ชัด → (cyanotic) ร้องไห้/โกรธ → กลั้นหายใจจนเขียว → หมดสติ ± เกร็ง/กระตุกสั้น ๆ · (pallid) เจ็บ/ตกใจ → ซีด หมดสติ",
+      "lookAlikes": ["simple-fs", "syncope"],
+      "tells": [
+        { "vs": "simple-fs", "feature": "เขียวก่อนหมดสติ และมี trigger เป็นการร้องไห้ — ไม่ต้องมีไข้" },
+        { "vs": "syncope", "feature": "เป็น \"syncope ของเด็กเล็ก\" ที่ trigger คืออารมณ์/ความเจ็บ ไม่ใช่ยืนนาน" }
+      ],
+      "counter": "Reassure · ตรวจหา iron deficiency (iron ช่วยลดความถี่) · pallid/ไม่ typical → EKG หา long QT",
+      "danger": "วินิจฉัยเป็น epilepsy แล้วให้ ASM · พลาด long QT ใน pallid spell",
+      "memorize": [
+        {
+          "id": "bhs-workup",
+          "prompt": "Breath-holding spell ต้องตรวจอะไรเพิ่ม?",
+          "fact": "Iron study (iron deficiency พบบ่อย และ iron ช่วยลด spell แม้ไม่ anemia) · EKG เพื่อตัด long QT syndrome",
+          "sourceId": "sp-breath-holding"
+        }
+      ],
+      "sourceIds": ["sp-breath-holding"]
+    },
+    {
+      "id": "syncope",
+      "name": "Syncope (vasovagal / cardiac)",
+      "who": "เด็กวัยเรียน–วัยรุ่น ยืนนาน ร้อน เห็นเลือด หรือออกกำลัง",
+      "trigger": { "ruleId": "mimic-test", "text": "Cerebral hypoperfusion ชั่วคราว — ไม่ใช่ hypersynchronous discharge" },
+      "signature": "Prodrome (หน้ามืด ตาลาย เหงื่อออก ซีด) → หมดสติสั้น อาจกระตุกไม่กี่ครั้ง → ฟื้นเร็ว ไม่ confused",
+      "lookAlikes": ["first-unprovoked", "breath-holding", "pnes"],
+      "tells": [
+        { "vs": "first-unprovoked", "feature": "มี prodrome + ฟื้นเร็วไม่สับสน · ชักจริงมี postictal confusion และกัดลิ้นด้านข้าง" },
+        { "vs": "breath-holding", "feature": "Syncope ในเด็กโตมี trigger เป็นท่า/ความร้อน ไม่ใช่การร้องไห้" },
+        { "vs": "pnes", "feature": "Syncope สั้นและตัวอ่อน ซีด · PNES นาน ขึ้น ๆ ลง ๆ หลับตาแน่น" }
+      ],
+      "counter": "EKG ทุกราย หา cardiac cause (long QT, arrhythmia, HCM) · vasovagal → reassure + เลี่ยง trigger",
+      "danger": "Syncope ขณะออกกำลัง = cardiac จนกว่าจะพิสูจน์ว่าไม่ใช่ · ให้ ASM ผิด",
+      "memorize": [],
+      "sourceIds": ["sp-breath-holding"]
+    },
+    {
+      "id": "pnes",
+      "name": "Psychogenic nonepileptic seizure (PNES)",
+      "who": "วัยรุ่น มีความเครียด/ปัจจัยทางจิตสังคม",
+      "trigger": { "ruleId": "mimic-test", "text": "Event ทางจิตใจที่ดูเหมือนชัก ไม่มี epileptiform discharge" },
+      "signature": "หลับตาแน่นขณะ event, ส่ายหัวไปมา, pelvic thrusting, ขึ้น ๆ ลง ๆ นาน, ไม่มี postictal · ไม่ stereotyped",
+      "lookAlikes": ["fias-temporal", "convulsive-se", "syncope"],
+      "tells": [
+        { "vs": "fias-temporal", "feature": "PNES หลับตาแน่น ไม่ stereotyped · FIAS ตาเปิดค้าง เหมือนเดิมทุกครั้ง + postictal confusion" },
+        { "vs": "convulsive-se", "feature": "SE จริงมี hypoxia/ตาเปิดเบน · pseudo-status หลับตาขัดขืน SpO2 ปกติ" },
+        { "vs": "syncope", "feature": "PNES นานหลายนาทีขึ้น ๆ ลง ๆ · syncope สั้น ตัวอ่อน ซีด ฟื้นเร็ว" }
+      ],
+      "counter": "Video-EEG ยืนยัน · psychiatric care · อธิบายผู้ป่วยอย่างไม่ตัดสิน",
+      "danger": "Frontal lobe hyperkinetic seizure ถูกเหมาเป็น PNES · PNES ได้ BZD ซ้ำ ๆ จนกดการหายใจ · มี epilepsy ร่วมได้",
+      "memorize": [],
+      "sourceIds": ["ilae-types-2017"]
+    }
+  ],
+  "exploits": [
+    {
+      "id": "x-stops-when-held",
+      "ifSee": "ทารกสั่นเมื่อถูกจับ/เสียงดัง และหยุดเมื่องอแขนไว้",
+      "think": "Jitteriness — เช็ค DTX, Ca แล้ว reassure",
+      "strength": "rule"
+    },
+    {
+      "id": "x-staring-many",
+      "ifSee": "เด็กวัยเรียนเหม่อหลายสิบครั้ง/วัน ทำกิจกรรมต่อได้ทันที",
+      "think": "Absence → ให้ hyperventilate ราว 3 min ที่ OPD + EEG 3-Hz · ห้าม CBZ/PHT",
+      "strength": "heuristic",
+      "exception": "มี aura + postictal confusion = FIAS · ห้าม HV ในเด็กเสี่ยง stroke (moyamoya, sickle cell)"
+    },
+    {
+      "id": "x-morning-jerks",
+      "ifSee": "วัยรุ่นทำของหลุดมือตอนเช้าหลังตื่น ± ชักเกร็งหลังอดนอน",
+      "think": "JME → valproate (หญิง: levetiracetam) · ห้าม carbamazepine/phenytoin",
+      "strength": "heuristic",
+      "exception": "Myoclonic ข้างเดียว/ไล่ homunculus = focal"
+    },
+    {
+      "id": "x-cluster-waking",
+      "ifSee": "ทารกผวา งอตัวเป็นชุดตอนตื่นนอน + ยิ้มน้อยลง/เล่นน้อยลง",
+      "think": "Infantile spasms → EEG (hypsarrhythmia) + MRI + refer ภายในไม่กี่วัน",
+      "strength": "rule"
+    },
+    {
+      "id": "x-ash-leaf",
+      "ifSee": "ทารกมี ash-leaf macules (hypomelanotic) + spasms",
+      "think": "Tuberous sclerosis → vigabatrin เป็นตัวเลือกแรก",
+      "strength": "heuristic",
+      "exception": "Ash-leaf จุดเดียวพบในเด็กปกติได้ — ต้องดู criteria อื่น"
+    },
+    {
+      "id": "x-nocturnal-drool",
+      "ifSee": "เด็กวัยเรียน dev ปกติ ชักตอนนอน มุมปากกระตุก น้ำลายไหล พูดไม่ได้",
+      "think": "BECTS → EEG ช่วงหลับ (centrotemporal spikes) · ไม่ต้อง imaging · มักไม่ต้องยา",
+      "strength": "heuristic",
+      "exception": "Focal deficit, dev ถดถอย หรือ semiology ไม่ typical → imaging"
+    },
+    {
+      "id": "x-todd",
+      "ifSee": "หลังชักแขนขาอ่อนแรงซีกเดียวชั่วคราว",
+      "think": "Todd's paralysis → focus อยู่สมองซีกตรงข้าม → focal seizure หา structural lesion",
+      "strength": "rule"
+    },
+    {
+      "id": "x-known-epi-se",
+      "ifSee": "เด็ก known epilepsy มาด้วย SE หรือ breakthrough seizure",
+      "think": "ขาดยา / drug level ต่ำก่อน → ส่ง ASM level, ถาม compliance, อาเจียน/ท้องเสีย",
+      "strength": "heuristic",
+      "exception": "ไข้/ป่วยใหม่, drug interaction ใหม่, โตขึ้นจน dose ต่อ kg ไม่พอ"
+    },
+    {
+      "id": "x-retinal-hemorrhage",
+      "ifSee": "ทารกชัก + retinal hemorrhage หรือ subdural hematoma",
+      "think": "Abusive head trauma (shaken baby) จนกว่าจะพิสูจน์ว่าไม่ใช่",
+      "strength": "rule"
+    },
+    {
+      "id": "x-aromatic-rash",
+      "ifSee": "ไข้ + ผื่น + แผลในปาก/ตา ภายในไม่กี่สัปดาห์หลังเริ่ม CBZ/PHT/PB/LTG",
+      "think": "SJS/DRESS → หยุดยาทันที admit → เปลี่ยนเป็นยาไม่มี aromatic ring (VPA, LEV)",
+      "strength": "rule"
+    },
+    {
+      "id": "x-fever-no-focus",
+      "ifSee": "Simple FS กลับมาปกติแล้ว แต่ไข้ไม่มี focus",
+      "think": "หา UTI → ส่ง UA",
+      "strength": "heuristic",
+      "exception": "ซึม/meningeal sign/fontanel โป่ง → คิด meningitis ก่อน"
+    },
+    {
+      "id": "x-eyes-closed",
+      "ifSee": "ระหว่าง event หลับตาแน่น ขัดขืนเมื่อเปิดตา ส่ายหัวไปมา",
+      "think": "PNES → video-EEG",
+      "strength": "heuristic",
+      "exception": "Frontal hyperkinetic seizure ตอนหลับดูแปลกได้ — stereotyped ทุกครั้งชี้ว่าเป็นชักจริง"
+    }
+  ],
+  "distractorPatterns": [
+    {
+      "id": "d-wait-30",
+      "pattern": "ตัวเลือก \"รอดูอีก 5–10 นาที เพราะ febrile seizure มักหยุดเอง\" หรือใช้นิยาม SE 30 นาที",
+      "kill": "t1 = 5 min: ชักครบ 5 นาทีต้องให้ BZD ทันที — 30 min คือ t2 (สมองเริ่มเสียหาย) ไม่ใช่เวลาเริ่มยา"
+    },
+    {
+      "id": "d-third-bzd",
+      "pattern": "ให้ BZD dose ที่ 3 เพราะยังชักอยู่",
+      "kill": "BZD ไม่เกิน 2 dose — dose ที่ 3 เพิ่ม respiratory depression โดยไม่เพิ่มการหยุดชัก → second-line"
+    },
+    {
+      "id": "d-spoon",
+      "pattern": "เอาช้อน/ไม้กดลิ้น/นิ้วงัดปากกันกัดลิ้น หรือป้อนยาทางปากระหว่างชัก",
+      "kill": "ห้ามใส่อะไรในปาก (ฟันหัก สำลัก นิ้วโดนกัด) — จับนอนตะแคง จับเวลา"
+    },
+    {
+      "id": "d-antipyretic-prevent",
+      "pattern": "ให้ paracetamol สม่ำเสมอหรือเช็ดตัวเพื่อ \"ป้องกัน\" febrile seizure ครั้งต่อไป",
+      "kill": "Antipyretic ช่วยให้สบายตัวแต่ไม่ป้องกันการชักซ้ำ"
+    },
+    {
+      "id": "d-pb-prophylaxis",
+      "pattern": "เริ่ม phenobarbital/valproate ระยะยาวหลัง simple febrile seizure",
+      "kill": "ไม่แนะนำ ASM ระยะยาวใน simple FS — AE มากกว่าประโยชน์ และไม่ลด risk epilepsy"
+    },
+    {
+      "id": "d-cbz-staring",
+      "pattern": "เด็กเหม่อบ่อย → เริ่ม carbamazepine",
+      "kill": "ถ้าเป็น absence, CBZ ทำให้แย่ลง — classify ก่อน (aura? postictal? HV? EEG 3-Hz?)"
+    },
+    {
+      "id": "d-normal-eeg",
+      "pattern": "EEG ปกติ → \"rule out epilepsy\"",
+      "kill": "Interictal EEG ครั้งเดียวปกติได้บ่อย — ถ้าประวัติชัดให้เชื่อประวัติ และทำ EEG ที่มีช่วงหลับ/sleep-deprived"
+    },
+    {
+      "id": "d-double-dose",
+      "pattern": "Breakthrough seizure หลังอาเจียน/ป่วย → เพิ่ม dose เป็นสองเท่าหรือเพิ่มยาตัวที่สองทันที",
+      "kill": "เช็ค compliance, absorption (อาเจียน/ท้องเสีย), interaction, precipitating factor และ drug level ก่อนสรุปว่ายาล้มเหลว"
+    },
+    {
+      "id": "d-switch-pht-sjs",
+      "pattern": "SJS จาก carbamazepine → เปลี่ยนเป็น phenytoin",
+      "kill": "PHT/PB เป็น aromatic เหมือนกัน (cross-reactivity) → เลือก VPA หรือ LEV"
+    },
+    {
+      "id": "d-ct-before-drug",
+      "pattern": "ยังชักอยู่ → ส่ง CT brain ก่อนให้ยา",
+      "kill": "หยุดชักก่อน (ABC + BZD) แล้วค่อยหาสาเหตุ — CT ทีหลังเมื่อมี trauma, focal deficit หรือไม่กลับ baseline"
+    }
+  ],
+  "trapPairs": [
+    { "id": "tp-cae-fias", "a": "cae", "b": "fias-temporal", "decider": "Aura + postictal confusion = FIAS · ไม่มีทั้งคู่ + หลายสิบครั้ง/วัน + HV กระตุ้นได้ = absence" },
+    { "id": "tp-subtle-jitter", "a": "neonatal-subtle", "b": "jitteriness", "decider": "หยุดเมื่อจับ + ถูกกระตุ้นได้ + ไม่มี eye deviation = jitteriness · ไม่หยุดเมื่อจับ = ชัก" },
+    { "id": "tp-simple-complex", "a": "simple-fs", "b": "complex-fs", "decider": "ผิดข้อใดข้อหนึ่งจาก generalized / < 15 min / ไม่ซ้ำใน 24 hr = complex" },
+    { "id": "tp-fs-cns", "a": "simple-fs", "b": "cns-infection", "decider": "ฟื้นกลับ baseline + ไม่มี meningeal sign = FS · ซึมไม่ฟื้น/meningeal sign/fontanel โป่ง = LP" },
+    { "id": "tp-syncope-seizure", "a": "syncope", "b": "first-unprovoked", "decider": "Prodrome + ฟื้นเร็วไม่สับสน = syncope · postictal confusion + กัดลิ้นด้านข้าง = ชัก" },
+    { "id": "tp-bects-focal", "a": "bects", "b": "focal-aware-motor", "decider": "ตอนหลับ + หน้า/น้ำลายไหล + dev ปกติ + centrotemporal spikes = BECTS (ไม่ต้อง imaging)" },
+    { "id": "tp-jme-cae", "a": "jme", "b": "cae", "decider": "วัยรุ่นกระตุกแขนตอนเช้า = JME · เด็กวัยเรียนเหม่อหลายสิบครั้ง = CAE (ทั้งคู่ห้าม CBZ)" },
+    { "id": "tp-pnes-fias", "a": "pnes", "b": "fias-temporal", "decider": "หลับตาแน่น + ขึ้น ๆ ลง ๆ + ไม่มี postictal = PNES · ตาเปิด stereotyped + postictal = FIAS" },
+    { "id": "tp-acute-unprovoked", "a": "acute-symptomatic", "b": "first-unprovoked", "decider": "มี insult เฉียบพลัน ณ ขณะนั้น (lab, trauma ≤ 1 wk, ยา) = acute symptomatic · lesion เก่า = unprovoked (remote)" },
+    { "id": "tp-is-lgs", "a": "infantile-spasms", "b": "lgs", "decider": "ขวบปีแรก + spasms เป็นชุด + hypsarrhythmia = IS · อายุมากกว่า + tonic/atonic/atypical absence + slow spike-wave = LGS" }
+  ],
+  "games": {
+    "legality": [
+      {
+        "id": "lg-clonic-aware",
+        "targetSeconds": 30,
+        "difficulty": 1,
+        "basedOn": { "rules": ["onset-first"] },
+        "case": "เด็กชาย 8 ปี กระตุกเป็นจังหวะที่มุมปากซ้ายและมือซ้าย ระหว่างนั้นตอบคำถามได้และจำเหตุการณ์ได้",
+        "question": "Seizure type ตาม ILAE 2017?",
+        "options": [
+          { "id": "focal-aware-motor", "label": "Focal aware motor (clonic)" },
+          { "id": "focal-impaired", "label": "Focal impaired awareness" },
+          { "id": "generalized-clonic", "label": "Generalized clonic" },
+          { "id": "myoclonic", "label": "Generalized myoclonic" },
+          { "id": "unknown-onset", "label": "Unknown onset" }
+        ],
+        "answer": "focal-aware-motor",
+        "ruleIds": ["onset-first"],
+        "why": "เริ่มซีกเดียว = focal · รู้ตัวและจำได้ = aware · กระตุกเป็นจังหวะ = clonic (ชื่อเดิม simple partial motor)"
+      },
+      {
+        "id": "lg-two-unprovoked",
+        "targetSeconds": 30,
+        "difficulty": 1,
+        "basedOn": { "rules": ["provoked-gate"] },
+        "case": "เด็กหญิง 6 ปี ไม่มีไข้ ชักเกร็งกระตุกทั้งตัว 2 ครั้ง ห่างกัน 3 เดือน · ทั้งสองครั้ง DTX, electrolyte ปกติ ไม่มี trauma",
+        "question": "สถานะตาม ILAE 2014?",
+        "options": [
+          { "id": "epilepsy", "label": "Epilepsy" },
+          { "id": "not-yet", "label": "ยังไม่ใช่ epilepsy — รอครั้งที่ 3" },
+          { "id": "acute-symptomatic", "label": "Acute symptomatic seizure" },
+          { "id": "provoked", "label": "Provoked seizure" }
+        ],
+        "answer": "epilepsy",
+        "ruleIds": ["provoked-gate"],
+        "why": "Unprovoked ≥ 2 ครั้งห่างกัน > 24 hr = epilepsy ตามเกณฑ์ข้อ 1"
+      },
+      {
+        "id": "lg-complex-partial",
+        "targetSeconds": 25,
+        "difficulty": 1,
+        "basedOn": { "rules": ["onset-first"] },
+        "case": "ใบส่งตัวเขียนว่า \"complex partial seizure, secondarily generalized\"",
+        "question": "ชื่อตาม ILAE 2017?",
+        "options": [
+          { "id": "fias-to-btc", "label": "Focal impaired awareness → focal to bilateral tonic-clonic" },
+          { "id": "fas-to-btc", "label": "Focal aware → focal to bilateral tonic-clonic" },
+          { "id": "gtc", "label": "Generalized tonic-clonic" },
+          { "id": "unknown-tc", "label": "Unknown onset tonic-clonic" }
+        ],
+        "answer": "fias-to-btc",
+        "ruleIds": ["onset-first"],
+        "why": "Complex partial = focal impaired awareness · secondarily generalized = focal to bilateral tonic-clonic"
+      },
+      {
+        "id": "lg-hyponatremia",
+        "targetSeconds": 30,
+        "difficulty": 2,
+        "basedOn": { "rules": ["provoked-gate"] },
+        "case": "ทารก 7 เดือน ได้นมผงที่ผสมน้ำมากเกิน ชักเกร็งกระตุก Na 112 mEq/L ไม่มีไข้",
+        "question": "จัดเป็นอะไร และต้อง ASM ระยะยาวไหม?",
+        "options": [
+          { "id": "acute-no-asm", "label": "Acute symptomatic — แก้ Na ไม่ต้อง ASM ระยะยาว" },
+          { "id": "first-unprovoked", "label": "First unprovoked — EEG แล้วพิจารณา ASM" },
+          { "id": "epilepsy-asm", "label": "Epilepsy — เริ่ม ASM" },
+          { "id": "febrile", "label": "Febrile seizure" }
+        ],
+        "answer": "acute-no-asm",
+        "ruleIds": ["provoked-gate"],
+        "why": "Na < 115 mEq/L = severe metabolic derangement → acute symptomatic · แก้สาเหตุแล้ว threshold กลับปกติ"
+      },
+      {
+        "id": "lg-single-epileptiform",
+        "targetSeconds": 40,
+        "difficulty": 2,
+        "basedOn": { "rules": ["provoked-gate"], "errata": ["e-single-high-risk"] },
+        "case": "เด็กชาย 5 ปี พัฒนาการช้า ชัก unprovoked ครั้งแรก · EEG พบ focal epileptiform discharge · MRI มี old perinatal infarct",
+        "question": "สถานะตาม ILAE 2014?",
+        "options": [
+          { "id": "epilepsy", "label": "Epilepsy ได้ตั้งแต่ครั้งแรก (risk ซ้ำสูง)" },
+          { "id": "not-yet", "label": "ยังไม่ใช่ — ต้องชักครั้งที่ 2 ก่อน" },
+          { "id": "acute-symptomatic", "label": "Acute symptomatic จาก infarct" },
+          { "id": "provoked", "label": "Provoked seizure" }
+        ],
+        "answer": "epilepsy",
+        "ruleIds": ["provoked-gate"],
+        "why": "Remote symptomatic lesion + epileptiform EEG + dev ช้า → โอกาสซ้ำ ≥ 60% → epilepsy ตามเกณฑ์ข้อ 2 · infarct เก่าไม่ใช่ acute"
+      },
+      {
+        "id": "lg-post-meningitis",
+        "targetSeconds": 35,
+        "difficulty": 2,
+        "basedOn": { "rules": ["provoked-gate"], "errata": ["e-remote-symptomatic"] },
+        "case": "เด็ก 4 ปี เคยเป็น bacterial meningitis ตอนอายุ 1 ปี (หายแล้ว) ครั้งนี้ชักโดยไม่มีไข้ CSF ปกติ",
+        "question": "ชักครั้งนี้คือ?",
+        "options": [
+          { "id": "unprovoked-remote", "label": "Unprovoked (remote symptomatic)" },
+          { "id": "acute-symptomatic", "label": "Acute symptomatic (CNS infection)" },
+          { "id": "febrile", "label": "Febrile seizure" },
+          { "id": "provoked", "label": "Provoked จาก meningitis" }
+        ],
+        "answer": "unprovoked-remote",
+        "ruleIds": ["provoked-gate"],
+        "why": "Infection หายไปแล้ว lesion เป็นแผลเป็นถาวร → remote symptomatic = unprovoked (acute symptomatic ต้องเป็น infection ที่ active)"
+      },
+      {
+        "id": "lg-fever-4mo",
+        "targetSeconds": 30,
+        "difficulty": 2,
+        "basedOn": { "rules": ["fs-exclusion"], "errata": ["e-fs-age-window"] },
+        "case": "ทารก 4 เดือน ไข้ 38.8 °C ชักเกร็งทั้งตัว 2 นาทีแล้วหยุด",
+        "question": "เรียกว่า simple febrile seizure ได้ไหม?",
+        "options": [
+          { "id": "not-fs", "label": "ไม่ใช่ FS (อายุ < 6 เดือน) — workup CNS infection/metabolic" },
+          { "id": "simple-fs", "label": "Simple FS — counsel แล้ว D/C" },
+          { "id": "complex-fs", "label": "Complex FS" },
+          { "id": "epilepsy", "label": "Epilepsy" }
+        ],
+        "answer": "not-fs",
+        "ruleIds": ["fs-exclusion"],
+        "why": "นิยาม FS ใช้อายุ 6–60 เดือน · ทารก < 6 เดือนไข้ + ชักต้องหา meningitis/metabolic อย่างจริงจัง"
+      },
+      {
+        "id": "lg-focal-spasms",
+        "targetSeconds": 45,
+        "difficulty": 3,
+        "basedOn": { "rules": ["onset-first"], "errata": ["e-focal-spasms"] },
+        "case": "ทารก 14 เดือน งอแขนสองข้างพร้อมก้มศีรษะครั้งละ 2 วินาที เป็นชุด ไม่มีใครเห็นตอนเริ่ม · EEG hypsarrhythmia เด่นที่ left parietal · MRI left parietal cortical dysplasia",
+        "question": "Seizure type ตาม ILAE 2017?",
+        "options": [
+          { "id": "focal-spasms", "label": "Focal epileptic spasms" },
+          { "id": "generalized-spasms", "label": "Generalized epileptic spasms" },
+          { "id": "unknown-spasms", "label": "Unknown onset epileptic spasms" },
+          { "id": "myoclonic", "label": "Myoclonic seizure" }
+        ],
+        "answer": "focal-spasms",
+        "ruleIds": ["onset-first"],
+        "why": "Spasms เป็นได้ทั้ง focal/generalized · EEG + MRI ชี้ focus จึงเรียก focal แม้ไม่เห็นตอนเริ่ม"
+      },
+      {
+        "id": "lg-jme-mtc",
+        "targetSeconds": 45,
+        "difficulty": 3,
+        "basedOn": { "rules": ["onset-first"], "errata": ["e-jme-mtc"] },
+        "case": "วัยรุ่นชาย 16 ปี เป็น JME กระตุกแขนสองข้างเป็นชุดไม่กี่ครั้ง ตามด้วยเกร็งทั้งตัวแล้วกระตุกทั้งตัว",
+        "question": "ชื่อที่ถูกต้อง?",
+        "options": [
+          { "id": "mtc", "label": "Generalized myoclonic-tonic-clonic" },
+          { "id": "focal-btc", "label": "Focal to bilateral tonic-clonic" },
+          { "id": "myoclonic-atonic", "label": "Myoclonic-atonic" },
+          { "id": "atypical-absence", "label": "Atypical absence" }
+        ],
+        "answer": "mtc",
+        "ruleIds": ["onset-first"],
+        "why": "ILAE 2017 เพิ่ม myoclonic-tonic-clonic สำหรับ JME · JME เป็น generalized genetic epilepsy จึงห้ามเรียก focal"
+      },
+      {
+        "id": "lg-fs-twice",
+        "targetSeconds": 40,
+        "difficulty": 3,
+        "basedOn": { "rules": ["fs-exclusion"], "trapPairs": ["tp-simple-complex"] },
+        "case": "เด็ก 2 ปี ไข้ 39 °C ชักเกร็งกระตุกทั้งตัว 3 นาที ฟื้นดี อีก 6 ชั่วโมงชักแบบเดิมอีก 2 นาที · ไม่มี meningeal sign",
+        "question": "จัดเป็นอะไร?",
+        "options": [
+          { "id": "complex-fs", "label": "Complex febrile seizure" },
+          { "id": "simple-fs", "label": "Simple febrile seizure (ทุกครั้ง < 15 min, generalized)" },
+          { "id": "febrile-se", "label": "Febrile status epilepticus" },
+          { "id": "epilepsy", "label": "Epilepsy" }
+        ],
+        "answer": "complex-fs",
+        "ruleIds": ["fs-exclusion"],
+        "why": "แม้ generalized และสั้นทุกครั้ง แต่ชักซ้ำใน 24 hr → ผิดเกณฑ์ simple ข้อเดียวก็เป็น complex"
+      }
+    ],
+    "matchups": [
+      {
+        "id": "mu-seizure-type",
+        "targetSeconds": 150,
+        "difficulty": 1,
+        "basedOn": { "rules": ["na-paradox", "se-clock"] },
+        "title": "ยา × seizure type",
+        "conditions": [
+          { "id": "absence", "label": "Absence (CAE)" },
+          { "id": "jme", "label": "JME (myoclonic + GTC)" },
+          { "id": "focal", "label": "Focal ± bilateral TC" },
+          { "id": "spasms", "label": "Infantile spasms" },
+          { "id": "se-iv", "label": "SE second-line (IV)" }
+        ],
+        "rows": [
+          {
+            "id": "vpa",
+            "drug": "Valproate",
+            "cells": [
+              { "condition": "absence", "verdict": "legal", "why": "Efficacy เท่า ethosuximide ใน RCT · lecture ไทยเลือก VPA", "sourceId": "cae-trial-2010" },
+              { "condition": "jme", "verdict": "legal", "why": "Broad-spectrum คุมทั้ง myoclonic และ GTC (เลี่ยงในหญิงวัยเจริญพันธุ์)", "sourceId": "sp-jme" },
+              { "condition": "focal", "verdict": "legal", "why": "Broad-spectrum ใช้กับ focal ได้" },
+              { "condition": "spasms", "verdict": "combo", "why": "ไม่ใช่ first-line (VGB/ACTH) และเด็ก < 2 ปีเสี่ยง fatal hepatotoxicity", "sourceId": "label-valproate" },
+              { "condition": "se-iv", "verdict": "legal", "why": "40 mg/kg IV (max 3000 mg) — เลี่ยง < 2 ปี/mitochondrial", "sourceId": "aes-cse-2016" }
+            ]
+          },
+          {
+            "id": "esm",
+            "drug": "Ethosuximide",
+            "cells": [
+              { "condition": "absence", "verdict": "legal", "why": "T-type Ca²⁺ blocker ตรงกลไก · AE ด้าน attention น้อยกว่า VPA", "sourceId": "cae-trial-2010" },
+              { "condition": "jme", "verdict": "illegal", "why": "ไม่ครอบคลุม myoclonic และ GTC" },
+              { "condition": "focal", "verdict": "illegal", "why": "ไม่มีผลกับ focal seizure" },
+              { "condition": "spasms", "verdict": "illegal", "why": "ไม่ใช่ยาของ infantile spasms" },
+              { "condition": "se-iv", "verdict": "illegal", "why": "ไม่มีรูปแบบ IV และไม่ใช่ยา SE" }
+            ]
+          },
+          {
+            "id": "cbz",
+            "drug": "Carbamazepine",
+            "cells": [
+              { "condition": "absence", "verdict": "illegal", "why": "Na⁺-channel blocker ทำ absence แย่ลง", "sourceId": "sp-absence" },
+              { "condition": "jme", "verdict": "illegal", "why": "ทำ myoclonic แย่ลง", "sourceId": "sp-jme" },
+              { "condition": "focal", "verdict": "legal", "why": "ยาหลักของ focal ± bilateral TC (ตรวจ HLA-B*15:02 ก่อนในคนไทย)", "sourceId": "hitap-hla-2013" },
+              { "condition": "spasms", "verdict": "illegal", "why": "ไม่ได้ผลกับ spasms" },
+              { "condition": "se-iv", "verdict": "illegal", "why": "ไม่มี IV loading" }
+            ]
+          },
+          {
+            "id": "pht",
+            "drug": "Phenytoin / fosphenytoin",
+            "cells": [
+              { "condition": "absence", "verdict": "illegal", "why": "Na⁺-channel blocker ทำ absence แย่ลง", "sourceId": "sp-absence" },
+              { "condition": "jme", "verdict": "illegal", "why": "ทำ myoclonic แย่ลง", "sourceId": "sp-jme" },
+              { "condition": "focal", "verdict": "legal", "why": "ใช้กับ focal/GTC ได้ (เลี่ยงในเด็กหญิง/ทารกระยะยาว)" },
+              { "condition": "spasms", "verdict": "illegal", "why": "ไม่ได้ผลกับ spasms" },
+              { "condition": "se-iv", "verdict": "legal", "why": "Fosphenytoin 20 mg PE/kg (max 1500 mg PE) · ถ้ามีทั้งคู่ เลือก fosphenytoin", "sourceId": "aes-cse-2016" }
+            ]
+          },
+          {
+            "id": "pb",
+            "drug": "Phenobarbital",
+            "cells": [
+              { "condition": "absence", "verdict": "illegal", "why": "ไม่ใช่ยาของ absence — lecture ให้ VPA/ESM" },
+              { "condition": "jme", "verdict": "combo", "why": "ไม่ใช่ตัวเลือกหลัก ง่วงและกระทบ cognition ในวัยรุ่น" },
+              { "condition": "focal", "verdict": "legal", "why": "ใช้ได้ ราคาถูก แต่เลี่ยงในเด็กวัยเรียน/hyperactive" },
+              { "condition": "spasms", "verdict": "illegal", "why": "ไม่ใช่ยาของ spasms" },
+              { "condition": "se-iv", "verdict": "combo", "why": "15 mg/kg IV ใช้เมื่อไม่มี fosphenytoin/VPA/LEV · กดการหายใจหลัง BZD", "sourceId": "aes-cse-2016" }
+            ]
+          },
+          {
+            "id": "lev",
+            "drug": "Levetiracetam",
+            "cells": [
+              { "condition": "absence", "verdict": "combo", "why": "Broad-spectrum ใช้ได้แต่ไม่ใช่ first-line ของ CAE (ESM/VPA ดีกว่า)" },
+              { "condition": "jme", "verdict": "legal", "why": "ตัวเลือกแรกในหญิงวัยเจริญพันธุ์แทน VPA", "sourceId": "sp-jme" },
+              { "condition": "focal", "verdict": "legal", "why": "Broad-spectrum, interaction น้อย, มี PO/IV" },
+              { "condition": "spasms", "verdict": "illegal", "why": "ไม่ใช่ first-line (VGB/ACTH)" },
+              { "condition": "se-iv", "verdict": "legal", "why": "60 mg/kg IV (max 4500 mg) · hemodynamics นิ่งที่สุด", "sourceId": "aes-cse-2016" }
+            ]
+          },
+          {
+            "id": "vgb",
+            "drug": "Vigabatrin",
+            "cells": [
+              { "condition": "absence", "verdict": "illegal", "why": "ยาที่เพิ่ม GABA แบบ VGB ทำ absence ถี่ขึ้น", "sourceId": "sp-absence" },
+              { "condition": "jme", "verdict": "illegal", "why": "ไม่ใช่ยาของ generalized genetic epilepsy" },
+              { "condition": "focal", "verdict": "combo", "why": "ใช้ใน refractory focal เท่านั้น เพราะ vision loss ถาวร", "sourceId": "label-vigabatrin" },
+              { "condition": "spasms", "verdict": "legal", "why": "First-line (โดยเฉพาะ TSC) · ตรวจลานสายตา", "sourceId": "label-vigabatrin" },
+              { "condition": "se-iv", "verdict": "illegal", "why": "ไม่ใช่ยา SE" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mu-patient",
+        "targetSeconds": 150,
+        "difficulty": 3,
+        "basedOn": { "rules": ["avoid-filter"], "errata": ["e-sjs-cross"] },
+        "title": "ยา × เด็กคนนี้ (avoid filter)",
+        "conditions": [
+          { "id": "under2", "label": "ทารก < 2 ปี" },
+          { "id": "teen-girl", "label": "วัยรุ่นหญิง" },
+          { "id": "school-adhd", "label": "วัยเรียน + ADHD" },
+          { "id": "hla-pos", "label": "HLA-B*15:02 positive" },
+          { "id": "post-sjs-cbz", "label": "เคย SJS จาก CBZ" }
+        ],
+        "rows": [
+          {
+            "id": "vpa-pt",
+            "drug": "Valproate",
+            "cells": [
+              { "condition": "under2", "verdict": "illegal", "why": "Fatal hepatotoxicity เสี่ยงสูงสุดในเด็ก < 2 ปี (boxed warning)", "sourceId": "label-valproate" },
+              { "condition": "teen-girl", "verdict": "combo", "why": "Teratogen (NTD, neurodevelopment), PCOS, น้ำหนักขึ้น — เลี่ยงถ้ามีทางเลือก ถ้าจำเป็นให้ folic acid + counsel", "sourceId": "label-valproate" },
+              { "condition": "school-adhd", "verdict": "legal", "why": "ไม่ทำ hyperactivity แย่ลงแบบ PB" },
+              { "condition": "hla-pos", "verdict": "legal", "why": "ไม่ใช่ aromatic ASM ไม่สัมพันธ์กับ HLA-B*15:02" },
+              { "condition": "post-sjs-cbz", "verdict": "legal", "why": "ไม่มี aromatic ring จึงไม่ cross-react" }
+            ]
+          },
+          {
+            "id": "pb-pt",
+            "drug": "Phenobarbital",
+            "cells": [
+              { "condition": "under2", "verdict": "legal", "why": "ใช้ได้ในทารก (first-line ของ neonatal seizure)", "sourceId": "norton-neonatal" },
+              { "condition": "teen-girl", "verdict": "combo", "why": "ง่วง กระทบการเรียน และลดประสิทธิภาพยาคุมกำเนิด" },
+              { "condition": "school-adhd", "verdict": "illegal", "why": "ทำ hyperactivity และ cognition แย่ลง" },
+              { "condition": "hla-pos", "verdict": "combo", "why": "เป็น aromatic ASM เสี่ยง SJS — เฝ้าระวังผื่นช่วงแรก" },
+              { "condition": "post-sjs-cbz", "verdict": "illegal", "why": "Aromatic เหมือน CBZ → cross-reactivity" }
+            ]
+          },
+          {
+            "id": "pht-pt",
+            "drug": "Phenytoin",
+            "cells": [
+              { "condition": "under2", "verdict": "illegal", "why": "ทารก metabolize เร็ว level แกว่ง คุมยาก (lecture)" },
+              { "condition": "teen-girl", "verdict": "illegal", "why": "Hirsutism, gum hypertrophy (cosmetic) + ลดประสิทธิภาพยาคุม" },
+              { "condition": "school-adhd", "verdict": "combo", "why": "ใช้ได้แต่ ataxia/cognitive AE และ zero-order kinetics ต้องตาม level" },
+              { "condition": "hla-pos", "verdict": "illegal", "why": "HLA-B*15:02 สัมพันธ์กับ SJS จาก phenytoin ด้วย — ไม่ใช้แทน CBZ ในคน positive" },
+              { "condition": "post-sjs-cbz", "verdict": "illegal", "why": "Aromatic เหมือน CBZ → cross-reactivity" }
+            ]
+          },
+          {
+            "id": "cbz-pt",
+            "drug": "Carbamazepine",
+            "cells": [
+              { "condition": "under2", "verdict": "combo", "why": "ใช้กับ focal ได้ แต่ต้องตรวจ HLA-B*15:02 และ titrate ช้า" },
+              { "condition": "teen-girl", "verdict": "combo", "why": "Enzyme inducer ลดประสิทธิภาพยาคุมกำเนิด · ห้ามถ้าเป็น JME" },
+              { "condition": "school-adhd", "verdict": "legal", "why": "ตัวเลือกของ focal ในเด็กวัยเรียน (แทน PB) หลังตรวจ HLA-B*15:02" },
+              { "condition": "hla-pos", "verdict": "illegal", "why": "HLA-B*15:02 พบบ่อยในคนไทย สัมพันธ์กับ CBZ-SJS/TEN — ตรวจก่อนเริ่ม", "sourceId": "hitap-hla-2013" },
+              { "condition": "post-sjs-cbz", "verdict": "illegal", "why": "ห้าม rechallenge" }
+            ]
+          },
+          {
+            "id": "lev-pt",
+            "drug": "Levetiracetam",
+            "cells": [
+              { "condition": "under2", "verdict": "legal", "why": "ใช้ได้ในทารก broad-spectrum interaction น้อย" },
+              { "condition": "teen-girl", "verdict": "legal", "why": "ตัวเลือกแรกแทน VPA ในหญิงวัยเจริญพันธุ์", "sourceId": "sp-jme" },
+              { "condition": "school-adhd", "verdict": "combo", "why": "Irritability/aggression — ถามพฤติกรรมทุกครั้งที่ F/U" },
+              { "condition": "hla-pos", "verdict": "legal", "why": "ไม่ใช่ aromatic ASM" },
+              { "condition": "post-sjs-cbz", "verdict": "legal", "why": "ไม่มี aromatic ring ใช้แทนได้" }
+            ]
+          }
+        ]
+      }
+    ],
+    "campaign": [
+      {
+        "id": "cp-fs-er",
+        "targetSeconds": 180,
+        "difficulty": 1,
+        "basedOn": { "rules": ["fs-exclusion"] },
+        "title": "ER: เด็ก 18 เดือน ไข้แล้วชัก",
+        "guidelineSourceId": "aap-fs-eval-2011",
+        "intro": "เด็กชาย 18 เดือน ไข้ 38.5 °C มา 6 ชั่วโมง ชักเกร็งกระตุกทั้งตัว 3 นาทีแล้วหยุดเองที่บ้าน มาถึง ER 30 นาทีหลังชัก เล่นได้ปกติ น้ำมูกไหล ไม่มี meningeal sign วัคซีนครบ",
+        "startTurn": "f1",
+        "turns": [
+          {
+            "id": "f1",
+            "state": "Vital signs ปกติยกเว้นไข้ เด็กตื่นดี เล่นได้ ไม่มี focal deficit · ครบเกณฑ์ simple FS",
+            "choices": [
+              { "id": "f1-source", "label": "หา source ของไข้ (URI) + counsel แล้ว D/C", "next": "f2", "quality": "best", "feedback": "Simple FS ในเด็ก > 12 เดือนที่ฟื้นดีและวัคซีนครบ ไม่ต้อง LP/EEG/lab/imaging — งานหลักคือหา source ของไข้" },
+              { "id": "f1-lp", "label": "LP ทุกราย", "next": "f2", "quality": "ok", "feedback": "ไม่จำเป็น: ไม่มี meningeal sign, อายุ > 12 เดือน, วัคซีนครบ, ไม่ได้ antibiotic มาก่อน" },
+              { "id": "f1-eeg-ct", "label": "EEG และ CT brain", "next": "f1", "quality": "harmful", "feedback": "Simple FS ไม่ต้อง EEG หรือ imaging — CT ให้รังสีและอาจต้อง sedation โดยไม่มีประโยชน์ ลองใหม่" },
+              { "id": "f1-pb", "label": "เริ่ม phenobarbital prophylaxis", "next": "f1", "quality": "harmful", "feedback": "ไม่แนะนำ ASM ระยะยาวใน simple FS (AE > ประโยชน์) ลองใหม่" }
+            ]
+          },
+          {
+            "id": "f2",
+            "state": "แม่ถาม: \"ถ้าลูกชักอีกที่บ้านต้องทำอย่างไร?\"",
+            "choices": [
+              { "id": "f2-side", "label": "จับนอนตะแคง ไม่ใส่อะไรในปาก ไม่ป้อนยา/น้ำ จับเวลา ถ้าชักถึง 5 นาที ชักซ้ำ ไม่ตื่น หรือหายใจไม่ดี โทร 1669", "next": "f3", "quality": "best", "feedback": "ครบทั้งท่า สิ่งที่ห้าม และเกณฑ์มาโรงพยาบาล — 5 นาทีคือ t1 ของ SE" },
+              { "id": "f2-spoon", "label": "เอาช้อนงัดปากกันกัดลิ้น", "next": "f2", "quality": "harmful", "feedback": "ห้ามใส่อะไรในปาก: ฟันหัก สำลัก นิ้วโดนกัด ลองใหม่" },
+              { "id": "f2-paracetamol", "label": "ให้ paracetamol ทุก 4 ชม. ตลอดที่มีไข้เพื่อกันชัก", "next": "f2", "quality": "harmful", "feedback": "Antipyretic ไม่ป้องกันการชักซ้ำ ให้เพื่อความสบายตัวเท่านั้น ลองใหม่" }
+            ]
+          },
+          {
+            "id": "f3",
+            "state": "แม่ถามต่อ: \"ลูกจะชักอีกไหม แล้วจะเป็นลมชักไหม?\"",
+            "choices": [
+              { "id": "f3-honest", "label": "ชักซ้ำได้ราว 30% (เพราะครั้งแรกหลัง 12 เดือน) แต่ risk ลมชักราว 1% ใกล้เด็กทั่วไป และไม่ทำให้สมอง/IQ เสีย", "next": null, "quality": "best", "feedback": "Counsel ด้วยตัวเลขจริง: recurrence ~30% (> 12 mo) / ~50% (< 12 mo) · epilepsy ~1%" },
+              { "id": "f3-asm", "label": "ถ้าชักซ้ำแปลว่าเป็นลมชัก ต้องกินยากันชักยาว", "next": "f3", "quality": "harmful", "feedback": "Recurrent FS ไม่เท่ากับ epilepsy และไม่ต้องกินยายาว ลองใหม่" },
+              { "id": "f3-never", "label": "จะไม่ชักอีกแล้ว ไม่ต้องกังวล", "next": "f3", "quality": "harmful", "feedback": "ไม่จริง — ราว 1 ใน 3 ชักซ้ำ พ่อแม่ต้องพร้อม ลองใหม่" }
+            ]
+          }
+        ],
+        "guidelineSequence": [
+          "ประเมิน ABC + DTX + ดูว่ากลับ baseline และหา meningeal sign",
+          "ครบเกณฑ์ simple → หา source ของไข้ ไม่ทำ EEG/lab/imaging routine",
+          "LP เมื่อมี sign of meningitis · option ใน 6–12 mo ที่วัคซีนไม่ครบ/ไม่ทราบ หรือได้ antibiotic มาก่อน",
+          "Counsel: ท่า, ห้ามใส่อะไรในปาก, 5 นาที → 1669, recurrence และ risk epilepsy"
+        ]
+      },
+      {
+        "id": "cp-se-er",
+        "targetSeconds": 240,
+        "difficulty": 3,
+        "basedOn": { "rules": ["se-clock"], "errata": ["e-max-two-bzd", "e-ncse"] },
+        "title": "ER: เด็ก 4 ปี 16 kg ชักไม่หยุด",
+        "guidelineSourceId": "aes-cse-2016",
+        "intro": "เด็กชาย 4 ปี น้ำหนัก 16 kg ชักเกร็งกระตุกทั้งตัวมาแล้ว 6 นาทีก่อนถึง ER ยังไม่ได้เปิดเส้นเลือด",
+        "startTurn": "s1",
+        "turns": [
+          {
+            "id": "s1",
+            "state": "นาทีที่ 6 · ยังชัก · SpO2 92% · จัดท่าตะแคง ให้ O₂ แล้ว · DTX 95 mg/dL · กำลังพยายามเปิด IV",
+            "choices": [
+              { "id": "s1-mdz", "label": "Midazolam 5 mg IM ทันที (ไม่รอเส้น)", "next": "s2", "quality": "best", "feedback": "ครบ t1 แล้ว · IM midazolam (13–40 kg = 5 mg) ไม่ต้องรอเปิดเส้น" },
+              { "id": "s1-wait-iv", "label": "รอเปิด IV ให้ได้ก่อนแล้วค่อยให้ lorazepam", "next": "s1b", "quality": "harmful", "feedback": "ทุกนาทีที่รอ GABA-A receptor ถูกดึงเข้าเซลล์ BZD ได้ผลน้อยลง" },
+              { "id": "s1-pht", "label": "Phenytoin 20 mg/kg IV เป็นตัวแรก", "next": "s1b", "quality": "harmful", "feedback": "PHT เป็น second-line และยังไม่มีเส้น — first-line คือ BZD" },
+              { "id": "s1-spoon", "label": "ใส่ไม้กดลิ้นกันกัดลิ้น", "next": "s1b", "quality": "harmful", "feedback": "ห้ามใส่อะไรในปาก และไม่ได้หยุดชัก" }
+            ]
+          },
+          {
+            "id": "s1b",
+            "state": "นาทีที่ 12 · ยังชัก SpO2 88% · เพิ่งเปิด IO ได้",
+            "choices": [
+              { "id": "s1b-bzd", "label": "ให้ BZD ทันที (midazolam IM หรือ diazepam 0.2 mg/kg IO)", "next": "s2", "quality": "best", "feedback": "ช้าไปแล้วแต่ยังต้องเริ่มที่ BZD" },
+              { "id": "s1b-ct", "label": "ส่ง CT brain ก่อนให้ยา", "next": "s1b", "quality": "harmful", "feedback": "หยุดชักก่อน แล้วค่อยหาสาเหตุ" }
+            ]
+          },
+          {
+            "id": "s2",
+            "state": "ให้ BZD dose แรกไป 5 นาทีแล้ว ยังชักอยู่ · ได้ IO แล้ว",
+            "choices": [
+              { "id": "s2-repeat", "label": "ให้ BZD ซ้ำอีก 1 ครั้ง (เช่น diazepam 0.2 mg/kg IV/IO)", "next": "s3", "quality": "best", "feedback": "BZD ซ้ำได้ 1 ครั้งใน phase 5–20 min" },
+              { "id": "s2-propofol", "label": "Propofol infusion ทันที", "next": "s2", "quality": "harmful", "feedback": "Anesthetic infusion เป็น third-line (refractory) — ข้ามขั้น" }
+            ]
+          },
+          {
+            "id": "s3",
+            "state": "นาทีที่ 22 · ได้ BZD ครบ 2 dose แล้ว ยังชัก",
+            "choices": [
+              { "id": "s3-lev", "label": "Levetiracetam 60 mg/kg IV (960 mg) single dose", "next": "s4", "quality": "best", "feedback": "Second therapy: เลือก 1 ตัว (LEV 60 mg/kg / fosphenytoin 20 mg PE/kg / VPA 40 mg/kg)" },
+              { "id": "s3-fos", "label": "Fosphenytoin 20 mg PE/kg IV + monitor BP/EKG", "next": "s4", "quality": "best", "feedback": "ถูกเช่นกัน — monitor BP และ EKG ระหว่างให้" },
+              { "id": "s3-third-bzd", "label": "Diazepam dose ที่ 3", "next": "s3b", "quality": "harmful", "feedback": "BZD เกิน 2 dose ไม่เพิ่มการหยุดชัก แต่ทำให้หยุดหายใจ" }
+            ]
+          },
+          {
+            "id": "s3b",
+            "state": "หลัง BZD dose ที่ 3 เด็กหายใจตื้น SpO2 80% และยังกระตุกอยู่",
+            "choices": [
+              { "id": "s3b-fix", "label": "Bag-mask ventilation ประคอง airway แล้วให้ levetiracetam 60 mg/kg IV", "next": "s4", "quality": "best", "feedback": "แก้ airway แล้วเข้า second-line ที่ควรได้ตั้งแต่แรก" },
+              { "id": "s3b-more", "label": "ให้ BZD อีก", "next": "s3b", "quality": "harmful", "feedback": "ยิ่งกดการหายใจ" }
+            ]
+          },
+          {
+            "id": "s4",
+            "state": "นาทีที่ 30 กระตุกหยุดแล้ว · อีก 45 นาทีต่อมายังไม่ลืมตา ไม่ตอบสนองต่อเสียงเรียก vital signs คงที่",
+            "choices": [
+              { "id": "s4-eeg", "label": "สงสัย nonconvulsive SE → ส่ง EEG + admit PICU + หาสาเหตุ", "next": null, "quality": "best", "feedback": "หยุดกระตุกแต่ไม่ตื่น = อาจยังชักอยู่ใต้ผิว · load แล้วต่อ maintenance และหาสาเหตุ (infection, metabolic, structural)" },
+              { "id": "s4-postictal", "label": "เป็น postictal รอดูที่ ER แล้ว D/C เมื่อตื่น", "next": "s4", "quality": "harmful", "feedback": "SE ทุกราย admit · ไม่ตื่นนานต้องตัด NCSE ด้วย EEG" }
+            ]
+          }
+        ],
+        "guidelineSequence": [
+          "0–5 min: ABC, O₂, ตะแคง, จับเวลา, monitor, DTX (< 60 → dextrose ตามอายุ), IV/IO",
+          "5–20 min: BZD 1 ตัว (midazolam IM, lorazepam IV, diazepam IV; ไม่มี IV → diazepam PR, midazolam IN/buccal) ซ้ำได้ 1 ครั้ง",
+          "20–40 min: fosphenytoin หรือ valproate หรือ levetiracetam IV single dose (ไม่มี → phenobarbital)",
+          "40–60 min: refractory → repeat second-line หรือ anesthetic infusion + cEEG + ICU"
+        ]
+      }
+    ],
+    "mcq": [
+      {
+        "id": "mcq-focal-aware",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["onset-first"] },
+        "stem": "An 8-year-old boy has rhythmic jerking of the left corner of his mouth and left hand lasting 1 minute. During the event he answers questions appropriately and afterwards recalls everything. Which is the correct seizure classification according to the ILAE 2017 system?",
+        "options": [
+          { "key": "A", "text": "Generalized clonic seizure", "why": "เริ่มซีกเดียว ไม่ใช่ generalized" },
+          { "key": "B", "text": "Focal impaired awareness seizure", "why": "รู้ตัวและจำได้ตลอด = aware" },
+          { "key": "C", "text": "Focal aware motor (clonic) seizure" },
+          { "key": "D", "text": "Generalized myoclonic seizure", "why": "Myoclonic = กระตุกสั้นไม่เป็นจังหวะ สองข้าง" },
+          { "key": "E", "text": "Unknown onset motor seizure", "why": "เห็นการเริ่มที่ใบหน้า/มือข้างเดียวชัดเจน" }
+        ],
+        "answer": "C",
+        "tell": "Unilateral rhythmic jerking + intact awareness = focal aware clonic.",
+        "explanation": "Onset ซีกเดียว = focal · ตอบได้และจำได้ = aware · กระตุกเป็นจังหวะ = clonic (ชื่อเดิม simple partial motor) · ถ้าเป็นตอนหลับในเด็กวัยเรียน dev ปกติ ให้คิด BECTS"
+      },
+      {
+        "id": "mcq-absence-avoid",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["na-paradox"] },
+        "stem": "A 9-year-old girl with normal development has episodes of staring and unresponsiveness lasting a few seconds, many times per day. She resumes her activity immediately afterwards. Hyperventilation in the clinic for 3 minutes reproduces an episode. Which medication should be avoided?",
+        "options": [
+          { "key": "A", "text": "Valproate", "why": "Drug of choice ตาม lecture (broad-spectrum)" },
+          { "key": "B", "text": "Ethosuximide", "why": "First-line ของ CAE (T-type Ca²⁺)" },
+          { "key": "C", "text": "Carbamazepine" },
+          { "key": "D", "text": "Levetiracetam", "why": "Broad-spectrum ใช้ได้ แม้ไม่ใช่ first-line" },
+          { "key": "E", "text": "Lamotrigine", "why": "ด้อยกว่า ESM/VPA แต่ไม่ได้ทำ absence แย่ลง" }
+        ],
+        "answer": "C",
+        "tell": "Brief staring many times/day provoked by hyperventilation = absence → avoid Na-channel blockers.",
+        "explanation": "Childhood absence epilepsy: 3-Hz generalized spike-and-wave · Na⁺-channel blocker (carbamazepine, phenytoin) ทำ absence แย่ลง · ใช้ ethosuximide หรือ valproate"
+      },
+      {
+        "id": "mcq-jitteriness",
+        "targetSeconds": 60,
+        "difficulty": 1,
+        "basedOn": { "rules": ["mimic-test"] },
+        "stem": "A 2-day-old term newborn has rapid, rhythmic tremors of all four limbs whenever he is handled or hears a loud noise. The movements stop immediately when the limbs are gently flexed and held. There is no eye deviation, and vital signs are normal. What is the most likely diagnosis?",
+        "options": [
+          { "key": "A", "text": "Subtle neonatal seizure", "why": "ชักไม่หยุดเมื่อจับ และมักมี eye deviation/autonomic change" },
+          { "key": "B", "text": "Jitteriness" },
+          { "key": "C", "text": "Benign neonatal sleep myoclonus", "why": "เกิดเฉพาะตอนหลับ หยุดเมื่อปลุก" },
+          { "key": "D", "text": "Infantile spasms", "why": "ขวบปีแรกหลังช่วงแรกเกิด เป็นชุดตอนตื่น + regression" },
+          { "key": "E", "text": "Generalized tonic-clonic seizure", "why": "Newborn ไม่ค่อยชักแบบ GTC และ GTC ไม่หยุดเมื่อจับ" }
+        ],
+        "answer": "B",
+        "tell": "Stimulus-sensitive + suppressed by restraint = jitteriness.",
+        "explanation": "Jitteriness ถูกกระตุ้นได้และหยุดเมื่อจับ ไม่มี eye deviation · เช็ค glucose/Ca แล้ว reassure · ชักจริงไม่หยุดเมื่อจับ"
+      },
+      {
+        "id": "mcq-se-im",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["se-clock"] },
+        "stem": "A 4-year-old boy weighing 16 kg arrives in the emergency department with generalized tonic-clonic seizure activity that began 6 minutes ago. He has been positioned on his side and given oxygen. Capillary glucose is 95 mg/dL. Intravenous access has not yet been obtained. What is the most appropriate next step?",
+        "options": [
+          { "key": "A", "text": "Observe for another 5 minutes because most febrile seizures stop spontaneously", "why": "ครบ t1 5 min = SE แล้ว ห้ามรอ" },
+          { "key": "B", "text": "Intramuscular midazolam 5 mg" },
+          { "key": "C", "text": "Intravenous phenytoin 20 mg/kg", "why": "Second-line และยังไม่มีเส้น" },
+          { "key": "D", "text": "Oral valproate 40 mg/kg", "why": "ห้ามให้ทางปากระหว่างชัก และ VPA เป็น second-line IV" },
+          { "key": "E", "text": "Urgent CT scan of the brain", "why": "หยุดชักก่อนแล้วค่อยหาสาเหตุ" }
+        ],
+        "answer": "B",
+        "tell": "Seizure ≥ 5 min + no IV access = IM midazolam (13–40 kg → 5 mg).",
+        "explanation": "AES 2016: initial therapy เป็น BZD · IM midazolam 5 mg (13–40 kg) / 10 mg (> 40 kg) ไม่ต้องเปิดเส้น"
+      },
+      {
+        "id": "mcq-glucose-infant",
+        "targetSeconds": 60,
+        "difficulty": 2,
+        "basedOn": { "rules": ["se-clock"] },
+        "stem": "An 18-month-old girl is actively seizing in the emergency department. Capillary glucose is 40 mg/dL. Intraosseous access is in place. Which order is correct?",
+        "options": [
+          { "key": "A", "text": "D50W 1 mL/kg", "why": "D50W เข้มข้นเกินสำหรับเด็กเล็ก (order ผู้ใหญ่)" },
+          { "key": "B", "text": "D25W 2 mL/kg", "why": "ใช้ในเด็กอายุ ≥ 2 ปี" },
+          { "key": "C", "text": "D12.5W 4 mL/kg" },
+          { "key": "D", "text": "Thiamine 100 mg, then D50W 50 mL", "why": "Order ของผู้ใหญ่" },
+          { "key": "E", "text": "Recheck glucose after the seizure stops", "why": "Hypoglycemia ต้องแก้ทันที" }
+        ],
+        "answer": "C",
+        "tell": "Glucose < 60 mg/dL in a child < 2 years → D12.5W 4 mL/kg.",
+        "explanation": "AES 2016: ≥ 2 ปี D25W 2 mL/kg · < 2 ปี D12.5W 4 mL/kg · ผู้ใหญ่ thiamine 100 mg ก่อน D50W 50 mL"
+      },
+      {
+        "id": "mcq-jme-girl",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["na-paradox", "avoid-filter"] },
+        "stem": "A 15-year-old girl reports sudden jerks of both arms shortly after waking, causing her to drop her toothbrush. Last month she had a generalized tonic-clonic seizure after staying up all night for exams. EEG shows generalized polyspike-and-wave discharges. Which is the most appropriate initial medication?",
+        "options": [
+          { "key": "A", "text": "Carbamazepine", "why": "ทำ myoclonic แย่ลง" },
+          { "key": "B", "text": "Phenytoin", "why": "ทำ myoclonic แย่ลง + cosmetic AE ในเด็กหญิง" },
+          { "key": "C", "text": "Levetiracetam" },
+          { "key": "D", "text": "Ethosuximide", "why": "ไม่ครอบคลุม myoclonic และ GTC" },
+          { "key": "E", "text": "Vigabatrin", "why": "ไม่ใช่ยาของ generalized genetic epilepsy และเสี่ยง vision loss" }
+        ],
+        "answer": "C",
+        "tell": "Morning myoclonus + GTC after sleep deprivation in an adolescent girl = JME → levetiracetam (avoid VPA if possible).",
+        "explanation": "JME ห้าม Na⁺-channel blocker · VPA ได้ผลดีแต่ teratogenic/PCOS ในหญิงวัยเจริญพันธุ์ → levetiracetam เป็นตัวเลือกแรก"
+      },
+      {
+        "id": "mcq-infantile-spasms",
+        "targetSeconds": 75,
+        "difficulty": 2,
+        "basedOn": { "rules": ["na-paradox"] },
+        "stem": "A 6-month-old infant has clusters of sudden flexion of the trunk and arms, each lasting 1–2 seconds, mostly on awakening. He has stopped smiling socially over the past 3 weeks. Several hypopigmented macules are found on the trunk. EEG shows hypsarrhythmia. Which treatment is most appropriate, and what must be monitored?",
+        "options": [
+          { "key": "A", "text": "Carbamazepine; monitor serum sodium", "why": "ไม่ได้ผลกับ spasms" },
+          { "key": "B", "text": "Vigabatrin; monitor visual fields" },
+          { "key": "C", "text": "Valproate; monitor liver function", "why": "ไม่ใช่ first-line และเด็ก < 2 ปีเสี่ยง fatal hepatotoxicity" },
+          { "key": "D", "text": "Phenytoin; monitor drug levels", "why": "ไม่ได้ผลกับ spasms และทารก level แกว่ง" },
+          { "key": "E", "text": "Reassurance; these are infantile colic episodes", "why": "Spasms เป็นชุด + regression คือ red flag ห้าม reassure" }
+        ],
+        "answer": "B",
+        "tell": "Clustered spasms + regression + hypsarrhythmia + ash-leaf macules = West syndrome from TSC → vigabatrin.",
+        "explanation": "Infantile spasms ใน tuberous sclerosis → vigabatrin (หรือ ACTH/steroid) · VGB ทำ visual field constriction ถาวร ต้องตรวจลานสายตา · refer ภายในไม่กี่วัน"
+      },
+      {
+        "id": "mcq-breakthrough",
+        "targetSeconds": 75,
+        "difficulty": 3,
+        "basedOn": { "rules": ["avoid-filter"] },
+        "stem": "A 6-year-old boy with epilepsy has been seizure-free for 1 year on valproate. He presents with a brief generalized tonic-clonic seizure after 2 days of vomiting from acute gastroenteritis. He is now alert with a normal examination. What is the next best step?",
+        "options": [
+          { "key": "A", "text": "Double the valproate dose immediately", "why": "ยังไม่รู้ว่ายาล้มเหลวจริง" },
+          { "key": "B", "text": "Assess adherence and absorption, and check a valproate level before adjusting therapy" },
+          { "key": "C", "text": "Add carbamazepine as a second agent", "why": "ไม่จำเป็น และ polytherapy ก่อนหาสาเหตุ" },
+          { "key": "D", "text": "Order MRI of the brain", "why": "Exam ปกติและมีสาเหตุชัด (อาเจียน)" },
+          { "key": "E", "text": "Switch to levetiracetam", "why": "ยาเดิมคุมได้ดีมา 1 ปี ปัญหาคือยาเข้าไม่ถึง" }
+        ],
+        "answer": "B",
+        "tell": "Breakthrough seizure with a clear reason (vomiting) → check adherence/absorption/level first.",
+        "explanation": "Breakthrough seizure: เช็ค compliance, absorption, interaction, precipitating factor, dose ต่อ kg และ drug level ก่อนสรุปว่ายาล้มเหลว"
+      },
+      {
+        "id": "mcq-ncse",
+        "targetSeconds": 75,
+        "difficulty": 3,
+        "basedOn": { "rules": ["se-clock"], "errata": ["e-ncse"] },
+        "stem": "A 7-year-old girl with convulsive status epilepticus received two doses of lorazepam and a loading dose of levetiracetam. Visible convulsions stopped 50 minutes ago, but she remains unresponsive to voice and pain. Vital signs and glucose are normal. What is the most appropriate next step?",
+        "options": [
+          { "key": "A", "text": "Observe; this is a prolonged postictal state", "why": "ไม่ตื่นนานหลัง SE ต้องตัด NCSE ก่อน" },
+          { "key": "B", "text": "Give a third dose of lorazepam", "why": "BZD ไม่เกิน 2 dose" },
+          { "key": "C", "text": "Obtain an EEG" },
+          { "key": "D", "text": "Discharge once she wakes up", "why": "SE ทุกราย admit" },
+          { "key": "E", "text": "Lumbar puncture without further evaluation", "why": "ยังไม่ได้ตัดว่ายังชักอยู่ และต้องประเมิน ICP ก่อน LP" }
+        ],
+        "answer": "C",
+        "tell": "Convulsions stopped but not waking = possible nonconvulsive status epilepticus → EEG.",
+        "explanation": "หยุดกระตุกแต่ไม่กลับ baseline นานให้คิด nonconvulsive SE และส่ง EEG · admit ทุกราย และหาสาเหตุต่อ"
+      },
+      {
+        "id": "mcq-sjs-switch",
+        "targetSeconds": 75,
+        "difficulty": 3,
+        "basedOn": { "rules": ["avoid-filter"], "errata": ["e-sjs-cross"] },
+        "stem": "A 10-year-old Thai boy started carbamazepine for focal epilepsy 3 weeks ago. He now has fever, a widespread erythematous rash with blistering, and erosions of the lips and conjunctivae. Which management is most appropriate?",
+        "options": [
+          { "key": "A", "text": "Reduce the carbamazepine dose by half", "why": "SJS ต้องหยุดยาที่สงสัยทันที" },
+          { "key": "B", "text": "Stop carbamazepine, admit, and use a non-aromatic antiseizure medication such as levetiracetam" },
+          { "key": "C", "text": "Give an antihistamine and continue carbamazepine", "why": "ห้ามกินยาต่อ" },
+          { "key": "D", "text": "Switch to phenytoin", "why": "Aromatic เหมือน CBZ → cross-reactivity" },
+          { "key": "E", "text": "Switch to phenobarbital", "why": "Aromatic เหมือน CBZ → cross-reactivity" }
+        ],
+        "answer": "B",
+        "tell": "Fever + mucosal erosions weeks after an aromatic ASM = SJS → stop and switch to a non-aromatic drug.",
+        "explanation": "SJS/TEN จาก CBZ สัมพันธ์กับ HLA-B*15:02 (พบบ่อยในคนไทย) · PHT/PB/LTG เป็น aromatic เสี่ยง cross-reactivity → VPA หรือ LEV"
+      },
+      {
+        "id": "mcq-fs-lp",
+        "targetSeconds": 90,
+        "difficulty": 3,
+        "basedOn": { "rules": ["fs-exclusion"], "errata": ["e-fs-lp-option"], "trapPairs": ["tp-fs-cns"] },
+        "stem": "A 9-month-old girl has a 4-minute generalized seizure with a temperature of 39 °C. She returns to baseline within 30 minutes, and there are no meningeal signs. Her immunization record is unavailable and the parents are unsure whether she received Hib or pneumococcal vaccines. According to the AAP 2011 guideline, which is the most appropriate consideration?",
+        "options": [
+          { "key": "A", "text": "EEG within 24 hours", "why": "Simple FS ไม่ต้อง EEG" },
+          { "key": "B", "text": "CT scan of the brain", "why": "ไม่มี focal deficit/ICP/trauma" },
+          { "key": "C", "text": "Lumbar puncture is an option because immunization status is unknown" },
+          { "key": "D", "text": "Start intermittent oral diazepam with every fever", "why": "ไม่แนะนำ intermittent ASM ใน simple FS" },
+          { "key": "E", "text": "Discharge without any evaluation of the fever", "why": "ต้องหา source ของไข้และพิจารณา meningitis" }
+        ],
+        "answer": "C",
+        "tell": "Age 6–12 months + Hib/pneumococcal status deficient or unknown → LP is an option (AAP 2011).",
+        "explanation": "AAP 2011: LP เมื่อมี sign ของ meningitis และเป็น option ใน 6–12 mo ที่วัคซีนไม่ครบ/ไม่ทราบ หรือได้ antibiotic มาก่อน · lecture ไทยบางที่สอน LP ทุกรายที่ < 12 mo (ข้อนี้ได้คำตอบเดียวกัน)"
+      }
+    ]
+  }
+}
