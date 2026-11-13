@@ -68,6 +68,9 @@
     { "id": "thyroid", "aliases": ["thyroid disorders", "hypothyroidism", "hyperthyroidism", "thyrotoxicosis", "TFT", "ไทรอยด์"] },
     { "id": "congenital-hypothyroidism", "aliases": ["CH", "congenital hypothyroid", "ภาวะพร่องไทรอยด์ฮอร์โมนแต่กำเนิด"] },
     { "id": "newborn-screening", "aliases": ["neonatal screening", "NBS", "การตรวจคัดกรองทารกแรกเกิด"] },
+    { "id": "anemia", "aliases": ["IDA", "iron deficiency anemia", "hemolytic anemia", "ภาวะซีด", "โลหิตจาง"] },
+    { "id": "thalassemia", "aliases": ["thal", "HbE", "hemoglobinopathy", "ธาลัสซีเมีย"] },
+    { "id": "bleeding-disorders", "aliases": ["hemostasis", "coagulopathy", "ITP", "hemophilia", "vWD", "VKDB", "เลือดออกง่าย"] },
     { "id": "epilepsy", "aliases": ["seizure", "seizures", "convulsion", "ASM", "antiseizure medication", "ลมชัก", "ชัก"] },
     { "id": "febrile-seizure", "aliases": ["FS", "febrile convulsion", "ไข้ชัก"] },
     { "id": "status-epilepticus", "aliases": ["SE", "CSE", "convulsive status epilepticus", "ชักต่อเนื่อง"] }

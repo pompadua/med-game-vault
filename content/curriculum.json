@@ -25,6 +25,7 @@
       { "topic": "Respiratory infection: URTI, stridor, LRTI", "packId": "peds-respiratory-infection" },
       { "topic": "Thyroid disorders: CH, Hashimoto, Graves", "packId": "peds-thyroid-disorders" },
       { "topic": "Congenital heart disease, heart failure และ EKG ในเด็ก", "packId": "peds-congenital-heart-disease" },
+      { "topic": "Anemia (IDA, thalassemia, hemolysis) และ bleeding disorders ในเด็ก", "packId": "peds-anemia-bleeding" },
       { "topic": "Seizure, epilepsy, status epilepticus และ febrile seizure", "packId": "peds-seizure-epilepsy" }
     ],
     "preclinic": [
