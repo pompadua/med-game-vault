@@ -73,6 +73,9 @@
     { "id": "bleeding-disorders", "aliases": ["hemostasis", "coagulopathy", "ITP", "hemophilia", "vWD", "VKDB", "เลือดออกง่าย"] },
     { "id": "epilepsy", "aliases": ["seizure", "seizures", "convulsion", "ASM", "antiseizure medication", "ลมชัก", "ชัก"] },
     { "id": "febrile-seizure", "aliases": ["FS", "febrile convulsion", "ไข้ชัก"] },
-    { "id": "status-epilepticus", "aliases": ["SE", "CSE", "convulsive status epilepticus", "ชักต่อเนื่อง"] }
+    { "id": "status-epilepticus", "aliases": ["SE", "CSE", "convulsive status epilepticus", "ชักต่อเนื่อง"] },
+    { "id": "exanthem", "aliases": ["exanthems", "exanthematous fever", "viral exanthem", "rash", "fever with rash", "ไข้ออกผื่น", "ผื่น"] },
+    { "id": "drug-eruption", "aliases": ["drug rash", "drug allergy", "SJS", "TEN", "DRESS", "AGEP", "SCAR", "ผื่นแพ้ยา"] },
+    { "id": "kawasaki-disease", "aliases": ["KD", "Kawasaki", "mucocutaneous lymph node syndrome", "คาวาซากิ"] }
   ]
 }
